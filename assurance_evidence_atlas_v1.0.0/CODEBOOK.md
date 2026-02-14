@@ -138,3 +138,19 @@ It is intended as a *publishable scaffold*: scientists can contribute by (i) tig
   2. Update schemas only when necessary; bump schema versions accordingly.
   3. Record changes in `CHANGELOG.md`.
 
+
+
+## 5) Stress-test pilot v0.1 add-on artifacts
+
+The following artifacts are append-only pilot outputs for methodology hardening and do not alter v1.0.0 row IDs.
+
+- `search_execution_log_v0.1.csv`: query execution trace for preregistered last-24-month replay.
+- `gold_set_stratified_v0.1.csv`: stratified sample list for reliability assessment.
+- `dual_annotation_labels_v0.1.csv`: independent label columns per annotator.
+- `adjudication_log_v0.1.csv`: disagreement-resolution records.
+- `irr_summary_v0.1.json`: Cohen's kappa summary by coded field.
+- `coverage_matrix_v0.1.csv`: explicit five-axis coverage representation.
+- `coverage_gaps_v0.1.csv`: low-support/zero-support diagnostic cells.
+- `bias_assessment_v0.1.csv`: structured risk-of-bias dimensions by record.
+- `evidence_quality_scores_v0.1.csv`: EQS component scores and aggregate value.
+- `sensitivity_analysis_v0.1.csv`: robustness checks under filtered subsets.

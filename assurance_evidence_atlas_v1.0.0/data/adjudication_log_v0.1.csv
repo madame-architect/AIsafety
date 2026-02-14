@@ -1,0 +1,5 @@
+item_id,field,label_a,label_b,final_label,resolution_rule
+S2-T3-01,assurance_function,requirements,evidence,requirements,tie_break_protocol_v0.1
+S2-T3-10,assurance_function,evidence,requirements,evidence,tie_break_protocol_v0.1
+S2-T3-31,assurance_function,audit,evidence,audit,tie_break_protocol_v0.1
+T-EGM-005,gaming_resistance,high,medium,high,tie_break_protocol_v0.1
