@@ -50,3 +50,20 @@ Future atlas versions must either reuse this protocol unchanged or declare drift
 ## Notes
 - Governance Tier Three inventory is taken verbatim (descriptions + ordering) from `deep-research-report (2).md`.
 - Tags are heuristic + manually corrected for obvious misclassifications; review low `tag_confidence` rows first.
+
+
+## Assurance stress-test pilot v0.1
+This release now includes a preregistered pilot package for methodology hardening:
+- `ASSURANCE_STRESS_TEST_PILOT_v0.1.md`
+- `data/search_execution_log_v0.1.csv`
+- `data/gold_set_stratified_v0.1.csv`
+- `data/dual_annotation_labels_v0.1.csv`
+- `data/adjudication_log_v0.1.csv`
+- `data/irr_summary_v0.1.json`
+- `data/coverage_matrix_v0.1.csv`
+- `data/coverage_gaps_v0.1.csv`
+- `data/bias_assessment_v0.1.csv`
+- `data/evidence_quality_scores_v0.1.csv`
+- `data/sensitivity_analysis_v0.1.csv`
+
+These additions provide: a fixed last-24-month technical search replay log, stratified dual-annotation scaffolding with IRR outputs, an explicit 5-axis coverage matrix with gap diagnostics, and quantitative evidence-quality/sensitivity artifacts.

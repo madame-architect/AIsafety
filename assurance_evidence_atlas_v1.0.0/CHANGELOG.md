@@ -11,3 +11,14 @@
 Known limitations:
 - URLs/DOIs are not fully normalized for governance artifacts because the authoritative draft stores citations as internal reference markers.
 - Some issuer normalizations remain heuristic (see rows with low tag_confidence).
+
+
+## v1.0.1-pilot (2026-02-14)
+
+Methodology hardening add-ons (no mutation to v1.0.0 core IDs):
+- Added preregistered stress-test pilot protocol: `ASSURANCE_STRESS_TEST_PILOT_v0.1.md`.
+- Added 24-month technical query execution log: `data/search_execution_log_v0.1.csv`.
+- Added stratified gold set + dual-annotation artifacts + adjudication + IRR summary.
+- Added explicit five-axis coverage matrix and coverage-gap diagnostics.
+- Added structured threat-of-bias table and Evidence Quality Score (EQS) export.
+- Added sensitivity-analysis table for key robustness scenarios.
