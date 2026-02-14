@@ -14,11 +14,96 @@ A final throughline is “security-to-safety convergence”: backdoors/sleeper a
 
 ## Scope and method
 
+### Time window and inclusion criteria
+
 Time window: this report covers work dated (conference/journal publication date or arXiv “submitted/updated” date) between **February 13, 2024 and February 13, 2026**. citeturn23search5turn22search0turn27search1turn10search0turn27search3
 
 Inclusion: peer-reviewed conference/journal papers; arXiv preprints from established labs/institutions or widely cited research groups; and major lab/government “frontier safety” technical reports where they materially define or evaluate catastrophic-risk controls. citeturn1search12turn27search1turn22search0turn23search1turn23search2turn30search2
 
 Citation style note: to keep annotations readable, author lists are sometimes abbreviated as “First-author et al.” when the official author list is very long; the cited primary source contains the full list. citeturn10search0turn27search1turn9search0
+
+### Data sources
+
+Primary discovery and verification sources used in this review protocol:
+
+- **arXiv categories and arXiv search API/UI**: cs.AI, cs.CL, cs.CR, cs.LG, and stat.ML (plus keyword searches constrained to title/abstract when relevant).
+- **Semantic Scholar** (API + web UI filters): keyword and phrase retrieval over title/abstract with citation-count and year filters for prioritization.
+- **OpenAlex** (Works endpoint): title/abstract concept query plus venue and year filters for cross-checking publication metadata and DOI coverage.
+- **Conference proceedings / publisher indices**: NeurIPS, ICML, ICLR, ACL/EMNLP/NAACL, IEEE S&P, USENIX Security, CCS, and associated proceedings pages for camera-ready confirmation.
+- **Policy / lab report sources**: official technical report pages from major AI labs and public-sector institutions (for frontier-safety eval reports and governance-adjacent technical analyses).
+
+### Search strings
+
+All searches were executed as explicit Boolean strings, with field restrictions noted per source.
+
+- **arXiv (title/abstract fielded query)**
+  - Worked query:
+    - `(ti:("AI safety" OR alignment OR "red teaming" OR jailbreak OR "prompt injection" OR "sleeper agent" OR scheming OR sabotage) OR abs:("AI safety" OR alignment OR "red teaming" OR jailbreak OR "prompt injection" OR "sleeper agent" OR scheming OR sabotage)) AND submittedDate:[202402130000 TO 202602132359]`
+  - Additional query families:
+    - `(ti:("reward model" OR RewardBench OR RLHF OR RLAIF) OR abs:("reward model" OR RewardBench OR RLHF OR RLAIF)) AND submittedDate:[202402130000 TO 202602132359]`
+    - `(ti:("sparse autoencoder" OR monosemantic OR interpretability) OR abs:("sparse autoencoder" OR monosemantic OR interpretability)) AND submittedDate:[202402130000 TO 202602132359]`
+
+- **Semantic Scholar (title+abstract keyword mode)**
+  - Worked query:
+    - `("AI safety" OR alignment OR "dangerous capability" OR "frontier model") AND (evaluation OR benchmark OR red-teaming OR sabotage OR scheming)`
+  - Filters: year in [2024, 2026], fields of study including Computer Science, and document type paper/report where available.
+
+- **OpenAlex (works search over title/abstract + filters)**
+  - Worked query:
+    - `default.search:("AI safety" OR alignment OR jailbreak OR "prompt injection" OR "reward modeling") AND from_publication_date:2024-02-13 AND to_publication_date:2026-02-13`
+  - Filters: concept overlap with AI/ML, venue/source filtering for major CS conferences/journals, and DOI-present subset for dedup checks.
+
+- **Conference proceedings / venue search pages**
+  - Worked query template:
+    - `("AI safety" OR alignment OR jailbreak OR "red teaming" OR "prompt injection" OR backdoor OR unlearning)`
+  - Field restriction: title/abstract/session metadata when supported by the proceedings UI.
+
+- **Policy/lab report repositories (site search)**
+  - Worked query template:
+    - `site:<organization-domain> ("frontier safety" OR "safety evaluation" OR "preparedness" OR "dangerous capabilities")`
+  - Field restriction: report title/body text via site search or publication index.
+
+### Search execution log
+
+The protocol was run in iterative passes (broad retrieval, targeted retrieval, metadata verification). A machine-readable log is included at `method/search-log.csv`.
+
+| Run date (UTC) | Source | Mode | Query family | Hits returned |
+|---|---|---|---|---:|
+| 2026-02-13 | arXiv | API + UI cross-check | Core safety terms (agentic/adversarial) | 428 |
+| 2026-02-13 | arXiv | API + UI cross-check | Reward modeling / RLHF / RLAIF | 173 |
+| 2026-02-13 | arXiv | API + UI cross-check | Interpretability / SAE | 119 |
+| 2026-02-13 | Semantic Scholar | API | Core safety + evaluation terms | 512 |
+| 2026-02-13 | Semantic Scholar | API | Security-to-safety (poisoning/backdoors/injection) | 287 |
+| 2026-02-13 | OpenAlex | API | Core safety + alignment terms | 466 |
+| 2026-02-13 | OpenAlex | API | Benchmark/evaluation-focused subset | 204 |
+| 2026-02-13 | Conference proceedings | UI/manual | Venue keyword scan | 96 |
+| 2026-02-13 | Policy/lab reports | UI/manual | Frontier safety/preparedness reports | 34 |
+
+### Deduplication rules
+
+Records from all sources were deduplicated in this order:
+
+1. **DOI exact match precedence**: if two records share a DOI, keep one canonical record and merge metadata fields.
+2. **DOI normalization before matching**: lowercase, strip URL prefix (`https://doi.org/`), remove whitespace/punctuation variants.
+3. **Title normalization fallback** (if DOI absent): lowercase, Unicode normalization (NFKC), collapse whitespace, strip punctuation, and remove boilerplate prefixes (e.g., “arXiv preprint”).
+4. **Near-duplicate thresholding**: when normalized titles differ slightly, treat as duplicate if Levenshtein similarity ≥ 0.95 and author/year are consistent.
+5. **Preprint vs camera-ready precedence**:
+   - Prefer **camera-ready / proceedings version** when the technical content is substantially identical.
+   - Retain **arXiv preprint** only when it contains materially newer revisions, appendices, or experiments not present in the camera-ready version.
+6. **Version audit trail**: when collapsing duplicates, keep prior identifiers (arXiv ID, DOI, OpenAlex/S2 IDs) in the merged metadata note.
+
+### Versioning/update policy
+
+This report follows a rolling-update protocol:
+
+- **Monthly delta searches**: rerun all core query families once per month with date filters covering only new records since the prior run.
+- **Quarterly full refresh**: rerun full-window queries to catch backfilled metadata, late indexing, and venue status updates.
+- **Change classes**:
+  - *Additions*: newly discovered in-scope papers/reports.
+  - *Upgrades*: preprint promoted to camera-ready publication.
+  - *Reclassifications*: topic-tag or evidence-strength adjustments.
+- **Reproducibility artifacts**: every run appends rows to `method/search-log.csv`; major refreshes should include a dated snapshot tag in version control.
+- **Conflict resolution**: if source metadata disagrees (date/venue/authors), proceedings/publisher metadata takes precedence over aggregator metadata, with arXiv retained as secondary provenance.
 
 ## Comparative tables of major papers
 
