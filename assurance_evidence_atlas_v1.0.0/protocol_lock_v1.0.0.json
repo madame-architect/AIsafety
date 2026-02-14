@@ -1,0 +1,13 @@
+{
+  "protocol_version": "1.0.0",
+  "atlas_version": "1.0.0",
+  "locked_on_utc": "2026-02-14T22:38:52Z",
+  "locked_files": {
+    "METHODOLOGY.md": {
+      "sha256": "19d65ac370c89abb11b627442141ba94f9c1678c0b2ee5cc9b0fbbff1692d655"
+    },
+    "data/study_selection_log_v1.0.0.csv": {
+      "sha256": "0c6228f21e6d0c205f23b207a47d37424c8c89af9434708a09c080617aa211b5"
+    }
+  }
+}
