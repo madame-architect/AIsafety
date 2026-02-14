@@ -1,0 +1,102 @@
+version: 1.0.0
+governance:
+  artifact_type:
+    - standard
+    - profile
+    - law
+    - regulation
+    - guidance
+    - report
+    - framework
+    - policy
+    - template
+    - portal
+    - comment
+    - dataset
+    - evaluation_suite
+    - code_of_practice
+  assurance_function:
+    - requirements
+    - evidence
+    - audit
+  domain:
+    - gpai
+    - evaluations
+    - monitoring
+    - incidents
+    - compute
+    - security
+    - documentation
+    - transparency
+    - bio
+    - cyber
+    - nuclear
+    - autonomy
+    - governance
+    - export_controls
+  verification_strength:
+    - self_attested
+    - mixed
+    - independently_verifiable
+  bindingness:
+    - binding
+    - voluntary
+    - draft
+  update_mode:
+    - static
+    - versioned
+    - living
+  access_level:
+    - public
+    - restricted
+    - regulated_access
+  status:
+    - active
+    - deprecated
+    - draft
+
+technical:
+  artifact_type:
+    - paper
+    - report
+    - benchmark
+    - dataset
+    - evaluation_suite
+    - tool
+    - policy_report
+  evaluation_setting:
+    - static
+    - interactive
+    - agentic
+    - tool_use
+    - mixed
+  threat_model:
+    - benign_user
+    - malicious_user
+    - evaluation_aware_model
+    - insider
+    - mixed
+  gaming_resistance:
+    - low
+    - medium
+    - high
+    - unknown
+  independent_evaluability:
+    - high
+    - medium
+    - low
+    - unknown
+  replicability_level:
+    - code+data_open
+    - code_open
+    - data_open
+    - partial
+    - none
+    - unknown
+  evidence_quality_ladder:
+    levels:
+      0: anecdotal_or_toy_demo
+      1: benchmark_only_easily_overfit
+      2: stress_tested_partial_reproducibility
+      3: independent_replication_or_multilab_package
+      4: deployment_like_adaptive_adversary_independent_verification
