@@ -49,6 +49,25 @@ Evidence Quality Score (EQS), 0–3 components:
 
 Export: `data/evidence_quality_scores_v0.1.csv`.
 
+## Reliability scoring
+Reliability scoring is derived from preregistered dual-annotation IRR outputs (`data/irr_summary_v0.1.json`) using stratum means:
+- Governance reliability: mean kappa(`artifact_type`, `assurance_function`, `verification_strength`).
+- Technical reliability: mean kappa(`threat_model`, `gaming_resistance`).
+
+Export: `data/reliability_scoring_v0.1.csv`.
+
+## Quantified evidence strength
+Evidence strength combines quality, reliability, and bias into a single calibrated index:
+
+`evidence_strength_index = clamp(0,1, 0.60*(eqs_score/3) + 0.25*reliability_score - 0.15*bias_risk_score)`
+
+Tiering:
+- strong (>= 0.70)
+- moderate (0.50-0.69)
+- preliminary (< 0.50)
+
+Export: `data/evidence_strength_quantification_v0.1.csv`.
+
 ## Coverage matrix requirement
 Five-axis matrix export: `data/coverage_matrix_v0.1.csv`
 - Governance claims

@@ -64,6 +64,8 @@ This release now includes a preregistered pilot package for methodology hardenin
 - `data/coverage_gaps_v0.1.csv`
 - `data/bias_assessment_v0.1.csv`
 - `data/evidence_quality_scores_v0.1.csv`
+- `data/reliability_scoring_v0.1.csv`
+- `data/evidence_strength_quantification_v0.1.csv`
 - `data/sensitivity_analysis_v0.1.csv`
 
-These additions provide: a fixed last-24-month technical search replay log, stratified dual-annotation scaffolding with IRR outputs, an explicit 5-axis coverage matrix with gap diagnostics, and quantitative evidence-quality/sensitivity artifacts.
+These additions provide: a fixed last-24-month technical search replay log, stratified dual-annotation scaffolding with IRR outputs, an explicit 5-axis coverage matrix with gap diagnostics, and quantitative bias/reliability/evidence-strength/sensitivity artifacts.
