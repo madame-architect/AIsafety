@@ -1,7 +1,16 @@
-# Methodology (Protocol v1.0.0)
+# Methodology (Protocol v1.1.0)
 
 ## Purpose
-This protocol documents how records were identified, screened, and linked into the Assurance Evidence Atlas v1.0.0 so future versions can be compared for methodological drift.
+This protocol documents how records were identified, screened, and linked into the Assurance Evidence Atlas so future versions can be compared for methodological drift.
+
+## Pre-registered protocol freeze
+Protocol v1.1.0 hard-freezes the following before scoring or synthesis:
+- Search sources, query IDs, and exact query strings.
+- Date/language limits.
+- Inclusion/exclusion criteria and reason-code semantics.
+- Scoring formulas for bias, reliability, sensitivity, and evidence strength.
+
+Any future change must be recorded as declared drift in release notes and a new lock manifest.
 
 ## Search databases
 Primary databases/search engines used for protocolized retrieval:
@@ -68,8 +77,58 @@ A record was included when all of the following held:
 5. Link included records to stable IDs: `S2-T3-*` (governance artifacts) or `paper_id` (technical bibliography).
 6. Record all include/exclude outcomes in `data/study_selection_log_v1.0.0.csv`.
 
+## Bias scoring
+Bias is scored on a 0-3 ordinal scale (0 low risk, 3 high risk), then normalized to a 0-1 risk index.
+- Governance axes: self-attestation bias, incentive alignment bias, regulatory-capture risk, publication bias.
+- Technical axes: benchmark overfitting bias, evaluation leakage bias, distribution shift bias, obfuscation risk.
+
+Formula:
+`bias_risk_score = mean(non-empty bias axis scores) / 3`
+
+Export: `data/bias_assessment_v0.1.csv`
+
+## Reliability scoring
+Reliability scoring uses inter-rater reliability (Cohen's kappa) from dual annotation.
+- Governance reliability is the mean kappa of: `artifact_type`, `assurance_function`, `verification_strength`.
+- Technical reliability is the mean kappa of: `threat_model`, `gaming_resistance`.
+
+Formula:
+`reliability_score = mean(relevant kappas)`
+
+Exports:
+- Raw IRR summary: `data/irr_summary_v0.1.json`
+- Record-level reliability assignment: `data/reliability_scoring_v0.1.csv`
+
+## Sensitivity analysis
+Sensitivity analysis evaluates robustness under predefined filtering scenarios.
+Scenarios:
+- Exclude self-attested governance artifacts.
+- Independently-verifiable-only governance subset.
+- Exclude evaluation-awareness-tagged technical records.
+- DOI-only technical subset (replication proxy).
+
+Export: `data/sensitivity_analysis_v0.1.csv`
+
+## Quantified evidence strength
+Evidence strength is computed per record from quality, reliability, and bias.
+
+Inputs:
+- `eqs_score` from Evidence Quality Score export (`data/evidence_quality_scores_v0.1.csv`)
+- `bias_risk_score` from bias scoring
+- `reliability_score` from reliability scoring
+
+Formula:
+`evidence_strength_index = clamp(0,1, 0.60*(eqs_score/3) + 0.25*reliability_score - 0.15*bias_risk_score)`
+
+Tier mapping:
+- `strong`: index >= 0.70
+- `moderate`: 0.50 <= index < 0.70
+- `preliminary`: index < 0.50
+
+Export: `data/evidence_strength_quantification_v0.1.csv`
+
 ## Protocol lock (drift control)
-This methodology is frozen as **Protocol v1.0.0**. Any future atlas release must:
+This methodology is frozen as **Protocol v1.1.0**. Any future atlas release must:
 - Preserve this file and produce a new protocol lock manifest for that release.
-- Explicitly document any query, source, or criterion change as drift in release notes.
+- Explicitly document any query, source, criterion, or scoring-formula change as drift in release notes.
 - Keep reason-code semantics stable or provide a migration table.

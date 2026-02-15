@@ -13,6 +13,17 @@ Known limitations:
 - Some issuer normalizations remain heuristic (see rows with low tag_confidence).
 
 
+
+## v1.0.2-methodology (2026-02-15)
+
+Protocol freeze + methodology upgrades (no mutation to v1.0.0 core IDs):
+- Upgraded `METHODOLOGY.md` to Protocol v1.1.0 with explicit preregistration + drift policy.
+- Added explicit bias scoring model and normalized bias-risk formula.
+- Added reliability scoring model tied to Cohen's kappa strata means.
+- Added quantified evidence-strength index and tier mapping.
+- Added reliability and evidence-strength exports (`data/reliability_scoring_v0.1.csv`, `data/evidence_strength_quantification_v0.1.csv`).
+- Updated lock manifest to include protocol-critical scoring artifacts.
+
 ## v1.0.1-pilot (2026-02-14)
 
 Methodology hardening add-ons (no mutation to v1.0.0 core IDs):

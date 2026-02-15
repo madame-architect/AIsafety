@@ -1,13 +1,31 @@
 {
-  "protocol_version": "1.0.0",
+  "protocol_version": "1.1.0",
   "atlas_version": "1.0.0",
-  "locked_on_utc": "2026-02-14T22:38:52Z",
+  "locked_on_utc": "2026-02-15T00:00:00Z",
   "locked_files": {
     "METHODOLOGY.md": {
-      "sha256": "19d65ac370c89abb11b627442141ba94f9c1678c0b2ee5cc9b0fbbff1692d655"
+      "sha256": "9ce948d2c74d7c53b6bb2f9ba3a78ffd495a1e6627810dd05ca9f32c864696e4"
     },
     "data/study_selection_log_v1.0.0.csv": {
       "sha256": "0c6228f21e6d0c205f23b207a47d37424c8c89af9434708a09c080617aa211b5"
+    },
+    "data/bias_assessment_v0.1.csv": {
+      "sha256": "6a03b9e945f4dc361571eb27848b9f3d54d09e1b81ebde6aad7131c94d3d030d"
+    },
+    "data/irr_summary_v0.1.json": {
+      "sha256": "f75ec1d3838d8b3dd1006d888e2fd0a3e70cb6cd1da2d07db62d2a068d869852"
+    },
+    "data/evidence_quality_scores_v0.1.csv": {
+      "sha256": "cc54e9e070c6635c08952e7aa46313266aecbfb3c78c0cf64c62414704db3f46"
+    },
+    "data/reliability_scoring_v0.1.csv": {
+      "sha256": "de99748f7543a126d72b48a0a1ef0e5a61be9a801dbb8b1facc627c799630cd1"
+    },
+    "data/evidence_strength_quantification_v0.1.csv": {
+      "sha256": "8761f06bcf679af0fd3329a8051b63e09c9de1a1b8e9698ab9d247d91f226836"
+    },
+    "data/sensitivity_analysis_v0.1.csv": {
+      "sha256": "78ba05c34436da96ef1de40124f5fe4fd9a965d5e57ca3f9182f4d622f431b2c"
     }
   }
 }
