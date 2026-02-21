@@ -9,7 +9,12 @@ This repository contains research outputs, methods logs, and evidence-atlas deli
 This work is **not finalized or published**. Materials may be incomplete, revised, or replaced.
 Use all contents at your own risk.
 
-## What is in this repository
+## What's in this Repository
+
+- `ai-safety-Literature_Review.md` — the main narrative literature review draft.
+- `ai-safety-literature_review.bib` — the bibliography database used to track and cite sources.
+- `LICENSE` — licensing terms for materials in this repository.
+- `README.md` — repository overview, status, and audience guidance.
 
 
 ## Intended audience
