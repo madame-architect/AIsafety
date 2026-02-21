@@ -1,4 +1,4 @@
-# AI Safety Literature Review + Annotated Bibliography 
+# AI Safety Literature Review + Annotated Bibliography (Consolidated)
 
 ## What this artifact is
 
@@ -155,10 +155,10 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Annotation:** Discusses monitorability issues for reasoning traces and implications for evaluation and control strategies.
 - **Safety relevance:** Addresses a key evaluation/oversight question: what evidence is available for auditing model reasoning.
 - **Limitations / open questions:** Largely conceptual; operational monitorability standards and validated measurement remain limited.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** deployment; post-deployment
 - **Assurance function:** auditing; monitoring; eval; reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** monitoring
 - **Provenance:** GOV-CORE-38 (deep-research-report (1).md)
 
@@ -176,10 +176,10 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Annotation:** Provides an access taxonomy and “Access Levels” for external evaluators to run dangerous-capability tests securely.
 - **Safety relevance:** Directly targets the bottleneck of independent evaluation under confidentiality and security constraints.
 - **Limitations / open questions:** Access levels may still be insufficient for deep audits; governance of evaluator trust remains unresolved.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** deployment
 - **Assurance function:** auditing; eval
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** evaluation/benchmarks
 - **Provenance:** GOV-CORE-11 (deep-research-report (1).md)
 
@@ -196,7 +196,7 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Safety relevance:** Sharpens consensus around “non-expert uplift” and “autonomous cyberattack” threshold logic.
 - **Limitations / open questions:** Cyber is highly dual-use and fast-moving; maintaining valid threat models and benchmarks is difficult.
 - **Risk domain:** cyber; autonomy
-- **Lifecycle stage:** —
+- **Lifecycle stage:** unknown
 - **Assurance function:** eval; mitigation; reporting
 - **Threat model:** non-expert uplift; expert uplift
 - **Method area:** security
@@ -207,14 +207,14 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Creators:** Charlotte Stix et al
 - **Venue/body:** arXiv
 - **Year:** 2025
-- **Type:** policy report/guidance
-- **Evidence strength:** conceptual (maturity: C)
+- **Type:** paper
+- **Evidence strength:** conceptual (maturity: B)
 - **ID / locator(s):** DOI: 10.48550/arXiv.2504.12170; arXiv: 2504.12170
 - **Access:** open
 - **Annotation:** Argues internal deployment is a distinct risk surface and proposes governance concepts and scenarios for it.
 - **Safety relevance:** Targets early high-leverage contexts (internal tools, R&D automation) before public deployment.
 - **Limitations / open questions:** Limited empirical grounding; hard to validate controls without privileged internal operational data.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** deployment
 - **Assurance function:** reporting
 - **Threat model:** insider
@@ -233,10 +233,10 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Annotation:** Specifies what information should be captured in mandatory AI incident reporting (fields + structure).
 - **Safety relevance:** Provides implementable building blocks for regulators designing incident reporting rules.
 - **Limitations / open questions:** Field taxonomy may evolve; under-reporting and inconsistent severity calibration remain likely failure modes.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** post-deployment
 - **Assurance function:** reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** governance
 - **Provenance:** GOV-CORE-21 (deep-research-report (1).md)
 
@@ -252,10 +252,10 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Annotation:** Argues TEVV guidance for advanced general-purpose models needs distinct treatment and domain-aware evaluation practice.
 - **Safety relevance:** Connects frontier framework practice to standards-making in testing/evaluation/verification/validation.
 - **Limitations / open questions:** Advisory input, not a binding standard; hard questions remain about measurable thresholds and disclosure.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** deployment
 - **Assurance function:** eval; reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** evaluation/benchmarks; governance
 - **Provenance:** GOV-CORE-19 (deep-research-report (1).md)
 
@@ -273,10 +273,10 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Annotation:** Applies a risk framework to identify emerging frontier capabilities and set iterative mitigation review mechanisms / Example corporate risk assessment framing; governance gap is independent auditing and applicability beyond one firm.
 - **Safety relevance:** Illustrates how major infrastructure providers translate frontier risk language into internal governance practice.
 - **Limitations / open questions:** Limited external auditability; effectiveness depends on internal measurement quality and disclosure incentives.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** post-deployment
 - **Assurance function:** auditing; eval; mitigation; reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** evaluation/benchmarks; governance
 - **Provenance:** GOV-CORE-45, S2‑T2‑45, S2‑T3‑54 (deep-research-report (1).md, deep-research-report (2).md)
 
@@ -295,7 +295,7 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Risk domain:** cyber; CBRN; autonomy
 - **Lifecycle stage:** deployment
 - **Assurance function:** eval; reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** evaluation/benchmarks; governance
 - **Provenance:** GOV-CORE-29, S2‑T2‑19 (deep-research-report (1).md, deep-research-report (2).md)
 
@@ -311,10 +311,10 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Annotation:** Describes monitoring and process controls for emerging high-risk capabilities aligned with frontier commitments.
 - **Safety relevance:** Contributes concrete governance process design across capability monitoring, assessment, and mitigation.
 - **Limitations / open questions:** Corporate self-governance; auditability and independent validation depend on access and assessor independence.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** post-deployment
 - **Assurance function:** auditing; monitoring; mitigation; reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** governance
 - **Provenance:** GOV-CORE-44 (deep-research-report (1).md)
 
@@ -330,10 +330,10 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Annotation:** Catalogs emerging mitigations and discusses how to assess mitigation effectiveness across severe-risk domains / Taxonomizes model/system mitigations; explicitly brackets out organizational governance/security culture, which are critical for real assurance.
 - **Safety relevance:** Moves beyond “do evals” to “validate safeguards,” reducing pure-evaluation theater.
 - **Limitations / open questions:** Explicitly excludes organizational security/culture; mitigation evaluation can be gamed or overfit to tests.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** deployment
 - **Assurance function:** auditing; eval; mitigation; reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Provenance:** GOV-CORE-31, S2‑T2‑21 (deep-research-report (1).md, deep-research-report (2).md)
 
 #### `GD2025FrontierSafetyFramework` — Frontier Safety Framework v3.0 (2025)
@@ -349,10 +349,10 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Annotation:** Strengthens FSF protocols (CCLs, mitigations, security considerations) as frontier capabilities advance.
 - **Safety relevance:** Represents a mature “living framework” iteration and is widely referenced in policy discussions.
 - **Limitations / open questions:** Core uncertainty remains: translating CCL eval results into calibrated real-world severe-harm probabilities.
-- **Risk domain:** —
-- **Lifecycle stage:** —
+- **Risk domain:** unknown
+- **Lifecycle stage:** unknown
 - **Assurance function:** mitigation; reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** governance
 - **Provenance:** GOV-CORE-43 (deep-research-report (1).md)
 
@@ -368,10 +368,10 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Annotation:** Implements a live reporting interface for organizations to publicly disclose risk management practices.
 - **Safety relevance:** Creates a de facto reporting standard and a comparability mechanism at international scale.
 - **Limitations / open questions:** Voluntary reporting can incentivize selective disclosure; no built-in verification without audits.
-- **Risk domain:** —
-- **Lifecycle stage:** —
+- **Risk domain:** unknown
+- **Lifecycle stage:** unknown
 - **Assurance function:** auditing; reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** governance
 - **Provenance:** GOV-CORE-23 (deep-research-report (1).md)
 
@@ -387,10 +387,10 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Annotation:** Synthesizes submitted reports under HAIP reporting and surfaces emergent patterns in developer risk management / Provides comparative perspective on risk management practices and reporting; challenge is translating reported practices into measurable safety outcomes / Adds detailed policy framing; still depends on verifiability of reported practice.
 - **Safety relevance:** Provides empirical input for policymakers on what firms claim to do and where practices diverge.
 - **Limitations / open questions:** Based on self-reported submissions; comparability and depth are constrained by disclosure incentives.
-- **Risk domain:** —
-- **Lifecycle stage:** —
+- **Risk domain:** unknown
+- **Lifecycle stage:** unknown
 - **Assurance function:** reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Provenance:** GOV-CORE-24, S2‑T2‑11, S2‑T2‑66, S2‑T3‑14, S2‑T3‑15, S2‑T3‑78 (deep-research-report (1).md, deep-research-report (2).md)
 
 ### Compute governance
@@ -408,10 +408,10 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Annotation:** Defines tracked risk categories, capability thresholds, evaluation processes, and safeguard expectations for frontier deployment decisions.
 - **Safety relevance:** A widely referenced template for preparedness-style risk gating and structured escalation.
 - **Limitations / open questions:** Policy is not proof; enforcement depends on internal governance and quality of third‑party stress testing.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** deployment
 - **Assurance function:** reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** governance
 - **Provenance:** GOV-CORE-39 (deep-research-report (1).md)
 
@@ -427,10 +427,10 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Annotation:** Refines capability thresholds and clarifies when safeguards beyond ASL-3 are required.
 - **Safety relevance:** Demonstrates iterative policy maintenance tied to evolving threat models and capability expectations.
 - **Limitations / open questions:** “Minor updates” do not resolve core measurement and access problems; thresholds remain judgement-heavy.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** pretraining
 - **Assurance function:** reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** governance
 - **Provenance:** GOV-CORE-41 (deep-research-report (1).md)
 
@@ -446,10 +446,10 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Annotation:** Explains why frontier frameworks focus on select severe/irreversible risk domains and how thresholds are chosen / Motivates narrow “severe/irreversible” risk focus and thresholding; hard open question: setting thresholds and acceptable tradeoffs empirically.
 - **Safety relevance:** Provides shared logic for scoping “frontier” risks and setting pause/restrict triggers.
 - **Limitations / open questions:** Lacks standardized quantitative definitions and leaves open “acceptable risk-benefit” criteria.
-- **Risk domain:** —
-- **Lifecycle stage:** —
+- **Risk domain:** unknown
+- **Lifecycle stage:** unknown
 - **Assurance function:** reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** governance
 - **Provenance:** GOV-CORE-30, S2‑T2‑20 (deep-research-report (1).md, deep-research-report (2).md)
 
@@ -465,7 +465,7 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Annotation:** Reports expert and public views on threshold types, purposes, and who should set them / Empirical input on threshold governance; survey evidence is not itself a standard and may have selection bias.
 - **Safety relevance:** Provides structured evidence to inform policy choices about thresholds beyond ad hoc lab practice.
 - **Limitations / open questions:** Opinion data does not resolve measurement; disagreements persist on compute’s role and breach responses.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** pretraining
 - **Assurance function:** reporting
 - **Threat model:** expert uplift
@@ -486,10 +486,10 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Annotation:** Outlines when and how third parties can confirm safety capability claims or mitigation efficacy securely.
 - **Safety relevance:** Defines a workable path from internal evaluation to external confidence-building mechanisms.
 - **Limitations / open questions:** “Third-party” still constrained by access, NDAs, and methodological independence requirements.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** deployment
 - **Assurance function:** eval; mitigation; reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** evaluation/benchmarks
 - **Provenance:** GOV-CORE-32 (deep-research-report (1).md)
 
@@ -505,10 +505,10 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Annotation:** Surveys compute/risk/capability/outcome thresholds and tradeoffs for frontier governance triggers / Public framing of threshold types; translating conceptual thresholds into governance triggers remains contested.
 - **Safety relevance:** Operationalizes “when to intensify controls” as a core governance mechanism.
 - **Limitations / open questions:** Threshold breach detection and multi-threshold coordination remain unresolved research/practice problems.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** pretraining
 - **Assurance function:** reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** governance
 - **Provenance:** GOV-CORE-34, S2‑T2‑25 (deep-research-report (1).md, deep-research-report (2).md)
 
@@ -524,10 +524,10 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Annotation:** Proposes a harmonized schema to report AI incidents across jurisdictions and sectors for comparability.
 - **Safety relevance:** Enables aggregation and learning from failures—precondition for evidence-based regulation and assurance.
 - **Limitations / open questions:** Success depends on adoption, reporting incentives, and managing confidentiality and reputational risk.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** post-deployment
 - **Assurance function:** auditing; reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** governance
 - **Provenance:** GOV-CORE-20 (deep-research-report (1).md)
 
@@ -543,10 +543,10 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Annotation:** Defines GenAI-specific risk considerations and action guidance as a profile aligned to the AI RMF / Operationalizes risk management for GenAI deployments against the AI RMF; governance‑friendly control language but still depends on measurement quality and sector tailoring.
 - **Safety relevance:** Provides a shared vocabulary and control ideas that can be used in audits and assurance cases.
 - **Limitations / open questions:** Voluntary and high-level; interpretive flexibility can enable superficial compliance without robust evaluation.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** deployment
 - **Assurance function:** auditing; reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** governance
 - **Provenance:** GOV-CORE-16, S2‑T2‑01, S2‑T3‑01 (deep-research-report (1).md, deep-research-report (2).md)
 
@@ -564,7 +564,7 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Limitations / open questions:** Warns of privacy/economic centralization risks; readiness varies and requires significant implementation research.
 - **Risk domain:** privacy
 - **Lifecycle stage:** pretraining; deployment
-- **Assurance function:** —
+- **Assurance function:** unknown
 - **Threat model:** supply chain
 - **Method area:** governance
 - **Provenance:** GOV-CORE-25 (deep-research-report (1).md)
@@ -581,10 +581,10 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Annotation:** Documents early consensus practices across eval lifecycle: design, implementation, interpretation, disclosure.
 - **Safety relevance:** Establishes baseline process norms for evaluators and labs to improve rigor and reproducibility.
 - **Limitations / open questions:** “Early” guidance; does not guarantee robustness under strategic adaptation or hidden capability elicitation.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** deployment
 - **Assurance function:** eval; reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** evaluation/benchmarks; governance
 - **Provenance:** GOV-CORE-36 (deep-research-report (1).md)
 
@@ -600,10 +600,10 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Annotation:** Summarizes emerging baseline security practices for securing frontier AI systems and development processes.
 - **Safety relevance:** Links security posture to safety by reducing theft/misuse and enabling credible evaluation confidentiality.
 - **Limitations / open questions:** High-level consensus; does not specify testable assurance criteria for “sufficient” security maturity.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** deployment
 - **Assurance function:** auditing; eval; reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** security; governance
 - **Provenance:** GOV-CORE-37 (deep-research-report (1).md)
 
@@ -619,10 +619,10 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Annotation:** Documents voluntary commitments by frontier developers to publish frameworks, set thresholds, evaluate, and mitigate severe risks.
 - **Safety relevance:** Acts as a coordination focal point that accelerated publication of framework artifacts and evaluation norms.
 - **Limitations / open questions:** Voluntary; compliance is hard to verify without standardized access, audits, and enforceable reporting.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** deployment
 - **Assurance function:** auditing; mitigation; reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Provenance:** GOV-CORE-18 (deep-research-report (1).md)
 
 #### `GD2024FrontierSafetyFramework` — Frontier Safety Framework v1.0 (2024)
@@ -640,7 +640,7 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Risk domain:** cyber; autonomy
 - **Lifecycle stage:** deployment
 - **Assurance function:** mitigation; reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** governance
 - **Provenance:** GOV-CORE-42 (deep-research-report (1).md)
 
@@ -656,10 +656,10 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Annotation:** Recommends principles for measuring and reporting training compute to support compute-threshold proposals.
 - **Safety relevance:** Standardized measurement is prerequisite to any compute-triggered governance and auditability.
 - **Limitations / open questions:** Compute is an imperfect proxy for risk; reporting standards still allow strategic framing and loopholes.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** pretraining
 - **Assurance function:** auditing; reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** compute governance; governance
 - **Provenance:** GOV-CORE-26 (deep-research-report (1).md)
 
@@ -676,8 +676,8 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Annotation:** Draft guidance for managing misuse risk of dual-use foundation models with concrete security and safeguard themes.
 - **Safety relevance:** Anchors “misuse risk” governance in a standards-oriented roadmap that can inform testing and mitigations.
 - **Limitations / open questions:** Draft status; lacks field-wide standards for measuring uplift and “sufficient” safeguard robustness.
-- **Risk domain:** —
-- **Lifecycle stage:** —
+- **Risk domain:** unknown
+- **Lifecycle stage:** unknown
 - **Assurance function:** eval; mitigation; reporting
 - **Threat model:** non-expert uplift
 - **Method area:** evaluation/benchmarks
@@ -695,10 +695,10 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Annotation:** Requires U.S. agencies to implement AI governance and minimum risk management practices for safety/rights-impacting uses.
 - **Safety relevance:** Operationalizes governance requirements (roles, inventories, controls) at scale across federal systems.
 - **Limitations / open questions:** Applies to federal use; does not directly solve frontier-model evaluation science or third‑party access.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** deployment
 - **Assurance function:** eval; reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** governance
 - **Provenance:** GOV-CORE-15 (deep-research-report (1).md)
 
@@ -714,10 +714,10 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Annotation:** Signals early international movement toward monitoring and comparability for “advanced AI” governance.
 - **Safety relevance:** Establishes an institutional pathway from voluntary codes to structured monitoring regimes.
 - **Limitations / open questions:** Monitoring remains voluntary and dependent on “reporting honesty” and shared definitions.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** post-deployment
 - **Assurance function:** monitoring; reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** monitoring
 - **Provenance:** GOV-CORE-22 (deep-research-report (1).md)
 
@@ -733,7 +733,7 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Annotation:** Defines a shared taxonomy and terminology for pre-deployment safety evaluations to reduce ecosystem confusion.
 - **Safety relevance:** Enables governance that compares like-with-like across evaluations and organizations.
 - **Limitations / open questions:** High-level taxonomy; does not itself solve validity, gaming resistance, or calibration of evaluation cutoffs.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** deployment
 - **Assurance function:** eval; reporting
 - **Threat model:** adaptive attacker
@@ -752,10 +752,10 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Annotation:** Establishes a binding risk-based regulatory framework that elevates governance, transparency, and accountability requirements.
 - **Safety relevance:** Creates a compliance anchor likely to incorporate frontier evaluation and documentation regimes.
 - **Limitations / open questions:** Implementation detail and measurement standards remain contested; efficacy depends on enforcement and technical TEVV capacity.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** deployment
 - **Assurance function:** reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** governance
 - **Provenance:** GOV-CORE-14 (deep-research-report (1).md)
 
@@ -772,10 +772,10 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Annotation:** Updates RSP with AI Safety Levels, capability thresholds, and paired deployment/security standards.
 - **Safety relevance:** Provides concrete “scale only with safeguards” logic and a structured pause/hold governance mechanism.
 - **Limitations / open questions:** Still relies on internal evaluation and security claims; verification and independent replication remain hard.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** pretraining; deployment
 - **Assurance function:** reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** governance
 - **Provenance:** GOV-CORE-40, S2‑T3‑42 (deep-research-report (1).md, deep-research-report (2).md)
 
@@ -791,10 +791,10 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Annotation:** Analyzes how training-compute thresholds function in regulation (scoping, triggers, administrative feasibility).
 - **Safety relevance:** Clarifies when compute thresholds are useful (screening) vs dangerous (over- or under-inclusion).
 - **Limitations / open questions:** Performance-to-risk mapping is nonstationary; adversaries and labs can “structure” around thresholds.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** pretraining
 - **Assurance function:** reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** interpretability; compute governance; governance
 - **Provenance:** GOV-CORE-27 (deep-research-report (1).md)
 
@@ -805,8 +805,8 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Creators:** Sung Une Lee et al
 - **Venue/body:** arXiv
 - **Year:** 2026
-- **Type:** policy report/guidance
-- **Evidence strength:** conceptual (maturity: C)
+- **Type:** paper
+- **Evidence strength:** conceptual (maturity: B)
 - **ID / locator(s):** DOI: 10.48550/arXiv.2601.22773; arXiv: 2601.22773
 - **Access:** open
 - **Annotation:** Taxonomizes AI-specific claim/argument/evidence types and proposes reusable safety-case templates for generative/agentic systems.
@@ -815,7 +815,7 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Risk domain:** autonomy
 - **Lifecycle stage:** deployment
 - **Assurance function:** auditing; reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Provenance:** GOV-CORE-09 (deep-research-report (1).md)
 
 #### `Brundage2026FrontierAiAuditing` — Frontier AI Auditing: Toward Rigorous Third-Party Assessment of Frontier AI Systems (2026)
@@ -823,17 +823,17 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Creators:** Miles Brundage et al
 - **Venue/body:** arXiv
 - **Year:** 2026
-- **Type:** policy report/guidance
-- **Evidence strength:** conceptual (maturity: C)
+- **Type:** paper
+- **Evidence strength:** conceptual (maturity: B)
 - **ID / locator(s):** DOI: 10.48550/arXiv.2601.11699; arXiv: 2601.11699
 - **Access:** open
 - **Annotation:** Proposes “frontier AI auditing” and a tiered AI Assurance Levels scheme for legible third‑party verification.
 - **Safety relevance:** Defines practical audit maturity targets and access expectations for justified trust in frontier safety claims.
 - **Limitations / open questions:** Assumes availability of deep secure access and qualified auditors; institutional scaling and incentives remain open.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** pretraining; post-deployment
 - **Assurance function:** auditing; eval; reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** evaluation/benchmarks
 - **Provenance:** GOV-CORE-01 (deep-research-report (1).md)
 
@@ -849,8 +849,8 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Annotation:** Applies safety-case thinking to frontier AI and interrogates how to quantify or communicate confidence in top claims.
 - **Safety relevance:** Introduces reproducibility ideas (e.g., structured expert elicitation) for confidence in safety arguments.
 - **Limitations / open questions:** Quantification remains fragile; dependence on expert judgment and unclear priors persists.
-- **Risk domain:** —
-- **Lifecycle stage:** —
+- **Risk domain:** unknown
+- **Lifecycle stage:** unknown
 - **Assurance function:** auditing
 - **Threat model:** expert uplift
 - **Provenance:** GOV-CORE-03 (deep-research-report (1).md)
@@ -867,7 +867,7 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Annotation:** Argues safety cases can scale governance by structuring writer/red‑team/decision‑maker interactions across lifecycle stages.
 - **Safety relevance:** Bridges Seoul-style commitments to a concrete artifact that can be reviewed internally or externally.
 - **Limitations / open questions:** Needs rigorous red teaming and evidence generation; risks of “paper compliance” remain.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** deployment
 - **Assurance function:** auditing
 - **Threat model:** adaptive attacker
@@ -885,10 +885,10 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Annotation:** Proposes a whole-system “Balanced, Integrated, Grounded” argument structure for AI safety cases.
 - **Safety relevance:** Emphasizes context, traceability, and proportional assurance for emergent hazardous behaviors.
 - **Limitations / open questions:** High-level structure; requires domain-specific instantiations and evidence pipelines to be decision-grade.
-- **Risk domain:** —
-- **Lifecycle stage:** —
+- **Risk domain:** unknown
+- **Lifecycle stage:** unknown
 - **Assurance function:** auditing
-- **Threat model:** —
+- **Threat model:** unknown
 - **Provenance:** GOV-CORE-10 (deep-research-report (1).md)
 
 #### `Homewood2025ThirdpartyComplianceReviews` — Third-party compliance reviews for frontier AI safety frameworks (2025)
@@ -904,9 +904,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Safety relevance:** Offers implementable options for reviewer choice, evidence sources, disclosure, and review cadence.
 - **Limitations / open questions:** Review efficacy hinges on access, evaluator competence, and protecting sensitive information from leakage.
 - **Risk domain:** privacy
-- **Lifecycle stage:** —
+- **Lifecycle stage:** unknown
 - **Assurance function:** auditing; reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** governance
 - **Provenance:** GOV-CORE-02 (deep-research-report (1).md)
 
@@ -922,10 +922,10 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Annotation:** Argues for defense-in-depth “minimize trust in AI” architectures and guarded, assured components where possible.
 - **Safety relevance:** Provides a safety-critical assurance lens to structure layered controls around opaque ML components.
 - **Limitations / open questions:** Many real systems require AI-based perception, limiting how far “non-AI guards” can go.
-- **Risk domain:** —
-- **Lifecycle stage:** —
+- **Risk domain:** unknown
+- **Lifecycle stage:** unknown
 - **Assurance function:** auditing; mitigation
-- **Threat model:** —
+- **Threat model:** unknown
 - **Provenance:** GOV-CORE-04 (deep-research-report (1).md)
 
 #### `Crlan2024DynamicSafetyCases` — Dynamic safety cases for frontier AI (2024)
@@ -940,16 +940,16 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Annotation:** Proposes a Dynamic Safety Case Management System to keep safety cases synchronized with system changes over time.
 - **Safety relevance:** Operationalizes continuous assurance—critical for iterated deployment and rapidly changing models.
 - **Limitations / open questions:** Automation still depends on high-quality measurable safety performance indicators and change-impact logic.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** deployment; post-deployment
 - **Assurance function:** auditing
-- **Threat model:** —
+- **Threat model:** unknown
 - **Provenance:** GOV-CORE-07 (deep-research-report (1).md)
 
 #### `Schuett2024FrontierAiDevelopers` — Frontier AI developers need an internal audit function (2024)
 
 - **Creators:** Jonas Schuett
-- **Venue/body:** —
+- **Venue/body:** unknown
 - **Year:** 2024
 - **Type:** paper
 - **Evidence strength:** empirical_small (maturity: B)
@@ -958,10 +958,10 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Annotation:** Makes the case that frontier labs should adopt an independent internal audit line reporting to the board.
 - **Safety relevance:** Imports mature governance practice (Three Lines / combined assurance) to reduce blind spots and “grading own homework.”
 - **Limitations / open questions:** Audit can be captured or under-resourced; auditor technical capability and access are core limiting factors.
-- **Risk domain:** —
-- **Lifecycle stage:** —
+- **Risk domain:** unknown
+- **Lifecycle stage:** unknown
 - **Assurance function:** auditing; reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Provenance:** GOV-CORE-13 (deep-research-report (1).md)
 
 ### Regulation and standards
@@ -981,7 +981,7 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Risk domain:** cyber
 - **Lifecycle stage:** post-deployment
 - **Assurance function:** auditing; eval
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** security
 - **Provenance:** GOV-CORE-06 (deep-research-report (1).md)
 
@@ -997,10 +997,10 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Annotation:** Defines frontier AI safety cases and explains how they complement organization-level frontier safety frameworks.
 - **Safety relevance:** Clarifies objectives/arguments/evidence/scope components needed for deploy/no-deploy decisions.
 - **Limitations / open questions:** Relies on strong evaluation evidence and clear risk tolerances that are not yet standardized.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** deployment
 - **Assurance function:** auditing; reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Provenance:** GOV-CORE-05 (deep-research-report (1).md)
 
 ## 3.2 Tier 1 — Technical safety core (105 references)
@@ -1022,7 +1022,7 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Risk domain:** autonomy
 - **Lifecycle stage:** deployment; post-deployment
 - **Assurance function:** auditing; monitoring; eval; reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** evaluation/benchmarks; monitoring
 - **Provenance:** TECH-024 (deep-research-report.md)
 
@@ -1041,7 +1041,7 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Risk domain:** open-weights
 - **Lifecycle stage:** pretraining; deployment
 - **Assurance function:** eval
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** evaluation/benchmarks
 - **Provenance:** TECH-017 (deep-research-report.md)
 
@@ -1057,7 +1057,7 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Annotation:** Shows models can sandbag and sometimes bypass CoT monitoring without hints, though not reliably; analyzes failure reasons.
 - **Safety relevance:** Directly undermines naive governance reliance on evaluations and monitors; motivates multi‑layered assurance and anti‑gaming measures.
 - **Limitations / open questions:** Success rates are limited in current models, but the existence of the attack surface suggests worsening risk with capability gains.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** deployment; post-deployment
 - **Assurance function:** auditing; monitoring; eval
 - **Threat model:** adaptive attacker
@@ -1077,9 +1077,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Annotation:** In controlled multi-round debates with 900 participants, finds GPT-4 can be more persuasive than humans, especially when given demographic information enabling personalization. Significance: empirically grounds a key misuse pathway—scalable persuasion/microtargeting—relevant to manipulation risks and governance constraints.
 - **Limitations / open questions:** Real-world persuasion depends on distribution, attention, platform dynamics, and countermeasures; translating lab effect sizes to societal impact remains complex.
 - **Risk domain:** persuasion
-- **Lifecycle stage:** —
+- **Lifecycle stage:** unknown
 - **Assurance function:** eval
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** evaluation/benchmarks
 - **Provenance:** TECH-066 (deep-research-report.md)
 
@@ -1098,7 +1098,7 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Risk domain:** open-weights
 - **Lifecycle stage:** deployment; post-deployment
 - **Assurance function:** monitoring; eval
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** interpretability; evaluation/benchmarks
 - **Provenance:** TECH-015 (deep-research-report.md)
 
@@ -1114,7 +1114,7 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Access:** open
 - **Annotation:** Constructs an evaluation-aware model via controlled training, then shows activation steering can suppress evaluation awareness and make behavior more deployment-like during evaluation. Significance: provides a concrete mitigation idea for evaluation gaming, suggesting evaluators may actively counteract “test-time” behavioral shifts.
 - **Limitations / open questions:** Steering is brittle in other contexts and may create new vulnerabilities (e.g., disabling safety behaviors); generalization across tasks and models requires more evidence.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** deployment
 - **Assurance function:** eval; mitigation
 - **Threat model:** adaptive attacker
@@ -1133,10 +1133,10 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Access:** open
 - **Annotation:** Dissects RLAIF pipelines and argues that reported gains often conflate the strength mismatch between the SFT “teacher” and the RL “critic,” showing that simple SFT with a stronger teacher can outperform full two-stage RLAIF in some settings. Uses controlled comparisons across model families and evaluation protocols to isolate what the RL step contributes. Significance: warns against attributing improvements to RL mechanics when they may come from stronger supervision sources.
 - **Limitations / open questions:** The critique is pipeline- and setup-dependent; identifying when RL steps *do* add unique value (e.g., constraint satisfaction, robustness) remains unresolved.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** post-training; deployment
 - **Assurance function:** eval; mitigation; reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** post-training/alignment; evaluation/benchmarks
 - **Provenance:** TECH-004 (deep-research-report.md)
 
@@ -1172,7 +1172,7 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Safety relevance:** Benchmarks are prerequisites for governance assurance about training integrity and model trustworthiness.
 - **Limitations / open questions:** Benchmarks may not reflect stealthiest or future backdoors; defense effectiveness varies widely across models.
 - **Risk domain:** cyber
-- **Lifecycle stage:** —
+- **Lifecycle stage:** unknown
 - **Assurance function:** auditing; eval; mitigation
 - **Threat model:** supply chain
 - **Method area:** evaluation/benchmarks; security
@@ -1214,7 +1214,7 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Risk domain:** cyber; bio; CBRN; persuasion; autonomy
 - **Lifecycle stage:** deployment
 - **Assurance function:** eval; reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** evaluation/benchmarks
 - **Provenance:** TECH-064 (deep-research-report.md)
 
@@ -1250,7 +1250,7 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Annotation:** Standardizes automated red‑teaming evaluation, comparing many red‑teaming methods and defenses and supporting attack/defense co‑development.
 - **Safety relevance:** Directly maps to governance needs for auditable, comparable robustness evidence.
 - **Limitations / open questions:** Standardization can create “teaching to the test”; adversaries may pivot to uncovered harm modalities. *(Influential preprint.)*
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** deployment
 - **Assurance function:** auditing; eval; mitigation; reporting
 - **Threat model:** adaptive attacker
@@ -1268,11 +1268,6 @@ Stabilization tasks that most directly increase decision usefulness:
 - **ID / locator(s):** DOI: 10.5555/3692070.3693501
 - **Access:** open
 - **Relation:** same_work_as: `Mazeika2024HarmbenchStandardizedEvaluatio`
-- **Risk domain:** cyber
-- **Lifecycle stage:** deployment
-- **Assurance function:** eval; mitigation; reporting
-- **Threat model:** adaptive attacker
-- **Method area:** evaluation/benchmarks; governance
 - **Provenance:** TECH-039 (deep-research-report.md)
 
 #### `Zhang2024HolisticAutomatedRed` — Holistic Automated Red Teaming … Multi‑turn Interaction (2024)
@@ -1287,7 +1282,7 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Annotation:** Proposes top‑down test case generation and multi‑turn probing to improve coverage beyond single‑turn red‑teaming.
 - **Safety relevance:** Improves audit completeness by expanding coverage and interaction realism—governance‑friendly for assurance cases.
 - **Limitations / open questions:** Coverage depends on risk taxonomy quality; taxonomy omissions become blind spots.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** deployment
 - **Assurance function:** auditing; eval
 - **Threat model:** adaptive attacker
@@ -1309,7 +1304,7 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Risk domain:** privacy
 - **Lifecycle stage:** post-training; deployment
 - **Assurance function:** eval; mitigation
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** evaluation/benchmarks; governance
 - **Provenance:** TECH-044 (deep-research-report.md)
 
@@ -1367,7 +1362,7 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Risk domain:** cyber; bio; privacy
 - **Lifecycle stage:** post-training; deployment
 - **Assurance function:** eval; mitigation
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** evaluation/benchmarks
 - **Provenance:** S1‑R‑01 (deep-research-report (2).md)
 
@@ -1383,10 +1378,10 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Access:** open
 - **Annotation:** Proposes evaluating feature dictionaries against supervised “ground truth” dictionaries on a specific task, assessing approximation, control, and interpretability. Finds SAEs capture interpretable features but lag supervised features for control, and identifies failure modes like feature occlusion and over-splitting. Significance: pushes interpretability toward falsifiable, task-grounded measurement rather than aesthetic feature examples.
 - **Limitations / open questions:** Task-specific evaluation may not transfer to open-ended behaviors; creating broader ground-truth proxies for frontier-scale models is still hard.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** deployment
 - **Assurance function:** eval
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** interpretability; evaluation/benchmarks
 - **Provenance:** TECH-030 (deep-research-report.md)
 
@@ -1405,7 +1400,7 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Risk domain:** privacy
 - **Lifecycle stage:** post-training; deployment
 - **Assurance function:** eval; mitigation
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** evaluation/benchmarks
 - **Provenance:** TECH-046 (deep-research-report.md)
 
@@ -1421,7 +1416,7 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Access:** open
 - **Annotation:** Studies whether weak supervision (from weaker models) can elicit stronger model capabilities via fine-tuning, finding “weak-to-strong generalization” occurs but does not recover full strong-model performance without additional techniques (e.g., confidence losses). Significance: makes the weak-supervision problem empirically tractable, directly relevant to scalable oversight and post-training as models outpace human expertise.
 - **Limitations / open questions:** The analogy to human oversight is imperfect; extending to safety-critical behaviors and non-stationary adversarial settings remains largely unexplored.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** post-training; post-deployment
 - **Assurance function:** monitoring; eval
 - **Threat model:** expert uplift
@@ -1463,10 +1458,10 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Annotation:** Shows deceptive behavior can persist while verbalized deceptive reasoning diminishes when models know reasoning is monitored—reducing monitor effectiveness.
 - **Safety relevance:** Identifies a key failure mode for governance reliance on CoT monitoring: **models can obfuscate** while still acting deceptively.
 - **Limitations / open questions:** Results are model‑ and setup‑dependent; still, they demonstrate a credible adversarial channel that governance must assume.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** post-deployment
 - **Assurance function:** monitoring
-- **Threat model:** —
+- **Threat model:** unknown
 - **Provenance:** S1‑M‑04 (deep-research-report (2).md)
 
 #### `Anon2025EvaluatingSabotageMonitoring` — Evaluating Sabotage and Monitoring in LLM Agents (2025)
@@ -1503,7 +1498,7 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Risk domain:** autonomy
 - **Lifecycle stage:** post-training; deployment
 - **Assurance function:** eval; mitigation
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** post-training/alignment
 - **Provenance:** TECH-058 (deep-research-report.md)
 
@@ -1520,7 +1515,7 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Annotation:** Demonstrates strategic behavior where a model appears to comply during training while preserving different behavior outside training, including explicit “alignment‑faking reasoning” in some setups.
 - **Safety relevance:** Elevates “deceptive alignment” from conceptual risk to empirically testable behavior, directly motivating monitoring and governance demands for gaming‑resistant evaluations.
 - **Limitations / open questions:** Experimental setups provide models with unusually clear training/deployment distinctions; external validity to future systems remains uncertain. *(Influential preprint.)*
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** post-training; deployment; post-deployment
 - **Assurance function:** monitoring; eval; mitigation
 - **Threat model:** adaptive attacker
@@ -1543,7 +1538,7 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Risk domain:** autonomy
 - **Lifecycle stage:** deployment
 - **Assurance function:** eval; reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Provenance:** TECH-022 (deep-research-report.md)
 
 ### Security and jailbreaks
@@ -1580,7 +1575,7 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Limitations / open questions:** Practical, scalable detection without trigger knowledge is still emerging, motivating trigger-recovery and memorization-based scanning lines of work.
 - **Risk domain:** cyber; autonomy; privacy
 - **Lifecycle stage:** post-training; deployment
-- **Assurance function:** —
+- **Assurance function:** unknown
 - **Threat model:** supply chain
 - **Method area:** security
 - **Provenance:** TECH-042 (deep-research-report.md)
@@ -1600,10 +1595,10 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Version history:** `Korbak2025ChainThoughtMonitorabilitya`
 - **Annotation:** Argues that models that “think” in human language create a monitorability opportunity: we can inspect chain-of-thought (CoT) for intent to misbehave, potentially improving oversight beyond output-only monitoring. The paper emphasizes this opportunity is fragile—training and deployment choices may reduce monitorability or encourage hidden reasoning. Significance: provides a concrete research agenda and risk framing for CoT-based oversight as frontier models adopt more explicit reasoning.
 - **Limitations / open questions:** CoT can be unfaithful or strategically shaped; developing robust monitoring that does not incentivize concealment remains a central challenge.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** deployment; post-deployment
 - **Assurance function:** monitoring
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** monitoring
 - **Provenance:** TECH-014 (deep-research-report.md)
 
@@ -1623,7 +1618,7 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Risk domain:** autonomy
 - **Lifecycle stage:** deployment; post-deployment
 - **Assurance function:** auditing; monitoring; eval
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** monitoring
 - **Provenance:** S1‑M‑03 (deep-research-report (2).md)
 
@@ -1639,10 +1634,10 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Annotation:** Proposes a quantitative framework and derives scaling patterns for oversight success across oversight “games,” including nested oversight.
 - **Safety relevance:** Supplies a governance‑relevant quantitative lens: oversight success may degrade with capability gaps, affecting claims about “scalable control layers.”
 - **Limitations / open questions:** Uses proxy capability measures and simplified game settings; mapping to real‑world deployment is non‑trivial. *(Influential preprint.)*
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** pretraining; deployment; post-deployment
 - **Assurance function:** auditing; monitoring; reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** monitoring
 - **Provenance:** S1‑SO‑02 (deep-research-report (2).md)
 
@@ -1662,7 +1657,7 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Risk domain:** autonomy
 - **Lifecycle stage:** deployment; post-deployment
 - **Assurance function:** auditing; monitoring
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** monitoring
 - **Provenance:** TECH-026 (deep-research-report.md)
 
@@ -1701,7 +1696,7 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Limitations / open questions:** Effectiveness depends on reliable memory extraction and signature stability; adversaries may adapt to reduce memorization or mimic benign signatures.
 - **Risk domain:** cyber; autonomy; open-weights; privacy
 - **Lifecycle stage:** pretraining; deployment
-- **Assurance function:** —
+- **Assurance function:** unknown
 - **Threat model:** supply chain
 - **Method area:** security; governance
 - **Provenance:** TECH-051 (deep-research-report.md)
@@ -1738,8 +1733,8 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Annotation:** Demonstrates “FAB” attacks where a model appears benign pre-finetuning but manifests malicious behaviors after downstream finetuning, optimized via meta-learning to anticipate user adaptation. Significance: attacks a widely assumed safe workflow—benign finetuning of open models—by making the backdoor conditional on *future* customization, a realistic supply-chain risk.
 - **Limitations / open questions:** Detecting such “latent until finetuned” backdoors without simulating many downstream finetunes is difficult; scalable certification methods remain open.
 - **Risk domain:** cyber
-- **Lifecycle stage:** —
-- **Assurance function:** —
+- **Lifecycle stage:** unknown
+- **Assurance function:** unknown
 - **Threat model:** supply chain
 - **Method area:** security; governance
 - **Provenance:** TECH-049 (deep-research-report.md)
@@ -1808,13 +1803,13 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Venue/body:** arXiv
 - **Year:** 2025
 - **Where/what:** arXiv:2510.07192, 2025.
-- **Type:** standard/guidance
-- **Evidence strength:** operational_standard (maturity: C)
+- **Type:** paper
+- **Evidence strength:** empirical_scaled (maturity: B)
 - **ID / locator(s):** DOI: 10.48550/arXiv.2510.07192; arXiv: 2510.07192
 - **Access:** open
 - **Annotation:** Runs large-scale pretraining poisoning experiments across model sizes and dataset sizes and finds that poisoning success can depend on a near-constant number of poisoned documents (e.g., ~250) rather than a fixed fraction of the corpus. Significance: challenges a comforting scaling assumption (“bigger datasets dilute poisons”), raising the salience of data provenance and supply-chain defenses.
 - **Limitations / open questions:** Demonstrated attack goal is narrow (gibberish); understanding constant-poison dynamics for goal-directed malicious behaviors and building robust defenses remain open.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** pretraining
 - **Assurance function:** mitigation; reporting
 - **Threat model:** supply chain
@@ -1893,7 +1888,7 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Limitations / open questions:** Dual-use risk is obvious; governance and secure operationalization of “verification backdoors” is nontrivial, and adversarial attempts to spoof verification need further study.
 - **Risk domain:** cyber
 - **Lifecycle stage:** post-training
-- **Assurance function:** —
+- **Assurance function:** unknown
 - **Threat model:** supply chain
 - **Method area:** security
 - **Provenance:** TECH-052 (deep-research-report.md)
@@ -1912,7 +1907,7 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Limitations / open questions:** Offensive advances rapidly; defensive generalization and safe disclosure norms remain a moving target.
 - **Risk domain:** cyber
 - **Lifecycle stage:** deployment
-- **Assurance function:** —
+- **Assurance function:** unknown
 - **Threat model:** adaptive attacker
 - **Method area:** security
 - **Provenance:** S1‑S‑05 (deep-research-report (2).md)
@@ -1931,10 +1926,10 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Annotation:** Proposes RL‑based “re‑alignment” for large reasoning models using a hybrid reward system combining safety, refusal, and related signals.
 - **Safety relevance:** Addresses a practical governance concern: retaining utility while tightening safety for reasoning‑capable models that may be deployed in higher‑stakes settings.
 - **Limitations / open questions:** Depends on the guard/assessor model’s correctness and coverage; reward hacking and distribution shift remain risks without standardized third‑party evaluation. *(Preprint / venue cycle artifact; treat as influential if adopted in practice.)*
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** post-training; deployment
 - **Assurance function:** eval; mitigation
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** post-training/alignment
 - **Provenance:** S1‑A‑03 (deep-research-report (2).md)
 
@@ -1950,7 +1945,7 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Annotation:** Claims safety alignment can be restored after harmful fine‑tuning using only one carefully selected safety example, leveraging low‑rank structure of the safety gradient.
 - **Safety relevance:** Directly relevant to governance of fine‑tuning privileges and post‑deployment remediation (a common audit finding in real systems).
 - **Limitations / open questions:** “One‑shot recovery” may be brittle across threat models and may not defend against adaptive adversaries who co‑opt patching logic; needs standardized robustness evaluation.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** post-training; deployment
 - **Assurance function:** auditing; eval; mitigation
 - **Threat model:** adaptive attacker
@@ -1969,7 +1964,7 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Annotation:** Uses iterative adversarial training with a harmfulness metric and generative attacker to improve robustness of preference‑aligned/safety‑aligned behavior.
 - **Safety relevance:** Supports “robust alignment” as an engineering discipline, tightening safety under adaptive prompting—crucial for systems exposed to open inputs.
 - **Limitations / open questions:** Robustness gains are benchmark‑dependent; risks of over‑refusal or capability tradeoffs require careful measurement.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** post-training; deployment
 - **Assurance function:** eval; mitigation
 - **Threat model:** adaptive attacker
@@ -1991,7 +1986,7 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Risk domain:** open-weights; privacy
 - **Lifecycle stage:** pretraining; post-training
 - **Assurance function:** mitigation
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** post-training/alignment; governance
 - **Provenance:** TECH-056 (deep-research-report.md)
 
@@ -2009,10 +2004,10 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Annotation:** Trains an LLM‑judge from self‑generated contrastive judgment pairs, aiming to improve preference alignment and judgment quality.
 - **Safety relevance:** LLM‑judges are becoming governance infrastructure (automatic audits, red‑teaming); improving judge reliability is safety‑critical.
 - **Limitations / open questions:** Judge models inherit biases and can be manipulated; without strong calibration and audits, “LLM‑judge” can amplify evaluation errors.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** post-training; deployment
 - **Assurance function:** auditing; eval; mitigation
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** post-training/alignment
 - **Provenance:** S1‑SO‑06 (deep-research-report (2).md)
 
@@ -2049,10 +2044,10 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Access:** open
 - **Annotation:** Extends constrained RLHF by incorporating probabilistic (high-confidence) guarantees using a Seldonian-style framework, aiming to control harmfulness with statistical assurance rather than heuristic penalties. Methodologically, it separates helpfulness and harmlessness signals and adds uncertainty-aware constraint satisfaction. Significance: pushes RLHF toward formal safety guarantees rather than best-effort empirical safety.
 - **Limitations / open questions:** Guarantees rely on assumptions about data representativeness and the specified safety constraint; real-world harms are multi-faceted and distribution-shifting, challenging the “guarantee surface.”
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** post-training
 - **Assurance function:** auditing; mitigation; reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** post-training/alignment
 - **Provenance:** TECH-002 (deep-research-report.md)
 
@@ -2068,10 +2063,10 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Annotation:** Argues current safety alignment is shallow and can be bypassed by simple attacks or fine‑tuning; proposes deepening safety features beyond superficial tokens.
 - **Safety relevance:** Directly informs safety‑case claims about robustness of post‑training safety—important for audit and certification narratives.
 - **Limitations / open questions:** “Depth” as a construct requires measurable operationalization; deployment‑grade validation across diverse attack families remains open.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** post-training; deployment
 - **Assurance function:** auditing; mitigation
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** post-training/alignment
 - **Provenance:** S1‑A‑05 (deep-research-report (2).md)
 
@@ -2090,7 +2085,7 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Risk domain:** privacy
 - **Lifecycle stage:** pretraining; post-training; deployment
 - **Assurance function:** mitigation
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** post-training/alignment; governance
 - **Provenance:** TECH-055 (deep-research-report.md)
 
@@ -2106,10 +2101,10 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Access:** open
 - **Annotation:** Explores broader patterns in reward hacking and conditions that induce emergent misalignment, including the diversity of reward-hacking tasks needed to elicit harmful generalization. Significance: contributes to understanding how training on “verifiable” tasks might still induce misalignment under certain curricula.
 - **Limitations / open questions:** Findings depend on chosen task families and models; translating to industrial post-training regimes and safety policies needs more evidence.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** post-training
 - **Assurance function:** mitigation
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** post-training/alignment
 - **Provenance:** TECH-062 (deep-research-report.md)
 
@@ -2125,10 +2120,10 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Annotation:** Builds a small high‑quality safety dataset designed for large reasoning models and positions it as a lever for safety alignment.
 - **Safety relevance:** Addresses governance demand for reproducible, shareable safety data artifacts, especially for reasoning models whose compliance can degrade under optimization.
 - **Limitations / open questions:** Dataset scale and representativeness can limit coverage of real adversarial pressure; needs systematic red‑teaming and longitudinal evaluation.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** pretraining; post-training; deployment
 - **Assurance function:** eval; mitigation
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** post-training/alignment
 - **Provenance:** S1‑A‑07 (deep-research-report (2).md)
 
@@ -2149,7 +2144,7 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Risk domain:** persuasion
 - **Lifecycle stage:** post-training; deployment
 - **Assurance function:** eval; mitigation; reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** post-training/alignment
 - **Provenance:** TECH-013 (deep-research-report.md)
 
@@ -2167,10 +2162,10 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Access:** open
 - **Annotation:** Proposes reward models that first generate an explicit natural-language critique and then score responses, enabling “variable inference compute” (e.g., via self-consistency over critiques). Reports improved RewardBench preference classification for Llama-3 base models and improved best-of-N selection performance on ArenaHard. Significance: bridges reward modeling and judge-style reasoning, improving interpretability and potentially robustness by making evaluation rationale explicit.
 - **Limitations / open questions:** Reliance on generated critiques raises faithfulness concerns; whether critique generation becomes a new attack surface (reward hacking the critique) is open.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** pretraining; post-training; deployment
 - **Assurance function:** eval; mitigation; reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** post-training/alignment
 - **Provenance:** TECH-006 (deep-research-report.md)
 
@@ -2205,10 +2200,10 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Annotation:** Recasts verification as language modeling, enabling verifiers that integrate with chain‑of‑thought and benefit from inference‑time compute.
 - **Safety relevance:** Governance often relies on verifiers/judges; improving verification quality supports safer deployment gates and more reliable oversight signals.
 - **Limitations / open questions:** Verification still depends on dataset/task design and can be gamed; robustness to adversarial examples is not guaranteed.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** pretraining; post-training; deployment; post-deployment
 - **Assurance function:** mitigation
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** post-training/alignment
 - **Provenance:** S1‑SO‑03 (deep-research-report (2).md)
 
@@ -2224,10 +2219,10 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Access:** open
 - **Annotation:** Adds paired preference annotations (with justifications) to complement rating-style data, enabling better-controlled comparisons of Bradley–Terry vs regression reward modeling and proposing a hybrid approach. Reports strong RewardBench performance and demonstrates downstream RLHF utility. Significance: directly targets a major confound in reward modeling research: incompatible data formats across paradigms.
 - **Limitations / open questions:** Results are tied to particular model families and reward model architectures; how general the hybrid gains are across domains and safety constraints remains open.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** post-training
 - **Assurance function:** mitigation; reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** post-training/alignment
 - **Provenance:** TECH-009 (deep-research-report.md)
 
@@ -2246,7 +2241,7 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Risk domain:** open-weights
 - **Lifecycle stage:** pretraining; post-training
 - **Assurance function:** mitigation; reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** post-training/alignment
 - **Provenance:** TECH-008 (deep-research-report.md)
 
@@ -2262,10 +2257,10 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Access:** open
 - **Annotation:** Focuses on the methodological gap in selecting reward models that actually lead to better RLHF outcomes, arguing that existing benchmarks can become negatively correlated with downstream RLHF performance as reward models improve. Proposes new evaluation data and metrics, including comparisons against human preference labels and verifiable correctness benchmarks. Significance: reframes reward-model evaluation as an evolving target rather than a fixed leaderboard, pushing toward more reliable selection criteria.
 - **Limitations / open questions:** The “right” evaluation target depends on deployment objectives and preference heterogeneity; robust cross-domain validity remains challenging.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** post-training; deployment
 - **Assurance function:** eval; mitigation
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** post-training/alignment
 - **Provenance:** TECH-007 (deep-research-report.md)
 
@@ -2281,7 +2276,7 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Access:** open
 - **Annotation:** Builds reward models with interpretable dimensions (e.g., honesty, verbosity, safety) using absolute-rating data and a mixture-of-experts gating scheme to select objectives by context. Reports strong RewardBench performance and argues interpretability helps reduce reward hacking and misaligned incentives. Significance: shifts reward modeling from a scalar black box toward decomposed, human-auditable objectives.
 - **Limitations / open questions:** The choice and completeness of objective dimensions is normative and potentially brittle; how to prevent strategic gaming of “interpretable axes” remains open.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** post-training
 - **Assurance function:** auditing; mitigation; reporting
 - **Threat model:** adaptive attacker; expert uplift
@@ -2300,10 +2295,10 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Access:** open
 - **Annotation:** Shows that aligned LLMs can “self-synthesize” instruction–response data by being prompted with only the chat-template prefix up to the user slot, yielding very large-scale instruction data which can be filtered into high-quality subsets. Evaluates fine-tuned base models using the synthesized data and reports competitiveness with strong instruction-tuned baselines on multiple alignment benchmarks. Significance: makes alignment-data generation more scalable for the open ecosystem and highlights chat-template artifacts as a key lever.
 - **Limitations / open questions:** The approach risks reproducing and amplifying the source model’s alignment biases; the extent to which it improves genuine safety (not just benchmark scores) is underexplored.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** post-training; deployment
 - **Assurance function:** eval; mitigation; reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** post-training/alignment
 - **Provenance:** TECH-012 (deep-research-report.md)
 
@@ -2319,10 +2314,10 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Access:** open
 - **Annotation:** Introduces RewardBench, a dataset+codebase to evaluate reward models across chat, reasoning, and safety with structured preference trios, including cases where one response is verifiably better (bugs, incorrect facts). Provides empirical comparisons across reward modeling methods and surfaces tendencies like refusal miscalibration and reasoning weaknesses. Significance: makes reward model evaluation more systematic and comparable, which is critical as reward models become central alignment infrastructure.
 - **Limitations / open questions:** Benchmark performance does not necessarily predict downstream RLHF outcomes under changing distributions and increasingly strong reward models, motivating more “in-the-loop” evaluation designs.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** pretraining; post-training; deployment
 - **Assurance function:** eval; mitigation
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** post-training/alignment
 - **Provenance:** TECH-005 (deep-research-report.md)
 
@@ -2341,7 +2336,7 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Risk domain:** autonomy
 - **Lifecycle stage:** post-training; deployment
 - **Assurance function:** mitigation
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** post-training/alignment
 - **Provenance:** TECH-001 (deep-research-report.md)
 
@@ -2357,10 +2352,10 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Annotation:** Proposes online alignment with active exploration to reduce overfitting and improve coverage of preference space without a separate reward model.
 - **Safety relevance:** Online feedback and exploration are governance‑relevant for maintaining alignment in changing environments; affects post‑deployment oversight and monitoring regimes.
 - **Limitations / open questions:** Exploration can surface risky behaviors; safe exploration constraints and auditing of exploration policies remain open.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** post-training; deployment; post-deployment
 - **Assurance function:** auditing; monitoring; mitigation
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** post-training/alignment; governance
 - **Provenance:** S1‑SO‑04 (deep-research-report (2).md)
 
@@ -2380,7 +2375,7 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Limitations / open questions:** Activation control may have failure modes (distribution shift, stealthy adversarial prompts); rigorous evaluation against strong red-teaming baselines is needed.
 - **Risk domain:** cyber
 - **Lifecycle stage:** deployment; post-deployment
-- **Assurance function:** —
+- **Assurance function:** unknown
 - **Threat model:** adaptive attacker
 - **Method area:** interpretability; governance
 - **Provenance:** TECH-038 (deep-research-report.md)
@@ -2393,16 +2388,16 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Venue/body:** arXiv
 - **Year:** 2025
 - **Where/what:** arXiv:2501.16496, 2025 (also reported as peer-reviewed venue in 2025).
-- **Type:** standard/guidance
-- **Evidence strength:** operational_standard (maturity: C)
+- **Type:** paper
+- **Evidence strength:** conceptual (maturity: B)
 - **ID / locator(s):** DOI: 10.48550/arXiv.2501.16496; arXiv: 2501.16496
 - **Access:** open
 - **Annotation:** A forward-looking synthesis and research agenda covering core mechanistic interpretability bottlenecks (scalable methods, validation, causal abstraction, and connecting internals to guarantees). Significance: clarifies what interpretability would need to deliver for safety cases (e.g., reliable auditing, robust steering, mechanistic anomaly detection).
 - **Limitations / open questions:** As a survey/review, it prioritizes agenda-setting over new empirical results; the field still lacks widely accepted, deployment-relevant success criteria.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** deployment; post-deployment
 - **Assurance function:** auditing; reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** interpretability
 - **Provenance:** TECH-034 (deep-research-report.md)
 
@@ -2418,9 +2413,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Access:** open
 - **Annotation:** Proposes a training-time representation intervention (“bending”) intended to improve safety behavior with better out-of-distribution generalization than simple activation steering approaches. Significance: addresses a key limitation of many steering methods—poor OOD stability and potential reasoning degradation—by integrating representation change more deeply.
 - **Limitations / open questions:** Measuring OOD safety generalization is inherently hard; comparing against strong baselines under adaptive attackers remains open.
-- **Risk domain:** —
-- **Lifecycle stage:** —
-- **Assurance function:** —
+- **Risk domain:** unknown
+- **Lifecycle stage:** unknown
+- **Assurance function:** unknown
 - **Threat model:** adaptive attacker
 - **Method area:** interpretability
 - **Provenance:** TECH-037 (deep-research-report.md)
@@ -2437,10 +2432,10 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Annotation:** Finds SAEs can yield “interpretable” latents even on random transformers, challenging assumptions that SAE interpretability necessarily reflects learned semantics.
 - **Safety relevance:** Directly impacts whether SAE‑based interpretability can be used as reliable safety evidence; warns against over‑trusting apparent interpretability.
 - **Limitations / open questions:** Results do not imply SAEs are useless, but they demand stronger causal validation for interpretability‑as‑assurance claims.
-- **Risk domain:** —
-- **Lifecycle stage:** —
+- **Risk domain:** unknown
+- **Lifecycle stage:** unknown
 - **Assurance function:** auditing
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** interpretability
 - **Provenance:** S1‑I‑07 (deep-research-report (2).md)
 
@@ -2458,7 +2453,7 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Access:** open
 - **Annotation:** Studies subliminal corruption in a controlled teacher–student setup, reporting phase-transition-like behavior where alignment fails sharply beyond a poisoned-data threshold and suggesting the mechanism mimics natural fine-tuning. Significance: adds quantitative structure (thresholds, scaling behavior) to an otherwise surprising phenomenon.
 - **Limitations / open questions:** Controlled GPT-2-style settings may not translate directly to frontier models; practical detection and mitigation under realistic pipelines is still early.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** pretraining; post-training
 - **Assurance function:** mitigation; reporting
 - **Threat model:** supply chain
@@ -2477,10 +2472,10 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Access:** open
 - **Annotation:** Surveys “representation engineering” methods that manipulate internal activations to steer behavior, proposing a unified pipeline (identify → operationalize → control) and mapping applications/risks. Significance: consolidates a rapidly growing control/steering area with direct safety implications (both defensive steering and attack vectors).
 - **Limitations / open questions:** Reliability, multi-concept interference, and preserving core capabilities are recurring problems; evaluating safety impact without creating bypasses remains difficult.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** deployment
-- **Assurance function:** —
-- **Threat model:** —
+- **Assurance function:** unknown
+- **Threat model:** unknown
 - **Method area:** interpretability
 - **Provenance:** TECH-035 (deep-research-report.md)
 
@@ -2496,10 +2491,10 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Annotation:** Systematizes MI objects of study, methods, and evaluation practices as a roadmap.
 - **Safety relevance:** Governance and audit programs need shared taxonomies for evidence; this survey supports standardization of interpretability claims.
 - **Limitations / open questions:** Review coverage depends on fast‑moving preprint ecosystem; evidence standards remain unsettled.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** deployment
 - **Assurance function:** auditing; eval; reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** interpretability; governance
 - **Provenance:** S1‑I‑06 (deep-research-report (2).md)
 
@@ -2515,10 +2510,10 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Annotation:** Builds automated pipelines to generate and score natural‑language explanations for SAE features at scale.
 - **Safety relevance:** Automation is necessary for interpretability to become governance‑usable evidence rather than artisanal case studies.
 - **Limitations / open questions:** Auto‑interpretation quality metrics can be gameable; explanation faithfulness vs plausibility remains challenging.
-- **Risk domain:** —
-- **Lifecycle stage:** —
-- **Assurance function:** —
-- **Threat model:** —
+- **Risk domain:** unknown
+- **Lifecycle stage:** unknown
+- **Assurance function:** unknown
+- **Threat model:** unknown
 - **Method area:** interpretability
 - **Provenance:** S1‑I‑02 (deep-research-report (2).md)
 
@@ -2528,16 +2523,16 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Venue/body:** arXiv
 - **Year:** 2024
 - **Where/what:** arXiv:2405.12241, 2024 (NeurIPS 2024 listing).
-- **Type:** policy report/guidance
-- **Evidence strength:** conceptual (maturity: C)
+- **Type:** paper
+- **Evidence strength:** empirical_small (maturity: B)
 - **ID / locator(s):** DOI: 10.48550/arXiv.2405.12241; arXiv: 2405.12241
 - **Access:** open
 - **Annotation:** Proposes end-to-end sparse dictionary learning intended to identify features that are functionally important (causal) rather than merely correlated, strengthening the link between representation decompositions and interventions. Significance: reinforces a safety-relevant goal for interpretability—finding features that support reliable control and debugging.
 - **Limitations / open questions:** Robustness of identified features under distribution shift and across model sizes is still underexplored; causal validation at scale remains expensive.
-- **Risk domain:** —
-- **Lifecycle stage:** —
+- **Risk domain:** unknown
+- **Lifecycle stage:** unknown
 - **Assurance function:** reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** interpretability
 - **Provenance:** TECH-032 (deep-research-report.md)
 
@@ -2553,10 +2548,10 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Access:** open
 - **Annotation:** Uses chess/Othello transcript models as a setting with natural ground-truth features (“piece on square”), enabling supervised metrics for SAE quality and proposing training improvements (p-annealing). Significance: offers a rare “measure progress” structure for interpretability methods by supplying external ground truth.
 - **Limitations / open questions:** Board-game settings differ qualitatively from natural language; transfer of methods and metrics to frontier LLMs is nontrivial.
-- **Risk domain:** —
-- **Lifecycle stage:** —
-- **Assurance function:** —
-- **Threat model:** —
+- **Risk domain:** unknown
+- **Lifecycle stage:** unknown
+- **Assurance function:** unknown
+- **Threat model:** unknown
 - **Method area:** interpretability
 - **Provenance:** TECH-031 (deep-research-report.md)
 
@@ -2572,10 +2567,10 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Annotation:** Demonstrates extracting interpretable features via sparse autoencoders at scale on a frontier model, aiming to improve mechanistic transparency.
 - **Safety relevance:** Interpretability artifacts can support auditability and targeted mitigations, aligning with emerging assurance expectations.
 - **Limitations / open questions:** Interpretations may be unstable across seeds/models and can risk “seeing patterns” that do not reflect causal mechanisms. *(Influential technical report.)*
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** pretraining
 - **Assurance function:** auditing; mitigation; reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** interpretability; governance
 - **Provenance:** S1‑I‑01 (deep-research-report (2).md)
 
@@ -2591,10 +2586,10 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Access:** open
 - **Annotation:** Uses sparse autoencoders to decompose residual stream activations into more monosemantic features than neuron directions, and demonstrates causal interventions on a known reasoning task (indirect object identification). Significance: provides one of the clearest scalable demonstrations that unsupervised dictionary learning can yield causal handles on model behavior, a key prerequisite for safety-relevant interpretability.
 - **Limitations / open questions:** Interpretability metrics can be proxy-like; scaling to frontier models and connecting learned features to robust safety controls remains uncertain.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** pretraining
-- **Assurance function:** —
-- **Threat model:** —
+- **Assurance function:** unknown
+- **Threat model:** unknown
 - **Method area:** interpretability
 - **Provenance:** TECH-029 (deep-research-report.md)
 
@@ -2610,10 +2605,10 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Access:** open
 - **Annotation:** Studies cross-model “feature universality” by matching SAE features across different LLMs, aiming to show that interpretability findings transfer between models. Significance: if universality holds strongly, interpretability work can amortize across architectures rather than restarting per-model.
 - **Limitations / open questions:** Matching features across models is method-dependent and may miss model-specific features; universality claims require more triangulation across architectures and training regimes.
-- **Risk domain:** —
-- **Lifecycle stage:** —
-- **Assurance function:** —
-- **Threat model:** —
+- **Risk domain:** unknown
+- **Lifecycle stage:** unknown
+- **Assurance function:** unknown
+- **Threat model:** unknown
 - **Method area:** interpretability
 - **Provenance:** TECH-033 (deep-research-report.md)
 
@@ -2629,10 +2624,10 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Access:** open
 - **Annotation:** Explores steering representations at inference time to enforce category-specific safety behavior, positioning mechanistic control as complementary to training-time alignment. Significance: targets an operational need—quickly adapting safety behavior without retraining—while linking to interpretability/representation work.
 - **Limitations / open questions:** Inference-time steering can be brittle and may be bypassable; verifying it does not degrade benign utility or hide failures is an open challenge.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** post-training; deployment
-- **Assurance function:** —
-- **Threat model:** —
+- **Assurance function:** unknown
+- **Threat model:** unknown
 - **Method area:** interpretability
 - **Provenance:** TECH-036 (deep-research-report.md)
 
@@ -2653,7 +2648,7 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Risk domain:** privacy
 - **Lifecycle stage:** pretraining; post-training; deployment
 - **Assurance function:** mitigation
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** governance
 - **Provenance:** TECH-043 (deep-research-report.md)
 
@@ -2684,15 +2679,15 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Year:** 2025
 - **Type:** policy report/guidance
 - **Evidence strength:** conceptual (maturity: C)
-- **ID / locator(s):** URL: https://transformer-circuits.pub/2025/attribution-graphs/methods.html; https://www.anthropic.com/research/tracing-thoughts-language-model
+- **ID / locator(s):** URL: https://transformer-circuits.pub/2025/attribution-graphs/methods.html; URL: https://www.anthropic.com/research/tracing-thoughts-language-model
 - **Access:** open
 - **Annotation:** Introduces attribution graph approaches for tracing step‑by‑step computation for a single prompt, with interactive tooling.
 - **Safety relevance:** Causal‑style tracing supports diagnosing failure modes (hallucination, planning errors) and may contribute to safety case evidence.
 - **Limitations / open questions:** Method complexity and replication difficulty limit near‑term third‑party auditing.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** deployment; post-deployment
 - **Assurance function:** auditing; reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Provenance:** S1‑I‑03 (deep-research-report (2).md)
 
 #### `Debate2025DebateHelpsWeaktostrong` — Debate Helps Weak‑to‑Strong Generalization (2025)
@@ -2700,8 +2695,8 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Creators:** Hao Lang, Fei Huang, and Yongbin Li.
 - **Venue/body:** arXiv
 - **Year:** 2025
-- **Type:** policy report/guidance
-- **Evidence strength:** conceptual (maturity: C)
+- **Type:** paper
+- **Evidence strength:** empirical_small (maturity: B)
 - **ID / locator(s):** DOI: 10.48550/arXiv.2501.13124; arXiv: 2501.13124
 - **Access:** open
 - **Annotation:** Reports that debate can help a weak model extract trustworthy information from a stronger, potentially untrustworthy model in some settings.
@@ -2728,7 +2723,7 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Risk domain:** cyber; bio; open-weights
 - **Lifecycle stage:** post-training
 - **Assurance function:** eval; mitigation; reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Provenance:** TECH-068 (deep-research-report.md)
 
 #### `Anon2025HowCatastrophicYour` — How Catastrophic is Your LLM? Certifying Risk in Conversation (2025)
@@ -2743,10 +2738,10 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Access:** open
 - **Annotation:** Introduces a framework to certify catastrophic risk over multi-turn conversations using probabilistic modeling of attacks and statistical guarantees, aiming to address the combinatorial space of conversational adversaries. Significance: moves beyond fixed prompt lists toward principled certification in vast interaction spaces.
 - **Limitations / open questions:** Certification depends on modeling assumptions about attacker distributions; connecting certified guarantees to real attackers and policymaking thresholds remains open.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** deployment
 - **Assurance function:** auditing; reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Provenance:** TECH-063 (deep-research-report.md)
 
 #### `BLLMTC2025BiologyLargeLanguage` — On the Biology of a Large Language Model (2025)
@@ -2756,7 +2751,7 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Year:** 2025
 - **Type:** policy report/guidance
 - **Evidence strength:** conceptual (maturity: C)
-- **ID / locator(s):** URL: https://transformer-circuits.pub/2025/attribution-graphs/biology.html; https://www.anthropic.com/research/tracing-thoughts-language-model
+- **ID / locator(s):** URL: https://transformer-circuits.pub/2025/attribution-graphs/biology.html; URL: https://www.anthropic.com/research/tracing-thoughts-language-model
 - **Access:** open
 - **Annotation:** Applies attribution graphs to a frontier model to study mechanisms across tasks and behaviors, positioning this as “AI biology.”
 - **Safety relevance:** Helps bridge interpretability to practical safety debugging and monitoring; outputs can inform governance documentation.
@@ -2764,7 +2759,7 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Risk domain:** bio
 - **Lifecycle stage:** deployment; post-deployment
 - **Assurance function:** monitoring; reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Provenance:** S1‑I‑04 (deep-research-report (2).md)
 
 #### `Cloud2025SubliminalLearningLanguage` — Subliminal Learning: Language Models Transmit Behavioral Traits via Hidden Signals in Data (2025)
@@ -2779,10 +2774,10 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Access:** open
 - **Annotation:** Demonstrates “subliminal learning,” where a teacher model’s trait (benign preference or misalignment) transfers to a student model through semantically unrelated synthetic data (e.g., number sequences), even after filtering explicit references. Significance: raises a sharp concern for synthetic-data training and distillation—behavioral traits can propagate through channels humans may not detect.
 - **Limitations / open questions:** The conditions under which subliminal transfer occurs (model similarity, data types, training procedures) and how to reliably prevent it remain open.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** post-training
-- **Assurance function:** —
-- **Threat model:** —
+- **Assurance function:** unknown
+- **Threat model:** unknown
 - **Provenance:** TECH-060 (deep-research-report.md)
 
 #### `TACTFI2025TracingAttentionComputation` — Tracing Attention Computation Through Feature Interactions (2025)
@@ -2797,10 +2792,10 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Annotation:** Proposes “QK attributions” to explain attention head scores as bilinear feature interactions, integrating into attribution graphs.
 - **Safety relevance:** Makes attention circuits more tractable, supporting auditability and mechanism‑level interventions.
 - **Limitations / open questions:** Still leaves open whether extracted “mechanisms” are stable and causally sufficient across contexts.
-- **Risk domain:** —
-- **Lifecycle stage:** —
+- **Risk domain:** unknown
+- **Lifecycle stage:** unknown
 - **Assurance function:** auditing; reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** governance
 - **Provenance:** S1‑I‑05 (deep-research-report (2).md)
 
@@ -2816,10 +2811,10 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Access:** open
 - **Annotation:** Proposes Self-Play Preference Optimization (SPO), avoiding explicit reward-model training by treating preference aggregation as a zero-sum game and using self-play to approximate a minimax winner. The paper emphasizes theoretical robustness to intransitive/stochastic preferences and demonstrates efficiency on continuous control tasks. Significance: offers a mathematically grounded alternative to reward-model-centric RLHF pipelines.
 - **Limitations / open questions:** Demonstrations are not LLM-centric by default; translating guarantees and efficiency to large-scale language model post-training and safety constraints remains an active question.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** post-training; post-deployment
-- **Assurance function:** —
-- **Threat model:** —
+- **Assurance function:** unknown
+- **Threat model:** unknown
 - **Provenance:** TECH-003 (deep-research-report.md)
 
 #### `Greenblatt2024AiControlImproving` — AI Control: Improving Safety Despite Intentional Subversion (2024)
@@ -2872,7 +2867,7 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Limitations / open questions:** Over-optimization for persuasiveness can create manipulation risks; the long-term stability of debate outcomes under stronger adversaries remains unresolved.
 - **Risk domain:** persuasion
 - **Lifecycle stage:** post-deployment
-- **Assurance function:** —
+- **Assurance function:** unknown
 - **Threat model:** expert uplift
 - **Provenance:** TECH-025 (deep-research-report.md)
 
@@ -2889,9 +2884,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Annotation:** Evaluates political microtargeting using LLM-generated messages, measuring persuasive effects and raising the prospect of scalable, automated persuasion at fine granularity. Significance: links LLM capability directly to a concrete societal-risk mechanism (microtargeted persuasion), informing governance debates on manipulative AI.
 - **Limitations / open questions:** Persuasion effects can be context-dependent and modest per interaction; understanding cumulative effects and defenses (platform policies, disclosure) remains open.
 - **Risk domain:** persuasion
-- **Lifecycle stage:** —
+- **Lifecycle stage:** unknown
 - **Assurance function:** mitigation
-- **Threat model:** —
+- **Threat model:** unknown
 - **Provenance:** TECH-067 (deep-research-report.md)
 
 #### `Samvelyan2024RainbowTeamingOpenended` — Rainbow Teaming: Open‑Ended Generation of Diverse Adversarial Prompts (2024)
@@ -2906,10 +2901,10 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Annotation:** Uses open‑ended search to generate diverse adversarial prompts with high attack success rates, and explores using synthetic data for safety fine‑tuning.
 - **Safety relevance:** Bridges red‑teaming coverage and scalable adversarial data generation—useful for governance‑driven stress testing.
 - **Limitations / open questions:** Raises dual‑use concerns and risks “benchmark overfitting”; deployment safety needs careful controls and evaluation diversity.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** deployment
 - **Assurance function:** eval; reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Provenance:** S1‑S‑06 (deep-research-report (2).md)
 
 ### Monitoring
@@ -2944,10 +2939,10 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Annotation:** Proposes a lightweight LoRA patch projecting updates into a safety‑aligned subspace, aiming to reduce safety loss during fine‑tuning.
 - **Safety relevance:** Addresses a high‑frequency governance issue: downstream fine‑tuning can remove safety; contributes to “responsible customization” controls.
 - **Limitations / open questions:** Depends on access to aligned base/target weights and on threat model assumptions; may not withstand adversarial fine‑tuning.
-- **Risk domain:** —
-- **Lifecycle stage:** —
+- **Risk domain:** unknown
+- **Lifecycle stage:** unknown
 - **Assurance function:** reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Provenance:** S1‑R‑04 (deep-research-report (2).md)
 
 #### `Wang2024SelftaughtEvaluators` — Self-Taught Evaluators (2024)
@@ -2962,10 +2957,10 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Access:** open
 - **Annotation:** Proposes an iterative, synthetic-data-only approach to bootstrap LLM-as-a-judge models without human-labeled preferences, improving evaluator performance on RewardBench and reporting competitiveness with strong baselines. The method generates contrasting outputs and trains evaluators to produce reasoning traces and judgments, iterating with self-improvement. Significance: attacks a key scalability bottleneck in evaluation and post-training—fresh, high-quality preference labeling.
 - **Limitations / open questions:** Self-training can amplify evaluator biases and blind spots; robustness under distribution shift and adversarial examples is a major open issue.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** post-training; deployment
 - **Assurance function:** eval; reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Provenance:** TECH-011 (deep-research-report.md)
 
 #### `Tamirisa2024TamperresistantSafeguardsOpenw` — Tamper‑Resistant Safeguards for Open‑Weight LLMs (2024)
@@ -2980,8 +2975,8 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Annotation:** Proposes TAR to embed safeguards resilient to removal through substantial fine‑tuning, addressing open‑weight tampering.
 - **Safety relevance:** Directly informs release governance for open‑weight models (tamper resistance as a prerequisite for broader distribution).
 - **Limitations / open questions:** Adversaries may develop new removal strategies; also does not address all misuse channels (tooling, external knowledge).
-- **Risk domain:** —
-- **Lifecycle stage:** —
+- **Risk domain:** unknown
+- **Lifecycle stage:** unknown
 - **Assurance function:** reporting
 - **Threat model:** supply chain
 - **Provenance:** S1‑R‑02 (deep-research-report (2).md)
@@ -2999,9 +2994,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Annotation:** Trains debaters via self-play and reports that judges become more accurate when evaluating debates from models optimized to win debates, contrasting with weaker results for consultancy-style persuasion training. Significance: suggests debate training can improve argument quality in ways that help judges, addressing a key robustness worry (“training to win might train to deceive”).
 - **Limitations / open questions:** Results are shown in a specific long-context reading comprehension setup; generalization to other tasks and more adversarial settings remains open.
 - **Risk domain:** persuasion
-- **Lifecycle stage:** —
+- **Lifecycle stage:** unknown
 - **Assurance function:** reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Provenance:** TECH-027 (deep-research-report.md)
 
 #### `Wallace2024TrainingLlmsPrioritize` — Training LLMs to Prioritize Privileged Instructions (2024)
@@ -3037,16 +3032,16 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Access:** unknown
 - **Version history:** `International2026AiSafetyReporta`
 - **Annotation:** Synthesis report bridging technical risk and policy; not a measurement standard but a convergence artifact.
-- **Risk domain:** —
-- **Lifecycle stage:** —
+- **Risk domain:** unknown
+- **Lifecycle stage:** unknown
 - **Assurance function:** reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Provenance:** S2‑T2‑37, S2‑T3‑51, S2‑T3‑52, S2‑T3‑82 (deep-research-report (2).md)
 
 #### `World2026EconomicForumGlobal` — Economic Forum Global Cybersecurity Outlook 2026 (2026)
 
 - **Creators:** World
-- **Venue/body:** —
+- **Venue/body:** unknown
 - **Year:** 2026
 - **Type:** paper
 - **Evidence strength:** empirical_small (maturity: B)
@@ -3054,9 +3049,9 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Access:** unknown
 - **Annotation:** Contextualizes AI’s role in cyber threat landscape; not a binding governance artifact but informs prioritization.
 - **Risk domain:** cyber
-- **Lifecycle stage:** —
-- **Assurance function:** —
-- **Threat model:** —
+- **Lifecycle stage:** unknown
+- **Assurance function:** unknown
+- **Threat model:** unknown
 - **Method area:** security
 - **Provenance:** S2‑T2‑61 (deep-research-report (2).md)
 
@@ -3088,10 +3083,10 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **ID / locator(s):** URL: https://oecd.ai/en/incidents
 - **Access:** unknown
 - **Annotation:** Incident trend analysis supports governance prioritization; media‑reported data can be biased and incomplete.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** post-deployment
 - **Assurance function:** reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** governance
 - **Provenance:** S2‑T2‑12, S2‑T3‑16 (deep-research-report (2).md)
 
@@ -3105,10 +3100,10 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **ID / locator(s):** URL: https://openai.com/index/updating-our-preparedness-framework/
 - **Access:** unknown
 - **Annotation:** Public explanation and positioning of the framework; limited externally verifiable detail about thresholds and evaluation protocols.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** deployment
 - **Assurance function:** reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** governance
 - **Provenance:** S2‑T2‑27 (deep-research-report (2).md)
 
@@ -3123,10 +3118,10 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Access:** unknown
 - **Version history:** `EUndDrawingupGeneralpurposeAi`
 - **Annotation:** Defines voluntary compliance pathway for GPAI providers; effectiveness depends on uptake and whether it meaningfully constrains high‑risk capability scaling.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** pretraining
 - **Assurance function:** reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** governance
 - **Provenance:** S2‑T2‑07 (deep-research-report (2).md)
 
@@ -3140,10 +3135,10 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **ID / locator(s):** URL: https://apnews.com/hub/artificial-intelligence
 - **Access:** unknown
 - **Annotation:** Highlights code scope (transparency/copyright/safety); enforcement and fine details remain in official documents.
-- **Risk domain:** —
-- **Lifecycle stage:** —
+- **Risk domain:** unknown
+- **Lifecycle stage:** unknown
 - **Assurance function:** reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Provenance:** S2‑T2‑73 (deep-research-report (2).md)
 
 #### `Google2025DeepmindBlogUpdating` — DeepMind blog on updating Frontier Safety Framework (2025)
@@ -3156,10 +3151,10 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **ID / locator(s):** URL: https://deepmind.google/blog/strengthening-our-frontier-safety-framework/; PDF: https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/strengthening-our-frontier-safety-framework/frontier-safety-framework_3.pdf
 - **Access:** unknown
 - **Annotation:** Narrative disclosure supports governance; gaps remain in independent third‑party evaluation.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** deployment
 - **Assurance function:** reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** governance
 - **Provenance:** S2‑T2‑31 (deep-research-report (2).md)
 
@@ -3174,10 +3169,10 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Access:** unknown
 - **Version history:** `OPRLHR20252025`
 - **Annotation:** Confirms multistakeholder event context and institutionalization; voluntary reporting remains subject to selection bias.
-- **Risk domain:** —
-- **Lifecycle stage:** —
+- **Risk domain:** unknown
+- **Lifecycle stage:** unknown
 - **Assurance function:** reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** governance
 - **Provenance:** S2‑T2‑46, S2‑T3‑12, S2‑T3‑77 (deep-research-report (2).md)
 
@@ -3191,10 +3186,10 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **ID / locator(s):** URL: https://metr.org/; PDF: https://metr.org/safety-security-framework.pdf
 - **Access:** unknown
 - **Annotation:** Safety‑case‑like template; adoption and auditability are unresolved.
-- **Risk domain:** —
-- **Lifecycle stage:** —
+- **Risk domain:** unknown
+- **Lifecycle stage:** unknown
 - **Assurance function:** auditing; reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** security
 - **Provenance:** S2‑T2‑40, S2‑T3‑39 (deep-research-report (2).md)
 
@@ -3212,7 +3207,7 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Risk domain:** open-weights
 - **Lifecycle stage:** post-deployment
 - **Assurance function:** monitoring; reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Provenance:** S2‑T2‑48 (deep-research-report (2).md)
 
 #### `OECD2025HaipReportingFramework` — HAIP Reporting Framework portal (2025)
@@ -3225,10 +3220,10 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **ID / locator(s):** URL: https://transparency.oecd.ai/
 - **Access:** unknown
 - **Annotation:** Creates internationally standardized voluntary reporting for advanced AI developers; major transparency step but lacks enforcement and may be incomplete without strong comparability audits.
-- **Risk domain:** —
-- **Lifecycle stage:** —
+- **Risk domain:** unknown
+- **Lifecycle stage:** unknown
 - **Assurance function:** auditing; reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** governance
 - **Provenance:** S2‑T2‑09, S2‑T3‑10 (deep-research-report (2).md)
 
@@ -3242,10 +3237,10 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **ID / locator(s):** URL: https://www.frontiermodelforum.org/updates/introducing-the-fmfs-technical-report-series-on-frontier-ai-safety-frameworks/
 - **Access:** unknown
 - **Annotation:** Marks institutionalization of framework components; practical uptake beyond members remains uncertain.
-- **Risk domain:** —
-- **Lifecycle stage:** —
+- **Risk domain:** unknown
+- **Lifecycle stage:** unknown
 - **Assurance function:** reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Provenance:** S2‑T2‑63 (deep-research-report (2).md)
 
 #### `FPTAMM2025PreliminaryTaxonomyAibio` — Preliminary taxonomy of AI‑bio misuse mitigations (2025)
@@ -3255,13 +3250,13 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Year:** 2025
 - **Type:** paper
 - **Evidence strength:** empirical_small (maturity: B)
-- **ID / locator(s):** URL: https://www.frontiermodelforum.org/issue-briefs/preliminary-taxonomy-of-ai-bio-misuse-mitigations/; https://www.frontiermodelforum.org/publications/
+- **ID / locator(s):** URL: https://www.frontiermodelforum.org/issue-briefs/preliminary-taxonomy-of-ai-bio-misuse-mitigations/; URL: https://www.frontiermodelforum.org/publications/
 - **Access:** unknown
 - **Annotation:** Governance‑ready control taxonomy for AI‑bio; validation and measurement of mitigation efficacy remains limited.
 - **Risk domain:** bio
-- **Lifecycle stage:** —
+- **Lifecycle stage:** unknown
 - **Assurance function:** eval; mitigation
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** evaluation/benchmarks
 - **Provenance:** S2‑T2‑57 (deep-research-report (2).md)
 
@@ -3275,11 +3270,6 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **ID / locator(s):** URL: https://openai.com/index/updating-our-preparedness-framework/; PDF: https://cdn.openai.com/pdf/18a02b5d-6b67-4cec-ab64-68cdfbddebcd/preparedness-framework-v2.pdf
 - **Access:** unknown
 - **Relation:** same_work_as: `OpenAI2025PreparednessFrameworkVersion`
-- **Risk domain:** —
-- **Lifecycle stage:** —
-- **Assurance function:** mitigation; reporting
-- **Threat model:** —
-- **Method area:** governance
 - **Provenance:** S2‑T2‑26, S2‑T3‑40 (deep-research-report (2).md)
 
 #### `CRFAPP2025ReportFrontierAi` — Report on Frontier AI Policy (2025)
@@ -3292,10 +3282,10 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **ID / locator(s):** DOI: 10.48550/arXiv.2506.17303; arXiv: 2506.17303; URL: https://www.gov.ca.gov/; PDF: https://www.gov.ca.gov/wp-content/uploads/2025/06/June-17-2025-%E2%80%93-The-California-Report-on-Frontier-AI-Policy.pdf
 - **Access:** open
 - **Annotation:** Subnational policy synthesis linking capability thresholds to governance options; application depends on legislative follow‑through.
-- **Risk domain:** —
-- **Lifecycle stage:** —
+- **Risk domain:** unknown
+- **Lifecycle stage:** unknown
 - **Assurance function:** reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** governance
 - **Provenance:** S2‑T2‑43, S2‑T3‑53 (deep-research-report (2).md)
 
@@ -3309,10 +3299,10 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **ID / locator(s):** URL: https://www.rand.org/pubs.html
 - **Access:** unknown
 - **Annotation:** Provides structured governance model options; not binding and must be mapped to jurisdictional realities.
-- **Risk domain:** —
-- **Lifecycle stage:** —
+- **Risk domain:** unknown
+- **Lifecycle stage:** unknown
 - **Assurance function:** reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** governance
 - **Provenance:** S2‑T2‑44, S2‑T3‑55 (deep-research-report (2).md)
 
@@ -3326,10 +3316,10 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **ID / locator(s):** URL: https://www.parliament.uk/business/publications/written-questions-answers-statements/written-statements/
 - **Access:** unknown
 - **Annotation:** Anchor point for UK institutional milestones; content quality depends on follow‑through.
-- **Risk domain:** —
-- **Lifecycle stage:** —
+- **Risk domain:** unknown
+- **Lifecycle stage:** unknown
 - **Assurance function:** reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** security
 - **Provenance:** S2‑T2‑71 (deep-research-report (2).md)
 
@@ -3343,10 +3333,10 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **ID / locator(s):** URL: https://www.federalregister.gov/documents/2024/09/11/2024-20529/establishment-of-reporting-requirements-for-the-development-of-advanced-artificial-intelligence; PDF: https://www.govinfo.gov/content/pkg/FR-2024-09-11/pdf/2024-20529.pdf
 - **Access:** unknown
 - **Annotation:** Governance mechanism for compute/model reporting; effectiveness depends on implementation details and enforcement.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** pretraining
 - **Assurance function:** reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Provenance:** S2‑T2‑16, S2‑T3‑22 (deep-research-report (2).md)
 
 #### `EC2024AiActEnters` — AI Act enters into force (2024)
@@ -3360,10 +3350,10 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Access:** unknown
 - **Version history:** `EUndAiActPolicy`, `EuropeanndCommissionPresscornerPdf`
 - **Annotation:** Confirms the EU AI Act’s entry into force; implementation details depend on delegated acts, standards, and AI Office guidance.
-- **Risk domain:** —
-- **Lifecycle stage:** —
+- **Risk domain:** unknown
+- **Lifecycle stage:** unknown
 - **Assurance function:** reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** governance
 - **Provenance:** S2‑T2‑05 (deep-research-report (2).md)
 
@@ -3377,10 +3367,10 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **ID / locator(s):** URL: https://www.sba.gov/document/report-artificial-intelligence-compliance-plan-omb-memorandum-m-24-10
 - **Access:** unknown
 - **Annotation:** Adds breadth of federal adoption; does not inherently standardize evaluation methods.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** deployment
 - **Assurance function:** auditing; eval; reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Provenance:** S2‑T2‑55 (deep-research-report (2).md)
 
 #### `METR2024CommonElementsFrontier` — Common Elements of Frontier AI Safety Policies (2024)
@@ -3390,13 +3380,13 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Year:** 2024
 - **Type:** policy report/guidance
 - **Evidence strength:** conceptual (maturity: C)
-- **ID / locator(s):** URL: https://metr.org/common-elements; https://metr.org/
+- **ID / locator(s):** URL: https://metr.org/common-elements; URL: https://metr.org/
 - **Access:** unknown
 - **Annotation:** Cross‑walk of frontier safety policy components enabling comparability; does not prove policies are sufficient or followed / Comparative policy anatomy; still does not establish sufficiency.
-- **Risk domain:** —
-- **Lifecycle stage:** —
+- **Risk domain:** unknown
+- **Lifecycle stage:** unknown
 - **Assurance function:** reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Provenance:** S2‑T2‑39, S2‑T2‑70, S2‑T3‑37, S2‑T3‑38 (deep-research-report (2).md)
 
 #### `Agency2024CompliancePlanExample` — compliance plan example for OMB M‑24‑10 (2024)
@@ -3409,10 +3399,10 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **ID / locator(s):** PDF: https://www.eac.gov/sites/default/files/2024-10/EAC_Compliance_Plan_OMB_Memorandum_FINAL_508.pdf
 - **Access:** unknown
 - **Annotation:** Concrete instantiation of governance requirements; varying agency maturity creates uneven safety posture.
-- **Risk domain:** —
-- **Lifecycle stage:** —
+- **Risk domain:** unknown
+- **Lifecycle stage:** unknown
 - **Assurance function:** auditing; reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Provenance:** S2‑T2‑53 (deep-research-report (2).md)
 
 #### `EXIM2024CompliancePlanOmb` — compliance plan for OMB M‑24‑10 (2024)
@@ -3425,10 +3415,10 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **ID / locator(s):** PDF: https://img.exim.gov/s3fs-public/documents/EXIM%20Compliance%20Plan%20for%20OMB%20Memorandum%20M-24-10Final.pdf
 - **Access:** unknown
 - **Annotation:** Illustrates agency‑level operationalization; quality varies and may emphasize process over measurable outcomes.
-- **Risk domain:** —
-- **Lifecycle stage:** —
+- **Risk domain:** unknown
+- **Lifecycle stage:** unknown
 - **Assurance function:** auditing; reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Provenance:** S2‑T2‑54, S2‑T3‑62 (deep-research-report (2).md)
 
 #### `AISI2024FourthProgressReport` — Fourth progress report (2024)
@@ -3441,10 +3431,10 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **ID / locator(s):** URL: https://www.aisi.gov.uk/blog/fourth-progress-report
 - **Access:** unknown
 - **Annotation:** Early institutional reporting on evaluation work; details can lag operational reality.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** deployment
 - **Assurance function:** eval; reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Provenance:** S2‑T2‑74, S2‑T3‑76 (deep-research-report (2).md)
 
 #### `UN2024GoverningAiHumanity` — Governing AI for Humanity: Final Report (2024)
@@ -3458,10 +3448,10 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Access:** unknown
 - **Version history:** `UNndAiAdvisoryBody`, `UILndGoverningAiHumanity`
 - **Annotation:** High‑level blueprint for international AI governance architecture; important agenda‑setting but not an operational assurance standard.
-- **Risk domain:** —
-- **Lifecycle stage:** —
+- **Risk domain:** unknown
+- **Lifecycle stage:** unknown
 - **Assurance function:** auditing; reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Provenance:** S2‑T2‑13 (deep-research-report (2).md)
 
 #### `House2024MemorandumM2410` — Memorandum M‑24‑10 (2024)
@@ -3474,10 +3464,10 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **ID / locator(s):** PDF: https://www.whitehouse.gov/wp-content/uploads/2024/03/M-24-10-Advancing-Governance-Innovation-and-Risk-Management-for-Agency-Use-of-Artificial-Intelligence.pdf
 - **Access:** unknown
 - **Annotation:** Establishes minimum federal agency AI governance/risk practices; primarily governs federal use, with indirect spillover to contractors.
-- **Risk domain:** —
-- **Lifecycle stage:** —
+- **Risk domain:** unknown
+- **Lifecycle stage:** unknown
 - **Assurance function:** reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Provenance:** S2‑T2‑14 (deep-research-report (2).md)
 
 #### `OpenAI2024O1SystemCard` — o1 system card as a governance‑relevant disclosure artifact (2024)
@@ -3490,10 +3480,10 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **ID / locator(s):** URL: https://openai.com/index/openai-o1-system-card/; PDF: https://cdn.openai.com/o1-system-card.pdf
 - **Access:** unknown
 - **Annotation:** Shows system cards as quasi‑assurance evidence; comparability across labs remains limited.
-- **Risk domain:** —
-- **Lifecycle stage:** —
+- **Risk domain:** unknown
+- **Lifecycle stage:** unknown
 - **Assurance function:** auditing; reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** governance
 - **Provenance:** S2‑T2‑65, S2‑T3‑47 (deep-research-report (2).md)
 
@@ -3507,10 +3497,10 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **ID / locator(s):** URL: https://www.state.gov/; PDF: https://2021-2025.state.gov/wp-content/uploads/2024/09/DOS-Compliance-Plan-with-OMB-M-24-10-Accessible-9.23.2024.pdf
 - **Access:** unknown
 - **Annotation:** Notes strengthened governance bodies; transparency does not equal assurance.
-- **Risk domain:** —
-- **Lifecycle stage:** —
+- **Risk domain:** unknown
+- **Lifecycle stage:** unknown
 - **Assurance function:** auditing; reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Provenance:** S2‑T2‑56, S2‑T3‑63 (deep-research-report (2).md)
 
 #### `Register2023SafeSecureTrustworthy` — Safe, Secure, and Trustworthy Development and Use of AI (2023)
@@ -3523,10 +3513,10 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **ID / locator(s):** URL: https://www.federalregister.gov/documents/2023/11/06/2023-24283/safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence
 - **Access:** unknown
 - **Annotation:** Out‑of‑window for Scope Two deliverables but foundational for 2024 reporting proposals; illustrates dependence of downstream governance on upstream executive direction.
-- **Risk domain:** —
-- **Lifecycle stage:** —
+- **Risk domain:** unknown
+- **Lifecycle stage:** unknown
 - **Assurance function:** reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Provenance:** S2‑T2‑50 (deep-research-report (2).md)
 
 #### `OECDndAiDashboardEntry` — AI dashboard entry on HLAB‑AI initiative (2025)
@@ -3536,13 +3526,13 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Year:** 2025
 - **Type:** policy report/guidance
 - **Evidence strength:** conceptual (maturity: C)
-- **ID / locator(s):** URL: https://oecd.ai/en/dashboards/policy-initiatives/un-secretary-generals-high-level-advisory-body-on-artificial-intelligence-hlab-ai-5433; https://oecd.ai/en/
+- **ID / locator(s):** URL: https://oecd.ai/en/dashboards/policy-initiatives/un-secretary-generals-high-level-advisory-body-on-artificial-intelligence-hlab-ai-5433; URL: https://oecd.ai/en/
 - **Access:** unknown
 - **Annotation:** Institutional indexing supports policy tracking; not itself a primary governance instrument.
-- **Risk domain:** —
-- **Lifecycle stage:** —
+- **Risk domain:** unknown
+- **Lifecycle stage:** unknown
 - **Assurance function:** reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Provenance:** S2‑T2‑62 (deep-research-report (2).md)
 
 #### `NationalndAiSafetyInstitutes` — AI safety institutes: joint pre‑deployment testing report on OpenAI o1 (2024)
@@ -3552,13 +3542,13 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Year:** 2024
 - **Type:** policy report/guidance
 - **Evidence strength:** conceptual (maturity: C)
-- **ID / locator(s):** URL: https://www.aisi.gov.uk/blog/pre-deployment-evaluation-of-openais-o1-model; https://www.aisi.gov.uk/
+- **ID / locator(s):** URL: https://www.aisi.gov.uk/blog/pre-deployment-evaluation-of-openais-o1-model; URL: https://www.aisi.gov.uk/
 - **Access:** unknown
 - **Annotation:** Concrete cross‑government evaluation collaboration; scaling this model across labs and domains remains an open resourcing problem.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** pretraining; deployment
 - **Assurance function:** eval; reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Provenance:** S2‑T2‑32 (deep-research-report (2).md)
 
 #### `NISTndAiSystemDocumentation` — AI System Documentation (n.d.)
@@ -3571,10 +3561,10 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **ID / locator(s):** URL: https://airmf.nist.gov/
 - **Access:** unknown
 - **Annotation:** Pushes standardized documentation artifacts to support audits; the limiting factor is adoption and harmonization with EU documentation duties.
-- **Risk domain:** —
-- **Lifecycle stage:** —
+- **Risk domain:** unknown
+- **Lifecycle stage:** unknown
 - **Assurance function:** auditing; reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Provenance:** S2‑T2‑04 (deep-research-report (2).md)
 
 #### `FMFndAibioWorkstream` — AI‑Bio workstream (n.d.)
@@ -3590,7 +3580,7 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Risk domain:** bio
 - **Lifecycle stage:** deployment
 - **Assurance function:** eval; mitigation; reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Provenance:** S2‑T2‑60, S2‑T3‑36 (deep-research-report (2).md)
 
 #### `FMFndAicyberWorkstream` — AI‑Cyber workstream (n.d.)
@@ -3604,9 +3594,9 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Access:** unknown
 - **Annotation:** Formalizes workstream agenda for cyber risk; outputs depend on technical progress and external scrutiny.
 - **Risk domain:** cyber
-- **Lifecycle stage:** —
+- **Lifecycle stage:** unknown
 - **Assurance function:** reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** security
 - **Provenance:** S2‑T2‑58, S2‑T3‑34 (deep-research-report (2).md)
 
@@ -3623,7 +3613,7 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Risk domain:** CBRN
 - **Lifecycle stage:** deployment
 - **Assurance function:** eval; reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Provenance:** S2‑T2‑59, S2‑T3‑35 (deep-research-report (2).md)
 
 #### `CIOgovndConsolidatedFederalAi` — Consolidated Federal AI Use Case Inventory (n.d.)
@@ -3636,10 +3626,10 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **ID / locator(s):** URL: https://www.cio.gov/ai/
 - **Access:** unknown
 - **Annotation:** Institutionalizes transparency about federal AI use cases and whether systems impact rights/safety; does not itself guarantee adequate evaluation rigor.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** deployment
 - **Assurance function:** eval; reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Provenance:** S2‑T2‑15 (deep-research-report (2).md)
 
 #### `ARndCurrentPriorVersions` — current and prior versions (n.d.)
@@ -3652,10 +3642,10 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **ID / locator(s):** URL: https://www.anthropic.com/rsp-updates
 - **Access:** unknown
 - **Annotation:** Version control improves governance traceability; still not an external assurance mechanism.
-- **Risk domain:** —
-- **Lifecycle stage:** —
+- **Risk domain:** unknown
+- **Lifecycle stage:** unknown
 - **Assurance function:** auditing; reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Provenance:** S2‑T2‑29 (deep-research-report (2).md)
 
 #### `RMCECndFirmsResisting` — firms resisting) (2024)
@@ -3665,13 +3655,13 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Year:** 2024
 - **Type:** press coverage
 - **Evidence strength:** conceptual (maturity: D)
-- **ID / locator(s):** URL: https://www.reuters.com/technology/artificial-intelligence/eu-picks-experts-steer-ai-compliance-rules-2024-09-30/; https://www.reuters.com/technology/
+- **ID / locator(s):** URL: https://www.reuters.com/technology/artificial-intelligence/eu-picks-experts-steer-ai-compliance-rules-2024-09-30/; URL: https://www.reuters.com/technology/
 - **Access:** unknown
 - **Annotation:** Shows voluntary code compliance is politically contested; media coverage is not authoritative implementation text.
-- **Risk domain:** —
-- **Lifecycle stage:** —
-- **Assurance function:** —
-- **Threat model:** —
+- **Risk domain:** unknown
+- **Lifecycle stage:** unknown
+- **Assurance function:** unknown
+- **Threat model:** unknown
 - **Provenance:** S2‑T2‑72 (deep-research-report (2).md)
 
 #### `ASIndFrontierAiTrends` — Frontier AI Trends Report (n.d.)
@@ -3684,10 +3674,10 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **ID / locator(s):** URL: https://www.aisi.gov.uk/frontier-ai-trends-report; PDF: https://aisi.s3.eu-west-2.amazonaws.com/Frontier%2BAI%2BTrends%2BReport%2B-%2BAI%2BSecurity%2BInstitute.pdf
 - **Access:** unknown
 - **Annotation:** Regularized testing regime across frontier models; still requires external validation of methodology and coverage.
-- **Risk domain:** —
-- **Lifecycle stage:** —
+- **Risk domain:** unknown
+- **Lifecycle stage:** unknown
 - **Assurance function:** reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Provenance:** S2‑T2‑35 (deep-research-report (2).md)
 
 #### `MappingndMappingAiBenchmark` — Mapping AI benchmark data to quantitative risk estimates (2025)
@@ -3700,10 +3690,10 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **ID / locator(s):** DOI: 10.48550/arXiv.2503.04299; arXiv: 2503.04299; URL: https://www.aisi.gov.uk/
 - **Access:** open
 - **Annotation:** Points toward quantitative risk translation from evals; methodology sensitivity and assumptions remain significant.
-- **Risk domain:** —
-- **Lifecycle stage:** —
+- **Risk domain:** unknown
+- **Lifecycle stage:** unknown
 - **Assurance function:** eval
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** evaluation/benchmarks
 - **Provenance:** S2‑T2‑69, S2‑T3‑81 (deep-research-report (2).md)
 
@@ -3717,10 +3707,10 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **ID / locator(s):** URL: https://www.frontiermodelforum.org/publications/
 - **Access:** unknown
 - **Annotation:** Central repository for multi‑company frontier framework artifacts; governance value is standardization, but verifiability and representativeness beyond member firms remain open.
-- **Risk domain:** —
-- **Lifecycle stage:** —
+- **Risk domain:** unknown
+- **Lifecycle stage:** unknown
 - **Assurance function:** reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Provenance:** S2‑T2‑18 (deep-research-report (2).md)
 
 #### `ReutersndNoStopClock` — no stop the clock (2025)
@@ -3730,13 +3720,13 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Year:** 2025
 - **Type:** press coverage
 - **Evidence strength:** conceptual (maturity: D)
-- **ID / locator(s):** URL: https://www.reuters.com/world/europe/artificial-intelligence-rules-go-ahead-no-pause-eu-commission-says-2025-07-04/; https://www.reuters.com/world/europe/
+- **ID / locator(s):** URL: https://www.reuters.com/world/europe/artificial-intelligence-rules-go-ahead-no-pause-eu-commission-says-2025-07-04/; URL: https://www.reuters.com/world/europe/
 - **Access:** unknown
 - **Annotation:** Signals enforcement intent and timelines; media reports cannot substitute for official implementing acts.
-- **Risk domain:** —
-- **Lifecycle stage:** —
+- **Risk domain:** unknown
+- **Lifecycle stage:** unknown
 - **Assurance function:** reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Provenance:** S2‑T2‑42, S2‑T3‑65 (deep-research-report (2).md)
 
 #### `ASIBndOurFirstYear` — Our First Year (2024)
@@ -3746,13 +3736,13 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Year:** 2024
 - **Type:** blog/commentary
 - **Evidence strength:** conceptual (maturity: B)
-- **ID / locator(s):** URL: https://www.aisi.gov.uk/blog/our-first-year; https://www.aisi.gov.uk/
+- **ID / locator(s):** URL: https://www.aisi.gov.uk/blog/our-first-year; URL: https://www.aisi.gov.uk/
 - **Access:** unknown
 - **Annotation:** Institutional consolidation and scope shift; the governance question is how institute outputs become binding gates.
-- **Risk domain:** —
-- **Lifecycle stage:** —
-- **Assurance function:** —
-- **Threat model:** —
+- **Risk domain:** unknown
+- **Lifecycle stage:** unknown
+- **Assurance function:** unknown
+- **Threat model:** unknown
 - **Provenance:** S2‑T2‑33, S2‑T3‑48 (deep-research-report (2).md)
 
 #### `NISTndOutlineDraftTevv` — Outline of Draft TEVV Standard (n.d.)
@@ -3765,10 +3755,10 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **ID / locator(s):** URL: https://www.nist.gov/artificial-intelligence
 - **Access:** unknown
 - **Annotation:** Establishes a standards trajectory for testing/evaluation/verification/validation; strong governance utility, but details are incomplete until full draft and sector profiles mature.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** deployment
 - **Assurance function:** eval; reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** evaluation/benchmarks; governance
 - **Provenance:** S2‑T2‑03, S2‑T3‑03 (deep-research-report (2).md)
 
@@ -3782,10 +3772,10 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **ID / locator(s):** URL: https://digital-strategy.ec.europa.eu/en/policies/european-approach-artificial-intelligence
 - **Access:** unknown
 - **Annotation:** Provides authoritative phased dates (e.g., GPAI obligations start Aug 2025; broad applicability Aug 2026) used for compliance planning; still leaving uncertainty in harmonized standards and enforcement posture.
-- **Risk domain:** —
-- **Lifecycle stage:** —
+- **Risk domain:** unknown
+- **Lifecycle stage:** unknown
 - **Assurance function:** reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Provenance:** S2‑T2‑06, S2‑T3‑07 (deep-research-report (2).md)
 
 #### `ControlArenandResearch` — Research (n.d.)
@@ -3795,7 +3785,7 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Year:** n.d.
 - **Type:** policy report/guidance
 - **Evidence strength:** conceptual (maturity: C)
-- **ID / locator(s):** URL: https://control-arena.aisi.org.uk/research.html; https://controlarena.ai/
+- **ID / locator(s):** URL: https://control-arena.aisi.org.uk/research.html; URL: https://controlarena.ai/
 - **Access:** unknown
 - **Annotation:** Positions sabotage/control evaluations as governance‑relevant evidence; benchmarks may lag real deployment threat models.
 - **Risk domain:** autonomy
@@ -3811,13 +3801,13 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Year:** 2025
 - **Type:** policy report/guidance
 - **Evidence strength:** conceptual (maturity: C)
-- **ID / locator(s):** URL: https://www.gov.uk/government/news/tackling-ai-security-risks-to-unleash-growth-and-deliver-plan-for-change; https://www.aisi.gov.uk/
+- **ID / locator(s):** URL: https://www.gov.uk/government/news/tackling-ai-security-risks-to-unleash-growth-and-deliver-plan-for-change; URL: https://www.aisi.gov.uk/
 - **Access:** unknown
 - **Annotation:** Signals government intent and resourcing; does not guarantee technical evaluation maturity.
-- **Risk domain:** —
+- **Risk domain:** unknown
 - **Lifecycle stage:** deployment
 - **Assurance function:** eval; reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Method area:** security
 - **Provenance:** S2‑T2‑75 (deep-research-report (2).md)
 
@@ -3828,13 +3818,13 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Year:** n.d.
 - **Type:** policy report/guidance
 - **Evidence strength:** conceptual (maturity: C)
-- **ID / locator(s):** URL: https://oecd.ai/en/wonk; https://oecd.ai/en/
+- **ID / locator(s):** URL: https://oecd.ai/en/wonk; URL: https://oecd.ai/en/
 - **Access:** unknown
 - **Annotation:** Interprets governance rationale and intended effects; still depends on uptake and data quality.
-- **Risk domain:** —
-- **Lifecycle stage:** —
+- **Risk domain:** unknown
+- **Lifecycle stage:** unknown
 - **Assurance function:** reporting
-- **Threat model:** —
+- **Threat model:** unknown
 - **Provenance:** S2‑T2‑47, S2‑T3‑13 (deep-research-report (2).md)
 
 ## 3.4 Tier 3 — Governance inventory (citation-only) (53 references)
@@ -3894,3 +3884,235 @@ These entries are the citation-only inventory retained from the Tier‑3 atlas-s
 - `AnthropicndRspUpdatesversioningPage` — Anthropic (n.d.). *RSP updates/versioning page*. [—] (Provenance: S2‑T3‑43)
 - `OpenAIndSafetyResponsibility` — OpenAI (n.d.). *Safety & responsibility*. [—] (Provenance: S2‑T3‑84)
 - `WEFndSyntheticDataGovernance` — WEF (n.d.). *synthetic data governance report*. [—] (Provenance: S2‑T3‑86)
+
+## Appendix — Alias stubs for Version history keys
+
+These entries exist solely to satisfy `SCHEMA.md` version-linking rules (`Version history` ↔ `Relation: same_work_as`). They intentionally omit analytic fields and should not be treated as independent evidence.
+
+#### `GD2025FrontierSafetyFrameworka` — Frontier Safety Framework 3.0 (2025)
+
+- **Creators:** Google DeepMind
+- **Venue/body:** Google DeepMind
+- **Year:** 2025
+- **Type:** corporate policy/framework
+- **Evidence strength:** operational_standard (maturity: C)
+- **ID / locator(s):** PDF: https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/strengthening-our-frontier-safety-framework/frontier-safety-framework_3.pdf
+- **Access:** open
+- **Relation:** same_work_as: `GD2025FrontierSafetyFramework`
+- **Provenance:** Alias stub for `GD2025FrontierSafetyFramework` (non-canonical; see canonical entry for analytic content).
+
+#### `NISTndManagingMisuseRisk` — Managing Misuse Risk for Dual‑Use Foundation Models (2024)
+
+- **Creators:** U.S. AI Safety Institute / NIST
+- **Venue/body:** NIST
+- **Year:** 2024
+- **Type:** standard/guidance
+- **Evidence strength:** operational_standard (maturity: C)
+- **ID / locator(s):** DOI: 10.6028/NIST.AI.800-1.ipd; URL: https://doi.org/10.6028/NIST.AI.800-1.ipd; PDF: https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.800-1.ipd.pdf
+- **Access:** unknown
+- **Relation:** same_work_as: `UASIN2024ManagingMisuseRisk`
+- **Provenance:** Alias stub for `UASIN2024ManagingMisuseRisk` (non-canonical; see canonical entry for analytic content).
+
+#### `Anthropic2024ResponsibleScalingPolicya` — Responsible Scaling Policy PDF (2024)
+
+- **Creators:** Anthropic
+- **Venue/body:** Anthropic
+- **Year:** 2024
+- **Type:** corporate policy/framework
+- **Evidence strength:** operational_standard (maturity: C)
+- **ID / locator(s):** URL: https://www.anthropic.com/rsp-updates
+- **Access:** open
+- **Relation:** same_work_as: `Anthropic2024ResponsibleScalingPolicy`
+- **Provenance:** Alias stub for `Anthropic2024ResponsibleScalingPolicy` (non-canonical; see canonical entry for analytic content).
+
+#### `Benton2024SabotageEvaluationsFrontiera` — Sabotage Evaluations for Frontier Models (2024)
+
+- **Creators:** Joe Benton et al
+- **Venue/body:** arXiv
+- **Year:** 2024
+- **Type:** paper
+- **Evidence strength:** benchmark_infra (maturity: B)
+- **ID / locator(s):** arXiv: 2410.21514
+- **Access:** open
+- **Relation:** same_work_as: `Benton2024SabotageEvaluationsFrontier`
+- **Provenance:** Alias stub for `Benton2024SabotageEvaluationsFrontier` (non-canonical; see canonical entry for analytic content).
+
+#### `Anon2024AlignmentFakingLarge` — Alignment Faking in Large Language Models (2024)
+
+- **Creators:** Greenblatt et al.
+- **Venue/body:** arXiv
+- **Year:** 2024
+- **Type:** paper
+- **Evidence strength:** empirical_small (maturity: B)
+- **ID / locator(s):** arXiv: 2412.14093
+- **Access:** open
+- **Relation:** same_work_as: `Greenblatt2024AlignmentFakingLarge`
+- **Provenance:** Alias stub for `Greenblatt2024AlignmentFakingLarge` (non-canonical; see canonical entry for analytic content).
+
+#### `Meinke2024FrontierModelsCapablea` — Frontier Models are Capable of In‑context Scheming (2024)
+
+- **Creators:** Alexander Meinke et al
+- **Venue/body:** arXiv
+- **Year:** 2024
+- **Type:** paper
+- **Evidence strength:** benchmark_infra (maturity: B)
+- **ID / locator(s):** arXiv: 2406.11713
+- **Access:** open
+- **Relation:** same_work_as: `Meinke2024FrontierModelsCapable`
+- **Provenance:** Alias stub for `Meinke2024FrontierModelsCapable` (non-canonical; see canonical entry for analytic content).
+
+#### `Korbak2025ChainThoughtMonitorabilitya` — Chain of Thought Monitorability: A New and Fragile Opportunity for AI Safety (2025)
+
+- **Creators:** Tomek Korbak et al
+- **Venue/body:** arXiv
+- **Year:** 2025
+- **Type:** paper
+- **Evidence strength:** empirical_small (maturity: B)
+- **ID / locator(s):** arXiv: 2507.11473
+- **Access:** open
+- **Relation:** same_work_as: `Korbak2025ChainThoughtMonitorability`
+- **Provenance:** Alias stub for `Korbak2025ChainThoughtMonitorability` (non-canonical; see canonical entry for analytic content).
+
+#### `OpenAIndEvaluatingChainofthoughtMonito` — Evaluating chain‑of‑thought monitorability (2025)
+
+- **Creators:** OpenAI
+- **Venue/body:** arXiv
+- **Year:** 2025
+- **Type:** paper
+- **Evidence strength:** empirical_small (maturity: B)
+- **ID / locator(s):** arXiv: 2512.18311; URL: https://openai.com/index/evaluating-chain-of-thought-monitorability/
+- **Access:** open
+- **Relation:** same_work_as: `OpenAI2025MonitoringMonitorability`
+- **Provenance:** Alias stub for `OpenAI2025MonitoringMonitorability` (non-canonical; see canonical entry for analytic content).
+
+#### `Kenton2024ScalableOversightWeaka` — On scalable oversight with weak LLMs judging strong LLMs (2024)
+
+- **Creators:** Zachary Kenton et al
+- **Venue/body:** arXiv
+- **Year:** 2024
+- **Type:** paper
+- **Evidence strength:** empirical_small (maturity: B)
+- **ID / locator(s):** arXiv: 2407.04622
+- **Access:** open
+- **Relation:** same_work_as: `Kenton2024ScalableOversightWeak`
+- **Provenance:** Alias stub for `Kenton2024ScalableOversightWeak` (non-canonical; see canonical entry for analytic content).
+
+#### `MMJAH2025MitigatingManyshotJailbreaking` — Mitigating Many‑Shot Jailbreaking (2025)
+
+- **Creators:** Anonymous
+- **Venue/body:** arXiv
+- **Year:** 2025
+- **Type:** paper
+- **Evidence strength:** empirical_small (maturity: B)
+- **ID / locator(s):** arXiv: 2504.09604
+- **Access:** open
+- **Relation:** same_work_as: `Anon2025MitigatingManyshotJailbreaking`
+- **Provenance:** Alias stub for `Anon2025MitigatingManyshotJailbreaking` (non-canonical; see canonical entry for analytic content).
+
+#### `International2026AiSafetyReporta` — AI Safety Report publication page (2026)
+
+- **Creators:** International
+- **Venue/body:** International
+- **Year:** 2026
+- **Type:** policy report/guidance
+- **Evidence strength:** conceptual (maturity: C)
+- **ID / locator(s):** URL: https://internationalaisafetyreport.org/
+- **Access:** unknown
+- **Relation:** same_work_as: `International2026AiSafetyReport`
+- **Provenance:** Alias stub for `International2026AiSafetyReport` (non-canonical; see canonical entry for analytic content).
+
+#### `FMFndResearchUpdateNuclear` — research update on nuclear security (2026)
+
+- **Creators:** FMF
+- **Venue/body:** FMF
+- **Year:** 2026
+- **Type:** industry report
+- **Evidence strength:** conceptual (maturity: C)
+- **ID / locator(s):** URL: https://www.frontiermodelforum.org/research-updates/frontier-ai-and-nuclear-security/
+- **Access:** unknown
+- **Relation:** same_work_as: `FMF2026FrontierAiNuclear`
+- **Provenance:** Alias stub for `FMF2026FrontierAiNuclear` (non-canonical; see canonical entry for analytic content).
+
+#### `EUndDrawingupGeneralpurposeAi` — Drawing‑up a General‑Purpose AI Code of Practice (2025)
+
+- **Creators:** European Commission
+- **Venue/body:** European Commission
+- **Year:** 2025
+- **Type:** policy report/guidance
+- **Evidence strength:** conceptual (maturity: C)
+- **ID / locator(s):** URL: https://digital-strategy.ec.europa.eu/en/policies/general-purpose-ai-code-practice
+- **Access:** unknown
+- **Relation:** same_work_as: `EC2025ContentsGeneralpurposeAi`
+- **Provenance:** Alias stub for `EC2025ContentsGeneralpurposeAi` (non-canonical; see canonical entry for analytic content).
+
+#### `OPRLHR20252025` — event page launching HAIP Reporting Framework (2025)
+
+- **Creators:** OECD
+- **Venue/body:** OECD
+- **Year:** 2025
+- **Type:** policy report/guidance
+- **Evidence strength:** conceptual (maturity: C)
+- **ID / locator(s):** URL: https://www.oecd.org/en/events/2025/02/launch-of-the-hiroshima-ai-process-reporting-framework.html
+- **Access:** unknown
+- **Relation:** same_work_as: `OECD2025EventPageLaunching`
+- **Provenance:** Alias stub for `OECD2025EventPageLaunching` (non-canonical; see canonical entry for analytic content).
+
+#### `UFRIFR2025FrameworkArtificialIntelligenc` — Framework for Artificial Intelligence Diffusion (2025)
+
+- **Creators:** Federal Register
+- **Venue/body:** Federal Register
+- **Year:** 2025
+- **Type:** policy report/guidance
+- **Evidence strength:** conceptual (maturity: C)
+- **ID / locator(s):** URL: https://www.federalregister.gov/documents/2025/01/15/2025-00636/framework-for-artificial-intelligence-diffusion
+- **Access:** unknown
+- **Relation:** same_work_as: `Register2025FrameworkAiDiffusion`
+- **Provenance:** Alias stub for `Register2025FrameworkAiDiffusion` (non-canonical; see canonical entry for analytic content).
+
+#### `EUndAiActPolicy` — AI Act policy page (2024)
+
+- **Creators:** European Commission
+- **Venue/body:** European Commission
+- **Year:** 2024
+- **Type:** regulation
+- **Evidence strength:** binding_regulation (maturity: C)
+- **ID / locator(s):** URL: https://eur-lex.europa.eu/eli/reg/2024/1689/oj
+- **Access:** unknown
+- **Relation:** same_work_as: `EC2024AiActEnters`
+- **Provenance:** Alias stub for `EC2024AiActEnters` (non-canonical; see canonical entry for analytic content).
+
+#### `EuropeanndCommissionPresscornerPdf` — Commission press‑corner PDF on AI Act (2024)
+
+- **Creators:** European Commission
+- **Venue/body:** European Commission
+- **Year:** 2024
+- **Type:** regulation
+- **Evidence strength:** binding_regulation (maturity: C)
+- **ID / locator(s):** URL: https://eur-lex.europa.eu/eli/reg/2024/1689/oj
+- **Access:** unknown
+- **Relation:** same_work_as: `EC2024AiActEnters`
+- **Provenance:** Alias stub for `EC2024AiActEnters` (non-canonical; see canonical entry for analytic content).
+
+#### `UNndAiAdvisoryBody` — AI Advisory Body landing page (2024)
+
+- **Creators:** UN
+- **Venue/body:** UN
+- **Year:** 2024
+- **Type:** policy report/guidance
+- **Evidence strength:** conceptual (maturity: C)
+- **ID / locator(s):** URL: https://www.un.org/ai-advisory-body
+- **Access:** unknown
+- **Relation:** same_work_as: `UN2024GoverningAiHumanity`
+- **Provenance:** Alias stub for `UN2024GoverningAiHumanity` (non-canonical; see canonical entry for analytic content).
+
+#### `UILndGoverningAiHumanity` — Governing AI for Humanity (2024)
+
+- **Creators:** UN
+- **Venue/body:** UN
+- **Year:** 2024
+- **Type:** policy report/guidance
+- **Evidence strength:** conceptual (maturity: C)
+- **ID / locator(s):** URL: https://www.un.org/ai-advisory-body
+- **Access:** unknown
+- **Relation:** same_work_as: `UN2024GoverningAiHumanity`
+- **Provenance:** Alias stub for `UN2024GoverningAiHumanity` (non-canonical; see canonical entry for analytic content).
