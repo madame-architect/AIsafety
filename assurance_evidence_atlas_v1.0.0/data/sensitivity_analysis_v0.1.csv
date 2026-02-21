@@ -1,7 +1,0 @@
-scenario,metric,value
-baseline_all,governance_domain_coverage,4
-exclude_self_attested,governance_domain_coverage,4
-independently_verifiable_only,governance_domain_coverage,4
-baseline_all,technical_records,45
-exclude_evaluation_awareness_tagged,technical_records,43
-doi_only_proxy_replication,technical_records,5
