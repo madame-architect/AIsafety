@@ -49,27 +49,29 @@ An **annotated entry** is a Markdown block consisting of:
 
 ### Field table
 
-| Field (as written) | Required? | Value type | Controlled? | Notes |
-| --- | --- | --- | --- | --- |
-| `Creators` | required | free-text string | no | Authors or organization responsible for the artifact. |
-| `Venue/body` | required | free-text string | no | Publishing venue or responsible body (e.g., arXiv, EU (EUR-Lex), NIST, company name). |
-| `Year` | required | `YYYY` \| `n.d.` | partially | Use `n.d.` when no publication year is available. |
-| `Type` | required | token | **yes** | See controlled vocab. |
-| `Evidence strength` | required | token + maturity | **yes** | Format: `<strength> (maturity: <A|B|C|D>)`. |
-| `ID / locator(s)` | required | locator list | partially | Prefer prefixed locators; see locator rules. |
-| `Access` | required | token | **yes** | open / controlled-restricted / unknown. |
-| `Annotation` | required* | free-text paragraph | no | *Required unless this entry is an alias* via `Relation: same_work_as`. |
-| `Safety relevance` | optional | free-text paragraph | no | Why this matters for assurance/governance. |
-| `Limitations / open questions` | optional | free-text paragraph | no | Key caveats / failure modes / missing validation. |
-| `Risk domain` | required | tag list | **yes** | Multi-select; controlled tokens; see tags. |
-| `Lifecycle stage` | required | tag list | **yes** | Multi-select; controlled tokens; see tags. |
-| `Assurance function` | required | tag list | **yes** | Multi-select; controlled tokens; see tags. |
-| `Threat model` | required | tag list | **yes** | Multi-select; controlled tokens; see tags. |
-| `Method area` | optional (recommended) | tag list | **yes** | Lightweight topical index; multi-select. |
-| `Where/what` | optional | free-text string | no | Pointer to a specific section/page/figure; helpful for long reports. |
-| `Version history` | optional | key list | partially | List of related keys; see versioning rules. |
-| `Relation` | optional | relation statement | partially | Currently supports `same_work_as: `…; see versioning rules. |
-| `Provenance` | required | free-text string | no | Internal ingestion notes (source lists, pipeline stage, etc.). |
+| Field (as written)             | Required?              | Value type          | Controlled? | Notes                                                        |
+| ------------------------------ | ---------------------- | ------------------- | ----------- | ------------------------------------------------------------ |
+| `Creators`                     | required               | free-text string    | no          | Authors or organization responsible for the artifact.        |
+| `Venue/body`                   | required               | free-text string    | no          | Publishing venue or responsible body (e.g., arXiv, EU (EUR-Lex), NIST, company name). |
+| `Year`                         | required               | `YYYY` \| `n.d.`    | partially   | Use `n.d.` when no publication year is available.            |
+| `Type`                         | required               | token               | **yes**     | See controlled vocab.                                        |
+| `Evidence strength`            | required               | token + maturity    | **yes**     | Format: `<strength> (maturity: <A|B|C|D>)`.                  |
+| `ID / locator(s)`              | required               | locator list        | partially   | Prefer prefixed locators; see locator rules.                 |
+| `Access`                       | required               | token               | **yes**     | open / controlled-restricted / unknown.                      |
+| `Annotation`                   | required*              | free-text paragraph | no          | *Required unless this entry is an alias* via `Relation: same_work_as`. |
+| `Safety relevance`             | optional               | free-text paragraph | no          | Why this matters for assurance/governance.                   |
+| `Limitations / open questions` | optional               | free-text paragraph | no          | Key caveats / failure modes / missing validation.            |
+| `Risk domain`                  | required               | tag list            | **yes**     | Multi-select; controlled tokens; see tags.                   |
+| `Lifecycle stage`              | required               | tag list            | **yes**     | Multi-select; controlled tokens; see tags.                   |
+| `Assurance function`           | required               | tag list            | **yes**     | Multi-select; controlled tokens; see tags.                   |
+| `Threat model`                 | required               | tag list            | **yes**     | Multi-select; controlled tokens; see tags.                   |
+| `Method area`                  | optional (recommended) | tag list            | **yes**     | Lightweight topical index; multi-select.                     |
+| `Where/what`                   | optional               | free-text string    | no          | Pointer to a specific section/page/figure; helpful for long reports. |
+| `Version history`              | optional               | key list            | partially   | List of related keys; see versioning rules.                  |
+| `Relation`                     | optional               | relation statement  | partially   | Currently supports `same_work_as: `…; see versioning rules.  |
+| `Ingestion tier`               | required               | token list          | no          | Internal corpus routing tier(s) (e.g., GOV-CORE, TECH, S2-T3). |
+| `Stream code`                  | required               | string list         | no          | Per-tier index code(s); preserve leading zeros (e.g., 03, 008). |
+| `Source report`                | required               | string list         | no          | Source synthesis file(s) that introduced the entry (e.g., deep-research-report (1).md). |
 
 ---
 
@@ -202,18 +204,26 @@ Allowed tokens:
 
 ### Multi-select list encoding
 
-For `Risk domain`, `Lifecycle stage`, `Assurance function`, `Threat model`, and `Method area`:
+For `Risk domain`, `Lifecycle stage`, `Assurance function`, `Threat model`, `Method area`, and ingestion fields (`Ingestion tier`, `Stream code`, `Source report`):
 
 - Use **semicolon + space** as the delimiter: `value1; value2; value3`.
 - Do not include duplicates.
 - Prefer ordering tokens in the order shown in the “Controlled vocabularies” section (for consistency).
+
+
+
+**Ingestion field pairing rule**
+
+- If `Ingestion tier` contains multiple values, `Stream code` should contain the same number of values.
+- The *i*‑th `Stream code` is interpreted as belonging to the *i*‑th `Ingestion tier`.
+- `Source report` may list one or more files and does not need to be aligned one‑to‑one.
 
 ### Unknown / missing values
 
 This schema supports three explicit “non-values”:
 
 - `unknown` — use when a value *should exist* but is not known yet.
-  - Allowed in: `Access` and all controlled tag fields.
+  - Allowed in: `Access`, all controlled tag fields, and ingestion fields (`Ingestion tier`, `Stream code`, `Source report`).
 - `TBD` — use when a value is missing but expected to be found via follow-up QA.
   - Allowed in: `ID / locator(s)` (preferred), and optionally `Where/what`.
   - Do **not** use `TBD` for tag fields; use `unknown`.
@@ -290,7 +300,7 @@ If an entry contains `Relation: same_work_as`:
 Two compliant patterns are allowed:
 
 1) **Alias-stub pattern (preferred)**  
-   Include only bibliographic fields plus `Relation` and `Provenance`:
+   Include only bibliographic fields plus `Relation` and ingestion fields:
 
    - Creators
    - Venue/body
@@ -301,9 +311,10 @@ Two compliant patterns are allowed:
    - Access
    - Where/what (optional)
    - Relation (required)
-   - Provenance
-
-   All analytic fields (Annotation; Safety relevance; Limitations; tags; Method area) should be **omitted**.
+   - Ingestion tier
+   - Stream code
+   - Source report
+     All analytic fields (Annotation; Safety relevance; Limitations; tags; Method area) should be **omitted**.
 
 2) **Mirror pattern (allowed but discouraged)**  
    If analytic fields are included, they must match the canonical entry **exactly** (byte-for-byte) for:
@@ -363,6 +374,7 @@ All analytic fields must remain centralized in the canonical entry (alias-stub p
 ### Example 1 — paper (DOI + arXiv)
 
 #### `Charnock2026ExpandingExternalAccess` — Expanding External Access To Frontier AI Models For Dangerous Capability Evaluations (2026)
+
 - **Creators:** Jacob Charnock et al
 - **Venue/body:** arXiv
 - **Year:** 2026
@@ -378,11 +390,14 @@ All analytic fields must remain centralized in the canonical entry (alias-stub p
 - **Assurance function:** auditing; eval
 - **Threat model:** unknown
 - **Method area:** evaluation/benchmarks
-- **Provenance:** GOV-CORE-11 (deep-research-report (1).md)
+- **Ingestion tier:** GOV-CORE
+- **Stream code:** 11
+- **Source report:** deep-research-report (1).md
 
 ### Example 2 — regulation (CELEX)
 
 #### `EU2024RegulationEu20241689` — Regulation (EU) 2024/1689 (AI Act) (2024)
+
 - **Creators:** European Union
 - **Venue/body:** EU (EUR-Lex)
 - **Year:** 2024
@@ -398,11 +413,14 @@ All analytic fields must remain centralized in the canonical entry (alias-stub p
 - **Assurance function:** reporting
 - **Threat model:** not_applicable
 - **Method area:** governance
-- **Provenance:** GOV-CORE-14 (deep-research-report (1).md)
+- **Ingestion tier:** GOV-CORE
+- **Stream code:** 14
+- **Source report:** deep-research-report (1).md
 
 ### Example 3 — standard/guidance (n.d.)
 
 #### `NISTndOutlineDraftTevv` — Outline of Draft TEVV Standard (n.d.)
+
 - **Creators:** NIST
 - **Venue/body:** NIST
 - **Year:** n.d.
@@ -416,11 +434,14 @@ All analytic fields must remain centralized in the canonical entry (alias-stub p
 - **Assurance function:** eval; reporting
 - **Threat model:** not_applicable
 - **Method area:** evaluation/benchmarks; governance
-- **Provenance:** S2‑T2‑03, S2‑T3‑03 (deep-research-report (2).md)
+- **Ingestion tier:** S2-T2; S2-T3
+- **Stream code:** 03; 03
+- **Source report:** deep-research-report (2).md
 
 ### Example 4 — corporate policy/framework (with version history)
 
 #### `Anthropic2024ResponsibleScalingPolicy` — Responsible Scaling Policy (RSP-2024) (2024)
+
 - **Creators:** Anthropic
 - **Venue/body:** Anthropic
 - **Year:** 2024
@@ -437,11 +458,14 @@ All analytic fields must remain centralized in the canonical entry (alias-stub p
 - **Assurance function:** reporting
 - **Threat model:** not_applicable
 - **Method area:** governance
-- **Provenance:** GOV-CORE-40, S2‑T3‑42 (deep-research-report (1).md, deep-research-report (2).md)
+- **Ingestion tier:** GOV-CORE; S2-T3
+- **Stream code:** 40; 42
+- **Source report:** deep-research-report (1).md; deep-research-report (2).md
 
 ### Example 5 — benchmark/evaluation suite
 
 #### `Mazeika2024HarmbenchStandardizedEvaluatio` — HarmBench: A Standardized Evaluation Framework for Automated Red Teaming and Robust Refusal (2024)
+
 - **Creators:** Mazeika et al.
 - **Venue/body:** arXiv
 - **Year:** 2024
@@ -458,11 +482,14 @@ All analytic fields must remain centralized in the canonical entry (alias-stub p
 - **Assurance function:** auditing; eval; mitigation; reporting
 - **Threat model:** adaptive attacker
 - **Method area:** evaluation/benchmarks; governance
-- **Provenance:** S1‑E‑01 (deep-research-report (2).md)
+- **Ingestion tier:** S1-E
+- **Stream code:** 01
+- **Source report:** deep-research-report (2).md
 
 ### Example 6 — industry report
 
 #### `FMF2026ChainThoughtMonitorability` — Chain of Thought Monitorability (2026)
+
 - **Creators:** Frontier Model Forum
 - **Venue/body:** Frontier Model Forum
 - **Year:** 2026
@@ -478,11 +505,14 @@ All analytic fields must remain centralized in the canonical entry (alias-stub p
 - **Assurance function:** auditing; monitoring; eval; reporting
 - **Threat model:** unknown
 - **Method area:** monitoring
-- **Provenance:** GOV-CORE-38 (deep-research-report (1).md)
+- **Ingestion tier:** GOV-CORE
+- **Stream code:** 38
+- **Source report:** deep-research-report (1).md
 
 ### Example 7 — dataset
 
 #### `Wang2024Helpsteer2OpensourceDataset` — HelpSteer2: Open-source dataset for training top-performing reward models (2024)
+
 - **Creators:** Zhilin Wang et al
 - **Venue/body:** arXiv
 - **Year:** 2024
@@ -497,11 +527,14 @@ All analytic fields must remain centralized in the canonical entry (alias-stub p
 - **Assurance function:** mitigation; reporting
 - **Threat model:** unknown
 - **Method area:** post-training/alignment
-- **Provenance:** TECH-008 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 008
+- **Source report:** deep-research-report.md
 
 ### Example 8 — alias-stub using `same_work_as` (preferred pattern)
 
 #### `OpenAI2025PreparednessFrameworkV2` — Preparedness Framework v2 (2025)
+
 - **Creators:** OpenAI
 - **Venue/body:** OpenAI
 - **Year:** 2025
@@ -510,7 +543,9 @@ All analytic fields must remain centralized in the canonical entry (alias-stub p
 - **ID / locator(s):** URL: https://openai.com/index/updating-our-preparedness-framework/; PDF: https://cdn.openai.com/pdf/18a02b5d-6b67-4cec-ab64-68cdfbddebcd/preparedness-framework-v2.pdf
 - **Access:** unknown
 - **Relation:** same_work_as: `OpenAI2025PreparednessFrameworkVersion`
-- **Provenance:** S2‑T2‑26, S2‑T3‑40 (deep-research-report (2).md)
+- **Ingestion tier:** S2-T2; S2-T3
+- **Stream code:** 26; 40
+- **Source report:** deep-research-report (2).md
 
 ---
 
@@ -522,7 +557,7 @@ All analytic fields must remain centralized in the canonical entry (alias-stub p
 2) **Split “Evidence strength” into two orthogonal axes**:
    - *Normative authority* (binding regulation vs non-binding guidance vs internal policy),
    - *Empirical probative weight* (benchmark vs empirical vs conceptual).  
-   Benefit: prevents policy artifacts from being mistaken for empirical validation.
+     Benefit: prevents policy artifacts from being mistaken for empirical validation.
 
 3) **Introduce a first-class `work_id`** to represent the canonical work family, separate from `.bib` keys.  
    Benefit: eliminates fragile many-to-many relationships between `Version history` and `same_work_as`.
