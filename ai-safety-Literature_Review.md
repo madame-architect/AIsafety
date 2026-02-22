@@ -1,4 +1,4 @@
-# AI Safety Literature Review + Annotated Bibliography (Consolidated)
+# AI Safety Literature Review + Annotated Bibliography (
 
 ## What this artifact is
 
@@ -8,14 +8,9 @@ The intended downstream question is: **what claim is being justified, with what 
 
 ## Entry schema
 
-Every **annotated entry** in this document uses the same invariant fields:
+Every **annotated entry** in this document uses the same invariant fields.
 
-- **Type:** paper / benchmark-evaluation suite / dataset / standard-guidance / regulation / corporate policy-framework / industry or policy report / blog or press.
-- **Evidence strength:** a coarse class used for gating what can count as “evidence” in safety cases.
-- **Venue/body:** arXiv / journal-conference / NIST / EU / company / etc.
-- **ID / locator(s):** DOI / arXiv / CELEX / official URL / report handle (or `TBD` if missing).
-- **Access:** open / controlled-restricted / unknown.
-- Controlled tags: **Risk domain**, **Lifecycle stage**, **Assurance function**, **Threat model** (plus **Method area** as a lightweight topical index).
+Normative definitions live in SCHEMA.md and TAG_VOCAB.md.
 
 ### Evidence strength rubric
 
@@ -30,10 +25,7 @@ Every **annotated entry** in this document uses the same invariant fields:
 
 ### Controlled tag ontology
 
-- **Risk domain:** cyber / bio / CBRN / persuasion / autonomy / open-weights / privacy
-- **Lifecycle stage:** pretraining / post-training / deployment / post-deployment
-- **Assurance function:** eval / mitigation / monitoring / auditing / reporting
-- **Threat model:** non-expert uplift / expert uplift / insider / supply chain / adaptive attacker
+Normative definitions live in SCHEMA.md and TAG_VOCAB.md.
 
 ## Executive synthesis
 
@@ -160,7 +152,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** auditing; monitoring; eval; reporting
 - **Threat model:** unknown
 - **Method area:** monitoring
-- **Provenance:** GOV-CORE-38 (deep-research-report (1).md)
+- **Ingestion tier:** GOV-CORE
+- **Stream code:** 38
+- **Source report:** deep-research-report (1).md
 
 ### Organizational risk management
 
@@ -181,7 +175,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** auditing; eval
 - **Threat model:** unknown
 - **Method area:** evaluation/benchmarks
-- **Provenance:** GOV-CORE-11 (deep-research-report (1).md)
+- **Ingestion tier:** GOV-CORE
+- **Stream code:** 11
+- **Source report:** deep-research-report (1).md
 
 #### `FMF2026ManagingAdvancedCyber` — Managing Advanced Cyber Risks in Frontier AI Frameworks (2026)
 
@@ -200,7 +196,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** eval; mitigation; reporting
 - **Threat model:** non-expert uplift; expert uplift
 - **Method area:** security
-- **Provenance:** GOV-CORE-33, S2‑T2‑23 (deep-research-report (1).md, deep-research-report (2).md)
+- **Ingestion tier:** GOV-CORE; S2-T2
+- **Stream code:** 33; 23
+- **Source report:** deep-research-report (1).md; deep-research-report (2).md
 
 #### `Stix2025AiBehindClosed` — AI Behind Closed Doors: a Primer on The Governance of Internal Deployment (2025)
 
@@ -219,7 +217,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** reporting
 - **Threat model:** insider
 - **Method area:** governance
-- **Provenance:** GOV-CORE-12 (deep-research-report (1).md)
+- **Ingestion tier:** GOV-CORE
+- **Stream code:** 12
+- **Source report:** deep-research-report (1).md
 
 #### `CSET2025AiIncidentsKey` — AI Incidents: Key Components for a Mandatory Reporting Regime (2025)
 
@@ -238,7 +238,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** reporting
 - **Threat model:** unknown
 - **Method area:** governance
-- **Provenance:** GOV-CORE-21 (deep-research-report (1).md)
+- **Ingestion tier:** GOV-CORE
+- **Stream code:** 21
+- **Source report:** deep-research-report (1).md
 
 #### `FMF2025CommentNistOutline` — Comment on NIST Outline of Draft TEVV Standard (2025)
 
@@ -257,7 +259,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** eval; reporting
 - **Threat model:** unknown
 - **Method area:** evaluation/benchmarks; governance
-- **Provenance:** GOV-CORE-19 (deep-research-report (1).md)
+- **Ingestion tier:** GOV-CORE
+- **Stream code:** 19
+- **Source report:** deep-research-report (1).md
 
 ### Incident reporting and postmortems
 
@@ -278,7 +282,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** auditing; eval; mitigation; reporting
 - **Threat model:** unknown
 - **Method area:** evaluation/benchmarks; governance
-- **Provenance:** GOV-CORE-45, S2‑T2‑45, S2‑T3‑54 (deep-research-report (1).md, deep-research-report (2).md)
+- **Ingestion tier:** GOV-CORE; S2-T2; S2-T3
+- **Stream code:** 45; 45; 54
+- **Source report:** deep-research-report (1).md; deep-research-report (2).md
 
 #### `FMF2025FrontierCapabilityAssessments` — Frontier Capability Assessments (2025)
 
@@ -297,7 +303,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** eval; reporting
 - **Threat model:** unknown
 - **Method area:** evaluation/benchmarks; governance
-- **Provenance:** GOV-CORE-29, S2‑T2‑19 (deep-research-report (1).md, deep-research-report (2).md)
+- **Ingestion tier:** GOV-CORE; S2-T2
+- **Stream code:** 29; 19
+- **Source report:** deep-research-report (1).md; deep-research-report (2).md
 
 #### `Microsoft2025FrontierGovernanceFramework` — Frontier Governance Framework (2025)
 
@@ -316,7 +324,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** auditing; monitoring; mitigation; reporting
 - **Threat model:** unknown
 - **Method area:** governance
-- **Provenance:** GOV-CORE-44 (deep-research-report (1).md)
+- **Ingestion tier:** GOV-CORE
+- **Stream code:** 44
+- **Source report:** deep-research-report (1).md
 
 #### `FMF2025FrontierMitigations` — Frontier Mitigations (2025)
 
@@ -334,7 +344,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Lifecycle stage:** deployment
 - **Assurance function:** auditing; eval; mitigation; reporting
 - **Threat model:** unknown
-- **Provenance:** GOV-CORE-31, S2‑T2‑21 (deep-research-report (1).md, deep-research-report (2).md)
+- **Ingestion tier:** GOV-CORE; S2-T2
+- **Stream code:** 31; 21
+- **Source report:** deep-research-report (1).md; deep-research-report (2).md
 
 #### `GD2025FrontierSafetyFramework` — Frontier Safety Framework v3.0 (2025)
 
@@ -354,7 +366,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** mitigation; reporting
 - **Threat model:** unknown
 - **Method area:** governance
-- **Provenance:** GOV-CORE-43 (deep-research-report (1).md)
+- **Ingestion tier:** GOV-CORE
+- **Stream code:** 43
+- **Source report:** deep-research-report (1).md
 
 #### `OECD2025G7ReportingFramework` — G7 reporting framework – Hiroshima AI Process (HAIP) international code of conduct (2025)
 
@@ -373,7 +387,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** auditing; reporting
 - **Threat model:** unknown
 - **Method area:** governance
-- **Provenance:** GOV-CORE-23 (deep-research-report (1).md)
+- **Ingestion tier:** GOV-CORE
+- **Stream code:** 23
+- **Source report:** deep-research-report (1).md
 
 #### `PO2025HowAiDevelopers` — How are AI developers managing risks? (2025)
 
@@ -391,7 +407,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Lifecycle stage:** unknown
 - **Assurance function:** reporting
 - **Threat model:** unknown
-- **Provenance:** GOV-CORE-24, S2‑T2‑11, S2‑T2‑66, S2‑T3‑14, S2‑T3‑15, S2‑T3‑78 (deep-research-report (1).md, deep-research-report (2).md)
+- **Ingestion tier:** GOV-CORE; S2-T2; S2-T2; S2-T3; S2-T3; S2-T3
+- **Stream code:** 24; 11; 66; 14; 15; 78
+- **Source report:** deep-research-report (1).md; deep-research-report (2).md
 
 ### Compute governance
 
@@ -413,7 +431,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** reporting
 - **Threat model:** unknown
 - **Method area:** governance
-- **Provenance:** GOV-CORE-39 (deep-research-report (1).md)
+- **Ingestion tier:** GOV-CORE
+- **Stream code:** 39
+- **Source report:** deep-research-report (1).md
 
 #### `Anthropic2025ResponsibleScalingPolicy` — Responsible Scaling Policy, Version 2.1 (2025)
 
@@ -432,7 +452,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** reporting
 - **Threat model:** unknown
 - **Method area:** governance
-- **Provenance:** GOV-CORE-41 (deep-research-report (1).md)
+- **Ingestion tier:** GOV-CORE
+- **Stream code:** 41
+- **Source report:** deep-research-report (1).md
 
 #### `FMF2025RiskTaxonomyThresholds` — Risk Taxonomy and Thresholds for Frontier AI Frameworks (2025)
 
@@ -451,7 +473,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** reporting
 - **Threat model:** unknown
 - **Method area:** governance
-- **Provenance:** GOV-CORE-30, S2‑T2‑20 (deep-research-report (1).md, deep-research-report (2).md)
+- **Ingestion tier:** GOV-CORE; S2-T2
+- **Stream code:** 30; 20
+- **Source report:** deep-research-report (1).md; deep-research-report (2).md
 
 #### `Schuett2025SurveyThresholdsAdvanced` — Survey on Thresholds for Advanced AI Systems (2025)
 
@@ -470,7 +494,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** reporting
 - **Threat model:** expert uplift
 - **Method area:** governance
-- **Provenance:** GOV-CORE-28, S2‑T2‑68, S2‑T3‑80 (deep-research-report (1).md, deep-research-report (2).md)
+- **Ingestion tier:** GOV-CORE; S2-T2; S2-T3
+- **Stream code:** 28; 68; 80
+- **Source report:** deep-research-report (1).md; deep-research-report (2).md
 
 ### Evaluation standards and benchmarking governance
 
@@ -491,7 +517,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** eval; mitigation; reporting
 - **Threat model:** unknown
 - **Method area:** evaluation/benchmarks
-- **Provenance:** GOV-CORE-32 (deep-research-report (1).md)
+- **Ingestion tier:** GOV-CORE
+- **Stream code:** 32
+- **Source report:** deep-research-report (1).md
 
 #### `FMF2025ThresholdsFrontierAi` — Thresholds for Frontier AI Safety Frameworks (2025)
 
@@ -510,7 +538,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** reporting
 - **Threat model:** unknown
 - **Method area:** governance
-- **Provenance:** GOV-CORE-34, S2‑T2‑25 (deep-research-report (1).md, deep-research-report (2).md)
+- **Ingestion tier:** GOV-CORE; S2-T2
+- **Stream code:** 34; 25
+- **Source report:** deep-research-report (1).md; deep-research-report (2).md
 
 #### `OECD2025CommonReportingFramework` — Towards a Common Reporting Framework for AI Incidents (2025)
 
@@ -529,7 +559,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** auditing; reporting
 - **Threat model:** unknown
 - **Method area:** governance
-- **Provenance:** GOV-CORE-20 (deep-research-report (1).md)
+- **Ingestion tier:** GOV-CORE
+- **Stream code:** 20
+- **Source report:** deep-research-report (1).md
 
 #### `NIST2024ArtificialIntelligenceRisk` — Artificial Intelligence Risk Management Framework: Generative AI Profile (NIST AI 600-1) (2024)
 
@@ -548,7 +580,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** auditing; reporting
 - **Threat model:** unknown
 - **Method area:** governance
-- **Provenance:** GOV-CORE-16, S2‑T2‑01, S2‑T3‑01 (deep-research-report (1).md, deep-research-report (2).md)
+- **Ingestion tier:** GOV-CORE; S2-T2; S2-T3
+- **Stream code:** 16; 01; 01
+- **Source report:** deep-research-report (1).md; deep-research-report (2).md
 
 #### `Sastry2024ComputingPowerGovernance` — Computing Power and the Governance of Artificial Intelligence (2024)
 
@@ -567,7 +601,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** unknown
 - **Threat model:** supply chain
 - **Method area:** governance
-- **Provenance:** GOV-CORE-25 (deep-research-report (1).md)
+- **Ingestion tier:** GOV-CORE
+- **Stream code:** 25
+- **Source report:** deep-research-report (1).md
 
 #### `FMF2024EarlyBestPractices` — Early Best Practices for Frontier AI Safety Evaluations (2024)
 
@@ -586,7 +622,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** eval; reporting
 - **Threat model:** unknown
 - **Method area:** evaluation/benchmarks; governance
-- **Provenance:** GOV-CORE-36 (deep-research-report (1).md)
+- **Ingestion tier:** GOV-CORE
+- **Stream code:** 36
+- **Source report:** deep-research-report (1).md
 
 #### `FMF2024FoundationalSecurityPractices` — Foundational Security Practices (2024)
 
@@ -605,7 +643,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** auditing; eval; reporting
 - **Threat model:** unknown
 - **Method area:** security; governance
-- **Provenance:** GOV-CORE-37 (deep-research-report (1).md)
+- **Ingestion tier:** GOV-CORE
+- **Stream code:** 37
+- **Source report:** deep-research-report (1).md
 
 #### `UG2024FrontierAiSafety` — Frontier AI Safety Commitments (AI Seoul Summit 2024) (2024)
 
@@ -623,7 +663,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Lifecycle stage:** deployment
 - **Assurance function:** auditing; mitigation; reporting
 - **Threat model:** unknown
-- **Provenance:** GOV-CORE-18 (deep-research-report (1).md)
+- **Ingestion tier:** GOV-CORE
+- **Stream code:** 18
+- **Source report:** deep-research-report (1).md
 
 #### `GD2024FrontierSafetyFramework` — Frontier Safety Framework v1.0 (2024)
 
@@ -642,7 +684,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** mitigation; reporting
 - **Threat model:** unknown
 - **Method area:** governance
-- **Provenance:** GOV-CORE-42 (deep-research-report (1).md)
+- **Ingestion tier:** GOV-CORE
+- **Stream code:** 42
+- **Source report:** deep-research-report (1).md
 
 #### `FMF2024IssueBriefMeasuring` — Issue Brief: Measuring Training Compute (2024)
 
@@ -661,7 +705,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** auditing; reporting
 - **Threat model:** unknown
 - **Method area:** compute governance; governance
-- **Provenance:** GOV-CORE-26 (deep-research-report (1).md)
+- **Ingestion tier:** GOV-CORE
+- **Stream code:** 26
+- **Source report:** deep-research-report (1).md
 
 #### `UASIN2024ManagingMisuseRisk` — Managing Misuse Risk for Dual-Use Foundation Models (NIST AI 800-1, Initial Public Draft) (2024)
 
@@ -681,7 +727,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** eval; mitigation; reporting
 - **Threat model:** non-expert uplift
 - **Method area:** evaluation/benchmarks
-- **Provenance:** GOV-CORE-17 (deep-research-report (1).md)
+- **Ingestion tier:** GOV-CORE
+- **Stream code:** 17
+- **Source report:** deep-research-report (1).md
 
 #### `OMB2024M2410AdvancingGovernance` — M‑24‑10: Advancing Governance, Innovation, and Risk Management for Agency Use of Artificial Intelligence (2024)
 
@@ -700,7 +748,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** eval; reporting
 - **Threat model:** unknown
 - **Method area:** governance
-- **Provenance:** GOV-CORE-15 (deep-research-report (1).md)
+- **Ingestion tier:** GOV-CORE
+- **Stream code:** 15
+- **Source report:** deep-research-report (1).md
 
 #### `OECD2024OecdLaunchesPilot` — OECD launches pilot to monitor application of G7 code of conduct on advanced AI development (2024)
 
@@ -719,7 +769,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** monitoring; reporting
 - **Threat model:** unknown
 - **Method area:** monitoring
-- **Provenance:** GOV-CORE-22 (deep-research-report (1).md)
+- **Ingestion tier:** GOV-CORE
+- **Stream code:** 22
+- **Source report:** deep-research-report (1).md
 
 #### `FMF2024PreliminaryTaxonomyPredeployme` — Preliminary Taxonomy of Pre-Deployment Frontier AI Safety Evaluations (2024)
 
@@ -738,7 +790,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** eval; reporting
 - **Threat model:** adaptive attacker
 - **Method area:** evaluation/benchmarks
-- **Provenance:** GOV-CORE-35 (deep-research-report (1).md)
+- **Ingestion tier:** GOV-CORE
+- **Stream code:** 35
+- **Source report:** deep-research-report (1).md
 
 #### `EU2024RegulationEu20241689` — Regulation (EU) 2024/1689 (AI Act) (2024)
 
@@ -757,7 +811,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** reporting
 - **Threat model:** unknown
 - **Method area:** governance
-- **Provenance:** GOV-CORE-14 (deep-research-report (1).md)
+- **Ingestion tier:** GOV-CORE
+- **Stream code:** 14
+- **Source report:** deep-research-report (1).md
 
 #### `Anthropic2024ResponsibleScalingPolicy` — Responsible Scaling Policy (RSP-2024) (2024)
 
@@ -777,7 +833,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** reporting
 - **Threat model:** unknown
 - **Method area:** governance
-- **Provenance:** GOV-CORE-40, S2‑T3‑42 (deep-research-report (1).md, deep-research-report (2).md)
+- **Ingestion tier:** GOV-CORE; S2-T3
+- **Stream code:** 40; 42
+- **Source report:** deep-research-report (1).md; deep-research-report (2).md
 
 #### `LHLK2TndTrainingComputeThresholds` — Training Compute Thresholds: Features and Functions in AI Regulation (2024)
 
@@ -796,7 +854,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** reporting
 - **Threat model:** unknown
 - **Method area:** interpretability; compute governance; governance
-- **Provenance:** GOV-CORE-27 (deep-research-report (1).md)
+- **Ingestion tier:** GOV-CORE
+- **Stream code:** 27
+- **Source report:** deep-research-report (1).md
 
 ## Assurance, auditing, and safety cases (11 references)
 
@@ -816,7 +876,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Lifecycle stage:** deployment
 - **Assurance function:** auditing; reporting
 - **Threat model:** unknown
-- **Provenance:** GOV-CORE-09 (deep-research-report (1).md)
+- **Ingestion tier:** GOV-CORE
+- **Stream code:** 09
+- **Source report:** deep-research-report (1).md
 
 #### `Brundage2026FrontierAiAuditing` — Frontier AI Auditing: Toward Rigorous Third-Party Assessment of Frontier AI Systems (2026)
 
@@ -835,7 +897,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** auditing; eval; reporting
 - **Threat model:** unknown
 - **Method area:** evaluation/benchmarks
-- **Provenance:** GOV-CORE-01 (deep-research-report (1).md)
+- **Ingestion tier:** GOV-CORE
+- **Stream code:** 01
+- **Source report:** deep-research-report (1).md
 
 #### `Barrett2025AssessingConfidenceFrontier` — Assessing confidence in frontier AI safety cases (2025)
 
@@ -853,7 +917,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Lifecycle stage:** unknown
 - **Assurance function:** auditing
 - **Threat model:** expert uplift
-- **Provenance:** GOV-CORE-03 (deep-research-report (1).md)
+- **Ingestion tier:** GOV-CORE
+- **Stream code:** 03
+- **Source report:** deep-research-report (1).md
 
 #### `Hilton2025SafetyCasesScalable` — Safety Cases: A Scalable Approach to Frontier AI Safety (2025)
 
@@ -871,7 +937,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Lifecycle stage:** deployment
 - **Assurance function:** auditing
 - **Threat model:** adaptive attacker
-- **Provenance:** GOV-CORE-08 (deep-research-report (1).md)
+- **Ingestion tier:** GOV-CORE
+- **Stream code:** 08
+- **Source report:** deep-research-report (1).md
 
 #### `Habli2025BigArgumentAi` — The BIG Argument for AI Safety Cases (2025)
 
@@ -889,7 +957,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Lifecycle stage:** unknown
 - **Assurance function:** auditing
 - **Threat model:** unknown
-- **Provenance:** GOV-CORE-10 (deep-research-report (1).md)
+- **Ingestion tier:** GOV-CORE
+- **Stream code:** 10
+- **Source report:** deep-research-report (1).md
 
 #### `Homewood2025ThirdpartyComplianceReviews` — Third-party compliance reviews for frontier AI safety frameworks (2025)
 
@@ -908,7 +978,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** auditing; reporting
 - **Threat model:** unknown
 - **Method area:** governance
-- **Provenance:** GOV-CORE-02 (deep-research-report (1).md)
+- **Ingestion tier:** GOV-CORE
+- **Stream code:** 02
+- **Source report:** deep-research-report (1).md
 
 #### `RBJR2024AssuranceAiSystems` — Assurance of AI Systems From a Dependability Perspective (2024)
 
@@ -926,7 +998,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Lifecycle stage:** unknown
 - **Assurance function:** auditing; mitigation
 - **Threat model:** unknown
-- **Provenance:** GOV-CORE-04 (deep-research-report (1).md)
+- **Ingestion tier:** GOV-CORE
+- **Stream code:** 04
+- **Source report:** deep-research-report (1).md
 
 #### `Crlan2024DynamicSafetyCases` — Dynamic safety cases for frontier AI (2024)
 
@@ -944,7 +1018,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Lifecycle stage:** deployment; post-deployment
 - **Assurance function:** auditing
 - **Threat model:** unknown
-- **Provenance:** GOV-CORE-07 (deep-research-report (1).md)
+- **Ingestion tier:** GOV-CORE
+- **Stream code:** 07
+- **Source report:** deep-research-report (1).md
 
 #### `Schuett2024FrontierAiDevelopers` — Frontier AI developers need an internal audit function (2024)
 
@@ -962,7 +1038,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Lifecycle stage:** unknown
 - **Assurance function:** auditing; reporting
 - **Threat model:** unknown
-- **Provenance:** GOV-CORE-13 (deep-research-report (1).md)
+- **Ingestion tier:** GOV-CORE
+- **Stream code:** 13
+- **Source report:** deep-research-report (1).md
 
 ### Regulation and standards
 
@@ -983,7 +1061,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** auditing; eval
 - **Threat model:** unknown
 - **Method area:** security
-- **Provenance:** GOV-CORE-06 (deep-research-report (1).md)
+- **Ingestion tier:** GOV-CORE
+- **Stream code:** 06
+- **Source report:** deep-research-report (1).md
 
 #### `Davidsen2024SafetyCasesFrontier` — Safety cases for frontier AI (2024)
 
@@ -1001,7 +1081,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Lifecycle stage:** deployment
 - **Assurance function:** auditing; reporting
 - **Threat model:** unknown
-- **Provenance:** GOV-CORE-05 (deep-research-report (1).md)
+- **Ingestion tier:** GOV-CORE
+- **Stream code:** 05
+- **Source report:** deep-research-report (1).md
 
 ## 3.2 Tier 1 — Technical safety core (105 references)
 
@@ -1024,7 +1106,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** auditing; monitoring; eval; reporting
 - **Threat model:** unknown
 - **Method area:** evaluation/benchmarks; monitoring
-- **Provenance:** TECH-024 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 024
+- **Source report:** deep-research-report.md
 
 #### `Anon2025EvaluationAwarenessScales` — Evaluation Awareness Scales Predictably in Open-Weights Models (2025)
 
@@ -1043,7 +1127,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** eval
 - **Threat model:** unknown
 - **Method area:** evaluation/benchmarks
-- **Provenance:** TECH-017 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 017
+- **Source report:** deep-research-report.md
 
 #### `Li2025LlmsCanCovertly` — LLMs Can Covertly Sandbag on Capability Evaluations Against Chain‑of‑Thought Monitoring (2025)
 
@@ -1062,7 +1148,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** auditing; monitoring; eval
 - **Threat model:** adaptive attacker
 - **Method area:** evaluation/benchmarks; monitoring
-- **Provenance:** S1‑M‑06 (deep-research-report (2).md)
+- **Ingestion tier:** S1-M
+- **Stream code:** 06
+- **Source report:** deep-research-report (2).md
 
 #### `Salvi2025ConversationalPersuasivenessGp` — On the conversational persuasiveness of GPT-4 (2025)
 
@@ -1081,7 +1169,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** eval
 - **Threat model:** unknown
 - **Method area:** evaluation/benchmarks
-- **Provenance:** TECH-066 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 066
+- **Source report:** deep-research-report.md
 
 #### `Anon2025ProbingSteeringEvaluation` — Probing and Steering Evaluation Awareness of Language Models (2025)
 
@@ -1100,7 +1190,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** monitoring; eval
 - **Threat model:** unknown
 - **Method area:** interpretability; evaluation/benchmarks
-- **Provenance:** TECH-015 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 015
+- **Source report:** deep-research-report.md
 
 #### `Anon2025SteeringEvaluationawareLanguag` — Steering Evaluation-Aware Language Models To Act Like They Are Deployed (2025)
 
@@ -1119,7 +1211,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** eval; mitigation
 - **Threat model:** adaptive attacker
 - **Method area:** interpretability; evaluation/benchmarks; governance
-- **Provenance:** TECH-016 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 016
+- **Source report:** deep-research-report.md
 
 #### `Sharma2024CriticalEvaluationAi` — A Critical Evaluation of AI Feedback for Aligning Large Language Models (2024)
 
@@ -1138,7 +1232,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** eval; mitigation; reporting
 - **Threat model:** unknown
 - **Method area:** post-training/alignment; evaluation/benchmarks
-- **Provenance:** TECH-004 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 004
+- **Source report:** deep-research-report.md
 
 #### `Pavlova2024AutomatedRedTeaming` — Automated Red Teaming with GOAT (2024)
 
@@ -1157,7 +1253,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** eval; reporting
 - **Threat model:** adaptive attacker
 - **Method area:** evaluation/benchmarks
-- **Provenance:** S1‑E‑05 (deep-research-report (2).md)
+- **Ingestion tier:** S1-E
+- **Stream code:** 05
+- **Source report:** deep-research-report (2).md
 
 #### `Li2024BackdoorllmComprehensiveBenchm` — BackdoorLLM: A Comprehensive Benchmark for Backdoor Attacks on LLMs (2024)
 
@@ -1176,7 +1274,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** auditing; eval; mitigation
 - **Threat model:** supply chain
 - **Method area:** evaluation/benchmarks; security
-- **Provenance:** S1‑R‑06 (deep-research-report (2).md)
+- **Ingestion tier:** S1-R
+- **Stream code:** 06
+- **Source report:** deep-research-report (2).md
 
 ### Evals and red‑teaming
 
@@ -1197,7 +1297,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** eval; mitigation; reporting
 - **Threat model:** adaptive attacker; non-expert uplift
 - **Method area:** evaluation/benchmarks; security
-- **Provenance:** TECH-048 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 048
+- **Source report:** deep-research-report.md
 
 #### `Anon2024EvaluatingFrontierModels` — Evaluating Frontier Models for Dangerous Capabilities (2024)
 
@@ -1216,7 +1318,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** eval; reporting
 - **Threat model:** unknown
 - **Method area:** evaluation/benchmarks
-- **Provenance:** TECH-064 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 064
+- **Source report:** deep-research-report.md
 
 #### `Glazer2024FrontiermathBenchmarkEvaluatin` — FrontierMath: A Benchmark for Evaluating Advanced Mathematical Reasoning in AI (2024)
 
@@ -1235,7 +1339,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** eval; reporting
 - **Threat model:** expert uplift
 - **Method area:** evaluation/benchmarks
-- **Provenance:** TECH-065 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 065
+- **Source report:** deep-research-report.md
 
 #### `Mazeika2024HarmbenchStandardizedEvaluatio` — HarmBench: A Standardized Evaluation Framework for Automated Red Teaming and Robust Refusal (2024)
 
@@ -1255,7 +1361,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** auditing; eval; mitigation; reporting
 - **Threat model:** adaptive attacker
 - **Method area:** evaluation/benchmarks; governance
-- **Provenance:** S1‑E‑01 (deep-research-report (2).md)
+- **Ingestion tier:** S1-E
+- **Stream code:** 01
+- **Source report:** deep-research-report (2).md
 
 #### `HarmBench2024HarmbenchStandardizedEvaluatio` — HarmBench: A standardized evaluation framework for LLM red teaming (2024)
 
@@ -1268,7 +1376,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **ID / locator(s):** DOI: 10.5555/3692070.3693501
 - **Access:** open
 - **Relation:** same_work_as: `Mazeika2024HarmbenchStandardizedEvaluatio`
-- **Provenance:** TECH-039 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 039
+- **Source report:** deep-research-report.md
 
 #### `Zhang2024HolisticAutomatedRed` — Holistic Automated Red Teaming … Multi‑turn Interaction (2024)
 
@@ -1287,7 +1397,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** auditing; eval
 - **Threat model:** adaptive attacker
 - **Method area:** evaluation/benchmarks; governance
-- **Provenance:** S1‑E‑06 (deep-research-report (2).md)
+- **Ingestion tier:** S1-E
+- **Stream code:** 06
+- **Source report:** deep-research-report (2).md
 
 #### `Hayes2024InexactUnlearningNeeds` — Inexact Unlearning Needs More Careful Evaluations to Avoid a False Sense of Privacy (2024)
 
@@ -1306,7 +1418,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** eval; mitigation
 - **Threat model:** unknown
 - **Method area:** evaluation/benchmarks; governance
-- **Provenance:** TECH-044 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 044
+- **Source report:** deep-research-report.md
 
 #### `Chao2024JailbreakbenchOpenRobustness` — JailbreakBench: An Open Robustness Benchmark for Jailbreaking LLMs (2024)
 
@@ -1325,7 +1439,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** eval; mitigation; reporting
 - **Threat model:** adaptive attacker
 - **Method area:** evaluation/benchmarks; security
-- **Provenance:** S1‑E‑02 (deep-research-report (2).md)
+- **Ingestion tier:** S1-E
+- **Stream code:** 02
+- **Source report:** deep-research-report (2).md
 
 #### `Benton2024SabotageEvaluationsFrontier` — Sabotage Evaluations for Frontier Models (2024)
 
@@ -1345,7 +1461,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** eval; mitigation
 - **Threat model:** insider
 - **Method area:** evaluation/benchmarks
-- **Provenance:** TECH-018 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 018
+- **Source report:** deep-research-report.md
 
 #### `Li2024WmdpBenchmarkMeasuring` — The WMDP Benchmark: Measuring and Reducing Malicious Use With Unlearning (2024)
 
@@ -1364,7 +1482,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** eval; mitigation
 - **Threat model:** unknown
 - **Method area:** evaluation/benchmarks
-- **Provenance:** S1‑R‑01 (deep-research-report (2).md)
+- **Ingestion tier:** S1-R
+- **Stream code:** 01
+- **Source report:** deep-research-report (2).md
 
 #### `Makelov2024PrincipledEvaluationsSparse` — Towards Principled Evaluations of Sparse Autoencoders for Interpretability and Control (2024)
 
@@ -1383,7 +1503,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** eval
 - **Threat model:** unknown
 - **Method area:** interpretability; evaluation/benchmarks
-- **Provenance:** TECH-030 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 030
+- **Source report:** deep-research-report.md
 
 #### `Anon2024RobustEvaluationUnlearning` — Towards Robust Evaluation of Unlearning in LLMs via Data … (2024)
 
@@ -1402,7 +1524,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** eval; mitigation
 - **Threat model:** unknown
 - **Method area:** evaluation/benchmarks
-- **Provenance:** TECH-046 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 046
+- **Source report:** deep-research-report.md
 
 #### `Burns2024WeaktostrongGeneralizationElic` — Weak-to-Strong Generalization: Eliciting Strong Capabilities With Weak Supervision (2024)
 
@@ -1421,7 +1545,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** monitoring; eval
 - **Threat model:** expert uplift
 - **Method area:** evaluation/benchmarks; monitoring
-- **Provenance:** TECH-028 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 028
+- **Source report:** deep-research-report.md
 
 ### Interpretability, mechanistic transparency, and internal control
 
@@ -1444,7 +1570,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** monitoring; eval
 - **Threat model:** insider
 - **Method area:** monitoring
-- **Provenance:** TECH-020 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 020
+- **Source report:** deep-research-report.md
 
 #### `Strategic2026StrategicObfuscationDeceptive` — Strategic Obfuscation of Deceptive Reasoning in Language Models (2026)
 
@@ -1462,7 +1590,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Lifecycle stage:** post-deployment
 - **Assurance function:** monitoring
 - **Threat model:** unknown
-- **Provenance:** S1‑M‑04 (deep-research-report (2).md)
+- **Ingestion tier:** S1-M
+- **Stream code:** 04
+- **Source report:** deep-research-report (2).md
 
 #### `Anon2025EvaluatingSabotageMonitoring` — Evaluating Sabotage and Monitoring in LLM Agents (2025)
 
@@ -1481,7 +1611,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** monitoring; reporting
 - **Threat model:** adaptive attacker; insider
 - **Method area:** monitoring
-- **Provenance:** TECH-019 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 019
+- **Source report:** deep-research-report.md
 
 #### `Anon2025WhyDoSome` — Why Do Some Language Models Fake Alignment While Others Don’t? (2025)
 
@@ -1500,7 +1632,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** eval; mitigation
 - **Threat model:** unknown
 - **Method area:** post-training/alignment
-- **Provenance:** TECH-058 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 058
+- **Source report:** deep-research-report.md
 
 #### `Greenblatt2024AlignmentFakingLarge` — Alignment faking in large language models (2024)
 
@@ -1520,7 +1654,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** monitoring; eval; mitigation
 - **Threat model:** adaptive attacker
 - **Method area:** post-training/alignment
-- **Provenance:** S1‑A‑02 (deep-research-report (2).md)
+- **Ingestion tier:** S1-A
+- **Stream code:** 02
+- **Source report:** deep-research-report (2).md
 
 #### `Meinke2024FrontierModelsCapable` — Frontier Models are Capable of In-context Scheming (2024)
 
@@ -1539,7 +1675,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Lifecycle stage:** deployment
 - **Assurance function:** eval; reporting
 - **Threat model:** unknown
-- **Provenance:** TECH-022 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 022
+- **Source report:** deep-research-report.md
 
 ### Security and jailbreaks
 
@@ -1559,7 +1697,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Lifecycle stage:** deployment
 - **Assurance function:** mitigation
 - **Threat model:** insider
-- **Provenance:** TECH-023 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 023
+- **Source report:** deep-research-report.md
 
 #### `Hubinger2024SleeperAgentsTraining` — Sleeper Agents: Training Deceptive LLMs that Persist Through Safety Training (2024)
 
@@ -1578,7 +1718,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** unknown
 - **Threat model:** supply chain
 - **Method area:** security
-- **Provenance:** TECH-042 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 042
+- **Source report:** deep-research-report.md
 
 ## Monitoring and monitorability (4 references)
 
@@ -1600,7 +1742,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** monitoring
 - **Threat model:** unknown
 - **Method area:** monitoring
-- **Provenance:** TECH-014 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 014
+- **Source report:** deep-research-report.md
 
 #### `OpenAI2025MonitoringMonitorability` — Monitoring Monitorability (2025)
 
@@ -1620,7 +1764,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** auditing; monitoring; eval
 - **Threat model:** unknown
 - **Method area:** monitoring
-- **Provenance:** S1‑M‑03 (deep-research-report (2).md)
+- **Ingestion tier:** S1-M
+- **Stream code:** 03
+- **Source report:** deep-research-report (2).md
 
 #### `Engels2025ScalingLawsScalable` — Scaling Laws for Scalable Oversight (2025)
 
@@ -1639,7 +1785,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** auditing; monitoring; reporting
 - **Threat model:** unknown
 - **Method area:** monitoring
-- **Provenance:** S1‑SO‑02 (deep-research-report (2).md)
+- **Ingestion tier:** S1-SO
+- **Stream code:** 02
+- **Source report:** deep-research-report (2).md
 
 #### `Kenton2024ScalableOversightWeak` — On scalable oversight with weak LLMs judging strong LLMs (2024)
 
@@ -1659,7 +1807,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** auditing; monitoring
 - **Threat model:** unknown
 - **Method area:** monitoring
-- **Provenance:** TECH-026 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 026
+- **Source report:** deep-research-report.md
 
 ## Security, jailbreaks, and supply-chain risks (13 references)
 
@@ -1680,7 +1830,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** eval; mitigation; reporting
 - **Threat model:** adaptive attacker
 - **Method area:** post-training/alignment; security
-- **Provenance:** S1‑S‑03 (deep-research-report (2).md)
+- **Ingestion tier:** S1-S
+- **Stream code:** 03
+- **Source report:** deep-research-report (2).md
 
 #### `Anon2026TriggerHaystackExtracting` — The Trigger in the Haystack: Extracting and Reconstructing LLM Backdoor Triggers (2026)
 
@@ -1699,7 +1851,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** unknown
 - **Threat model:** supply chain
 - **Method area:** security; governance
-- **Provenance:** TECH-051 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 051
+- **Source report:** deep-research-report.md
 
 #### `Sharma2025ConstitutionalClassifiersDefen` — Constitutional Classifiers: Defending against Universal Jailbreaks … (2025)
 
@@ -1718,7 +1872,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** auditing; mitigation; reporting
 - **Threat model:** adaptive attacker
 - **Method area:** post-training/alignment; security
-- **Provenance:** S1‑S‑02 (deep-research-report (2).md)
+- **Ingestion tier:** S1-S
+- **Stream code:** 02
+- **Source report:** deep-research-report (2).md
 
 #### `Gloaguen2025FinetuningactivatedBackdoorsLl` — Finetuning-Activated Backdoors in LLMs (2025)
 
@@ -1737,7 +1893,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** unknown
 - **Threat model:** supply chain
 - **Method area:** security; governance
-- **Provenance:** TECH-049 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 049
+- **Source report:** deep-research-report.md
 
 #### `Anon2025MitigatingManyshotJailbreaking` — Mitigating Many-Shot Jailbreaking (2025)
 
@@ -1757,7 +1915,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** mitigation
 - **Threat model:** adaptive attacker
 - **Method area:** security
-- **Provenance:** TECH-041 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 041
+- **Source report:** deep-research-report.md
 
 #### `Cui2025PersistentBackdoorAttacks` — Persistent Backdoor Attacks under Continual Fine-Tuning of LLMs (2025)
 
@@ -1776,7 +1936,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** eval; reporting
 - **Threat model:** supply chain
 - **Method area:** security
-- **Provenance:** TECH-053 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 053
+- **Source report:** deep-research-report.md
 
 #### `Zhang2025PersistentPretrainingPoisoning` — Persistent Pre‑Training Poisoning of LLMs (2025)
 
@@ -1795,7 +1957,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** auditing; mitigation; reporting
 - **Threat model:** supply chain; adaptive attacker
 - **Method area:** security
-- **Provenance:** S1‑R‑05 (deep-research-report (2).md)
+- **Ingestion tier:** S1-R
+- **Stream code:** 05
+- **Source report:** deep-research-report (2).md
 
 #### `Souly2025PoisoningAttacksLlms` — Poisoning Attacks on LLMs Require a Near-constant Number of Poison Samples (2025)
 
@@ -1814,7 +1978,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** mitigation; reporting
 - **Threat model:** supply chain
 - **Method area:** security
-- **Provenance:** TECH-050 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 050
+- **Source report:** deep-research-report.md
 
 #### `Anon2025PromptInjectionAttacks` — Prompt Injection Attacks and Defenses in LLM-Integrated Applications (2025)
 
@@ -1833,7 +1999,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** mitigation
 - **Threat model:** adaptive attacker
 - **Method area:** security
-- **Provenance:** TECH-047 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 047
+- **Source report:** deep-research-report.md
 
 #### `Anon2024SurveyRecentBackdoor` — A Survey of Recent Backdoor Attacks and Defenses in Large Language Models (2024)
 
@@ -1852,7 +2020,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** mitigation
 - **Threat model:** supply chain; adaptive attacker
 - **Method area:** security
-- **Provenance:** TECH-054 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 054
+- **Source report:** deep-research-report.md
 
 #### `Anil2024ManyshotJailbreaking` — Many-shot Jailbreaking (2024)
 
@@ -1872,7 +2042,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** mitigation
 - **Threat model:** adaptive attacker
 - **Method area:** security
-- **Provenance:** S1‑E‑03, TECH-040 (deep-research-report (2).md, deep-research-report.md)
+- **Ingestion tier:** S1-E; TECH
+- **Stream code:** 03; 040
+- **Source report:** deep-research-report (2).md; deep-research-report.md
 
 #### `Zhang2024VtuneVerifiableFinetuning` — vTune: Verifiable Fine-Tuning for LLMs Through Backdooring (2024)
 
@@ -1891,7 +2063,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** unknown
 - **Threat model:** supply chain
 - **Method area:** security
-- **Provenance:** TECH-052 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 052
+- **Source report:** deep-research-report.md
 
 #### `HuangndEndlessJailbreaksBijection` — Endless Jailbreaks with Bijection Learning (2024)
 
@@ -1910,7 +2084,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** unknown
 - **Threat model:** adaptive attacker
 - **Method area:** security
-- **Provenance:** S1‑S‑05 (deep-research-report (2).md)
+- **Ingestion tier:** S1-S
+- **Stream code:** 05
+- **Source report:** deep-research-report (2).md
 
 ## Alignment and post-training (23 references)
 
@@ -1931,7 +2107,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** eval; mitigation
 - **Threat model:** unknown
 - **Method area:** post-training/alignment
-- **Provenance:** S1‑A‑03 (deep-research-report (2).md)
+- **Ingestion tier:** S1-A
+- **Stream code:** 03
+- **Source report:** deep-research-report (2).md
 
 #### `Zhang2026SafetyOneShot` — Safety at One Shot: Patching Fine‑Tuned LLMs with a Single Instance (2026)
 
@@ -1950,7 +2128,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** auditing; eval; mitigation
 - **Threat model:** adaptive attacker
 - **Method area:** post-training/alignment
-- **Provenance:** S1‑A‑04 (deep-research-report (2).md)
+- **Ingestion tier:** S1-A
+- **Stream code:** 04
+- **Source report:** deep-research-report (2).md
 
 #### `Wang2025AdversarialPreferenceLearning` — Adversarial Preference Learning for Robust LLM Alignment (2025)
 
@@ -1969,7 +2149,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** eval; mitigation
 - **Threat model:** adaptive attacker
 - **Method area:** post-training/alignment
-- **Provenance:** S1‑A‑06 (deep-research-report (2).md)
+- **Ingestion tier:** S1-A
+- **Stream code:** 06
+- **Source report:** deep-research-report (2).md
 
 #### `Barbero2025ExtractingAlignmentData` — Extracting alignment data in open models (2025)
 
@@ -1988,7 +2170,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** mitigation
 - **Threat model:** unknown
 - **Method area:** post-training/alignment; governance
-- **Provenance:** TECH-056 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 056
+- **Source report:** deep-research-report.md
 
 ### Scaling risks, deception dynamics, and emergent failures
 
@@ -2009,7 +2193,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** auditing; eval; mitigation
 - **Threat model:** unknown
 - **Method area:** post-training/alignment
-- **Provenance:** S1‑SO‑06 (deep-research-report (2).md)
+- **Ingestion tier:** S1-SO
+- **Stream code:** 06
+- **Source report:** deep-research-report (2).md
 
 ### Interpretability
 
@@ -2030,7 +2216,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** mitigation
 - **Threat model:** insider
 - **Method area:** post-training/alignment
-- **Provenance:** TECH-059 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 059
+- **Source report:** deep-research-report.md
 
 #### `Metevier2025ReinforcementLearningHuman` — Reinforcement Learning from Human Feedback with High-Confidence Safety Guarantees (HC-RLHF) (2025)
 
@@ -2049,7 +2237,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** auditing; mitigation; reporting
 - **Threat model:** unknown
 - **Method area:** post-training/alignment
-- **Provenance:** TECH-002 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 002
+- **Source report:** deep-research-report.md
 
 #### `Qi2025SafetyAlignmentShould` — Safety alignment should be made more than just a few tokens deep (2025)
 
@@ -2068,7 +2258,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** auditing; mitigation
 - **Threat model:** unknown
 - **Method area:** post-training/alignment
-- **Provenance:** S1‑A‑05 (deep-research-report (2).md)
+- **Ingestion tier:** S1-A
+- **Stream code:** 05
+- **Source report:** deep-research-report (2).md
 
 #### `Nasr2025ScalableExtractionTraining` — Scalable Extraction of Training Data from Aligned, Production Language Models (2025)
 
@@ -2087,7 +2279,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** mitigation
 - **Threat model:** unknown
 - **Method area:** post-training/alignment; governance
-- **Provenance:** TECH-055 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 055
+- **Source report:** deep-research-report.md
 
 #### `Taylor2025SchoolRewardHacks` — School of Reward Hacks (2025)
 
@@ -2106,7 +2300,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** mitigation
 - **Threat model:** unknown
 - **Method area:** post-training/alignment
-- **Provenance:** TECH-062 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 062
+- **Source report:** deep-research-report.md
 
 #### `Wang2025Star1SaferAlignment` — STAR‑1: Safer Alignment of Reasoning LLMs with 1K Data (2025)
 
@@ -2125,7 +2321,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** eval; mitigation
 - **Threat model:** unknown
 - **Method area:** post-training/alignment
-- **Provenance:** S1‑A‑07 (deep-research-report (2).md)
+- **Ingestion tier:** S1-A
+- **Stream code:** 07
+- **Source report:** deep-research-report (2).md
 
 ### Scalable oversight
 
@@ -2146,7 +2344,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** eval; mitigation; reporting
 - **Threat model:** unknown
 - **Method area:** post-training/alignment
-- **Provenance:** TECH-013 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 013
+- **Source report:** deep-research-report.md
 
 ### Scalable oversight, monitoring, and evaluation gaming
 
@@ -2167,7 +2367,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** eval; mitigation; reporting
 - **Threat model:** unknown
 - **Method area:** post-training/alignment
-- **Provenance:** TECH-006 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 006
+- **Source report:** deep-research-report.md
 
 #### `Guan2024DeliberativeAlignmentReasoning` — Deliberative Alignment: Reasoning Enables Safer Language Models (2024)
 
@@ -2186,7 +2388,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** auditing; mitigation
 - **Threat model:** adaptive attacker
 - **Method area:** post-training/alignment
-- **Provenance:** S1‑A‑01 (deep-research-report (2).md)
+- **Ingestion tier:** S1-A
+- **Stream code:** 01
+- **Source report:** deep-research-report (2).md
 
 #### `Zhang2024GenerativeVerifiersReward` — Generative Verifiers: Reward Modeling as Next‑Token Prediction (2024)
 
@@ -2205,7 +2409,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** mitigation
 - **Threat model:** unknown
 - **Method area:** post-training/alignment
-- **Provenance:** S1‑SO‑03 (deep-research-report (2).md)
+- **Ingestion tier:** S1-SO
+- **Stream code:** 03
+- **Source report:** deep-research-report (2).md
 
 #### `Wang2024Helpsteer2preferenceComplement` — HelpSteer2-Preference: Complementing Ratings with Preferences (2024)
 
@@ -2224,7 +2430,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** mitigation; reporting
 - **Threat model:** unknown
 - **Method area:** post-training/alignment
-- **Provenance:** TECH-009 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 009
+- **Source report:** deep-research-report.md
 
 #### `Wang2024Helpsteer2OpensourceDataset` — HelpSteer2: Open-source dataset for training top-performing reward models (2024)
 
@@ -2243,7 +2451,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** mitigation; reporting
 - **Threat model:** unknown
 - **Method area:** post-training/alignment
-- **Provenance:** TECH-008 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 008
+- **Source report:** deep-research-report.md
 
 #### `Anon2024HowEvaluateReward` — How to Evaluate Reward Models for RLHF (2024)
 
@@ -2262,7 +2472,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** eval; mitigation
 - **Threat model:** unknown
 - **Method area:** post-training/alignment
-- **Provenance:** TECH-007 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 007
+- **Source report:** deep-research-report.md
 
 #### `Wang2024InterpretablePreferencesMultio` — Interpretable Preferences via Multi-Objective Reward Modeling and Mixture-of-Experts (2024)
 
@@ -2281,7 +2493,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** auditing; mitigation; reporting
 - **Threat model:** adaptive attacker; expert uplift
 - **Method area:** post-training/alignment
-- **Provenance:** TECH-010 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 010
+- **Source report:** deep-research-report.md
 
 #### `Xu2024MagpieAlignmentData` — Magpie: Alignment Data Synthesis from Scratch by Prompting Aligned LLMs with Nothing (2024)
 
@@ -2300,7 +2514,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** eval; mitigation; reporting
 - **Threat model:** unknown
 - **Method area:** post-training/alignment
-- **Provenance:** TECH-012 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 012
+- **Source report:** deep-research-report.md
 
 #### `Lambert2024RewardbenchEvaluatingReward` — RewardBench: Evaluating Reward Models for Language Modeling (2024)
 
@@ -2319,7 +2535,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** eval; mitigation
 - **Threat model:** unknown
 - **Method area:** post-training/alignment
-- **Provenance:** TECH-005 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 005
+- **Source report:** deep-research-report.md
 
 #### `Dai2024SafeRlhfSafe` — Safe RLHF: Safe Reinforcement Learning from Human Feedback (2024)
 
@@ -2338,7 +2556,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** mitigation
 - **Threat model:** unknown
 - **Method area:** post-training/alignment
-- **Provenance:** TECH-001 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 001
+- **Source report:** deep-research-report.md
 
 #### `Zhang2024SelfexploringLanguageModels` — Self‑Exploring Language Models: Active Preference Elicitation for Online Alignment (2024)
 
@@ -2357,7 +2577,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** auditing; monitoring; mitigation
 - **Threat model:** unknown
 - **Method area:** post-training/alignment; governance
-- **Provenance:** S1‑SO‑04 (deep-research-report (2).md)
+- **Ingestion tier:** S1-SO
+- **Stream code:** 04
+- **Source report:** deep-research-report (2).md
 
 ## Interpretability and representation control (14 references)
 
@@ -2378,7 +2600,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** unknown
 - **Threat model:** adaptive attacker
 - **Method area:** interpretability; governance
-- **Provenance:** TECH-038 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 038
+- **Source report:** deep-research-report.md
 
 ### Robustness, red-teaming, jailbreaks, and security (adversarial ML)
 
@@ -2399,7 +2623,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** auditing; reporting
 - **Threat model:** unknown
 - **Method area:** interpretability
-- **Provenance:** TECH-034 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 034
+- **Source report:** deep-research-report.md
 
 #### `Yousefpour2025RepresentationBendingLarge` — Representation Bending for Large Language Model Safety (2025)
 
@@ -2418,7 +2644,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** unknown
 - **Threat model:** adaptive attacker
 - **Method area:** interpretability
-- **Provenance:** TECH-037 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 037
+- **Source report:** deep-research-report.md
 
 #### `Heap2025SparseAutoencodersCan` — Sparse Autoencoders Can Interpret Randomly Initialized Transformers (2025)
 
@@ -2437,7 +2665,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** auditing
 - **Threat model:** unknown
 - **Method area:** interpretability
-- **Provenance:** S1‑I‑07 (deep-research-report (2).md)
+- **Ingestion tier:** S1-I
+- **Stream code:** 07
+- **Source report:** deep-research-report (2).md
 
 ### Robustness
 
@@ -2458,7 +2688,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** mitigation; reporting
 - **Threat model:** supply chain
 - **Method area:** interpretability; governance
-- **Provenance:** TECH-061 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 061
+- **Source report:** deep-research-report.md
 
 #### `Wehner2025TaxonomyOpportunitiesChallenge` — Taxonomy, Opportunities, and Challenges of Representation Engineering for Large Language Models (2025)
 
@@ -2477,7 +2709,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** unknown
 - **Threat model:** unknown
 - **Method area:** interpretability
-- **Provenance:** TECH-035 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 035
+- **Source report:** deep-research-report.md
 
 #### `Rai2024PracticalReviewMechanistic` — A Practical Review of Mechanistic Interpretability for Transformer‑Based Language Models (2024)
 
@@ -2496,7 +2730,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** auditing; eval; reporting
 - **Threat model:** unknown
 - **Method area:** interpretability; governance
-- **Provenance:** S1‑I‑06 (deep-research-report (2).md)
+- **Ingestion tier:** S1-I
+- **Stream code:** 06
+- **Source report:** deep-research-report (2).md
 
 #### `Paulo2024AutomaticallyInterpretingMilli` — Automatically Interpreting Millions of Features in Large Language Models (2024)
 
@@ -2515,7 +2751,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** unknown
 - **Threat model:** unknown
 - **Method area:** interpretability
-- **Provenance:** S1‑I‑02 (deep-research-report (2).md)
+- **Ingestion tier:** S1-I
+- **Stream code:** 02
+- **Source report:** deep-research-report (2).md
 
 #### `Braun2024IdentifyingFunctionallyImporta` — Identifying Functionally Important Features with End-to-End Sparse Dictionary Learning (2024)
 
@@ -2534,7 +2772,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** reporting
 - **Threat model:** unknown
 - **Method area:** interpretability
-- **Provenance:** TECH-032 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 032
+- **Source report:** deep-research-report.md
 
 #### `Karvonen2024MeasuringProgressDictionary` — Measuring Progress in Dictionary Learning for Language Model Interpretability with Board Game Models (2024)
 
@@ -2553,7 +2793,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** unknown
 - **Threat model:** unknown
 - **Method area:** interpretability
-- **Provenance:** TECH-031 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 031
+- **Source report:** deep-research-report.md
 
 #### `SMEIFF2024ScalingMonosemanticityExtracti` — Scaling Monosemanticity: Extracting Interpretable Features from Claude 3 Sonnet (2024)
 
@@ -2572,7 +2814,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** auditing; mitigation; reporting
 - **Threat model:** unknown
 - **Method area:** interpretability; governance
-- **Provenance:** S1‑I‑01 (deep-research-report (2).md)
+- **Ingestion tier:** S1-I
+- **Stream code:** 01
+- **Source report:** deep-research-report (2).md
 
 #### `Huben2024SparseAutoencodersFind` — Sparse Autoencoders Find Highly Interpretable Features in Language Models (2024)
 
@@ -2591,7 +2835,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** unknown
 - **Threat model:** unknown
 - **Method area:** interpretability
-- **Provenance:** TECH-029 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 029
+- **Source report:** deep-research-report.md
 
 #### `Lan2024SparseAutoencodersReveal` — Sparse Autoencoders Reveal Universal Feature Spaces Across Large Language Models (2024)
 
@@ -2610,7 +2856,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** unknown
 - **Threat model:** unknown
 - **Method area:** interpretability
-- **Provenance:** TECH-033 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 033
+- **Source report:** deep-research-report.md
 
 #### `Bhattacharjee2024InferencetimeCategorywiseSafet` — Towards Inference-time Category-wise Safety Steering for Large Language Models (2024)
 
@@ -2629,7 +2877,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** unknown
 - **Threat model:** unknown
 - **Method area:** interpretability
-- **Provenance:** TECH-036 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 036
+- **Source report:** deep-research-report.md
 
 ## Privacy, unlearning, and data leakage (2 references)
 
@@ -2650,7 +2900,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** mitigation
 - **Threat model:** unknown
 - **Method area:** governance
-- **Provenance:** TECH-043 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 043
+- **Source report:** deep-research-report.md
 
 #### `Anon2024RethinkingMachineUnlearning` — Rethinking Machine Unlearning for Large Language Models (2024)
 
@@ -2668,7 +2920,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Lifecycle stage:** post-training; deployment
 - **Assurance function:** eval; mitigation
 - **Threat model:** adaptive attacker
-- **Provenance:** TECH-045 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 045
+- **Source report:** deep-research-report.md
 
 ## Miscellaneous / other (19 references)
 
@@ -2688,7 +2942,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Lifecycle stage:** deployment; post-deployment
 - **Assurance function:** auditing; reporting
 - **Threat model:** unknown
-- **Provenance:** S1‑I‑03 (deep-research-report (2).md)
+- **Ingestion tier:** S1-I
+- **Stream code:** 03
+- **Source report:** deep-research-report (2).md
 
 #### `Debate2025DebateHelpsWeaktostrong` — Debate Helps Weak‑to‑Strong Generalization (2025)
 
@@ -2706,7 +2962,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Lifecycle stage:** deployment; post-deployment
 - **Assurance function:** eval; reporting
 - **Threat model:** adaptive attacker
-- **Provenance:** S1‑SO‑05 (deep-research-report (2).md)
+- **Ingestion tier:** S1-SO
+- **Stream code:** 05
+- **Source report:** deep-research-report (2).md
 
 #### `Anon2025EstimatingWorstcaseFrontier` — Estimating Worst-Case Frontier Risks of Open-Weight LLMs (2025)
 
@@ -2724,7 +2982,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Lifecycle stage:** post-training
 - **Assurance function:** eval; mitigation; reporting
 - **Threat model:** unknown
-- **Provenance:** TECH-068 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 068
+- **Source report:** deep-research-report.md
 
 #### `Anon2025HowCatastrophicYour` — How Catastrophic is Your LLM? Certifying Risk in Conversation (2025)
 
@@ -2742,7 +3002,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Lifecycle stage:** deployment
 - **Assurance function:** auditing; reporting
 - **Threat model:** unknown
-- **Provenance:** TECH-063 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 063
+- **Source report:** deep-research-report.md
 
 #### `BLLMTC2025BiologyLargeLanguage` — On the Biology of a Large Language Model (2025)
 
@@ -2760,7 +3022,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Lifecycle stage:** deployment; post-deployment
 - **Assurance function:** monitoring; reporting
 - **Threat model:** unknown
-- **Provenance:** S1‑I‑04 (deep-research-report (2).md)
+- **Ingestion tier:** S1-I
+- **Stream code:** 04
+- **Source report:** deep-research-report (2).md
 
 #### `Cloud2025SubliminalLearningLanguage` — Subliminal Learning: Language Models Transmit Behavioral Traits via Hidden Signals in Data (2025)
 
@@ -2778,7 +3042,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Lifecycle stage:** post-training
 - **Assurance function:** unknown
 - **Threat model:** unknown
-- **Provenance:** TECH-060 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 060
+- **Source report:** deep-research-report.md
 
 #### `TACTFI2025TracingAttentionComputation` — Tracing Attention Computation Through Feature Interactions (2025)
 
@@ -2797,7 +3063,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Assurance function:** auditing; reporting
 - **Threat model:** unknown
 - **Method area:** governance
-- **Provenance:** S1‑I‑05 (deep-research-report (2).md)
+- **Ingestion tier:** S1-I
+- **Stream code:** 05
+- **Source report:** deep-research-report (2).md
 
 #### `Swamy2024MinimaximalistApproachReinforc` — A Minimaximalist Approach to Reinforcement Learning from Human Feedback (2024)
 
@@ -2815,7 +3083,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Lifecycle stage:** post-training; post-deployment
 - **Assurance function:** unknown
 - **Threat model:** unknown
-- **Provenance:** TECH-003 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 003
+- **Source report:** deep-research-report.md
 
 #### `Greenblatt2024AiControlImproving` — AI Control: Improving Safety Despite Intentional Subversion (2024)
 
@@ -2833,7 +3103,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Lifecycle stage:** pretraining; deployment; post-deployment
 - **Assurance function:** monitoring
 - **Threat model:** supply chain
-- **Provenance:** TECH-021 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 021
+- **Source report:** deep-research-report.md
 
 #### `Vega2024BypassingSafetyTraining` — Bypassing the Safety Training of Open‑Source LLMs with Priming Attacks (2024)
 
@@ -2851,7 +3123,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Lifecycle stage:** deployment; post-deployment
 - **Assurance function:** monitoring; eval; reporting
 - **Threat model:** supply chain
-- **Provenance:** S1‑S‑04 (deep-research-report (2).md)
+- **Ingestion tier:** S1-S
+- **Stream code:** 04
+- **Source report:** deep-research-report (2).md
 
 #### `Khan2024DebatingMorePersuasive` — Debating with More Persuasive LLMs Leads to More Truthful Answers (2024)
 
@@ -2869,7 +3143,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Lifecycle stage:** post-deployment
 - **Assurance function:** unknown
 - **Threat model:** expert uplift
-- **Provenance:** TECH-025 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 025
+- **Source report:** deep-research-report.md
 
 #### `Hackenburg2024EvaluatingPersuasiveInfluence` — Evaluating the persuasive influence of political microtargeting with large language models (2024)
 
@@ -2887,7 +3163,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Lifecycle stage:** unknown
 - **Assurance function:** mitigation
 - **Threat model:** unknown
-- **Provenance:** TECH-067 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 067
+- **Source report:** deep-research-report.md
 
 #### `Samvelyan2024RainbowTeamingOpenended` — Rainbow Teaming: Open‑Ended Generation of Diverse Adversarial Prompts (2024)
 
@@ -2905,7 +3183,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Lifecycle stage:** deployment
 - **Assurance function:** eval; reporting
 - **Threat model:** unknown
-- **Provenance:** S1‑S‑06 (deep-research-report (2).md)
+- **Ingestion tier:** S1-S
+- **Stream code:** 06
+- **Source report:** deep-research-report (2).md
 
 ### Monitoring
 
@@ -2925,7 +3205,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Lifecycle stage:** deployment
 - **Assurance function:** mitigation; reporting
 - **Threat model:** adaptive attacker
-- **Provenance:** S1‑R‑03 (deep-research-report (2).md)
+- **Ingestion tier:** S1-R
+- **Stream code:** 03
+- **Source report:** deep-research-report (2).md
 
 #### `Hsu2024SafeLoraReducing` — Safe LoRA: … Reducing Safety Risks when Fine‑tuning LLMs (2024)
 
@@ -2943,7 +3225,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Lifecycle stage:** unknown
 - **Assurance function:** reporting
 - **Threat model:** unknown
-- **Provenance:** S1‑R‑04 (deep-research-report (2).md)
+- **Ingestion tier:** S1-R
+- **Stream code:** 04
+- **Source report:** deep-research-report (2).md
 
 #### `Wang2024SelftaughtEvaluators` — Self-Taught Evaluators (2024)
 
@@ -2961,7 +3245,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Lifecycle stage:** post-training; deployment
 - **Assurance function:** eval; reporting
 - **Threat model:** unknown
-- **Provenance:** TECH-011 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 011
+- **Source report:** deep-research-report.md
 
 #### `Tamirisa2024TamperresistantSafeguardsOpenw` — Tamper‑Resistant Safeguards for Open‑Weight LLMs (2024)
 
@@ -2979,7 +3265,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Lifecycle stage:** unknown
 - **Assurance function:** reporting
 - **Threat model:** supply chain
-- **Provenance:** S1‑R‑02 (deep-research-report (2).md)
+- **Ingestion tier:** S1-R
+- **Stream code:** 02
+- **Source report:** deep-research-report (2).md
 
 #### `Arnesen2024TrainingLanguageModels` — Training Language Models to Win Debates with Self-Play Improves Judge Accuracy (2024)
 
@@ -2997,7 +3285,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Lifecycle stage:** unknown
 - **Assurance function:** reporting
 - **Threat model:** unknown
-- **Provenance:** TECH-027 (deep-research-report.md)
+- **Ingestion tier:** TECH
+- **Stream code:** 027
+- **Source report:** deep-research-report.md
 
 #### `Wallace2024TrainingLlmsPrioritize` — Training LLMs to Prioritize Privileged Instructions (2024)
 
@@ -3015,7 +3305,9 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Lifecycle stage:** deployment
 - **Assurance function:** mitigation; reporting
 - **Threat model:** adaptive attacker
-- **Provenance:** S1‑S‑01 (deep-research-report (2).md)
+- **Ingestion tier:** S1-S
+- **Stream code:** 01
+- **Source report:** deep-research-report (2).md
 
 ## 3.3 Tier 2 — Extended governance references (brief notes) (49 references)
 
@@ -3036,7 +3328,9 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Lifecycle stage:** unknown
 - **Assurance function:** reporting
 - **Threat model:** unknown
-- **Provenance:** S2‑T2‑37, S2‑T3‑51, S2‑T3‑52, S2‑T3‑82 (deep-research-report (2).md)
+- **Ingestion tier:** S2-T2; S2-T3; S2-T3; S2-T3
+- **Stream code:** 37; 51; 52; 82
+- **Source report:** deep-research-report (2).md
 
 #### `World2026EconomicForumGlobal` — Economic Forum Global Cybersecurity Outlook 2026 (2026)
 
@@ -3053,7 +3347,9 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Assurance function:** unknown
 - **Threat model:** unknown
 - **Method area:** security
-- **Provenance:** S2‑T2‑61 (deep-research-report (2).md)
+- **Ingestion tier:** S2-T2
+- **Stream code:** 61
+- **Source report:** deep-research-report (2).md
 
 #### `FMF2026FrontierAiNuclear` — Frontier AI and Nuclear Security (2026)
 
@@ -3071,7 +3367,9 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Assurance function:** eval; reporting
 - **Threat model:** expert uplift
 - **Method area:** security
-- **Provenance:** S2‑T2‑22, S2‑T3‑30, S2‑T3‑79, S2‑T3‑83 (deep-research-report (2).md)
+- **Ingestion tier:** S2-T2; S2-T3; S2-T3; S2-T3
+- **Stream code:** 22; 30; 79; 83
+- **Source report:** deep-research-report (2).md
 
 #### `OECD2026TrendsAiIncidents` — Trends in AI incidents and hazards reported by the media (2026)
 
@@ -3088,7 +3386,9 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Assurance function:** reporting
 - **Threat model:** unknown
 - **Method area:** governance
-- **Provenance:** S2‑T2‑12, S2‑T3‑16 (deep-research-report (2).md)
+- **Ingestion tier:** S2-T2; S2-T3
+- **Stream code:** 12; 16
+- **Source report:** deep-research-report (2).md
 
 #### `OpenAI2025BlogUpdatingPreparedness` — blog on updating Preparedness Framework (2025)
 
@@ -3105,7 +3405,9 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Assurance function:** reporting
 - **Threat model:** unknown
 - **Method area:** governance
-- **Provenance:** S2‑T2‑27 (deep-research-report (2).md)
+- **Ingestion tier:** S2-T2
+- **Stream code:** 27
+- **Source report:** deep-research-report (2).md
 
 #### `EC2025ContentsGeneralpurposeAi` — Contents of the General‑Purpose AI Code of Practice (2025)
 
@@ -3123,7 +3425,9 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Assurance function:** reporting
 - **Threat model:** unknown
 - **Method area:** governance
-- **Provenance:** S2‑T2‑07 (deep-research-report (2).md)
+- **Ingestion tier:** S2-T2
+- **Stream code:** 07
+- **Source report:** deep-research-report (2).md
 
 #### `AP2025CoverageEuVoluntary` — coverage of EU voluntary code (2025)
 
@@ -3139,7 +3443,9 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Lifecycle stage:** unknown
 - **Assurance function:** reporting
 - **Threat model:** unknown
-- **Provenance:** S2‑T2‑73 (deep-research-report (2).md)
+- **Ingestion tier:** S2-T2
+- **Stream code:** 73
+- **Source report:** deep-research-report (2).md
 
 #### `Google2025DeepmindBlogUpdating` — DeepMind blog on updating Frontier Safety Framework (2025)
 
@@ -3156,7 +3462,9 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Assurance function:** reporting
 - **Threat model:** unknown
 - **Method area:** governance
-- **Provenance:** S2‑T2‑31 (deep-research-report (2).md)
+- **Ingestion tier:** S2-T2
+- **Stream code:** 31
+- **Source report:** deep-research-report (2).md
 
 #### `OECD2025EventPageLaunching` — event page launching HAIP Reporting Framework (2025)
 
@@ -3174,7 +3482,9 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Assurance function:** reporting
 - **Threat model:** unknown
 - **Method area:** governance
-- **Provenance:** S2‑T2‑46, S2‑T3‑12, S2‑T3‑77 (deep-research-report (2).md)
+- **Ingestion tier:** S2-T2; S2-T3; S2-T3
+- **Stream code:** 46; 12; 77
+- **Source report:** deep-research-report (2).md
 
 #### `METR2025ExampleSafetySecurity` — Example Safety and Security Framework (2025)
 
@@ -3191,7 +3501,9 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Assurance function:** auditing; reporting
 - **Threat model:** unknown
 - **Method area:** security
-- **Provenance:** S2‑T2‑40, S2‑T3‑39 (deep-research-report (2).md)
+- **Ingestion tier:** S2-T2; S2-T3
+- **Stream code:** 40; 39
+- **Source report:** deep-research-report (2).md
 
 #### `Register2025FrameworkAiDiffusion` — Framework for AI Diffusion (2025)
 
@@ -3208,7 +3520,9 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Lifecycle stage:** post-deployment
 - **Assurance function:** monitoring; reporting
 - **Threat model:** unknown
-- **Provenance:** S2‑T2‑48 (deep-research-report (2).md)
+- **Ingestion tier:** S2-T2
+- **Stream code:** 48
+- **Source report:** deep-research-report (2).md
 
 #### `OECD2025HaipReportingFramework` — HAIP Reporting Framework portal (2025)
 
@@ -3225,7 +3539,9 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Assurance function:** auditing; reporting
 - **Threat model:** unknown
 - **Method area:** governance
-- **Provenance:** S2‑T2‑09, S2‑T3‑10 (deep-research-report (2).md)
+- **Ingestion tier:** S2-T2; S2-T3
+- **Stream code:** 09; 10
+- **Source report:** deep-research-report (2).md
 
 #### `FITRSU2025IntroducingTechnicalReport` — Introducing the technical report series (2025)
 
@@ -3241,7 +3557,9 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Lifecycle stage:** unknown
 - **Assurance function:** reporting
 - **Threat model:** unknown
-- **Provenance:** S2‑T2‑63 (deep-research-report (2).md)
+- **Ingestion tier:** S2-T2
+- **Stream code:** 63
+- **Source report:** deep-research-report (2).md
 
 #### `FPTAMM2025PreliminaryTaxonomyAibio` — Preliminary taxonomy of AI‑bio misuse mitigations (2025)
 
@@ -3258,7 +3576,9 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Assurance function:** eval; mitigation
 - **Threat model:** unknown
 - **Method area:** evaluation/benchmarks
-- **Provenance:** S2‑T2‑57 (deep-research-report (2).md)
+- **Ingestion tier:** S2-T2
+- **Stream code:** 57
+- **Source report:** deep-research-report (2).md
 
 #### `OpenAI2025PreparednessFrameworkV2` — Preparedness Framework v2 (2025)
 
@@ -3270,7 +3590,9 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **ID / locator(s):** URL: https://openai.com/index/updating-our-preparedness-framework/; PDF: https://cdn.openai.com/pdf/18a02b5d-6b67-4cec-ab64-68cdfbddebcd/preparedness-framework-v2.pdf
 - **Access:** unknown
 - **Relation:** same_work_as: `OpenAI2025PreparednessFrameworkVersion`
-- **Provenance:** S2‑T2‑26, S2‑T3‑40 (deep-research-report (2).md)
+- **Ingestion tier:** S2-T2; S2-T3
+- **Stream code:** 26; 40
+- **Source report:** deep-research-report (2).md
 
 #### `CRFAPP2025ReportFrontierAi` — Report on Frontier AI Policy (2025)
 
@@ -3287,7 +3609,9 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Assurance function:** reporting
 - **Threat model:** unknown
 - **Method area:** governance
-- **Provenance:** S2‑T2‑43, S2‑T3‑53 (deep-research-report (2).md)
+- **Ingestion tier:** S2-T2; S2-T3
+- **Stream code:** 43; 53
+- **Source report:** deep-research-report (2).md
 
 #### `RAND2025ReportSecuringFrontier` — report on securing frontier AI governance models (2025)
 
@@ -3304,7 +3628,9 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Assurance function:** reporting
 - **Threat model:** unknown
 - **Method area:** governance
-- **Provenance:** S2‑T2‑44, S2‑T3‑55 (deep-research-report (2).md)
+- **Ingestion tier:** S2-T2; S2-T3
+- **Stream code:** 44; 55
+- **Source report:** deep-research-report (2).md
 
 #### `AI2025SecurityInstituteParliamentary` — Security Institute parliamentary written statement referencing International AI Safety Report (2025)
 
@@ -3321,7 +3647,9 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Assurance function:** reporting
 - **Threat model:** unknown
 - **Method area:** security
-- **Provenance:** S2‑T2‑71 (deep-research-report (2).md)
+- **Ingestion tier:** S2-T2
+- **Stream code:** 71
+- **Source report:** deep-research-report (2).md
 
 #### `UFRNRR20242024` — 2024) (2024)
 
@@ -3337,7 +3665,9 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Lifecycle stage:** pretraining
 - **Assurance function:** reporting
 - **Threat model:** unknown
-- **Provenance:** S2‑T2‑16, S2‑T3‑22 (deep-research-report (2).md)
+- **Ingestion tier:** S2-T2; S2-T3
+- **Stream code:** 16; 22
+- **Source report:** deep-research-report (2).md
 
 #### `EC2024AiActEnters` — AI Act enters into force (2024)
 
@@ -3355,7 +3685,9 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Assurance function:** reporting
 - **Threat model:** unknown
 - **Method area:** governance
-- **Provenance:** S2‑T2‑05 (deep-research-report (2).md)
+- **Ingestion tier:** S2-T2
+- **Stream code:** 05
+- **Source report:** deep-research-report (2).md
 
 #### `USSBA2024AiCompliancePlan` — AI Compliance Plan for OMB M‑24‑10 (2024)
 
@@ -3371,7 +3703,9 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Lifecycle stage:** deployment
 - **Assurance function:** auditing; eval; reporting
 - **Threat model:** unknown
-- **Provenance:** S2‑T2‑55 (deep-research-report (2).md)
+- **Ingestion tier:** S2-T2
+- **Stream code:** 55
+- **Source report:** deep-research-report (2).md
 
 #### `METR2024CommonElementsFrontier` — Common Elements of Frontier AI Safety Policies (2024)
 
@@ -3387,7 +3721,9 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Lifecycle stage:** unknown
 - **Assurance function:** reporting
 - **Threat model:** unknown
-- **Provenance:** S2‑T2‑39, S2‑T2‑70, S2‑T3‑37, S2‑T3‑38 (deep-research-report (2).md)
+- **Ingestion tier:** S2-T2; S2-T2; S2-T3; S2-T3
+- **Stream code:** 39; 70; 37; 38
+- **Source report:** deep-research-report (2).md
 
 #### `Agency2024CompliancePlanExample` — compliance plan example for OMB M‑24‑10 (2024)
 
@@ -3403,7 +3739,9 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Lifecycle stage:** unknown
 - **Assurance function:** auditing; reporting
 - **Threat model:** unknown
-- **Provenance:** S2‑T2‑53 (deep-research-report (2).md)
+- **Ingestion tier:** S2-T2
+- **Stream code:** 53
+- **Source report:** deep-research-report (2).md
 
 #### `EXIM2024CompliancePlanOmb` — compliance plan for OMB M‑24‑10 (2024)
 
@@ -3419,7 +3757,9 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Lifecycle stage:** unknown
 - **Assurance function:** auditing; reporting
 - **Threat model:** unknown
-- **Provenance:** S2‑T2‑54, S2‑T3‑62 (deep-research-report (2).md)
+- **Ingestion tier:** S2-T2; S2-T3
+- **Stream code:** 54; 62
+- **Source report:** deep-research-report (2).md
 
 #### `AISI2024FourthProgressReport` — Fourth progress report (2024)
 
@@ -3435,7 +3775,9 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Lifecycle stage:** deployment
 - **Assurance function:** eval; reporting
 - **Threat model:** unknown
-- **Provenance:** S2‑T2‑74, S2‑T3‑76 (deep-research-report (2).md)
+- **Ingestion tier:** S2-T2; S2-T3
+- **Stream code:** 74; 76
+- **Source report:** deep-research-report (2).md
 
 #### `UN2024GoverningAiHumanity` — Governing AI for Humanity: Final Report (2024)
 
@@ -3452,7 +3794,9 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Lifecycle stage:** unknown
 - **Assurance function:** auditing; reporting
 - **Threat model:** unknown
-- **Provenance:** S2‑T2‑13 (deep-research-report (2).md)
+- **Ingestion tier:** S2-T2
+- **Stream code:** 13
+- **Source report:** deep-research-report (2).md
 
 #### `House2024MemorandumM2410` — Memorandum M‑24‑10 (2024)
 
@@ -3468,7 +3812,9 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Lifecycle stage:** unknown
 - **Assurance function:** reporting
 - **Threat model:** unknown
-- **Provenance:** S2‑T2‑14 (deep-research-report (2).md)
+- **Ingestion tier:** S2-T2
+- **Stream code:** 14
+- **Source report:** deep-research-report (2).md
 
 #### `OpenAI2024O1SystemCard` — o1 system card as a governance‑relevant disclosure artifact (2024)
 
@@ -3485,7 +3831,9 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Assurance function:** auditing; reporting
 - **Threat model:** unknown
 - **Method area:** governance
-- **Provenance:** S2‑T2‑65, S2‑T3‑47 (deep-research-report (2).md)
+- **Ingestion tier:** S2-T2; S2-T3
+- **Stream code:** 65; 47
+- **Source report:** deep-research-report (2).md
 
 #### `US2024StateDepartmentCompliance` — State Department compliance plan page for OMB M‑24‑10 (2024)
 
@@ -3501,7 +3849,9 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Lifecycle stage:** unknown
 - **Assurance function:** auditing; reporting
 - **Threat model:** unknown
-- **Provenance:** S2‑T2‑56, S2‑T3‑63 (deep-research-report (2).md)
+- **Ingestion tier:** S2-T2; S2-T3
+- **Stream code:** 56; 63
+- **Source report:** deep-research-report (2).md
 
 #### `Register2023SafeSecureTrustworthy` — Safe, Secure, and Trustworthy Development and Use of AI (2023)
 
@@ -3517,7 +3867,9 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Lifecycle stage:** unknown
 - **Assurance function:** reporting
 - **Threat model:** unknown
-- **Provenance:** S2‑T2‑50 (deep-research-report (2).md)
+- **Ingestion tier:** S2-T2
+- **Stream code:** 50
+- **Source report:** deep-research-report (2).md
 
 #### `OECDndAiDashboardEntry` — AI dashboard entry on HLAB‑AI initiative (2025)
 
@@ -3533,7 +3885,9 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Lifecycle stage:** unknown
 - **Assurance function:** reporting
 - **Threat model:** unknown
-- **Provenance:** S2‑T2‑62 (deep-research-report (2).md)
+- **Ingestion tier:** S2-T2
+- **Stream code:** 62
+- **Source report:** deep-research-report (2).md
 
 #### `NationalndAiSafetyInstitutes` — AI safety institutes: joint pre‑deployment testing report on OpenAI o1 (2024)
 
@@ -3549,7 +3903,9 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Lifecycle stage:** pretraining; deployment
 - **Assurance function:** eval; reporting
 - **Threat model:** unknown
-- **Provenance:** S2‑T2‑32 (deep-research-report (2).md)
+- **Ingestion tier:** S2-T2
+- **Stream code:** 32
+- **Source report:** deep-research-report (2).md
 
 #### `NISTndAiSystemDocumentation` — AI System Documentation (n.d.)
 
@@ -3565,7 +3921,9 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Lifecycle stage:** unknown
 - **Assurance function:** auditing; reporting
 - **Threat model:** unknown
-- **Provenance:** S2‑T2‑04 (deep-research-report (2).md)
+- **Ingestion tier:** S2-T2
+- **Stream code:** 04
+- **Source report:** deep-research-report (2).md
 
 #### `FMFndAibioWorkstream` — AI‑Bio workstream (n.d.)
 
@@ -3581,7 +3939,9 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Lifecycle stage:** deployment
 - **Assurance function:** eval; mitigation; reporting
 - **Threat model:** unknown
-- **Provenance:** S2‑T2‑60, S2‑T3‑36 (deep-research-report (2).md)
+- **Ingestion tier:** S2-T2; S2-T3
+- **Stream code:** 60; 36
+- **Source report:** deep-research-report (2).md
 
 #### `FMFndAicyberWorkstream` — AI‑Cyber workstream (n.d.)
 
@@ -3598,7 +3958,9 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Assurance function:** reporting
 - **Threat model:** unknown
 - **Method area:** security
-- **Provenance:** S2‑T2‑58, S2‑T3‑34 (deep-research-report (2).md)
+- **Ingestion tier:** S2-T2; S2-T3
+- **Stream code:** 58; 34
+- **Source report:** deep-research-report (2).md
 
 #### `FMFndAinuclearWorkstream` — AI‑Nuclear workstream (n.d.)
 
@@ -3614,7 +3976,9 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Lifecycle stage:** deployment
 - **Assurance function:** eval; reporting
 - **Threat model:** unknown
-- **Provenance:** S2‑T2‑59, S2‑T3‑35 (deep-research-report (2).md)
+- **Ingestion tier:** S2-T2; S2-T3
+- **Stream code:** 59; 35
+- **Source report:** deep-research-report (2).md
 
 #### `CIOgovndConsolidatedFederalAi` — Consolidated Federal AI Use Case Inventory (n.d.)
 
@@ -3630,7 +3994,9 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Lifecycle stage:** deployment
 - **Assurance function:** eval; reporting
 - **Threat model:** unknown
-- **Provenance:** S2‑T2‑15 (deep-research-report (2).md)
+- **Ingestion tier:** S2-T2
+- **Stream code:** 15
+- **Source report:** deep-research-report (2).md
 
 #### `ARndCurrentPriorVersions` — current and prior versions (n.d.)
 
@@ -3646,7 +4012,9 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Lifecycle stage:** unknown
 - **Assurance function:** auditing; reporting
 - **Threat model:** unknown
-- **Provenance:** S2‑T2‑29 (deep-research-report (2).md)
+- **Ingestion tier:** S2-T2
+- **Stream code:** 29
+- **Source report:** deep-research-report (2).md
 
 #### `RMCECndFirmsResisting` — firms resisting) (2024)
 
@@ -3662,7 +4030,9 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Lifecycle stage:** unknown
 - **Assurance function:** unknown
 - **Threat model:** unknown
-- **Provenance:** S2‑T2‑72 (deep-research-report (2).md)
+- **Ingestion tier:** S2-T2
+- **Stream code:** 72
+- **Source report:** deep-research-report (2).md
 
 #### `ASIndFrontierAiTrends` — Frontier AI Trends Report (n.d.)
 
@@ -3678,7 +4048,9 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Lifecycle stage:** unknown
 - **Assurance function:** reporting
 - **Threat model:** unknown
-- **Provenance:** S2‑T2‑35 (deep-research-report (2).md)
+- **Ingestion tier:** S2-T2
+- **Stream code:** 35
+- **Source report:** deep-research-report (2).md
 
 #### `MappingndMappingAiBenchmark` — Mapping AI benchmark data to quantitative risk estimates (2025)
 
@@ -3695,7 +4067,9 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Assurance function:** eval
 - **Threat model:** unknown
 - **Method area:** evaluation/benchmarks
-- **Provenance:** S2‑T2‑69, S2‑T3‑81 (deep-research-report (2).md)
+- **Ingestion tier:** S2-T2; S2-T3
+- **Stream code:** 69; 81
+- **Source report:** deep-research-report (2).md
 
 #### `FrontierndModelForumPublications` — Model Forum publications page (n.d.)
 
@@ -3711,7 +4085,9 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Lifecycle stage:** unknown
 - **Assurance function:** reporting
 - **Threat model:** unknown
-- **Provenance:** S2‑T2‑18 (deep-research-report (2).md)
+- **Ingestion tier:** S2-T2
+- **Stream code:** 18
+- **Source report:** deep-research-report (2).md
 
 #### `ReutersndNoStopClock` — no stop the clock (2025)
 
@@ -3727,7 +4103,9 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Lifecycle stage:** unknown
 - **Assurance function:** reporting
 - **Threat model:** unknown
-- **Provenance:** S2‑T2‑42, S2‑T3‑65 (deep-research-report (2).md)
+- **Ingestion tier:** S2-T2; S2-T3
+- **Stream code:** 42; 65
+- **Source report:** deep-research-report (2).md
 
 #### `ASIBndOurFirstYear` — Our First Year (2024)
 
@@ -3743,7 +4121,9 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Lifecycle stage:** unknown
 - **Assurance function:** unknown
 - **Threat model:** unknown
-- **Provenance:** S2‑T2‑33, S2‑T3‑48 (deep-research-report (2).md)
+- **Ingestion tier:** S2-T2; S2-T3
+- **Stream code:** 33; 48
+- **Source report:** deep-research-report (2).md
 
 #### `NISTndOutlineDraftTevv` — Outline of Draft TEVV Standard (n.d.)
 
@@ -3760,7 +4140,9 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Assurance function:** eval; reporting
 - **Threat model:** unknown
 - **Method area:** evaluation/benchmarks; governance
-- **Provenance:** S2‑T2‑03, S2‑T3‑03 (deep-research-report (2).md)
+- **Ingestion tier:** S2-T2; S2-T3
+- **Stream code:** 03; 03
+- **Source report:** deep-research-report (2).md
 
 #### `EUndRegulatoryFrameworkAi` — Regulatory framework on AI (n.d.)
 
@@ -3776,7 +4158,9 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Lifecycle stage:** unknown
 - **Assurance function:** reporting
 - **Threat model:** unknown
-- **Provenance:** S2‑T2‑06, S2‑T3‑07 (deep-research-report (2).md)
+- **Ingestion tier:** S2-T2; S2-T3
+- **Stream code:** 06; 07
+- **Source report:** deep-research-report (2).md
 
 #### `ControlArenandResearch` — Research (n.d.)
 
@@ -3792,7 +4176,9 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Lifecycle stage:** deployment
 - **Assurance function:** eval; reporting
 - **Threat model:** insider
-- **Provenance:** S2‑T2‑36, S2‑T3‑57 (deep-research-report (2).md)
+- **Ingestion tier:** S2-T2; S2-T3
+- **Stream code:** 36; 57
+- **Source report:** deep-research-report (2).md
 
 #### `AISIndTacklingAiSecurity` — Tackling AI security risks… (2025)
 
@@ -3809,7 +4195,9 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Assurance function:** eval; reporting
 - **Threat model:** unknown
 - **Method area:** security
-- **Provenance:** S2‑T2‑75 (deep-research-report (2).md)
+- **Ingestion tier:** S2-T2
+- **Stream code:** 75
+- **Source report:** deep-research-report (2).md
 
 #### `OECDndWonk` — wonk (n.d.)
 
@@ -3825,65 +4213,67 @@ These entries come from the extended Tier‑2 governance list; they are kept to 
 - **Lifecycle stage:** unknown
 - **Assurance function:** reporting
 - **Threat model:** unknown
-- **Provenance:** S2‑T2‑47, S2‑T3‑13 (deep-research-report (2).md)
+- **Ingestion tier:** S2-T2; S2-T3
+- **Stream code:** 47; 13
+- **Source report:** deep-research-report (2).md
 
 ## 3.4 Tier 3 — Governance inventory (citation-only) (53 references)
 
 These entries are the citation-only inventory retained from the Tier‑3 atlas-style list.
 
-- `Brookings2026AnalysisHaipFramework` — Brookings (2026). *analysis of HAIP framework*. [—] (Provenance: S2‑T3‑89)
-- `WEF2026GlobalCybersecurityOutlook` — WEF (2026). *Global Cybersecurity Outlook 2026*. [—] (Provenance: S2‑T3‑56)
-- `OpenAI2026InternationalSecurity` — OpenAI (2026). *international security*. [—] (Provenance: S2‑T3‑90)
-- `OECD2025EventListingReinforcing` — OECD (2025). *event listing reinforcing launch date*. [—] (Provenance: S2‑T3‑100)
-- `FMF2025TevvCommentLetter` — FMF: (2025). *TEVV comment letter*. [—] (Provenance: S2‑T3‑31)
-- `FMF2025ThresholdsIssueBrief` — FMF: (2025). *thresholds issue brief*. [—] (Provenance: S2‑T3‑32)
-- `UN2024OperationalUseAi` — UN (2024). *operational use of AI in UN system report*. [—] (Provenance: S2‑T3‑68)
-- `FRE1PN20232023Background` — Federal Register: EO 14110 publication (Nov 1 (2023). *2023; background)*. [—] (Provenance: S2‑T3‑25)
-- `EUndAiActPressure` — EU (n.d.). *AI Act pressure context*. [—] (Provenance: S2‑T3‑98)
-- `EUndAiActTimeline` — EU (n.d.). *AI Act timeline page*. [—] (Provenance: S2‑T3‑05)
-- `EUndAiActUseu` — EU (n.d.). *AI Act US/EU clash context*. [—] (Provenance: S2‑T3‑97)
-- `NISTndAiDocumentationOutline` — NIST (n.d.). *AI documentation outline*. [—] (Provenance: S2‑T3‑04)
-- `CIOgovndAiUseCase` — CIO.gov (n.d.). *AI use case inventories reference*. [—] (Provenance: S2‑T3‑21)
-- `UKndAisiRebrandStatement` — UK (n.d.). *AISI rebrand statement context*. [—] (Provenance: S2‑T3‑88)
-- `FMFndAibioMisuseMitigations` — FMF: (n.d.). *AI‑bio misuse mitigations taxonomy*. [—] (Provenance: S2‑T3‑33)
-- `FMFndAnnualLetter` — FMF (n.d.). *annual letter*. [—] (Provenance: S2‑T3‑94)
-- `FRADRAndCanonicalReference` — Federal Register: AI diffusion rule (again (n.d.). *canonical reference)*. [—] (Provenance: S2‑T3‑58, S2‑T3‑59, S2‑T3‑60)
-- `EUndCodePracticeContents` — EU (n.d.). *Code of Practice contents page*. [—] (Provenance: S2‑T3‑08)
-- `EUndCodePracticeOverview` — EU (n.d.). *Code of Practice overview*. [—] (Provenance: S2‑T3‑74)
-- `FMFndComponentsSafetyFrameworks` — FMF: (n.d.). *components of safety frameworks*. [—] (Provenance: S2‑T3‑92)
-- `OECDndDashboardEntryHlabai` — OECD (n.d.). *dashboard entry for HLAB‑AI*. [—] (Provenance: S2‑T3‑67)
-- `GooglendDeepmindFrontierSafety` — Google (n.d.). *DeepMind Frontier Safety Framework 3.0*. [—] (Provenance: S2‑T3‑44)
-- `GooglendDeepmindFrontierSafetya` — Google (n.d.). *DeepMind Frontier Safety Framework update blog*. [—] (Provenance: S2‑T3‑45)
-- `GooglendDeepmindGeminiFrontier` — Google (n.d.). *DeepMind Gemini frontier safety framework report*. [—] (Provenance: S2‑T3‑85)
-- `EUndDrawingupGpaiCode` — EU (n.d.). *Drawing‑up a GPAI Code of Practice*. [—] (Provenance: S2‑T3‑09)
-- `ECAAndEntersForce` — European Commission AI Act (n.d.). *enters into force*. [—] (Provenance: S2‑T3‑06)
-- `APndEuCodePractice` — AP: (n.d.). *EU code of practice release coverage*. [—] (Provenance: S2‑T3‑66)
-- `OECDndEventListingHaip` — OECD (n.d.). *event listing for HAIP reporting framework*. [—] (Provenance: S2‑T3‑73)
-- `AISIndFrontierAiTrends` — AISI (n.d.). *Frontier AI Trends Report page*. [—] (Provenance: S2‑T3‑50)
-- `FMFndFrontierCapabilityAssessments` — FMF: (n.d.). *Frontier Capability Assessments report PDF*. [—] (Provenance: S2‑T3‑27)
-- `FMFndFrontierFrameworksWorkstream` — FMF (n.d.). *Frontier Frameworks Workstream*. [—] (Provenance: S2‑T3‑70)
-- `FMFndFrontierMitigationsPage` — FMF: (n.d.). *Frontier Mitigations page*. [—] (Provenance: S2‑T3‑29)
-- `FMFndHomePageMission` — FMF (n.d.). *home page mission framing*. [—] (Provenance: S2‑T3‑72)
-- `UNndIlibraryEntryGoverning` — UN (n.d.). *iLibrary entry for Governing AI for Humanity*. [—] (Provenance: S2‑T3‑19)
-- `FMFndInformationsharingAgreementAnn` — FMF (n.d.). *information‑sharing agreement announcement*. [—] (Provenance: S2‑T3‑95)
-- `OMBndM2410` — OMB (n.d.). *M‑24‑10*. [—] (Provenance: S2‑T3‑20)
-- `SBAndM2410CompliancePlan` — SBA (n.d.). *M‑24‑10 compliance plan page*. [—] (Provenance: S2‑T3‑64)
-- `AIndNoPause` — EU AI Act (n.d.). *no pause*. [—] (Provenance: S2‑T3‑96)
-- `UKndParliamentaryWrittenStatement` — UK (n.d.). *parliamentary written statement on renaming*. [—] (Provenance: S2‑T3‑49)
-- `UKndPlanChange` — UK (n.d.). *plan for change*. [—] (Provenance: S2‑T3‑75)
-- `OECDndPolicyInitiativeDashboard` — OECD (n.d.). *policy initiative dashboard entry for HAIP Code of Conduct / reporting framework*. [—] (Provenance: S2‑T3‑99)
-- `FMFndPreliminaryBestPractices` — FMF: (n.d.). *preliminary best practices for frontier safety evaluations*. [—] (Provenance: S2‑T3‑91)
-- `FMFndPreliminaryTaxonomyPredeployme` — FMF: (n.d.). *preliminary taxonomy of pre‑deployment evaluations*. [—] (Provenance: S2‑T3‑93)
-- `OpenAIndPreparednessBlogUpdate` — OpenAI (n.d.). *Preparedness blog update*. [—] (Provenance: S2‑T3‑41)
-- `OECDndPressReleaseHaip` — OECD (n.d.). *press release on HAIP framework launch*. [—] (Provenance: S2‑T3‑11)
-- `JointndPredeploymentTestingReport` — Joint (n.d.). *pre‑deployment testing report on OpenAI o1*. [—] (Provenance: S2‑T3‑46)
-- `FMFndPublicationsIndex` — FMF (n.d.). *publications index*. [—] (Provenance: S2‑T3‑26)
-- `FederalndReserveBoardM2410` — Federal (n.d.). *Reserve Board M‑24‑10 compliance plan*. [—] (Provenance: S2‑T3‑61)
-- `FMFndRiskTaxonomyThresholds` — FMF: (n.d.). *Risk Taxonomy and Thresholds report PDF*. [—] (Provenance: S2‑T3‑28, S2‑T3‑71)
-- `StimsonndRoundupNotingCrossdomain` — Stimson (n.d.). *roundup noting cross‑domain nuclear security work*. [—] (Provenance: S2‑T3‑87)
-- `AnthropicndRspUpdatesversioningPage` — Anthropic (n.d.). *RSP updates/versioning page*. [—] (Provenance: S2‑T3‑43)
-- `OpenAIndSafetyResponsibility` — OpenAI (n.d.). *Safety & responsibility*. [—] (Provenance: S2‑T3‑84)
-- `WEFndSyntheticDataGovernance` — WEF (n.d.). *synthetic data governance report*. [—] (Provenance: S2‑T3‑86)
+- `Brookings2026AnalysisHaipFramework` — Brookings (2026). *analysis of HAIP framework*. [—] (Ingestion tier: S2-T3; Stream code: 89; Source report: unknown)
+- `WEF2026GlobalCybersecurityOutlook` — WEF (2026). *Global Cybersecurity Outlook 2026*. [—] (Ingestion tier: S2-T3; Stream code: 56; Source report: unknown)
+- `OpenAI2026InternationalSecurity` — OpenAI (2026). *international security*. [—] (Ingestion tier: S2-T3; Stream code: 90; Source report: unknown)
+- `OECD2025EventListingReinforcing` — OECD (2025). *event listing reinforcing launch date*. [—] (Ingestion tier: S2-T3; Stream code: 100; Source report: unknown)
+- `FMF2025TevvCommentLetter` — FMF: (2025). *TEVV comment letter*. [—] (Ingestion tier: S2-T3; Stream code: 31; Source report: unknown)
+- `FMF2025ThresholdsIssueBrief` — FMF: (2025). *thresholds issue brief*. [—] (Ingestion tier: S2-T3; Stream code: 32; Source report: unknown)
+- `UN2024OperationalUseAi` — UN (2024). *operational use of AI in UN system report*. [—] (Ingestion tier: S2-T3; Stream code: 68; Source report: unknown)
+- `FRE1PN20232023Background` — Federal Register: EO 14110 publication (Nov 1 (2023). *2023; background)*. [—] (Ingestion tier: S2-T3; Stream code: 25; Source report: unknown)
+- `EUndAiActPressure` — EU (n.d.). *AI Act pressure context*. [—] (Ingestion tier: S2-T3; Stream code: 98; Source report: unknown)
+- `EUndAiActTimeline` — EU (n.d.). *AI Act timeline page*. [—] (Ingestion tier: S2-T3; Stream code: 05; Source report: unknown)
+- `EUndAiActUseu` — EU (n.d.). *AI Act US/EU clash context*. [—] (Ingestion tier: S2-T3; Stream code: 97; Source report: unknown)
+- `NISTndAiDocumentationOutline` — NIST (n.d.). *AI documentation outline*. [—] (Ingestion tier: S2-T3; Stream code: 04; Source report: unknown)
+- `CIOgovndAiUseCase` — CIO.gov (n.d.). *AI use case inventories reference*. [—] (Ingestion tier: S2-T3; Stream code: 21; Source report: unknown)
+- `UKndAisiRebrandStatement` — UK (n.d.). *AISI rebrand statement context*. [—] (Ingestion tier: S2-T3; Stream code: 88; Source report: unknown)
+- `FMFndAibioMisuseMitigations` — FMF: (n.d.). *AI‑bio misuse mitigations taxonomy*. [—] (Ingestion tier: S2-T3; Stream code: 33; Source report: unknown)
+- `FMFndAnnualLetter` — FMF (n.d.). *annual letter*. [—] (Ingestion tier: S2-T3; Stream code: 94; Source report: unknown)
+- `FRADRAndCanonicalReference` — Federal Register: AI diffusion rule (again (n.d.). *canonical reference)*. [—] (Ingestion refs: S2-T3-58, S2-T3-59, S2-T3-60; Source report: unknown)
+- `EUndCodePracticeContents` — EU (n.d.). *Code of Practice contents page*. [—] (Ingestion tier: S2-T3; Stream code: 08; Source report: unknown)
+- `EUndCodePracticeOverview` — EU (n.d.). *Code of Practice overview*. [—] (Ingestion tier: S2-T3; Stream code: 74; Source report: unknown)
+- `FMFndComponentsSafetyFrameworks` — FMF: (n.d.). *components of safety frameworks*. [—] (Ingestion tier: S2-T3; Stream code: 92; Source report: unknown)
+- `OECDndDashboardEntryHlabai` — OECD (n.d.). *dashboard entry for HLAB‑AI*. [—] (Ingestion tier: S2-T3; Stream code: 67; Source report: unknown)
+- `GooglendDeepmindFrontierSafety` — Google (n.d.). *DeepMind Frontier Safety Framework 3.0*. [—] (Ingestion tier: S2-T3; Stream code: 44; Source report: unknown)
+- `GooglendDeepmindFrontierSafetya` — Google (n.d.). *DeepMind Frontier Safety Framework update blog*. [—] (Ingestion tier: S2-T3; Stream code: 45; Source report: unknown)
+- `GooglendDeepmindGeminiFrontier` — Google (n.d.). *DeepMind Gemini frontier safety framework report*. [—] (Ingestion tier: S2-T3; Stream code: 85; Source report: unknown)
+- `EUndDrawingupGpaiCode` — EU (n.d.). *Drawing‑up a GPAI Code of Practice*. [—] (Ingestion tier: S2-T3; Stream code: 09; Source report: unknown)
+- `ECAAndEntersForce` — European Commission AI Act (n.d.). *enters into force*. [—] (Ingestion tier: S2-T3; Stream code: 06; Source report: unknown)
+- `APndEuCodePractice` — AP: (n.d.). *EU code of practice release coverage*. [—] (Ingestion tier: S2-T3; Stream code: 66; Source report: unknown)
+- `OECDndEventListingHaip` — OECD (n.d.). *event listing for HAIP reporting framework*. [—] (Ingestion tier: S2-T3; Stream code: 73; Source report: unknown)
+- `AISIndFrontierAiTrends` — AISI (n.d.). *Frontier AI Trends Report page*. [—] (Ingestion tier: S2-T3; Stream code: 50; Source report: unknown)
+- `FMFndFrontierCapabilityAssessments` — FMF: (n.d.). *Frontier Capability Assessments report PDF*. [—] (Ingestion tier: S2-T3; Stream code: 27; Source report: unknown)
+- `FMFndFrontierFrameworksWorkstream` — FMF (n.d.). *Frontier Frameworks Workstream*. [—] (Ingestion tier: S2-T3; Stream code: 70; Source report: unknown)
+- `FMFndFrontierMitigationsPage` — FMF: (n.d.). *Frontier Mitigations page*. [—] (Ingestion tier: S2-T3; Stream code: 29; Source report: unknown)
+- `FMFndHomePageMission` — FMF (n.d.). *home page mission framing*. [—] (Ingestion tier: S2-T3; Stream code: 72; Source report: unknown)
+- `UNndIlibraryEntryGoverning` — UN (n.d.). *iLibrary entry for Governing AI for Humanity*. [—] (Ingestion tier: S2-T3; Stream code: 19; Source report: unknown)
+- `FMFndInformationsharingAgreementAnn` — FMF (n.d.). *information‑sharing agreement announcement*. [—] (Ingestion tier: S2-T3; Stream code: 95; Source report: unknown)
+- `OMBndM2410` — OMB (n.d.). *M‑24‑10*. [—] (Ingestion tier: S2-T3; Stream code: 20; Source report: unknown)
+- `SBAndM2410CompliancePlan` — SBA (n.d.). *M‑24‑10 compliance plan page*. [—] (Ingestion tier: S2-T3; Stream code: 64; Source report: unknown)
+- `AIndNoPause` — EU AI Act (n.d.). *no pause*. [—] (Ingestion tier: S2-T3; Stream code: 96; Source report: unknown)
+- `UKndParliamentaryWrittenStatement` — UK (n.d.). *parliamentary written statement on renaming*. [—] (Ingestion tier: S2-T3; Stream code: 49; Source report: unknown)
+- `UKndPlanChange` — UK (n.d.). *plan for change*. [—] (Ingestion tier: S2-T3; Stream code: 75; Source report: unknown)
+- `OECDndPolicyInitiativeDashboard` — OECD (n.d.). *policy initiative dashboard entry for HAIP Code of Conduct / reporting framework*. [—] (Ingestion tier: S2-T3; Stream code: 99; Source report: unknown)
+- `FMFndPreliminaryBestPractices` — FMF: (n.d.). *preliminary best practices for frontier safety evaluations*. [—] (Ingestion tier: S2-T3; Stream code: 91; Source report: unknown)
+- `FMFndPreliminaryTaxonomyPredeployme` — FMF: (n.d.). *preliminary taxonomy of pre‑deployment evaluations*. [—] (Ingestion tier: S2-T3; Stream code: 93; Source report: unknown)
+- `OpenAIndPreparednessBlogUpdate` — OpenAI (n.d.). *Preparedness blog update*. [—] (Ingestion tier: S2-T3; Stream code: 41; Source report: unknown)
+- `OECDndPressReleaseHaip` — OECD (n.d.). *press release on HAIP framework launch*. [—] (Ingestion tier: S2-T3; Stream code: 11; Source report: unknown)
+- `JointndPredeploymentTestingReport` — Joint (n.d.). *pre‑deployment testing report on OpenAI o1*. [—] (Ingestion tier: S2-T3; Stream code: 46; Source report: unknown)
+- `FMFndPublicationsIndex` — FMF (n.d.). *publications index*. [—] (Ingestion tier: S2-T3; Stream code: 26; Source report: unknown)
+- `FederalndReserveBoardM2410` — Federal (n.d.). *Reserve Board M‑24‑10 compliance plan*. [—] (Ingestion tier: S2-T3; Stream code: 61; Source report: unknown)
+- `FMFndRiskTaxonomyThresholds` — FMF: (n.d.). *Risk Taxonomy and Thresholds report PDF*. [—] (Ingestion refs: S2-T3-28, S2-T3-71; Source report: unknown)
+- `StimsonndRoundupNotingCrossdomain` — Stimson (n.d.). *roundup noting cross‑domain nuclear security work*. [—] (Ingestion tier: S2-T3; Stream code: 87; Source report: unknown)
+- `AnthropicndRspUpdatesversioningPage` — Anthropic (n.d.). *RSP updates/versioning page*. [—] (Ingestion tier: S2-T3; Stream code: 43; Source report: unknown)
+- `OpenAIndSafetyResponsibility` — OpenAI (n.d.). *Safety & responsibility*. [—] (Ingestion tier: S2-T3; Stream code: 84; Source report: unknown)
+- `WEFndSyntheticDataGovernance` — WEF (n.d.). *synthetic data governance report*. [—] (Ingestion tier: S2-T3; Stream code: 86; Source report: unknown)
 
 ## Appendix — Alias stubs for Version history keys
 
@@ -3899,7 +4289,9 @@ These entries exist solely to satisfy `SCHEMA.md` version-linking rules (`Versio
 - **ID / locator(s):** PDF: https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/strengthening-our-frontier-safety-framework/frontier-safety-framework_3.pdf
 - **Access:** open
 - **Relation:** same_work_as: `GD2025FrontierSafetyFramework`
-- **Provenance:** Alias stub for `GD2025FrontierSafetyFramework` (non-canonical; see canonical entry for analytic content).
+- **Ingestion tier:** GOV-CORE
+- **Stream code:** 43
+- **Source report:** deep-research-report (1).md
 
 #### `NISTndManagingMisuseRisk` — Managing Misuse Risk for Dual‑Use Foundation Models (2024)
 
@@ -3911,7 +4303,9 @@ These entries exist solely to satisfy `SCHEMA.md` version-linking rules (`Versio
 - **ID / locator(s):** DOI: 10.6028/NIST.AI.800-1.ipd; URL: https://doi.org/10.6028/NIST.AI.800-1.ipd; PDF: https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.800-1.ipd.pdf
 - **Access:** unknown
 - **Relation:** same_work_as: `UASIN2024ManagingMisuseRisk`
-- **Provenance:** Alias stub for `UASIN2024ManagingMisuseRisk` (non-canonical; see canonical entry for analytic content).
+- **Ingestion tier:** GOV-CORE
+- **Stream code:** 17
+- **Source report:** deep-research-report (1).md
 
 #### `Anthropic2024ResponsibleScalingPolicya` — Responsible Scaling Policy PDF (2024)
 
@@ -3923,7 +4317,9 @@ These entries exist solely to satisfy `SCHEMA.md` version-linking rules (`Versio
 - **ID / locator(s):** URL: https://www.anthropic.com/rsp-updates
 - **Access:** open
 - **Relation:** same_work_as: `Anthropic2024ResponsibleScalingPolicy`
-- **Provenance:** Alias stub for `Anthropic2024ResponsibleScalingPolicy` (non-canonical; see canonical entry for analytic content).
+- **Ingestion tier:** GOV-CORE; S2-T3
+- **Stream code:** 40; 42
+- **Source report:** deep-research-report (1).md; deep-research-report (2).md
 
 #### `Benton2024SabotageEvaluationsFrontiera` — Sabotage Evaluations for Frontier Models (2024)
 
@@ -3935,7 +4331,9 @@ These entries exist solely to satisfy `SCHEMA.md` version-linking rules (`Versio
 - **ID / locator(s):** arXiv: 2410.21514
 - **Access:** open
 - **Relation:** same_work_as: `Benton2024SabotageEvaluationsFrontier`
-- **Provenance:** Alias stub for `Benton2024SabotageEvaluationsFrontier` (non-canonical; see canonical entry for analytic content).
+- **Ingestion tier:** TECH
+- **Stream code:** 018
+- **Source report:** deep-research-report.md
 
 #### `Anon2024AlignmentFakingLarge` — Alignment Faking in Large Language Models (2024)
 
@@ -3947,7 +4345,9 @@ These entries exist solely to satisfy `SCHEMA.md` version-linking rules (`Versio
 - **ID / locator(s):** arXiv: 2412.14093
 - **Access:** open
 - **Relation:** same_work_as: `Greenblatt2024AlignmentFakingLarge`
-- **Provenance:** Alias stub for `Greenblatt2024AlignmentFakingLarge` (non-canonical; see canonical entry for analytic content).
+- **Ingestion tier:** S1-A
+- **Stream code:** 02
+- **Source report:** deep-research-report (2).md
 
 #### `Meinke2024FrontierModelsCapablea` — Frontier Models are Capable of In‑context Scheming (2024)
 
@@ -3959,7 +4359,9 @@ These entries exist solely to satisfy `SCHEMA.md` version-linking rules (`Versio
 - **ID / locator(s):** arXiv: 2406.11713
 - **Access:** open
 - **Relation:** same_work_as: `Meinke2024FrontierModelsCapable`
-- **Provenance:** Alias stub for `Meinke2024FrontierModelsCapable` (non-canonical; see canonical entry for analytic content).
+- **Ingestion tier:** TECH
+- **Stream code:** 022
+- **Source report:** deep-research-report.md
 
 #### `Korbak2025ChainThoughtMonitorabilitya` — Chain of Thought Monitorability: A New and Fragile Opportunity for AI Safety (2025)
 
@@ -3971,7 +4373,9 @@ These entries exist solely to satisfy `SCHEMA.md` version-linking rules (`Versio
 - **ID / locator(s):** arXiv: 2507.11473
 - **Access:** open
 - **Relation:** same_work_as: `Korbak2025ChainThoughtMonitorability`
-- **Provenance:** Alias stub for `Korbak2025ChainThoughtMonitorability` (non-canonical; see canonical entry for analytic content).
+- **Ingestion tier:** TECH
+- **Stream code:** 014
+- **Source report:** deep-research-report.md
 
 #### `OpenAIndEvaluatingChainofthoughtMonito` — Evaluating chain‑of‑thought monitorability (2025)
 
@@ -3983,7 +4387,9 @@ These entries exist solely to satisfy `SCHEMA.md` version-linking rules (`Versio
 - **ID / locator(s):** arXiv: 2512.18311; URL: https://openai.com/index/evaluating-chain-of-thought-monitorability/
 - **Access:** open
 - **Relation:** same_work_as: `OpenAI2025MonitoringMonitorability`
-- **Provenance:** Alias stub for `OpenAI2025MonitoringMonitorability` (non-canonical; see canonical entry for analytic content).
+- **Ingestion tier:** S1-M
+- **Stream code:** 03
+- **Source report:** deep-research-report (2).md
 
 #### `Kenton2024ScalableOversightWeaka` — On scalable oversight with weak LLMs judging strong LLMs (2024)
 
@@ -3995,7 +4401,9 @@ These entries exist solely to satisfy `SCHEMA.md` version-linking rules (`Versio
 - **ID / locator(s):** arXiv: 2407.04622
 - **Access:** open
 - **Relation:** same_work_as: `Kenton2024ScalableOversightWeak`
-- **Provenance:** Alias stub for `Kenton2024ScalableOversightWeak` (non-canonical; see canonical entry for analytic content).
+- **Ingestion tier:** TECH
+- **Stream code:** 026
+- **Source report:** deep-research-report.md
 
 #### `MMJAH2025MitigatingManyshotJailbreaking` — Mitigating Many‑Shot Jailbreaking (2025)
 
@@ -4007,7 +4415,9 @@ These entries exist solely to satisfy `SCHEMA.md` version-linking rules (`Versio
 - **ID / locator(s):** arXiv: 2504.09604
 - **Access:** open
 - **Relation:** same_work_as: `Anon2025MitigatingManyshotJailbreaking`
-- **Provenance:** Alias stub for `Anon2025MitigatingManyshotJailbreaking` (non-canonical; see canonical entry for analytic content).
+- **Ingestion tier:** TECH
+- **Stream code:** 041
+- **Source report:** deep-research-report.md
 
 #### `International2026AiSafetyReporta` — AI Safety Report publication page (2026)
 
@@ -4019,7 +4429,9 @@ These entries exist solely to satisfy `SCHEMA.md` version-linking rules (`Versio
 - **ID / locator(s):** URL: https://internationalaisafetyreport.org/
 - **Access:** unknown
 - **Relation:** same_work_as: `International2026AiSafetyReport`
-- **Provenance:** Alias stub for `International2026AiSafetyReport` (non-canonical; see canonical entry for analytic content).
+- **Ingestion tier:** S2-T2; S2-T3; S2-T3; S2-T3
+- **Stream code:** 37; 51; 52; 82
+- **Source report:** deep-research-report (2).md
 
 #### `FMFndResearchUpdateNuclear` — research update on nuclear security (2026)
 
@@ -4031,7 +4443,9 @@ These entries exist solely to satisfy `SCHEMA.md` version-linking rules (`Versio
 - **ID / locator(s):** URL: https://www.frontiermodelforum.org/research-updates/frontier-ai-and-nuclear-security/
 - **Access:** unknown
 - **Relation:** same_work_as: `FMF2026FrontierAiNuclear`
-- **Provenance:** Alias stub for `FMF2026FrontierAiNuclear` (non-canonical; see canonical entry for analytic content).
+- **Ingestion tier:** S2-T2; S2-T3; S2-T3; S2-T3
+- **Stream code:** 22; 30; 79; 83
+- **Source report:** deep-research-report (2).md
 
 #### `EUndDrawingupGeneralpurposeAi` — Drawing‑up a General‑Purpose AI Code of Practice (2025)
 
@@ -4043,7 +4457,9 @@ These entries exist solely to satisfy `SCHEMA.md` version-linking rules (`Versio
 - **ID / locator(s):** URL: https://digital-strategy.ec.europa.eu/en/policies/general-purpose-ai-code-practice
 - **Access:** unknown
 - **Relation:** same_work_as: `EC2025ContentsGeneralpurposeAi`
-- **Provenance:** Alias stub for `EC2025ContentsGeneralpurposeAi` (non-canonical; see canonical entry for analytic content).
+- **Ingestion tier:** S2-T2
+- **Stream code:** 07
+- **Source report:** deep-research-report (2).md
 
 #### `OPRLHR20252025` — event page launching HAIP Reporting Framework (2025)
 
@@ -4055,7 +4471,9 @@ These entries exist solely to satisfy `SCHEMA.md` version-linking rules (`Versio
 - **ID / locator(s):** URL: https://www.oecd.org/en/events/2025/02/launch-of-the-hiroshima-ai-process-reporting-framework.html
 - **Access:** unknown
 - **Relation:** same_work_as: `OECD2025EventPageLaunching`
-- **Provenance:** Alias stub for `OECD2025EventPageLaunching` (non-canonical; see canonical entry for analytic content).
+- **Ingestion tier:** S2-T2; S2-T3; S2-T3
+- **Stream code:** 46; 12; 77
+- **Source report:** deep-research-report (2).md
 
 #### `UFRIFR2025FrameworkArtificialIntelligenc` — Framework for Artificial Intelligence Diffusion (2025)
 
@@ -4067,7 +4485,9 @@ These entries exist solely to satisfy `SCHEMA.md` version-linking rules (`Versio
 - **ID / locator(s):** URL: https://www.federalregister.gov/documents/2025/01/15/2025-00636/framework-for-artificial-intelligence-diffusion
 - **Access:** unknown
 - **Relation:** same_work_as: `Register2025FrameworkAiDiffusion`
-- **Provenance:** Alias stub for `Register2025FrameworkAiDiffusion` (non-canonical; see canonical entry for analytic content).
+- **Ingestion tier:** S2-T2
+- **Stream code:** 48
+- **Source report:** deep-research-report (2).md
 
 #### `EUndAiActPolicy` — AI Act policy page (2024)
 
@@ -4079,7 +4499,9 @@ These entries exist solely to satisfy `SCHEMA.md` version-linking rules (`Versio
 - **ID / locator(s):** URL: https://eur-lex.europa.eu/eli/reg/2024/1689/oj
 - **Access:** unknown
 - **Relation:** same_work_as: `EC2024AiActEnters`
-- **Provenance:** Alias stub for `EC2024AiActEnters` (non-canonical; see canonical entry for analytic content).
+- **Ingestion tier:** S2-T2
+- **Stream code:** 05
+- **Source report:** deep-research-report (2).md
 
 #### `EuropeanndCommissionPresscornerPdf` — Commission press‑corner PDF on AI Act (2024)
 
@@ -4091,7 +4513,9 @@ These entries exist solely to satisfy `SCHEMA.md` version-linking rules (`Versio
 - **ID / locator(s):** URL: https://eur-lex.europa.eu/eli/reg/2024/1689/oj
 - **Access:** unknown
 - **Relation:** same_work_as: `EC2024AiActEnters`
-- **Provenance:** Alias stub for `EC2024AiActEnters` (non-canonical; see canonical entry for analytic content).
+- **Ingestion tier:** S2-T2
+- **Stream code:** 05
+- **Source report:** deep-research-report (2).md
 
 #### `UNndAiAdvisoryBody` — AI Advisory Body landing page (2024)
 
@@ -4103,7 +4527,9 @@ These entries exist solely to satisfy `SCHEMA.md` version-linking rules (`Versio
 - **ID / locator(s):** URL: https://www.un.org/ai-advisory-body
 - **Access:** unknown
 - **Relation:** same_work_as: `UN2024GoverningAiHumanity`
-- **Provenance:** Alias stub for `UN2024GoverningAiHumanity` (non-canonical; see canonical entry for analytic content).
+- **Ingestion tier:** S2-T2
+- **Stream code:** 13
+- **Source report:** deep-research-report (2).md
 
 #### `UILndGoverningAiHumanity` — Governing AI for Humanity (2024)
 
@@ -4115,4 +4541,6 @@ These entries exist solely to satisfy `SCHEMA.md` version-linking rules (`Versio
 - **ID / locator(s):** URL: https://www.un.org/ai-advisory-body
 - **Access:** unknown
 - **Relation:** same_work_as: `UN2024GoverningAiHumanity`
-- **Provenance:** Alias stub for `UN2024GoverningAiHumanity` (non-canonical; see canonical entry for analytic content).
+- **Ingestion tier:** S2-T2
+- **Stream code:** 13
+- **Source report:** deep-research-report (2).md
