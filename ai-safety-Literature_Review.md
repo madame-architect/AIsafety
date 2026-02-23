@@ -1945,8 +1945,8 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Creators:** Zhang et al.
 - **Venue/body:** Zhang et al.
 - **Year:** 2025
-- **Type:** standard/guidance
-- **Evidence strength:** operational_standard (maturity: C)
+- **Type:** paper
+- **Evidence strength:** empirical_small (maturity: B)
 - **ID / locator(s):** DOI: 10.48550/arXiv.2410.13722; arXiv: 2410.13722
 - **Access:** open
 - **Annotation:** Shows poisoning a small fraction of pretraining data can yield effects that persist through alignment, including behaviors like jailbreaking or prompt stealing.
