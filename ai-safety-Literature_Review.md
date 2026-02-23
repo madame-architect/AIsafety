@@ -842,8 +842,8 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Creators:** Lennart Heim and Leonie Koessler (2024/2025). *Training Compute Thresholds: Features and Functions in AI Regulation* (PDF).
 - **Venue/body:** heim.xyz
 - **Year:** 2024
-- **Type:** regulation
-- **Evidence strength:** binding_regulation (maturity: C)
+- **Type:** paper
+- **Evidence strength:** conceptual (maturity: B)
 - **ID / locator(s):** DOI: 10.48550/arXiv.2405.10799; arXiv: 2405.10799; PDF: https://heim.xyz/papers/training_compute_thresholds.pdf
 - **Access:** open
 - **Annotation:** Analyzes how training-compute thresholds function in regulation (scoping, triggers, administrative feasibility).
