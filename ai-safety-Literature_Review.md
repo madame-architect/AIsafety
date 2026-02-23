@@ -1818,8 +1818,8 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Creators:** Cunningham et al.
 - **Venue/body:** Cunningham et al.
 - **Year:** 2026
-- **Type:** policy report/guidance
-- **Evidence strength:** conceptual (maturity: C)
+- **Type:** paper
+- **Evidence strength:** empirical_small (maturity: B)
 - **ID / locator(s):** DOI: 10.48550/arXiv.2601.04603; arXiv: 2601.04603
 - **Access:** open
 - **Annotation:** Introduces exchange classifiers and cascades to reduce compute and refusal rates while retaining strong jailbreak robustness under red‑teaming.
@@ -1829,7 +1829,7 @@ Stabilization tasks that most directly increase decision usefulness:
 - **Lifecycle stage:** pretraining; post-training; deployment
 - **Assurance function:** eval; mitigation; reporting
 - **Threat model:** adaptive attacker
-- **Method area:** post-training/alignment; security
+- **Method area:** post-training/alignment; security; governance
 - **Ingestion tier:** S1-S
 - **Stream code:** 03
 - **Source report:** deep-research-report (2).md
