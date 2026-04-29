@@ -1,0 +1,275 @@
+schema_version: 1
+name: frontier-governance-evals-bibliography
+description: Taxonomy and validation conventions for a BibLaTeX bibliography on frontier AI governance and evaluations.
+bibliography:
+  recommended_filename: frontier-governance-evals.bib
+  original_filename: "AI - Frontier Governance Evals - Revised(1).bib"
+  format: BibLaTeX
+  processor: Biber
+  scope: Frontier AI governance, evaluations, assurance, risk frameworks, and related policy/research sources.
+  generated_on: 2026-04-29
+inventory:
+  entries: 210
+  entry_types:
+    article: 16
+    dataset: 1
+    misc: 103
+    online: 32
+    report: 58
+  unique_keyword_tags: 92
+  field_counts:
+    annotation: 210
+    author: 210
+    date: 202
+    doi: 122
+    eprint: 110
+    eprinttype: 110
+    institution: 50
+    issuer_type: 210
+    journaltitle: 16
+    keywords: 210
+    note: 1
+    number: 5
+    organization: 13
+    pubstate: 103
+    review_status: 210
+    title: 210
+    type: 62
+    url: 202
+    urldate: 202
+    version: 19
+    year: 202
+entry_types_allowed:
+  - article
+  - dataset
+  - misc
+  - online
+  - report
+fields:
+  required_all_entries:
+    - author
+    - title
+    - keywords
+    - review_status
+    - issuer_type
+    - annotation
+  recommended_all_entries:
+    - date
+    - year
+    - url
+    - urldate
+  custom_fields:
+    review_status: Evidence grade or review channel; should mirror one review_status/* keyword tag.
+    issuer_type: Source issuer category; should mirror one issuer_type/* keyword tag.
+    annotation: Human-readable research-use note.
+    version: Version label for frameworks, standards, tools, and living documents when available.
+keyword_taxonomy:
+  pattern: namespace/value
+  required_exactly_one:
+    - document_type
+    - source_status
+    - evidence_basis
+  recommended_exactly_one:
+    - review_status
+    - issuer_type
+  optional_multiple:
+    - risk_domain
+    - lifecycle_stage
+    - assurance_function
+    - threat_vector
+    - release_model
+  namespaces:
+    document_type:
+      description: What kind of source this is.
+      allowed:
+        - annual_report
+        - benchmark
+        - blog_post
+        - comment_letter
+        - commitments
+        - compliance_plan
+        - corporate_framework
+        - dashboard_entry
+        - dataset
+        - documentation_portal
+        - executive_order
+        - framework
+        - guidance
+        - industry_report
+        - issue_brief
+        - memorandum
+        - news_article
+        - outline
+        - paper
+        - policy_page
+        - policy_paper
+        - policy_report
+        - portal
+        - press_release
+        - progress_report
+        - regulation
+        - report
+        - report_page
+        - standard
+        - survey
+        - tool
+        - working_paper
+        - workstream_page
+        - written_statement
+    source_status:
+      description: Relationship of the source to the underlying claim or evidence.
+      allowed:
+        - commentary
+        - primary
+        - secondary
+    evidence_basis:
+      description: Primary basis for using the source in research writing.
+      allowed:
+        - benchmark
+        - commentary
+        - dataset
+        - journalistic
+        - legal
+        - policy
+        - procedural
+        - reference
+        - research
+        - research_synthesis
+        - tooling
+    review_status:
+      description: Evidence-grade or review channel for the source.
+      allowed:
+        - dataset
+        - institutional
+        - legal_or_regulatory
+        - peer_reviewed_or_editorial
+        - preprint
+        - standard_or_community_guidance
+    issuer_type:
+      description: Kind of institution or actor issuing the source.
+      allowed:
+        - academic_or_research
+        - company
+        - government
+        - industry_forum
+        - ngo_research
+        - standards_body
+        - unspecified
+    risk_domain:
+      description: Risk domain covered by the source. May use multiple values.
+      allowed:
+        - agentic_reliability
+        - autonomy
+        - bio
+        - cbrn
+        - chemical_biological
+        - cyber
+        - misuse
+        - multimodal
+        - persuasion
+        - privacy
+        - safety
+        - systemic_risk
+    lifecycle_stage:
+      description: AI lifecycle stage addressed by the source. May use multiple values.
+      allowed:
+        - deployment
+        - post_deployment
+        - post_training
+        - pretraining
+    assurance_function:
+      description: Governance, assurance, or control function addressed by the source. May use multiple values.
+      allowed:
+        - auditing
+        - eval
+        - mitigation
+        - monitoring
+        - reporting
+    threat_vector:
+      description: Threat model or vector addressed by the source. May use multiple values.
+      allowed:
+        - adaptive_attacker
+        - excessive_agency
+        - expert_uplift
+        - insider
+        - jailbreak
+        - non_expert_uplift
+        - prompt_injection
+        - supply_chain
+    release_model:
+      description: Release/access model addressed by the source. May use multiple values.
+      allowed:
+        - closed
+        - open_weights
+validation:
+  duplicate_keys: error
+  missing_required_fields: error
+  required_taxonomy_namespaces: error
+  recommended_taxonomy_namespaces: warning
+  missing_review_status_keyword_mirror: warning
+  missing_issuer_type_keyword_mirror: warning
+  unknown_keyword_tags: warning
+  strict_mode: Convert warnings to failures in scripts/validate_bib.py with --strict.
+known_cleanup_items:
+  missing_review_status_keyword_mirror:
+    count: 17
+    keys:
+      - schuett_surveythresholdsadvanced_2025
+      - omb_m2410_2024
+      - jose_strategicobfuscation_2026
+      - hu_realignsafetyaligning_2026
+      - ye_learningjudgepreference_2025
+      - templeton_scalingmonosemanticity_2024
+      - ameisen_circuittracingrevealing_2025
+      - lindsey_biology_2025
+      - kamath_tracingattentioncomputatio_2025
+      - bengio_internationalsafety_2026
+      - wef_globalcybersecurity_2026
+      - ukparliament_securityinstitute_2025
+      - aisi_fourthprogress_2024
+      - aisi_frontiertrends_2025
+      - aisi_year_2024
+      - controlarena_research_nd
+      - dsit_tacklingsecurityrisks_2025
+  missing_issuer_type_keyword_mirror:
+    count: 17
+    keys:
+      - schuett_surveythresholdsadvanced_2025
+      - omb_m2410_2024
+      - jose_strategicobfuscation_2026
+      - hu_realignsafetyaligning_2026
+      - ye_learningjudgepreference_2025
+      - templeton_scalingmonosemanticity_2024
+      - ameisen_circuittracingrevealing_2025
+      - lindsey_biology_2025
+      - kamath_tracingattentioncomputatio_2025
+      - bengio_internationalsafety_2026
+      - wef_globalcybersecurity_2026
+      - ukparliament_securityinstitute_2025
+      - aisi_fourthprogress_2024
+      - aisi_frontiertrends_2025
+      - aisi_year_2024
+      - controlarena_research_nd
+      - dsit_tacklingsecurityrisks_2025
+  missing_date:
+    count: 8
+    keys:
+      - nist_systemdocumentation_nd
+      - fmf_bioworkstream_nd
+      - fmf_cyberworkstream_nd
+      - fmf_nuclearworkstream_nd
+      - fmf_publications_nd
+      - ec_approachartificial_nd
+      - controlarena_research_nd
+      - oecd_wonk_nd
+  missing_url:
+    count: 8
+    keys:
+      - nist_managingmisuserisk_2024
+      - schuett_frontierdevelopers_2024
+      - salvi_conversationalpersuasivene_2025
+      - harmbench_standardizedevaluation_2024
+      - burns_weakstronggeneralization_2024
+      - huang_collectiveconstitutional_2024
+      - khan_debatingmorepersuasive_2024
+      - hackenburg_evaluatingpersuasive_2024
