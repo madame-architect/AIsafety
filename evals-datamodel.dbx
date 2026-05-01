@@ -1,0 +1,232 @@
+\ProvidesFile{frontier-governance-evals-datamodel.dbx}[2026/04/30 custom datamodel for frontier governance/evals bibliography]
+
+\DeclareDatamodelFields[type=field,datatype=literal]{%
+  review_status,
+  issuer_type,
+  scope_relevance,
+  artifact_type,
+  issuer_sector,
+  evidence_independence,
+  review_process,
+  version_status,
+  governance_function,
+  source_relation,
+  supersedes,
+  superseded_by,
+  evidence_note%
+}
+
+\DeclareDatamodelEntryfields{%
+  review_status,
+  issuer_type,
+  scope_relevance,
+  artifact_type,
+  issuer_sector,
+  evidence_independence,
+  review_process,
+  version_status,
+  governance_function,
+  source_relation,
+  supersedes,
+  superseded_by,
+  evidence_note%
+}
+
+% This bibliography contains portal/workstream pages that have no stable publication date.
+% BibLaTeX's stock datamodel applies a broad date/year constraint that is too strict
+% for those undated @online records. Biber does not provide a narrow "remove only this
+% one stock constraint" switch, so this local datamodel intentionally resets mandatory
+% constraints and reconstructs the relevant standard constraints below, with @online
+% requiring title plus url/doi/eprint but not an invented publication date.
+% Re-check this file when upgrading BibLaTeX/Biber, because future stock constraints
+% may differ from the reconstructed local policy.
+\ResetDatamodelConstraints
+
+\DeclareDatamodelConstraints[
+  article,
+  book,
+  inbook,
+  bookinbook,
+  suppbook,
+  booklet,
+  collection,
+  incollection,
+  suppcollection,
+  manual,
+  misc,
+  software,
+  mvbook,
+  mvcollection,
+  patent,
+  periodical,
+  suppperiodical,
+  proceedings,
+  inproceedings,
+  reference,
+  inreference,
+  report,
+  set,
+  thesis,
+  unpublished]{
+    \constraint[type=mandatory]{
+      \constraintfieldsxor{
+        \constraintfield{date}
+        \constraintfield{year}
+      }
+    }
+  }
+
+\DeclareDatamodelConstraints[set]{
+  \constraint[type=mandatory]{
+    \constraintfield{entryset}
+  }
+}
+
+\DeclareDatamodelConstraints[article]{
+  \constraint[type=mandatory]{
+    \constraintfield{author}
+    \constraintfield{journaltitle}
+    \constraintfield{title}
+  }
+}
+
+\DeclareDatamodelConstraints[book,mvbook]{
+  \constraint[type=mandatory]{
+    \constraintfield{author}
+    \constraintfield{title}
+  }
+}
+
+\DeclareDatamodelConstraints[inbook,bookinbook,suppbook]{
+  \constraint[type=mandatory]{
+    \constraintfield{author}
+    \constraintfield{title}
+    \constraintfield{booktitle}
+  }
+}
+
+\DeclareDatamodelConstraints[booklet]{
+  \constraint[type=mandatory]{
+    \constraintfieldsor{
+      \constraintfield{author}
+      \constraintfield{editor}
+    }
+    \constraintfield{title}
+  }
+}
+
+\DeclareDatamodelConstraints[collection,reference,mvcollection,mvreference]{
+  \constraint[type=mandatory]{
+    \constraintfield{editor}
+    \constraintfield{title}
+  }
+}
+
+\DeclareDatamodelConstraints[incollection,suppcollection,inreference]{
+  \constraint[type=mandatory]{
+    \constraintfield{author}
+    \constraintfield{editor}
+    \constraintfield{title}
+    \constraintfield{booktitle}
+  }
+}
+
+\DeclareDatamodelConstraints[dataset]{
+  \constraint[type=mandatory]{
+    \constraintfield{title}
+  }
+}
+
+\DeclareDatamodelConstraints[manual]{
+  \constraint[type=mandatory]{
+    \constraintfield{title}
+  }
+}
+
+\DeclareDatamodelConstraints[misc,software]{
+  \constraint[type=mandatory]{
+    \constraintfield{title}
+  }
+}
+
+% Online records require a title and a URL/DOI/eprint, but not a publication date.
+% Undated pages should carry urldate and evidence_note in the .bib file.
+\DeclareDatamodelConstraints[online]{
+  \constraint[type=mandatory]{
+    \constraintfield{title}
+    \constraintfieldsor{
+      \constraintfield{url}
+      \constraintfield{doi}
+      \constraintfield{eprint}
+    }
+  }
+}
+
+\DeclareDatamodelConstraints[patent]{
+  \constraint[type=mandatory]{
+    \constraintfield{author}
+    \constraintfield{title}
+    \constraintfield{number}
+  }
+}
+
+\DeclareDatamodelConstraints[periodical]{
+  \constraint[type=mandatory]{
+    \constraintfield{editor}
+    \constraintfield{title}
+  }
+}
+
+\DeclareDatamodelConstraints[proceedings,mvproceedings]{
+  \constraint[type=mandatory]{
+    \constraintfield{title}
+  }
+}
+
+\DeclareDatamodelConstraints[inproceedings]{
+  \constraint[type=mandatory]{
+    \constraintfield{author}
+    \constraintfield{title}
+    \constraintfield{booktitle}
+  }
+}
+
+\DeclareDatamodelConstraints[report]{
+  \constraint[type=mandatory]{
+    \constraintfield{author}
+    \constraintfield{title}
+    \constraintfield{type}
+    \constraintfield{institution}
+  }
+}
+
+\DeclareDatamodelConstraints[thesis]{
+  \constraint[type=mandatory]{
+    \constraintfield{author}
+    \constraintfield{title}
+    \constraintfield{type}
+    \constraintfield{institution}
+  }
+}
+
+\DeclareDatamodelConstraints[unpublished]{
+  \constraint[type=mandatory]{
+    \constraintfield{author}
+    \constraintfield{title}
+  }
+}
+
+\DeclareDatamodelConstraints{
+  \constraint[type=data, datatype=isbn]{
+    \constraintfield{isbn}
+  }
+  \constraint[type=data, datatype=issn]{
+    \constraintfield{issn}
+  }
+  \constraint[type=data, datatype=ismn]{
+    \constraintfield{ismn}
+  }
+  \constraint[type=data, datatype=pattern, pattern=\regexp{(?:sf|sm|sn|pf|pm|pn|pp)}]{
+    \constraintfield{gender}
+  }
+}
