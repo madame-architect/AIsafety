@@ -1,0 +1,36 @@
+{
+  "recovered_on": "2026-10-16",
+  "description": "Frozen copies of the supplied May 2026 research artifacts. Recovery is not a new source-access or literature-search date.",
+  "files": [
+    {
+      "path": "provenance/may-2026/frontier-governance-evals-v2.bib",
+      "source_filename": "Frontier Governance Evals BibTeX V2.bib",
+      "sha256": "16ab48233d81856d8de88a6c64c7ff9e94202895440bc75dcdfe0e1882c23084",
+      "bytes": 898984
+    },
+    {
+      "path": "provenance/may-2026/frontier-governance-evals-schema-v2.yml",
+      "source_filename": "Frontier Governance Evals Schema YAML.yml",
+      "sha256": "1c5cadc52cd171665f4016f20356dda081d57564f34c9389dcb83210751ecff1",
+      "bytes": 7151
+    },
+    {
+      "path": "provenance/may-2026/frontier-governance-evals-lint-v2.py",
+      "source_filename": "Frontier Governance Evals Linter.py",
+      "sha256": "dc82b0a8c096c7e6fc10c313623622c3e7f3affc75b2b4c554e950a8c99c0b1b",
+      "bytes": 26107
+    },
+    {
+      "path": "provenance/may-2026/frontier-governance-evals-taxonomy-v2.md",
+      "source_filename": "frontier-governance-evals-taxonomy-v2.md",
+      "sha256": "1b782b15d138808627258f8064d8f9b2b3ad79c9022efb3cce679e628910d47d",
+      "bytes": 8618
+    },
+    {
+      "path": "provenance/may-2026/frontier-governance-evals-datamodel-v2.dbx",
+      "source_filename": "frontier-governance-evals-datamodel-v2.dbx",
+      "sha256": "787a2e5b822be4e63333bda0947cca81c28837c574d6abb50f0732aeea233b77",
+      "bytes": 6111
+    }
+  ]
+}

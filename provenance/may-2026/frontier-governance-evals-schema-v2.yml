@@ -1,0 +1,347 @@
+schema_version: frontier-governance-evals-v2
+generated: 2026-05-04
+keyword_mirror_policy:
+  current_fields:
+    - source_form
+    - source_role
+    - governance_artifact
+    - scope_relevance
+    - issuer_type
+    - issuer_sector
+    - review_process
+    - attestation_relation
+    - independence_from
+    - evidence_basis
+    - governance_function
+    - function_role
+    - risk_domain
+    - threat_vector
+    - lifecycle_stage
+    - release_model
+    - version_status
+    - maintenance_status
+    - legal_status
+    - classification_confidence
+  retained_legacy_fields:
+    - source_relation
+    - artifact_type
+    - review_status
+    - evidence_independence
+fields:
+  source_relation:
+    required: true
+    multivalue: false
+    values:
+      - primary
+      - secondary
+      - tertiary
+  source_role:
+    required: true
+    multivalue: false
+    values:
+      - original_research
+      - official_statement
+      - official_guidance
+      - legal_or_regulatory_instrument
+      - standards_or_consensus_artifact
+      - industry_guidance
+      - public_comment
+      - news_reporting
+      - aggregator_or_portal
+      - external_analysis
+  scope_relevance:
+    required: true
+    multivalue: false
+    values:
+      - core
+      - supporting
+      - contextual
+      - peripheral
+  source_form:
+    required: true
+    multivalue: false
+    values:
+      - paper
+      - working_paper
+      - policy_paper
+      - report
+      - policy_report
+      - industry_report
+      - issue_brief
+      - corporate_framework
+      - framework
+      - benchmark
+      - regulation
+      - executive_order
+      - memorandum
+      - guidance
+      - code_of_practice
+      - compliance_plan
+      - policy_page
+      - portal
+      - workstream_page
+      - documentation_portal
+      - report_page
+      - research_page
+      - dashboard_entry
+      - dataset
+      - survey
+      - tool
+      - press_release
+      - blog_post
+      - news_article
+      - comment_letter
+      - commitment_statement
+      - written_statement
+      - progress_report
+      - annual_report
+      - outline
+      - standard
+  artifact_type:
+    required: true
+    multivalue: false
+    values:
+      - company_framework
+      - policy_framework
+      - policy_report
+      - technical_paper
+      - eval_method
+      - benchmark
+      - guidance
+      - regulation
+      - standard
+      - system_card
+      - blog_post
+      - portal
+      - policy_page
+      - code_of_practice
+      - commitment
+      - working_paper
+      - policy_paper
+      - press_release
+      - written_statement
+      - dashboard_entry
+      - dataset
+      - news
+      - risk_report
+      - research_page
+      - public_comment
+  governance_artifact:
+    required: true
+    multivalue: false
+    values:
+      - research_analysis
+      - policy_analysis
+      - eval_method
+      - benchmark
+      - company_framework
+      - policy_framework
+      - implementation_guidance
+      - legal_instrument
+      - standard
+      - system_card
+      - official_communication
+      - portal_or_registry
+      - policy_page
+      - code_of_practice
+      - commitment
+      - official_statement
+      - transparency_dashboard
+      - dataset
+      - news_reporting
+      - risk_report
+      - research_index
+      - public_comment
+  issuer_type:
+    required: true
+    multivalue: false
+    values:
+      - company
+      - government
+      - intergovernmental
+      - academic_or_research
+      - standards_body
+      - ngo_research
+      - industry_forum
+      - media
+  issuer_sector:
+    required: true
+    multivalue: false
+    values:
+      - private
+      - public
+      - multilateral
+      - academic
+      - standards
+      - civil_society
+      - industry
+      - media
+  review_status:
+    required: true
+    multivalue: false
+    values:
+      - peer_reviewed
+      - preprint
+      - institutional
+      - editorial
+      - legal_or_regulatory
+      - standard_or_community_guidance
+  review_process:
+    required: true
+    multivalue: false
+    values:
+      - peer_reviewed
+      - author_posted_preprint
+      - institutional_review
+      - editorial_review
+      - legal_process
+      - standards_consensus
+  evidence_independence:
+    required: true
+    multivalue: false
+    values:
+      - self_attested
+      - issuer_attested
+      - author_attested
+      - third_party
+      - regulatory
+      - journalistic
+      - community_or_industry_consensus
+  attestation_relation:
+    required: true
+    multivalue: false
+    values:
+      - self_attested
+      - issuer_attested
+      - author_attested
+      - external_analysis
+      - regulatory_authority
+      - journalistic_reporting
+      - community_consensus
+  independence_from:
+    required: true
+    multivalue: false
+    values:
+      - subject_self
+      - issuer_self
+      - not_independently_verified
+      - independent_of_subject
+      - regulatory_authority
+      - editorial_independence
+      - community_consensus
+  evidence_basis:
+    required: true
+    multivalue: false
+    values:
+      - research
+      - procedural
+      - policy
+      - legal
+      - reference
+      - journalistic
+      - dataset
+      - research_synthesis
+      - tooling
+      - benchmark
+      - commentary
+  governance_function:
+    required: false
+    multivalue: true
+    values:
+      - evaluation
+      - audit
+      - monitoring
+      - reporting
+      - mitigation
+  function_role:
+    required: true
+    multivalue: false
+    values:
+      - direct
+      - enabling
+      - background
+      - commentary
+  risk_domain:
+    required: false
+    multivalue: true
+    values:
+      - cyber
+      - autonomy
+      - cbrn
+      - privacy
+      - systemic_risk
+      - persuasion
+      - bio
+      - misuse
+      - safety
+      - loss_of_control
+      - chemical
+      - fairness
+      - model_interpretability
+      - multimodal
+      - agentic_reliability
+      - model_security
+  threat_vector:
+    required: false
+    multivalue: true
+    values:
+      - adaptive_attacker
+      - supply_chain
+      - insider
+      - expert_uplift
+      - non_expert_uplift
+      - jailbreak
+      - intentional_subversion
+      - prompt_injection
+      - excessive_agency
+      - self_replication
+      - red_teaming
+      - flaw_disclosure
+      - agentic_misalignment
+  lifecycle_stage:
+    required: false
+    multivalue: true
+    values:
+      - pretraining
+      - post_training
+      - deployment
+      - post_deployment
+      - procurement
+  release_model:
+    required: false
+    multivalue: true
+    values:
+      - closed
+      - open_weights
+  version_status:
+    required: false
+    multivalue: false
+    values:
+      - current
+      - draft
+      - superseded
+      - historical
+      - living_document
+  maintenance_status:
+    required: true
+    multivalue: false
+    values:
+      - static
+      - maintained_page
+      - living_document
+  legal_status:
+    required: true
+    multivalue: false
+    values:
+      - not_applicable
+      - authoritative
+      - proposed
+      - superseded
+      - historical
+  classification_confidence:
+    required: true
+    multivalue: false
+    values:
+      - high
+      - medium
+      - low

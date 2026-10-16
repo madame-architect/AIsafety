@@ -1,0 +1,65 @@
+# Methods
+
+**Frontier AI Governance Evals — v3; reconstructed account, 2026-10-16**
+
+## Purpose and status
+
+This document records the confirmed history and current stabilization procedures for Frontier AI Governance Evals, a curated collection about frontier AI evaluation and governance. The earlier May 2026 Methods text remains unavailable. This dated reconstruction does not reproduce that document or establish a protocol that preceded collection.
+
+This release reconciles existing artifacts, makes YAML records authoritative, generates BibTeX, and introduces provisional synthesis routing. It adds no newly discovered references and includes no new literature search. Selection of a research question and production of a new synthesis are deferred until the collection is stable.
+
+## Legacy collection and provenance
+
+An independent researcher assembled the collection iteratively with substantial generative AI assistance in discovery, bibliographic normalization, classification, quality checks, and documentation. The legacy artifacts include a bibliography, taxonomy, YAML schema, and Python linter. Their existence does not establish that every proposed research procedure was performed.
+
+The recovered May V2 bibliography contains **276 records**, independently counted using two parsers. It retains all **218 citation keys** on the pre-migration GitHub baseline and contains **58 additional keys**. The historical report of 262 entries was stale. These are counts of bibliographic records, not independently verified studies. The frozen inputs are retained in [`provenance/may-2026/`](provenance/may-2026/); [`MIGRATION.md`](MIGRATION.md) and [`provenance/reconciliation.json`](provenance/reconciliation.json) account for the migration.
+
+A complete history of legacy searches, excluded candidates, screening decisions, and source-inspection depth is unavailable. This release therefore makes no claim of systematic or exhaustive search, independent dual coding, inter-rater reliability, preregistration, or original experiments. Missing provenance remains unknown. A later inspection is recorded on its actual date, rather than presented as an original screening decision. Retired research material remains historical unless explicitly restored.
+
+## Authoritative records and generated export
+
+[`records.yaml`](records.yaml) is the authoritative editable collection. Its root `schema_version` is `frontier-governance-evals-v3`; each record has `id`, `entry_type`, and `fields`. The six inherited entry types and substantive field values are preserved; controlled multivalue fields use string lists. BibTeX and its keyword mirrors are generated from these records. Do not add a `keywords` field to the records. The schema defining allowed structures and values is separate from the records themselves. The generated [index](views/index.md) reports the current record and stream counts.
+
+Citation keys identify records. DOI, URL, title, and source version can help identify possible duplicates or related versions, but no single match establishes equivalence in every case. Distinct versions should remain distinguishable when their content matters. Renames, merges, exclusions, and substantive corrections require a recorded reason.
+
+Migration and source verification are separate activities. Preserving a field does not certify its accuracy; a corrected format does not establish that a publication was inspected again. Existing publication and access dates retain their inherited meanings.
+
+## Synthesis routing
+
+Two substantive synthesis streams are accompanied by a contextual category. The scalar fields `synthesis_stream` and `stream_note` record the route and its explanation.
+
+| Value | Intended contribution |
+|---|---|
+| `technical_eval` | Technical evaluations, benchmarks, evaluation methods, or tools for assessing AI systems or safeguards |
+| `governance_artifact` | Operational policies, frameworks, regulations, standards, guidance, commitments, or oversight mechanisms |
+| `contextual` | Analysis, commentary, or other research that is neither a technical evaluation or method nor an operational governance artifact |
+
+The new routing is **provisional and AI-assisted**, based on inherited metadata, titles, and available abstracts. It is not renewed full-source verification. Publication format or issuer alone does not establish a route. Ambiguous contributions should be reviewed before inclusion in a substantive synthesis; relevant passages can serve multiple discussions while retaining one record identity.
+
+A later technical synthesis should examine what was tested, the threat model, design, conditions, results, reproducibility, and limitations. It should distinguish proposed methods from observed results. A governance synthesis should examine authority, scope, requirements or commitments, and evidence of implementation. Policy existence does not establish effectiveness. Contextual sources can inform interpretation without being counted as direct technical findings or operational governance commitments.
+
+## Confidence and evidence quality
+
+The inherited `classification_confidence` values are unchanged. They do not rate the newly assigned synthesis routes or the quality of the underlying evidence. Classification confidence concerns an annotation; evidence quality concerns how well a source supports a particular claim.
+
+A confidently identified policy can provide no empirical evidence of implementation. An empirical finding may have important limitations despite clear classification. Source type, independence, review status, and reproducibility are informative dimensions, not interchangeable quality scores. Missing annotations indicate uncoded or unavailable information rather than proven absence of a property.
+
+## Future intake and maintenance
+
+Future additions use a small intake log. These procedures apply prospectively and do not reconstruct legacy screening events.
+
+1. Record the actual discovery date, source or service, candidate identifier, and exact query when applicable. Identify direct recommendations and citation following as such.
+2. Check existing identifiers, titles, and versions before accepting a candidate as new.
+3. Record the material inspected: full text, abstract, or specified sections. Search snippets and AI summaries alone do not establish results or full verification.
+4. Record inclusion, exclusion, or deferral with a short reason and unresolved questions. Inclusion requires a stated connection to the collection's scope, not agreement with the conclusions.
+5. Record supported annotations, validate the records, and regenerate the export.
+
+For changing documents, retain the version or publication date when available, the actual access date, and a usable archive URL if one has been checked. Otherwise document the preservation gap. Later reviews of legacy entries can use the same lightweight log with their actual review dates.
+
+## Validation, releases, and AI assistance
+
+Run `python3 scripts/build.py` to generate the outputs and `python3 scripts/build.py --check` to check them. Automated validation addresses data structure and export consistency. Successful checks do not establish source accuracy, evidence quality, comprehensive coverage, or scholarly validity. Tag distributions describe this collection rather than the prevalence of findings in the field.
+
+The GitHub pull request prepares the release for review. A matching OSF deposit has not been verified; synchronization must be confirmed against the actual deposited files before being reported as complete.
+
+AI assisted the present migration, provisional routing, code, and this reconstructed document. A complete retrospective list of models and prompts is unavailable and is not invented. The maintainer is responsible for accepting releases and research claims. An AI-assisted second pass is not independent human coding. Future syntheses should document the source inspection, review, and AI assistance actually performed.
