@@ -551,7 +551,7 @@ records:
     date: '2026-04-17'
     version: '3.1'
     url: https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/strengthening-our-frontier-safety-framework/frontier-safety-framework_3-1.pdf
-    urldate: '2026-04-29'
+    urldate: '2026-10-16'
     source_relation: primary
     source_role: official_statement
     source_form: corporate_framework
@@ -568,31 +568,38 @@ records:
     evidence_basis: procedural
     governance_function:
     - evaluation
+    - audit
+    - monitoring
     - reporting
     - mitigation
     function_role: direct
     risk_domain:
     - cbrn
     - cyber
+    - persuasion
     - autonomy
     - misuse
+    - loss_of_control
     lifecycle_stage:
+    - post_training
     - deployment
     - post_deployment
     version_status: current
     maintenance_status: static
     legal_status: not_applicable
     supersedes: deepmind_frontiersafetyv3_2025
-    inclusion_reason: 'Included as a core corporate_framework for frontier AI governance/evals; classified
-      as company_framework with official_statement source role; used for evaluation, reporting, mitigation;
-      lifecycle coverage: deployment, post_deployment; risk domains: cbrn, cyber, autonomy, misuse; evidence
-      basis: procedural; function role: direct.'
+    inclusion_reason: Primary source for comparing how frontier capability evidence informs a provider's
+      stated safeguard and deployment requirements.
     classification_confidence: high
-    annotation: 'Current Google DeepMind Frontier Safety Framework v3.1; use for Tracked Capability Levels,
-      critical capability thresholds, deployment/security mitigations, and corporate frontier-risk governance
-      comparisons. Limitation: company-authored framework.'
+    annotation: Version 3.1 provider policy connecting frontier capability assessment, security, deployment
+      safeguards and residual-risk acceptance. Use as evidence of stated organizational commitments. Safeguard
+      applicability depends on the risk domain, capability level and deployment context.
     synthesis_stream: governance_artifact
-    stream_note: 'Provisional: Versioned provider safety framework.'
+    stream_note: 'AI-assisted full-text check (2026-10-16): organizational policy; evaluation provisions
+      are not empirical findings.'
+    evidence_note: The cover dates version 3.1 to 2026-04-17. On 2026-10-16, Google DeepMind's official
+      version history listed v3.1 first, and its explicit latest-framework link resolved to this PDF.
+      Current denotes that public version designation, not verification of implementation.
 - id: oecd_hiroshimaprocesscode_2025
   entry_type: report
   fields:
@@ -680,13 +687,13 @@ records:
   entry_type: report
   fields:
     author: '{OpenAI}'
-    title: Preparedness framework v2
+    title: Preparedness Framework
     institution: OpenAI
     type: Framework
     date: '2025-04-15'
     version: '2'
     url: https://cdn.openai.com/pdf/18a02b5d-6b67-4cec-ab64-68cdfbddebcd/preparedness-framework-v2.pdf
-    urldate: '2026-04-29'
+    urldate: '2026-10-16'
     source_relation: primary
     source_role: official_statement
     source_form: corporate_framework
@@ -702,23 +709,38 @@ records:
     independence_from: subject_self
     evidence_basis: procedural
     governance_function:
+    - evaluation
+    - audit
+    - monitoring
     - reporting
     - mitigation
     function_role: direct
     lifecycle_stage:
+    - post_training
     - deployment
-    version_status: current
+    - post_deployment
     maintenance_status: static
     legal_status: not_applicable
-    inclusion_reason: 'Included as a core corporate_framework for frontier AI governance/evals; classified
-      as company_framework with official_statement source role; used for reporting, mitigation; lifecycle
-      coverage: deployment; evidence basis: procedural; function role: direct.'
+    inclusion_reason: Primary source for comparing how frontier capability evidence informs a provider's
+      stated safeguard and deployment requirements.
     classification_confidence: high
-    annotation: 'OpenAI Preparedness Framework v2; use for scorecards, tracked risk categories, mitigation
-      thresholds, model deployment/development constraints, and preparedness governance comparisons. Limitation:
-      company-authored framework.'
+    annotation: Version 2 provider policy connecting capability assessments to safeguard requirements
+      and deployment/development decisions. Uses Capabilities Reports and Safeguards Reports; residual-risk
+      decisions remain with leadership. Treat as organizational policy, not independent evidence of safeguard
+      effectiveness.
     synthesis_stream: governance_artifact
-    stream_note: 'Provisional: Provider preparedness policy and risk-management framework.'
+    stream_note: 'AI-assisted full-text check (2026-10-16): organizational policy; evaluation provisions
+      are not empirical findings.'
+    risk_domain:
+    - cbrn
+    - cyber
+    - autonomy
+    - misuse
+    - loss_of_control
+    evidence_note: 'The primary PDF identifies version 2, updated 2025-04-15. As of 2026-10-16, bounded
+      official-site checks found no newer numbered version, and official pages still link this PDF. This
+      does not establish policy completeness: the GPT-5.3-Codex card clarifies the internal-use trigger,
+      and OpenAI''s 2026-08-18 statement describes practices extending beyond the current framework.'
 - id: anthropic_responsiblescaling_2025
   entry_type: report
   fields:
@@ -2182,13 +2204,13 @@ records:
     author: Arthur Goemans and Marie Davidsen Buhl and Jonas Schuett and Tomek Korbak and Jessica Wang
       and Benjamin Hilton and Geoffrey Irving
     title: 'Safety case template for frontier {AI}: A cyber inability argument'
-    date: '2024'
+    date: '2024-11-12'
     doi: 10.48550/arXiv.2411.08088
     eprinttype: arXiv
     eprint: '2411.08088'
     pubstate: preprint
-    url: https://arxiv.org/abs/2411.08088
-    urldate: '2026-04-25'
+    url: https://arxiv.org/abs/2411.08088v1
+    urldate: '2026-10-16'
     abstract: |-
       Frontier artificial intelligence (AI) systems pose increasing risks to society, making it essential for
                       developers to provide assurances about their safety. One approach to offering such assurances is through a
@@ -2209,8 +2231,8 @@ records:
     artifact_type: eval_method
     governance_artifact: eval_method
     scope_relevance: core
-    issuer_type: academic_or_research
-    issuer_sector: academic
+    issuer_type: ngo_research
+    issuer_sector: civil_society
     review_status: preprint
     review_process: author_posted_preprint
     evidence_independence: author_attested
@@ -2220,23 +2242,27 @@ records:
     governance_function:
     - evaluation
     - audit
+    - monitoring
     function_role: direct
     risk_domain:
     - cyber
     lifecycle_stage:
+    - deployment
     - post_deployment
     maintenance_status: static
     legal_status: not_applicable
-    inclusion_reason: 'Included as a core paper for frontier AI governance/evals; classified as eval_method
-      with original_research source role; used for evaluation, audit; lifecycle coverage: post_deployment;
-      risk domains: cyber; evidence basis: research; function role: direct.'
+    inclusion_reason: Proposed method for constructing and reviewing cyber safety arguments for deployment
+      and later monitoring.
     classification_confidence: high
-    annotation: 'Use for research writing on frontier AI governance and evaluations. Maps ''Safety case
-      template for frontier {AI}: A cyber inability argument'' to paper source; risk domains: cyber; lifecycle:
-      post deployment; assurance functions: auditing, eval.'
+    annotation: Proposed Claims Arguments Evidence template for assessing cyber inability at deployment,
+      with later monitoring. The assessed system is hypothetical; the source supplies an argument structure
+      and possible defeaters, not a completed model evaluation or safety certification.
     synthesis_stream: technical_eval
-    stream_note: 'Provisional: Concrete cyber-inability assurance method connecting risk models, proxy
-      tasks, evaluation settings, and evidence.'
+    stream_note: 'AI-assisted full-text check (2026-10-16), arXiv v1: proposed technical assurance method.'
+    version: '1'
+    evidence_note: Issuer tags use lead institution GovAI, supported by the paper and its institutional
+      publication page; UK AI Safety Institute coauthors remain part of the provenance. v1 is the only
+      listed arXiv revision. Bounded arXiv/GovAI/AISI checks found no later peer-reviewed version on 2026-10-16.
 - id: buhl_safetycasesfrontier_2024
   entry_type: misc
   fields:
@@ -2903,16 +2929,16 @@ records:
     author: Mary Phuong and Matthew Aitchison and Elliot Catt and Sarah Cogan and Alexandre Kaskasoli
       and Victoria Krakovna and David Lindner and Matthew Rahtz and Yannis Assael and Sarah Hodkinson
       and Heidi Howard and Tom Lieberum and Ramana Kumar and Maria Abi Raad and Albert Webson and Lewis
-      Ho and Sharon Lin and Sebastian Farquhar and Marcus Hutter and Gregoire Deletang and Anian Ruoss
+      Ho and Sharon Lin and Sebastian Farquhar and Marcus Hutter and Grégoire Delétang and Anian Ruoss
       and Seliem El-Sayed and Sasha Brown and Anca Dragan and Rohin Shah and Allan Dafoe and Toby Shevlane
     title: Evaluating frontier models for dangerous capabilities
-    date: '2024'
+    date: '2024-04-05'
     doi: 10.48550/arXiv.2403.13793
     eprinttype: arXiv
     eprint: '2403.13793'
     pubstate: preprint
-    url: https://arxiv.org/abs/2403.13793
-    urldate: '2026-04-25'
+    url: https://arxiv.org/abs/2403.13793v2
+    urldate: '2026-10-16'
     abstract: |-
       To understand the risks posed by a new AI system, we must understand what it can and cannot do. Building on
                       prior work, we introduce a programme of new dangerous capability evaluations and pilot them on Gemini 1.0
@@ -2926,13 +2952,13 @@ records:
     artifact_type: eval_method
     governance_artifact: eval_method
     scope_relevance: core
-    issuer_type: academic_or_research
-    issuer_sector: academic
+    issuer_type: company
+    issuer_sector: private
     review_status: preprint
     review_process: author_posted_preprint
-    evidence_independence: author_attested
-    attestation_relation: author_attested
-    independence_from: not_independently_verified
+    evidence_independence: self_attested
+    attestation_relation: self_attested
+    independence_from: subject_self
     evidence_basis: research
     governance_function:
     - evaluation
@@ -2947,15 +2973,24 @@ records:
     - deployment
     maintenance_status: static
     legal_status: not_applicable
-    inclusion_reason: 'Included as a core paper for frontier AI governance/evals; classified as eval_method
-      with original_research source role; used for evaluation, reporting; lifecycle coverage: deployment;
-      risk domains: cyber, cbrn, persuasion, autonomy; evidence basis: research; function role: direct.'
+    inclusion_reason: Technical evaluation methods and observed model-task performance relevant to capability
+      assessment.
     classification_confidence: high
-    annotation: 'Use for research writing on frontier AI governance and evaluations. Maps ''Evaluating
-      frontier models for dangerous capabilities'' to paper source; risk domains: cyber, bio, cbrn, persuasion;
-      lifecycle: deployment; assurance functions: eval, reporting.'
+    annotation: Developer-run pilot on Gemini 1.0 Ultra, Pro and Nano 3.25B, evaluated in January 2024.
+      Cyber results depend on the tested checkpoints, scaffolds and attempt limits; they do not estimate
+      real-world harm or establish product safety. Appendix B gives preliminary CBRN methods without model-specific
+      results.
     synthesis_stream: technical_eval
-    stream_note: 'Provisional: Model-level dangerous-capability evaluation.'
+    stream_note: 'AI-assisted full-text check (2026-10-16), arXiv v2: technical evaluation; CBRN coverage
+      is preliminary methodology.'
+    origdate: '2024-03-20'
+    version: '2'
+    threat_vector:
+    - self_replication
+    evidence_note: arXiv v2 submitted 2024-04-05; PDF cover prints 2024-04-08. Latest arXiv revision listed
+      on 2026-10-16; bounded issuer/author checks found no later publication venue. Company self-evaluation;
+      external forecasts are a separate evidence component. Public Google products do not reproduce the
+      tested internal setup.
 - id: glazer_frontiermathbenchmark_2024
   entry_type: misc
   fields:
@@ -10106,13 +10141,13 @@ records:
     author: Murray, Malcolm and Papadatos, Henry and Quarks, Otter and Gimenez, Pierre-François and Campos,
       Simeon
     title: Mapping {AI} benchmark data to quantitative risk estimates through expert elicitation
-    date: '2025'
+    date: '2025-03-10'
     doi: 10.48550/arXiv.2503.04299
     eprinttype: arXiv
     eprint: '2503.04299'
     pubstate: preprint
-    url: https://arxiv.org/abs/2503.04299
-    urldate: '2026-04-25'
+    url: https://arxiv.org/abs/2503.04299v2
+    urldate: '2026-10-16'
     abstract: |-
       The literature and multiple experts point to many potential risks from large language models (LLMs), but
                       there are still very few direct measurements of the actual harms posed. AI risk assessment has so far
@@ -10126,12 +10161,12 @@ records:
                       quantitative AI risk assessment.
     source_relation: primary
     source_role: original_research
-    source_form: benchmark
-    artifact_type: benchmark
-    governance_artifact: benchmark
+    source_form: paper
+    artifact_type: eval_method
+    governance_artifact: eval_method
     scope_relevance: core
-    issuer_type: academic_or_research
-    issuer_sector: academic
+    issuer_type: ngo_research
+    issuer_sector: civil_society
     review_status: preprint
     review_process: author_posted_preprint
     evidence_independence: author_attested
@@ -10143,21 +10178,26 @@ records:
     function_role: direct
     risk_domain:
     - cyber
-    - systemic_risk
+    - misuse
     lifecycle_stage:
     - deployment
     maintenance_status: static
     legal_status: not_applicable
-    inclusion_reason: 'Included as a core benchmark for frontier AI governance/evals; classified as benchmark
-      with original_research source role; used for evaluation; evidence basis: research; function role:
-      direct.'
+    inclusion_reason: Method for connecting capability evidence to expert estimates of cyber misuse risk.
     classification_confidence: high
-    annotation: 'Use for research writing on frontier AI governance and evaluations. Maps ''Mapping {AI}
-      benchmark data to quantitative risk estimates through expert elicitation'' to benchmark source;
-      assurance functions: eval.'
+    annotation: Expert-elicitation pilot using five existing Cybench tasks to estimate success probabilities
+      for one malware step. A supplied 25% baseline and illustrative Bayesian interpolation underlie the
+      estimates. It measures expert judgments rather than observed attacks; transfer, sample size, scenario
+      interpretation and ordered-task bias limit inference.
     synthesis_stream: technical_eval
-    stream_note: 'Provisional: Specific method and pilot study translating benchmark information into
-      expert risk estimates; not validation that benchmark scores equal real-world risk.'
+    stream_note: 'AI-assisted full-text check (2026-10-16), arXiv v2: evaluation/risk-estimation method
+      using Cybench; not a benchmark artifact.'
+    origdate: '2025-03-06'
+    version: '2'
+    evidence_note: Issuer tags use lead institution SaferAI; one coauthor is affiliated with Univ. Rennes/Inria.
+      Probabilities condition on capability access and earlier attack stages. Participant/exclusion mapping
+      in Appendix A is not fully explicit. v2 is the latest listed arXiv revision; bounded official/author
+      checks found no later peer-reviewed version on 2026-10-16.
 - id: fmf_publications_nd
   entry_type: online
   fields:

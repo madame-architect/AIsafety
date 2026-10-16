@@ -1,0 +1,157 @@
+{
+  "project": "Frontier AI Governance Evals",
+  "target": "https://osf.io/9ks5m/",
+  "prepared_on": "2026-10-16",
+  "github_commit": "12287bab1a763371a48660330ff9bc90a222e628",
+  "github_tree": "c7e5c088dd0c46142d6318369dc5fe8d6d802326",
+  "archive": "AIsafety-stabilization-2026-10-16-12287ba.zip",
+  "archive_bytes": 652299,
+  "archive_sha256": "025c4afc45d9b9af66096214b54010a1c92f13db9e684bc82ad7afbbdfe3ae6b",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 131,
+      "sha256": "92441fe94cc52b607f967ff5a40262771a3e1d575e8c0f1b75bccbe21d16cbf5"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 85,
+      "sha256": "d073d0edae0dc9610eeca420486117a18660e1cc6d61fd950686f690d4cfd087"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1073,
+      "sha256": "14b76b8f135bb8c21eb95d0d3b880cac8b23e282492197535b06c4118c45b1ba"
+    },
+    {
+      "path": "METHODS.md",
+      "bytes": 7993,
+      "sha256": "b63108241905b9e36b1536efd85ce6c416c95422072d0e756d4fe89b8ef55057"
+    },
+    {
+      "path": "MIGRATION.md",
+      "bytes": 8900,
+      "sha256": "afcaf4cff3f4766fdfbed0195e644546df847061ce0c93be28f8e01aa137927c"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5257,
+      "sha256": "10ed617cde2f148b22d14f4909f1d6a199e6e795b38b02f64821d8133de6d870"
+    },
+    {
+      "path": "evals-datamodel.dbx",
+      "bytes": 6299,
+      "sha256": "f25d295d826aed9d0c69c9a79b1d60a2bf29973a5cd71a97a4789b3e9ed7b423"
+    },
+    {
+      "path": "frontier-governance-evals-schema.yml",
+      "bytes": 6951,
+      "sha256": "6c3149157ad1590a8ccad71d065c82d9a25c682b7cf895f0466bbe3b2fd2efd8"
+    },
+    {
+      "path": "frontier-governance-evals-taxonomy.md",
+      "bytes": 14485,
+      "sha256": "181bdf8bbc75214bfb6b8d87f59bf2aadc063369dd4feb9c7cf30ed8ed859e3c"
+    },
+    {
+      "path": "frontier-governance-evals.bib",
+      "bytes": 952112,
+      "sha256": "f77327a1c58478330fe7bd24b341afd991c27889f3b7924b852d9687750b55d9"
+    },
+    {
+      "path": "intake.csv",
+      "bytes": 170,
+      "sha256": "6137f392d591254fc2d3dc0edebd8f516c57621bd6391c0cb8603ffd7c90d342"
+    },
+    {
+      "path": "provenance/README.md",
+      "bytes": 1139,
+      "sha256": "28855209e1e649c8192a5e53cd88ddb421e814406f869e5451925bdc87c1c2ee"
+    },
+    {
+      "path": "provenance/may-2026/frontier-governance-evals-datamodel-v2.dbx",
+      "bytes": 6111,
+      "sha256": "787a2e5b822be4e63333bda0947cca81c28837c574d6abb50f0732aeea233b77"
+    },
+    {
+      "path": "provenance/may-2026/frontier-governance-evals-lint-v2.py",
+      "bytes": 26107,
+      "sha256": "dc82b0a8c096c7e6fc10c313623622c3e7f3affc75b2b4c554e950a8c99c0b1b"
+    },
+    {
+      "path": "provenance/may-2026/frontier-governance-evals-schema-v2.yml",
+      "bytes": 7151,
+      "sha256": "1c5cadc52cd171665f4016f20356dda081d57564f34c9389dcb83210751ecff1"
+    },
+    {
+      "path": "provenance/may-2026/frontier-governance-evals-taxonomy-v2.md",
+      "bytes": 8618,
+      "sha256": "1b782b15d138808627258f8064d8f9b2b3ad79c9022efb3cce679e628910d47d"
+    },
+    {
+      "path": "provenance/may-2026/frontier-governance-evals-v2.bib",
+      "bytes": 898984,
+      "sha256": "16ab48233d81856d8de88a6c64c7ff9e94202895440bc75dcdfe0e1882c23084"
+    },
+    {
+      "path": "provenance/reconciliation.json",
+      "bytes": 190298,
+      "sha256": "ab77bb512a2b0761291828e5f94abe6f8b1e7b0f5b532e8d50aa61833ef27810"
+    },
+    {
+      "path": "provenance/source-manifest.json",
+      "bytes": 1503,
+      "sha256": "f4e53d19141a62323a6d2e1ec7762fe9937b836e239f015389faa42bfa260fcb"
+    },
+    {
+      "path": "records.yaml",
+      "bytes": 744979,
+      "sha256": "d829fea38079d8f3e08822684fedaaa059ef8f926dd72bc79490cb735998c2d0"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 14,
+      "sha256": "0969da99a0bc2a1b71ed50584560f4588a37567ac63af3ddbaf3c4617ca5621a"
+    },
+    {
+      "path": "scripts/build.py",
+      "bytes": 10846,
+      "sha256": "5cb21fa0c0a07c034ff52488667d602a78b2f62e23e7a3e46f62266d6b90f204"
+    },
+    {
+      "path": "scripts/lint_bibliography.py",
+      "bytes": 30156,
+      "sha256": "110066560d2f0ed735180c55ae10ad133f4d6448dd593db6171220f4cf59004d"
+    },
+    {
+      "path": "tests/test_build.py",
+      "bytes": 10466,
+      "sha256": "c9eac0bc439d05fe131c2f71c0343220721196a1c3631a9dbf95adc49cbc932e"
+    },
+    {
+      "path": "views/contextual.bib",
+      "bytes": 103415,
+      "sha256": "a9ff6843d324e8f0bd6d20a73202033e62590896f916850c95f21c1a49bbffa0"
+    },
+    {
+      "path": "views/governance-artifacts.bib",
+      "bytes": 256857,
+      "sha256": "f46a9286eaa6608a76e855e9b19b179b801ff616471e2d49125495668fb8345e"
+    },
+    {
+      "path": "views/index.md",
+      "bytes": 887,
+      "sha256": "e3f47dfe79d09d6f058ee15741fe9df8e99be2dbfda8ba46902bfb6ac04f5b1e"
+    },
+    {
+      "path": "views/technical-evals.bib",
+      "bytes": 592433,
+      "sha256": "744da50672e69cac80f139c0f55de1a65914e99b88985b533f85c7fac782ff77"
+    }
+  ],
+  "osf_status": "synchronization unconfirmed",
+  "osf_check": "The project page displayed a scheduled-maintenance notice on the initial visit and one later reload. No file comparison or upload was performed.",
+  "source_verification_changes_included": false,
+  "osf_file_comparison_performed": false,
+  "osf_upload_performed": false
+}

@@ -6,7 +6,7 @@
 
 This document records the confirmed history and current stabilization procedures for Frontier AI Governance Evals, a curated collection about frontier AI evaluation and governance. The earlier May 2026 Methods text remains unavailable. This dated reconstruction does not reproduce that document or establish a protocol that preceded collection.
 
-This release reconciles existing artifacts, makes YAML records authoritative, generates BibTeX, and introduces provisional synthesis routing. It adds no newly discovered references and includes no new literature search. Selection of a research question and production of a new synthesis are deferred until the collection is stable.
+The stabilization merged in PR #13 reconciles existing artifacts, makes YAML records authoritative, generates BibTeX, and introduces provisional synthesis routing. That work added no newly discovered references or literature search. A subsequent targeted review, documented below, prepares the cyber capability evaluations and deployment safeguards research focus.
 
 ## Legacy collection and provenance
 
@@ -18,7 +18,7 @@ A complete history of legacy searches, excluded candidates, screening decisions,
 
 ## Authoritative records and generated export
 
-[`records.yaml`](records.yaml) is the authoritative editable collection. Its root `schema_version` is `frontier-governance-evals-v3`; each record has `id`, `entry_type`, and `fields`. The six inherited entry types and substantive field values are preserved; controlled multivalue fields use string lists. BibTeX and its keyword mirrors are generated from these records. Do not add a `keywords` field to the records. The schema defining allowed structures and values is separate from the records themselves. The generated [index](views/index.md) reports the current record and stream counts.
+[`records.yaml`](records.yaml) is the authoritative editable collection. Its root `schema_version` is `frontier-governance-evals-v3`; each record has `id`, `entry_type`, and `fields`. The stabilization preserved the six inherited entry types and substantive field values; later supported corrections are recorded separately. Controlled multivalue fields use string lists. BibTeX and its keyword mirrors are generated from these records. Do not add a `keywords` field to the records. The schema defining allowed structures and values is separate from the records themselves. The generated [index](views/index.md) reports the current record and stream counts.
 
 Citation keys identify records. DOI, URL, title, and source version can help identify possible duplicates or related versions, but no single match establishes equivalence in every case. Distinct versions should remain distinguishable when their content matters. Renames, merges, exclusions, and substantive corrections require a recorded reason.
 
@@ -34,7 +34,7 @@ Two substantive synthesis streams are accompanied by a contextual category. The 
 | `governance_artifact` | Operational policies, frameworks, regulations, standards, guidance, commitments, or oversight mechanisms |
 | `contextual` | Analysis, commentary, or other research that is neither a technical evaluation or method nor an operational governance artifact |
 
-The new routing is **provisional and AI-assisted**, based on inherited metadata, titles, and available abstracts. It is not renewed full-source verification. Publication format or issuer alone does not establish a route. Ambiguous contributions should be reviewed before inclusion in a substantive synthesis; relevant passages can serve multiple discussions while retaining one record identity.
+The initial routing was **provisional and AI-assisted**, based on inherited metadata, titles, and available abstracts. The five sources identified in the targeted review now have dated AI-assisted full-text checks; this does not extend to the other 271 records. Publication format or issuer alone does not establish a route. Ambiguous contributions should be reviewed before inclusion in a substantive synthesis; relevant passages can serve multiple discussions while retaining one record identity.
 
 A later technical synthesis should examine what was tested, the threat model, design, conditions, results, reproducibility, and limitations. It should distinguish proposed methods from observed results. A governance synthesis should examine authority, scope, requirements or commitments, and evidence of implementation. Policy existence does not establish effectiveness. Contextual sources can inform interpretation without being counted as direct technical findings or operational governance commitments.
 
@@ -56,10 +56,20 @@ Future additions use a small intake log. These procedures apply prospectively an
 
 For changing documents, retain the version or publication date when available, the actual access date, and a usable archive URL if one has been checked. Otherwise document the preservation gap. Later reviews of legacy entries can use the same lightweight log with their actual review dates.
 
+## Targeted source review: 2026-10-16
+
+The [cyber/deployment verification report](research/cyber-deployment/source-verification.md) records a bounded check of five existing sources: Phuong, Goemans, Murray, OpenAI Preparedness v2, and DeepMind Frontier Safety Framework v3.1. It links claims and corrections to primary texts and page/section locators, records inspected PDF hashes, and distinguishes document revisions from later issuer clarifications. The collection remains at 276 records. The exact field changes are in the accompanying [audit JSON](research/cyber-deployment/source-verification.json).
+
+AI assistants inspected the primary full texts, including relevant appendices, checked official version histories and selected institutional/author publication pages, and compared the evidence with the inherited records. Version searches were bounded; failure to locate a later publication is not proof of its absence. No experiments or elicitation analyses were reproduced. Five rows in `intake.csv` record these actual later reviews, not legacy discovery or screening dates.
+
+For the three inspected arXiv papers, `url` pins the version, `date` records that revision's submission date, and `origdate` records the first submission when different. The Phuong PDF's different cover date is preserved in a note. The papers' optional `version_status` remains unset: latest listed arXiv revision is narrower than verified overall publication lineage. OpenAI's unsupported `current` label is removed; DeepMind's is retained with dated positive evidence from its official latest-version link. Both framework records cite a static PDF; later webpage statements do not silently rewrite that object.
+
+For the mixed GovAI/AISI and SaferAI/academic papers, scalar issuer tags use the documented lead institution, supported by both affiliations and institutional publication pages. Evidence notes retain the other institutions. This is a stated coding convention for these records, not a claim of exclusive authorship or independent verification. Coverage tags describe what a document addresses; they do not mean every tagged domain has empirical results or every discussed safeguard is mandatory.
+
 ## Validation, releases, and AI assistance
 
 Run `python3 scripts/build.py` to generate the outputs and `python3 scripts/build.py --check` to check them. Automated validation addresses data structure and export consistency. Successful checks do not establish source accuracy, evidence quality, comprehensive coverage, or scholarly validity. Tag distributions describe this collection rather than the prevalence of findings in the field.
 
-The GitHub pull request prepares the release for review. A matching OSF deposit has not been verified; synchronization must be confirmed against the actual deposited files before being reported as complete.
+GitHub pull requests prepare changes for maintainer review. OSF synchronization is a separate release task: on 2026-10-16 the project page returned a maintenance notice, so no comparison or upload was completed. The [prepared deposit](releases/stabilization-2026-10-16.md) uses the already merged stabilization commit, excluding this later source-review update. Synchronization must be confirmed against deposited files before being reported as complete.
 
-AI assisted the present migration, provisional routing, code, and this reconstructed document. A complete retrospective list of models and prompts is unavailable and is not invented. The maintainer is responsible for accepting releases and research claims. An AI-assisted second pass is not independent human coding. Future syntheses should document the source inspection, review, and AI assistance actually performed.
+AI assisted the migration, provisional routing, code, this reconstructed document, and the separately logged targeted source review. A complete retrospective list of models and prompts is unavailable and is not invented. The maintainer is responsible for accepting releases and research claims. An AI-assisted second pass is not independent human coding. Future syntheses should document the source inspection, review, and AI assistance actually performed.
