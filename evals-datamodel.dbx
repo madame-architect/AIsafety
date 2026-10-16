@@ -1,5 +1,10 @@
-\ProvidesFile{frontier-governance-evals-datamodel.dbx}[2026/04/30 custom datamodel for frontier governance/evals bibliography]
+\ProvidesFile{evals-datamodel.dbx}[2026/10/16 v3 custom datamodel for frontier governance/evals bibliography]
 
+% V3 preserves the V2 provenance fields and adds synthesis_stream and stream_note.
+% The canonical record source is records.yaml; bibliography exports are generated.
+% V2 kept selected legacy fields while adding first-class
+% semantic-provenance fields for source role, source form, governance artifact,
+% evidence relation, risk domains, threat vectors, lifecycle stages, and release model.
 \DeclareDatamodelFields[type=field,datatype=literal]{%
   review_status,
   issuer_type,
@@ -13,7 +18,25 @@
   source_relation,
   supersedes,
   superseded_by,
-  evidence_note%
+  evidence_note,
+  source_form,
+  source_role,
+  governance_artifact,
+  function_role,
+  attestation_relation,
+  independence_from,
+  evidence_basis,
+  risk_domain,
+  threat_vector,
+  lifecycle_stage,
+  release_model,
+  maintenance_status,
+  legal_status,
+  inclusion_reason,
+  classification_confidence,
+  classification_note,
+  synthesis_stream,
+  stream_note%
 }
 
 \DeclareDatamodelEntryfields{%
@@ -29,7 +52,25 @@
   source_relation,
   supersedes,
   superseded_by,
-  evidence_note%
+  evidence_note,
+  source_form,
+  source_role,
+  governance_artifact,
+  function_role,
+  attestation_relation,
+  independence_from,
+  evidence_basis,
+  risk_domain,
+  threat_vector,
+  lifecycle_stage,
+  release_model,
+  maintenance_status,
+  legal_status,
+  inclusion_reason,
+  classification_confidence,
+  classification_note,
+  synthesis_stream,
+  stream_note%
 }
 
 % This bibliography contains portal/workstream pages that have no stable publication date.

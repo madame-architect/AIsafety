@@ -1,0 +1,6981 @@
+{
+  "report_version": 1,
+  "migration_date": "2026-10-16",
+  "description": "Comparison of the pre-migration GitHub bibliography with the recovered May V2 input, followed by verification of the V2-to-YAML import. This is a historical migration snapshot, not a live validation report.",
+  "base_file": "frontier-governance-evals.bib",
+  "recovered_file": "provenance/may-2026/frontier-governance-evals-v2.bib",
+  "keyword_diff_note": "Full before/after keyword strings are omitted here to avoid repeating mechanically mirrored fields. keyword_mirrors_changed identifies affected records; the complete originals remain available in the base Git commit and frozen V2 input.",
+  "base_commit": "a91b597cac08e651957314e5c37cb25895ddd666",
+  "base_entries": 218,
+  "may_entries": 276,
+  "added": [
+    "aiid_snapshot_20260504",
+    "amironesei_aria_pilot_2025",
+    "anderljung_frontierairegulation_2023",
+    "andriushchenko_agentharm_2025",
+    "arrieta_earlyexternalsafety_2025",
+    "bender_stochasticparrots_2021",
+    "bengio_managingextremeairisks_2024",
+    "cac_interimmeasuresgenai_2023",
+    "caisi_deepseekv4pro_2026",
+    "calderon_alternativeannotator_2025",
+    "california_sb53_tfaia_2025",
+    "casper_blackboxaccessaudits_2024",
+    "davies_boundarypointjailbreaking_2026",
+    "du_textualunlearning_2025",
+    "dubois_skewedscore_2025",
+    "ec_gpai_trainingcontenttemplate_2025",
+    "ec_scientificpanel_2025_454",
+    "gebru_datasheets_2021",
+    "huang_trustllm_2024",
+    "isoiec_42006_2025",
+    "jimenez_swebench_2023",
+    "kapoor_aiagentsmatter_2024",
+    "kirk_sabotageaisafetyresearch_2026",
+    "kressel_safeai_2025",
+    "liang_helm_2023",
+    "liu_agentbench_2023",
+    "longpre_inhouseevaluation_2025",
+    "longpre_safeharbor_2024",
+    "maple_jailbreak07methodology_2026",
+    "mcgregor_preventingrepeatedfailures_2021",
+    "metr_timehorizons_2026",
+    "mialon_gaia_2023",
+    "mitchell_modelcards_2019",
+    "mitre_atlasdata_2026",
+    "mokander_auditinglargelanguagemodels_2024",
+    "ncsc_secureaisystemdevelopment_2023",
+    "newyork_raiseact_article44b_nd",
+    "omb_m2521_2025",
+    "omb_m2522_2025",
+    "owasp_aitestingguidev1_2025",
+    "raji_closingaccountabilitygap_2020",
+    "raji_outsideroversight_2022",
+    "rao_challengesmonitoring_2026",
+    "sehwag_propensitybench_2026",
+    "shevlane_modelevaluationextreme_2023",
+    "stelling_evaluatingaiproviders_2025",
+    "taylor_auditinggames_2025",
+    "vassilev_adversarialmltaxonomy_2025",
+    "wan_foundationmodeltransparency_2025",
+    "wang_decodingtrust_2023",
+    "wang_largenotfairevaluators_2024",
+    "weidinger_sociotechnicalsafety_2023",
+    "wijk_rebench_2025",
+    "xie_osworld_2024",
+    "xu_benchmarkingleakage_2024",
+    "xu_theagentcompany_2024",
+    "yao_taubench_2024",
+    "zhang_agentsafetybench_2024"
+  ],
+  "removed": [],
+  "common": 218,
+  "changes": [
+    {
+      "id": "ackerman_mitigatingmanyshot_2025",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role",
+        "threat_vector"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "aisi_fourthprogress_2024",
+      "entry_type_before": "report",
+      "entry_type_after": "report",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "government",
+          "after": "public"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "aisi_frontiertrends_2025",
+      "entry_type_before": "online",
+      "entry_type_after": "online",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "evidence_note",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "government",
+          "after": "public"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "aisi_inspectai_2026",
+      "entry_type_before": "online",
+      "entry_type_after": "online",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "government",
+          "after": "public"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "aisi_inspectevals_2026",
+      "entry_type_before": "online",
+      "entry_type_after": "online",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "government",
+          "after": "public"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "aisi_safetyinstitutesjoint_2024",
+      "entry_type_before": "report",
+      "entry_type_after": "report",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "company",
+          "after": "private"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "aisi_year_2024",
+      "entry_type_before": "report",
+      "entry_type_after": "report",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "government",
+          "after": "public"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "amazon_frontiermodelsafetyframework_2025",
+      "entry_type_before": "report",
+      "entry_type_after": "report",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "company",
+          "after": "private"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "ameisen_circuittracingrevealing_2025",
+      "entry_type_before": "online",
+      "entry_type_after": "online",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "company",
+          "after": "private"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "anil_manyshotjailbreaking_2024",
+      "entry_type_before": "article",
+      "entry_type_after": "article",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role",
+        "threat_vector"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "url": {
+          "before": "https://www-cdn.anthropic.com/af5633c94ed2beb282f6a53c595eb437e8e7b630/Many_Shot_Jailbreaking__2024_04_02_0936.pdf",
+          "after": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/ea456e232efb72d261715e33ce25f208-Abstract-Conference.html"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "ankner_critiqueoutloud_2024",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "ngo_research",
+          "after": "civil_society"
+        },
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "anthropic_anthropicsresponsible_2026",
+      "entry_type_before": "online",
+      "entry_type_after": "online",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "evidence_note",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "company",
+          "after": "private"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        },
+        "urldate": {
+          "before": "2026-04-25",
+          "after": "2026-05-09"
+        },
+        "version_status": {
+          "before": "living_document",
+          "after": "current"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "anthropic_frontiercomplianceframework_2026",
+      "entry_type_before": "report",
+      "entry_type_after": "report",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "company",
+          "after": "private"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        },
+        "url": {
+          "before": "https://trust.anthropic.com/doc/trust?r=iz673w96495gyjer8h78n&rid=69a61159be46d1990abe8f3a",
+          "after": "https://trust.anthropic.com"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "anthropic_responsiblescaling_2024",
+      "entry_type_before": "report",
+      "entry_type_after": "report",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "source_form",
+        "source_role",
+        "superseded_by"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "company",
+          "after": "private"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "anthropic_responsiblescaling_2025",
+      "entry_type_before": "report",
+      "entry_type_after": "report",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "company",
+          "after": "private"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "anthropic_responsiblescalingv32_2026",
+      "entry_type_before": "report",
+      "entry_type_after": "report",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role",
+        "threat_vector"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "company",
+          "after": "private"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "arike_doesinformationaccess_2026",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role",
+        "threat_vector"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "arnesen_trainingwindebates_2024",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "barbero_extractingalignment_2025",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "release_model",
+        "risk_domain",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "barrett_assessingconfidence_2025",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "maintenance_status",
+        "source_form",
+        "source_role",
+        "threat_vector"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "bengio_internationalsafety_2026",
+      "entry_type_before": "report",
+      "entry_type_after": "report",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "intergovernmental",
+          "after": "multilateral"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "benton_sabotageevaluations_2024",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role",
+        "threat_vector"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "bhatt_cyberseceval2wide_2024",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role",
+        "threat_vector"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "bhattacharjee_inferencetimecategory_2024",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "bis_artificialintelligence_2025",
+      "entry_type_before": "report",
+      "entry_type_after": "report",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "evidence_note",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "release_model",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "date": {
+          "before": "2025",
+          "after": "2025-01-15"
+        },
+        "issuer_sector": {
+          "before": "government",
+          "after": "public"
+        },
+        "review_process": {
+          "before": "legal",
+          "after": "legal_process"
+        },
+        "type": {
+          "before": "Regulation",
+          "after": "Interim final rule"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "bis_establishmentreporting_2024",
+      "entry_type_before": "report",
+      "entry_type_after": "report",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "evidence_note",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "date": {
+          "before": "2024",
+          "after": "2024-09-11"
+        },
+        "issuer_sector": {
+          "before": "government",
+          "after": "public"
+        },
+        "review_process": {
+          "before": "legal",
+          "after": "legal_process"
+        },
+        "type": {
+          "before": "Regulation",
+          "after": "Proposed rule"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "bloomfield_assurancesystemsdependabil_2024",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "braun_identifyingfunctionally_2024",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "brundage_frontierauditingrigorous_2026",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "buhl_safetycasesfrontier_2024",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "bullwinkel_triggerhaystackextracting_2026",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "release_model",
+        "risk_domain",
+        "source_form",
+        "source_role",
+        "threat_vector"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "burns_weakstronggeneralization_2024",
+      "entry_type_before": "article",
+      "entry_type_after": "article",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role",
+        "threat_vector"
+      ],
+      "removed_fields": [],
+      "changed_fields": {},
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "californiapolicyworkinggroup_thecaliforniareport_2025",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "government",
+          "after": "public"
+        },
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "carlan_dynamicsafetycases_2024",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "chan_euunveilscode_2025",
+      "entry_type_before": "article",
+      "entry_type_after": "article",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "editorial",
+          "after": "editorial_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "chao_jailbreakbenchopen_2024",
+      "entry_type_before": "misc",
+      "entry_type_after": "inproceedings",
+      "added_fields": [
+        "attestation_relation",
+        "booktitle",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role",
+        "threat_vector"
+      ],
+      "removed_fields": [
+        "doi",
+        "eprint",
+        "eprinttype",
+        "pubstate"
+      ],
+      "changed_fields": {
+        "annotation": {
+          "before": "Use for research writing on frontier AI governance and evaluations. Maps '{JailbreakBench}: An open robustness benchmark for jailbreaking {LLMs}' to benchmark source; risk domains: cyber; lifecycle: pretraining, deployment; assurance functions: eval, mitigation, reporting; threat vectors: adaptive attacker.",
+          "after": "Peer-reviewed NeurIPS 2024 Datasets and Benchmarks version; replaces the earlier arXiv/preprint record and supports robustness and jailbreak-evaluation claims."
+        },
+        "evidence_independence": {
+          "before": "author_attested",
+          "after": "third_party"
+        },
+        "governance_function": {
+          "before": "evaluation, reporting, mitigation",
+          "after": "evaluation, monitoring, mitigation, reporting"
+        },
+        "review_process": {
+          "before": "preprint",
+          "after": "peer_reviewed"
+        },
+        "review_status": {
+          "before": "preprint",
+          "after": "peer_reviewed"
+        },
+        "title": {
+          "before": "{JailbreakBench}: An open robustness benchmark for jailbreaking {LLMs}",
+          "after": "{JailbreakBench}: An Open Robustness Benchmark for Jailbreaking Large Language Models"
+        },
+        "urldate": {
+          "before": "2026-04-25",
+          "after": "2026-05-02"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "charnock_expandingexternalaccess_2026",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "chaudhary_evaluationawareness_2025",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "release_model",
+        "risk_domain",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "chee_eustickstimeline_2025",
+      "entry_type_before": "article",
+      "entry_type_after": "article",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "editorial",
+          "after": "editorial_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "chittepu_reinforcementlearning_2025",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "cloud_subliminallearning_2025",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "cohere_secureaifrontiermodelframework_2025",
+      "entry_type_before": "report",
+      "entry_type_after": "report",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "company",
+          "after": "private"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "controlarena_research_nd",
+      "entry_type_before": "online",
+      "entry_type_after": "online",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role",
+        "threat_vector"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "government",
+          "after": "public"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "coulter_eupicksexperts_2024",
+      "entry_type_before": "article",
+      "entry_type_after": "article",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "editorial",
+          "after": "editorial_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "cset_incidentskeycomponents_2025",
+      "entry_type_before": "report",
+      "entry_type_after": "report",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "ngo_research",
+          "after": "civil_society"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "cui_persistentbackdoor_2025",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role",
+        "threat_vector"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "cunningham_constitutionalclassifiers_2026",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role",
+        "threat_vector"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "cunningham_sparseautoencoders_2024",
+      "entry_type_before": "article",
+      "entry_type_after": "article",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "dai_saferlhfsafe_2024",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "deepmind_frontiersafetyv1_2024",
+      "entry_type_before": "report",
+      "entry_type_after": "report",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role",
+        "superseded_by"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "company",
+          "after": "private"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        },
+        "title": {
+          "before": "Frontier safety framework v1.0",
+          "after": "{Google DeepMind} frontier safety framework v1.0 ({May} 2024 technical report)"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "deepmind_frontiersafetyv31_2026",
+      "entry_type_before": "report",
+      "entry_type_after": "report",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "company",
+          "after": "private"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "deepmind_frontiersafetyv3_2025",
+      "entry_type_before": "report",
+      "entry_type_after": "report",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "company",
+          "after": "private"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        },
+        "title": {
+          "before": "Frontier safety framework v3.0",
+          "after": "{Google DeepMind} frontier safety framework v3.0 ({September} 2025 technical report)"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "deepmind_updatingfrontiersafety_2025",
+      "entry_type_before": "online",
+      "entry_type_after": "online",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "company",
+          "after": "private"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "dsit_tacklingsecurityrisks_2025",
+      "entry_type_before": "online",
+      "entry_type_after": "online",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "government",
+          "after": "public"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "eac_complianceplanomb_2024",
+      "entry_type_before": "online",
+      "entry_type_after": "online",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "government",
+          "after": "public"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        },
+        "title": {
+          "before": "{AI} compliance plan for {OMB} memorandum {M-24-10}",
+          "after": "{U.S. Election Assistance Commission} {AI} compliance plan for {OMB} memorandum {M-24-10}"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "ec_approachartificial_nd",
+      "entry_type_before": "online",
+      "entry_type_after": "online",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "evidence_note": {
+          "before": "No publication date was encoded; this web resource is intentionally tracked with urldate only.",
+          "after": "Primary European Commission policy page retained. This is an undated dynamic implementation/background page cited with urldate only, not binding legal text. Use as supporting EU AI-policy context, not as a frontier-model-specific authority or substitute for the EUR-Lex AI Act text."
+        },
+        "issuer_sector": {
+          "before": "intergovernmental",
+          "after": "multilateral"
+        },
+        "review_process": {
+          "before": "legal",
+          "after": "legal_process"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "ec_gpai_codepractice_final_2025",
+      "entry_type_before": "online",
+      "entry_type_after": "online",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "evidence_note",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "intergovernmental",
+          "after": "multilateral"
+        },
+        "review_process": {
+          "before": "legal",
+          "after": "legal_process"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "ec_guidelinesgpaiproviders_2025",
+      "entry_type_before": "online",
+      "entry_type_after": "online",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "evidence_note",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "intergovernmental",
+          "after": "multilateral"
+        },
+        "review_process": {
+          "before": "legal",
+          "after": "legal_process"
+        },
+        "url": {
+          "before": "https://digital-strategy.ec.europa.eu/en/factpages/general-purpose-ai-obligations-under-ai-act",
+          "after": "https://digital-strategy.ec.europa.eu/en/library/guidelines-scope-obligations-providers-general-purpose-ai-models-under-ai-act"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "engels_scalinglawsscalable_2025",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "eu_regulationeu2024_2024",
+      "entry_type_before": "report",
+      "entry_type_after": "report",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "evidence_note",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "intergovernmental",
+          "after": "multilateral"
+        },
+        "review_process": {
+          "before": "legal",
+          "after": "legal_process"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "exim_complianceplanomb_2024",
+      "entry_type_before": "online",
+      "entry_type_after": "online",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "government",
+          "after": "public"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        },
+        "title": {
+          "before": "{AI} compliance plan for {OMB} memorandum {M-24-10}",
+          "after": "{Export-Import Bank of the United States} {AI} compliance plan for {OMB} memorandum {M-24-10}"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "federalregister_safesecuretrustworthy_2023",
+      "entry_type_before": "report",
+      "entry_type_after": "report",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "evidence_note",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "date": {
+          "before": "2023",
+          "after": "2023-10-30"
+        },
+        "issuer_sector": {
+          "before": "government",
+          "after": "public"
+        },
+        "review_process": {
+          "before": "legal",
+          "after": "legal_process"
+        },
+        "url": {
+          "before": "https://www.federalregister.gov/documents/2023/11/06/2023-24283/safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence",
+          "after": "https://www.govinfo.gov/content/pkg/FR-2023-11-01/pdf/2023-24283.pdf"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "fmf_bioworkstream_nd",
+      "entry_type_before": "online",
+      "entry_type_after": "online",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "industry_forum",
+          "after": "industry"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "fmf_capabilityassessments_2025",
+      "entry_type_before": "report",
+      "entry_type_after": "report",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "industry_forum",
+          "after": "industry"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "fmf_chainthoughtmonitorability_2026",
+      "entry_type_before": "report",
+      "entry_type_after": "report",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "industry_forum",
+          "after": "industry"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "fmf_commentnistoutline_2025",
+      "entry_type_before": "report",
+      "entry_type_after": "report",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "industry_forum",
+          "after": "industry"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "fmf_cyberworkstream_nd",
+      "entry_type_before": "online",
+      "entry_type_after": "online",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "industry_forum",
+          "after": "industry"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "fmf_earlybestpractices_2024",
+      "entry_type_before": "report",
+      "entry_type_after": "report",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "industry_forum",
+          "after": "industry"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "fmf_foundationalsecurity_2024",
+      "entry_type_before": "report",
+      "entry_type_after": "report",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "industry_forum",
+          "after": "industry"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "fmf_introducingtechnical_2025",
+      "entry_type_before": "online",
+      "entry_type_after": "online",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "industry_forum",
+          "after": "industry"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "fmf_issuebriefmeasuring_2024",
+      "entry_type_before": "report",
+      "entry_type_after": "report",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "industry_forum",
+          "after": "industry"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "fmf_managingadvancedcyber_2026",
+      "entry_type_before": "report",
+      "entry_type_after": "report",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role",
+        "threat_vector"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "industry_forum",
+          "after": "industry"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "fmf_mitigations_2025",
+      "entry_type_before": "report",
+      "entry_type_after": "report",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "industry_forum",
+          "after": "industry"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "fmf_nuclearsecurity_2026",
+      "entry_type_before": "report",
+      "entry_type_after": "report",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role",
+        "threat_vector"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "industry_forum",
+          "after": "industry"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "fmf_nuclearworkstream_nd",
+      "entry_type_before": "online",
+      "entry_type_after": "online",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "industry_forum",
+          "after": "industry"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "fmf_preliminarytaxonomy_2024",
+      "entry_type_before": "report",
+      "entry_type_after": "report",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "source_form",
+        "source_role",
+        "threat_vector"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "industry_forum",
+          "after": "industry"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "fmf_preliminarytaxonomy_2025",
+      "entry_type_before": "report",
+      "entry_type_after": "report",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "industry_forum",
+          "after": "industry"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "fmf_publications_nd",
+      "entry_type_before": "online",
+      "entry_type_after": "online",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "industry_forum",
+          "after": "industry"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "fmf_risktaxonomythresholds_2025",
+      "entry_type_before": "report",
+      "entry_type_after": "report",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "industry_forum",
+          "after": "industry"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "fmf_thirdpartyassessments_2025",
+      "entry_type_before": "report",
+      "entry_type_after": "report",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "industry_forum",
+          "after": "industry"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "fmf_thresholdsfrontier_2025",
+      "entry_type_before": "report",
+      "entry_type_after": "report",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "industry_forum",
+          "after": "industry"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "folkerts_measuringaiagentscyber_2026",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role",
+        "threat_vector"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "government",
+          "after": "public"
+        },
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "frick_evaluaterewardrlhf_2024",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "g42_frontieraisafetyframework_2025",
+      "entry_type_before": "report",
+      "entry_type_after": "report",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "company",
+          "after": "private"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "glazer_frontiermathbenchmark_2024",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role",
+        "threat_vector"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "gloaguen_finetuningactivated_2025",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role",
+        "threat_vector"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "goemans_safetycasetemplate_2024",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "greenblatt_alignmentfaking_2024",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role",
+        "threat_vector"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "greenblatt_controlimprovingsafety_2024",
+      "entry_type_before": "misc",
+      "entry_type_after": "inproceedings",
+      "added_fields": [
+        "attestation_relation",
+        "booktitle",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "pages",
+        "publisher",
+        "risk_domain",
+        "series",
+        "source_form",
+        "source_role",
+        "threat_vector",
+        "volume"
+      ],
+      "removed_fields": [
+        "doi",
+        "eprint",
+        "eprinttype",
+        "pubstate"
+      ],
+      "changed_fields": {
+        "annotation": {
+          "before": "Use for research writing on frontier AI governance and evaluations. Maps '{AI} Control: Improving safety despite intentional subversion' to paper source; risk domains: cyber, autonomy; lifecycle: pretraining, deployment, post deployment; assurance functions: monitoring; threat vectors: supply chain.",
+          "after": "Peer-reviewed ICML/PMLR version of the AI Control paper; replaces the earlier arXiv/preprint record and supports evaluation, monitoring, and mitigation claims for intentional subversion risk."
+        },
+        "artifact_type": {
+          "before": "technical_paper",
+          "after": "eval_method"
+        },
+        "evidence_independence": {
+          "before": "author_attested",
+          "after": "third_party"
+        },
+        "governance_function": {
+          "before": "monitoring",
+          "after": "evaluation, monitoring, mitigation"
+        },
+        "review_process": {
+          "before": "preprint",
+          "after": "peer_reviewed"
+        },
+        "review_status": {
+          "before": "preprint",
+          "after": "peer_reviewed"
+        },
+        "scope_relevance": {
+          "before": "supporting",
+          "after": "core"
+        },
+        "title": {
+          "before": "{AI} Control: Improving safety despite intentional subversion",
+          "after": "{{AI} Control: Improving Safety Despite Intentional Subversion}"
+        },
+        "url": {
+          "before": "https://arxiv.org/abs/2312.06942",
+          "after": "https://proceedings.mlr.press/v235/greenblatt24a.html"
+        },
+        "urldate": {
+          "before": "2026-04-25",
+          "after": "2026-05-02"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "guan_deliberativealignment_2024",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role",
+        "threat_vector"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "habli_bigargumentsafety_2025",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "hackenburg_evaluatingpersuasive_2024",
+      "entry_type_before": "article",
+      "entry_type_after": "article",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {},
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "harmbench_standardizedevaluation_2024",
+      "entry_type_before": "article",
+      "entry_type_after": "article",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role",
+        "threat_vector"
+      ],
+      "removed_fields": [],
+      "changed_fields": {},
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "hayes_inexactunlearningneeds_2024",
+      "entry_type_before": "misc",
+      "entry_type_after": "inproceedings",
+      "added_fields": [
+        "attestation_relation",
+        "booktitle",
+        "classification_confidence",
+        "evidence_basis",
+        "evidence_note",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [
+        "doi",
+        "eprint",
+        "eprinttype",
+        "pubstate"
+      ],
+      "changed_fields": {
+        "annotation": {
+          "before": "Use for research writing on frontier AI governance and evaluations. Maps 'Inexact unlearning needs more careful evaluations to avoid a false sense of privacy' to paper source; risk domains: privacy; lifecycle: post training, deployment; assurance functions: eval, mitigation.",
+          "after": "Peer-reviewed IEEE SaTML 2025 version; replaces the earlier arXiv/preprint record and supports evaluation of machine-unlearning privacy claims."
+        },
+        "date": {
+          "before": "2024",
+          "after": "2025"
+        },
+        "evidence_independence": {
+          "before": "author_attested",
+          "after": "third_party"
+        },
+        "review_process": {
+          "before": "preprint",
+          "after": "peer_reviewed"
+        },
+        "review_status": {
+          "before": "preprint",
+          "after": "peer_reviewed"
+        },
+        "title": {
+          "before": "Inexact unlearning needs more careful evaluations to avoid a false sense of privacy",
+          "after": "Inexact Unlearning Needs More Careful Evaluations to Avoid a False Sense of Privacy"
+        },
+        "url": {
+          "before": "https://arxiv.org/abs/2403.01218",
+          "after": "https://satml.org/2025/accepted-papers/"
+        },
+        "urldate": {
+          "before": "2026-04-25",
+          "after": "2026-05-02"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "heap_sparseautoencoders_2025",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "heim_trainingcomputethresholds_2024",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "hilton_safetycasesscalable_2025",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "source_form",
+        "source_role",
+        "threat_vector"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "homewood_thirdpartycompliance_2025",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "hsu_safelorasilver_2024",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "hu_realignsafetyaligning_2026",
+      "entry_type_before": "online",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "eprint",
+        "eprinttype",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [
+        "url"
+      ],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "hua_steeringevaluation_2025",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role",
+        "threat_vector"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "huang_collectiveconstitutional_2024",
+      "entry_type_before": "article",
+      "entry_type_after": "article",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "huang_endlessjailbreaksbijection_2024",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role",
+        "threat_vector"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "hubinger_sleeperagentstraining_2024",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role",
+        "threat_vector"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "isoiec_42001_2023",
+      "entry_type_before": "report",
+      "entry_type_after": "report",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "standards_body",
+          "after": "standards"
+        },
+        "review_process": {
+          "before": "community_standard",
+          "after": "standards_consensus"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "jose_strategicobfuscation_2026",
+      "entry_type_before": "online",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "eprint",
+        "eprinttype",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [
+        "url"
+      ],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "joshi_robustevaluationunlearning_2024",
+      "entry_type_before": "article",
+      "entry_type_after": "article",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "kamath_tracingattentioncomputatio_2025",
+      "entry_type_before": "online",
+      "entry_type_after": "online",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "company",
+          "after": "private"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "karvonen_measuringprogressdictionar_2024",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "kenton_scalableoversightweak_2024",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "khan_debatingmorepersuasive_2024",
+      "entry_type_before": "article",
+      "entry_type_after": "article",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role",
+        "threat_vector"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "korbak_chainthoughtmonitorability_2025",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "kutasov_evaluatingsabotage_2025",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role",
+        "threat_vector"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "lambert_rewardbenchevaluating_2024",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "lan_sparseautoencoders_2024",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "lang_debatehelpsweak_2025",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role",
+        "threat_vector"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "lee_constructingsafety_2026",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "li_backdoorllmcomprehensive_2024",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role",
+        "threat_vector"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "li_cancovertlysandbag_2025",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role",
+        "threat_vector"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "li_wmdpbenchmarkmeasuring_2024",
+      "entry_type_before": "misc",
+      "entry_type_after": "inproceedings",
+      "added_fields": [
+        "attestation_relation",
+        "booktitle",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "pages",
+        "publisher",
+        "risk_domain",
+        "series",
+        "source_form",
+        "source_role",
+        "volume"
+      ],
+      "removed_fields": [
+        "doi",
+        "eprint",
+        "eprinttype",
+        "pubstate"
+      ],
+      "changed_fields": {
+        "annotation": {
+          "before": "Use for research writing on frontier AI governance and evaluations. Maps 'The {WMDP} benchmark: Measuring and reducing malicious use with unlearning' to benchmark source; risk domains: cyber, bio, privacy; lifecycle: post training, deployment; assurance functions: eval, mitigation.",
+          "after": "Peer-reviewed ICML/PMLR version of WMDP; replaces the earlier arXiv/preprint record and supports hazardous-knowledge evaluation and mitigation evidence."
+        },
+        "author": {
+          "before": "Nathaniel Li and Alexander Pan and Anjali Gopal and Summer Yue and Daniel Berrios and Alice Gatti and Justin D. Li and Ann-Kathrin Dombrowski and Shashwat Goel and Long Phan and Gabriel Mukobi and Nathan Helm-Burger and Rassin Lababidi and Lennart Justen and Andrew B. Liu and Michael Chen and Isabelle Barrass and Oliver Zhang and Xiaoyuan Zhu and Rishub Tamirisa and Bhrugu Bharathi and Adam Khoja and Zhenqi Zhao and Ariel Herbert-Voss and Cort B. Breuer and Samuel Marks and Oam Patel and Andy Zou and Mantas Mazeika and Zifan Wang and Palash Oswal and Weiran Lin and Adam A. Hunt and Justin Tienken-Harder and Kevin Y. Shih and Kemper Talley and John Guan and Russell Kaplan and Ian Steneker and David Campbell and Brad Jokubaitis and Alex Levinson and Jean Wang and William Qian and Kallol Krishna Karmakar and Steven Basart and Stephen Fitz and Mindy Levine and Ponnurangam Kumaraguru and Uday Tupakula and Vijay Varadharajan and Ruoyu Wang and Yan Shoshitaishvili and Jimmy Ba and Kevin M. Esvelt and Alexandr Wang and Dan Hendrycks",
+          "after": "Nathaniel Li and Alexander Pan and Anjali Gopal and Summer Yue and Daniel Berrios and Alice Gatti and Justin D. Li and Ann-Kathrin Dombrowski and Shashwat Goel and Gabriel Mukobi and Nathan Helm-Burger and Rassin Lababidi and Lennart Justen and Andrew Bo Liu and Michael Chen and Isabelle Barrass and Oliver Zhang and Xiaoyuan Zhu and Rishub Tamirisa and Bhrugu Bharathi and Ariel Herbert-Voss and Cort B. Breuer and Andy Zou and Mantas Mazeika and Zifan Wang and Palash Oswal and Weiran Lin and Adam Alfred Hunt and Justin Tienken-Harder and Kevin Y. Shih and Kemper Talley and John Guan and Ian Steneker and David Campbell and Brad Jokubaitis and Steven Basart and Stephen Fitz and Ponnurangam Kumaraguru and Kallol Krishna Karmakar and Uday Tupakula and Vijay Varadharajan and Yan Shoshitaishvili and Jimmy Ba and Kevin M. Esvelt and Alexandr Wang and Dan Hendrycks"
+        },
+        "evidence_independence": {
+          "before": "author_attested",
+          "after": "third_party"
+        },
+        "governance_function": {
+          "before": "evaluation, mitigation",
+          "after": "evaluation, mitigation, reporting"
+        },
+        "review_process": {
+          "before": "preprint",
+          "after": "peer_reviewed"
+        },
+        "review_status": {
+          "before": "preprint",
+          "after": "peer_reviewed"
+        },
+        "title": {
+          "before": "The {WMDP} benchmark: Measuring and reducing malicious use with unlearning",
+          "after": "The {WMDP} Benchmark: Measuring and Reducing Malicious Use with Unlearning"
+        },
+        "url": {
+          "before": "https://arxiv.org/abs/2403.03218",
+          "after": "https://proceedings.mlr.press/v235/li24bc.html"
+        },
+        "urldate": {
+          "before": "2026-04-25",
+          "after": "2026-05-02"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "lindsey_biology_2025",
+      "entry_type_before": "online",
+      "entry_type_after": "online",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "company",
+          "after": "private"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "liu_promptinjectionattacks_2025",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role",
+        "threat_vector"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "liu_rethinkingmachineunlearnin_2024",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role",
+        "threat_vector"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "macdiarmid_naturalemergentmisalignmen_2025",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role",
+        "threat_vector"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "magic_agireadinesspolicy_2024",
+      "entry_type_before": "online",
+      "entry_type_after": "online",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role",
+        "threat_vector"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "company",
+          "after": "private"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "makelov_principledevaluations_2024",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "mazeika_harmbenchstandardized_2024",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role",
+        "threat_vector"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "meinke_frontiercapablecontext_2024",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role",
+        "threat_vector"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "meta_advancedaiscalingframeworkv2_2026",
+      "entry_type_before": "report",
+      "entry_type_after": "report",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "release_model",
+        "risk_domain",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "company",
+          "after": "private"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "metr_commonelementsfrontier_2024",
+      "entry_type_before": "report",
+      "entry_type_after": "report",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "ngo_research",
+          "after": "civil_society"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "metr_examplesafetysecurity_2025",
+      "entry_type_before": "online",
+      "entry_type_after": "online",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "ngo_research",
+          "after": "civil_society"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "microsoft_frontiergovernance_2025",
+      "entry_type_before": "report",
+      "entry_type_after": "report",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "company",
+          "after": "private"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        },
+        "title": {
+          "before": "Frontier governance framework",
+          "after": "{Microsoft} frontier governance framework v1.0"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "microsoft_frontiergovernance_2026",
+      "entry_type_before": "report",
+      "entry_type_after": "report",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "company",
+          "after": "private"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        },
+        "title": {
+          "before": "Frontier Governance Framework",
+          "after": "{Microsoft} frontier governance framework ({February} 2026 update)"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "mlcommons_ailuminate_2026",
+      "entry_type_before": "online",
+      "entry_type_after": "online",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role",
+        "threat_vector"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "industry_forum",
+          "after": "industry"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "mlcommons_ailuminatejailbreakv05_2025",
+      "entry_type_before": "online",
+      "entry_type_after": "online",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role",
+        "threat_vector"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "industry_forum",
+          "after": "industry"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "mlcommons_ailuminatev10_2025",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role",
+        "threat_vector"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "industry_forum",
+          "after": "industry"
+        },
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "murray_mappingbenchmarkdata_2025",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "nasr_scalableextraction_2025",
+      "entry_type_before": "article",
+      "entry_type_after": "article",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "naver_aisafetyframework_2024",
+      "entry_type_before": "online",
+      "entry_type_after": "online",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "company",
+          "after": "private"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "nguyen_probingsteeringevaluation_2025",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "release_model",
+        "risk_domain",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "nist_airmf10_2023",
+      "entry_type_before": "report",
+      "entry_type_after": "report",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "government",
+          "after": "public"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "nist_artificialintelligence_2024",
+      "entry_type_before": "report",
+      "entry_type_after": "report",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "government",
+          "after": "public"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "nist_managingmisuserisk_2024",
+      "entry_type_before": "report",
+      "entry_type_after": "report",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role",
+        "threat_vector"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "government",
+          "after": "public"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "nist_managingmisuserisk_2025_2pd",
+      "entry_type_before": "report",
+      "entry_type_after": "report",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "release_model",
+        "risk_domain",
+        "source_form",
+        "source_role",
+        "threat_vector"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "government",
+          "after": "public"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "nist_outlineproposedzero_2025",
+      "entry_type_before": "online",
+      "entry_type_after": "online",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "government",
+          "after": "public"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "nist_systemdocumentation_nd",
+      "entry_type_before": "online",
+      "entry_type_after": "online",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "government",
+          "after": "public"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "nvidia_frontierriskassessment_2025",
+      "entry_type_before": "report",
+      "entry_type_after": "report",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "company",
+          "after": "private"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "oecd_commonreportingincidents_2025",
+      "entry_type_before": "report",
+      "entry_type_after": "report",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "intergovernmental",
+          "after": "multilateral"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "oecd_dashboardentryhlab_2025",
+      "entry_type_before": "online",
+      "entry_type_after": "online",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "evidence_note",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "intergovernmental",
+          "after": "multilateral"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "oecd_hiroshimaprocesscode_2025",
+      "entry_type_before": "report",
+      "entry_type_after": "report",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "intergovernmental",
+          "after": "multilateral"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "oecd_hiroshimaprocessreporting_2025",
+      "entry_type_before": "online",
+      "entry_type_after": "online",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "evidence_note",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "intergovernmental",
+          "after": "multilateral"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "oecd_launchesglobalmonitor_2025",
+      "entry_type_before": "online",
+      "entry_type_after": "online",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "intergovernmental",
+          "after": "multilateral"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "oecd_launchespilotmonitor_2024",
+      "entry_type_before": "online",
+      "entry_type_after": "online",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "intergovernmental",
+          "after": "multilateral"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "oecd_trendsincidentshazards_2026",
+      "entry_type_before": "report",
+      "entry_type_after": "report",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "intergovernmental",
+          "after": "multilateral"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "oecd_wonk_nd",
+      "entry_type_before": "online",
+      "entry_type_after": "online",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "intergovernmental",
+          "after": "multilateral"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "omb_2024federalagency_2024",
+      "entry_type_before": "dataset",
+      "entry_type_after": "dataset",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "government",
+          "after": "public"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "omb_m2410_2024",
+      "entry_type_before": "report",
+      "entry_type_after": "report",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role",
+        "superseded_by",
+        "version_status"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "annotation": {
+          "before": "OMB Memorandum M-24-10 on federal agency AI governance, innovation, and risk management; use for public-sector AI governance controls, impact-rights-safety review, agency accountability, and reporting requirements.",
+          "after": "Superseded OMB Memorandum M-24-10 on federal agency AI governance, innovation, and risk management; use for public-sector AI governance controls, impact-rights-safety review, agency accountability, and reporting requirements."
+        },
+        "evidence_independence": {
+          "before": "issuer_attested",
+          "after": "regulatory"
+        },
+        "issuer_sector": {
+          "before": "government",
+          "after": "public"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "legal_process"
+        },
+        "review_status": {
+          "before": "institutional",
+          "after": "legal_or_regulatory"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "openai_blogupdatingpreparedness_2025",
+      "entry_type_before": "online",
+      "entry_type_after": "online",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "company",
+          "after": "private"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "openai_monitoringmonitorability_2025",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "company",
+          "after": "private"
+        },
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "openai_o1systemcard_2024",
+      "entry_type_before": "online",
+      "entry_type_after": "online",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "company",
+          "after": "private"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "openai_preparednessv2_2025",
+      "entry_type_before": "report",
+      "entry_type_after": "report",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "company",
+          "after": "private"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "owasp_llmtop10_2025",
+      "entry_type_before": "report",
+      "entry_type_after": "report",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role",
+        "threat_vector"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "standards_body",
+          "after": "standards"
+        },
+        "review_process": {
+          "before": "community_standard",
+          "after": "standards_consensus"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "paulo_automaticallyinterpreting_2024",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "pavlova_automatedredteaming_2024",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role",
+        "threat_vector"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "perset_developersmanaging_2025",
+      "entry_type_before": "report",
+      "entry_type_after": "report",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "intergovernmental",
+          "after": "multilateral"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "phuong_evaluatingfrontier_2024",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "qi_safetyalignmentshould_2025",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "rai_practicalreviewmechanistic_2024",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "rand_governanceapproaches_2025",
+      "entry_type_before": "report",
+      "entry_type_after": "report",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "ngo_research",
+          "after": "civil_society"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "salvi_conversationalpersuasivene_2025",
+      "entry_type_before": "article",
+      "entry_type_after": "article",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {},
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "samvelyan_rainbowteamingopen_2024",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "sastry_computingpowergovernance_2024",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role",
+        "threat_vector"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "sba_complianceplanomb_2024",
+      "entry_type_before": "online",
+      "entry_type_after": "online",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "government",
+          "after": "public"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "scheurer_canstrategicallydeceive_2024",
+      "entry_type_before": "article",
+      "entry_type_after": "article",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role",
+        "threat_vector"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "schuett_frontierdevelopers_2024",
+      "entry_type_before": "article",
+      "entry_type_after": "article",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {},
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "schuett_surveythresholdsadvanced_2025",
+      "entry_type_before": "report",
+      "entry_type_after": "report",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "source_form",
+        "source_role",
+        "threat_vector"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "ngo_research",
+          "after": "civil_society"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "sharkey_openproblemsmechanistic_2025",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "sharma_constitutionalclassifiers_2025",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role",
+        "threat_vector"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "sharma_criticalevaluation_2024",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "sheshadri_whydosome_2025",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "souly_poisoningattacksrequire_2025",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "source_form",
+        "source_role",
+        "threat_vector"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "statedepartment_complianceplanomb_2024",
+      "entry_type_before": "report",
+      "entry_type_after": "report",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "government",
+          "after": "public"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "stix_behindcloseddoors_2025",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "source_form",
+        "source_role",
+        "threat_vector"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "sudhir_benchmarkscalableoversight_2025",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "swamy_minimaximalistapproach_2024",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "tamirisa_tamperresistantsafeguards_2024",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "maintenance_status",
+        "source_form",
+        "source_role",
+        "threat_vector"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "taylor_schoolrewardhacks_2025",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "templeton_scalingmonosemanticity_2024",
+      "entry_type_before": "online",
+      "entry_type_after": "online",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "company",
+          "after": "private"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "ukgov_frontiersafetycommitments_2024",
+      "entry_type_before": "online",
+      "entry_type_after": "online",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "government",
+          "after": "public"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "ukparliament_securityinstitute_2025",
+      "entry_type_before": "online",
+      "entry_type_after": "online",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "government",
+          "after": "public"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "unadvisorybodyai_governinghumanityfinal_2024",
+      "entry_type_before": "report",
+      "entry_type_after": "report",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "intergovernmental",
+          "after": "multilateral"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "vega_bypassingsafetytraining_2024",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "release_model",
+        "risk_domain",
+        "source_form",
+        "source_role",
+        "threat_vector"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "vir_subliminalcorruption_2025",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "source_form",
+        "source_role",
+        "threat_vector"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "wallace_estimatingworstcase_2025",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "release_model",
+        "risk_domain",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "wallace_instructionhierarchy_2024",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role",
+        "threat_vector"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "wang_adversarialpreference_2025",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role",
+        "threat_vector"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "wang_catastrophiccertifying_2025",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "wang_helpsteer2opensource_2024",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "release_model",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "wang_helpsteer2preference_2024",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "wang_interpretablepreferences_2024",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "source_form",
+        "source_role",
+        "threat_vector"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "wang_pandoraswhite_2024",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "wang_selftaughtevaluators_2024",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "ngo_research",
+          "after": "civil_society"
+        },
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "wang_star1safer_2025",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "wef_globalcybersecurity_2026",
+      "entry_type_before": "report",
+      "entry_type_after": "report",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "industry_forum",
+          "after": "industry"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "wehner_taxonomyopportunities_2025",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "xai_frontierartificialintelligenceframework_2025",
+      "entry_type_before": "report",
+      "entry_type_after": "report",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "issuer_sector": {
+          "before": "company",
+          "after": "private"
+        },
+        "review_process": {
+          "before": "institutional",
+          "after": "institutional_review"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "xu_magpiealignmentdata_2024",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "ye_learningjudgepreference_2025",
+      "entry_type_before": "online",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "eprint",
+        "eprinttype",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [
+        "url"
+      ],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "yousefpour_representationbending_2025",
+      "entry_type_before": "article",
+      "entry_type_after": "article",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "maintenance_status",
+        "source_form",
+        "source_role",
+        "threat_vector"
+      ],
+      "removed_fields": [],
+      "changed_fields": {},
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "yu_robustsafeguarding_2024",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role",
+        "threat_vector"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "zhang_activationspaceanchored_2026",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role",
+        "threat_vector"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "zhang_generativeverifiers_2024",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "zhang_holisticautomatedred_2024",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role",
+        "threat_vector"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "zhang_persistentpretraining_2025",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role",
+        "threat_vector"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "zhang_safetyoneshot_2026",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role",
+        "threat_vector"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "zhang_selfexploringactive_2024",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "source_form",
+        "source_role"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "zhang_vtuneverifiablefine_2024",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "classification_note",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role",
+        "threat_vector"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    },
+    {
+      "id": "zhao_surveyrecentbackdoor_2024",
+      "entry_type_before": "misc",
+      "entry_type_after": "misc",
+      "added_fields": [
+        "abstract",
+        "attestation_relation",
+        "classification_confidence",
+        "evidence_basis",
+        "function_role",
+        "governance_artifact",
+        "inclusion_reason",
+        "independence_from",
+        "legal_status",
+        "lifecycle_stage",
+        "maintenance_status",
+        "risk_domain",
+        "source_form",
+        "source_role",
+        "threat_vector"
+      ],
+      "removed_fields": [],
+      "changed_fields": {
+        "review_process": {
+          "before": "preprint",
+          "after": "author_posted_preprint"
+        }
+      },
+      "keyword_mirrors_changed": true
+    }
+  ],
+  "changed_field_frequencies": {
+    "annotation": 5,
+    "artifact_type": 1,
+    "author": 1,
+    "date": 4,
+    "evidence_independence": 5,
+    "evidence_note": 1,
+    "governance_function": 3,
+    "issuer_sector": 101,
+    "keywords": 218,
+    "review_process": 211,
+    "review_status": 5,
+    "scope_relevance": 1,
+    "title": 10,
+    "type": 2,
+    "url": 7,
+    "urldate": 5,
+    "version_status": 1
+  },
+  "import_verification": {
+    "checked_on": "2026-10-16",
+    "baseline_commit": "a91b597cac08e651957314e5c37cb25895ddd666",
+    "baseline_bib_sha256": "d7580409731d7a7dea238a6e0ad149baca771d1354574b37de5bfd8c67b4ed90",
+    "baseline_records": 218,
+    "recovered_and_exported_records": 276,
+    "preserved_baseline_keys": 218,
+    "additional_recovered_keys": 58,
+    "removed_baseline_keys": 0,
+    "identical_scalar_field_values": 8081,
+    "preserved_ordered_multivalue_fields": 773,
+    "preserved_legacy_keyword_tokens": 6509,
+    "only_added_fields": [
+      "synthesis_stream",
+      "stream_note"
+    ],
+    "stream_counts": {
+      "technical_eval": 153,
+      "governance_artifact": 91,
+      "contextual": 32
+    },
+    "views_partition_exactly": true,
+    "frozen_input_files_verified": 5,
+    "canonical_yaml_sha256": "d829fea38079d8f3e08822684fedaaa059ef8f926dd72bc79490cb735998c2d0",
+    "generated_bib_sha256": "f77327a1c58478330fe7bd24b341afd991c27889f3b7924b852d9687750b55d9",
+    "entry_types": {
+      "article": 21,
+      "dataset": 3,
+      "inproceedings": 18,
+      "misc": 123,
+      "online": 43,
+      "report": 68
+    },
+    "inherited_classification_confidence": {
+      "high": 158,
+      "low": 67,
+      "medium": 51
+    },
+    "semantic_failures": 0,
+    "advisory_warnings": 0
+  }
+}
