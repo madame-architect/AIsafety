@@ -1,0 +1,1156 @@
+{
+  "review_date": "2026-10-16",
+  "baseline_commit": "12287bab1a763371a48660330ff9bc90a222e628",
+  "review_type": "AI-assisted primary-source verification of five existing records; no experimental reproduction or independent human coding",
+  "purpose": "Prepare a bounded synthesis of cyber capability evidence and deployment safeguards",
+  "pdf_locator_convention": "1-based PDF viewer pages, counting the cover",
+  "source_snapshots": [
+    {
+      "record_id": "phuong_evaluatingfrontier_2024",
+      "version": "2",
+      "pdf_url": "https://arxiv.org/pdf/2403.13793v2",
+      "sha256": "89225ba18d3823a3b766d00833bf77c4540749b4279a2628c1f78e15aadb560e",
+      "pages": 81,
+      "version_history": {
+        "arxiv_versions": [
+          {
+            "version": "1",
+            "submitted_utc": "2024-03-20T17:54:26Z"
+          },
+          {
+            "version": "2",
+            "submitted_utc": "2024-04-05T12:26:11Z"
+          }
+        ],
+        "pdf_cover_date": "2024-04-08",
+        "publisher_listing_date": "2024-03-21",
+        "latest_arxiv_version_certainty": "high, direct submission history",
+        "later_publication": "Not located within the bounded checks; absence is not proved.",
+        "review_status_basis": "Issuer listing and coauthor publication list both identify arXiv; no journal/conference reference appears in the arXiv record."
+      },
+      "support": {
+        "arxiv_history": {
+          "url": "https://arxiv.org/abs/2403.13793",
+          "locator": "Title, authors, and Submission history"
+        },
+        "paper_html": {
+          "url": "https://arxiv.org/html/2403.13793v2"
+        },
+        "paper_pdf": {
+          "url": "https://arxiv.org/pdf/2403.13793v2"
+        },
+        "issuer_listing": {
+          "url": "https://deepmind.google/research/publications/78150/",
+          "locator": "Title, date, abstract, authors, Venue"
+        },
+        "coauthor_listing": {
+          "url": "https://sebastianfarquhar.com/publications/",
+          "locator": "2024 item 3"
+        },
+        "coauthor_pdf": {
+          "url": "https://sebastianfarquhar.com/assets/papers/phuongEvaluating2024.pdf"
+        },
+        "official_resources": {
+          "url": "https://github.com/google-deepmind/dangerous-capability-evaluations",
+          "locator": "README: scope, changes from paper, citation"
+        }
+      },
+      "field_evidence": {
+        "author": [
+          "paper_pdf p.1: 27 authors; restore Grégoire Delétang diacritics. Other names/order already match."
+        ],
+        "date": [
+          "arxiv_history: v2 submitted 2024-04-05 12:26:11 UTC. Date policy is an explicit normalization decision."
+        ],
+        "origdate": [
+          "arxiv_history: v1 submitted 2024-03-20 17:54:26 UTC."
+        ],
+        "version": [
+          "arxiv_history; paper_pdf p.1 arXiv margin identifies v2."
+        ],
+        "url": [
+          "arxiv_history has an explicit v2 link. Version pin supports reproducibility."
+        ],
+        "urldate": [
+          "This source verification date."
+        ],
+        "issuer_type": [
+          "paper_pdf p.1 Google DeepMind branding/copyright; issuer_listing. Entity classification, not a claim that every author lacks academic affiliation."
+        ],
+        "issuer_sector": [
+          "issuer_listing; company -> private is schema classification."
+        ],
+        "evidence_independence": [
+          "paper_pdf pp.1,3-4; developer evaluates its own Gemini models. Classification inference."
+        ],
+        "attestation_relation": [
+          "paper_pdf pp.1,3-4; same inference as evidence_independence."
+        ],
+        "independence_from": [
+          "paper_pdf pp.1,3-4; subject_self distinguishes self-evaluation from independent replication. External advisers/forecasts do not transform the model results into an independent evaluation."
+        ],
+        "threat_vector": [
+          "paper_pdf Section 6 pp.15-21, especially Table 10 p.17 and self-proliferation threat model."
+        ],
+        "inclusion_reason": [
+          "paper_pdf Sections 1-7; Appendix B."
+        ],
+        "annotation": [
+          "paper_pdf Section 2 pp.3-4; Sections 4-5 pp.9-15; Sections 6-7 pp.15-25; Appendix B pp.37-38; Section 9 p.29."
+        ],
+        "stream_note": [
+          "paper_pdf Sections 3-7; Appendix B."
+        ],
+        "evidence_note": [
+          "arxiv_history; paper_pdf p.1 and Section 8 p.26; issuer_listing; coauthor_listing; official_resources README."
+        ]
+      }
+    },
+    {
+      "record_id": "goemans_safetycasetemplate_2024",
+      "version": "1",
+      "pdf_url": "https://arxiv.org/pdf/2411.08088v1",
+      "sha256": "14bbd45241f2ecdf178e40f9e844a86b22840516866420b81cd5ae00af6f719f",
+      "pages": 21,
+      "version_history": [
+        {
+          "version": "1",
+          "submitted_utc": "2024-11-12T18:45:08Z"
+        }
+      ],
+      "publication_check": {
+        "outcome": "Retain preprint / author_posted_preprint. No later peer-reviewed version found in this bounded check.",
+        "evidence": "ArXiv lists only v1 and no journal reference; the GovAI and AISI research pages still link to the arXiv paper without a peer-reviewed venue.",
+        "limits": "This is not proof that no later publication exists. No exhaustive publisher database search was performed.",
+        "date_resolution": "The cited paper date is 2024-11-12, also given by GovAI. A different AISI listing date is not evidence of a revised paper."
+      },
+      "support": [
+        {
+          "key": "arxiv_history",
+          "url": "https://arxiv.org/abs/2411.08088",
+          "locator": "Submission history and bibliographic header"
+        },
+        {
+          "key": "paper",
+          "url": "https://arxiv.org/pdf/2411.08088v1"
+        },
+        {
+          "key": "html",
+          "url": "https://arxiv.org/html/2411.08088v1"
+        },
+        {
+          "key": "govai",
+          "url": "https://www.governance.ai/research-paper/safety-case-template-for-frontier-ai-a-cyber-inability-argument"
+        },
+        {
+          "key": "aisi",
+          "url": "https://www.aisi.gov.uk/research/safety-case-template-for-frontier-ai-a-cyber-inability-argument-2"
+        }
+      ],
+      "field_evidence": [
+        {
+          "fields": [
+            "date",
+            "version",
+            "url",
+            "urldate"
+          ],
+          "sources": [
+            "arxiv_history",
+            "govai"
+          ],
+          "locator": "ArXiv submission history; GovAI Date field",
+          "basis": "Version-specific citation pinned to the inspected version; access date records this actual inspection."
+        },
+        {
+          "fields": [
+            "issuer_type",
+            "issuer_sector",
+            "evidence_note"
+          ],
+          "sources": [
+            "paper",
+            "govai",
+            "aisi"
+          ],
+          "locator": "Paper p. 1 affiliations; GovAI organizational footer; AISI organizational note",
+          "basis": "GovAI and UK AISI collaboration; the corresponding/first author belongs to GovAI, a nonprofit research organization. A scalar cannot represent both nonprofit and government affiliations."
+        },
+        {
+          "fields": [
+            "lifecycle_stage"
+          ],
+          "sources": [
+            "paper"
+          ],
+          "locator": "p. 1 footnote 1; p. 2 introduction; section 4.1 pp. 7-8",
+          "basis": "Deployment decisions are the explicit primary use. Post-deployment monitoring is also specified for novel attacks, so retain that stage while adding deployment."
+        },
+        {
+          "fields": [
+            "governance_function"
+          ],
+          "sources": [
+            "paper"
+          ],
+          "locator": "section 4.1 pp. 7-8; section 4.3 pp. 10-12; appendix B p. 21",
+          "basis": "Monitoring is an explicit evidence component. Evaluation and audit remain supported, although the paper performs neither a model evaluation nor an organizational audit."
+        },
+        {
+          "fields": [
+            "annotation",
+            "inclusion_reason",
+            "stream_note"
+          ],
+          "sources": [
+            "paper"
+          ],
+          "locator": "pp. 1-2; sections 3-5 pp. 3-13; appendix A p. 18; appendix B p. 21",
+          "basis": "The system is hypothetical and the contribution is a proposed structured assurance method with unsubstantiated assumptions and defeaters, not completed empirical evaluation."
+        }
+      ]
+    },
+    {
+      "record_id": "murray_mappingbenchmarkdata_2025",
+      "version": "2",
+      "pdf_url": "https://arxiv.org/pdf/2503.04299v2",
+      "sha256": "d27d10005b94667689e69eaa857b66e340e81fd05d8f95424d6b25b0dcf3dcf7",
+      "pages": 23,
+      "version_history": [
+        {
+          "version": "1",
+          "submitted_utc": "2025-03-06T10:39:47Z"
+        },
+        {
+          "version": "2",
+          "submitted_utc": "2025-03-10T13:00:00Z"
+        }
+      ],
+      "publication_check": {
+        "outcome": "Retain preprint / author_posted_preprint. No later peer-reviewed version found in this bounded check.",
+        "evidence": "ArXiv lists v1/v2 without a journal reference. SaferAI and the corresponding author publication page point to the arXiv work, without a venue for this paper.",
+        "limits": "This is not proof of nonpublication; an exhaustive publisher database search was not performed.",
+        "date_resolution": "Use 2025-03-10 for the cited v2 and origdate 2025-03-06 for its first submission. The SaferAI webpage date, 2025-03-07, is a separate posting date."
+      },
+      "support": [
+        {
+          "key": "arxiv_history",
+          "url": "https://arxiv.org/abs/2503.04299",
+          "locator": "Submission history and bibliographic header"
+        },
+        {
+          "key": "paper",
+          "url": "https://arxiv.org/pdf/2503.04299v2"
+        },
+        {
+          "key": "html",
+          "url": "https://arxiv.org/html/2503.04299v2"
+        },
+        {
+          "key": "saferai",
+          "url": "https://www.safer-ai.org/research/mapping-ai-benchmark-data-to-quantitative-risk-estimates-through-expert-elicitation"
+        },
+        {
+          "key": "author_publications",
+          "url": "https://henrypapadatos.com/publications/",
+          "locator": "2025, Mapping AI Benchmark Data to Quantitative Risk Estimates Through Expert Elicitation"
+        }
+      ],
+      "field_evidence": [
+        {
+          "fields": [
+            "date",
+            "origdate",
+            "version",
+            "url",
+            "urldate"
+          ],
+          "sources": [
+            "arxiv_history",
+            "saferai"
+          ],
+          "locator": "ArXiv submission history; paper title page; SaferAI Publication date",
+          "basis": "Pin the inspected version, separate original submission from revision date, and record the actual inspection date."
+        },
+        {
+          "fields": [
+            "source_form",
+            "artifact_type",
+            "governance_artifact"
+          ],
+          "sources": [
+            "paper"
+          ],
+          "locator": "section 4 pp. 3-6; section 4.1.2 Table 1 p. 5; appendix B pp. 15-23",
+          "basis": "The authors select five existing Cybench tasks and apply a modified Delphi/IDEA elicitation procedure. Their contribution is the method/pilot, not the Cybench benchmark."
+        },
+        {
+          "fields": [
+            "issuer_type",
+            "issuer_sector",
+            "evidence_note"
+          ],
+          "sources": [
+            "paper",
+            "saferai"
+          ],
+          "locator": "p. 1 affiliations; SaferAI organizational footer",
+          "basis": "Both lead/corresponding authors and four of five authors are at SaferAI, a nonprofit. One coauthor is at Univ. Rennes/Inria."
+        },
+        {
+          "fields": [
+            "risk_domain"
+          ],
+          "sources": [
+            "paper"
+          ],
+          "locator": "section 4.1.1 p. 4; section 6.3 p. 10",
+          "basis": "The actual pilot estimates a step in cyber misuse of an S&P 500 company. Systemic-risk scenarios are not measured; extension to other domains is future work."
+        },
+        {
+          "fields": [
+            "annotation",
+            "inclusion_reason",
+            "stream_note"
+          ],
+          "sources": [
+            "paper"
+          ],
+          "locator": "sections 4.1.1-4.3 pp. 4-6; results pp. 7-9; limitations p. 9; appendix A pp. 13-15",
+          "basis": "The empirical observations are expert judgments, with an externally supplied baseline and illustrative interpolation, not operational attacks or a validated risk function."
+        }
+      ]
+    },
+    {
+      "record_id": "openai_preparednessv2_2025",
+      "version": "2",
+      "pdf_url": "https://cdn.openai.com/pdf/18a02b5d-6b67-4cec-ab64-68cdfbddebcd/preparedness-framework-v2.pdf",
+      "sha256": "fae6e4cc6f7212a010bb9348fc0cde1fe711b9cad426c6a99db97740ee52729b",
+      "pages": 22,
+      "version_assessment": {
+        "result": "No newer numbered Preparedness Framework found; official pages currently link v2. No explicit latest-version designation or complete numbered-version register was found in the bounded check.",
+        "qualification": "Later official statements clarify and extend the policy. Therefore v2 alone is not established as a complete account of OpenAI policy on the verification date.",
+        "sources": [
+          "oa_launch",
+          "oa_internal_clarification",
+          "oa_development_update",
+          "oa_september_reference"
+        ],
+        "decision": "Remove optional version_status: current; retain the dated version and explain this bounded verification in evidence_note. Do not mark superseded without positive evidence."
+      },
+      "support": {
+        "oa_pdf": {
+          "url": "https://cdn.openai.com/pdf/18a02b5d-6b67-4cec-ab64-68cdfbddebcd/preparedness-framework-v2.pdf",
+          "pages": 22,
+          "locator_convention": "All PDF locators use 1-based viewer pages, counting the cover as page 1. Printed page numbers are one lower.",
+          "downloaded_on": "2026-10-16",
+          "bytes": 170399,
+          "sha256": "fae6e4cc6f7212a010bb9348fc0cde1fe711b9cad426c6a99db97740ee52729b"
+        },
+        "oa_launch": {
+          "url": "https://openai.com/index/updating-our-preparedness-framework/",
+          "date": "2025-04-15",
+          "locators": "Main bullet list, especially categories, operational commitments, report terminology, and risk acceptance."
+        },
+        "oa_internal_clarification": {
+          "url": "https://deploymentsafety.openai.com/gpt-5-3-codex/preparedness",
+          "date": "2026-02-05",
+          "locators": "Section 5.2.1.5, final Note, lines 465–466."
+        },
+        "oa_development_update": {
+          "url": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
+          "date": "2026-08-18",
+          "locators": "Opening policy explanation, lines 34–40; future framework revision, line 77."
+        },
+        "oa_governance_framework": {
+          "url": "https://openai.com/index/openai-frontier-governance-framework/",
+          "date": "2026-05-28",
+          "locators": "Opening explanation, lines 25–29."
+        },
+        "oa_september_reference": {
+          "url": "https://openai.com/index/path-to-astra/",
+          "date": "2026-09-01",
+          "locators": "Preparedness discussion and link 12; lines 36–49."
+        }
+      },
+      "field_evidence": [
+        {
+          "fields": [
+            "title",
+            "date",
+            "version"
+          ],
+          "source": "oa_pdf",
+          "locator": "PDF viewer p. 1 (cover)."
+        },
+        {
+          "fields": [
+            "governance_function"
+          ],
+          "source": "oa_pdf",
+          "locator": "Sections 3–5; Appendix C.3, PDF viewer pp. 21–22. Audit describes covered security practices, not independent certification of this framework."
+        },
+        {
+          "fields": [
+            "risk_domain"
+          ],
+          "source": "oa_launch",
+          "locator": "Tracked/research categories, lines 29–33.",
+          "note": "Coarse schema mapping; nuclear/radiological are research categories. Persuasion is explicitly outside this framework. loss_of_control maps to self-improvement and safeguard-subversion concerns."
+        },
+        {
+          "fields": [
+            "lifecycle_stage"
+          ],
+          "source": "oa_pdf",
+          "locator": "Section 3.2, PDF viewer p. 10; Sections 4.2 and 5, PDF viewer pp. 12–14."
+        },
+        {
+          "fields": [
+            "annotation",
+            "inclusion_reason"
+          ],
+          "source": "oa_launch",
+          "locator": "Lines 34–40. Capabilities Reports replace the earlier scorecard terminology."
+        },
+        {
+          "fields": [
+            "evidence_note"
+          ],
+          "sources": [
+            "oa_launch",
+            "oa_internal_clarification",
+            "oa_development_update",
+            "oa_september_reference"
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "deepmind_frontiersafetyv31_2026",
+      "version": "3.1",
+      "pdf_url": "https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/strengthening-our-frontier-safety-framework/frontier-safety-framework_3-1.pdf",
+      "sha256": "ad10d2d240e0d557ecad406dbccedcbb4a70295f8ba8eec46bfe01803cb9c301",
+      "pages": 20,
+      "version_assessment": {
+        "result": "Positively established as the latest publicly designated version on the verification date: the official latest-document link resolves to v3.1, and the live version history lists v3.1 first.",
+        "qualification": "This establishes the issuer's public designation; it does not reveal unpublished internal changes.",
+        "sources": [
+          "dm_history",
+          "dm_update"
+        ],
+        "decision": "Retain version_status: current with the dated evidence_note."
+      },
+      "support": {
+        "dm_pdf": {
+          "url": "https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/strengthening-our-frontier-safety-framework/frontier-safety-framework_3-1.pdf",
+          "pages": 20,
+          "locator_convention": "All PDF locators use 1-based viewer pages, counting the cover as page 1; these match the printed page numbers.",
+          "downloaded_on": "2026-10-16",
+          "bytes": 447155,
+          "sha256": "ad10d2d240e0d557ecad406dbccedcbb4a70295f8ba8eec46bfe01803cb9c301"
+        },
+        "dm_history": {
+          "url": "https://deepmind.google/frontier-safety/",
+          "locators": "Framework version list, lines 142–160; external participation, line 138.",
+          "link_check": "Version 3.1 Read now (link 46) resolves to dm_pdf."
+        },
+        "dm_update": {
+          "url": "https://deepmind.google/blog/strengthening-our-frontier-safety-framework/",
+          "publication_date": "2025-09-22",
+          "update_date": "2026-04-17",
+          "locators": "Risk and review discussion, lines 129–147; latest-document link, line 156.",
+          "link_check": "Read the latest Frontier Safety Framework (link 45) resolves to dm_pdf."
+        }
+      },
+      "field_evidence": [
+        {
+          "fields": [
+            "date",
+            "version",
+            "supersedes"
+          ],
+          "sources": [
+            "dm_pdf",
+            "dm_history"
+          ],
+          "locator": "PDF viewer p. 1 (cover); Section 5.3, PDF viewer p. 17; official version list."
+        },
+        {
+          "fields": [
+            "governance_function"
+          ],
+          "source": "dm_pdf",
+          "locator": "Sections 1.3, 2.1.2, 3.1.2 and 5. Auditing is a possible mitigation, not universal independent certification."
+        },
+        {
+          "fields": [
+            "risk_domain"
+          ],
+          "source": "dm_update",
+          "locator": "Harmful manipulation and misalignment discussion, lines 129–138.",
+          "note": "persuasion maps to harmful manipulation; loss_of_control maps to misalignment. These are corpus taxonomy mappings."
+        },
+        {
+          "fields": [
+            "lifecycle_stage"
+          ],
+          "source": "dm_pdf",
+          "locator": "Sections 1.3.1–1.3.2, PDF viewer pp. 5–6; Section 2.1.2, PDF viewer p. 10."
+        },
+        {
+          "fields": [
+            "annotation",
+            "inclusion_reason"
+          ],
+          "source": "dm_update",
+          "locator": "Lines 133–147."
+        },
+        {
+          "fields": [
+            "version_status",
+            "evidence_note"
+          ],
+          "sources": [
+            "dm_history",
+            "dm_update"
+          ],
+          "locator": "Version list and explicit latest-document link."
+        }
+      ]
+    }
+  ],
+  "record_changes": [
+    {
+      "record_id": "deepmind_frontiersafetyv31_2026",
+      "changes": [
+        {
+          "field": "annotation",
+          "operation": "replace",
+          "before": "Current Google DeepMind Frontier Safety Framework v3.1; use for Tracked Capability Levels, critical capability thresholds, deployment/security mitigations, and corporate frontier-risk governance comparisons. Limitation: company-authored framework.",
+          "after": "Version 3.1 provider policy connecting frontier capability assessment, security, deployment safeguards and residual-risk acceptance. Use as evidence of stated organizational commitments. Safeguard applicability depends on the risk domain, capability level and deployment context."
+        },
+        {
+          "field": "evidence_note",
+          "operation": "add",
+          "before": null,
+          "after": "The cover dates version 3.1 to 2026-04-17. On 2026-10-16, Google DeepMind's official version history listed v3.1 first, and its explicit latest-framework link resolved to this PDF. Current denotes that public version designation, not verification of implementation."
+        },
+        {
+          "field": "governance_function",
+          "operation": "replace",
+          "before": [
+            "evaluation",
+            "reporting",
+            "mitigation"
+          ],
+          "after": [
+            "evaluation",
+            "audit",
+            "monitoring",
+            "reporting",
+            "mitigation"
+          ]
+        },
+        {
+          "field": "inclusion_reason",
+          "operation": "replace",
+          "before": "Included as a core corporate_framework for frontier AI governance/evals; classified as company_framework with official_statement source role; used for evaluation, reporting, mitigation; lifecycle coverage: deployment, post_deployment; risk domains: cbrn, cyber, autonomy, misuse; evidence basis: procedural; function role: direct.",
+          "after": "Primary source for comparing how frontier capability evidence informs a provider's stated safeguard and deployment requirements."
+        },
+        {
+          "field": "lifecycle_stage",
+          "operation": "replace",
+          "before": [
+            "deployment",
+            "post_deployment"
+          ],
+          "after": [
+            "post_training",
+            "deployment",
+            "post_deployment"
+          ]
+        },
+        {
+          "field": "risk_domain",
+          "operation": "replace",
+          "before": [
+            "cbrn",
+            "cyber",
+            "autonomy",
+            "misuse"
+          ],
+          "after": [
+            "cbrn",
+            "cyber",
+            "persuasion",
+            "autonomy",
+            "misuse",
+            "loss_of_control"
+          ]
+        },
+        {
+          "field": "stream_note",
+          "operation": "replace",
+          "before": "Provisional: Versioned provider safety framework.",
+          "after": "AI-assisted full-text check (2026-10-16): organizational policy; evaluation provisions are not empirical findings."
+        },
+        {
+          "field": "urldate",
+          "operation": "replace",
+          "before": "2026-04-29",
+          "after": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "record_id": "openai_preparednessv2_2025",
+      "changes": [
+        {
+          "field": "annotation",
+          "operation": "replace",
+          "before": "OpenAI Preparedness Framework v2; use for scorecards, tracked risk categories, mitigation thresholds, model deployment/development constraints, and preparedness governance comparisons. Limitation: company-authored framework.",
+          "after": "Version 2 provider policy connecting capability assessments to safeguard requirements and deployment/development decisions. Uses Capabilities Reports and Safeguards Reports; residual-risk decisions remain with leadership. Treat as organizational policy, not independent evidence of safeguard effectiveness."
+        },
+        {
+          "field": "evidence_note",
+          "operation": "add",
+          "before": null,
+          "after": "The primary PDF identifies version 2, updated 2025-04-15. As of 2026-10-16, bounded official-site checks found no newer numbered version, and official pages still link this PDF. This does not establish policy completeness: the GPT-5.3-Codex card clarifies the internal-use trigger, and OpenAI's 2026-08-18 statement describes practices extending beyond the current framework."
+        },
+        {
+          "field": "governance_function",
+          "operation": "replace",
+          "before": [
+            "reporting",
+            "mitigation"
+          ],
+          "after": [
+            "evaluation",
+            "audit",
+            "monitoring",
+            "reporting",
+            "mitigation"
+          ]
+        },
+        {
+          "field": "inclusion_reason",
+          "operation": "replace",
+          "before": "Included as a core corporate_framework for frontier AI governance/evals; classified as company_framework with official_statement source role; used for reporting, mitigation; lifecycle coverage: deployment; evidence basis: procedural; function role: direct.",
+          "after": "Primary source for comparing how frontier capability evidence informs a provider's stated safeguard and deployment requirements."
+        },
+        {
+          "field": "lifecycle_stage",
+          "operation": "replace",
+          "before": [
+            "deployment"
+          ],
+          "after": [
+            "post_training",
+            "deployment",
+            "post_deployment"
+          ]
+        },
+        {
+          "field": "risk_domain",
+          "operation": "add",
+          "before": null,
+          "after": [
+            "cbrn",
+            "cyber",
+            "autonomy",
+            "misuse",
+            "loss_of_control"
+          ]
+        },
+        {
+          "field": "stream_note",
+          "operation": "replace",
+          "before": "Provisional: Provider preparedness policy and risk-management framework.",
+          "after": "AI-assisted full-text check (2026-10-16): organizational policy; evaluation provisions are not empirical findings."
+        },
+        {
+          "field": "title",
+          "operation": "replace",
+          "before": "Preparedness framework v2",
+          "after": "Preparedness Framework"
+        },
+        {
+          "field": "urldate",
+          "operation": "replace",
+          "before": "2026-04-29",
+          "after": "2026-10-16"
+        },
+        {
+          "field": "version_status",
+          "operation": "remove",
+          "before": "current",
+          "after": null
+        }
+      ]
+    },
+    {
+      "record_id": "goemans_safetycasetemplate_2024",
+      "changes": [
+        {
+          "field": "annotation",
+          "operation": "replace",
+          "before": "Use for research writing on frontier AI governance and evaluations. Maps 'Safety case template for frontier {AI}: A cyber inability argument' to paper source; risk domains: cyber; lifecycle: post deployment; assurance functions: auditing, eval.",
+          "after": "Proposed Claims Arguments Evidence template for assessing cyber inability at deployment, with later monitoring. The assessed system is hypothetical; the source supplies an argument structure and possible defeaters, not a completed model evaluation or safety certification."
+        },
+        {
+          "field": "date",
+          "operation": "replace",
+          "before": "2024",
+          "after": "2024-11-12"
+        },
+        {
+          "field": "evidence_note",
+          "operation": "add",
+          "before": null,
+          "after": "Issuer tags use lead institution GovAI, supported by the paper and its institutional publication page; UK AI Safety Institute coauthors remain part of the provenance. v1 is the only listed arXiv revision. Bounded arXiv/GovAI/AISI checks found no later peer-reviewed version on 2026-10-16."
+        },
+        {
+          "field": "governance_function",
+          "operation": "replace",
+          "before": [
+            "evaluation",
+            "audit"
+          ],
+          "after": [
+            "evaluation",
+            "audit",
+            "monitoring"
+          ]
+        },
+        {
+          "field": "inclusion_reason",
+          "operation": "replace",
+          "before": "Included as a core paper for frontier AI governance/evals; classified as eval_method with original_research source role; used for evaluation, audit; lifecycle coverage: post_deployment; risk domains: cyber; evidence basis: research; function role: direct.",
+          "after": "Proposed method for constructing and reviewing cyber safety arguments for deployment and later monitoring."
+        },
+        {
+          "field": "issuer_sector",
+          "operation": "replace",
+          "before": "academic",
+          "after": "civil_society"
+        },
+        {
+          "field": "issuer_type",
+          "operation": "replace",
+          "before": "academic_or_research",
+          "after": "ngo_research"
+        },
+        {
+          "field": "lifecycle_stage",
+          "operation": "replace",
+          "before": [
+            "post_deployment"
+          ],
+          "after": [
+            "deployment",
+            "post_deployment"
+          ]
+        },
+        {
+          "field": "stream_note",
+          "operation": "replace",
+          "before": "Provisional: Concrete cyber-inability assurance method connecting risk models, proxy tasks, evaluation settings, and evidence.",
+          "after": "AI-assisted full-text check (2026-10-16), arXiv v1: proposed technical assurance method."
+        },
+        {
+          "field": "url",
+          "operation": "replace",
+          "before": "https://arxiv.org/abs/2411.08088",
+          "after": "https://arxiv.org/abs/2411.08088v1"
+        },
+        {
+          "field": "urldate",
+          "operation": "replace",
+          "before": "2026-04-25",
+          "after": "2026-10-16"
+        },
+        {
+          "field": "version",
+          "operation": "add",
+          "before": null,
+          "after": "1"
+        }
+      ]
+    },
+    {
+      "record_id": "phuong_evaluatingfrontier_2024",
+      "changes": [
+        {
+          "field": "annotation",
+          "operation": "replace",
+          "before": "Use for research writing on frontier AI governance and evaluations. Maps 'Evaluating frontier models for dangerous capabilities' to paper source; risk domains: cyber, bio, cbrn, persuasion; lifecycle: deployment; assurance functions: eval, reporting.",
+          "after": "Developer-run pilot on Gemini 1.0 Ultra, Pro and Nano 3.25B, evaluated in January 2024. Cyber results depend on the tested checkpoints, scaffolds and attempt limits; they do not estimate real-world harm or establish product safety. Appendix B gives preliminary CBRN methods without model-specific results."
+        },
+        {
+          "field": "attestation_relation",
+          "operation": "replace",
+          "before": "author_attested",
+          "after": "self_attested"
+        },
+        {
+          "field": "author",
+          "operation": "replace",
+          "before": "Mary Phuong and Matthew Aitchison and Elliot Catt and Sarah Cogan and Alexandre Kaskasoli and Victoria Krakovna and David Lindner and Matthew Rahtz and Yannis Assael and Sarah Hodkinson and Heidi Howard and Tom Lieberum and Ramana Kumar and Maria Abi Raad and Albert Webson and Lewis Ho and Sharon Lin and Sebastian Farquhar and Marcus Hutter and Gregoire Deletang and Anian Ruoss and Seliem El-Sayed and Sasha Brown and Anca Dragan and Rohin Shah and Allan Dafoe and Toby Shevlane",
+          "after": "Mary Phuong and Matthew Aitchison and Elliot Catt and Sarah Cogan and Alexandre Kaskasoli and Victoria Krakovna and David Lindner and Matthew Rahtz and Yannis Assael and Sarah Hodkinson and Heidi Howard and Tom Lieberum and Ramana Kumar and Maria Abi Raad and Albert Webson and Lewis Ho and Sharon Lin and Sebastian Farquhar and Marcus Hutter and Grégoire Delétang and Anian Ruoss and Seliem El-Sayed and Sasha Brown and Anca Dragan and Rohin Shah and Allan Dafoe and Toby Shevlane"
+        },
+        {
+          "field": "date",
+          "operation": "replace",
+          "before": "2024",
+          "after": "2024-04-05"
+        },
+        {
+          "field": "evidence_independence",
+          "operation": "replace",
+          "before": "author_attested",
+          "after": "self_attested"
+        },
+        {
+          "field": "evidence_note",
+          "operation": "add",
+          "before": null,
+          "after": "arXiv v2 submitted 2024-04-05; PDF cover prints 2024-04-08. Latest arXiv revision listed on 2026-10-16; bounded issuer/author checks found no later publication venue. Company self-evaluation; external forecasts are a separate evidence component. Public Google products do not reproduce the tested internal setup."
+        },
+        {
+          "field": "inclusion_reason",
+          "operation": "replace",
+          "before": "Included as a core paper for frontier AI governance/evals; classified as eval_method with original_research source role; used for evaluation, reporting; lifecycle coverage: deployment; risk domains: cyber, cbrn, persuasion, autonomy; evidence basis: research; function role: direct.",
+          "after": "Technical evaluation methods and observed model-task performance relevant to capability assessment."
+        },
+        {
+          "field": "independence_from",
+          "operation": "replace",
+          "before": "not_independently_verified",
+          "after": "subject_self"
+        },
+        {
+          "field": "issuer_sector",
+          "operation": "replace",
+          "before": "academic",
+          "after": "private"
+        },
+        {
+          "field": "issuer_type",
+          "operation": "replace",
+          "before": "academic_or_research",
+          "after": "company"
+        },
+        {
+          "field": "origdate",
+          "operation": "add",
+          "before": null,
+          "after": "2024-03-20"
+        },
+        {
+          "field": "stream_note",
+          "operation": "replace",
+          "before": "Provisional: Model-level dangerous-capability evaluation.",
+          "after": "AI-assisted full-text check (2026-10-16), arXiv v2: technical evaluation; CBRN coverage is preliminary methodology."
+        },
+        {
+          "field": "threat_vector",
+          "operation": "add",
+          "before": null,
+          "after": [
+            "self_replication"
+          ]
+        },
+        {
+          "field": "url",
+          "operation": "replace",
+          "before": "https://arxiv.org/abs/2403.13793",
+          "after": "https://arxiv.org/abs/2403.13793v2"
+        },
+        {
+          "field": "urldate",
+          "operation": "replace",
+          "before": "2026-04-25",
+          "after": "2026-10-16"
+        },
+        {
+          "field": "version",
+          "operation": "add",
+          "before": null,
+          "after": "2"
+        }
+      ]
+    },
+    {
+      "record_id": "murray_mappingbenchmarkdata_2025",
+      "changes": [
+        {
+          "field": "annotation",
+          "operation": "replace",
+          "before": "Use for research writing on frontier AI governance and evaluations. Maps 'Mapping {AI} benchmark data to quantitative risk estimates through expert elicitation' to benchmark source; assurance functions: eval.",
+          "after": "Expert-elicitation pilot using five existing Cybench tasks to estimate success probabilities for one malware step. A supplied 25% baseline and illustrative Bayesian interpolation underlie the estimates. It measures expert judgments rather than observed attacks; transfer, sample size, scenario interpretation and ordered-task bias limit inference."
+        },
+        {
+          "field": "artifact_type",
+          "operation": "replace",
+          "before": "benchmark",
+          "after": "eval_method"
+        },
+        {
+          "field": "date",
+          "operation": "replace",
+          "before": "2025",
+          "after": "2025-03-10"
+        },
+        {
+          "field": "evidence_note",
+          "operation": "add",
+          "before": null,
+          "after": "Issuer tags use lead institution SaferAI; one coauthor is affiliated with Univ. Rennes/Inria. Probabilities condition on capability access and earlier attack stages. Participant/exclusion mapping in Appendix A is not fully explicit. v2 is the latest listed arXiv revision; bounded official/author checks found no later peer-reviewed version on 2026-10-16."
+        },
+        {
+          "field": "governance_artifact",
+          "operation": "replace",
+          "before": "benchmark",
+          "after": "eval_method"
+        },
+        {
+          "field": "inclusion_reason",
+          "operation": "replace",
+          "before": "Included as a core benchmark for frontier AI governance/evals; classified as benchmark with original_research source role; used for evaluation; evidence basis: research; function role: direct.",
+          "after": "Method for connecting capability evidence to expert estimates of cyber misuse risk."
+        },
+        {
+          "field": "issuer_sector",
+          "operation": "replace",
+          "before": "academic",
+          "after": "civil_society"
+        },
+        {
+          "field": "issuer_type",
+          "operation": "replace",
+          "before": "academic_or_research",
+          "after": "ngo_research"
+        },
+        {
+          "field": "origdate",
+          "operation": "add",
+          "before": null,
+          "after": "2025-03-06"
+        },
+        {
+          "field": "risk_domain",
+          "operation": "replace",
+          "before": [
+            "cyber",
+            "systemic_risk"
+          ],
+          "after": [
+            "cyber",
+            "misuse"
+          ]
+        },
+        {
+          "field": "source_form",
+          "operation": "replace",
+          "before": "benchmark",
+          "after": "paper"
+        },
+        {
+          "field": "stream_note",
+          "operation": "replace",
+          "before": "Provisional: Specific method and pilot study translating benchmark information into expert risk estimates; not validation that benchmark scores equal real-world risk.",
+          "after": "AI-assisted full-text check (2026-10-16), arXiv v2: evaluation/risk-estimation method using Cybench; not a benchmark artifact."
+        },
+        {
+          "field": "url",
+          "operation": "replace",
+          "before": "https://arxiv.org/abs/2503.04299",
+          "after": "https://arxiv.org/abs/2503.04299v2"
+        },
+        {
+          "field": "urldate",
+          "operation": "replace",
+          "before": "2026-04-25",
+          "after": "2026-10-16"
+        },
+        {
+          "field": "version",
+          "operation": "add",
+          "before": null,
+          "after": "2"
+        }
+      ]
+    }
+  ],
+  "version_searches": {
+    "phuong": [
+      {
+        "query": "\"Evaluating Frontier Models for Dangerous Capabilities\" Phuong publication",
+        "engine": "system1",
+        "requested_domains": [
+          "deepmind.google",
+          "research.google",
+          "openreview.net",
+          "proceedings.mlr.press",
+          "neurips.cc"
+        ]
+      },
+      {
+        "query": "\"Evaluating Frontier Models for Dangerous Capabilities\" \"Mary Phuong\" \"publication\" (primary-site domains)",
+        "engine": "system1",
+        "result": "Issuer page and official reproduction repository; no later venue located."
+      },
+      {
+        "query": "\"Evaluating Frontier Models for Dangerous Capabilities\" site:openreview.net",
+        "engine": "system2",
+        "result": "Coauthor profile and citations in other papers; profile direct view challenged."
+      },
+      {
+        "query": "\"Evaluating Frontier Models for Dangerous Capabilities\" site:proceedings.mlr.press",
+        "engine": "system2",
+        "result": "No same-work venue located in combined results."
+      },
+      {
+        "query": "\"Evaluating Frontier Models for Dangerous Capabilities\" \"Mary Phuong\" homepage",
+        "engine": "system2",
+        "result": "Located coauthor Sebastian Farquhar publication list and PDF; list says arXiv."
+      },
+      {
+        "query": "\"Evaluating Frontier Models for Dangerous Capabilities\" site:proceedings.neurips.cc",
+        "engine": "system2",
+        "result": "No same-work venue located in combined results."
+      }
+    ],
+    "frameworks": [
+      {
+        "engine": "system2",
+        "query": "site:openai.com \"Preparedness Framework\" \"2026\""
+      },
+      {
+        "engine": "system2",
+        "query": "site:openai.com \"Preparedness Framework\" \"Version 3\""
+      },
+      {
+        "engine": "system2",
+        "query": "site:deepmind.google \"Frontier Safety Framework\" \"3.1\""
+      },
+      {
+        "engine": "system2",
+        "query": "site:deepmind.google \"Frontier Safety Framework\" \"3.2\""
+      },
+      {
+        "engine": "system1",
+        "query": "\"Preparedness Framework\" \"Version 3\"",
+        "domains": [
+          "openai.com",
+          "cdn.openai.com"
+        ],
+        "recency_days": 365
+      },
+      {
+        "engine": "system1",
+        "query": "\"Frontier Safety Framework\" \"Version 4\"",
+        "domains": [
+          "deepmind.google"
+        ],
+        "recency_days": 365
+      }
+    ],
+    "goemans_murray": {
+      "check_date": "2026-10-16",
+      "scope": "Actual targeted version/publication verification for goemans_safetycasetemplate_2024 and murray_mappingbenchmarkdata_2025",
+      "tool": "mcp__codex_apps__search_service_web_run",
+      "provenance_note": "These exact query strings are copied from tool calls made during this check. Query-level execution timestamps were not recorded. No new searches were performed to create this log.",
+      "search_calls": [
+        {
+          "sequence": 1,
+          "engine": "system1_search_query",
+          "response_length": "long",
+          "queries": [
+            {
+              "record_id": "goemans_safetycasetemplate_2024",
+              "q": "\"Safety case template for frontier AI\" Goemans publication journal",
+              "domains_parameter_used": false,
+              "recency_parameter_used": false
+            },
+            {
+              "record_id": "murray_mappingbenchmarkdata_2025",
+              "q": "\"Mapping AI benchmark data to quantitative risk estimates\" publication Murray",
+              "domains_parameter_used": false,
+              "recency_parameter_used": false
+            }
+          ]
+        },
+        {
+          "sequence": 2,
+          "engine": "system1_search_query",
+          "response_length": "long",
+          "queries": [
+            {
+              "record_id": "goemans_safetycasetemplate_2024",
+              "q": "\"Safety case template for frontier AI\" site:governance.ai",
+              "domains_parameter_used": false,
+              "recency_parameter_used": false,
+              "domain_operators_in_query": [
+                "site:governance.ai"
+              ]
+            },
+            {
+              "record_id": "goemans_safetycasetemplate_2024",
+              "q": "\"Safety case template for frontier AI\" \"Goemans\" journal conference -site:arxiv.org -site:researchgate.net -site:semanticscholar.org",
+              "domains_parameter_used": false,
+              "recency_parameter_used": false,
+              "domain_operators_in_query": [
+                "-site:arxiv.org",
+                "-site:researchgate.net",
+                "-site:semanticscholar.org"
+              ]
+            }
+          ]
+        }
+      ],
+      "version_history_method": "Version histories were read directly from the two arXiv abstract pages. No separate version-history search query was run.",
+      "directly_inspected_publication_pages": [
+        "https://arxiv.org/abs/2411.08088",
+        "https://arxiv.org/abs/2503.04299",
+        "https://www.governance.ai/research-paper/safety-case-template-for-frontier-ai-a-cyber-inability-argument",
+        "https://www.aisi.gov.uk/research/safety-case-template-for-frontier-ai-a-cyber-inability-argument-2",
+        "https://www.safer-ai.org/research/mapping-ai-benchmark-data-to-quantitative-risk-estimates-through-expert-elicitation",
+        "https://henrypapadatos.github.io/publications/"
+      ],
+      "redirect_note": "The Henry Papadatos publication-page request redirected to https://henrypapadatos.com/publications/.",
+      "excluded_from_log": "Earlier searches for the missing project Methods document were a separate task and are not publication/version searches for these papers."
+    }
+  },
+  "search_limit": "Bounded version/publication checks. No later venue found does not establish nonpublication. Existing records, not a systematic literature search, define this review set.",
+  "preservation_limit": "PDF URLs, versions and byte digests identify inspected files. PDFs were intermediate review copies and are not redistributed in this repository. No independent archived copies of mutable issuer pages were verified.",
+  "integrity": {
+    "records": 276,
+    "changed_records": 5,
+    "other_records_unchanged": 271,
+    "citation_keys_added": 0,
+    "citation_keys_removed": 0,
+    "synthesis_stream_changes": 0,
+    "legacy_confidence_changes": 0
+  },
+  "osf_release": "../../releases/stabilization-2026-10-16.md",
+  "validation": [
+    {
+      "command": "python3 scripts/build.py --check",
+      "result": "passed; 276 records, all generated outputs match"
+    },
+    {
+      "command": "python3 scripts/lint_bibliography.py",
+      "result": "passed; 0 failures, 0 warnings"
+    },
+    {
+      "command": "git diff --check",
+      "result": "passed"
+    },
+    {
+      "check": "Compare parsed YAML with the baseline commit and audit before/after values",
+      "result": "passed; 5 records changed, 271 unchanged; all citation keys, streams and confidence values preserved"
+    }
+  ]
+}

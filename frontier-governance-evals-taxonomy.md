@@ -25,7 +25,7 @@ Use YAML string lists for the five controlled multivalue fields: `governance_fun
 | `governance_artifact` | Actual frameworks, requirements, regulations, standards, guidance, commitments, organizational disclosures, and governance portals. | An artifact's existence does not establish implementation, compliance, independent verification, or effectiveness. |
 | `contextual` | Policy analysis, commentary, and supporting research that is neither a technical evaluation or method nor an operational governance artifact. | Useful for interpretation; not automatically direct technical evidence or an operational requirement. |
 
-Current routing is provisional and AI-assisted, based on inherited metadata, titles, and available abstracts. It does not represent renewed full-source verification. A mixed-purpose source keeps one citation identity and one primary route; relevant passages may inform other discussions without creating an additional independent source. Review ambiguous routes before using them in a substantive synthesis.
+Initial routing was provisional and AI-assisted, based on inherited metadata, titles, and available abstracts. Five sources now have dated AI-assisted full-text checks in `stream_note`, documented in the [cyber/deployment report](research/cyber-deployment/source-verification.md); this review does not extend to the remaining records. A mixed-purpose source keeps one citation identity and one primary route; relevant passages may inform other discussions without creating an additional independent source. Review ambiguous routes before using them in a substantive synthesis.
 
 ### Distinctions that matter
 
@@ -68,6 +68,8 @@ Current routing is provisional and AI-assisted, based on inherited metadata, tit
 | `attestation_relation` | Who is attesting to the evidence or claim. | `self_attested`, `issuer_attested`, `author_attested`, `external_analysis`, `regulatory_authority`, `journalistic_reporting`, `community_consensus` |
 | `independence_from` | Whether the source is independent of the subject whose evidence or practice is being described. | `subject_self`, `issuer_self`, `not_independently_verified`, `independent_of_subject`, `regulatory_authority`, `editorial_independence`, `community_consensus` |
 | `evidence_basis` | Broad evidentiary basis. | `research`, `procedural`, `policy`, `legal`, `reference`, `journalistic`, `dataset`, `research_synthesis`, `tooling`, `benchmark`, `commentary` |
+
+For the two mixed-affiliation papers checked on 2026-10-16, scalar issuer tags follow the documented lead institution and its institutional publication page; evidence notes preserve government or academic coaffiliations. This convention does not identify every author affiliation or establish independence.
 
 These dimensions describe the source and its relationship to the subject. They are not interchangeable quality grades. Peer review does not itself establish independence from the evaluated organization; an external issuer does not itself establish independent replication. Inherited values are preserved annotations and should be checked against the actual source before supporting such claims.
 
