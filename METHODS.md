@@ -66,6 +66,31 @@ For the three inspected arXiv papers, `url` pins the version, `date` records tha
 
 For the mixed GovAI/AISI and SaferAI/academic papers, scalar issuer tags use the documented lead institution, supported by both affiliations and institutional publication pages. Evidence notes retain the other institutions. This is a stated coding convention for these records, not a claim of exclusive authorship or independent verification. Coverage tags describe what a document addresses; they do not mean every tagged domain has empirical results or every discussed safeguard is mandatory.
 
+## Longitudinal cyber commitment pilot: 2026-10-17 UTC
+
+The [cyber research guide](research/cyber-deployment/README.md) introduces a
+bounded comparison of one model-weight security recommendation in two existing
+DeepMind framework editions. Companion YAML records source observations and
+scoped policy provisions; a separate build generates the readable history.
+The bibliography remains at 276 records. This pilot does not revise the earlier
+five-source audit or reclassify other entries.
+
+The unit is a scoped provision, linked across observations by a stable ID.
+Publication, actual inspection, and any source-claimed application date have
+different meanings. Modality, qualifications, source rationale, exact locators,
+and the analyst's comparison are retained. Absence from an inspected passage is
+not coded as withdrawal. The current format accepts policy statements only;
+implementation and effectiveness require separate attributed evidence and have
+not been assessed in this pilot.
+
+AI assistants compared specified primary passages, including definitions and
+general qualifications. This was targeted document analysis, not a systematic
+search, independent human coding, experimental reproduction, or compliance
+audit. Both observations disclose a preservation gap: edition-specific issuer
+URLs were inspected, but no new source-byte capture or independent archive was
+retained for these observations. Existing earlier inspection hashes keep their
+original provenance.
+
 ## Validation, releases, and AI assistance
 
 Run `python3 scripts/build.py` to generate the outputs and `python3 scripts/build.py --check` to check them. Automated validation addresses data structure and export consistency. Successful checks do not establish source accuracy, evidence quality, comprehensive coverage, or scholarly validity. Tag distributions describe this collection rather than the prevalence of findings in the field.

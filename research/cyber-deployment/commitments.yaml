@@ -1,0 +1,58 @@
+schema_version: cyber-commitments-v1
+observations:
+  - id: deepmind_cyber_weights_fsf_3_0
+    commitment_id: deepmind_cyber_ccl_model_weight_security
+    issuer: Google DeepMind
+    snapshot_id: deepmind_fsf_3_0_observed_2026_10_17
+    evidence_kind: policy_statement
+    modality: recommendation
+    scope: Model-weight security for models reaching the cyber critical capability level.
+    trigger: >-
+      Cyber uplift level 1: model assistance supplies sufficient uplift in
+      high-impact cyber attacks to produce additional expected harm at severe
+      scale, relative to a baseline without generative AI.
+    action: Recommends Security Level 2 (SL2).
+    qualifications: >-
+      The issuer may judge other security adequate. Recommendations can change
+      with comparable models' capabilities and security, or the assessed
+      benefits of releasing weights. These are conditional security goals.
+    source_rationale: >-
+      The issuer expects possible automated cyber defense and societal
+      adaptation following exfiltration to weigh against higher security
+      levels and their innovation costs, despite potential interest from
+      well-resourced state actors. This is the issuer's risk judgment.
+    locator: >-
+      Section 2.2.2, Table 2.2.2.a, PDF p. 10; sections 1.6 (p. 7),
+      2.1.1 (p. 8), 2.2 (p. 9); baseline footnote 10 (p. 10).
+    change_type: observed
+  - id: deepmind_cyber_weights_fsf_3_1
+    commitment_id: deepmind_cyber_ccl_model_weight_security
+    issuer: Google DeepMind
+    snapshot_id: deepmind_fsf_3_1_observed_2026_10_17
+    evidence_kind: policy_statement
+    modality: recommendation
+    scope: Model-weight security for models reaching the cyber critical capability level.
+    trigger: >-
+      Cyber uplift level 1: model assistance supplies sufficient uplift in
+      high-impact cyber attacks to produce additional expected harm at severe
+      scale, relative to a baseline without generative AI.
+    action: Recommends Security Level 2+ (SL2+).
+    qualifications: >-
+      The issuer may judge other security adequate. Comparable models and
+      benefits of releasing weights remain considerations. Additional SL2+
+      controls are illustrative, not a mandatory checklist.
+    source_rationale: >-
+      The issuer expects possible automated cyber defense and societal
+      adaptation following exfiltration to weigh against higher security
+      levels and their innovation costs, despite potential interest from
+      well-resourced state actors. This is the issuer's risk judgment.
+    locator: >-
+      Section 2.2.2, Table 2.2.2.a, PDF p. 12; sections 1.3.5 (p. 7),
+      2.1.1 (p. 9), 2.2 (p. 11), 5.3 (p. 17); baseline footnote 8 (p. 11).
+    change_type: revised
+    previous_observation_id: deepmind_cyber_weights_fsf_3_0
+    change_note: >-
+      The recommended level changes from SL2 to SL2+. The cyber CCL and
+      rationale retain their wording in the compared tables; other framework
+      provisions also changed. This records a documentary revision, not a
+      measured improvement in security or proof of model-specific implementation.

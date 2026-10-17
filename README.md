@@ -20,6 +20,7 @@ This stabilization uses the recovered 276-record bibliography. All 218 citation 
 | [provenance/](provenance/) | Frozen input files, checksums, and the record-change report |
 | [intake.csv](intake.csv) | Actual discoveries and dated review decisions, including later checks of legacy records |
 | [Cyber source verification](research/cyber-deployment/source-verification.md) | Five-source claim, classification, and version check for the next research output |
+| [Cyber commitment history](research/cyber-deployment/README.md) | Small longitudinal pilot: source-linked policy observations in YAML and a generated history |
 | [Stabilization release](releases/stabilization-2026-10-16.md) | Exact merged release identity and OSF synchronization status |
 | [evals-datamodel.dbx](evals-datamodel.dbx) | Custom BibLaTeX data model for the exported fields |
 
@@ -36,6 +37,13 @@ python3 -m unittest discover -s tests -v
 
 The build validates the YAML records, regenerates keyword mirrors, and writes the complete bibliography and disjoint stream exports. `--check` verifies the same outputs without changing files and fails if an export is missing or stale. Validation checks metadata consistency and export integrity; source findings still require scholarly assessment.
 
+The [cyber commitment pilot](research/cyber-deployment/README.md) uses companion
+YAML linked to the bibliography. Run `python3 scripts/build_commitments.py --write`
+to regenerate its Markdown history and `python3 scripts/build_commitments.py --check`
+to validate the data and detect a stale history. These annotations describe
+scoped policy statements; implementation and effectiveness require separate
+evidence.
+
 ## Research streams
 
 - **Technical evaluations:** evaluations, benchmarks, datasets, and technical methods relevant to assessing systems or safeguards. This category includes proposed methods; membership does not imply an empirical result.
@@ -51,7 +59,7 @@ Each record has one primary `synthesis_stream` and a `stream_note`. A mixed-purp
 3. Edit `records.yaml`; use string lists for the schema's multivalue fields and strings for other fields. Preserve internal BibTeX/TeX braces and commands. Do not add a `keywords` field; it is derived.
 4. Record the decision and uncertainty, then regenerate and check the exports.
 
-The stabilization log began empty because that release added no newly discovered sources. It now records five later reviews on their actual review date, with legacy discovery dates left blank. The 58 keys absent from the old GitHub version were already in the recovered bibliography; no original screening events have been reconstructed.
+The stabilization log began empty because that release added no newly discovered sources. It now records five later source reviews and two scoped policy observations on their actual review dates, with legacy discovery dates left blank. The 58 keys absent from the old GitHub version were already in the recovered bibliography; no original screening events have been reconstructed.
 
 ## Releases and citation
 
