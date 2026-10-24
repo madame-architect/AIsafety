@@ -1,5 +1,7 @@
 """Capture integrity and release/deposit mismatch regression tests (no network)."""
 from copy import deepcopy
+from contextlib import redirect_stdout
+from io import StringIO
 import json
 from pathlib import Path
 import shutil
@@ -8,6 +10,9 @@ import sys
 import tempfile
 import unittest
 from unittest.mock import patch
+from urllib.error import HTTPError, URLError
+
+import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
@@ -28,16 +33,92 @@ class CaptureTests(unittest.TestCase):
         with patch.object(capture_source, 'retrieve', side_effect=[(payload, 'application/pdf'),
                                                                   (payload.replace(b'\r\n', b'\n'), 'application/pdf')]):
             with self.assertRaisesRegex(ValueError, 'does not match'):
-                capture_source.capture('https://example.test/paper.pdf', 'https://archive.test/paper.pdf')
+                capture_source.capture('https://example.test/paper.pdf', 'https://archive.test/paper.pdf',
+                                       compare_original=True)
 
     def test_html_hashes_archive_representation_not_live_page(self):
-        live = b'<html>Current wording</html>'
         historical = b'<html>Archived wording</html>'
-        with patch.object(capture_source, 'retrieve', side_effect=[(live, 'text/html'), (historical, 'text/html')]):
+        with patch.object(capture_source, 'retrieve', return_value=(historical, 'text/html')) as retrieve:
             data, metadata = capture_source.capture('https://example.test/policy', 'https://archive.test/20260507/policy')
+        retrieve.assert_called_once_with('https://archive.test/20260507/policy')
         self.assertEqual(data, historical)
         self.assertEqual(metadata['sha256'], release.digest(historical)['sha256'])
         self.assertIsNotNone(metadata['archive_checked_on'])
+        self.assertIn('original was not retrieved or compared', metadata['capture_basis'])
+
+    def test_archive_recovery_does_not_contact_missing_original(self):
+        original = 'https://example.test/disappeared'
+        archive = 'https://archive.test/capture/disappeared'
+        failures = [HTTPError(original, 404, 'Not Found', None, None),
+                    HTTPError(original, 403, 'Forbidden', None, None),
+                    URLError('host no longer resolves')]
+        for payload, mime in [(b'%PDF-1.7\r\n\x00\xffarchived bytes', 'application/pdf'),
+                              (b'<html>Archived policy</html>', 'text/html')]:
+            for failure in failures:
+                with self.subTest(mime=mime, failure=failure):
+                    def retrieve(url):
+                        if url == original:
+                            raise failure
+                        self.assertEqual(url, archive)
+                        return payload, mime
+                    with patch.object(capture_source, 'retrieve', side_effect=retrieve) as request:
+                        data, metadata = capture_source.capture(original, archive)
+                    request.assert_called_once_with(archive)
+                    self.assertEqual(data, payload)
+                    self.assertEqual(metadata['original_url'], original)
+                    self.assertEqual(metadata['archive_url'], archive)
+                    self.assertEqual(metadata['sha256'], release.digest(payload)['sha256'])
+                    self.assertEqual(metadata['byte_length'], len(payload))
+
+    def test_original_comparison_is_explicit_and_requires_matching_pdfs(self):
+        payload = b'%PDF-1.7\nArchived document'
+        with patch.object(capture_source, 'retrieve', return_value=(payload, 'application/pdf')) as request:
+            _, metadata = capture_source.capture('https://example.test/paper.pdf',
+                                                  'https://archive.test/paper.pdf', compare_original=True)
+        self.assertEqual([args.args[0] for args in request.call_args_list],
+                         ['https://archive.test/paper.pdf', 'https://example.test/paper.pdf'])
+        self.assertIn('matched byte for byte', metadata['capture_basis'])
+        with patch.object(capture_source, 'retrieve') as request:
+            with self.assertRaisesRegex(ValueError, 'requires --archive-url'):
+                capture_source.capture('https://example.test/paper.pdf', compare_original=True)
+            with self.assertRaisesRegex(ValueError, 'distinct'):
+                capture_source.capture('https://example.test/paper.pdf', 'https://example.test/paper.pdf')
+            request.assert_not_called()
+        with patch.object(capture_source, 'retrieve', return_value=(b'<html>Policy</html>', 'text/html')):
+            with self.assertRaisesRegex(ValueError, 'only verifies PDF'):
+                capture_source.capture('https://example.test/policy', 'https://archive.test/policy',
+                                       compare_original=True)
+
+    def test_cli_retains_archive_bytes_and_emits_valid_evidence_draft(self):
+        for payload, mime, extension in [(b'%PDF-1.7\r\n\x00\xffretained PDF', 'application/pdf', '.pdf'),
+                                          (b'<html>Retained policy</html>', 'text/html', '.html')]:
+            with self.subTest(mime=mime), tempfile.TemporaryDirectory() as directory:
+                root = Path(directory)
+                arguments = ['capture_source.py', '--root', directory,
+                             '--original-url', 'https://example.test/disappeared',
+                             '--archive-url', 'https://archive.test/capture/disappeared',
+                             '--id', 'recovered_policy', '--record-id', 'policy_fixture',
+                             '--locator-basis', 'Locations in the retained archive representation',
+                             '--inspection-scope', 'Archived policy provision',
+                             '--preservation-note', 'Original unavailable; archive inspected']
+                output = StringIO()
+                with patch.object(sys, 'argv', arguments), redirect_stdout(output), \
+                        patch.object(capture_source, 'retrieve', return_value=(payload, mime)) as request:
+                    self.assertEqual(capture_source.main(), 0)
+                request.assert_called_once_with('https://archive.test/capture/disappeared')
+                item = yaml.safe_load(output.getvalue())
+                self.assertEqual((root / item['capture_path']).read_bytes(), payload)
+                self.assertTrue(item['capture_path'].endswith(extension))
+                self.assertEqual(item['sha256'], release.digest(payload)['sha256'])
+                self.assertIn('original was not retrieved or compared', item['capture_basis'])
+                research = root / build_commitments.DIRECTORY
+                research.mkdir(parents=True)
+                (research / 'evidence.yaml').write_text(yaml.safe_dump({
+                    'schema_version': 'cyber-commitment-evidence-v2', 'snapshots': [item]}), encoding='utf-8')
+                snapshots = build_commitments.read_items(root, 'evidence.yaml',
+                    'cyber-commitment-evidence-v2', 'snapshots',
+                    build_commitments.SNAPSHOT_REQUIRED, build_commitments.SNAPSHOT_OPTIONAL)
+                self.assertEqual(snapshots['recovered_policy'], item)
 
     def test_error_page_is_not_pdf_and_legacy_exception_is_frozen(self):
         with self.assertRaisesRegex(ValueError, 'expected PDF'):

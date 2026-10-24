@@ -37,8 +37,11 @@ which bytes were inspected earlier.
 1. Check archival and redistribution permissions. Use lawful archives and
    respect access controls and archive restrictions.
 2. For PDFs, retain and hash the exact response bytes before extraction,
-   optimization, OCR or rewriting. An archive PDF must match those bytes
-   exactly to share the digest.
+   optimization, OCR or rewriting. An archive PDF can be captured independently
+   when the original is unavailable. Its digest identifies the archived bytes;
+   it does not prove identity with an earlier inspection or the original.
+   If comparing a live original, require an exact byte match before claiming
+   that the two representations share a digest.
 3. For mutable HTML, preserve a capture-specific archive where feasible. Hash
    the actual saved representation, including any archive rewriting. Check
    completeness and record its relationship to the original. A current URL,
@@ -56,8 +59,13 @@ which bytes were inspected earlier.
 `scripts/capture_source.py` saves content-addressed bytes under ignored
 `.source-captures/` and prints a YAML draft. It does not create a remote
 archive or certify content. Supply an existing capture-specific archive URL,
-or explain why archiving is unavailable. For HTML, the saved/hash target is
-the archive response when supplied. For PDFs, source and archive must match.
+or explain why archiving is unavailable. When an archive URL is supplied, the
+command retrieves and hashes that representation directly, for both PDFs and
+HTML, without contacting the original URL. It preserves `original_url` as the
+source identity and emits `capture_basis` explaining which bytes were retained
+and whether the original was compared. The history displays that explanation.
+`retrieved_at` is the actual archive retrieval time, not its historical capture
+date. Inspect the archive's edition and completeness separately.
 
 ```bash
 python3 scripts/capture_source.py \
@@ -67,7 +75,7 @@ python3 scripts/capture_source.py \
   --published-on YYYY-MM-DD --version-claim 'Issuer version label' \
   --locator-basis 'One-based PDF viewer pages, cover included' \
   --inspection-scope 'Reviewed sections and relevant dependencies' \
-  --preservation-note 'Exact issuer PDF bytes; archive compared byte for byte'
+  --preservation-note 'Archived PDF inspected; historical byte identity unverified'
 ```
 
 Replace the placeholder URLs, IDs and dates with actual inspected values. For
@@ -75,6 +83,10 @@ an unavailable archive, replace `--archive-url` with
 `--archive-unavailable-reason 'Actual legal or technical reason'`.
 The draft's `observed_on` defaults to retrieval day; use the actual inspection
 date if later. Keep the retrieval timestamp unchanged.
+When a live original is available and byte-equivalence is needed, add
+`--compare-original`. This optional PDF check fails if the original cannot be
+retrieved or differs; it is never required for archive recovery. Omit it for
+HTML, whose archival representation may legitimately differ from the live page.
 
 Preserve local captures in durable storage outside Git when redistribution is
 inappropriate. Large copyrighted PDFs need not enter Git: retain checked stable

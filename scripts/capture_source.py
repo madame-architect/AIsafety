@@ -4,6 +4,8 @@
 PDF digests cover the exact retrieved entity body, before parsing or rewriting.
 HTML digests cover the saved representation (archive response when supplied).
 Archive URLs must be capture-specific, not live URLs or archive search pages.
+An archive can be captured without contacting the original URL. PDF comparison
+with the original is a separate, explicitly requested check.
 The researcher still checks edition identity, archive completeness and locators.
 """
 from __future__ import annotations
@@ -31,34 +33,45 @@ def retrieve(url: str) -> tuple[bytes, str]:
         return response.read(), response.headers.get_content_type()
 
 
-def capture(original_url: str, archive_url: str | None = None) -> tuple[bytes, dict]:
-    data, mime = retrieve(original_url)
-    check_payload(data, mime)
+def capture(original_url: str, archive_url: str | None = None, *,
+            compare_original: bool = False) -> tuple[bytes, dict]:
+    check_url(original_url, 'original URL')
+    if compare_original and not archive_url:
+        raise ValueError('--compare-original requires --archive-url')
     checked = None
     if archive_url:
         if archive_url == original_url:
             raise ValueError('an archive must be distinct from the live source URL')
-        archived, archive_mime = retrieve(archive_url)
-        check_payload(archived, archive_mime)
-        if mime == 'application/pdf':
-            if data != archived:
+        # The archived representation is independently retrievable even when
+        # the original disappears, changes format or denies access.
+        data, mime = retrieve(archive_url)
+        check_payload(data, mime)
+        basis = 'Archive response bytes; original was not retrieved or compared.'
+        if compare_original:
+            if mime != 'application/pdf':
+                raise ValueError('--compare-original only verifies PDF byte identity')
+            original, original_mime = retrieve(original_url)
+            check_payload(original, original_mime)
+            if original_mime != 'application/pdf' or data != original:
                 raise ValueError('archive PDF does not match the exact retrieved source bytes')
-        else:
-            # Hash and retain the actual archive response, not today's live HTML.
-            if archive_mime not in {'text/html', 'application/xhtml+xml'}:
-                raise ValueError('HTML archive must supply an HTML representation')
-            data, mime = archived, archive_mime
+            basis = 'Archive PDF bytes; retrieved original PDF matched byte for byte.'
         checked = datetime.now(timezone.utc).date().isoformat()
+    else:
+        data, mime = retrieve(original_url)
+        check_payload(data, mime)
+        basis = 'Original response bytes; no archive comparison was performed.'
     now = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace('+00:00', 'Z')
     return data, dict(original_url=original_url, retrieved_at=now, archive_url=archive_url,
                       archive_checked_on=checked, sha256=hashlib.sha256(data).hexdigest(),
-                      byte_length=len(data), mime_type=mime)
+                      byte_length=len(data), mime_type=mime, capture_basis=basis)
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--original-url', required=True)
     parser.add_argument('--archive-url')
+    parser.add_argument('--compare-original', action='store_true',
+                        help='Also retrieve the original and require byte-identical PDFs')
     parser.add_argument('--archive-unavailable-reason')
     parser.add_argument('--id', required=True)
     parser.add_argument('--record-id', required=True)
@@ -72,7 +85,8 @@ def main() -> int:
     try:
         if not args.archive_url and not args.archive_unavailable_reason:
             raise ValueError('supply --archive-url or explain why archival capture is unavailable')
-        data, metadata = capture(args.original_url, args.archive_url)
+        data, metadata = capture(args.original_url, args.archive_url,
+                                 compare_original=args.compare_original)
         extension = '.pdf' if metadata['mime_type'] == 'application/pdf' else '.html'
         relative = Path('.source-captures') / (metadata['sha256'] + extension)
         item = dict(id=args.id, record_id=args.record_id, source_url=args.original_url,

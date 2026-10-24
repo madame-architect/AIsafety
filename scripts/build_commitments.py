@@ -28,7 +28,7 @@ import source_provenance as provenance
 DIRECTORY = Path("research/cyber-deployment")
 OUTPUT = DIRECTORY / "commitment-history.md"
 SNAPSHOT_REQUIRED = {"id", "record_id", "source_url", "observed_on", "inspection_scope", "preservation_note"} | provenance.FIELDS
-SNAPSHOT_OPTIONAL = {"capture_path", "archive_unavailable_reason"}
+SNAPSHOT_OPTIONAL = {"capture_path", "capture_basis", "archive_unavailable_reason"}
 OBSERVATION_REQUIRED = {
     "id", "commitment_id", "snapshot_id", "issuer", "evidence_kind", "modality",
     "scope", "trigger", "action", "qualifications", "locator", "change_type",
@@ -278,6 +278,8 @@ def generate_history(root: Path) -> tuple[str, dict[str, int]]:
                           f"(checked {snapshot['archive_checked_on']}).", ""])
         else:
             lines.extend(["**Checked archive:** Not recorded.", ""])
+        if snapshot.get('capture_basis'):
+            lines.extend([f"**Capture basis:** {display(snapshot['capture_basis'])}", ""])
         if snapshot.get('archive_unavailable_reason'):
             lines.extend([f"**Archive limitation:** {display(snapshot['archive_unavailable_reason'])}", ""])
     lines.append("Source URLs and recorded digests do not themselves guarantee future retrieval. "
