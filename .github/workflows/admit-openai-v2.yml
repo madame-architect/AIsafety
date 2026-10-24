@@ -1,0 +1,33 @@
+name: Admit OpenAI Preparedness v2 history
+on:
+  push:
+    branches:
+      - cyber-history-bibliography-integration-2026-10-24
+    paths:
+      - scripts/admit_openai_preparedness_v2.py
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  admit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: cyber-history-bibliography-integration-2026-10-24
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements.txt
+      - run: python scripts/admit_openai_preparedness_v2.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: openai-v2-source-capture
+          path: .source-captures/
+          retention-days: 30
+      - name: Commit authoritative observations and generated views
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add research/cyber-deployment/evidence.yaml research/cyber-deployment/commitments.yaml research/cyber-deployment/dataset-links.yaml research/cyber-deployment/commitment-history.md research/cyber-deployment/longitudinal-map.md
+          git diff --cached --quiet || (git commit -m "Admit captured OpenAI Preparedness v2 cyber provisions" && git push)
