@@ -87,6 +87,6 @@ Validation checks structure, identifiers, cross-file references, chronological a
 
 ## Current scope
 
-The commitment dataset currently contains one DeepMind provision observed across two framework editions. The benchmark-to-risk dataset contains one bounded research round, six stable assumptions, six admitted sources, and six evidence observations.
+The commitment dataset contains six scoped provisions: one DeepMind provision observed across two editions and five OpenAI Preparedness Framework v2 provisions. These are policy statements, not proof of implementation. The benchmark-to-risk dataset contains one bounded research round, six stable assumptions, six admitted sources, and six evidence observations. OpenAI v2 has a retained SHA-256 PDF capture in the associated CI artifact, but no independently verified permanent archive; DeepMind's two historical source captures remain explicitly missing.
 
 The next substantive expansion should add provider commitment histories and empirical sources only when their versions, locators, preservation status, and relationship to existing IDs are explicit. Compare within an issuer before normalizing threshold names across organizations.
