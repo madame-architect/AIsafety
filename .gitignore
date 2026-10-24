@@ -8,3 +8,6 @@ __pycache__/
 *.blg
 *.log
 *.run.xml
+.source-captures/
+dist/
+

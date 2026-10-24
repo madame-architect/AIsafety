@@ -65,10 +65,19 @@ The stabilization log began empty because that release added no newly discovered
 
 GitHub is the working project. The associated [OSF project](https://osf.io/9ks5m/) is intended for matching versioned research deposits. A GitHub update does not automatically update OSF. The project page returned a scheduled-maintenance notice on 2026-10-16, preventing comparison or upload. The [release note and manifest](releases/stabilization-2026-10-16.md) identify the exact merged stabilization package prepared for deposit; synchronization remains unconfirmed.
 
-For a matching deposit, use the ZIP archive of the exact reviewed Git commit and record that commit in the OSF version description. Retain the `provenance/` directory so the import can be inspected. To reference this collection, include its title, maintainer (Cassandra Ansara), revision date, and the exact commit or deposited version. Cite original publications directly for their findings.
+For the next release, follow the [release and OSF deposit protocol](releases/README.md).
+It binds the exact tagged commit, authoritative YAML, generated outputs and hashes
+to a deterministic release ZIP, then records the verified GitHub asset and OSF
+object/version identifiers. A merge, tag or upload receipt alone does not confirm
+OSF synchronization. The two initial cyber snapshots retain their disclosed
+capture gaps; new observations require the [source capture fields](provenance/source-capture.md).
+To reference this collection, include its title, maintainer (Cassandra Ansara),
+revision date, and exact commit or deposited version. Cite original publications
+directly for their findings.
 
 Collection stabilization was merged in [PR #13](https://github.com/madame-architect/AIsafety/pull/13). The next research focus is how cyber capability evidence informs deployment safeguards. The targeted five-source check corrects classifications and records version qualifications; it adds no bibliography records and does not reproduce experiments. See [METHODS.md](METHODS.md) for AI assistance and inspection limits.
 
 ## License
 
 The repository includes an [MIT license](LICENSE). Rights in quoted abstracts and other third-party source material remain with their respective rights holders.
+

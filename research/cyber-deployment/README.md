@@ -71,19 +71,24 @@ selection or company-wide coverage.
    `observed_on` describes our actual inspection, in UTC. Optional
    `claimed_application_on` records only a source-attributed application date
    and requires an explanation. An old page's publication date does not date
-   a later note added to it. Unknown dates remain absent, and partial
-   publication dates retain their known precision.
-5. **Separate kinds of evidence.** Version 1 accepts `policy_statement` only.
+   a later note added to it. In evidence v2, required unknown publication dates
+   are explicit nulls; partial publication dates retain their known precision.
+   `retrieved_at` records actual byte retrieval with a full UTC timestamp.
+5. **Separate kinds of evidence.** The policy-observation format accepts `policy_statement` only.
    A later implementation report or effectiveness study must be admitted as
    its own source evidence and linked to the provision in a future extension.
    It must not silently replace the earlier policy statement. A claimed
    application date does not verify application.
-6. **Record preservation honestly.** Retain a checked archive or source bytes
-   and a digest when available; otherwise describe the gap. A digest identifies
-   bytes but does not make them retrievable. These first observations use
-   edition-specific URLs and disclose that no new byte capture or independent
-   archive was retained. Optional archive fields require an actual check date;
-   the validator checks their structure, not the remote archive's contents.
+6. **Capture provenance for every new observation.** Evidence v2 requires
+   `original_url`, `retrieved_at`, `archive_url`, `archive_checked_on`, `sha256`,
+   `byte_length`, `mime_type`, `published_on`, `version_claim`, and `locator_basis`.
+   Hash exact retrieved PDF bytes or the retained HTML representation; preserve
+   capture-specific HTML archives where legally and technically feasible.
+   Missing archives require an explicit reason and remain a release limitation.
+   The two first observations are frozen `legacy_uncaptured` exceptions with
+   null capture fields; a later retrieval cannot establish their historical
+   bytes. See the [capture procedure](../../provenance/source-capture.md).
+   Structure and digest checks do not independently authenticate an archive.
 7. **Keep history inspectable.** Add new observations for later source states.
    Correct an extraction error in version control with a reason; do not turn
    the correction into an invented policy-change event. Bibliographic metadata
@@ -134,3 +139,7 @@ declare its issuer coverage, sources, cadence, and handling of missed captures.
 
 OSF synchronization remains the separately documented release task. A local
 research update or a GitHub merge does not establish a matching OSF deposit.
+The [release protocol](../../releases/README.md) requires a tagged GitHub release,
+an exact-byte OSF deposit, and object/version identifiers and hashes in the
+external release manifest before synchronization can be confirmed.
+

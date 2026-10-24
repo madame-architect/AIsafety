@@ -1,6 +1,6 @@
 # Methods
 
-**Frontier AI Governance Evals — v3; reconstructed account, 2026-10-16**
+**Frontier AI Governance Evals - v3; reconstructed account, 2026-10-16**
 
 ## Purpose and status
 
@@ -54,7 +54,11 @@ Future additions use a small intake log. These procedures apply prospectively an
 4. Record inclusion, exclusion, or deferral with a short reason and unresolved questions. Inclusion requires a stated connection to the collection's scope, not agreement with the conclusions.
 5. Record supported annotations, validate the records, and regenerate the export.
 
-For changing documents, retain the version or publication date when available, the actual access date, and a usable archive URL if one has been checked. Otherwise document the preservation gap. Later reviews of legacy entries can use the same lightweight log with their actual review dates.
+For changing documents, record version/publication claims and actual access dates.
+Every new documentary observation must follow the [source capture procedure](provenance/source-capture.md),
+including exact-byte provenance and a checked archival representation where
+legally and technically feasible. Bibliographic metadata alone does not establish
+a historical snapshot. Later reviews of legacy entries retain actual review dates.
 
 ## Targeted source review: 2026-10-16
 
@@ -91,6 +95,30 @@ URLs were inspected, but no new source-byte capture or independent archive was
 retained for these observations. Existing earlier inspection hashes keep their
 original provenance.
 
+## Prospective capture and release protocol: 2026-10-24
+
+Evidence v2 requires `original_url`, `retrieved_at`, `archive_url`,
+`archive_checked_on`, `sha256`, `byte_length`, `mime_type`, `published_on`,
+`version_claim`, and `locator_basis` for every new source observation. Unknown
+publication/version claims remain null. Missing archives require a specific
+explanation. Hash exact retrieved PDF bytes or the preserved HTML representation;
+keep the current source location distinct from a historical capture.
+
+The two original pilot records are explicitly frozen as `legacy_uncaptured`,
+with unavailable capture fields null. No historical hash or archive has been
+invented, and no new retrieval is attributed to their 2026-10-17 inspection.
+The regenerated history exposes these fields and limitations. This migration
+changes preservation structure, not the extracted policy provisions or the
+276-record bibliography. Implementation and effectiveness remain unassessed.
+
+The [release protocol](releases/README.md) binds an exact tagged commit and all
+payload files, including authoritative YAML and generated outputs, to SHA-256
+and byte lengths. GitHub publication and OSF deposit have separate byte-verified
+receipts. OSF verification records actual project/object/version identifiers;
+a GitHub merge or successful local build never establishes synchronization.
+The capture and release tooling and tests were developed with AI assistance;
+mocked network tests do not establish a live archive or OSF deposit.
+
 ## Validation, releases, and AI assistance
 
 Run `python3 scripts/build.py` to generate the outputs and `python3 scripts/build.py --check` to check them. Automated validation addresses data structure and export consistency. Successful checks do not establish source accuracy, evidence quality, comprehensive coverage, or scholarly validity. Tag distributions describe this collection rather than the prevalence of findings in the field.
@@ -98,3 +126,4 @@ Run `python3 scripts/build.py` to generate the outputs and `python3 scripts/buil
 GitHub pull requests prepare changes for maintainer review. OSF synchronization is a separate release task: on 2026-10-16 the project page returned a maintenance notice, so no comparison or upload was completed. The [prepared deposit](releases/stabilization-2026-10-16.md) uses the already merged stabilization commit, excluding this later source-review update. Synchronization must be confirmed against deposited files before being reported as complete.
 
 AI assisted the migration, provisional routing, code, this reconstructed document, and the separately logged targeted source review. A complete retrospective list of models and prompts is unavailable and is not invented. The maintainer is responsible for accepting releases and research claims. An AI-assisted second pass is not independent human coding. Future syntheses should document the source inspection, review, and AI assistance actually performed.
+

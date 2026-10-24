@@ -1,40 +1,49 @@
-schema_version: cyber-commitment-evidence-v1
+schema_version: cyber-commitment-evidence-v2
 snapshots:
-  - id: deepmind_fsf_3_0_observed_2026_10_17
-    record_id: deepmind_frontiersafetyv3_2025
-    source_url: https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/strengthening-our-frontier-safety-framework/frontier-safety-framework_3.pdf
-    version: '3.0'
-    published_on: '2025-09-22'
-    observed_on: '2026-10-17'
-    inspection_scope: >-
-      AI-assisted inspection of the primary PDF cover, sections 1.4, 1.6,
-      2.1.1, 2.2 and 2.2.2, including the cyber table and its qualifications.
-      Page locators use one-based PDF viewer pages, cover included.
-      Observation dates in this file use UTC. This is a scoped clause review,
-      not a new full-source classification review or independent human coding.
-    preservation_note: >-
-      Version-specific issuer PDF URL inspected through primary-document
-      retrieval. No new PDF byte capture or verified independent archive is
-      retained for this observation; no checksum is recorded. The historical
-      publication date is not a historical capture date. A URL alone does not
-      guarantee that the original bytes will remain retrievable.
-  - id: deepmind_fsf_3_1_observed_2026_10_17
-    record_id: deepmind_frontiersafetyv31_2026
-    source_url: https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/strengthening-our-frontier-safety-framework/frontier-safety-framework_3-1.pdf
-    version: '3.1'
-    published_on: '2026-04-17'
-    observed_on: '2026-10-17'
-    inspection_scope: >-
-      AI-assisted inspection of the primary PDF cover, sections 1.3.3,
-      1.3.5, 2.1.1, 2.2, 2.2.2 and 5.3, including the cyber table,
-      security-level definition, qualifications and version history.
-      Page locators use one-based PDF viewer pages, cover included.
-      Observation dates in this file use UTC. This scoped comparison extends
-      the earlier source review; it is not independent human coding.
-    preservation_note: >-
-      Version-specific issuer PDF URL inspected through primary-document
-      retrieval. No new PDF byte capture or verified independent archive is
-      retained for this observation; no checksum is recorded. The earlier
-      cached PDF and its hash in source-verification.md belong to that earlier
-      inspection and are not presented as a fresh capture. The historical
-      publication date is not a historical capture date.
+- id: deepmind_fsf_3_0_observed_2026_10_17
+  record_id: deepmind_frontiersafetyv3_2025
+  source_url: https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/strengthening-our-frontier-safety-framework/frontier-safety-framework_3.pdf
+  published_on: '2025-09-22'
+  observed_on: '2026-10-17'
+  inspection_scope: AI-assisted inspection of the primary PDF cover, sections 1.4, 1.6, 2.1.1, 2.2 and
+    2.2.2, including the cyber table and its qualifications. Page locators use one-based PDF viewer pages,
+    cover included. Observation dates in this file use UTC. This is a scoped clause review, not a new
+    full-source classification review or independent human coding.
+  preservation_note: Version-specific issuer PDF URL inspected through primary-document retrieval. No
+    new PDF byte capture or verified independent archive is retained for this observation; no checksum
+    is recorded. The historical publication date is not a historical capture date. A URL alone does not
+    guarantee that the original bytes will remain retrievable.
+  original_url: https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/strengthening-our-frontier-safety-framework/frontier-safety-framework_3.pdf
+  retrieved_at: null
+  archive_url: null
+  archive_checked_on: null
+  sha256: null
+  byte_length: null
+  mime_type: null
+  version_claim: '3.0'
+  locator_basis: One-based PDF viewer pages, cover included; section and table labels as printed.
+  preservation_status: legacy_uncaptured
+- id: deepmind_fsf_3_1_observed_2026_10_17
+  record_id: deepmind_frontiersafetyv31_2026
+  source_url: https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/strengthening-our-frontier-safety-framework/frontier-safety-framework_3-1.pdf
+  published_on: '2026-04-17'
+  observed_on: '2026-10-17'
+  inspection_scope: AI-assisted inspection of the primary PDF cover, sections 1.3.3, 1.3.5, 2.1.1, 2.2,
+    2.2.2 and 5.3, including the cyber table, security-level definition, qualifications and version history.
+    Page locators use one-based PDF viewer pages, cover included. Observation dates in this file use UTC.
+    This scoped comparison extends the earlier source review; it is not independent human coding.
+  preservation_note: Version-specific issuer PDF URL inspected through primary-document retrieval. No
+    new PDF byte capture or verified independent archive is retained for this observation; no checksum
+    is recorded. The earlier cached PDF and its hash in source-verification.md belong to that earlier
+    inspection and are not presented as a fresh capture. The historical publication date is not a historical
+    capture date.
+  original_url: https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/strengthening-our-frontier-safety-framework/frontier-safety-framework_3-1.pdf
+  retrieved_at: null
+  archive_url: null
+  archive_checked_on: null
+  sha256: null
+  byte_length: null
+  mime_type: null
+  version_claim: '3.1'
+  locator_basis: One-based PDF viewer pages, cover included; section and table labels as printed.
+  preservation_status: legacy_uncaptured
