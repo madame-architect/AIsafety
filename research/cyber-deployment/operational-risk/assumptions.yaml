@@ -1,70 +1,92 @@
-schema_version: cyber-benchmark-risk-assumptions-v1
-round_id: recent-real-world-cyber-evidence-2026-10
-research_completed_on: '2026-10-17'
-admission_prepared_on: '2026-10-24'
-question: Which assumptions connect AI cyber benchmark performance to operational
-  cyber risk, and what recent real-world evidence supports, challenges, or bounds
-  them?
+schema_version: cyber-benchmark-risk-assumptions-v2
+dataset_id: benchmark_to_risk_evidence
 coding:
-  supported: Direct observational or experimental evidence materially supports the
-    proposition.
-  mixed: Evidence supports the proposition under important conditions or is accompanied
-    by meaningful counterevidence.
-  challenged: Meaningful evidence shows the proposition fails or weakens under relevant
-    conditions.
+  supported: Direct observational or experimental evidence materially supports the proposition.
+  mixed: Evidence supports the proposition under important conditions or is accompanied by meaningful counterevidence.
+  challenged: Meaningful evidence shows the proposition fails or weakens under relevant conditions.
   unresolved: The admitted evidence does not establish the proposition.
 assumptions:
 - id: task_transfer
   label: Benchmark tasks represent operationally useful cyber work
-  claim: Performance on benchmark tasks transfers to the technical tasks and environments
-    that matter in real cyber operations.
-  overall_code: mixed
-  summary: Live incidents contain benchmark-like tasks, but operational environments
-    add credentials, target selection, orchestration, interfaces, persistence, noise,
-    and defensive reaction.
+  claim: >-
+    Performance on benchmark tasks transfers to the technical tasks and environments that matter
+    in real cyber operations.
   research_priority: high
+  assessments:
+  - id: task_transfer_2026_10_17
+    as_of: '2026-10-17'
+    round_id: recent-real-world-cyber-evidence-2026-10
+    code: mixed
+    summary: >-
+      Live incidents contain benchmark-like tasks, but operational environments add credentials,
+      target selection, orchestration, interfaces, persistence, noise, and defensive reaction.
 - id: capability_access
   label: Evaluated capability is accessible to an actor
-  claim: The model capability measured in evaluation is available through the access
-    mode, safeguards, permissions, tools, and attempt budget an operational actor
-    can obtain.
-  overall_code: mixed
-  summary: Commercial models are operationally useful, but scaffolding, network permissions,
-    disabled safeguards, tool interfaces, persistence, and compute budgets materially
-    alter elicited capability.
+  claim: >-
+    The model capability measured in evaluation is available through the access mode, safeguards,
+    permissions, tools, and attempt budget an operational actor can obtain.
   research_priority: high
+  assessments:
+  - id: capability_access_2026_10_17
+    as_of: '2026-10-17'
+    round_id: recent-real-world-cyber-evidence-2026-10
+    code: mixed
+    summary: >-
+      Commercial models are operationally useful, but scaffolding, network permissions, disabled
+      safeguards, tool interfaces, persistence, and compute budgets materially alter elicited capability.
 - id: workflow_autonomy
   label: AI can compose capabilities into meaningful workflows
-  claim: Component capabilities can be orchestrated across multiple stages with limited
-    human intervention.
-  overall_code: mixed
-  summary: Substantial autonomy is observed in parts of workflows and in purpose-built
-    scaffolds, while target selection, setup, strategy, approval, and recovery from
-    failure often remain human-dependent.
+  claim: >-
+    Component capabilities can be orchestrated across multiple stages with limited human intervention.
   research_priority: high
+  assessments:
+  - id: workflow_autonomy_2026_10_17
+    as_of: '2026-10-17'
+    round_id: recent-real-world-cyber-evidence-2026-10
+    code: mixed
+    summary: >-
+      Substantial autonomy is observed in parts of workflows and in purpose-built scaffolds, while
+      target selection, setup, strategy, approval, and recovery from failure often remain human-dependent.
 - id: incremental_uplift
   label: AI increases risk relative to an appropriate non-AI baseline
-  claim: AI access causes more, faster, cheaper, or more successful cyber operations
-    than the relevant human-only or pre-AI baseline.
-  overall_code: mixed
-  summary: The evidence strongly suggests speed, scale, parallelism, and skill compression,
-    but most operational reports lack matched counterfactuals. ARTEMIS provides a
-    rare direct human comparison under study-specific conditions.
+  claim: >-
+    AI access causes more, faster, cheaper, or more successful cyber operations than the relevant
+    human-only or pre-AI baseline.
   research_priority: highest
+  assessments:
+  - id: incremental_uplift_2026_10_17
+    as_of: '2026-10-17'
+    round_id: recent-real-world-cyber-evidence-2026-10
+    code: mixed
+    summary: >-
+      The evidence strongly suggests speed, scale, parallelism, and skill compression, but most
+      operational reports lack matched counterfactuals. ARTEMIS provides a rare direct human comparison
+      under study-specific conditions.
 - id: harm_mapping
   label: Technical capability and compromise translate into realized harm
-  claim: The observed capability or compromise produces downstream destructive, financial,
-    social, or otherwise severe consequences.
-  overall_code: unresolved
-  summary: Compromise, credential theft, and attempted malicious action are observed,
-    but downstream harm is often unmeasured, absent, or only modeled.
+  claim: >-
+    The observed capability or compromise produces downstream destructive, financial, social, or
+    otherwise severe consequences.
   research_priority: highest
+  assessments:
+  - id: harm_mapping_2026_10_17
+    as_of: '2026-10-17'
+    round_id: recent-real-world-cyber-evidence-2026-10
+    code: unresolved
+    summary: >-
+      Compromise, credential theft, and attempted malicious action are observed, but downstream harm
+      is often unmeasured, absent, or only modeled.
 - id: defense_persistence
   label: Offensive uplift persists after defenses and adaptation
-  claim: Target defenses, human review, model safeguards, monitoring, containment,
-    and defender adaptation do not substantially offset the offensive uplift.
-  overall_code: challenged
-  summary: Hardened targets, human review, network controls, monitoring, and ordinary
-    security architecture materially changed or prevented outcomes in several admitted
-    sources.
+  claim: >-
+    Target defenses, human review, model safeguards, monitoring, containment, and defender adaptation
+    do not substantially offset the offensive uplift.
   research_priority: highest
+  assessments:
+  - id: defense_persistence_2026_10_17
+    as_of: '2026-10-17'
+    round_id: recent-real-world-cyber-evidence-2026-10
+    code: challenged
+    summary: >-
+      Hardened targets, human review, network controls, monitoring, and ordinary security architecture
+      materially changed or prevented outcomes in several admitted sources.
