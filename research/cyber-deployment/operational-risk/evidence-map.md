@@ -4,7 +4,8 @@ Generated from [assumptions.yaml](assumptions.yaml), [source-admission.yaml](sou
 
 **Research rounds:** 1  
 **Accepted research-layer sources:** 6  
-**Canonical bibliography status:** admitted.
+**Canonical bibliography:** 6/6 accepted research sources integrated.
+**Source captures:** 6/6 retained; see [capture registry](source-captures.yaml).
 
 ## Assumption registry and assessment history
 

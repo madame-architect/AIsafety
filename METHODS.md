@@ -119,6 +119,16 @@ a GitHub merge or successful local build never establishes synchronization.
 The capture and release tooling and tests were developed with AI assistance;
 mocked network tests do not establish a live archive or OSF deposit.
 
+## Bounded cyber integration and OpenAI comparison: 2026-10-24
+
+The [integration report](research/cyber-deployment/expansion-reconciliation-2026-10-24.md) and [audit JSON](research/cyber-deployment/integration-audit-2026-10-24.json) document this pass. Six sources already accepted into the operational-risk dataset are reconciled into canonical bibliography records; four policy sources are added to support an OpenAI within-issuer history. The corpus grows from the stabilized 276 records to 286. This is not a new empirical research round: the six evidence observations and dated assumption assessments remain unchanged.
+
+Duplicate screening compares normalized titles, source URLs, and arXiv identifiers with the checked 282-record PR input, excluding the candidate's own already-created ID. Reinspection restores full author lists and version metadata. Provider threat reports and an incident disclosure are routed to the contextual stream, not treated as normative governance merely because they are official. Three research papers remain technical methods/evaluations. The system card enters the governance stream for its specifically inspected policy clarification; its other experimental findings are not admitted by this act.
+
+Seven scoped OpenAI provisions are compared across the beta and v2 frameworks, a later system-card clarification, and two 2026 policy statements. Stable IDs and explicit predecessor links represent documentary continuity without asserting equivalence of beta risk ratings and v2 capability labels. Critical capability definitions and the development gate are coded separately. The internal-use clarification preserves v2's ambiguous wording; its system card's cover date does not establish when the Note was inserted. No inferred application date is assigned. Later policy statements are not mislabeled as a new numbered framework edition or proof of compliance.
+
+Eleven exact source representations recovered from the retained private capture bundle were re-read and checked for identity, SHA-256, length, and relevant locators. The original retrieval and archive-check dates remain attached to those earlier capture events; the recovery/reinspection is not relabeled as a fresh network capture. Metadata and archived locators are committed, while copyrighted full-text payloads remain outside Git. The existing v2 retrieval event retains its own timestamp and is linked to an identical earlier retained payload. The two frozen DeepMind observations retain their missing-capture disclosures. No OSF deposit, original-publication byte identity, independent human coding, or experimental reproduction is claimed.
+
 ## Validation, releases, and AI assistance
 
 Run `python3 scripts/build.py` to generate the outputs and `python3 scripts/build.py --check` to check them. Automated validation addresses data structure and export consistency. Successful checks do not establish source accuracy, evidence quality, comprehensive coverage, or scholarly validity. Tag distributions describe this collection rather than the prevalence of findings in the field.

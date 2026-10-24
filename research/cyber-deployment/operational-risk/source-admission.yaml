@@ -4,20 +4,27 @@ rounds:
 - id: recent-real-world-cyber-evidence-2026-10
   research_completed_on: '2026-10-17'
   admitted_on: '2026-10-24'
-  scope: >-
-    Bounded primary-source-first review of recent real-world or operationally realistic cyber
-    evidence bearing on benchmark-to-risk assumptions.
+  scope: Bounded primary-source-first review of recent real-world or operationally realistic cyber evidence
+    bearing on benchmark-to-risk assumptions.
   repository_base_commit_checked: 5af2432cbd2cf3c4be6aadedb41bc70099e00651
   duplicate_check:
-    method: Exact title, URL, and arXiv identifier searches against the repository at the checked base commit.
+    method: Exact title, URL, and arXiv identifier searches against the repository at the checked base
+      commit.
     result: No exact match was found for the six accepted sources.
-    limitation: >-
-      A differently titled or incompletely normalized duplicate remains possible; rerun against
+    limitation: A differently titled or incompletely normalized duplicate remains possible; rerun against
       records.yaml immediately before canonical bibliography admission.
   bibliography_status: admitted
-  preservation_status: pending_source_capture
-  note: >-
-    Canonical bibliography IDs are admitted in PR #19; exact-byte source capture remains pending and is not inferred from research admission.
+  preservation_status: captured
+  note: 'The six sources remain the same research round. Canonical metadata and archived source-byte preservation
+    were completed in PR #19; no new empirical observations or assumption assessments were added. OSF
+    synchronization is not implied.'
+  canonical_integration:
+    checked_on: '2026-10-24'
+    repository_base_commit_checked: d1f8b64565399073656264cafe17ea338d88a736
+    method: Normalized title, primary URL, and arXiv identifier comparison against the 282-record PR input;
+      own previously appended key excluded. All 276 pre-PR records retained unchanged.
+    result: No other record matched the six admitted sources; canonical IDs retained.
+    limitation: Not a proof against every differently titled or incompletely catalogued duplicate.
 sources:
 - source_id: amazon_fortigate_ai_augmented_2026
   round_id: recent-real-world-cyber-evidence-2026-10
@@ -34,10 +41,14 @@ sources:
   source_kind: provider_threat_intelligence
   evidence_kind: forensic_operational_observation
   inspection_basis: Full official HTML
-  preservation_status: pending_capture
-  limitations: >-
-    Provider-authored report with strong telemetry but no matched no-AI counterfactual, public incident
-    dataset, or quantified downstream harm.
+  preservation_status: captured
+  limitations: Provider-authored report with strong telemetry but no matched no-AI counterfactual, public
+    incident dataset, or quantified downstream harm.
+  capture_id: amazon_fortigate_ai_augmented_2026_captured_2026_10_24
+  bibliography_integrated_on: '2026-10-24'
+  bibliography_integration_note: 'Existing research admission retained; canonical metadata and captured
+    representation verified during PR #19 completion. Research observations and assumption assessments
+    unchanged.'
 - source_id: google_gtig_prompting_to_autonomy_2026
   round_id: recent-real-world-cyber-evidence-2026-10
   proposed_record_id: google_gtig_promptingautonomy_2026
@@ -53,10 +64,14 @@ sources:
   source_kind: provider_threat_intelligence
   evidence_kind: forensic_operational_observation
   inspection_basis: Full official HTML
-  preservation_status: pending_capture
-  limitations: >-
-    Provider-authored report; no matched no-AI campaign, complete transcripts, or disclosed downstream
-    consequence data for the harvested credentials.
+  preservation_status: captured
+  limitations: Provider-authored report; no matched no-AI campaign, complete transcripts, or disclosed
+    downstream consequence data for the harvested credentials.
+  capture_id: google_gtig_prompting_to_autonomy_2026_captured_2026_10_24
+  bibliography_integrated_on: '2026-10-24'
+  bibliography_integration_note: 'Existing research admission retained; canonical metadata and captured
+    representation verified during PR #19 completion. Research observations and assumption assessments
+    unchanged.'
 - source_id: aisi_unsanctioned_agent_incident_2026
   round_id: recent-real-world-cyber-evidence-2026-10
   proposed_record_id: aisi_unsanctionedagentincident_2026
@@ -71,15 +86,20 @@ sources:
   primary_url: https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing
   source_kind: government_incident_disclosure
   evidence_kind: evaluation_origin_operational_incident
-  inspection_basis: Full official HTML; linked technical PDF not independently parsed in the bounded research environment
+  inspection_basis: Full official HTML; linked technical PDF not independently parsed in the bounded research
+    environment
   related_unadmitted_object:
     title: Security Incident INC-2026-07-28-01
     url: https://cdn.prod.website-files.com/663bd486c5e4c81588db7a1d/6a724858f7db25c81487016d_Security%20Incident%20INC-2026-07-28-01.pdf
     status: pending_full_text_review
-  preservation_status: pending_capture
-  limitations: >-
-    Highly permissive evaluation conditions included open internet access and disabled provider cyber
-    classifiers; no resulting real-world harm was evidenced.
+  preservation_status: captured
+  limitations: Highly permissive evaluation conditions included open internet access and disabled provider
+    cyber classifiers; no resulting real-world harm was evidenced.
+  capture_id: aisi_unsanctioned_agent_incident_2026_captured_2026_10_24
+  bibliography_integrated_on: '2026-10-24'
+  bibliography_integration_note: 'Existing research admission retained; canonical metadata and captured
+    representation verified during PR #19 completion. Research observations and assumption assessments
+    unchanged.'
 - source_id: lin_artemis_pentest_2026
   round_id: recent-real-world-cyber-evidence-2026-10
   proposed_record_id: lin_artemispenetration_2026
@@ -110,10 +130,14 @@ sources:
   source_kind: preprint
   evidence_kind: live_authorized_comparative_study
   inspection_basis: Version-pinned 29-page PDF
-  preservation_status: pending_capture
-  limitations: >-
-    Small human sample, compressed engagement window, purpose-built scaffold, and target defenders knowingly
-    relaxed or approved actions that authentic controls might interdict.
+  preservation_status: captured
+  limitations: Small human sample, compressed engagement window, purpose-built scaffold, and target defenders
+    knowingly relaxed or approved actions that authentic controls might interdict.
+  capture_id: lin_artemis_pentest_2026_captured_2026_10_24
+  bibliography_integrated_on: '2026-10-24'
+  bibliography_integration_note: 'Existing research admission retained; canonical metadata and captured
+    representation verified during PR #19 completion. Research observations and assumption assessments
+    unchanged.'
 - source_id: barrett_quantitative_cyber_risk_2025
   round_id: recent-real-world-cyber-evidence-2026-10
   proposed_record_id: barrett_quantitativecyberrisk_2025
@@ -151,11 +175,15 @@ sources:
   source_kind: preprint
   evidence_kind: quantitative_risk_model
   inspection_basis: Version-pinned 91-page PDF
-  preservation_status: pending_capture
-  limitations: >-
-    Makes benchmark-to-risk assumptions explicit but estimates them through threat intelligence, historical
-    baselines, expert elicitation, LLM estimators, and Monte Carlo modeling rather than observed benchmark-to-harm
-    causal data.
+  preservation_status: captured
+  limitations: Makes benchmark-to-risk assumptions explicit but estimates them through threat intelligence,
+    historical baselines, expert elicitation, LLM estimators, and Monte Carlo modeling rather than observed
+    benchmark-to-harm causal data.
+  capture_id: barrett_quantitative_cyber_risk_2025_captured_2026_10_24
+  bibliography_integrated_on: '2026-10-24'
+  bibliography_integration_note: 'Existing research admission retained; canonical metadata and captured
+    representation verified during PR #19 completion. Research observations and assumption assessments
+    unchanged.'
 - source_id: souly_astra_unsanctioned_supply_chain_2026
   round_id: recent-real-world-cyber-evidence-2026-10
   proposed_record_id: souly_astraunsanctioned_2026
@@ -178,7 +206,11 @@ sources:
   source_kind: government_research_preprint
   evidence_kind: simulated_alignment_evaluation
   inspection_basis: Version-pinned 33-page PDF
-  preservation_status: pending_capture
-  limitations: >-
-    All external actions were simulated, safeguards were disabled, and simulation awareness may affect behavior;
-    no real systems or third parties were reachable and no real-world harm occurred.
+  preservation_status: captured
+  limitations: All external actions were simulated, safeguards were disabled, and simulation awareness
+    may affect behavior; no real systems or third parties were reachable and no real-world harm occurred.
+  capture_id: souly_astra_unsanctioned_supply_chain_2026_captured_2026_10_24
+  bibliography_integrated_on: '2026-10-24'
+  bibliography_integration_note: 'Existing research admission retained; canonical metadata and captured
+    representation verified during PR #19 completion. Research observations and assumption assessments
+    unchanged.'

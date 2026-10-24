@@ -93,3 +93,15 @@ inappropriate. Large copyrighted PDFs need not enter Git: retain checked stable
 archive references, exact cryptographic provenance and material limitations.
 A digest alone does not preserve access. Builds validate structure and any
 locally present bytes; they do not recheck remote archives.
+
+## Recovering the October 24 bundle
+
+The owner's private Library retains `cyber-research-source-captures-2026-10-24.zip` (15,924,250 bytes; SHA-256 `7d94cdb5c6349ae4b32978a35364980a2d6f6a225c8402f454ad14b186fc3509`). It contains five policy and six operational-source representations. The [retained receipt](cyber-source-capture-bundle-2026-10-24.json) records the original capture metadata. Active provenance is in the commitment `evidence.yaml` and operational `source-captures.yaml`, not silently replaced by the receipt.
+
+Check the ZIP digest, then restore only its `.source-captures/` directory into a working checkout. Run:
+
+```bash
+python3 scripts/audit_cyber_bibliography.py --require-capture-files
+```
+
+The strict audit requires and hashes all eleven captured payloads. Ordinary CI checks provenance structure and any available payloads, explicitly reporting how many bytes were actually checked. The two `legacy_uncaptured` observations are not counted as captured. The bundle is a retained private copy, not a publicly accessible release, OSF deposit, or guarantee of archival permanence. Its original retrieval times and prior archive checks remain unchanged; local recovery is not a new network capture. No full copyrighted PDFs or HTML pages are added to Git.

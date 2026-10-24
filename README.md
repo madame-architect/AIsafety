@@ -4,7 +4,7 @@ A curated, AI-assisted collection of sources about frontier AI evaluation and go
 
 **Edit `records.yaml`.** BibTeX and the stream views are generated from it. The YAML schema defines permitted fields and classifications; it does not contain the source records.
 
-This stabilization uses the recovered 276-record bibliography. All 218 citation keys previously on `main` are retained. See [MIGRATION.md](MIGRATION.md) for the reconciliation, the correction to the earlier reported count of 262, and verification results.
+The current collection contains **286 records**: 156 technical evaluations/methods, 95 governance artifacts, and 35 contextual sources. The October 16 stabilization recovered 276 records and retained all 218 earlier GitHub citation keys; [MIGRATION.md](MIGRATION.md) documents that historical reconciliation. The [October 24 integration report](research/cyber-deployment/expansion-reconciliation-2026-10-24.md) documents the ten subsequent admissions and the linked cyber datasets.
 
 ## Start here
 
@@ -20,7 +20,7 @@ This stabilization uses the recovered 276-record bibliography. All 218 citation 
 | [provenance/](provenance/) | Frozen input files, checksums, and the record-change report |
 | [intake.csv](intake.csv) | Actual discoveries and dated review decisions, including later checks of legacy records |
 | [Cyber source verification](research/cyber-deployment/source-verification.md) | Five-source claim, classification, and version check for the next research output |
-| [Cyber commitment history](research/cyber-deployment/README.md) | Small longitudinal pilot: source-linked policy observations in YAML and a generated history |
+| [Cyber commitment history](research/cyber-deployment/README.md) | Linked longitudinal datasets: eight scoped commitments, 17 policy observations, and six operational-risk evidence sources |
 | [Stabilization release](releases/stabilization-2026-10-16.md) | Exact merged release identity and OSF synchronization status |
 | [evals-datamodel.dbx](evals-datamodel.dbx) | Custom BibLaTeX data model for the exported fields |
 
@@ -32,6 +32,11 @@ Use Python 3.10 or later. From the repository root:
 python3 -m pip install -r requirements.txt
 python3 scripts/build.py
 python3 scripts/build.py --check
+python3 scripts/lint_bibliography.py
+python3 scripts/build_commitments.py --check
+python3 research/cyber-deployment/operational-risk/build.py --check
+python3 scripts/build_cyber_datasets.py --check
+python3 scripts/audit_cyber_bibliography.py
 python3 -m unittest discover -s tests -v
 ```
 
@@ -50,7 +55,7 @@ evidence.
 - **Governance artifacts:** actual frameworks, requirements, standards, guidance, commitments, organizational disclosures, and governance portals. Their existence does not establish implementation or effectiveness.
 - **Contextual sources:** policy analysis, commentary, and supporting research that belongs in neither primary synthesis stream.
 
-Each record has one primary `synthesis_stream` and a `stream_note`. A mixed-purpose source can inform multiple discussions while retaining one citation identity. Routing began as provisional and AI-assisted, based on inherited metadata, titles, and available abstracts. Five starting sources for the cyber/deployment study received an AI-assisted full-text and version check on 2026-10-16; their dated `stream_note` fields and the [verification report](research/cyber-deployment/source-verification.md) identify that scope. The other 271 records retain their earlier inspection status. Existing `classification_confidence` values were preserved and do not grade the new routing or the quality of the evidence.
+Each record has one primary `synthesis_stream` and a `stream_note`. A mixed-purpose source can inform multiple discussions while retaining one citation identity. Routing began as provisional and AI-assisted, based on inherited metadata, titles, and available abstracts. Five starting sources for the cyber/deployment study received an AI-assisted full-text and version check on 2026-10-16; their dated `stream_note` fields and the [verification report](research/cyber-deployment/source-verification.md) identify that scope. That dated review covered five records, not the whole collection. The October 24 integration separately records its six operational-source rechecks and five scoped OpenAI source inspections. Existing `classification_confidence` values were preserved and do not grade the new routing or the quality of the evidence.
 
 ## Updating the collection
 
@@ -59,7 +64,7 @@ Each record has one primary `synthesis_stream` and a `stream_note`. A mixed-purp
 3. Edit `records.yaml`; use string lists for the schema's multivalue fields and strings for other fields. Preserve internal BibTeX/TeX braces and commands. Do not add a `keywords` field; it is derived.
 4. Record the decision and uncertainty, then regenerate and check the exports.
 
-The stabilization log began empty because that release added no newly discovered sources. It now records five later source reviews and two scoped policy observations on their actual review dates, with legacy discovery dates left blank. The 58 keys absent from the old GitHub version were already in the recovered bibliography; no original screening events have been reconstructed.
+The stabilization log began empty because that release added no newly discovered sources. It now records those later reviews, the initial DeepMind observations, and the October 24 bibliography integration and scoped OpenAI reviews; unknown discovery dates remain blank. The 58 keys absent from the old GitHub version were already in the recovered bibliography; no original screening events have been reconstructed.
 
 ## Releases and citation
 
@@ -75,7 +80,7 @@ To reference this collection, include its title, maintainer (Cassandra Ansara),
 revision date, and exact commit or deposited version. Cite original publications
 directly for their findings.
 
-Collection stabilization was merged in [PR #13](https://github.com/madame-architect/AIsafety/pull/13). The next research focus is how cyber capability evidence informs deployment safeguards. The targeted five-source check corrects classifications and records version qualifications; it adds no bibliography records and does not reproduce experiments. See [METHODS.md](METHODS.md) for AI assistance and inspection limits.
+Collection stabilization was merged in [PR #13](https://github.com/madame-architect/AIsafety/pull/13). The next research focus is how cyber capability evidence informs deployment safeguards. The October 24 integration completes six earlier operational-source admissions and adds four policy sources for the OpenAI comparison. It does not add a new empirical evidence round or reproduce experiments. See [METHODS.md](METHODS.md) for AI assistance and inspection limits.
 
 ## License
 

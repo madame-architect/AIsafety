@@ -21,6 +21,8 @@ The datasets remain analytically distinct. Provider statements are not evidence 
 | [operational-risk/source-admission.yaml](operational-risk/source-admission.yaml) | Research rounds and admitted source registry |
 | [operational-risk/risk-evidence.yaml](operational-risk/risk-evidence.yaml) | Source observations linked to assumptions |
 | [operational-risk/evidence-map.md](operational-risk/evidence-map.md) | Generated benchmark-to-risk evidence map |
+| [operational-risk/source-captures.yaml](operational-risk/source-captures.yaml) | Exact-byte provenance for admitted operational sources |
+| [expansion-reconciliation-2026-10-24.md](expansion-reconciliation-2026-10-24.md) | Completed within-issuer comparison, bibliography reconciliation, and limitations |
 | [../../records.yaml](../../records.yaml) | Project-wide bibliographic authority; generates BibTeX through the existing build |
 
 ## Longitudinal units
@@ -53,7 +55,9 @@ For example, the current DeepMind model-weight security provision depends on ass
 
 New commitment observations follow the [source capture procedure](../../provenance/source-capture.md). The two first observations remain explicit `legacy_uncaptured` exceptions; no historical hash has been invented.
 
-The six benchmark-to-risk sources now have canonical bibliography IDs, but exact-byte source capture remains pending. `source-admission.yaml` distinguishes bibliography admission from source preservation and OSF verification.
+The six benchmark-to-risk sources have canonical bibliography IDs and capture records. Five OpenAI source representations and these six operational sources are retained in the owner's private source bundle; all eleven payloads have been checked against their SHA-256 and length metadata. The checked archival references and exact capture basis remain explicit. This is not a public deposit or proof of original-publication byte identity. The separate AISI technical incident PDF remains pending full-text review.
+
+Restore the bundle's `.source-captures/` directory and run `python3 scripts/audit_cyber_bibliography.py --require-capture-files` for full local byte verification. Ordinary CI validates metadata and any present bytes, but does not claim to re-download archives or inspect absent private payloads. See the [capture procedure](../../provenance/source-capture.md).
 
 Keep these distinctions explicit:
 
@@ -69,6 +73,8 @@ From the repository root:
 
 ```bash
 python3 scripts/build.py --check
+python3 scripts/lint_bibliography.py
+python3 scripts/audit_cyber_bibliography.py
 python3 scripts/build_commitments.py --check
 python3 research/cyber-deployment/operational-risk/build.py --check
 python3 scripts/build_cyber_datasets.py --check
@@ -87,6 +93,8 @@ Validation checks structure, identifiers, cross-file references, chronological a
 
 ## Current scope
 
-The commitment dataset contains six scoped provisions: one DeepMind provision observed across two editions and five OpenAI Preparedness Framework v2 provisions. These are policy statements, not proof of implementation. The benchmark-to-risk dataset contains one bounded research round, six stable assumptions, six admitted sources, and six evidence observations. OpenAI v2 has a retained SHA-256 PDF capture in the associated CI artifact, but no independently verified permanent archive; DeepMind's two historical source captures remain explicitly missing.
+The commitment dataset contains **eight scoped commitments, 17 observations, and seven source observations**. One DeepMind provision has two historical editions; seven OpenAI provision histories span the beta framework, v2, an internal-use clarification, and the August/October 2026 development and containment statements. Publication date, capture date, and effective date are not interchangeable. The system-card clarification has no verified insertion date.
 
-The next substantive expansion should add provider commitment histories and empirical sources only when their versions, locators, preservation status, and relationship to existing IDs are explicit. Compare within an issuer before normalizing threshold names across organizations.
+The benchmark-to-risk dataset remains **one bounded research round, six stable assumptions, six admitted sources, and six evidence observations**. Its earlier assessments are unchanged. The datasets have 25 analytical links, not 25 independent findings or causal relationships.
+
+[The integration report](expansion-reconciliation-2026-10-24.md) explains changes and qualifications. Compare within an issuer before normalizing threshold names across organizations. These policy observations do not establish implementation, compliance, or safeguard effectiveness.

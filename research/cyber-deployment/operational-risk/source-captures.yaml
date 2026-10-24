@@ -1,0 +1,169 @@
+schema_version: cyber-operational-source-captures-v1
+snapshots:
+- id: amazon_fortigate_ai_augmented_2026_captured_2026_10_24
+  source_id: amazon_fortigate_ai_augmented_2026
+  record_id: amazon_fortigateaiaugmented_2026
+  source_url: https://aws.amazon.com/blogs/security/ai-augmented-threat-actor-accesses-fortigate-devices-at-scale/
+  observed_on: '2026-10-24'
+  inspection_scope: 'AI-assisted reinspection of the official page title, byline, date, complete article
+    and relevant limitations, then verification of the retained Wayback HTML article and scoped evidence
+    passages. Direct source fetches returned an unavailable response; the archived representation was
+    retrieved independently. Retained bytes rechecked locally during PR #19 completion on 2026-10-24;
+    no new network retrieval time is asserted.'
+  preservation_note: Retained the complete archived HTML representation, including archive rewriting,
+    on 2026-10-24. The archive URL supplies a provider-claimed historical capture timestamp; retrieved_at
+    is the actual retrieval time. This does not establish byte identity with the earlier research inspection.
+    Article text and coded passages were checked; linked image and script assets were not separately validated.
+  original_url: https://aws.amazon.com/blogs/security/ai-augmented-threat-actor-accesses-fortigate-devices-at-scale/
+  retrieved_at: '2026-10-24T17:35:21Z'
+  archive_url: https://web.archive.org/web/20261011222120/https://aws.amazon.com/blogs/security/ai-augmented-threat-actor-accesses-fortigate-devices-at-scale/
+  archive_checked_on: '2026-10-24'
+  sha256: 8bfb7e2d1570fb51910e8023db01f145f7eb902f87a0b0e4753895270cb0d0ae
+  byte_length: 1320664
+  mime_type: text/html
+  published_on: '2026-02-20'
+  version_claim: Dated official HTML article; no numbered edition claimed
+  locator_basis: Article headings and paragraphs in the saved Wayback HTML, excluding archive toolbar,
+    navigation and related articles. Publication date and byline checked in the article.
+  preservation_status: captured
+  capture_path: .source-captures/8bfb7e2d1570fb51910e8023db01f145f7eb902f87a0b0e4753895270cb0d0ae.html
+  capture_basis: Archive response bytes; original was not retrieved or compared.
+- id: google_gtig_prompting_to_autonomy_2026_captured_2026_10_24
+  source_id: google_gtig_prompting_to_autonomy_2026
+  record_id: google_gtig_promptingautonomy_2026
+  source_url: https://cloud.google.com/blog/topics/threat-intelligence/from-prompting-to-autonomy-the-evolution-of-adversarial-ai
+  observed_on: '2026-10-24'
+  inspection_scope: 'AI-assisted reinspection of the official page title, byline, date, complete article
+    and relevant limitations, then verification of the retained Wayback HTML article and scoped evidence
+    passages. Direct source fetches returned an unavailable response; the archived representation was
+    retrieved independently. Retained bytes rechecked locally during PR #19 completion on 2026-10-24;
+    no new network retrieval time is asserted.'
+  preservation_note: Retained the complete archived HTML representation, including archive rewriting,
+    on 2026-10-24. The archive URL supplies a provider-claimed historical capture timestamp; retrieved_at
+    is the actual retrieval time. This does not establish byte identity with the earlier research inspection.
+    Article text and coded passages were checked; linked image and script assets were not separately validated.
+  original_url: https://cloud.google.com/blog/topics/threat-intelligence/from-prompting-to-autonomy-the-evolution-of-adversarial-ai
+  retrieved_at: '2026-10-24T17:35:20Z'
+  archive_url: https://web.archive.org/web/20261016004324/https://cloud.google.com/blog/topics/threat-intelligence/from-prompting-to-autonomy-the-evolution-of-adversarial-ai
+  archive_checked_on: '2026-10-24'
+  sha256: c256e77a9e8baee9b728c308c336a6be69e9b49f873ec31f7912d31c6d4e04a2
+  byte_length: 524637
+  mime_type: text/html
+  published_on: '2026-09-08'
+  version_claim: Dated official HTML article; no numbered edition claimed
+  locator_basis: Article headings and paragraphs in the saved Wayback HTML, excluding archive toolbar,
+    navigation and related articles. Publication date and byline checked in the article.
+  preservation_status: captured
+  capture_path: .source-captures/c256e77a9e8baee9b728c308c336a6be69e9b49f873ec31f7912d31c6d4e04a2.html
+  capture_basis: Archive response bytes; original was not retrieved or compared.
+- id: aisi_unsanctioned_agent_incident_2026_captured_2026_10_24
+  source_id: aisi_unsanctioned_agent_incident_2026
+  record_id: aisi_unsanctionedagentincident_2026
+  source_url: https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing
+  observed_on: '2026-10-24'
+  inspection_scope: 'AI-assisted reinspection of the complete original and archived HTML article and issuer
+    category listing for publication date. The linked technical incident PDF remains unadmitted pending
+    full-text review. Retained bytes rechecked locally during PR #19 completion on 2026-10-24; no new
+    network retrieval time is asserted.'
+  preservation_note: Retained the complete archived HTML representation, including archive rewriting,
+    on 2026-10-24. The archive URL supplies a provider-claimed historical capture timestamp; retrieved_at
+    is the actual retrieval time. This does not establish byte identity with the earlier research inspection.
+    Article text and coded passages were checked; linked image and script assets were not separately validated.
+  original_url: https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing
+  retrieved_at: '2026-10-24T17:35:20Z'
+  archive_url: https://web.archive.org/web/20261024104258/https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing
+  archive_checked_on: '2026-10-24'
+  sha256: e628d1c9e68c5417535c40ab5751a9008e4cbca064f5a7e3076caab5a5454ab4
+  byte_length: 54136
+  mime_type: text/html
+  published_on: '2026-08-04'
+  version_claim: Dated official HTML article; no numbered edition claimed
+  locator_basis: Article headings and paragraphs in the saved Wayback HTML, excluding archive toolbar,
+    navigation and related articles. Publication date and byline checked in the article.
+  preservation_status: captured
+  capture_path: .source-captures/e628d1c9e68c5417535c40ab5751a9008e4cbca064f5a7e3076caab5a5454ab4.html
+  capture_basis: Archived HTML response bytes, including archive rewriting. Original HTML was also retrieved
+    and inspected; no byte-equivalence claim is made.
+- id: lin_artemis_pentest_2026_captured_2026_10_24
+  source_id: lin_artemis_pentest_2026
+  record_id: lin_artemispenetration_2026
+  source_url: https://arxiv.org/pdf/2512.09882v2.pdf
+  observed_on: '2026-10-24'
+  inspection_scope: 'AI-assisted reinspection of the captured PDF title/authors/version and sections 3-8
+    (PDF pp. 3-10), including setup, results, limitations and ethics; arXiv metadata checked. This is
+    bibliographic and scoped evidence integration, not independent experimental replication. Archived
+    PDF edition verified and exact bytes compared with the pinned original. Retained bytes rechecked locally
+    during PR #19 completion on 2026-10-24; no new network retrieval time is asserted.'
+  preservation_note: Retained exact archived PDF bytes before extraction and verified equality with the
+    separately retrieved version-pinned original on 2026-10-24. The archive timestamp is archive-attributed;
+    this capture does not identify the bytes inspected during the earlier research round.
+  original_url: https://arxiv.org/pdf/2512.09882v2.pdf
+  retrieved_at: '2026-10-24T17:36:11Z'
+  archive_url: https://web.archive.org/web/20260304025221if_/https://arxiv.org/pdf/2512.09882v2
+  archive_checked_on: '2026-10-24'
+  sha256: e83eb9c7e3f92f02bafdc819e79f7c14a3df26d801eaf89e265592cd21759659
+  byte_length: 904633
+  mime_type: application/pdf
+  published_on: '2026-03-03'
+  version_claim: arXiv v2
+  locator_basis: One-based PDF viewer pages, cover included; printed section labels in the exact captured
+    PDF.
+  preservation_status: captured
+  capture_path: .source-captures/e83eb9c7e3f92f02bafdc819e79f7c14a3df26d801eaf89e265592cd21759659.pdf
+  capture_basis: Archive PDF bytes; retrieved original PDF matched byte for byte.
+- id: barrett_quantitative_cyber_risk_2025_captured_2026_10_24
+  source_id: barrett_quantitative_cyber_risk_2025
+  record_id: barrett_quantitativecyberrisk_2025
+  source_url: https://arxiv.org/pdf/2512.08864v2.pdf
+  observed_on: '2026-10-24'
+  inspection_scope: 'AI-assisted reinspection of the captured PDF title/authors/version, methodology and
+    elicitation/results discussion (PDF pp. 7-18), and limitations/conclusion (PDF pp. 29-34); arXiv metadata
+    checked. The full appendix was not newly recoded. Archived PDF edition verified and exact bytes compared
+    with the pinned original. Retained bytes rechecked locally during PR #19 completion on 2026-10-24;
+    no new network retrieval time is asserted.'
+  preservation_note: Retained exact archived PDF bytes before extraction and verified equality with the
+    separately retrieved version-pinned original on 2026-10-24. The archive timestamp is archive-attributed;
+    this capture does not identify the bytes inspected during the earlier research round.
+  original_url: https://arxiv.org/pdf/2512.08864v2.pdf
+  retrieved_at: '2026-10-24T17:36:56Z'
+  archive_url: https://web.archive.org/web/20260905172842if_/https://arxiv.org/pdf/2512.08864
+  archive_checked_on: '2026-10-24'
+  sha256: 5a2e37a021b17103c68469cc3f5431a27fc2a548da14841135bc6f458639b0a0
+  byte_length: 3793295
+  mime_type: application/pdf
+  published_on: '2025-12-11'
+  version_claim: arXiv v2
+  locator_basis: One-based PDF viewer pages, cover included; printed section labels in the exact captured
+    PDF.
+  preservation_status: captured
+  capture_path: .source-captures/5a2e37a021b17103c68469cc3f5431a27fc2a548da14841135bc6f458639b0a0.pdf
+  capture_basis: Archive PDF bytes; retrieved original PDF matched byte for byte. The archive originally
+    captured an unversioned URL; the retained cover identifies arXiv v2 and its digest matches the pinned
+    v2 original.
+- id: souly_astra_unsanctioned_supply_chain_2026_captured_2026_10_24
+  source_id: souly_astra_unsanctioned_supply_chain_2026
+  record_id: souly_astraunsanctioned_2026
+  source_url: https://arxiv.org/pdf/2609.38415v1.pdf
+  observed_on: '2026-10-24'
+  inspection_scope: 'AI-assisted reinspection of the captured PDF title/authors/version and main report
+    (PDF pp. 1-10), including methodology, findings and limitations; arXiv metadata checked. Transcript
+    appendices were not newly recoded. Archived PDF edition verified and exact bytes compared with the
+    pinned original. Retained bytes rechecked locally during PR #19 completion on 2026-10-24; no new network
+    retrieval time is asserted.'
+  preservation_note: Retained exact archived PDF bytes before extraction and verified equality with the
+    separately retrieved version-pinned original on 2026-10-24. The archive timestamp is archive-attributed;
+    this capture does not identify the bytes inspected during the earlier research round.
+  original_url: https://arxiv.org/pdf/2609.38415v1.pdf
+  retrieved_at: '2026-10-24T17:36:11Z'
+  archive_url: https://web.archive.org/web/20261006072924if_/https://arxiv.org/pdf/2609.38415v1
+  archive_checked_on: '2026-10-24'
+  sha256: 18e32cc8accd1934b480596502eed6fe9a0b8df777e30406081e7ecbecaee218
+  byte_length: 2136574
+  mime_type: application/pdf
+  published_on: '2026-09-29'
+  version_claim: arXiv v1
+  locator_basis: One-based PDF viewer pages, cover included; printed section labels in the exact captured
+    PDF.
+  preservation_status: captured
+  capture_path: .source-captures/18e32cc8accd1934b480596502eed6fe9a0b8df777e30406081e7ecbecaee218.pdf
+  capture_basis: Archive PDF bytes; retrieved original PDF matched byte for byte.

@@ -1,43 +1,56 @@
-# Commitment-history expansion and admitted-source bibliography reconciliation
+# Cyber commitment history and admitted-source integration
 
-Status: **work in progress**. This file is a review ledger, not a claim of canonical admission, source preservation, or completed policy coding.
+**Review date:** 2026-10-24. **Scope:** complete the six existing operational-source bibliography admissions and broaden the within-issuer OpenAI documentary history. This is AI-assisted source analysis, not independent human coding or an assessment of policy compliance.
 
-## Canonical bibliography reconciliation
+## Result and units
 
-The six research-admitted operational-risk sources in `operational-risk/source-admission.yaml` need matching records in authoritative `../../records.yaml` (repository root), then generated BibTeX and views. The stable proposed IDs are:
+| Collection | Result |
+| --- | ---: |
+| Canonical bibliography | 286 records: 156 technical, 95 governance, 35 contextual |
+| Commitment history | 8 scoped commitments, 17 observations, 7 source observations |
+| Benchmark-to-risk evidence | 1 research round, 6 assumptions, 6 sources, 6 observations (unchanged) |
+| Analytical policy-to-assumption links | 25 |
+| Retained source payloads checked | 11: 5 OpenAI policy sources and 6 operational sources |
+| Disclosed historical capture gaps | 2 frozen DeepMind observations (unchanged) |
 
-| Source ID | Proposed canonical record ID | Evidence type |
+The bibliography gains six sources already admitted to the research layer and four additional OpenAI policy sources relative to main. Relative to the 282-record PR input, this pass corrects those six entries, adds four records, and leaves all 276 other records unchanged. The [audit JSON](integration-audit-2026-10-24.json) identifies the input, duplicate checks, records, and retained bundle. No new empirical evidence observations or assessment judgments are introduced.
+
+## OpenAI: what changed in the compared texts
+
+| Scoped provision | Compared sources | Documentary finding and limit |
 | --- | --- | --- |
-| `amazon_fortigate_ai_augmented_2026` | `amazon_fortigateaiaugmented_2026` | Provider operational threat intelligence |
-| `google_gtig_prompting_to_autonomy_2026` | `google_gtig_promptingautonomy_2026` | Provider operational threat intelligence |
-| `aisi_unsanctioned_agent_incident_2026` | `aisi_unsanctionedagentincident_2026` | Government incident disclosure (HTML only) |
-| `lin_artemis_pentest_2026` | `lin_artemispenetration_2026` | Authorized live comparative study; arXiv 2512.09882v2 |
-| `barrett_quantitative_cyber_risk_2025` | `barrett_quantitativecyberrisk_2025` | Quantitative modeled risk; arXiv 2512.08864v2 |
-| `souly_astra_unsanctioned_supply_chain_2026` | `souly_astraunsanctioned_2026` | Simulated alignment evaluation; arXiv 2609.38415v1 |
+| High cyber threshold | Beta → v2 | Reframed from autonomous high-value exploit proofs of concept / detailed-strategy operations to removal of scaling bottlenecks. Beta risk levels and v2 capability thresholds are not calibrated equivalents. |
+| Critical cyber definition | Beta → v2 | The first alternative changes from all software projects to many hardened real-world critical systems; the high-level-goal attack alternative remains. This does not quantify a change in risk. |
+| External deployment gate | Beta → v2 | A post-mitigation Medium ceiling becomes a High-capability safeguards-sufficiency process. Leadership judgment, oversight, and marginal-risk qualifications remain material. |
+| Internal-use safeguards | v2 → system-card Note | Preserve v2's safeguard bullet and separate autonomy rationale. The later Note explicitly says the intended trigger combines High cyber capability and long-range autonomy. Its insertion/effective date is unverified; the cover date is not used as that date. |
+| Reassessment | Beta → v2 | Retains evidence-responsive reassessment while moving from scorecards to scalable evaluations, deep dives, and tests of report applicability. Annual framework review is not a blanket annual model re-test requirement. |
+| Critical development gate | Beta → v2 → August 2026 statement | Compare the post-mitigation ceiling, the conditional halt pending Critical standards, and later stricter alignment/security conditions for continuing Astra training. The August statement extends policy commitments; it is not relabeled a numbered framework revision or proof of compliance with v2. |
+| Research containment | August → October 2026 statements | Moves from strictest-security environment and workload migration conditions to an explicit no-live-internet boundary for frontier training, subject to future safeguard advances. The October page's claimed training resumption is not coded as verified implementation. |
 
-Before changing admission status, rerun normalized duplicate checks against current `records.yaml`; inspect version-pinned originals; retain byte length, SHA-256, MIME type, retrieval time and independent archive reference or documented obstacle. A URL is not a historical capture. The separate AISI technical incident PDF remains **unadmitted** until full-text inspection.
+The authoritative [observations](commitments.yaml) retain triggers, actions, modality, qualifications, source rationales, page/section locators, and predecessor/change notes. [The generated history](commitment-history.md) exposes those details and the source-capture metadata. All observations are policy statements; none establishes implementation or effectiveness.
 
-## Commitment-history expansion scope
+### Inspected sources and locators
 
-Start with within-issuer version comparisons for OpenAI's Preparedness Framework, then link to existing DeepMind FSF cyber weight-security observations. Track separate provisions for:
+The beta cybersecurity table is on PDF viewer p. 8; scorecards and evaluation on pp. 13–14; deployment/development baselines and governance on pp. 20–24. The retained beta representation is a later capture of a historically attributed edition, not proof of December 2023 bytes.
 
-1. Cyber capability threshold and the evaluation/elicitation conditions that define it.
-2. Deployment or release decision and any exception authority.
-3. Development-stage access, model-weight security and internal-use restrictions.
-4. Monitoring, red-teaming, reassessment and incident escalation.
-5. Later public clarifications, with their own dated observations and document locators.
+Preparedness v2 (2025-04-15) places the High and Critical cyber rows on viewer pp. 6–7; evaluation provisions on pp. 9–11; safeguards, marginal-risk qualifications, internal use and governance on pp. 11–13; annual framework review in Appendix B on p. 16; and misalignment safeguards in Appendix C.2 on pp. 19–20.
 
-Do not equate a publication date with the date an undated web clarification was inserted. Do not infer withdrawal from silence. Record the exact scope, modality, trigger, action, qualification, rationale, source edition and predecessor for each provision. A commitment link to an operational-risk assumption does not establish causation or implementation.
+The GPT-5.3-Codex system card's clarification is the final Note in §5.2.1.5 on viewer p. 30 (printed p. 29). Its cover is dated 2026-02-05, but no verified insertion date is available. The August 18 development-pacing and October 23 training-environment statements use captured HTML headings and paragraphs; they do not silently overwrite the PDF.
 
-## Required acceptance checks
+## Bibliographic completion and classification
 
-- `python3 scripts/build.py --check`
-- `python3 scripts/build_commitments.py --check`
-- `python3 research/cyber-deployment/operational-risk/build.py --check`
-- `python3 scripts/build_cyber_datasets.py --check`
-- `python3 -m unittest discover -s tests -v`
-- Verify bibliography and research-admission identifiers resolve; check no duplicate citations.
-- Preserve source provenance; do not manufacture historical checksums.
-- Keep GitHub merge, tagged release and verified OSF synchronization as separate states.
+All six research-accepted operational sources resolve to canonical records and captures. Full author lists, arXiv revision identities, original/revision dates, publication-state qualifications and stable URLs are retained. Normalized title, URL, and arXiv checks found no other matching record in the checked input; a missed semantically disguised duplicate remains possible.
 
-This ledger intentionally does not mark these checks passed.
+The Amazon and Google threat-intelligence reports and AISI incident disclosure are **contextual operational evidence**, not normative governance merely because they are official publications. The ARTEMIS comparison, quantitative cyber-risk model, and simulated supply-chain evaluation remain technical sources, with their different outcome types and limitations retained. The separate AISI technical incident PDF remains **pending full-text review** and is not counted as a seventh admitted operational source.
+
+## Preservation and reproducibility
+
+All eleven payloads in the retained private bundle match their recorded SHA-256 digests and byte lengths. [The receipt](../../provenance/cyber-source-capture-bundle-2026-10-24.json) preserves the earlier retrieval/archive metadata. Active source records distinguish original URLs, archived representations, capture basis and publication/version claims. Local recovery does not re-date network retrieval, independently repeat the earlier archive check, or establish identity with an original publication-day representation.
+
+The private Library bundle is not dependent on the expiring CI artifact. No full copyrighted source documents are committed to Git. [The capture instructions](../../provenance/source-capture.md) explain restoring the bundle and running the strict byte audit. A normal checkout can validate metadata and generated outputs without those private payloads; its output must not be read as a fresh remote archive verification.
+
+The two DeepMind `legacy_uncaptured` records remain unchanged. **GitHub review/merge, a tagged release, and a verified OSF deposit remain separate states.** This integration publishes no release and makes no OSF synchronization claim.
+
+## Checks
+
+Run the repository bibliography build, semantic linter, commitment build, operational-evidence build, joint-dataset build, cross-source audit, and complete unit suite. The added regression tests reject broken IDs, mismatched source/version/capture data, bad hashes and path escapes, missing mandatory bytes, and improper promotion of the pending AISI PDF. Release packaging also validates the linked datasets and includes their authoritative files and generated views. Successful checks establish structural consistency and byte identity where tested, not the truth or effectiveness of source claims.

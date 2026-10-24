@@ -25,10 +25,18 @@ import build
 import build_commitments
 
 AUTHORITIES = {'records.yaml', 'research/cyber-deployment/evidence.yaml',
-               'research/cyber-deployment/commitments.yaml'}
+               'research/cyber-deployment/commitments.yaml',
+               'research/cyber-deployment/datasets.yaml',
+               'research/cyber-deployment/dataset-links.yaml',
+               'research/cyber-deployment/operational-risk/assumptions.yaml',
+               'research/cyber-deployment/operational-risk/source-admission.yaml',
+               'research/cyber-deployment/operational-risk/source-captures.yaml',
+               'research/cyber-deployment/operational-risk/risk-evidence.yaml'}
 GENERATED = {'frontier-governance-evals.bib', 'views/contextual.bib',
              'views/governance-artifacts.bib', 'views/technical-evals.bib',
-             'views/index.md', 'research/cyber-deployment/commitment-history.md'}
+             'views/index.md', 'research/cyber-deployment/commitment-history.md',
+             'research/cyber-deployment/longitudinal-map.md',
+             'research/cyber-deployment/operational-risk/evidence-map.md'}
 
 
 def digest(data: bytes) -> dict:
@@ -80,6 +88,13 @@ def validate_payload(files: dict[str, bytes]) -> dict:
         for path, expected in outputs.items():
             if files.get(path.as_posix()) != expected.encode():
                 raise ValueError(f'generated output is missing or stale at release commit: {path}')
+        for script in ('research/cyber-deployment/operational-risk/build.py',
+                       'scripts/build_cyber_datasets.py', 'scripts/audit_cyber_bibliography.py'):
+            flags = [] if script.endswith('audit_cyber_bibliography.py') else ['--check']
+            result = subprocess.run([sys.executable, '-B', str(root / script), *flags],
+                                    cwd=root, capture_output=True, text=True)
+            if result.returncode:
+                raise ValueError(f'linked dataset validation failed: {script}: {result.stdout}{result.stderr}')
         snapshots, _ = build_commitments.load_history(root)
     legacy = sorted(key for key, item in snapshots.items() if item['preservation_status'] == 'legacy_uncaptured')
     unarchived = sorted(key for key, item in snapshots.items()

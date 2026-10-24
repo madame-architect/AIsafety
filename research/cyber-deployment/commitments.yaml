@@ -7,19 +7,17 @@ observations:
   evidence_kind: policy_statement
   modality: recommendation
   scope: Model-weight security for models reaching the cyber critical capability level.
-  trigger: 'Cyber uplift level 1: model assistance supplies sufficient uplift in high-impact
-    cyber attacks to produce additional expected harm at severe scale, relative to
-    a baseline without generative AI.'
+  trigger: 'Cyber uplift level 1: model assistance supplies sufficient uplift in high-impact cyber attacks
+    to produce additional expected harm at severe scale, relative to a baseline without generative AI.'
   action: Recommends Security Level 2 (SL2).
-  qualifications: The issuer may judge other security adequate. Recommendations can
-    change with comparable models' capabilities and security, or the assessed benefits
-    of releasing weights. These are conditional security goals.
-  source_rationale: The issuer expects possible automated cyber defense and societal
-    adaptation following exfiltration to weigh against higher security levels and
-    their innovation costs, despite potential interest from well-resourced state actors.
-    This is the issuer's risk judgment.
-  locator: Section 2.2.2, Table 2.2.2.a, PDF p. 10; sections 1.6 (p. 7), 2.1.1 (p.
-    8), 2.2 (p. 9); baseline footnote 10 (p. 10).
+  qualifications: The issuer may judge other security adequate. Recommendations can change with comparable
+    models' capabilities and security, or the assessed benefits of releasing weights. These are conditional
+    security goals.
+  source_rationale: The issuer expects possible automated cyber defense and societal adaptation following
+    exfiltration to weigh against higher security levels and their innovation costs, despite potential
+    interest from well-resourced state actors. This is the issuer's risk judgment.
+  locator: Section 2.2.2, Table 2.2.2.a, PDF p. 10; sections 1.6 (p. 7), 2.1.1 (p. 8), 2.2 (p. 9); baseline
+    footnote 10 (p. 10).
   change_type: observed
 - id: deepmind_cyber_weights_fsf_3_1
   commitment_id: deepmind_cyber_ccl_model_weight_security
@@ -28,110 +26,291 @@ observations:
   evidence_kind: policy_statement
   modality: recommendation
   scope: Model-weight security for models reaching the cyber critical capability level.
-  trigger: 'Cyber uplift level 1: model assistance supplies sufficient uplift in high-impact
-    cyber attacks to produce additional expected harm at severe scale, relative to
-    a baseline without generative AI.'
+  trigger: 'Cyber uplift level 1: model assistance supplies sufficient uplift in high-impact cyber attacks
+    to produce additional expected harm at severe scale, relative to a baseline without generative AI.'
   action: Recommends Security Level 2+ (SL2+).
-  qualifications: The issuer may judge other security adequate. Comparable models
-    and benefits of releasing weights remain considerations. Additional SL2+ controls
-    are illustrative, not a mandatory checklist.
-  source_rationale: The issuer expects possible automated cyber defense and societal
-    adaptation following exfiltration to weigh against higher security levels and
-    their innovation costs, despite potential interest from well-resourced state actors.
-    This is the issuer's risk judgment.
-  locator: Section 2.2.2, Table 2.2.2.a, PDF p. 12; sections 1.3.5 (p. 7), 2.1.1 (p.
-    9), 2.2 (p. 11), 5.3 (p. 17); baseline footnote 8 (p. 11).
+  qualifications: The issuer may judge other security adequate. Comparable models and benefits of releasing
+    weights remain considerations. Additional SL2+ controls are illustrative, not a mandatory checklist.
+  source_rationale: The issuer expects possible automated cyber defense and societal adaptation following
+    exfiltration to weigh against higher security levels and their innovation costs, despite potential
+    interest from well-resourced state actors. This is the issuer's risk judgment.
+  locator: Section 2.2.2, Table 2.2.2.a, PDF p. 12; sections 1.3.5 (p. 7), 2.1.1 (p. 9), 2.2 (p. 11),
+    5.3 (p. 17); baseline footnote 8 (p. 11).
   change_type: revised
   previous_observation_id: deepmind_cyber_weights_fsf_3_0
-  change_note: The recommended level changes from SL2 to SL2+. The cyber CCL and rationale
-    retain their wording in the compared tables; other framework provisions also changed.
-    This records a documentary revision, not a measured improvement in security or
-    proof of model-specific implementation.
+  change_note: The recommended level changes from SL2 to SL2+. The cyber CCL and rationale retain their
+    wording in the compared tables; other framework provisions also changed. This records a documentary
+    revision, not a measured improvement in security or proof of model-specific implementation.
+- id: openai_cyber_high_threshold_beta
+  commitment_id: openai_cyber_high_threshold
+  issuer: OpenAI
+  snapshot_id: openai_preparedness_beta_observed_2026_10_24
+  evidence_kind: policy_statement
+  modality: requirement
+  scope: Cyber High threshold and associated safeguard trigger
+  trigger: A tool-enabled model autonomously produces proofs of concept for high-value exploits on hardened
+    targets, or executes cyber operations end to end without human intervention when supplied a detailed
+    strategy.
+  action: Treat this as High risk in the beta scorecard; use the pre-/post-mitigation ratings to trigger
+    security and deployment controls.
+  qualifications: Beta has four risk levels. High is not a benchmark score or directly equivalent to the
+    later capability label.
+  locator: Cybersecurity table, High row, PDF viewer p. 8; Scorecard p. 13; Safety baselines pp. 20-21.
+  change_type: observed
+  source_rationale: The issuer links scarce high-value exploitation and end-to-end execution to broader
+    access and increased attack throughput.
 - id: openai_cyber_high_threshold_v2
   commitment_id: openai_cyber_high_threshold
   issuer: OpenAI
   snapshot_id: openai_preparedness_v2_captured_2026_10_24
   evidence_kind: policy_statement
   modality: requirement
-  scope: Cyber High capability threshold
-  trigger: Cyber model removes bottlenecks to scaling cyber operations, including
-    automated end-to-end operations against reasonably hardened targets or discovery
-    and exploitation of operationally relevant vulnerabilities.
-  action: Classify as High cybersecurity capability and require High security controls
-    and sufficiently effective misuse safeguards before external deployment.
-  qualifications: Requirement applies to covered models assessed at the High threshold;
-    capability assessment and safeguards sufficiency remain issuer judgments.
-  locator: Table 1, Cybersecurity High row, PDF viewer p. 6; sections 2.2 and 4.2.
+  scope: Cyber High threshold and associated safeguard trigger
+  trigger: A model removes scaling bottlenecks by automating end-to-end cyber operations against reasonably
+    hardened targets OR automating discovery and exploitation of operationally relevant vulnerabilities.
+  action: Apply High-standard security controls and external-misuse safeguards; the separately coded internal-use
+    provision concerns misalignment safeguards.
+  qualifications: Threshold determination uses holistic evidence and evaluation uncertainty, not a mechanical
+    benchmark conversion. Internal-use ambiguity is retained separately.
+  locator: Section 2.2 and Table 1, PDF viewer pp. 5-6; sections 3.1-3.3, pp. 9-11.
+  change_type: revised
+  source_rationale: The issuer argues that scalable automation could upset the offense/defense balance.
+  previous_observation_id: openai_cyber_high_threshold_beta
+  change_note: Reframes High from autonomous high-value exploit proofs of concept/detailed-strategy execution
+    to removal of scaling bottlenecks. Beta risk labels and v2 capability thresholds are not treated as
+    calibrated equivalents.
+- id: openai_cyber_critical_threshold_beta
+  commitment_id: openai_cyber_critical_threshold
+  issuer: OpenAI
+  snapshot_id: openai_preparedness_beta_observed_2026_10_24
+  evidence_kind: policy_statement
+  modality: requirement
+  scope: Cyber Critical capability definition
+  trigger: A tool-enabled model autonomously develops functional zero-day exploits at every severity across
+    all software projects OR devises and executes novel end-to-end attacks on hardened targets from a
+    high-level goal.
+  action: Use the Critical classification in the beta risk scorecard and development safeguard decision.
+  qualifications: The all-software quantifier belongs to the first branch; the second branch is an alternative.
+    Classification is not a claim a model has attained it.
+  locator: Cybersecurity table, Critical row, PDF viewer p. 8; Restricting development, p. 21.
   change_type: observed
-  source_rationale: OpenAI's stated Preparedness Framework risk-control rationale;
-    not independently verified implementation.
 - id: openai_cyber_critical_threshold_v2
   commitment_id: openai_cyber_critical_threshold
   issuer: OpenAI
   snapshot_id: openai_preparedness_v2_captured_2026_10_24
   evidence_kind: policy_statement
   modality: requirement
-  scope: Cyber Critical capability threshold
-  trigger: Tool-augmented model can autonomously develop functional zero-day exploits
-    across many hardened critical systems, or execute novel end-to-end cyberattack
-    strategies from a high-level goal.
-  action: Until Critical safeguard and security-control standards are specified, halt
-    further development.
-  qualifications: Critical denotes qualitatively new severe-harm pathways; this is
-    a documentary requirement, not evidence that a model reached the threshold.
-  locator: Table 1, Cybersecurity Critical row, PDF viewer p. 7; section 2.2.
-  change_type: observed
-  source_rationale: OpenAI's stated Preparedness Framework risk-control rationale;
-    not independently verified implementation.
+  scope: Cyber Critical capability definition
+  trigger: A tool-enabled model autonomously develops functional zero-day exploits at every severity in
+    many hardened real-world critical systems OR devises and executes novel end-to-end attacks on hardened
+    targets from a high-level goal.
+  action: Use the Critical capability threshold to invoke development safeguards; the development gate
+    is coded separately.
+  qualifications: Both branches are retained, and no capability attainment is inferred.
+  locator: Table 1, Cybersecurity Critical row, PDF viewer p. 7; section 2.2, p. 5.
+  change_type: revised
+  previous_observation_id: openai_cyber_critical_threshold_beta
+  change_note: The first branch changes its scope from all software projects to many hardened real-world
+    critical systems; the high-level-goal alternative remains. This documentary change alone does not
+    quantify a shift in risk.
 - id: openai_cyber_internal_use_v2
   commitment_id: openai_cyber_internal_use
   issuer: OpenAI
   snapshot_id: openai_preparedness_v2_captured_2026_10_24
   evidence_kind: policy_statement
   modality: requirement
-  scope: Cyber High internal-use safeguards
-  trigger: High cybersecurity capability with large-scale internal deployment.
-  action: Require High-standard safeguards against misalignment for large-scale internal
-    deployment, alongside security controls.
-  qualifications: Distinct from the external misuse-safeguard condition; scope is
-    large-scale internal deployment.
-  locator: Table 1, Cybersecurity High row, PDF viewer p. 6.
+  scope: Misalignment safeguards for internal use of cyber-capable models
+  trigger: Table 1 associates High cyber capability with large-scale internal deployment; its separate
+    risk-rationale column discusses cyber capability in conjunction with long-range autonomy.
+  action: Require High-standard misalignment safeguards for large-scale internal deployment.
+  qualifications: The safeguard bullet itself does not repeat the autonomy condition. Preserve this ambiguity
+    rather than retroactively inserting the later clarification into v2. This differs from external misuse
+    safeguards.
+  locator: Table 1, High cyber row and separate risk/safeguard columns, PDF viewer p. 6; Table 2, Long-range
+    Autonomy, p. 8; Appendix C.2, pp. 19-20.
   change_type: observed
-  source_rationale: OpenAI's stated Preparedness Framework risk-control rationale;
-    not independently verified implementation.
+- id: openai_cyber_internal_use_codex_clarification
+  commitment_id: openai_cyber_internal_use
+  issuer: OpenAI
+  snapshot_id: openai_gpt53_codex_observed_2026_10_24
+  evidence_kind: policy_statement
+  modality: requirement
+  scope: Misalignment safeguards for internal use of cyber-capable models
+  trigger: The issuer states that the intended trigger combines High cyber capability with long-range
+    autonomy.
+  action: Interpret the internal-deployment safeguard requirement as contingent on that combination; the
+    issuer says future framework revisions will make this explicit.
+  qualifications: The system card is dated 2026-02-05, but the insertion/effective date of the final Note
+    is not verified. No claimed_application_on is assigned. This is the issuer's interpretation, not independent
+    proof of compliance.
+  locator: Section 5.2.1.5, PDF viewer pp. 29-30; final Note on p. 30 (printed p. 29).
+  change_type: clarified
+  source_rationale: The issuer says cyber capability can remove a bottleneck to internal misuse risks
+    when combined with long-range autonomy.
+  previous_observation_id: openai_cyber_internal_use_v2
+  change_note: Adds an explicit conjunctive trigger to the interpretation of the internal-use rule. Preserve
+    the earlier table and classify as an issuer clarification, not an observed safety outcome or silently
+    backdated wording.
+- id: openai_frontier_safeguard_review_beta
+  commitment_id: openai_frontier_safeguard_review
+  issuer: OpenAI
+  snapshot_id: openai_preparedness_beta_observed_2026_10_24
+  evidence_kind: policy_statement
+  modality: requirement
+  scope: Deployment gate and safeguard sufficiency review, including cyber risk
+  trigger: A model reaches or is forecast to reach High pre-mitigation risk in a tracked category.
+  action: Do not deploy unless post-mitigation risk is Medium or lower; SAG advises, leadership decides,
+    and the board can reverse decisions.
+  qualifications: Trusted-party deployment may be a mitigation. The beta restriction is expressed as post-mitigation
+    risk ratings, not the later High capability/safeguard-report process.
+  locator: Restricting deployment, PDF viewer p. 21; Operations, pp. 22-24.
+  change_type: observed
 - id: openai_frontier_safeguard_review_v2
   commitment_id: openai_frontier_safeguard_review
   issuer: OpenAI
   snapshot_id: openai_preparedness_v2_captured_2026_10_24
   evidence_kind: policy_statement
   modality: requirement
-  scope: Frontier safeguard sufficiency and deployment decision
-  trigger: Covered frontier model reaches High capability in a Tracked Category, including
+  scope: Deployment gate and safeguard sufficiency review, including cyber risk
+  trigger: A covered system reaches a High or Critical capability threshold in a Tracked Category, including
     cybersecurity.
-  action: Do not deploy until associated severe-harm risks are sufficiently minimized;
-    Safety Advisory Group reviews capability and safeguard evidence and recommends
-    action to leadership.
-  qualifications: Leadership retains decision authority; source does not independently
-    demonstrate safeguard effectiveness.
-  locator: Sections 1, 2.2, 4.2 and 5.1, PDF viewer pp. 4-6 and 11-14.
+  action: Require safeguards judged sufficient to minimize severe-harm risk for deployment; SAG reviews
+    Capabilities and Safeguards Reports and recommends action to leadership.
+  qualifications: Leadership retains decision authority and SSC/board oversight is described in Appendix
+    B. Section 4.3 permits adjustments only after confirming a changed external risk landscape, assessing
+    no meaningful overall risk increase, publicly acknowledging the adjustment, and retaining more protective
+    safeguards than the comparator. Sufficiency is an issuer judgment, not measured effectiveness.
+  locator: Section 2.2, PDF viewer p. 5; section 4.2, pp. 11-13; section 4.3, p. 13; Appendix B, p. 16.
+  change_type: revised
+  previous_observation_id: openai_frontier_safeguard_review_beta
+  change_note: Replaces a post-mitigation score ceiling with capability-triggered safeguard sufficiency
+    review and distinct reports. The qualification and decision authority remain explicit; no single strengthened/weakened
+    rating is assigned.
+- id: openai_frontier_reassessment_beta
+  commitment_id: openai_frontier_reassessment
+  issuer: OpenAI
+  snapshot_id: openai_preparedness_beta_observed_2026_10_24
+  evidence_kind: policy_statement
+  modality: requirement
+  scope: Evaluation updates and reassessment of frontier cyber risk
+  trigger: Non-trivial capability changes, observed misuse, new research, or changing risk assessments.
+  action: Maintain a frequently updated scorecard; evaluate before, during, and after training as needed
+    and use misuse monitoring/research to revise evaluations and risk levels.
+  qualifications: The beta gives a greater-than-twofold effective-compute increase or major algorithmic
+    breakthrough as example evaluation triggers, and includes periodic reporting and urgent escalation.
+  locator: Scorecard and evaluation approach, PDF viewer pp. 13-14; Operations, pp. 23-24.
   change_type: observed
-  source_rationale: OpenAI's stated Preparedness Framework risk-control rationale;
-    not independently verified implementation.
 - id: openai_frontier_reassessment_v2
   commitment_id: openai_frontier_reassessment
   issuer: OpenAI
   snapshot_id: openai_preparedness_v2_captured_2026_10_24
   evidence_kind: policy_statement
   modality: requirement
-  scope: Frontier capability evaluation and reassessment
-  trigger: Covered frontier model development and deployment, with emerging capability
-    or risk evidence.
-  action: Evaluate covered models during development and before deployment, maintain
-    scalable testing with deeper reviews, and reassess risk categories and safeguards
-    as evidence changes.
-  qualifications: Applies within Preparedness Framework tracked categories and covered
-    systems; no external implementation audit is implied.
-  locator: Sections 2.1, 3.1-3.3, 4.2 and 5.1, PDF viewer pp. 5, 9-11 and 13-14.
+  scope: Evaluation updates and reassessment of frontier cyber risk
+  trigger: New information about risk, elicitation, capabilities or significant deployment conditions
+    makes an existing assessment insufficient.
+  action: Periodically review categories; reassess evaluations as elicitation improves; use scalable evaluations
+    and deep dives, with significant model/deployment changes covered when existing reports no longer
+    reasonably apply. Review the framework for continued sufficiency at least annually and reassess safeguards
+    when reasonable contrary evidence emerges.
+  qualifications: Not every incremental/distilled model is automatically re-evaluated. Section 3.2 and
+    footnote 6 bound coverage; SAG decides ambiguous cases.
+  locator: Section 2.1, PDF viewer p. 5; sections 3.1-3.3, pp. 9-11; section 4.2, pp. 12-13; Appendix
+    B, p. 16.
+  change_type: revised
+  previous_observation_id: openai_frontier_reassessment_beta
+  change_note: Retains evidence-responsive reassessment while replacing the scorecard-centered mechanism
+    with scalable evaluations, deep dives, and report-applicability tests. No fixed re-testing frequency
+    is inferred.
+- id: openai_cyber_critical_development_gate_beta
+  commitment_id: openai_cyber_critical_development_gate
+  issuer: OpenAI
+  snapshot_id: openai_preparedness_beta_observed_2026_10_24
+  evidence_kind: policy_statement
+  modality: requirement
+  scope: Conditions for continuing development under Critical cyber risk
+  trigger: Critical pre-mitigation risk is reached or forecast in a tracked category, including cyber.
+  action: Continue capability-enhancing development only when mitigations reduce post-mitigation risk
+    to High or lower and there is dependable alignment evidence against initiating Critical tasks without
+    instruction.
+  qualifications: Safety-enhancing development is not precluded; the text requires reasonable assurance
+    rather than proof of zero risk.
+  locator: Restricting development, PDF viewer p. 21; Operations, pp. 22-24.
   change_type: observed
-  source_rationale: OpenAI's stated Preparedness Framework risk-control rationale;
-    not independently verified implementation.
+- id: openai_cyber_critical_development_gate_v2
+  commitment_id: openai_cyber_critical_development_gate
+  issuer: OpenAI
+  snapshot_id: openai_preparedness_v2_captured_2026_10_24
+  evidence_kind: policy_statement
+  modality: requirement
+  scope: Conditions for continuing development under Critical cyber risk
+  trigger: A covered system has Critical cyber capability.
+  action: Until Critical safeguard and security-control standards are specified, halt further development;
+    safeguards apply during development regardless of deployment plans.
+  qualifications: The temporary halt is conditional on specifying standards, and must be read with the
+    general risk-minimization process and section 4.3 qualifications. It is not an unconditional permanent
+    moratorium.
+  locator: Section 2.2, PDF viewer p. 5; Table 1, Critical cyber safeguards, p. 7; sections 4.2-4.4, pp.
+    11-13.
+  change_type: revised
+  previous_observation_id: openai_cyber_critical_development_gate_beta
+  change_note: Changes the beta post-mitigation ceiling into a Critical-standard requirement and conditional
+    development halt; keep safety-enhancing work and issuer judgment distinctions visible.
+- id: openai_cyber_critical_development_gate_pacing_2026
+  commitment_id: openai_cyber_critical_development_gate
+  issuer: OpenAI
+  snapshot_id: openai_pacing_cyber_observed_2026_10_24
+  evidence_kind: policy_statement
+  modality: requirement
+  scope: Conditions for continuing development under Critical cyber risk
+  trigger: Frontier research workloads involving Astra/cyber models and a planned frontier RL run under
+    possible Critical cyber capability.
+  action: Require stronger evidence of aligned behavior throughout training and the strictest security
+    safeguards for Astra/cyber workloads; workloads remain paused until they meet the new security bar.
+  qualifications: This announcement says its broader approach extends beyond the current framework. It
+    does not label these requirements a new numbered edition or explicitly certify fulfillment of every
+    v2 Critical standard. Reported pauses and resumes are implementation claims, not coded outcomes.
+  locator: Opening paragraphs 2-4; Securing our research environments, final two paragraphs; What’s next,
+    first paragraph.
+  change_type: revised
+  previous_observation_id: openai_cyber_critical_development_gate_v2
+  change_note: Specifies and broadens development-safeguard conditions in a separate announcement. This
+    does not establish formal replacement of v2 or certify fulfillment of its Critical-standard condition.
+- id: openai_frontier_research_containment_pacing_2026
+  commitment_id: openai_frontier_research_containment
+  issuer: OpenAI
+  snapshot_id: openai_pacing_cyber_observed_2026_10_24
+  evidence_kind: policy_statement
+  modality: requirement
+  scope: Isolation and assurance requirements for frontier training and evaluation
+  trigger: Research workloads execute model-generated/untrusted code, process model output, or otherwise
+    qualify as higher-risk cyber work.
+  action: Require stronger workload isolation and the strictest security safeguards for Astra/cyber workloads;
+    isolate high-risk workloads from the internet with defense in depth.
+  qualifications: The article mixes requirements with implementation reports and testing plans. Only stated
+    policy is coded; named security testing work is not proof of containment.
+  locator: 'Securing our research environments: Workload isolation, Network isolation, Continuous security
+    testing, and concluding paragraphs.'
+  change_type: observed
+- id: openai_frontier_research_containment_containment_2026
+  commitment_id: openai_frontier_research_containment
+  issuer: OpenAI
+  snapshot_id: openai_frontier_training_observed_2026_10_24
+  evidence_kind: policy_statement
+  modality: requirement
+  scope: Isolation and assurance requirements for frontier training and evaluation
+  trigger: Frontier-model training and most evaluation; safety cases for future frontier RL training/evaluation.
+  action: Conduct frontier training without live internet access until advances in safeguards justify
+    broader access; maintain boundaries around authorized resources and include high-compute red-teaming
+    in safety cases for future runs.
+  qualifications: Training/most evaluation are not the same as customer deployments or an absolute ban
+    for every evaluation. Offline cached content is distinct from live access. No effective date is inferred
+    from publication, and the reported October 1 resumption is not evidence of policy effectiveness.
+  locator: Opening policy paragraph beginning Based on the current state; Our new approach to model containment;
+    Building an offline world; Resuming frontier training with stronger defenses, Making red-teaming part
+    of our safety cases.
+  change_type: revised
+  previous_observation_id: openai_frontier_research_containment_pacing_2026
+  change_note: Makes no-live-internet frontier training and red-teaming in safety cases explicit, relative
+    to the earlier risk-tiered isolation statement. Does not establish all systems complied or that residual
+    risk vanished.
