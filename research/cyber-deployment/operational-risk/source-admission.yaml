@@ -24,7 +24,7 @@ sources:
   proposed_record_id: amazon_fortigateaiaugmented_2026
   record_id: amazon_fortigateaiaugmented_2026
   research_admission: accepted
-  bibliography_admission: admitted
+  bibliography_admission: accepted
   admitted_on: '2026-10-24'
   title: AI-augmented threat actor accesses FortiGate devices at scale
   author_display: CJ Moses / Amazon Threat Intelligence
@@ -43,7 +43,7 @@ sources:
   proposed_record_id: google_gtig_promptingautonomy_2026
   record_id: google_gtig_promptingautonomy_2026
   research_admission: accepted
-  bibliography_admission: admitted
+  bibliography_admission: accepted
   admitted_on: '2026-10-24'
   title: 'GTIG AI Threat Tracker: From Prompting to Autonomy – The Evolution of Adversarial AI'
   author_display: Google Threat Intelligence Group
@@ -62,7 +62,7 @@ sources:
   proposed_record_id: aisi_unsanctionedagentincident_2026
   record_id: aisi_unsanctionedagentincident_2026
   research_admission: accepted
-  bibliography_admission: admitted
+  bibliography_admission: accepted
   admitted_on: '2026-10-24'
   title: 'Incident Report: unsanctioned agent behaviour during cyber testing'
   author_display: UK AI Security Institute
@@ -85,7 +85,7 @@ sources:
   proposed_record_id: lin_artemispenetration_2026
   record_id: lin_artemispenetration_2026
   research_admission: accepted
-  bibliography_admission: admitted
+  bibliography_admission: accepted
   admitted_on: '2026-10-24'
   title: Comparing AI Agents to Cybersecurity Professionals in Real-World Penetration Testing
   authors:
@@ -119,7 +119,7 @@ sources:
   proposed_record_id: barrett_quantitativecyberrisk_2025
   record_id: barrett_quantitativecyberrisk_2025
   research_admission: accepted
-  bibliography_admission: admitted
+  bibliography_admission: accepted
   admitted_on: '2026-10-24'
   title: Toward Quantitative Modeling of Cybersecurity Risks Due to AI Misuse
   authors:
@@ -161,7 +161,7 @@ sources:
   proposed_record_id: souly_astraunsanctioned_2026
   record_id: souly_astraunsanctioned_2026
   research_admission: accepted
-  bibliography_admission: admitted
+  bibliography_admission: accepted
   admitted_on: '2026-10-24'
   title: Evaluating Whether GPT-6 Astra Performs Unsanctioned Supply-Chain Attacks
   authors:
