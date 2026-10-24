@@ -1,0 +1,74 @@
+{
+  "schema_version": "cyber-bibliography-integration-v1",
+  "reviewed_on": "2026-10-24",
+  "input_commit": "d1f8b64565399073656264cafe17ea338d88a736",
+  "records_before": 282,
+  "records_after": 286,
+  "records_added": [
+    "openai_preparednessbeta_2023",
+    "openai_gpt53codexsystemcard_2026",
+    "openai_pacingcyberdevelopment_2026",
+    "openai_frontiertrainingenvironment_2026"
+  ],
+  "existing_records_corrected": [
+    "amazon_fortigateaiaugmented_2026",
+    "google_gtig_promptingautonomy_2026",
+    "aisi_unsanctionedagentincident_2026",
+    "lin_artemispenetration_2026",
+    "barrett_quantitativecyberrisk_2025",
+    "souly_astraunsanctioned_2026"
+  ],
+  "unrelated_existing_records_unchanged": 276,
+  "duplicate_check": [
+    {
+      "record_id": "amazon_fortigateaiaugmented_2026",
+      "other_existing_matches": []
+    },
+    {
+      "record_id": "google_gtig_promptingautonomy_2026",
+      "other_existing_matches": []
+    },
+    {
+      "record_id": "aisi_unsanctionedagentincident_2026",
+      "other_existing_matches": []
+    },
+    {
+      "record_id": "lin_artemispenetration_2026",
+      "other_existing_matches": []
+    },
+    {
+      "record_id": "barrett_quantitativecyberrisk_2025",
+      "other_existing_matches": []
+    },
+    {
+      "record_id": "souly_astraunsanctioned_2026",
+      "other_existing_matches": []
+    },
+    {
+      "record_id": "openai_preparednessbeta_2023",
+      "other_existing_matches": []
+    },
+    {
+      "record_id": "openai_gpt53codexsystemcard_2026",
+      "other_existing_matches": []
+    },
+    {
+      "record_id": "openai_pacingcyberdevelopment_2026",
+      "other_existing_matches": []
+    },
+    {
+      "record_id": "openai_frontiertrainingenvironment_2026",
+      "other_existing_matches": []
+    }
+  ],
+  "method": "AI-assisted bibliographic and scoped evidence reinspection on 2026-10-24 of retained source bytes; not independent human coding, experimental replication, or a new operational-evidence round.",
+  "research_rounds_added": 0,
+  "empirical_observations_added": 0,
+  "capture_bundle": {
+    "file_name": "cyber-research-source-captures-2026-10-24.zip",
+    "sha256": "7d94cdb5c6349ae4b32978a35364980a2d6f6a225c8402f454ad14b186fc3509",
+    "byte_length": 15924250,
+    "payloads_verified": 11,
+    "retention": "Private project-owner Library copy plus exact archive references; not dependent on the expiring CI artifact. Not an OSF deposit."
+  }
+}

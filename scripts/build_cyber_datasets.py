@@ -19,7 +19,12 @@ ASSUMPTIONS_PATH = DIRECTORY / "operational-risk" / "assumptions.yaml"
 RISK_EVIDENCE_PATH = DIRECTORY / "operational-risk" / "risk-evidence.yaml"
 OUTPUT_PATH = DIRECTORY / "longitudinal-map.md"
 
-ALLOWED_RELATIONSHIPS = {"policy_depends_on"}
+RELATIONSHIP_LABELS = {
+    "policy_depends_on": "Depends on risk premise",
+    "policy_counters": "Seeks to counter risk pathway",
+    "policy_assesses": "Assesses risk premise",
+}
+ALLOWED_RELATIONSHIPS = set(RELATIONSHIP_LABELS)
 ALLOWED_ROLES = {"supports", "challenges", "bounds", "contextualizes", "unresolved"}
 
 
@@ -87,7 +92,7 @@ def validate() -> tuple[dict[str, Any], dict[str, Any], dict[str, Any], dict[str
         raise ValidationError("datasets.yaml: linkage authority_file must be dataset-links.yaml")
     if linkage.get("bridge_key") != "assumption_id":
         raise ValidationError("datasets.yaml: bridge_key must be assumption_id")
-    if links.get("schema_version") != "cyber-dataset-links-v1":
+    if links.get("schema_version") != "cyber-dataset-links-v2":
         raise ValidationError("dataset-links.yaml: unsupported schema_version")
 
     commitment_by_observation = keyed(commitments.get("observations"), "id", "commitment observations")
@@ -116,7 +121,7 @@ def validate() -> tuple[dict[str, Any], dict[str, Any], dict[str, Any], dict[str
             raise ValidationError(f"{link['id']}: unknown commitment_id {commitment_id!r}")
         if assumption_id not in assumption_by_id:
             raise ValidationError(f"{link['id']}: unknown assumption_id {assumption_id!r}")
-        if link.get("relationship") not in ALLOWED_RELATIONSHIPS:
+        if not isinstance(link.get("relationship"), str) or link["relationship"] not in ALLOWED_RELATIONSHIPS:
             raise ValidationError(f"{link['id']}: invalid relationship")
         pair = (commitment_id, assumption_id)
         if pair in seen_pairs:
@@ -139,9 +144,9 @@ def validate() -> tuple[dict[str, Any], dict[str, Any], dict[str, Any], dict[str
     return manifest, links, commitments, assumptions, evidence
 
 
-def short(value: Any, limit: int = 180) -> str:
-    text = " ".join(str(value).split())
-    return text if len(text) <= limit else text[: limit - 1].rstrip() + "…"
+def cell(value: Any) -> str:
+    """Keep the full rationale visible; do not truncate interpretation caveats."""
+    return " ".join(str(value).split()).replace("|", "\\|")
 
 
 def generate(manifest: dict[str, Any], links: dict[str, Any], commitments: dict[str, Any],
@@ -176,8 +181,20 @@ def generate(manifest: dict[str, Any], links: dict[str, Any], commitments: dict[
         "",
         "## Explicit linkage",
         "",
-        "| Commitment | Covered observations | Assumption | Latest assessment | Evidence roles | Why the policy depends on it |",
-        "|---|---:|---|---|---|---|",
+        "The relationship describes the policy's stance toward the stated risk proposition, not whether "
+        "the policy succeeds. Assessments and evidence roles below always concern the assumption as written.",
+        "",
+        "- **Depends on risk premise** (`policy_depends_on`): the policy argument relies on that proposition.",
+        "- **Seeks to counter risk pathway** (`policy_counters`): the policy aims to interrupt or reduce it; success is not inferred.",
+        "- **Assesses risk premise** (`policy_assesses`): the policy or its stated rationale evaluates whether, or to what extent, it holds.",
+        "",
+        "**Direction warning:** `defense_persistence` means offensive uplift survives defenses and adaptation, "
+        "not that defenses remain effective. A **challenged** assessment is not evidence against safeguards "
+        "and does not establish the effectiveness of any particular safeguard. No assessment is inverted or "
+        "converted into a policy-effectiveness score.",
+        "",
+        "| Commitment | Covered observations | Relationship to assumption | Assumption | Assumption assessment (not safeguard rating) | Evidence roles | Link rationale |",
+        "|---|---:|---|---|---|---|---|",
     ]
     for link in links["links"]:
         assumption = assumption_by_id[link["assumption_id"]]
@@ -186,8 +203,9 @@ def generate(manifest: dict[str, Any], links: dict[str, Any], commitments: dict[
         role_text = ", ".join(f"{key}: {roles[key]}" for key in sorted(roles))
         lines.append(
             f"| `{link['commitment_id']}` | {len(link['commitment_observation_ids'])} | "
+            f"{RELATIONSHIP_LABELS[link['relationship']]} (`{link['relationship']}`) | "
             f"`{assumption['id']}` — {assumption['label']} | **{latest['code']}** as of {latest['as_of']} | "
-            f"{role_text} | {short(link['rationale'], 210)} |"
+            f"{role_text} | {cell(link['rationale'])} |"
         )
 
     lines += [
@@ -196,8 +214,10 @@ def generate(manifest: dict[str, Any], links: dict[str, Any], commitments: dict[
         "",
         "The commitment dataset records what providers state across document editions. The evidence dataset "
         "records what empirical, operational, simulated, or modeled sources imply for stable assumptions. "
-        "The link says a policy argument relies on an assumption; it does **not** say that the evidence caused "
-        "the policy change, that the policy was implemented, or that the safeguard was effective.",
+        "A link distinguishes reliance on, intended counteraction of, and assessment of a risk proposition. "
+        "It does **not** say that the evidence caused the policy change, that the policy was implemented, "
+        "or that the safeguard was effective. Evidence against a general risk proposition is not a "
+        "control-specific effectiveness estimate.",
         "",
         "Future provider observations append to the commitment history. Future research rounds append source "
         "observations and dated assumption assessments rather than overwriting earlier judgments.",
