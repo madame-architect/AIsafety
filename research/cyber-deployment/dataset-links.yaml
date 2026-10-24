@@ -7,9 +7,9 @@ links:
   - deepmind_cyber_weights_fsf_3_1
   assumption_id: capability_access
   relationship: policy_depends_on
-  rationale: >-
-    The provision governs model-weight security because the risk pathway depends on an actor
-    obtaining usable access to the capability represented by the protected weights.
+  rationale: The provision governs model-weight security because the risk pathway
+    depends on an actor obtaining usable access to the capability represented by the
+    protected weights.
 - id: deepmind_weights_to_task_transfer
   commitment_id: deepmind_cyber_ccl_model_weight_security
   commitment_observation_ids:
@@ -17,9 +17,8 @@ links:
   - deepmind_cyber_weights_fsf_3_1
   assumption_id: task_transfer
   relationship: policy_depends_on
-  rationale: >-
-    The cyber capability trigger assumes that evaluated or otherwise assessed model assistance
-    transfers to high-impact operational cyber attacks.
+  rationale: The cyber capability trigger assumes that evaluated or otherwise assessed
+    model assistance transfers to high-impact operational cyber attacks.
 - id: deepmind_weights_to_incremental_uplift
   commitment_id: deepmind_cyber_ccl_model_weight_security
   commitment_observation_ids:
@@ -27,9 +26,9 @@ links:
   - deepmind_cyber_weights_fsf_3_1
   assumption_id: incremental_uplift
   relationship: policy_depends_on
-  rationale: >-
-    The trigger explicitly compares expected harm with a baseline without generative AI and
-    therefore depends on incremental uplift rather than capability in isolation.
+  rationale: The trigger explicitly compares expected harm with a baseline without
+    generative AI and therefore depends on incremental uplift rather than capability
+    in isolation.
 - id: deepmind_weights_to_harm_mapping
   commitment_id: deepmind_cyber_ccl_model_weight_security
   commitment_observation_ids:
@@ -37,9 +36,9 @@ links:
   - deepmind_cyber_weights_fsf_3_1
   assumption_id: harm_mapping
   relationship: policy_depends_on
-  rationale: >-
-    The threshold maps model assistance in attacks to additional expected harm at severe scale;
-    evidence about technical compromise alone does not complete that inference.
+  rationale: The threshold maps model assistance in attacks to additional expected
+    harm at severe scale; evidence about technical compromise alone does not complete
+    that inference.
 - id: deepmind_weights_to_defense_persistence
   commitment_id: deepmind_cyber_ccl_model_weight_security
   commitment_observation_ids:
@@ -47,6 +46,101 @@ links:
   - deepmind_cyber_weights_fsf_3_1
   assumption_id: defense_persistence
   relationship: policy_depends_on
-  rationale: >-
-    The source rationale explicitly weighs automated cyber defense and societal adaptation,
-    making persistence of offensive uplift after defense a material qualification.
+  rationale: The source rationale explicitly weighs automated cyber defense and societal
+    adaptation, making persistence of offensive uplift after defense a material qualification.
+- id: openai_cyber_high_threshold_to_task_transfer
+  commitment_id: openai_cyber_high_threshold
+  commitment_observation_ids:
+  - openai_cyber_high_threshold_v2
+  assumption_id: task_transfer
+  relationship: policy_depends_on
+  rationale: The documented policy provision relies on this benchmark-to-operational-risk
+    assumption; linkage is analytical, not causal attribution.
+- id: openai_cyber_high_threshold_to_incremental_uplift
+  commitment_id: openai_cyber_high_threshold
+  commitment_observation_ids:
+  - openai_cyber_high_threshold_v2
+  assumption_id: incremental_uplift
+  relationship: policy_depends_on
+  rationale: The documented policy provision relies on this benchmark-to-operational-risk
+    assumption; linkage is analytical, not causal attribution.
+- id: openai_cyber_high_threshold_to_defense_persistence
+  commitment_id: openai_cyber_high_threshold
+  commitment_observation_ids:
+  - openai_cyber_high_threshold_v2
+  assumption_id: defense_persistence
+  relationship: policy_depends_on
+  rationale: The documented policy provision relies on this benchmark-to-operational-risk
+    assumption; linkage is analytical, not causal attribution.
+- id: openai_cyber_critical_threshold_to_workflow_autonomy
+  commitment_id: openai_cyber_critical_threshold
+  commitment_observation_ids:
+  - openai_cyber_critical_threshold_v2
+  assumption_id: workflow_autonomy
+  relationship: policy_depends_on
+  rationale: The documented policy provision relies on this benchmark-to-operational-risk
+    assumption; linkage is analytical, not causal attribution.
+- id: openai_cyber_critical_threshold_to_task_transfer
+  commitment_id: openai_cyber_critical_threshold
+  commitment_observation_ids:
+  - openai_cyber_critical_threshold_v2
+  assumption_id: task_transfer
+  relationship: policy_depends_on
+  rationale: The documented policy provision relies on this benchmark-to-operational-risk
+    assumption; linkage is analytical, not causal attribution.
+- id: openai_cyber_critical_threshold_to_harm_mapping
+  commitment_id: openai_cyber_critical_threshold
+  commitment_observation_ids:
+  - openai_cyber_critical_threshold_v2
+  assumption_id: harm_mapping
+  relationship: policy_depends_on
+  rationale: The documented policy provision relies on this benchmark-to-operational-risk
+    assumption; linkage is analytical, not causal attribution.
+- id: openai_cyber_internal_use_to_capability_access
+  commitment_id: openai_cyber_internal_use
+  commitment_observation_ids:
+  - openai_cyber_internal_use_v2
+  assumption_id: capability_access
+  relationship: policy_depends_on
+  rationale: The documented policy provision relies on this benchmark-to-operational-risk
+    assumption; linkage is analytical, not causal attribution.
+- id: openai_cyber_internal_use_to_workflow_autonomy
+  commitment_id: openai_cyber_internal_use
+  commitment_observation_ids:
+  - openai_cyber_internal_use_v2
+  assumption_id: workflow_autonomy
+  relationship: policy_depends_on
+  rationale: The documented policy provision relies on this benchmark-to-operational-risk
+    assumption; linkage is analytical, not causal attribution.
+- id: openai_frontier_safeguard_review_to_harm_mapping
+  commitment_id: openai_frontier_safeguard_review
+  commitment_observation_ids:
+  - openai_frontier_safeguard_review_v2
+  assumption_id: harm_mapping
+  relationship: policy_depends_on
+  rationale: The documented policy provision relies on this benchmark-to-operational-risk
+    assumption; linkage is analytical, not causal attribution.
+- id: openai_frontier_safeguard_review_to_defense_persistence
+  commitment_id: openai_frontier_safeguard_review
+  commitment_observation_ids:
+  - openai_frontier_safeguard_review_v2
+  assumption_id: defense_persistence
+  relationship: policy_depends_on
+  rationale: The documented policy provision relies on this benchmark-to-operational-risk
+    assumption; linkage is analytical, not causal attribution.
+- id: openai_frontier_reassessment_to_task_transfer
+  commitment_id: openai_frontier_reassessment
+  commitment_observation_ids:
+  - openai_frontier_reassessment_v2
+  assumption_id: task_transfer
+  relationship: policy_depends_on
+  rationale: The documented policy provision relies on this benchmark-to-operational-risk
+    assumption; linkage is analytical, not causal attribution.
+- id: openai_frontier_reassessment_to_defense_persistence
+  commitment_id: openai_frontier_reassessment
+  commitment_observation_ids:
+  - openai_frontier_reassessment_v2
+  assumption_id: defense_persistence
+  relationship: policy_depends_on
+  rationale: The documented policy provision relies on this benchmark-to-operational-risk
+    assumption; linkage is analytical, not causal attribution.

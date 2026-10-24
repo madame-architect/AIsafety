@@ -1,58 +1,141 @@
 schema_version: cyber-commitments-v1
 observations:
-  - id: deepmind_cyber_weights_fsf_3_0
-    commitment_id: deepmind_cyber_ccl_model_weight_security
-    issuer: Google DeepMind
-    snapshot_id: deepmind_fsf_3_0_observed_2026_10_17
-    evidence_kind: policy_statement
-    modality: recommendation
-    scope: Model-weight security for models reaching the cyber critical capability level.
-    trigger: >-
-      Cyber uplift level 1: model assistance supplies sufficient uplift in
-      high-impact cyber attacks to produce additional expected harm at severe
-      scale, relative to a baseline without generative AI.
-    action: Recommends Security Level 2 (SL2).
-    qualifications: >-
-      The issuer may judge other security adequate. Recommendations can change
-      with comparable models' capabilities and security, or the assessed
-      benefits of releasing weights. These are conditional security goals.
-    source_rationale: >-
-      The issuer expects possible automated cyber defense and societal
-      adaptation following exfiltration to weigh against higher security
-      levels and their innovation costs, despite potential interest from
-      well-resourced state actors. This is the issuer's risk judgment.
-    locator: >-
-      Section 2.2.2, Table 2.2.2.a, PDF p. 10; sections 1.6 (p. 7),
-      2.1.1 (p. 8), 2.2 (p. 9); baseline footnote 10 (p. 10).
-    change_type: observed
-  - id: deepmind_cyber_weights_fsf_3_1
-    commitment_id: deepmind_cyber_ccl_model_weight_security
-    issuer: Google DeepMind
-    snapshot_id: deepmind_fsf_3_1_observed_2026_10_17
-    evidence_kind: policy_statement
-    modality: recommendation
-    scope: Model-weight security for models reaching the cyber critical capability level.
-    trigger: >-
-      Cyber uplift level 1: model assistance supplies sufficient uplift in
-      high-impact cyber attacks to produce additional expected harm at severe
-      scale, relative to a baseline without generative AI.
-    action: Recommends Security Level 2+ (SL2+).
-    qualifications: >-
-      The issuer may judge other security adequate. Comparable models and
-      benefits of releasing weights remain considerations. Additional SL2+
-      controls are illustrative, not a mandatory checklist.
-    source_rationale: >-
-      The issuer expects possible automated cyber defense and societal
-      adaptation following exfiltration to weigh against higher security
-      levels and their innovation costs, despite potential interest from
-      well-resourced state actors. This is the issuer's risk judgment.
-    locator: >-
-      Section 2.2.2, Table 2.2.2.a, PDF p. 12; sections 1.3.5 (p. 7),
-      2.1.1 (p. 9), 2.2 (p. 11), 5.3 (p. 17); baseline footnote 8 (p. 11).
-    change_type: revised
-    previous_observation_id: deepmind_cyber_weights_fsf_3_0
-    change_note: >-
-      The recommended level changes from SL2 to SL2+. The cyber CCL and
-      rationale retain their wording in the compared tables; other framework
-      provisions also changed. This records a documentary revision, not a
-      measured improvement in security or proof of model-specific implementation.
+- id: deepmind_cyber_weights_fsf_3_0
+  commitment_id: deepmind_cyber_ccl_model_weight_security
+  issuer: Google DeepMind
+  snapshot_id: deepmind_fsf_3_0_observed_2026_10_17
+  evidence_kind: policy_statement
+  modality: recommendation
+  scope: Model-weight security for models reaching the cyber critical capability level.
+  trigger: 'Cyber uplift level 1: model assistance supplies sufficient uplift in high-impact
+    cyber attacks to produce additional expected harm at severe scale, relative to
+    a baseline without generative AI.'
+  action: Recommends Security Level 2 (SL2).
+  qualifications: The issuer may judge other security adequate. Recommendations can
+    change with comparable models' capabilities and security, or the assessed benefits
+    of releasing weights. These are conditional security goals.
+  source_rationale: The issuer expects possible automated cyber defense and societal
+    adaptation following exfiltration to weigh against higher security levels and
+    their innovation costs, despite potential interest from well-resourced state actors.
+    This is the issuer's risk judgment.
+  locator: Section 2.2.2, Table 2.2.2.a, PDF p. 10; sections 1.6 (p. 7), 2.1.1 (p.
+    8), 2.2 (p. 9); baseline footnote 10 (p. 10).
+  change_type: observed
+- id: deepmind_cyber_weights_fsf_3_1
+  commitment_id: deepmind_cyber_ccl_model_weight_security
+  issuer: Google DeepMind
+  snapshot_id: deepmind_fsf_3_1_observed_2026_10_17
+  evidence_kind: policy_statement
+  modality: recommendation
+  scope: Model-weight security for models reaching the cyber critical capability level.
+  trigger: 'Cyber uplift level 1: model assistance supplies sufficient uplift in high-impact
+    cyber attacks to produce additional expected harm at severe scale, relative to
+    a baseline without generative AI.'
+  action: Recommends Security Level 2+ (SL2+).
+  qualifications: The issuer may judge other security adequate. Comparable models
+    and benefits of releasing weights remain considerations. Additional SL2+ controls
+    are illustrative, not a mandatory checklist.
+  source_rationale: The issuer expects possible automated cyber defense and societal
+    adaptation following exfiltration to weigh against higher security levels and
+    their innovation costs, despite potential interest from well-resourced state actors.
+    This is the issuer's risk judgment.
+  locator: Section 2.2.2, Table 2.2.2.a, PDF p. 12; sections 1.3.5 (p. 7), 2.1.1 (p.
+    9), 2.2 (p. 11), 5.3 (p. 17); baseline footnote 8 (p. 11).
+  change_type: revised
+  previous_observation_id: deepmind_cyber_weights_fsf_3_0
+  change_note: The recommended level changes from SL2 to SL2+. The cyber CCL and rationale
+    retain their wording in the compared tables; other framework provisions also changed.
+    This records a documentary revision, not a measured improvement in security or
+    proof of model-specific implementation.
+- id: openai_cyber_high_threshold_v2
+  commitment_id: openai_cyber_high_threshold
+  issuer: OpenAI
+  snapshot_id: openai_preparedness_v2_captured_2026_10_24
+  evidence_kind: policy_statement
+  modality: requirement
+  scope: Cyber High capability threshold
+  trigger: Cyber model removes bottlenecks to scaling cyber operations, including
+    automated end-to-end operations against reasonably hardened targets or discovery
+    and exploitation of operationally relevant vulnerabilities.
+  action: Classify as High cybersecurity capability and require High security controls
+    and sufficiently effective misuse safeguards before external deployment.
+  qualifications: Requirement applies to covered models assessed at the High threshold;
+    capability assessment and safeguards sufficiency remain issuer judgments.
+  locator: Table 1, Cybersecurity High row, source Table 1 (verify PDF page); sections
+    2.2 and 4.2.
+  change_type: observed
+  source_rationale: OpenAI's stated Preparedness Framework risk-control rationale;
+    not independently verified implementation.
+- id: openai_cyber_critical_threshold_v2
+  commitment_id: openai_cyber_critical_threshold
+  issuer: OpenAI
+  snapshot_id: openai_preparedness_v2_captured_2026_10_24
+  evidence_kind: policy_statement
+  modality: requirement
+  scope: Cyber Critical capability threshold
+  trigger: Tool-augmented model can autonomously develop functional zero-day exploits
+    across many hardened critical systems, or execute novel end-to-end cyberattack
+    strategies from a high-level goal.
+  action: Until Critical safeguard and security-control standards are specified, halt
+    further development.
+  qualifications: Critical denotes qualitatively new severe-harm pathways; this is
+    a documentary requirement, not evidence that a model reached the threshold.
+  locator: Table 1, Cybersecurity Critical row, source Table 1 (verify PDF page);
+    section 2.2.
+  change_type: observed
+  source_rationale: OpenAI's stated Preparedness Framework risk-control rationale;
+    not independently verified implementation.
+- id: openai_cyber_internal_use_v2
+  commitment_id: openai_cyber_internal_use
+  issuer: OpenAI
+  snapshot_id: openai_preparedness_v2_captured_2026_10_24
+  evidence_kind: policy_statement
+  modality: requirement
+  scope: Cyber High internal-use safeguards
+  trigger: High cybersecurity capability with large-scale internal deployment.
+  action: Require High-standard safeguards against misalignment for large-scale internal
+    deployment, alongside security controls.
+  qualifications: Distinct from the external misuse-safeguard condition; scope is
+    large-scale internal deployment.
+  locator: Table 1, Cybersecurity High row, PDF viewer p. 6.
+  change_type: observed
+  source_rationale: OpenAI's stated Preparedness Framework risk-control rationale;
+    not independently verified implementation.
+- id: openai_frontier_safeguard_review_v2
+  commitment_id: openai_frontier_safeguard_review
+  issuer: OpenAI
+  snapshot_id: openai_preparedness_v2_captured_2026_10_24
+  evidence_kind: policy_statement
+  modality: requirement
+  scope: Frontier safeguard sufficiency and deployment decision
+  trigger: Covered frontier model reaches High capability in a Tracked Category, including
+    cybersecurity.
+  action: Do not deploy until associated severe-harm risks are sufficiently minimized;
+    Safety Advisory Group reviews capability and safeguard evidence and recommends
+    action to leadership.
+  qualifications: Leadership retains decision authority; source does not independently
+    demonstrate safeguard effectiveness.
+  locator: Sections 1, 2.2, 4.2 and 5.1, source sections 1, 2.2, 4.2, 5.1 (verify
+    PDF pages).
+  change_type: observed
+  source_rationale: OpenAI's stated Preparedness Framework risk-control rationale;
+    not independently verified implementation.
+- id: openai_frontier_reassessment_v2
+  commitment_id: openai_frontier_reassessment
+  issuer: OpenAI
+  snapshot_id: openai_preparedness_v2_captured_2026_10_24
+  evidence_kind: policy_statement
+  modality: requirement
+  scope: Frontier capability evaluation and reassessment
+  trigger: Covered frontier model development and deployment, with emerging capability
+    or risk evidence.
+  action: Evaluate covered models during development and before deployment, maintain
+    scalable testing with deeper reviews, and reassess risk categories and safeguards
+    as evidence changes.
+  qualifications: Applies within Preparedness Framework tracked categories and covered
+    systems; no external implementation audit is implied.
+  locator: Sections 2.1, 3.1-3.3, 4.2 and 5.1, source sections 2.1, 3.1-3.3, 4.2,
+    5.1 (verify PDF pages).
+  change_type: observed
+  source_rationale: OpenAI's stated Preparedness Framework risk-control rationale;
+    not independently verified implementation.
