@@ -16,7 +16,7 @@ Publication dates describe documents; observation dates describe inspection; cla
 | --- | --- |
 | Issuer | Google DeepMind |
 | Source | [deepmind\_frontiersafetyv3\_2025](https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/strengthening-our-frontier-safety-framework/frontier-safety-framework_3.pdf) |
-| Document version | 3.0 |
+| Document version claim | 3.0 |
 | Document publication date | 2025-09-22 |
 | Observed on | 2026-10-17 |
 | Claimed application date | Not recorded |
@@ -44,7 +44,7 @@ Publication dates describe documents; observation dates describe inspection; cla
 | --- | --- |
 | Issuer | Google DeepMind |
 | Source | [deepmind\_frontiersafetyv31\_2026](https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/strengthening-our-frontier-safety-framework/frontier-safety-framework_3-1.pdf) |
-| Document version | 3.1 |
+| Document version claim | 3.1 |
 | Document publication date | 2026-04-17 |
 | Observed on | 2026-10-17 |
 | Claimed application date | Not recorded |
@@ -82,9 +82,21 @@ Publication dates describe documents; observation dates describe inspection; cla
 
 **Inspection scope:** AI-assisted inspection of the primary PDF cover, sections 1.4, 1.6, 2.1.1, 2.2 and 2.2.2, including the cyber table and its qualifications. Page locators use one-based PDF viewer pages, cover included. Observation dates in this file use UTC. This is a scoped clause review, not a new full-source classification review or independent human coding.
 
+**Preservation status:** legacy\_uncaptured
+
+**Retrieved at (UTC):** Not recorded
+
 **SHA-256:** Not recorded
 
+**Byte length:** Not recorded
+
+**MIME type:** Not recorded
+
+**Locator basis:** One-based PDF viewer pages, cover included; section and table labels as printed.
+
 **Preservation:** Version-specific issuer PDF URL inspected through primary-document retrieval. No new PDF byte capture or verified independent archive is retained for this observation; no checksum is recorded. The historical publication date is not a historical capture date. A URL alone does not guarantee that the original bytes will remain retrievable.
+
+**Checked archive:** Not recorded.
 
 ### Snapshot deepmind_fsf_3_1_observed_2026_10_17
 
@@ -96,8 +108,20 @@ Publication dates describe documents; observation dates describe inspection; cla
 
 **Inspection scope:** AI-assisted inspection of the primary PDF cover, sections 1.3.3, 1.3.5, 2.1.1, 2.2, 2.2.2 and 5.3, including the cyber table, security-level definition, qualifications and version history. Page locators use one-based PDF viewer pages, cover included. Observation dates in this file use UTC. This scoped comparison extends the earlier source review; it is not independent human coding.
 
+**Preservation status:** legacy\_uncaptured
+
+**Retrieved at (UTC):** Not recorded
+
 **SHA-256:** Not recorded
 
+**Byte length:** Not recorded
+
+**MIME type:** Not recorded
+
+**Locator basis:** One-based PDF viewer pages, cover included; section and table labels as printed.
+
 **Preservation:** Version-specific issuer PDF URL inspected through primary-document retrieval. No new PDF byte capture or verified independent archive is retained for this observation; no checksum is recorded. The earlier cached PDF and its hash in source-verification.md belong to that earlier inspection and are not presented as a fresh capture. The historical publication date is not a historical capture date.
+
+**Checked archive:** Not recorded.
 
 Source URLs and recorded digests do not themselves guarantee future retrieval. This view does not fetch sources or verify their contents.

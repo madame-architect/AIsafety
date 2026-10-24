@@ -3,13 +3,16 @@
 
 The default command validates only. --write explicitly generates the Markdown;
 --check validates and compares it without writing. No network access is used.
-Version 1 accepts policy statements only. Reports of implementation or measured
+Evidence v2 requires capture provenance. Only the two frozen pilot snapshots
+retain an explicit legacy exception. Policy statements remain the only evidence
+kind. Reports of implementation or measured
 effectiveness require a later evidence-format extension, not a policy observation.
 """
 from __future__ import annotations
 
 import argparse
 from datetime import date
+import hashlib
 from pathlib import Path
 import re
 import sys
@@ -20,11 +23,12 @@ sys.dont_write_bytecode = True
 import yaml
 
 import lint_bibliography as lint
+import source_provenance as provenance
 
 DIRECTORY = Path("research/cyber-deployment")
 OUTPUT = DIRECTORY / "commitment-history.md"
-SNAPSHOT_REQUIRED = {"id", "record_id", "source_url", "observed_on", "inspection_scope", "preservation_note"}
-SNAPSHOT_OPTIONAL = {"version", "published_on", "sha256", "archive_url", "archive_checked_on"}
+SNAPSHOT_REQUIRED = {"id", "record_id", "source_url", "observed_on", "inspection_scope", "preservation_note"} | provenance.FIELDS
+SNAPSHOT_OPTIONAL = {"capture_path", "archive_unavailable_reason"}
 OBSERVATION_REQUIRED = {
     "id", "commitment_id", "snapshot_id", "issuer", "evidence_kind", "modality",
     "scope", "trigger", "action", "qualifications", "locator", "change_type",
@@ -89,6 +93,9 @@ def read_items(root: Path, filename: str, version: str, collection: str,
         label = f"{filename}.{collection}[{number}]"
         item = mapping(raw, required, optional, label)
         for field, value in item.items():
+            if collection == "snapshots" and (field == "byte_length" or
+                                              (field in provenance.NULLABLE and value is None)):
+                continue
             string(value, f"{label}.{field}")
         for field in ("id", "commitment_id"):
             if field in item and not ID_RE.fullmatch(item[field]):
@@ -113,22 +120,27 @@ def load_history(root: Path) -> tuple[dict[str, dict[str, str]], list[dict[str, 
             raise ValueError(f"records.yaml: duplicate record id {key}")
         record_ids.add(key)
 
-    snapshots = read_items(root, "evidence.yaml", "cyber-commitment-evidence-v1", "snapshots",
+    snapshots = read_items(root, "evidence.yaml", "cyber-commitment-evidence-v2", "snapshots",
                            SNAPSHOT_REQUIRED, SNAPSHOT_OPTIONAL)
     for key, snapshot in snapshots.items():
         if snapshot["record_id"] not in record_ids:
             raise ValueError(f"{key}: record_id references missing bibliography key {snapshot['record_id']}")
         check_url(snapshot["source_url"], f"{key}.source_url")
         check_date(snapshot["observed_on"], f"{key}.observed_on")
-        if "published_on" in snapshot:
-            check_date(snapshot["published_on"], f"{key}.published_on", full=False)
-        if "sha256" in snapshot and not re.fullmatch(r"[0-9a-f]{64}", snapshot["sha256"]):
-            raise ValueError(f"{key}.sha256 must contain 64 lowercase hexadecimal characters")
-        if ("archive_url" in snapshot) != ("archive_checked_on" in snapshot):
-            raise ValueError(f"{key}: archive_url and archive_checked_on must appear together")
-        if "archive_url" in snapshot:
-            check_url(snapshot["archive_url"], f"{key}.archive_url")
-            check_date(snapshot["archive_checked_on"], f"{key}.archive_checked_on")
+        provenance.validate(snapshot, check_date, check_url)
+        if snapshot.get("capture_path"):
+            capture = (root / snapshot["capture_path"]).resolve()
+            if not capture.is_relative_to(root.resolve()):
+                raise ValueError(f"{key}: capture_path must stay inside the repository directory")
+            # External source bytes may intentionally be absent from Git. If
+            # present locally, always check that they match the declared digest.
+            if capture.is_file():
+                payload = capture.read_bytes()
+                if len(payload) != snapshot["byte_length"]:
+                    raise ValueError(f"{key}: capture byte length mismatch")
+                if hashlib.sha256(payload).hexdigest() != snapshot["sha256"]:
+                    raise ValueError(f"{key}: capture SHA-256 mismatch")
+                provenance.check_payload(payload, snapshot["mime_type"])
 
     observations = read_items(root, "commitments.yaml", "cyber-commitments-v1", "observations",
                               OBSERVATION_REQUIRED, OBSERVATION_OPTIONAL)
@@ -185,8 +197,9 @@ def load_history(root: Path) -> tuple[dict[str, dict[str, str]], list[dict[str, 
     return snapshots, ordered
 
 
-def display(value: str) -> str:
+def display(value: object) -> str:
     """Keep data as visible prose rather than Markdown structure or HTML."""
+    value = "Not recorded" if value is None else str(value)
     return re.sub(r"([\\`*_\[\]|<>])", r"\\\1", value).replace("\n", " ")
 
 
@@ -223,7 +236,7 @@ def generate_history(root: Path) -> tuple[str, dict[str, int]]:
             "| Field | Recorded observation |", "| --- | --- |",
             f"| Issuer | {display(observation['issuer'])} |",
             f"| Source | {link(snapshot['record_id'], snapshot['source_url'])} |",
-            f"| Document version | {display(snapshot.get('version', 'Not recorded'))} |",
+            f"| Document version claim | {display(snapshot['version_claim'])} |",
             f"| Document publication date | {display(snapshot.get('published_on', 'Not recorded'))} |",
             f"| Observed on | {snapshot['observed_on']} |",
             f"| Claimed application date | {observation.get('claimed_application_on', 'Not recorded')} |",
@@ -252,12 +265,21 @@ def generate_history(root: Path) -> tuple[str, dict[str, int]]:
             f"**Inspected source:** {link(snapshot['source_url'], snapshot['source_url'])}", "",
             f"**Observed on:** {snapshot['observed_on']}", "",
             f"**Inspection scope:** {display(snapshot['inspection_scope'])}", "",
-            f"**SHA-256:** {snapshot.get('sha256', 'Not recorded')}", "",
+            f"**Preservation status:** {display(snapshot['preservation_status'])}", "",
+            f"**Retrieved at (UTC):** {display(snapshot['retrieved_at'])}", "",
+            f"**SHA-256:** {display(snapshot['sha256'])}", "",
+            f"**Byte length:** {display(snapshot['byte_length'])}", "",
+            f"**MIME type:** {display(snapshot['mime_type'])}", "",
+            f"**Locator basis:** {display(snapshot['locator_basis'])}", "",
             f"**Preservation:** {display(snapshot['preservation_note'])}", "",
         ])
-        if "archive_url" in snapshot:
+        if snapshot['archive_url'] is not None:
             lines.extend([f"**Checked archive:** {link(snapshot['archive_url'], snapshot['archive_url'])} "
                           f"(checked {snapshot['archive_checked_on']}).", ""])
+        else:
+            lines.extend(["**Checked archive:** Not recorded.", ""])
+        if snapshot.get('archive_unavailable_reason'):
+            lines.extend([f"**Archive limitation:** {display(snapshot['archive_unavailable_reason'])}", ""])
     lines.append("Source URLs and recorded digests do not themselves guarantee future retrieval. "
                  "This view does not fetch sources or verify their contents.")
     counts = {"snapshots": len(snapshots), "observations": len(observations),
@@ -292,3 +314,4 @@ def main(argv: list[str] | None = None) -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+

@@ -39,16 +39,23 @@ class CommitmentTests(unittest.TestCase):
             snapshot = {
                 "id": f"snapshot_{number}", "record_id": "policy_fixture",
                 "source_url": f"https://example.test/inspected-policy/{number}",
-                "version": f"inspected-v{number}",
+                "version_claim": f"inspected-v{number}",
                 "observed_on": f"2026-05-{number + 6:02d}",
                 "inspection_scope": "Only the cyber deployment section was inspected.",
                 "preservation_note": "Live page inspected; no archival copy was captured.",
+                "original_url": f"https://example.test/inspected-policy/{number}",
+                "retrieved_at": f"2026-05-{number + 6:02d}T12:00:00Z",
+                "archive_url": None, "archive_checked_on": None,
+                "archive_unavailable_reason": "Archive service unavailable; local bytes retained outside Git.",
+                "sha256": "a" * 64, "byte_length": 128, "mime_type": "application/pdf",
+                "published_on": None, "locator_basis": "One-based PDF viewer pages including cover.",
+                "preservation_status": "captured",
             }
             if published is not None:
                 snapshot["published_on"] = published
             snapshots.append(snapshot)
         self.evidence = {
-            "schema_version": "cyber-commitment-evidence-v1", "snapshots": snapshots,
+            "schema_version": "cyber-commitment-evidence-v2", "snapshots": snapshots,
         }
         initial = {
             "id": "observation_1", "commitment_id": "cyber_release",
@@ -91,7 +98,7 @@ class CommitmentTests(unittest.TestCase):
 
     def files(self):
         return {
-            str(path.relative_to(self.root)): (path.read_bytes(), path.stat().st_mtime_ns)
+            path.relative_to(self.root).as_posix(): (path.read_bytes(), path.stat().st_mtime_ns)
             for path in self.root.rglob("*") if path.is_file()
         }
 
@@ -160,8 +167,17 @@ class CommitmentTests(unittest.TestCase):
             ("revision without explanation", lambda e, c, r: c["observations"][1].pop("change_note")),
             ("observed with change note", lambda e, c, r: c["observations"][0].update(change_note="Not a transition.")),
             ("unpaired archive", lambda e, c, r: e["snapshots"][0].update(archive_url="https://example.test/archive")),
-            ("null optional value", lambda e, c, r: e["snapshots"][0].update(published_on=None)),
-            ("numeric optional value", lambda e, c, r: e["snapshots"][0].update(version=1)),
+            ("null mandatory digest", lambda e, c, r: e["snapshots"][0].update(sha256=None)),
+            ("numeric optional value", lambda e, c, r: e["snapshots"][0].update(version_claim=1)),
+            ("missing provenance key", lambda e, c, r: e["snapshots"][0].pop("retrieved_at")),
+            ("timezone absent", lambda e, c, r: e["snapshots"][0].update(retrieved_at="2026-05-07T12:00:00")),
+            ("retrieval after inspection", lambda e, c, r: e["snapshots"][0].update(retrieved_at="2026-05-08T12:00:00Z")),
+            ("boolean length", lambda e, c, r: e["snapshots"][0].update(byte_length=True)),
+            ("zero length", lambda e, c, r: e["snapshots"][0].update(byte_length=0)),
+            ("invented legacy exception", lambda e, c, r: e["snapshots"][0].update(preservation_status="legacy_uncaptured")),
+            ("live URL as archive", lambda e, c, r: e["snapshots"][0].update(archive_url=e["snapshots"][0]["original_url"], archive_checked_on="2026-05-07")),
+            ("unexplained missing archive", lambda e, c, r: e["snapshots"][0].pop("archive_unavailable_reason")),
+            ("HTML without retained representation", lambda e, c, r: e["snapshots"][0].update(mime_type="text/html")),
             ("empty required value", lambda e, c, r: c["observations"][0].update(qualifications="")),
         ]
         for label, mutate in cases:
@@ -214,3 +230,4 @@ class CommitmentTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
