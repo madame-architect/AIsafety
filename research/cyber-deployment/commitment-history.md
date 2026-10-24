@@ -98,7 +98,7 @@ Publication dates describe documents; observation dates describe inspection; cla
 
 **Source rationale:** OpenAI's stated Preparedness Framework risk-control rationale; not independently verified implementation.
 
-**Source locator:** Table 1, Cybersecurity Critical row, source Table 1 (verify PDF page); section 2.2.
+**Source locator:** Table 1, Cybersecurity Critical row, PDF viewer p. 7; section 2.2.
 
 **Inspection and preservation:** [Snapshot openai\_preparedness\_v2\_captured\_2026\_10\_24](#snapshot-openai_preparedness_v2_captured_2026_10_24).
 
@@ -130,7 +130,7 @@ Publication dates describe documents; observation dates describe inspection; cla
 
 **Source rationale:** OpenAI's stated Preparedness Framework risk-control rationale; not independently verified implementation.
 
-**Source locator:** Table 1, Cybersecurity High row, source Table 1 (verify PDF page); sections 2.2 and 4.2.
+**Source locator:** Table 1, Cybersecurity High row, PDF viewer p. 6; sections 2.2 and 4.2.
 
 **Inspection and preservation:** [Snapshot openai\_preparedness\_v2\_captured\_2026\_10\_24](#snapshot-openai_preparedness_v2_captured_2026_10_24).
 
@@ -194,7 +194,7 @@ Publication dates describe documents; observation dates describe inspection; cla
 
 **Source rationale:** OpenAI's stated Preparedness Framework risk-control rationale; not independently verified implementation.
 
-**Source locator:** Sections 2.1, 3.1-3.3, 4.2 and 5.1, source sections 2.1, 3.1-3.3, 4.2, 5.1 (verify PDF pages).
+**Source locator:** Sections 2.1, 3.1-3.3, 4.2 and 5.1, PDF viewer pp. 5, 9-11 and 13-14.
 
 **Inspection and preservation:** [Snapshot openai\_preparedness\_v2\_captured\_2026\_10\_24](#snapshot-openai_preparedness_v2_captured_2026_10_24).
 
@@ -226,7 +226,7 @@ Publication dates describe documents; observation dates describe inspection; cla
 
 **Source rationale:** OpenAI's stated Preparedness Framework risk-control rationale; not independently verified implementation.
 
-**Source locator:** Sections 1, 2.2, 4.2 and 5.1, source sections 1, 2.2, 4.2, 5.1 (verify PDF pages).
+**Source locator:** Sections 1, 2.2, 4.2 and 5.1, PDF viewer pp. 4-6 and 11-14.
 
 **Inspection and preservation:** [Snapshot openai\_preparedness\_v2\_captured\_2026\_10\_24](#snapshot-openai_preparedness_v2_captured_2026_10_24).
 
