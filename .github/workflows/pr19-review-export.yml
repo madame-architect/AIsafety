@@ -1,0 +1,26 @@
+name: PR19 pinned review export
+on:
+  push:
+    branches: [cyber-history-bibliography-integration-2026-10-24]
+    paths: [.github/workflows/pr19-review-export.yml]
+permissions:
+  contents: read
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: 8841f93c17b78e1045a87e7ac76e35c18fa7d9a8
+          persist-credentials: false
+      - name: Export pinned source tree
+        run: |
+          mkdir -p /tmp/pr19-review
+          git archive --format=tar.gz HEAD > /tmp/pr19-review/source.tar.gz
+          git rev-parse HEAD HEAD^{tree} > /tmp/pr19-review/identity.txt
+          git ls-tree -r HEAD > /tmp/pr19-review/tree.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pr19-8841f93-review
+          path: /tmp/pr19-review/
+          retention-days: 7
