@@ -27,8 +27,8 @@ def main() -> int:
         if record is None:
             failures.append(f"{source_id}: missing records.yaml entry {proposed}")
             continue
-        if source.get("bibliography_admission") != "admitted":
-            failures.append(f"{source_id}: bibliography_admission not admitted")
+        if source.get("bibliography_admission") != "accepted":
+            failures.append(f"{source_id}: bibliography_admission not accepted")
         if source.get("record_id") != proposed:
             failures.append(f"{source_id}: canonical record_id missing")
         if not record.get("fields", {}).get("title"):
