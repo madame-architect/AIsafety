@@ -192,7 +192,7 @@ def generate(assumptions: dict[str, Any], sources: dict[str, Any], evidence: dic
         "[risk-evidence.yaml](risk-evidence.yaml).",
         "",
         f"**Research rounds:** {len(rounds)}  ",
-        f"**Accepted research-layer sources**i {sum(s.get('research_admission') == 'accepted' for s in sources['sources'])}  ",
+        f"**Accepted research-layer sources:** {sum(s.get('research_admission') == 'accepted' for s in sources['sources'])}  ",
         "**Canonical bibliography status:** pending separate reviewed admission.",
         "",
         "## Assumption registry and assessment history",
