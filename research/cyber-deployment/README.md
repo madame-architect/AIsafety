@@ -53,7 +53,7 @@ For example, the current DeepMind model-weight security provision depends on ass
 
 New commitment observations follow the [source capture procedure](../../provenance/source-capture.md). The two first observations remain explicit `legacy_uncaptured` exceptions; no historical hash has been invented.
 
-The benchmark-to-risk sources are active in the research dataset, but their canonical bibliography admission and exact-byte capture remain separate reviewed work. `source-admission.yaml` records that state rather than treating the earlier research environment as preservation.
+The six benchmark-to-risk sources now have canonical bibliography IDs, but exact-byte source capture remains pending. `source-admission.yaml` distinguishes bibliography admission from source preservation and OSF verification.
 
 Keep these distinctions explicit:
 
