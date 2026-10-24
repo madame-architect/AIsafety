@@ -4,7 +4,7 @@ Generated from [assumptions.yaml](assumptions.yaml), [source-admission.yaml](sou
 
 **Research rounds:** 1  
 **Accepted research-layer sources:** 6  
-**Canonical bibliography status:** pending separate reviewed admission.
+**Canonical bibliography status:** admitted.
 
 ## Assumption registry and assessment history
 
