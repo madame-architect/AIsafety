@@ -193,7 +193,7 @@ def generate(assumptions: dict[str, Any], sources: dict[str, Any], evidence: dic
         "",
         f"**Research rounds:** {len(rounds)}  ",
         f"**Accepted research-layer sources:** {sum(s.get('research_admission') == 'accepted' for s in sources['sources'])}  ",
-        "**Canonical bibliography status:** pending separate reviewed admission.",
+        f"**Canonical bibliography status:** {sources.get('rounds', [{}])[0].get('bibliography_status', 'unrecorded')}.",
         "",
         "## Assumption registry and assessment history",
         "",
