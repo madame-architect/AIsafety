@@ -14820,3 +14820,207 @@ records:
       and DOI 10.48550/arXiv.2412.14161.
     synthesis_stream: technical_eval
     stream_note: 'Provisional: Benchmark of consequential workplace tasks for model agents.'
+
+- id: amazon_fortigateaiaugmented_2026
+  entry_type: online
+  fields:
+    author: '{CJ Moses}'
+    title: 'AI-augmented threat actor accesses FortiGate devices at scale'
+    date: '2026-02-20'
+    url: 'https://aws.amazon.com/blogs/security/ai-augmented-threat-actor-accesses-fortigate-devices-at-scale/'
+    source_relation: 'primary'
+    source_role: 'official_statement'
+    source_form: 'blog_post'
+    artifact_type: 'blog_post'
+    governance_artifact: 'official_communication'
+    scope_relevance: 'core'
+    issuer_type: 'company'
+    issuer_sector: 'private'
+    review_status: 'institutional'
+    review_process: 'institutional_review'
+    evidence_independence: 'issuer_attested'
+    attestation_relation: 'issuer_attested'
+    independence_from: 'issuer_self'
+    evidence_basis: 'procedural'
+    governance_function:
+    - 'evaluation'
+    function_role: 'direct'
+    risk_domain:
+    - 'cyber'
+    lifecycle_stage:
+    - 'deployment'
+    maintenance_status: 'static'
+    legal_status: 'not_applicable'
+    classification_confidence: 'medium'
+    synthesis_stream: 'governance_artifact'
+    stream_note: 'Provider threat-intelligence report; operational attribution is provider-authored, not a matched causal study.'
+
+- id: google_gtig_promptingautonomy_2026
+  entry_type: online
+  fields:
+    author: '{Google Threat Intelligence Group}'
+    title: 'GTIG AI Threat Tracker: From Prompting to Autonomy - The Evolution of Adversarial AI'
+    date: '2026-09-08'
+    url: 'https://cloud.google.com/blog/topics/threat-intelligence/from-prompting-to-autonomy-the-evolution-of-adversarial-ai'
+    source_relation: 'primary'
+    source_role: 'official_statement'
+    source_form: 'blog_post'
+    artifact_type: 'blog_post'
+    governance_artifact: 'official_communication'
+    scope_relevance: 'core'
+    issuer_type: 'company'
+    issuer_sector: 'private'
+    review_status: 'institutional'
+    review_process: 'institutional_review'
+    evidence_independence: 'issuer_attested'
+    attestation_relation: 'issuer_attested'
+    independence_from: 'issuer_self'
+    evidence_basis: 'procedural'
+    governance_function:
+    - 'evaluation'
+    function_role: 'direct'
+    risk_domain:
+    - 'cyber'
+    lifecycle_stage:
+    - 'deployment'
+    maintenance_status: 'static'
+    legal_status: 'not_applicable'
+    classification_confidence: 'medium'
+    synthesis_stream: 'governance_artifact'
+    stream_note: 'Provider threat-intelligence report; observed workflow claims lack a matched no-AI baseline.'
+
+- id: aisi_unsanctionedagentincident_2026
+  entry_type: online
+  fields:
+    author: '{UK AI Security Institute}'
+    title: 'Incident Report: unsanctioned agent behaviour during cyber testing'
+    date: '2026-08-04'
+    url: 'https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing'
+    source_relation: 'primary'
+    source_role: 'official_statement'
+    source_form: 'blog_post'
+    artifact_type: 'blog_post'
+    governance_artifact: 'official_communication'
+    scope_relevance: 'core'
+    issuer_type: 'government'
+    issuer_sector: 'public'
+    review_status: 'institutional'
+    review_process: 'institutional_review'
+    evidence_independence: 'issuer_attested'
+    attestation_relation: 'issuer_attested'
+    independence_from: 'issuer_self'
+    evidence_basis: 'procedural'
+    governance_function:
+    - 'evaluation'
+    function_role: 'direct'
+    risk_domain:
+    - 'cyber'
+    lifecycle_stage:
+    - 'deployment'
+    maintenance_status: 'static'
+    legal_status: 'not_applicable'
+    classification_confidence: 'medium'
+    synthesis_stream: 'governance_artifact'
+    stream_note: 'Official HTML disclosure only; linked technical PDF is not admitted pending full-text review.'
+
+- id: lin_artemispenetration_2026
+  entry_type: misc
+  fields:
+    author: 'Justin W. Lin and Eliot Krzysztof Jones and Donovan Julian Jasper and others'
+    title: 'Comparing AI Agents to Cybersecurity Professionals in Real-World Penetration Testing'
+    date: '2026-03-03'
+    url: 'https://arxiv.org/pdf/2512.09882v2.pdf'
+    source_relation: 'primary'
+    source_role: 'original_research'
+    source_form: 'paper'
+    artifact_type: 'technical_paper'
+    governance_artifact: 'research_analysis'
+    scope_relevance: 'core'
+    issuer_type: 'academic_or_research'
+    issuer_sector: 'academic'
+    review_status: 'preprint'
+    review_process: 'author_posted_preprint'
+    evidence_independence: 'author_attested'
+    attestation_relation: 'author_attested'
+    independence_from: 'not_independently_verified'
+    evidence_basis: 'research'
+    governance_function:
+    - 'evaluation'
+    function_role: 'direct'
+    risk_domain:
+    - 'cyber'
+    lifecycle_stage:
+    - 'deployment'
+    maintenance_status: 'static'
+    legal_status: 'not_applicable'
+    classification_confidence: 'medium'
+    synthesis_stream: 'technical_eval'
+    stream_note: 'Authorized live comparison, small human sample and constrained engagements; arXiv v2.'
+
+- id: barrett_quantitativecyberrisk_2025
+  entry_type: misc
+  fields:
+    author: 'Steve Barrett and Malcolm Murray and Otter Quarks and others'
+    title: 'Toward Quantitative Modeling of Cybersecurity Risks Due to AI Misuse'
+    date: '2025-12-11'
+    url: 'https://arxiv.org/pdf/2512.08864v2.pdf'
+    source_relation: 'primary'
+    source_role: 'original_research'
+    source_form: 'paper'
+    artifact_type: 'technical_paper'
+    governance_artifact: 'research_analysis'
+    scope_relevance: 'core'
+    issuer_type: 'academic_or_research'
+    issuer_sector: 'academic'
+    review_status: 'preprint'
+    review_process: 'author_posted_preprint'
+    evidence_independence: 'author_attested'
+    attestation_relation: 'author_attested'
+    independence_from: 'not_independently_verified'
+    evidence_basis: 'research'
+    governance_function:
+    - 'evaluation'
+    function_role: 'direct'
+    risk_domain:
+    - 'cyber'
+    lifecycle_stage:
+    - 'deployment'
+    maintenance_status: 'static'
+    legal_status: 'not_applicable'
+    classification_confidence: 'medium'
+    synthesis_stream: 'technical_eval'
+    stream_note: 'Quantitative risk model, not directly observed benchmark-to-harm causality; arXiv v2.'
+
+- id: souly_astraunsanctioned_2026
+  entry_type: misc
+  fields:
+    author: 'Alexandra Souly and Kai Fronsdal and Abby D''Cruz and Xander Davies and Robert Kirk'
+    title: 'Evaluating Whether GPT-6 Astra Performs Unsanctioned Supply-Chain Attacks'
+    date: '2026-09-29'
+    url: 'https://arxiv.org/pdf/2609.38415v1.pdf'
+    source_relation: 'primary'
+    source_role: 'original_research'
+    source_form: 'paper'
+    artifact_type: 'technical_paper'
+    governance_artifact: 'research_analysis'
+    scope_relevance: 'core'
+    issuer_type: 'government'
+    issuer_sector: 'public'
+    review_status: 'preprint'
+    review_process: 'author_posted_preprint'
+    evidence_independence: 'author_attested'
+    attestation_relation: 'author_attested'
+    independence_from: 'not_independently_verified'
+    evidence_basis: 'research'
+    governance_function:
+    - 'evaluation'
+    function_role: 'direct'
+    risk_domain:
+    - 'cyber'
+    lifecycle_stage:
+    - 'deployment'
+    maintenance_status: 'static'
+    legal_status: 'not_applicable'
+    classification_confidence: 'medium'
+    synthesis_stream: 'technical_eval'
+    stream_note: 'Simulated alignment evaluation; no external systems reachable; arXiv v1.'
