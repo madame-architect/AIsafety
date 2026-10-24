@@ -1,34 +1,32 @@
-schema_version: cyber-operational-source-admission-v1
-round_id: recent-real-world-cyber-evidence-2026-10
-research_completed_on: '2026-10-17'
-admission_prepared_on: '2026-10-24'
-scope: Bounded primary-source-first review of recent real-world or operationally realistic cyber evidence bearing
-  on benchmark-to-risk assumptions.
-repository_base_commit_checked: 5af2432cbd2cf3c4be6aadedb41bc70099e00651
-concurrency_boundary:
-  parallel_work: A separate agent is correcting preservation and OSF materials.
-  files_intentionally_not_modified:
-  - records.yaml
-  - frontier-governance-evals.bib
-  - views/
-  - intake.csv
-  - provenance/
-  - releases/
-  - OSF status or deposit metadata
-  bibliography_action: deferred
-  reason: Avoid conflicts and avoid claiming preservation completeness while concurrent preservation/OSF work is
-    in progress. Sources are accepted into the research layer now and retain proposed stable record IDs for later
-    canonical admission.
-duplicate_check:
-  method: Exact title, URL, and arXiv identifier searches against the repository at the checked base commit.
-  result: No exact match was found for the six accepted sources.
-  limitation: A differently titled or incompletely normalized duplicate remains possible; rerun against records.yaml
-    immediately before canonical bibliography admission.
+schema_version: cyber-operational-source-admission-v2
+dataset_id: benchmark_to_risk_evidence
+rounds:
+- id: recent-real-world-cyber-evidence-2026-10
+  research_completed_on: '2026-10-17'
+  admitted_on: '2026-10-24'
+  scope: >-
+    Bounded primary-source-first review of recent real-world or operationally realistic cyber
+    evidence bearing on benchmark-to-risk assumptions.
+  repository_base_commit_checked: 5af2432cbd2cf3c4be6aadedb41bc70099e00651
+  duplicate_check:
+    method: Exact title, URL, and arXiv identifier searches against the repository at the checked base commit.
+    result: No exact match was found for the six accepted sources.
+    limitation: >-
+      A differently titled or incompletely normalized duplicate remains possible; rerun against
+      records.yaml immediately before canonical bibliography admission.
+  bibliography_status: pending_canonical_admission
+  preservation_status: pending_source_capture
+  note: >-
+    The preservation and OSF infrastructure from PR #16 has landed. These sources are active in the
+    benchmark-to-risk dataset, but canonical bibliography records and source captures remain a separate
+    reviewed integration step rather than being inferred from the earlier research environment.
 sources:
 - source_id: amazon_fortigate_ai_augmented_2026
+  round_id: recent-real-world-cyber-evidence-2026-10
   proposed_record_id: amazon_fortigateaiaugmented_2026
   research_admission: accepted
-  bibliography_admission: deferred
+  bibliography_admission: pending
+  admitted_on: '2026-10-24'
   title: AI-augmented threat actor accesses FortiGate devices at scale
   author_display: CJ Moses / Amazon Threat Intelligence
   published_on: '2026-02-20'
@@ -37,13 +35,16 @@ sources:
   source_kind: provider_threat_intelligence
   evidence_kind: forensic_operational_observation
   inspection_basis: Full official HTML
-  preservation_status: delegated
-  limitations: Provider-authored report with strong telemetry but no matched no-AI counterfactual, public incident
+  preservation_status: pending_capture
+  limitations: >-
+    Provider-authored report with strong telemetry but no matched no-AI counterfactual, public incident
     dataset, or quantified downstream harm.
 - source_id: google_gtig_prompting_to_autonomy_2026
+  round_id: recent-real-world-cyber-evidence-2026-10
   proposed_record_id: google_gtig_promptingautonomy_2026
   research_admission: accepted
-  bibliography_admission: deferred
+  bibliography_admission: pending
+  admitted_on: '2026-10-24'
   title: 'GTIG AI Threat Tracker: From Prompting to Autonomy – The Evolution of Adversarial AI'
   author_display: Google Threat Intelligence Group
   published_on: '2026-09-08'
@@ -52,13 +53,16 @@ sources:
   source_kind: provider_threat_intelligence
   evidence_kind: forensic_operational_observation
   inspection_basis: Full official HTML
-  preservation_status: delegated
-  limitations: Provider-authored report; no matched no-AI campaign, complete transcripts, or disclosed downstream
+  preservation_status: pending_capture
+  limitations: >-
+    Provider-authored report; no matched no-AI campaign, complete transcripts, or disclosed downstream
     consequence data for the harvested credentials.
 - source_id: aisi_unsanctioned_agent_incident_2026
+  round_id: recent-real-world-cyber-evidence-2026-10
   proposed_record_id: aisi_unsanctionedagentincident_2026
   research_admission: accepted
-  bibliography_admission: deferred
+  bibliography_admission: pending
+  admitted_on: '2026-10-24'
   title: 'Incident Report: unsanctioned agent behaviour during cyber testing'
   author_display: UK AI Security Institute
   published_on: '2026-08-04'
@@ -71,13 +75,16 @@ sources:
     title: Security Incident INC-2026-07-28-01
     url: https://cdn.prod.website-files.com/663bd486c5e4c81588db7a1d/6a724858f7db25c81487016d_Security%20Incident%20INC-2026-07-28-01.pdf
     status: pending_full_text_review
-  preservation_status: delegated
-  limitations: Highly permissive evaluation conditions included open internet access and disabled provider cyber
+  preservation_status: pending_capture
+  limitations: >-
+    Highly permissive evaluation conditions included open internet access and disabled provider cyber
     classifiers; no resulting real-world harm was evidenced.
 - source_id: lin_artemis_pentest_2026
+  round_id: recent-real-world-cyber-evidence-2026-10
   proposed_record_id: lin_artemispenetration_2026
   research_admission: accepted
-  bibliography_admission: deferred
+  bibliography_admission: pending
+  admitted_on: '2026-10-24'
   title: Comparing AI Agents to Cybersecurity Professionals in Real-World Penetration Testing
   authors:
   - Justin W. Lin
@@ -101,14 +108,17 @@ sources:
   source_kind: preprint
   evidence_kind: live_authorized_comparative_study
   inspection_basis: Version-pinned 29-page PDF
-  preservation_status: delegated
-  limitations: Small human sample, compressed engagement window, purpose-built scaffold, and target defenders knowingly
+  preservation_status: pending_capture
+  limitations: >-
+    Small human sample, compressed engagement window, purpose-built scaffold, and target defenders knowingly
     relaxed or approved actions that authentic controls might interdict.
 - source_id: barrett_quantitative_cyber_risk_2025
+  round_id: recent-real-world-cyber-evidence-2026-10
   proposed_record_id: barrett_quantitativecyberrisk_2025
   research_admission: accepted
-  bibliography_admission: deferred
-  title: Toward Ruantitative Modeling of Cybersecurity Risks Due to AI Misuse
+  bibliography_admission: pending
+  admitted_on: '2026-10-24'
+  title: Toward Quantitative Modeling of Cybersecurity Risks Due to AI Misuse
   authors:
   - Steve Barrett
   - Malcolm Murray
@@ -138,14 +148,17 @@ sources:
   source_kind: preprint
   evidence_kind: quantitative_risk_model
   inspection_basis: Version-pinned 91-page PDF
-  preservation_status: delegated
-  limitations: Makes benchmark-to-risk assumptions explicit but estimates them through threat intelligence, historical
+  preservation_status: pending_capture
+  limitations: >-
+    Makes benchmark-to-risk assumptions explicit but estimates them through threat intelligence, historical
     baselines, expert elicitation, LLM estimators, and Monte Carlo modeling rather than observed benchmark-to-harm
     causal data.
 - source_id: souly_astra_unsanctioned_supply_chain_2026
+  round_id: recent-real-world-cyber-evidence-2026-10
   proposed_record_id: souly_astraunsanctioned_2026
   research_admission: accepted
-  bibliography_admission: deferred
+  bibliography_admission: pending
+  admitted_on: '2026-10-24'
   title: Evaluating Whether GPT-6 Astra Performs Unsanctioned Supply-Chain Attacks
   authors:
   - Alexandra Souly
@@ -161,6 +174,7 @@ sources:
   source_kind: government_research_preprint
   evidence_kind: simulated_alignment_evaluation
   inspection_basis: Version-pinned 33-page PDF
-  preservation_status: delegated
-  limitations: All external actions were simulated, safeguards were disabled, and simulation awareness may affect
-    behavior; no real systems or third parties were reachable and no real-world harm occurred.
+  preservation_status: pending_capture
+  limitations: >-
+    All external actions were simulated, safeguards were disabled, and simulation awareness may affect behavior;
+    no real systems or third parties were reachable and no real-world harm occurred.

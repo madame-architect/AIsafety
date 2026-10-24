@@ -1,145 +1,92 @@
 # Cyber capability evidence and safety commitments
 
-This research area asks how evidence about cyber capability informs risk
-assessments and safeguard decisions. The first longitudinal pilot tracks one
-scoped security recommendation across two existing bibliography records.
+This research area now consists of **two linked longitudinal datasets**:
 
-**Status:** AI-assisted pilot, prepared on 2026-10-17 UTC. It contains two
-document observations and one compared policy provision. Implementation and
-effectiveness have not been assessed. It is not a systematic survey of issuers,
-a compliance assessment, or a complete comparison of the two frameworks.
+1. **Commitment history** — how frontier-AI providers change cyber capability thresholds, deployment rules, security requirements, monitoring duties, and qualifications over time.
+2. **Benchmark-to-risk evidence** — which assumptions are needed to translate evaluation performance into claims about operational cyber risk, and what evidence supports, challenges, bounds, or contextualizes each assumption.
 
-## Read and edit
+The datasets remain analytically distinct. Provider statements are not evidence of implementation or effectiveness, and operational incidents do not by themselves explain why a provider revised a policy.
+
+## Dataset map
 
 | File | Role |
 |---|---|
-| [commitment-history.md](commitment-history.md) | Generated, readable history and source provenance |
-| [commitments.yaml](commitments.yaml) | Authoritative scoped policy observations and comparison notes |
-| [evidence.yaml](evidence.yaml) | Authoritative observations of cited source editions |
-| [../../records.yaml](../../records.yaml) | Bibliographic authority; generates BibTeX through the existing build |
-| [source-verification.md](source-verification.md) | Earlier five-source review; a historical audit with its original scope |
+| [datasets.yaml](datasets.yaml) | Declares the two datasets, their authoritative files, units of analysis, longitudinal keys, and time fields |
+| [dataset-links.yaml](dataset-links.yaml) | Authoritative links from stable commitment IDs to stable benchmark-to-risk assumption IDs |
+| [longitudinal-map.md](longitudinal-map.md) | Generated joint view of both datasets and their current links |
+| [commitments.yaml](commitments.yaml) | Authoritative policy-provision observations |
+| [evidence.yaml](evidence.yaml) | Source-edition observations and preservation metadata for commitment history |
+| [commitment-history.md](commitment-history.md) | Generated documentary history |
+| [operational-risk/assumptions.yaml](operational-risk/assumptions.yaml) | Stable assumption registry with append-only dated assessment history |
+| [operational-risk/source-admission.yaml](operational-risk/source-admission.yaml) | Research rounds and admitted source registry |
+| [operational-risk/risk-evidence.yaml](operational-risk/risk-evidence.yaml) | Source observations linked to assumptions |
+| [operational-risk/evidence-map.md](operational-risk/evidence-map.md) | Generated benchmark-to-risk evidence map |
+| [../../records.yaml](../../records.yaml) | Project-wide bibliographic authority; generates BibTeX through the existing build |
 
-The companion YAML files reference existing citation IDs. A source observation
-can support several policy provisions, so edition information and preservation
-notes are stored once. The `snapshots` list is a registry of observations; an
-entry does not by itself mean the source bytes were captured or archived.
+## Longitudinal units
+
+### Commitment history
+
+The unit is **one issuer's scoped policy provision as observed in a particular source edition**. A stable `commitment_id` links observations across editions. Each observation records the trigger, action, scope, modality, qualifications, issuer rationale, source locator, and documentary relationship to an earlier observation.
+
+`observed` means the first observation in this dataset, not necessarily the historical origin of the policy. `revised`, `clarified`, `retained`, and `withdrawn` require a predecessor and evidence. Wording not found in a later document is a review gap, not proof of withdrawal.
+
+### Benchmark-to-risk evidence
+
+The unit is **one source-specific observation bearing on one or more stable assumptions**. Assumption IDs persist across research rounds. Each assumption contains an append-only `assessments` list with an assessment ID, `as_of` date, research round, coded judgment, and rationale.
+
+Future rounds append assessments rather than rewriting previous judgments. Evidence observations distinguish operational, authorized-live, simulated, modeled, and other evidence types. Links use `supports`, `challenges`, `bounds`, `contextualizes`, or `unresolved`; these are not source-quality scores.
+
+## How the datasets link
+
+`dataset-links.yaml` records when a commitment argument **depends on** an assumption. The benchmark-to-risk dataset then records evidence bearing on that assumption. The bridge is the stable `assumption_id`.
+
+For example, the current DeepMind model-weight security provision depends on assumptions about capability access, transfer to operational tasks, incremental uplift over a no-AI baseline, translation to severe harm, and persistence after defenses and adaptation. Evidence can update those assumptions without being treated as the cause of the policy revision.
+
+| Connection | Question | Evidence needed |
+|---|---|---|
+| Evaluation result → risk threshold | Why should performance under evaluated conditions imply the specified operational capability or risk? | Evaluation design, elicitation, access and tooling assumptions, operational comparisons |
+| Risk threshold → safeguard decision | Which action follows, for which systems, with what force, exceptions, and decision authority? | Dated policy provisions and stated rationales |
+| Safeguard decision → residual risk | Was the control applied, and what evidence supports its effect? | Attributed implementation evidence and separately assessed effectiveness evidence |
+
+## Preservation and evidence boundaries
+
+New commitment observations follow the [source capture procedure](../../provenance/source-capture.md). The two first observations remain explicit `legacy_uncaptured` exceptions; no historical hash has been invented.
+
+The benchmark-to-risk sources are active in the research dataset, but their canonical bibliography admission and exact-byte capture remain separate reviewed work. `source-admission.yaml` records that state rather than treating the earlier research environment as preservation.
+
+Keep these distinctions explicit:
+
+- Policy statement versus implementation evidence.
+- Implementation evidence versus effectiveness evidence.
+- Benchmark result versus operational observation.
+- Attempt versus technical action, compromise, credential or data loss, persistence, destructive action, and quantified harm.
+- Provider-authored telemetry versus independent evidence.
+
+## Validate and regenerate
 
 From the repository root:
 
 ```bash
-python3 scripts/build_commitments.py
-python3 scripts/build_commitments.py --write
-python3 scripts/build_commitments.py --check
 python3 scripts/build.py --check
+python3 scripts/build_commitments.py --check
+python3 research/cyber-deployment/operational-risk/build.py --check
+python3 scripts/build_cyber_datasets.py --check
 python3 -m unittest discover -s tests -v
 ```
 
-The default commitment command validates without writing. `--write` regenerates
-the Markdown history; `--check` also detects a missing or stale history without
-writing. Structural validation does not establish that an interpretation is
-correct or that a commitment was fulfilled.
+To regenerate the views:
 
-## Unit of analysis
+```bash
+python3 scripts/build_commitments.py --write
+python3 research/cyber-deployment/operational-risk/build.py --write
+python3 scripts/build_cyber_datasets.py --write
+```
 
-Track **one issuer's scoped policy provision as observed in a particular source
-edition**, with a stable `commitment_id` linking its history. Record the trigger,
-action, scope, modality, qualifications, source rationale, and passage locator.
-Keep an analyst's interpretation in `change_note`, separate from the issuer's
-reasoning in `source_rationale`.
+Validation checks structure, identifiers, cross-file references, chronological assessment history, and generated-output freshness. It does not establish source truth, causal attribution, completeness, policy compliance, safeguard effectiveness, or scholarly consensus.
 
-The pilot is the model-weight security recommendation associated with Google
-DeepMind's cyber critical capability level. The generated history contains
-extracted policy paraphrases, source locators, and the comparison. This choice exercises the method using
-citations already present in the collection; it does not imply representative
-selection or company-wide coverage.
+## Current scope
 
-## Coding rules
+The commitment dataset currently contains one DeepMind provision observed across two framework editions. The benchmark-to-risk dataset contains one bounded research round, six stable assumptions, six admitted sources, and six evidence observations.
 
-1. **Read a provision with its dependencies.** Inspect definitions, scope,
-   exceptions, cross-references, and general decision rules. A changed word in a
-   table may have a different meaning once those clauses are considered.
-2. **Preserve modality.** `requirement`, `recommendation`, `discretionary`, and
-   `intention` describe the provision's wording. None is a numerical safety
-   score. Keep qualifications attached to every observation.
-3. **Record a supported relationship.** `observed` means a baseline observation
-   in this dataset, not the first historical introduction. `revised`,
-   `clarified`, `retained`, and `withdrawn` require a predecessor and a reason.
-   An explicit withdrawal needs positive source evidence. Wording not located
-   during a search is a review gap; check relocation and cross-references
-   before coding withdrawal. Record that gap in the inspection or review note.
-4. **Separate clocks.** `published_on` describes the source edition;
-   `observed_on` describes our actual inspection, in UTC. Optional
-   `claimed_application_on` records only a source-attributed application date
-   and requires an explanation. An old page's publication date does not date
-   a later note added to it. In evidence v2, required unknown publication dates
-   are explicit nulls; partial publication dates retain their known precision.
-   `retrieved_at` records actual byte retrieval with a full UTC timestamp.
-5. **Separate kinds of evidence.** The policy-observation format accepts `policy_statement` only.
-   A later implementation report or effectiveness study must be admitted as
-   its own source evidence and linked to the provision in a future extension.
-   It must not silently replace the earlier policy statement. A claimed
-   application date does not verify application.
-6. **Capture provenance for every new observation.** Evidence v2 requires
-   `original_url`, `retrieved_at`, `archive_url`, `archive_checked_on`, `sha256`,
-   `byte_length`, `mime_type`, `published_on`, `version_claim`, and `locator_basis`.
-   Hash exact retrieved PDF bytes or the retained HTML representation; preserve
-   capture-specific HTML archives where legally and technically feasible.
-   Missing archives require an explicit reason and remain a release limitation.
-   The two first observations are frozen `legacy_uncaptured` exceptions with
-   null capture fields; a later retrieval cannot establish their historical
-   bytes. See the [capture procedure](../../provenance/source-capture.md).
-   Structure and digest checks do not independently authenticate an archive.
-7. **Keep history inspectable.** Add new observations for later source states.
-   Correct an extraction error in version control with a reason; do not turn
-   the correction into an invented policy-change event. Bibliographic metadata
-   can be corrected without silently rewriting historical observation dates
-   or source identifiers. Check links when a citation is merged or renamed.
-
-The initial observations are AI-assisted extractions from specified primary
-passages. Repeated AI review is not independent human coding. Source review,
-research judgment, and maintainer acceptance remain distinct activities.
-
-## Connection to the benchmark-to-risk study
-
-The policy history supports the middle part of the research argument. Each
-connection needs its own evidence:
-
-| Connection | Question to examine | Evidence needed |
-|---|---|---|
-| Evaluation result to risk threshold | Why should performance under the evaluated conditions imply the specified risk capability? | Evaluation setup, elicitation assumptions, operational comparisons, and the issuer's threshold definition |
-| Risk threshold to safeguard decision | Which action follows, for which systems, with what discretion or exceptions? | Dated policy provisions, decision rules, and stated rationales |
-| Safeguard decision to residual risk | Was the relevant control applied, and what evidence supports its effect in that setting? | Attributed implementation reports and separately assessed effectiveness evidence |
-
-Use the same source identities when evidence informs both studies. Keep
-technical findings and governance statements distinguishable. A reported
-incident can motivate an assumption check, but temporal proximity to a policy
-revision does not establish what caused that revision. Compare the issuer's
-explanation with the available evidence and record remaining uncertainty.
-
-## Bounded next steps
-
-First, review this one history for faithful extraction and usable provenance.
-Success means another reader can reconstruct the change and see where evidence
-stops. Next, add a second issuer and a few provisions concerning capability
-assessment, deployment decisions, or monitoring. Add new publications through
-the existing intake process after checking the corpus for duplicates.
-
-Before expanding to implementation tracking, add a separate evidence type with
-source attribution, model or service scope, event dates, and an explicit link
-to the provision it concerns. A provider's implementation report and an
-independent assessment should remain distinguishable. Do not create a blanket
-`implemented: false` value for provisions we have not investigated.
-
-An initial research output could ask: **How do changes in cyber capability
-thresholds and the assumptions behind them alter stated safeguard decisions?**
-Compare within an issuer before attempting cross-issuer conclusions. Threshold
-names from different frameworks need explicit definitions before comparison.
-The pilot has no scheduled monitoring; any future recurring collection should
-declare its issuer coverage, sources, cadence, and handling of missed captures.
-
-OSF synchronization remains the separately documented release task. A local
-research update or a GitHub merge does not establish a matching OSF deposit.
-The [release protocol](../../releases/README.md) requires a tagged GitHub release,
-an exact-byte OSF deposit, and object/version identifiers and hashes in the
-external release manifest before synchronization can be confirmed.
-
+The next substantive expansion should add provider commitment histories and empirical sources only when their versions, locators, preservation status, and relationship to existing IDs are explicit. Compare within an issuer before normalizing threshold names across organizations.
