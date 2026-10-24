@@ -1,4 +1,4 @@
-schema_version: cyber-dataset-links-v1
+schema_version: cyber-dataset-links-v2
 links:
 - id: deepmind_weights_to_capability_access
   commitment_id: deepmind_cyber_ccl_model_weight_security
@@ -42,12 +42,13 @@ links:
   - deepmind_cyber_weights_fsf_3_0
   - deepmind_cyber_weights_fsf_3_1
   assumption_id: defense_persistence
-  relationship: policy_depends_on
-  rationale: The source rationale explicitly weighs automated cyber defense and societal adaptation, making
-    persistence of offensive uplift after defense a material qualification.
+  relationship: policy_assesses
+  rationale: Weighs whether offensive uplift persists after automated defense and societal adaptation
+    when judging conditional weight-security recommendations. Does not assume persistence or establish
+    the effectiveness of the recommended controls.
 - id: openai_cyber_high_threshold_to_task_transfer
   commitment_id: openai_cyber_high_threshold
-  commitment_observation_ids: &id001
+  commitment_observation_ids:
   - openai_cyber_high_threshold_beta
   - openai_cyber_high_threshold_v2
   assumption_id: task_transfer
@@ -57,28 +58,35 @@ links:
     evidence.
 - id: openai_cyber_high_threshold_to_workflow_autonomy
   commitment_id: openai_cyber_high_threshold
-  commitment_observation_ids: *id001
+  commitment_observation_ids:
+  - openai_cyber_high_threshold_beta
+  - openai_cyber_high_threshold_v2
   assumption_id: workflow_autonomy
   relationship: policy_depends_on
   rationale: Autonomous execution and end-to-end operations are explicit threshold components. This is
     an analytical dependency, not causal attribution or implementation evidence.
 - id: openai_cyber_high_threshold_to_incremental_uplift
   commitment_id: openai_cyber_high_threshold
-  commitment_observation_ids: *id001
+  commitment_observation_ids:
+  - openai_cyber_high_threshold_beta
+  - openai_cyber_high_threshold_v2
   assumption_id: incremental_uplift
   relationship: policy_depends_on
   rationale: The thresholds concern unblocking attackers or removing scaling bottlenecks, not capability
     in isolation. This is an analytical dependency, not causal attribution or implementation evidence.
 - id: openai_cyber_high_threshold_to_defense_persistence
   commitment_id: openai_cyber_high_threshold
-  commitment_observation_ids: *id001
+  commitment_observation_ids:
+  - openai_cyber_high_threshold_beta
+  - openai_cyber_high_threshold_v2
   assumption_id: defense_persistence
   relationship: policy_depends_on
-  rationale: Hardened-target conditions require capability to survive relevant defenses. This is an analytical
-    dependency, not causal attribution or implementation evidence.
+  rationale: The operational threshold premise requires offensive capability to survive relevant target
+    defenses. A challenged general persistence assessment bounds that inference; it is not a rating of
+    a particular provider safeguard.
 - id: openai_cyber_critical_threshold_to_task_transfer
   commitment_id: openai_cyber_critical_threshold
-  commitment_observation_ids: &id002
+  commitment_observation_ids:
   - openai_cyber_critical_threshold_beta
   - openai_cyber_critical_threshold_v2
   assumption_id: task_transfer
@@ -87,14 +95,18 @@ links:
     success alone. This is an analytical dependency, not causal attribution or implementation evidence.
 - id: openai_cyber_critical_threshold_to_workflow_autonomy
   commitment_id: openai_cyber_critical_threshold
-  commitment_observation_ids: *id002
+  commitment_observation_ids:
+  - openai_cyber_critical_threshold_beta
+  - openai_cyber_critical_threshold_v2
   assumption_id: workflow_autonomy
   relationship: policy_depends_on
   rationale: Both editions contain autonomous exploit development and high-level-goal attack alternatives.
     This is an analytical dependency, not causal attribution or implementation evidence.
 - id: openai_cyber_critical_threshold_to_harm_mapping
   commitment_id: openai_cyber_critical_threshold
-  commitment_observation_ids: *id002
+  commitment_observation_ids:
+  - openai_cyber_critical_threshold_beta
+  - openai_cyber_critical_threshold_v2
   assumption_id: harm_mapping
   relationship: policy_depends_on
   rationale: The issuer connects these technical capabilities to severe or catastrophic consequences;
@@ -120,7 +132,7 @@ links:
     cyber capability. This is an analytical dependency, not causal attribution or implementation evidence.
 - id: openai_frontier_safeguard_review_to_harm_mapping
   commitment_id: openai_frontier_safeguard_review
-  commitment_observation_ids: &id003
+  commitment_observation_ids:
   - openai_frontier_safeguard_review_beta
   - openai_frontier_safeguard_review_v2
   assumption_id: harm_mapping
@@ -129,37 +141,44 @@ links:
     risk. This is an analytical dependency, not causal attribution or implementation evidence.
 - id: openai_frontier_safeguard_review_to_defense_persistence
   commitment_id: openai_frontier_safeguard_review
-  commitment_observation_ids: *id003
+  commitment_observation_ids:
+  - openai_frontier_safeguard_review_beta
+  - openai_frontier_safeguard_review_v2
   assumption_id: defense_persistence
-  relationship: policy_depends_on
-  rationale: Sufficiency judgments depend on safeguards remaining effective under actual adversarial conditions.
-    This is an analytical dependency, not causal attribution or implementation evidence.
+  relationship: policy_assesses
+  rationale: Assesses whether offensive uplift survives proposed mitigations when judging residual risk.
+    The challenged assessment concerns offensive persistence, not safeguard effectiveness; the latter
+    requires control-specific evidence.
 - id: openai_frontier_reassessment_to_task_transfer
   commitment_id: openai_frontier_reassessment
-  commitment_observation_ids: &id004
+  commitment_observation_ids:
   - openai_frontier_reassessment_beta
   - openai_frontier_reassessment_v2
   assumption_id: task_transfer
-  relationship: policy_depends_on
-  rationale: Updated evaluations and deployment-context changes affect validity of operational inferences.
-    This is an analytical dependency, not causal attribution or implementation evidence.
+  relationship: policy_assesses
+  rationale: Reassesses whether evaluation performance transfers to operational tasks as evaluations,
+    elicitation and deployment conditions change; it does not assume that transfer always holds.
 - id: openai_frontier_reassessment_to_capability_access
   commitment_id: openai_frontier_reassessment
-  commitment_observation_ids: *id004
+  commitment_observation_ids:
+  - openai_frontier_reassessment_beta
+  - openai_frontier_reassessment_v2
   assumption_id: capability_access
-  relationship: policy_depends_on
-  rationale: Changes such as fine-tuning, weights release or new features can change access and elicitation.
-    This is an analytical dependency, not causal attribution or implementation evidence.
+  relationship: policy_assesses
+  rationale: Reassesses whether capability is accessible under changed permissions, fine-tuning, weights
+    release or new features; it does not assume the assessed access conditions remain fixed.
 - id: openai_frontier_reassessment_to_defense_persistence
   commitment_id: openai_frontier_reassessment
-  commitment_observation_ids: *id004
+  commitment_observation_ids:
+  - openai_frontier_reassessment_beta
+  - openai_frontier_reassessment_v2
   assumption_id: defense_persistence
-  relationship: policy_depends_on
-  rationale: New misuse and elicitation information can invalidate prior safeguard assessments. This is
-    an analytical dependency, not causal attribution or implementation evidence.
+  relationship: policy_assesses
+  rationale: Reassesses whether offensive uplift persists as misuse, elicitation and defenses change.
+    Neither the reassessment duty nor the challenged proposition validates a particular safeguard.
 - id: openai_cyber_critical_development_gate_to_capability_access
   commitment_id: openai_cyber_critical_development_gate
-  commitment_observation_ids: &id005
+  commitment_observation_ids:
   - openai_cyber_critical_development_gate_beta
   - openai_cyber_critical_development_gate_v2
   - openai_cyber_critical_development_gate_pacing_2026
@@ -169,38 +188,50 @@ links:
     is an analytical dependency, not causal attribution or implementation evidence.
 - id: openai_cyber_critical_development_gate_to_harm_mapping
   commitment_id: openai_cyber_critical_development_gate
-  commitment_observation_ids: *id005
+  commitment_observation_ids:
+  - openai_cyber_critical_development_gate_beta
+  - openai_cyber_critical_development_gate_v2
+  - openai_cyber_critical_development_gate_pacing_2026
   assumption_id: harm_mapping
   relationship: policy_depends_on
   rationale: The gate connects Critical capability and safeguards to severe-harm risk during development.
     This is an analytical dependency, not causal attribution or implementation evidence.
 - id: openai_cyber_critical_development_gate_to_defense_persistence
   commitment_id: openai_cyber_critical_development_gate
-  commitment_observation_ids: *id005
+  commitment_observation_ids:
+  - openai_cyber_critical_development_gate_beta
+  - openai_cyber_critical_development_gate_v2
+  - openai_cyber_critical_development_gate_pacing_2026
   assumption_id: defense_persistence
-  relationship: policy_depends_on
-  rationale: Permission to proceed depends on a judgment that safeguards withstand the relevant model
-    capabilities. This is an analytical dependency, not causal attribution or implementation evidence.
+  relationship: policy_counters
+  rationale: Additional development safeguards seek to prevent offensive capability from persisting through
+    controls. The conditional development gate is a policy rule; challenged offensive persistence is not
+    evidence that those controls work.
 - id: openai_frontier_research_containment_to_capability_access
   commitment_id: openai_frontier_research_containment
-  commitment_observation_ids: &id006
+  commitment_observation_ids:
   - openai_frontier_research_containment_pacing_2026
   - openai_frontier_research_containment_containment_2026
   assumption_id: capability_access
-  relationship: policy_depends_on
-  rationale: Isolation and no-live-internet training directly limit which systems a model can affect.
-    This is an analytical dependency, not causal attribution or implementation evidence.
+  relationship: policy_counters
+  rationale: Isolation and no-live-internet training seek to restrict access to resources needed for offensive
+    operations. This identifies the intended control mechanism, not achieved containment.
 - id: openai_frontier_research_containment_to_workflow_autonomy
   commitment_id: openai_frontier_research_containment
-  commitment_observation_ids: *id006
+  commitment_observation_ids:
+  - openai_frontier_research_containment_pacing_2026
+  - openai_frontier_research_containment_containment_2026
   assumption_id: workflow_autonomy
-  relationship: policy_depends_on
-  rationale: Confining agent tools and communication addresses multi-step unauthorized action. This is
-    an analytical dependency, not causal attribution or implementation evidence.
+  relationship: policy_counters
+  rationale: Tool and communication restrictions seek to interrupt unauthorized multi-step workflows.
+    This identifies an intended interruption, not demonstrated prevention of autonomous actions.
 - id: openai_frontier_research_containment_to_defense_persistence
   commitment_id: openai_frontier_research_containment
-  commitment_observation_ids: *id006
+  commitment_observation_ids:
+  - openai_frontier_research_containment_pacing_2026
+  - openai_frontier_research_containment_containment_2026
   assumption_id: defense_persistence
-  relationship: policy_depends_on
-  rationale: Defense in depth and red-teaming are meant to test persistence of containment against capable
-    agents. This is an analytical dependency, not causal attribution or implementation evidence.
+  relationship: policy_counters
+  rationale: Isolation and defense in depth seek to interrupt offensive workflows, with red-teaming to
+    test that aim. Evidence challenging offensive persistence does not establish the effectiveness of
+    these containment measures.

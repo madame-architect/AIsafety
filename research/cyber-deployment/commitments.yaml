@@ -244,18 +244,26 @@ observations:
   evidence_kind: policy_statement
   modality: requirement
   scope: Conditions for continuing development under Critical cyber risk
-  trigger: A covered system has Critical cyber capability.
-  action: Until Critical safeguard and security-control standards are specified, halt further development;
-    safeguards apply during development regardless of deployment plans.
-  qualifications: The temporary halt is conditional on specifying standards, and must be read with the
-    general risk-minimization process and section 4.3 qualifications. It is not an unconditional permanent
-    moratorium.
-  locator: Section 2.2, PDF viewer p. 5; Table 1, Critical cyber safeguards, p. 7; sections 4.2-4.4, pp.
-    11-13.
+  trigger: 'Two related triggers: (1) attained Critical cyber capability for the Table 1 conditional halt;
+    (2) attained or forecast Critical capability in a Tracked Category, including cyber, for the additional
+    development safeguards in section 4.4.'
+  action: For attained Critical cyber capability, halt further development until safeguard and security-control
+    standards meeting a Critical standard are specified (Table 1). For attained or forecast Critical capability,
+    require additional safety and security controls during development, regardless of whether or when
+    external deployment is planned (section 4.4).
+  qualifications: The Table 1 halt is conditional on specifying standards, not an unconditional permanent
+    moratorium. Section 4.4 retains prospective safeguard coverage; a forecast alone is not coded as triggering
+    the Table 1 halt. The Critical approach must address malicious internal/external actors and model
+    misalignment. Read with the general risk-minimization process and section 4.3 qualifications. Neither
+    rule demonstrates implementation or safeguard effectiveness.
+  locator: 'Table 1, Critical cybersecurity safeguards, PDF viewer p. 7 (printed p. 6); section 4.4, PDF
+    viewer p. 13 (printed p. 12); context: section 2.2, p. 5 and sections 4.2-4.3, pp. 11-13.'
   change_type: revised
   previous_observation_id: openai_cyber_critical_development_gate_beta
-  change_note: Changes the beta post-mitigation ceiling into a Critical-standard requirement and conditional
-    development halt; keep safety-enhancing work and issuer judgment distinctions visible.
+  change_note: Retains prospective coverage for attained or forecast Critical capability while changing
+    the beta post-mitigation ceiling and alignment-evidence gate into additional development safeguards
+    plus a separate conditional halt for attained Critical cyber capability pending specified standards.
+    Prospective safeguards did not disappear; the two triggers and their actions are not interchangeable.
 - id: openai_cyber_critical_development_gate_pacing_2026
   commitment_id: openai_cyber_critical_development_gate
   issuer: OpenAI

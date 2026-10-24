@@ -37,7 +37,9 @@ datasets:
 linkage:
   authority_file: dataset-links.yaml
   bridge_key: assumption_id
-  semantics: Commitment provisions may depend on one or more benchmark-to-risk assumptions. Empirical
-    observations support, challenge, bound, contextualize, or leave those assumptions unresolved. A link
-    does not establish that an incident caused a policy revision, that a commitment was implemented, or
-    that a safeguard was effective.
+  semantics: Links distinguish policy_depends_on (relies on the stated risk proposition), policy_counters
+    (seeks to interrupt or reduce the risk pathway), and policy_assesses (evaluates whether or to what
+    extent the proposition holds). Evidence roles and assessments always refer to the assumption as written
+    and are not inverted into policy-effectiveness scores. In particular, challenged offensive defense_persistence
+    neither challenges safeguards nor establishes effectiveness of any particular control. No link establishes
+    implementation, effectiveness or causal influence on a policy revision.

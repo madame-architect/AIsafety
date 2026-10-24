@@ -41,9 +41,9 @@ Future rounds append assessments rather than rewriting previous judgments. Evide
 
 ## How the datasets link
 
-`dataset-links.yaml` records when a commitment argument **depends on** an assumption. The benchmark-to-risk dataset then records evidence bearing on that assumption. The bridge is the stable `assumption_id`.
+`dataset-links.yaml` (schema v2) distinguishes **depends on** (`policy_depends_on`), **seeks to counter** (`policy_counters`), and **assesses** (`policy_assesses`). These describe the policy argument or intended action relative to the stated risk proposition; they do not score policy effectiveness. The bridge remains the stable `assumption_id`, and evidence judgments always concern that assumption as written.
 
-For example, the current DeepMind model-weight security provision depends on assumptions about capability access, transfer to operational tasks, incremental uplift over a no-AI baseline, translation to severe harm, and persistence after defenses and adaptation. Evidence can update those assumptions without being treated as the cause of the policy revision.
+For example, the DeepMind model-weight security rationale relies on access, transfer, uplift and harm premises, but weighs whether offensive uplift persists after defensive adaptation. OpenAI containment aims to counter such persistence, while safeguard review and reassessment examine it. **`defense_persistence` means offensive gains survive defenses, not that defenses remain effective.** Its challenged assessment neither disproves safeguards nor establishes the effectiveness of any particular safeguard. Evidence does not become an effectiveness score by reversing its sign.
 
 | Connection | Question | Evidence needed |
 |---|---|---|
