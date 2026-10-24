@@ -14,18 +14,17 @@ rounds:
     limitation: >-
       A differently titled or incompletely normalized duplicate remains possible; rerun against
       records.yaml immediately before canonical bibliography admission.
-  bibliography_status: pending_canonical_admission
+  bibliography_status: admitted
   preservation_status: pending_source_capture
   note: >-
-    The preservation and OSF infrastructure from PR #16 has landed. These sources are active in the
-    benchmark-to-risk dataset, but canonical bibliography records and source captures remain a separate
-    reviewed integration step rather than being inferred from the earlier research environment.
+    Canonical bibliography IDs are admitted in PR #19; exact-byte source capture remains pending and is not inferred from research admission.
 sources:
 - source_id: amazon_fortigate_ai_augmented_2026
   round_id: recent-real-world-cyber-evidence-2026-10
   proposed_record_id: amazon_fortigateaiaugmented_2026
+  record_id: amazon_fortigateaiaugmented_2026
   research_admission: accepted
-  bibliography_admission: pending
+  bibliography_admission: admitted
   admitted_on: '2026-10-24'
   title: AI-augmented threat actor accesses FortiGate devices at scale
   author_display: CJ Moses / Amazon Threat Intelligence
@@ -42,8 +41,9 @@ sources:
 - source_id: google_gtig_prompting_to_autonomy_2026
   round_id: recent-real-world-cyber-evidence-2026-10
   proposed_record_id: google_gtig_promptingautonomy_2026
+  record_id: google_gtig_promptingautonomy_2026
   research_admission: accepted
-  bibliography_admission: pending
+  bibliography_admission: admitted
   admitted_on: '2026-10-24'
   title: 'GTIG AI Threat Tracker: From Prompting to Autonomy – The Evolution of Adversarial AI'
   author_display: Google Threat Intelligence Group
@@ -60,8 +60,9 @@ sources:
 - source_id: aisi_unsanctioned_agent_incident_2026
   round_id: recent-real-world-cyber-evidence-2026-10
   proposed_record_id: aisi_unsanctionedagentincident_2026
+  record_id: aisi_unsanctionedagentincident_2026
   research_admission: accepted
-  bibliography_admission: pending
+  bibliography_admission: admitted
   admitted_on: '2026-10-24'
   title: 'Incident Report: unsanctioned agent behaviour during cyber testing'
   author_display: UK AI Security Institute
@@ -82,8 +83,9 @@ sources:
 - source_id: lin_artemis_pentest_2026
   round_id: recent-real-world-cyber-evidence-2026-10
   proposed_record_id: lin_artemispenetration_2026
+  record_id: lin_artemispenetration_2026
   research_admission: accepted
-  bibliography_admission: pending
+  bibliography_admission: admitted
   admitted_on: '2026-10-24'
   title: Comparing AI Agents to Cybersecurity Professionals in Real-World Penetration Testing
   authors:
@@ -115,8 +117,9 @@ sources:
 - source_id: barrett_quantitative_cyber_risk_2025
   round_id: recent-real-world-cyber-evidence-2026-10
   proposed_record_id: barrett_quantitativecyberrisk_2025
+  record_id: barrett_quantitativecyberrisk_2025
   research_admission: accepted
-  bibliography_admission: pending
+  bibliography_admission: admitted
   admitted_on: '2026-10-24'
   title: Toward Quantitative Modeling of Cybersecurity Risks Due to AI Misuse
   authors:
@@ -156,8 +159,9 @@ sources:
 - source_id: souly_astra_unsanctioned_supply_chain_2026
   round_id: recent-real-world-cyber-evidence-2026-10
   proposed_record_id: souly_astraunsanctioned_2026
+  record_id: souly_astraunsanctioned_2026
   research_admission: accepted
-  bibliography_admission: pending
+  bibliography_admission: admitted
   admitted_on: '2026-10-24'
   title: Evaluating Whether GPT-6 Astra Performs Unsanctioned Supply-Chain Attacks
   authors:
