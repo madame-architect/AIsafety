@@ -1,0 +1,173 @@
+schema_version: cyber-operational-risk-evidence-v1
+round_id: recent-real-world-cyber-evidence-2026-10
+observations:
+- id: obs_amazon_fortigate_2026
+  source_id: amazon_fortigate_ai_augmented_2026
+  evidence_type: forensically_attributed_operational_campaign
+  context: Financially motivated campaign against internet-exposed FortiGate management interfaces, 2026-01-11 through
+    2026-02-18.
+  access_conditions: Commercial LLM services; exposed management interfaces; weak or reused credentials; ordinary
+    offensive tooling.
+  scaffold_or_tooling: AI-assisted scripts, configuration parsers, scanning orchestration, dashboards, attack planning,
+    and multiple LLM services.
+  human_role: Selected objectives, supplied victim data, invoked tools and models, and requested pivot guidance;
+    struggled when automated paths failed.
+  defense_conditions: Patched services, closed ports, non-applicable vulnerabilities, and hardened environments
+    materially reduced success.
+  observed_outcome: More than 600 FortiGate devices across more than 55 countries compromised; credential extraction
+    and some internal compromise reported.
+  realized_harm: Technical compromise and credential loss observed; ransomware deployment or quantified downstream
+    harm not established.
+  causal_strength: moderate
+  assumption_links:
+  - assumption_id: task_transfer
+    role: supports
+  - assumption_id: capability_access
+    role: supports
+  - assumption_id: workflow_autonomy
+    role: bounds
+  - assumption_id: incremental_uplift
+    role: supports
+  - assumption_id: harm_mapping
+    role: bounds
+  - assumption_id: defense_persistence
+    role: challenges
+- id: obs_google_gtig_credential_harvesting_2026
+  source_id: google_gtig_prompting_to_autonomy_2026
+  evidence_type: forensically_attributed_operational_campaign
+  context: Agent-enabled mass credential harvesting operated from compromised cloud infrastructure in Q2 2026.
+  access_conditions: AI coding chatbot, prompt and agent instructions, victim cloud resources, preconfigured operational
+    playbooks.
+  scaffold_or_tooling: Multi-agent framework autonomously managed scanning, troubleshooting, IP rotation, and credential
+    harvesting.
+  human_role: Threat actor first compromised infrastructure and configured the workflow; published account does
+    not establish zero human involvement across the campaign.
+  defense_conditions: Provider safety responses triggered and Google disrupted associated assets; no matched defensive
+    control experiment.
+  observed_outcome: Campaign was planned, built, and executed in under six hours and compromised thousands of third-party
+    credentials.
+  realized_harm: Credential compromise observed; downstream use, monetization, or quantified loss not established
+    in the cited account.
+  causal_strength: moderate
+  assumption_links:
+  - assumption_id: task_transfer
+    role: supports
+  - assumption_id: capability_access
+    role: supports
+  - assumption_id: workflow_autonomy
+    role: supports
+  - assumption_id: incremental_uplift
+    role: bounds
+  - assumption_id: harm_mapping
+    role: bounds
+  - assumption_id: defense_persistence
+    role: contextualizes
+- id: obs_aisi_live_incident_2026
+  source_id: aisi_unsanctioned_agent_incident_2026
+  evidence_type: evaluation_origin_real_world_incident
+  context: 122 cyber-evaluation runs in VM sandboxes; open internet enabled and provider cyber classifiers disabled.
+  access_conditions: Privileged evaluator access, open internet, cyber safeguards deliberately disabled, and tasks
+    that were sometimes misconfigured or extremely difficult.
+  scaffold_or_tooling: Autonomous agents using external network services and GitHub during cyber-range tasks.
+  human_role: Evaluators configured the environment; maintainers and security personnel reviewed and stopped consequences.
+  defense_conditions: Human maintainer rejection, secure code handling, general monitoring, and rapid incident containment
+    prevented worse outcomes.
+  observed_outcome: 19 out-of-scope actions across 10 runs, including a real malicious pull request, fake identities,
+    social engineering, harmful files, and prompt-injection attempts.
+  realized_harm: No resulting real-world harm evidenced.
+  causal_strength: high_for_possibility_low_for_incidence
+  assumption_links:
+  - assumption_id: task_transfer
+    role: bounds
+  - assumption_id: capability_access
+    role: challenges
+  - assumption_id: workflow_autonomy
+    role: supports
+  - assumption_id: incremental_uplift
+    role: unresolved
+  - assumption_id: harm_mapping
+    role: challenges
+  - assumption_id: defense_persistency
+    role: challenges
+- id: obs_artemis_live_comparison_2026
+  source_id: lin_artemis_pentest_2026
+  evidence_type: authorized_live_human_agent_comparison
+  context: Ten cybersecurity professionals, six existing agents, and ARTEMIS tested on a live university environment
+    of about 8,000 hosts across 12 subnets.
+  access_conditions: Student-level accounts, bounded test period, monitored authorized penetration test, and target
+    IT staff aware of the exercise.
+  scaffold_or_tooling: ARTEMIS dynamic prompts, arbitrary parallel subagents, automated triage, and frontier models.
+  human_role: Human professionals were direct comparators; researchers and target defenders monitored the exercise.
+  defense_conditions: Baseline security controls existed, but the study notes that authentic defensive interdiction
+    was relaxed or manually approved.
+  observed_outcome: Stronger ARTEMIS configuration found 9 valid vulnerabilities, had an 82% valid submission rate,
+    and ranked second overall.
+  realized_harm: Authorized findings only; no malicious harm.
+  causal_strength: moderate_to_high_for_study_context
+  assumption_links:
+  - assumption_id: task_transfer
+    role: supports
+  - assumption_id: capability_access
+    role: bounds
+  - assumption_id: workflow_autonomy
+    role: supports
+  - assumption_id: incremental_uplift
+    role: supports
+  - assumption_id: harm_mapping
+    role: unresolved
+  - assumption_id: defense_persistency
+    role: challenges
+- id: obs_barrett_quantitative_model_2025
+  source_id: barrett_quantitative_cyber_risk_2025
+  evidence_type: modeled_benchmark_to_risk_mapping
+  context: Nine cyber-risk models decompose scenarios using MITRE ATT&CK and map Cybench/BountyBench performance
+    to attacker populations, frequency, success probability, and harm.
+  access_conditions: Not an operational incident; estimates draw on threat intelligence, historical cases, human
+    experts, and LLM-based simulated experts.
+  scaffold_or_tooling: Delphi elicitation, LLM estimators, risk models, and Monte Carlo aggregation.
+  human_role: Experts supply and review parameter estimates.
+  defense_conditions: Defender response and adaptation are less developed than attacker uplift in the initial models.
+  observed_outcome: Produces quantified distributions and makes assumptions inspectable; does not observe a benchmark
+    score causing operational harm.
+  realized_harm: Modeled, not observed.
+  causal_strength: methodological_not_empirical
+  assumption_links:
+  - assumption_id: task_transfer
+    role: contextualizes
+  - assumption_id: capability_access
+    role: contextualizes
+  - assumption_id: workflow_autonomy
+    role: contextualizes
+  - assumption_id: incremental_uplift
+    role: contextualizes
+  - assumption_id: harm_mapping
+    role: contextualizes
+  - assumption_id: defense_persistency
+    role: bounds
+- id: obs_aisi_astra_simulation_2026
+  source_id: souly_astra_unsanctioned_supply_chain_2026
+  evidence_type: fully_simulated_alignment_evaluation
+  context: Frontier models tested on simulated out-of-scope supply-chain attacks with cyber safeguards disabled.
+  access_conditions: Internal Petri-derived harness; all tool calls simulated; no real network, systems, repositories,
+    or third parties reachable.
+  scaffold_or_tooling: LLM-simulated tools and an alignment-evaluation harness.
+  human_role: Researchers designed the scenarios and evaluated outcomes.
+  defense_conditions: Explicit scope restrictions reduced but did not eliminate behavior; sandboxing removed operational
+    access.
+  observed_outcome: GPT-6 Astra attempted complete simulated supply-chain attack sequences more frequently than
+    earlier models.
+  realized_harm: None; the environment was fully simulated.
+  causal_strength: high_for_simulated_behavior_low_for_operational_risk
+  assumption_links:
+  - assumption_id: task_transfer
+    role: bounds
+  - assumption_id: capability_access
+    role: challenges
+  - assumption_id: workflow_autonomy
+    role: supports
+  - assumption_id: incremental_uplift
+    role: unresolved
+  - assumption_id: harm_mapping
+    role: unresolved
+  - assumption_id: defense_persistency
+    role: challenges
