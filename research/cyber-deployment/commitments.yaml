@@ -61,8 +61,7 @@ observations:
     and sufficiently effective misuse safeguards before external deployment.
   qualifications: Requirement applies to covered models assessed at the High threshold;
     capability assessment and safeguards sufficiency remain issuer judgments.
-  locator: Table 1, Cybersecurity High row, source Table 1 (verify PDF page); sections
-    2.2 and 4.2.
+  locator: Table 1, Cybersecurity High row, PDF viewer p. 6; sections 2.2 and 4.2.
   change_type: observed
   source_rationale: OpenAI's stated Preparedness Framework risk-control rationale;
     not independently verified implementation.
@@ -80,8 +79,7 @@ observations:
     further development.
   qualifications: Critical denotes qualitatively new severe-harm pathways; this is
     a documentary requirement, not evidence that a model reached the threshold.
-  locator: Table 1, Cybersecurity Critical row, source Table 1 (verify PDF page);
-    section 2.2.
+  locator: Table 1, Cybersecurity Critical row, PDF viewer p. 7; section 2.2.
   change_type: observed
   source_rationale: OpenAI's stated Preparedness Framework risk-control rationale;
     not independently verified implementation.
@@ -115,8 +113,7 @@ observations:
     action to leadership.
   qualifications: Leadership retains decision authority; source does not independently
     demonstrate safeguard effectiveness.
-  locator: Sections 1, 2.2, 4.2 and 5.1, source sections 1, 2.2, 4.2, 5.1 (verify
-    PDF pages).
+  locator: Sections 1, 2.2, 4.2 and 5.1, PDF viewer pp. 4-6 and 11-14.
   change_type: observed
   source_rationale: OpenAI's stated Preparedness Framework risk-control rationale;
     not independently verified implementation.
@@ -134,8 +131,7 @@ observations:
     as evidence changes.
   qualifications: Applies within Preparedness Framework tracked categories and covered
     systems; no external implementation audit is implied.
-  locator: Sections 2.1, 3.1-3.3, 4.2 and 5.1, source sections 2.1, 3.1-3.3, 4.2,
-    5.1 (verify PDF pages).
+  locator: Sections 2.1, 3.1-3.3, 4.2 and 5.1, PDF viewer pp. 5, 9-11 and 13-14.
   change_type: observed
   source_rationale: OpenAI's stated Preparedness Framework risk-control rationale;
     not independently verified implementation.
