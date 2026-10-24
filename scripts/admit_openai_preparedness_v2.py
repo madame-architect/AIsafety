@@ -21,20 +21,20 @@ URL = "https://cdn.openai.com/pdf/18a02b5d-6b67-4cec-ab64-68cdfbddebcd/preparedn
 SNAP = "openai_preparedness_v2_captured_2026_10_24"
 DIRECTORY = ROOT / "research/cyber-deployment"
 
-# Source: Preparedness Framework v2 (2025-04-15), PDF viewer pp. 4-6,
+# Source: Preparedness Framework v2 (2025-04-15), PDF viewer pages and sections to verify,
 # sections 2.2, 3.1-3.3, 4.1-4.4 and 5.1.
 PROVISIONS = [
     ("openai_cyber_high_threshold", "Cyber High capability threshold",
      "Cyber model removes bottlenecks to scaling cyber operations, including automated end-to-end operations against reasonably hardened targets or discovery and exploitation of operationally relevant vulnerabilities.",
      "Classify as High cybersecurity capability and require High security controls and sufficiently effective misuse safeguards before external deployment.",
      "Requirement applies to covered models assessed at the High threshold; capability assessment and safeguards sufficiency remain issuer judgments.",
-     "Table 1, Cybersecurity High row, PDF viewer p. 6; sections 2.2 and 4.2.",
+     "Table 1, Cybersecurity High row, source Table 1 (verify PDF page); sections 2.2 and 4.2.",
      ["task_transfer", "incremental_uplift", "defense_persistence"]),
     ("openai_cyber_critical_threshold", "Cyber Critical capability threshold",
      "Tool-augmented model can autonomously develop functional zero-day exploits across many hardened critical systems, or execute novel end-to-end cyberattack strategies from a high-level goal.",
      "Until Critical safeguard and security-control standards are specified, halt further development.",
      "Critical denotes qualitatively new severe-harm pathways; this is a documentary requirement, not evidence that a model reached the threshold.",
-     "Table 1, Cybersecurity Critical row, PDF viewer p. 7; section 2.2.",
+     "Table 1, Cybersecurity Critical row, source Table 1 (verify PDF page); section 2.2.",
      ["workflow_autonomy", "task_transfer", "harm_mapping"]),
     ("openai_cyber_internal_use", "Cyber High internal-use safeguards",
      "High cybersecurity capability with large-scale internal deployment.",
@@ -46,13 +46,13 @@ PROVISIONS = [
      "Covered frontier model reaches High capability in a Tracked Category, including cybersecurity.",
      "Do not deploy until associated severe-harm risks are sufficiently minimized; Safety Advisory Group reviews capability and safeguard evidence and recommends action to leadership.",
      "Leadership retains decision authority; source does not independently demonstrate safeguard effectiveness.",
-     "Sections 1, 2.2, 4.2 and 5.1, PDF viewer pp. 4-5, 11-13.",
+     "Sections 1, 2.2, 4.2 and 5.1, source sections 1, 2.2, 4.2, 5.1 (verify PDF pages).",
      ["harm_mapping", "defense_persistence"]),
     ("openai_frontier_reassessment", "Frontier capability evaluation and reassessment",
      "Covered frontier model development and deployment, with emerging capability or risk evidence.",
      "Evaluate covered models during development and before deployment, maintain scalable testing with deeper reviews, and reassess risk categories and safeguards as evidence changes.",
      "Applies within Preparedness Framework tracked categories and covered systems; no external implementation audit is implied.",
-     "Sections 2.1, 3.1-3.3, 4.2 and 5.1, PDF viewer pp. 5, 9-10, 11-13.",
+     "Sections 2.1, 3.1-3.3, 4.2 and 5.1, source sections 2.1, 3.1-3.3, 4.2, 5.1 (verify PDF pages).",
      ["task_transfer", "defense_persistence"]),
 ]
 
