@@ -55,6 +55,8 @@ All eleven payloads in the retained private bundle match their recorded SHA-256 
 
 The private Library bundle is not dependent on the expiring CI artifact. No full copyrighted source documents are committed to Git. [The capture instructions](../../provenance/source-capture.md) explain restoring the bundle and running the strict byte audit. A normal checkout can validate metadata and generated outputs without those private payloads; its output must not be read as a fresh remote archive verification.
 
+The [five-page HTML follow-up](../../provenance/html-reproducibility/README.md) separately records recovery attempts, historical-file checks, fresh archive fingerprints and substantive-content comparisons. Private retention does not make the original HTML files publicly reproducible. New raw-archive retrievals have their own receipts and cannot replace the historical hashes or establish which bytes were inspected before those files were saved.
+
 The two DeepMind `legacy_uncaptured` records remain unchanged. **GitHub review/merge, a tagged release, and a verified OSF deposit remain separate states.** This integration publishes no release and makes no OSF synchronization claim.
 
 ## Checks
