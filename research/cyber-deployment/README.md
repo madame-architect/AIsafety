@@ -51,6 +51,10 @@ For example, the DeepMind model-weight security rationale relies on access, tran
 | Risk threshold → safeguard decision | Which action follows, for which systems, with what force, exceptions, and decision authority? | Dated policy provisions and stated rationales |
 | Safeguard decision → residual risk | Was the control applied, and what evidence supports its effect? | Attributed implementation evidence and separately assessed effectiveness evidence |
 
+## Deployment case notes
+
+- [Gemini 4 Carbon’s restricted cyber rollout](carbon-restricted-access-2026-10-28.md) examines what Google disclosed about defender access and what remains open about Carbon’s cyber threshold assessment and residual risk.
+
 ## Preservation and evidence boundaries
 
 New commitment observations follow the [source capture procedure](../../provenance/source-capture.md). The two first observations remain explicit `legacy_uncaptured` exceptions; no historical hash has been invented.
