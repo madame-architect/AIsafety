@@ -14,7 +14,7 @@ The current collection contains **286 records**: 156 technical evaluations/metho
 |---|---|
 | Understand findings and limitations | [Broad synthesis](research/synthesis/review.md) and [research guide](research/README.md) |
 | Check a substantive claim | [Claim-and-evidence map](research/synthesis/claims.md), with source versions, locators and review limits |
-| Inspect reading coverage | [Generated summary](research/synthesis/coverage-summary.md) and [per-record ledger](research/synthesis/coverage.csv) |
+| Inspect reading coverage | [Generated summary](research/synthesis/coverage-summary.md), [inherited ledger](research/synthesis/coverage.csv), and [later reading events](research/synthesis/rounds.md) |
 | Find and cite a source | [Source index](views/index.md), [complete BibLaTeX export](frontier-governance-evals.bib), and authoritative [records.yaml](records.yaml) |
 | Understand methods and history | [METHODS.md](METHODS.md), [migration](MIGRATION.md), and [provenance](provenance/) |
 | Examine the cyber case study | [Research guide and linked datasets](research/cyber-deployment/README.md), including dated Carbon observations and pending source candidates |
