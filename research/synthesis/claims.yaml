@@ -453,8 +453,9 @@ claims:
     loss recovery is meaningful only for trained variants.
   counterevidence: Heap qualifies particular validation metrics, not every interpretability method. Causal
     interventions on selected mechanisms remain a different form of evidence.
-  next_check: Pin versions and distinguish reconstruction metrics, token diversity, local interventions and
-    downstream monitoring performance.
+  next_check: Use the complementary validation evidence in C48–C53 to separate specified-structure recovery,
+    output and pathway fidelity, interpretation, causal control and downstream utility. Heap was not reread
+    in this round; preserve its prior version and scope limits.
 - id: C14
   section: evaluator_integrity
   claim: Constructed alignment-faking, sabotage and auditing experiments establish behavior under their elicitation;
@@ -1391,6 +1392,20 @@ claims:
       paper or all technical appendices/references.'
     review_event_ids:
     - r2_institutions_02
+  - citation_key: longpre_inhouseevaluation_2025
+    relation: supports
+    version_url: https://raw.githubusercontent.com/mlresearch/v267/main/assets/longpre25a/longpre25a.pdf
+    locator: Final PMLR267 §§4.1–4.3,pp5–8; AppendixA.1/A.4,pp18–20; AppendixB.1,p20; §6,p9
+    finding: The final proposal defines evaluator relationships as a spectrum and connects reproducible flaw
+      reporting with conduct-based protection, technical access and coordination; it leaves remediation effects
+      and center governance unresolved.
+    review_basis: this_run_primary
+    checked_scope: Final ICML/PMLR 267 PDF pp1–9 (abstract and all main §§1–7); Appendix A pp18–20; Appendix
+      B.1 introductory/example explanations p20, B.2–B.3 and Table A1 pp22–25; Appendix C.1–C.4 pp25–28, including
+      Table A2. Figure A7 p26 visually inspected. The table of contents p17, references pp9–16, visual example
+      cards p21, and Appendix D pp29–31 were not read in full; this is selected-section review.
+    review_event_ids:
+    - r3_audits_01
   limitation: These are methodological and institutional arguments, not a controlled estimate of better safety
     outcomes. Charnock’s AL1–AL3 and Code interpretation are proposals; Casper’s ACM-final equivalence was
     not established in this round.
@@ -1430,9 +1445,26 @@ claims:
       paper or all technical appendices/references.'
     review_event_ids:
     - r2_institutions_02
+  - citation_key: longpre_inhouseevaluation_2025
+    relation: supports
+    version_url: https://raw.githubusercontent.com/mlresearch/v267/main/assets/longpre25a/longpre25a.pdf
+    locator: Final PMLR267 §§4.1–4.3,pp5–8; AppendixA.1/A.4,pp18–20; AppendixB.1,p20; §6,p9
+    finding: The final proposal defines evaluator relationships as a spectrum and connects reproducible flaw
+      reporting with conduct-based protection, technical access and coordination; it leaves remediation effects
+      and center governance unresolved.
+    review_basis: this_run_primary
+    checked_scope: Final ICML/PMLR 267 PDF pp1–9 (abstract and all main §§1–7); Appendix A pp18–20; Appendix
+      B.1 introductory/example explanations p20, B.2–B.3 and Table A1 pp22–25; Appendix C.1–C.4 pp25–28, including
+      Table A2. Figure A7 p26 visually inspected. The table of contents p17, references pp9–16, visual example
+      cards p21, and Appendix D pp29–31 were not read in full; this is selected-section review.
+    review_event_ids:
+    - r3_audits_01
   limitation: Cross-industry analogies and proposed arrangements do not measure present frontier-AI audit effectiveness.
     Outsider Oversight’s AppendixTable2 appears to swap FDAFAERS and FCCTCB descriptions; those two program
-    examples are omitted from this inference pending primary verification.
+    examples are omitted from this inference pending primary verification. The new Longpre paper is a proposal
+    with counterfactual example report cards, not measured effects. Its third-party category excludes direct
+    contractual relationships; Mökander and Homewood use third-party for external collaborative or commissioned
+    review. Compare the actual relationships rather than pooling these labels.
   counterevidence: Internal audits retain useful access and preventive functions; independence can trade off
     with expertise, and formal licensing or disclosure can produce exclusion, cost or box-ticking. The five
     design dimensions are not validated as a universal scoring formula.
@@ -1458,9 +1490,25 @@ claims:
       read in full.
     review_event_ids:
     - r2_institutions_04
-  limitation: The paper is a position argument informed by nonrepresentative informal experience. Its 2024
+  - citation_key: longpre_inhouseevaluation_2025
+    relation: supports
+    version_url: https://raw.githubusercontent.com/mlresearch/v267/main/assets/longpre25a/longpre25a.pdf
+    locator: Final PMLR267 §§4.1–4.3,pp5–8; AppendixA.1/A.4,pp18–20; AppendixB.1,p20; §6,p9
+    finding: The final proposal defines evaluator relationships as a spectrum and connects reproducible flaw
+      reporting with conduct-based protection, technical access and coordination; it leaves remediation effects
+      and center governance unresolved.
+    review_basis: this_run_primary
+    checked_scope: Final ICML/PMLR 267 PDF pp1–9 (abstract and all main §§1–7); Appendix A pp18–20; Appendix
+      B.1 introductory/example explanations p20, B.2–B.3 and Table A1 pp22–25; Appendix C.1–C.4 pp25–28, including
+      Table A2. Figure A7 p26 visually inspected. The table of contents p17, references pp9–16, visual example
+      cards p21, and Appendix D pp29–31 were not read in full; this is selected-section review.
+    review_event_ids:
+    - r3_audits_01
+  limitation: 'The paper is a position argument informed by nonrepresentative informal experience. Its 2024
     company/legal snapshot has not been revalidated as current law; company promises do not remove criminal
-    liability or create unrestricted research rights.
+    liability or create unrestricted research rights. Longpre’s final-paper protection diagram is schematic:
+    its proposed legal template retains applicable-law conditions and limited provider commitments, rather
+    than universal immunity.'
   counterevidence: Trusted intermediaries and preregistration may narrow participation, preserve company gatekeeping
     or exclude critical groups. Technical exemptions can add misuse and administration costs; this round did
     not measure the proposed trade-offs.
@@ -1497,9 +1545,24 @@ claims:
       Appendix Tables1–2, plus visual inspection of the main audit matrix and the disputed appendix rows.'
     review_event_ids:
     - r2_institutions_03
+  - citation_key: homewood_thirdpartycompliance_2025
+    relation: supports
+    version_url: https://arxiv.org/pdf/2505.01643v2
+    locator: arXivv2 §1,pp5–6; §3.2–3.4,pp14–18; Tables3–4,pp15,17; §5,pp22–23
+    finding: Voluntary adherence review is explicitly distinct from framework-adequacy/system-safety assessment;
+      control/maturity and disclosure examples are proposed designs, not observed company review outcomes.
+    review_basis: this_run_primary
+    checked_scope: arXiv v2 PDF p1 (abstract/date/version), pp5–9 (§1, §2.1–2.2 in full, opening §3 and opening
+      §3.1), pp14–18 (end §3.2; §3.3 and Tables3–4; §3.4 in full; beginning §3.5 through key-area option),
+      pp22–23 (alternatives, §5 conclusion in full, acknowledgments and opening references). Executive summary/options
+      tables pp3–4, reviewer comparisons/structures pp10–13, remaining action/timing/options discussion pp19–21,
+      and references pp24–27 were not read in full.
+    review_event_ids:
+    - r3_audits_03
   limitation: SMACTR’s two CompanyX cases are hypothetical, not an implementation or harm-reduction study.
     The sources share an author and scholarly lineage; they are complementary arguments rather than independent
-    outcome replications.
+    outcome replications. Homewood’s compliance review concerns adherence to a framework, with constructed
+    control examples; framework adequacy remains a separate question.
   counterevidence: Internal processes can miss affected populations or translate company principles into self-serving
     criteria; external reviewers can lack data, resources or practical leverage. Lifecycle documentation can
     become box-ticking if no one owns mitigation and follow-up.
@@ -1656,14 +1719,644 @@ claims:
       not isolated causal tests. No full appendix or code/data reproduction.
     review_event_ids:
     - r2_sociotechnical_05
+  - citation_key: wang_decodingtrust_2023
+    relation: bounds
+    version_url: https://proceedings.neurips.cc/paper_files/paper/2023/file/63cb9921eecf51bfad27a99b2c53dd6d-Paper-Datasets_and_Benchmarks.pdf
+    locator: NeurIPS2023 AppendixJ.1–J.4 PDFpp87–89/printed63–65
+    finding: DecodingTrust instead evaluates demographic parity/equalized-odds prediction gaps on200 constructed
+      Adult salary samples with separately controlled data base rates. Its Table44 zero-shot baseline needs
+      sampling/condition clarification before a cross-table quantitative claim.
+    review_basis: this_run_primary
+    checked_scope: Fairness AppendixJ introductory passagep86 and J.1–J.4pp87–89; Table43–44 visually checked.
+    review_event_ids:
+    - r3_fairness_04
   limitation: Selected methods/results and one appendix section from a108-page proceedings object. System-role
     attacker access, proxy toxicity judgments, Adult salary tasks and historical checkpoints constrain transfer.
-    No modern-deployment incidence or isolated causal mechanism is established.
+    No modern-deployment incidence or isolated causal mechanism is established. AppendixJ adds explicit sample/base-rate
+    conditions; Table44’s zero-shot baseline needs sampling/condition clarification before a cross-table numerical
+    remedy claim.
   counterevidence: Several standard robustness and OOD results favor GPT-4, so the findings do not establish
     a universal capability-versus-safety tradeoff. Shared datasets across broad suites are dependencies, not
     independent corroboration.
   next_check: Complete relevant appendix/classifier/source-data checks before headline rates; keep model IDs,
     role permissions, sampling and each outcome definition explicit.
+- id: C48
+  section: mechanistic_validation
+  claim: In small chess and Othello language models, SAE features recover formally specified board properties
+    and task-labelled metrics distinguish trained from random-weight models; syntax and position shortcuts
+    still affect which properties count as validation.
+  status: scoped_check
+  evidence:
+  - citation_key: karvonen_measuringprogressdictionar_2024
+    relation: supports
+    version_url: https://arxiv.org/pdf/2408.00113v2
+    locator: Sections3.2,5–6, Table1, AppendixD/Table5, AppendixF.2 (pp.4–5,8–9,19–20)
+    finding: Board reconstruction and coverage provide affirmative recovery evidence; masked initial locations
+      reduce a strong position shortcut, while some random-model strategy labels remain predictable from superficial
+      correlations.
+    review_basis: this_run_primary
+    checked_scope: Complete21-page arXivv2 including AppendicesA–G and Figures1–6.
+    review_event_ids:
+    - r3_mechvalidation_01
+  limitation: Two small eight-layer GPT models and researcher-selected board properties; recovery of labels
+    is not a complete causal model or validated natural-language safeguard. No replication.
+  counterevidence: Linear probes perform better; random controls achieve high scores on some syntax/move-number-correlated
+    strategy properties. Candidate ontology and reconstruction rule limit completeness.
+  next_check: Develop analogous discriminating labels/shortcut controls for language tasks and reconcile any
+    leading numerical comparison at the same aggregation/selection before quoting a best score.
+- id: C49
+  section: mechanistic_validation
+  claim: Selected SAE interventions localize and alter counterfactual indirect-object-identification behavior
+    relative to tested baselines, while supervised task dictionaries expose substantial gaps between interpretable
+    features and sparse control, especially for full-distribution SAEs.
+  status: scoped_check
+  evidence:
+  - citation_key: cunningham_sparseautoencoders_2024
+    relation: supports
+    version_url: https://arxiv.org/pdf/2309.08600v3
+    locator: Sections4.1–4.2, Figure3 and AppendixF/Figure17 (pp.5–6,18–19)
+    finding: Counterfactual patching in Pythia410M can achieve closer target outputs using fewer directions/smaller
+      edits than PCA and non-sparse dictionaries in the reported setup.
+    review_basis: this_run_primary
+    checked_scope: Complete20-page arXivv3 including AppendicesA–G and Figures1–18; dense panels assessed qualitatively.
+    review_event_ids:
+    - r3_mechvalidation_02
+  - citation_key: makelov_principledevaluations_2024
+    relation: bounds
+    version_url: https://arxiv.org/pdf/2405.08366v3
+    locator: Sections3.2–3.4,4.2,5.1–5.2, Figure4; AppendixA.2–A.4 (pp.4–13,22–24)
+    finding: Task-specific SAE control outperforms the frozen-decoder control but remains weaker than supervised
+      dictionaries; full-distribution SAEs fare worse and can match frozen-random-decoder controllability despite
+      interpretable features.
+    review_basis: this_run_primary
+    checked_scope: Selected methods/results and specified appendices; Figures2–4,6,13 only visually checked.
+    review_event_ids:
+    - r3_mechvalidation_04
+  limitation: Different small model families but shared IOI task lineage and selected interventions; this does
+    not establish generalization beyond that task or evidence for complete feature recovery, reliable monitoring,
+    or deployed safeguards. Neither experiment was reproduced in this round.
+  counterevidence: Successful ablations/editing provide affirmative causal utility under their setup. High
+    no-intervention agreement can obscure some attribute effects; human ontologies, feature selection, and
+    non-exhaustive tuning bound negative claims.
+  next_check: Evaluate diverse task families with held-out prompts, random decoder/model controls, edit magnitude,
+    and interpretation-consistent causal effects; compare later proceedings editions before treating gap sizes
+    as current limits.
+- id: C50
+  section: mechanistic_validation
+  claim: 'Activation reconstruction, output fidelity, interpretable feature descriptions, and sparse causal
+    control test different properties: preserving outputs alone can leave the internal computational pathway
+    underdetermined.'
+  status: scoped_check
+  evidence:
+  - citation_key: braun_identifyingfunctionally_2024
+    relation: supports
+    version_url: https://arxiv.org/pdf/2405.12241v2
+    locator: Sections2.3–2.5,3.1–3.4, Figures1–3; AppendixA.7/Figure9/Table4 (pp.4–8,15–17)
+    finding: Pure output-KL SAEs improve sparsity/output-fidelity tradeoffs while diverging in downstream activation
+      reconstruction and cross-seed feature directions; adding downstream reconstruction mitigates these gaps.
+      Automatic interpretation comparisons remain metric- and matching-dependent.
+    review_basis: this_run_primary
+    checked_scope: Sections1–3.4 and selected AppendicesA.7,D,E,H; visually checked Figures1–3,9.
+    review_event_ids:
+    - r3_mechvalidation_03
+  - citation_key: makelov_principledevaluations_2024
+    relation: supports
+    version_url: https://arxiv.org/pdf/2405.08366v3
+    locator: Sections3.2–3.4 and5.2; AppendixA.2–A.4 (pp.4–7,10–13,22–24)
+    finding: Necessity/sufficiency, sparse control, and interpretation-consistent effects are explicitly separate
+      tests; some interpretable/full-distribution features give weak control.
+    review_basis: this_run_primary
+    checked_scope: Selected claim-critical methods/results and appendices, not complete51-page reading.
+    review_event_ids:
+    - r3_mechvalidation_04
+  limitation: Small-model, training-distribution and task-specific evidence; high downstream similarity also
+    does not by itself certify a unique mechanism. No experiment replication or human semantic validation is
+    claimed.
+  counterevidence: End-to-end plus downstream-loss SAEs improve the studied tradeoff while retaining closer
+    downstream activations and sampled automatic interpretation scores; the results support refined evaluation
+    rather than dismissing mechanistic methods.
+  next_check: Require joint pathway/causal/semantic tests and negative controls across tasks and scales before
+    drawing governance conclusions about reliability or completeness.
+- id: C51
+  section: evaluator_integrity
+  claim: Prompt-specific circuit tracing has generated causally testable hypotheses and successful selected
+    original-model interventions, while reconstruction fidelity and graph completeness do not establish a complete
+    or mechanistically faithful account of a model.
+  status: scoped_check
+  evidence:
+  - citation_key: ameisen_circuittracingrevealing_2025
+    relation: supports
+    version_url: https://transformer-circuits.pub/2025/attribution-graphs/methods.html
+    locator: Local Replacement Model; Limitations / Mechanistic Faithfulness; Appendix / Validating the Replacement
+      Model; Nuances of Steering
+    finding: The method supplies interpretable graph hypotheses and positive intervention checks; the article
+      separates unperturbed output agreement from perturbation faithfulness and reports accumulating errors.
+    review_basis: this_run_primary
+    checked_scope: Introduction; Building an Interpretable Replacement Model (including local replacement model);
+      selected quantitative CLT/graph evaluations and graph completeness; Limitations (dark matter, inactive/inhibitory
+      features, feature abstraction, global circuits, mechanistic faithfulness); Appendix Validating the Replacement
+      Model; Nuances of Steering with Cross-Layer Features; Unexplained Variance and Choice of Steering Factors;
+      selected Additional Evaluation Details. Not the complete article, training details, linked graphs or
+      visual assets.
+    review_event_ids:
+    - r3_circuits_01
+  - citation_key: lindsey_biology_2025
+    relation: supports
+    version_url: https://transformer-circuits.pub/2025/attribution-graphs/biology.html
+    locator: Introductory Example / Swapping Alternative Features; Planning in Poems; Multilingual Circuits
+    finding: Intermediate-state, planning and cross-language interventions alter model outputs as predicted
+      in selected cases; direct effects under constrained patching have special validation limits.
+    review_basis: this_run_primary
+    checked_scope: 'Method overview and validation caveat; full text of Introductory Example: Multi-step Reasoning,
+      Planning in Poems and Multilingual Circuits subsections; selected hallucination/refusal intervention
+      caveats. Other case studies, appendices and interactives not comprehensively read.'
+    review_event_ids:
+    - r3_circuits_02
+  - citation_key: sharkey_openproblemsmechanistic_2025
+    relation: contextualizes
+    version_url: https://arxiv.org/pdf/2501.16496v1
+    locator: v1 §§2.1.4,2.3
+    finding: A review distinguishes predictive/local validation, circuit criteria and competitive downstream
+      utility rather than treating descriptions as established explanations.
+    review_basis: this_run_primary
+    checked_scope: Title/abstract and selected §§2.1.4,2.1.4a,2.1.4b (PDF pp17–19), §2.3 circuit-validation/discovery
+      issues (pp21–22), and §3.6 generalizability/selected §3.7 opening (pp31–32). Not a full review read or
+      check of underlying cited experiments.
+    review_event_ids:
+    - r3_circuits_05
+  limitation: Anthropic methods and biology are companion outputs of the same research project, not two independent
+    validations. Broad appendix tests freeze attention in both models; case interventions often select groups/layers/strengths.
+    Inactive features, attention routing and reconstruction error can hide computation. This bounded review
+    read selected sections only, with no experiments.
+  counterevidence: Actual-output interventions are affirmative mechanistic evidence beyond activation descriptions.
+    Conversely, shortcuts, approximate replacement mechanisms and some failed/high-strength interventions prevent
+    a unique or comprehensive explanation claim.
+  next_check: For any publication-leading mechanism, inspect the exact case graph/intervention configuration
+    and compare predictive/competitive downstream utility; preserve this qualitative conclusion without promoting
+    unaudited numerical summaries.
+- id: C52
+  section: evaluator_integrity
+  claim: 'Automated feature explanations need validation against their intended endpoint: activation-context
+    descriptions and descriptions of intervention-induced output effects can yield different judgments about
+    the same SAE feature.'
+  status: scoped_check
+  evidence:
+  - citation_key: paulo_automaticallyinterpreting_2024
+    relation: supports
+    version_url: https://arxiv.org/pdf/2410.13928v3
+    locator: v3 §§3.2–3.3.5,4.1.1,4.2; Figure3; Appendix G
+    finding: Context scoring and intervention scoring target different behavior; trained-feature/shuffled-description
+      controls support the output-effect endpoint, and broader context sampling exposes failures of top-only
+      interpretations.
+    review_basis: this_run_primary
+    checked_scope: All main-text sections 1–5 and data/code/impact statement (PDF pp1–9), Appendix C and D.1–D.3
+      selected prompt/scoring details (pp13–15), Table A10 and all Appendix G.1–G.4 text (pp22–24), Figure3
+      visually on p8. Other appendix sections/tables and references not comprehensively read; no full-text
+      label.
+    review_event_ids:
+    - r3_circuits_03
+  - citation_key: sharkey_openproblemsmechanistic_2025
+    relation: contextualizes
+    version_url: https://arxiv.org/pdf/2501.16496v1
+    locator: v1 §2.1.4
+    finding: Validation can progress from activations/counterfactuals through downstream engineering and competitive
+      utility; these are distinct evidential standards.
+    review_basis: this_run_primary
+    checked_scope: Title/abstract and selected §§2.1.4,2.1.4a,2.1.4b (PDF pp17–19), §2.3 circuit-validation/discovery
+      issues (pp21–22), and §3.6 generalizability/selected §3.7 opening (pp31–32). Not a full review read or
+      check of underlying cited experiments.
+    review_event_ids:
+    - r3_circuits_05
+  limitation: Paulo inspected edition is v3/2025, separately tracked from the canonical2024 preprint. Output-effect
+    scoring is scorer/prompt dependent, uses short generations in active contexts and tunes KL strength on
+    scoring prompts; it is not a safety monitor evaluation or a universal semantic-faithfulness metric.
+  counterevidence: Positive randomized-SAE and shuffled-description controls make the endpoint informative.
+    Sampling broader contexts can also produce confusing or overbroad explanations, and early-layer intervention
+    effects can be harder to describe; no one scoring method is uniformly decisive.
+  next_check: Resolve edition handling, compare scores on independently calibrated intervention strengths and
+    held-out contexts, and test whether better descriptions improve the intended downstream task.
+- id: C53
+  section: evaluator_integrity
+  claim: Some filtered SAE feature subspaces align across selected language models under correlation-based
+    matching and representational-similarity measures, providing bounded evidence of analogous structure rather
+    than universal causal feature identity or demonstrated transfer of control.
+  status: scoped_check
+  evidence:
+  - citation_key: lan_sparseautoencoders_2024
+    relation: supports
+    version_url: https://arxiv.org/pdf/2410.06981v4
+    locator: v4 §§2–4.2,6; Limitations; Appendices B,D,E.1; Figures6–7
+    finding: SVCCA/RSA alignment exceeds selected randomized pairing/subset baselines, and trained-versus-randomized
+      Pythia controls strengthen the learned-structure interpretation; matching/filtering/SAE-quality restrictions
+      and unaligned features bound it.
+    review_basis: this_run_primary
+    checked_scope: 'PDF pp1–6: abstract,introduction,definitions,method,setup and first results overview; pp9–11
+      related work/conclusion/limitations; Appendix A–D (pp17–19) and opening E.1–E.2 text/visuals on p20.
+      Large remaining appendix, many result plots/tables and source code not read.'
+    review_event_ids:
+    - r3_circuits_04
+  - citation_key: sharkey_openproblemsmechanistic_2025
+    relation: contextualizes
+    version_url: https://arxiv.org/pdf/2501.16496v1
+    locator: v1 §3.6
+    finding: Transferability of interpretability methods and conclusions across architectures remains an open
+      empirical question.
+    review_basis: this_run_primary
+    checked_scope: Title/abstract and selected §§2.1.4,2.1.4a,2.1.4b (PDF pp17–19), §2.3 circuit-validation/discovery
+      issues (pp21–22), and §3.6 generalizability/selected §3.7 opening (pp31–32). Not a full review read or
+      check of underlying cited experiments.
+    review_event_ids:
+    - r3_circuits_05
+  limitation: Lan v4 title differs from the earlier canonical title and is treated as a related edition. Same-tokenizer
+    families, selected layers/SAE widths, shared activation data and post-pairing filters restrict the population;
+    no steering/control-transfer experiment was verified.
+  counterevidence: The randomized-Pythia and randomized-pairing/subset comparisons argue against the simplest
+    claim that the similarities are wholly arbitrary. Weaker pairwise-distance similarity, unmatched features
+    and SAE-training sensitivity argue against a universal inventory or guaranteed causal equivalence.
+  next_check: Reconcile title/version, inspect omitted pairing/filter robustness appendices and demonstrate
+    causal cross-model transfer on independently chosen tasks before using this as control/assurance evidence.
+- id: C54
+  section: governance
+  claim: 'A layered audit can be designed as an evidence feedback process: governance records, model limitations
+    and deployment-level impacts answer different questions and should inform each other. General model scores
+    cannot alone establish context-specific fairness or legal acceptability in an application.'
+  status: provisional
+  evidence:
+  - citation_key: mokander_auditinglargelanguagemodels_2024
+    relation: supports
+    version_url: https://link.springer.com/content/pdf/10.1007/s43681-023-00289-2.pdf
+    locator: Final issue §4.3–4.5,printedpp1096–1101 and Figures1–2; §5.1–5.3,pp1102–1103; Appendix1,pp1105–1106
+    finding: The literature-/stakeholder-informed blueprint makes model limitations and deployment impact logs
+      inputs to audits at other layers; it limits general model-level fairness claims and acknowledges construct-validity,
+      institution and political boundaries.
+    review_basis: this_run_primary
+    checked_scope: 'Final AI and Ethics issue PDF pp1–22, printed pp1085–1106: abstract and every narrative
+      section §§1–6; Appendix 1 methodology in full, acknowledgments, contributions/funding/data/conflict/license
+      statements. Figures 1–2 (viewer pp10,17; printed pp1094,1101) rendered and visually inspected. The remaining
+      bibliography-only pages23–31 (printed pp1107–1115) were not read; accordingly this event remains Selected
+      sections rather than a full-document certification.'
+    review_event_ids:
+    - r3_audits_02
+  limitation: Mökander et al. develop a blueprint from a systematised literature review and stakeholder consultation,
+    not an implemented end-to-end audit effectiveness study. Specific metrics, enforcement and auditor institutions
+    remain unresolved; the remaining bibliography pages were not read in this event.
+  counterevidence: Model-level tests can still reveal important precursors of downstream harms, and application
+    audits alone can miss upstream data/governance causes. Linked documentation may remain box-ticking where
+    follow-up lacks authority; contextual fairness and distributional judgments cannot be settled by a generic
+    metric.
+  next_check: Seek an actual model→application→governance feedback case with documented decisions and completed
+    remediation; test the selected fairness/legal construct in the publication’s actual application context.
+- id: C55
+  section: governance
+  claim: Reviewing compliance with a frontier developer’s own safety framework can make implementation more
+    inspectable, but it answers a narrower question than whether the framework or system is adequate. Its assurance
+    depends on operationalized commitments, evidence access, reviewer incentives, disclosure and action on
+    findings.
+  status: provisional
+  evidence:
+  - citation_key: homewood_thirdpartycompliance_2025
+    relation: supports
+    version_url: https://arxiv.org/pdf/2505.01643v2
+    locator: arXivv2 §1,pp5–6; §3.2–3.4,pp14–18; Tables3–4,pp15,17; §5,pp22–23
+    finding: Voluntary adherence review is explicitly distinct from framework-adequacy/system-safety assessment;
+      control/maturity and disclosure examples are proposed designs, not observed company review outcomes.
+    review_basis: this_run_primary
+    checked_scope: arXiv v2 PDF p1 (abstract/date/version), pp5–9 (§1, §2.1–2.2 in full, opening §3 and opening
+      §3.1), pp14–18 (end §3.2; §3.3 and Tables3–4; §3.4 in full; beginning §3.5 through key-area option),
+      pp22–23 (alternatives, §5 conclusion in full, acknowledgments and opening references). Executive summary/options
+      tables pp3–4, reviewer comparisons/structures pp10–13, remaining action/timing/options discussion pp19–21,
+      and references pp24–27 were not read in full.
+    review_event_ids:
+    - r3_audits_03
+  limitation: Homewood v2 evaluates options for voluntary compliance review. The mock control and maturity
+    examples are not company audit results, and no direct frontier-AI compliance or harm effect is established
+    by the inspected material.
+  counterevidence: Compliance can coexist with an inadequate framework. Vague commitments, conflicted reviewers,
+    employee self-censorship or selective follow-up can create false assurance; deeper review adds security
+    and coordination burdens. Internal reviews and management systems may supply useful complementary information.
+  next_check: Compare an actual dated review’s scope, findings, uncertainty and follow-up with a separate adequacy
+    assessment; keep unverifiable commitments indeterminate rather than passing them by assumption.
+- id: C57
+  section: fairness_values
+  claim: Public input can change model behavior and reduce a specified bias benchmark, while the same intervention
+    can reduce alignment with measured public-opinion distributions.
+  status: scoped_check
+  evidence:
+  - citation_key: huang_collectiveconstitutional_2024
+    relation: supports
+    version_url: https://arxiv.org/pdf/2406.07814v1
+    locator: arXiv v1 §§3.1–3.4 pp3–6; §4.3 pp7–8 Figures4–5; §§5–7 pp9–10
+    finding: Public versus Standard constitutions are the stated training difference; Public is lower on all
+      nine BBQ dimensions but2–3 percentage points lower on OpinionQA alignment across five U.S. ideology groups.
+    review_basis: this_run_primary
+    checked_scope: All23 manuscript pages read; charts4–5/Table1/interface visually checked. Publisher edition
+      identity and code/data not independently compared.
+    review_event_ids:
+    - r3_fairness_01
+  limitation: Screened AI-familiar U.S. sample, one pair of controlled model trainings, researcher-mediated
+    constitution construction and no direct adherence metric or downstream impact measure. Nearby capability
+    scores do not establish statistical equivalence; Table1 Elo interpretation is internally inconsistent.
+  counterevidence: Positive BBQ changes coexist with less representative OpinionQA response distributions.
+    The experiment does not confer universal public consent, resolve conflicting principles or establish legitimacy
+    for all affected populations.
+  next_check: Verify canonical publisher text and inspect underlying outputs before Elo/voting claims; prioritize
+    direct principle adherence, subgroup coverage and actual-use impact over treating one proxy as universal
+    fairness.
+- id: C58
+  section: fairness_values
+  claim: A minimax preference objective offers a constructive way to handle intransitive judgments without
+    a single scalar reward ordering, but its optimization guarantee does not validate the preferences or their
+    social legitimacy.
+  status: scoped_check
+  evidence:
+  - citation_key: swamy_minimaximalistapproach_2024
+    relation: supports
+    version_url: https://arxiv.org/pdf/2401.04056v1
+    locator: arXiv v1 §§3.1–3.4 pp4–7; §4–5 pp8–10; AppendixA.7 p23
+    finding: SPO computes an approximate Minimax Winner under antisymmetric preference/no-regret assumptions;
+      theory concerns averaged policy iterates, while practical implementation uses finite queue and validation
+      selection. Constructed continuous-control preferences, not public consent, are empirically tested.
+    review_basis: this_run_primary
+    checked_scope: Mainpp1–10 and contextual definitionA.7p23; full appendix proofs and exact finalICML edition
+      not checked.
+    review_event_ids:
+    - r3_fairness_02
+  limitation: Supplied preference oracle and population aggregation/weighting are assumed. Selected theorem
+    statements/proof sketches were read, not every appendix proof independently verified. Transfer to LLM/public-policy
+    outcomes is untested here.
+  counterevidence: This is positive technical evidence against assuming cyclic preferences make every useful
+    optimization impossible; it does not settle which people, preferences or outcomes should count.
+  next_check: Complete appendix/final-edition reading and evaluate preference estimation, population weights
+    and practical-returned policy separately from minimax convergence.
+- id: C59
+  section: fairness_values
+  claim: 'Fairness benchmark results depend on distinct constructs and normative choices: group prediction
+    gaps, stereotype behavior and refusal to express subjective preferences cannot be treated as one interchangeable
+    fairness verdict.'
+  status: scoped_check
+  evidence:
+  - citation_key: huang_trustllm_2024
+    relation: supports
+    version_url: https://raw.githubusercontent.com/mlresearch/v235/main/assets/huang24x/huang24x.pdf
+    locator: ICML/PMLR235 AppendixF pp74–79, Tables19–25
+    finding: TrustLLM separately scores stereotype agreement/recognition/refusal, salary-prediction association
+      and subjective-choice neutrality; subjective preference 'fairness' is defined as refusal/neutrality and
+      measured through Longformer. Paper cautions that high association-test p-values can accompany poor predictions.
+    review_basis: this_run_primary
+    checked_scope: Complete fairness AppendixFpp74–79, abstractp1 and benchmark designp5; Table25 visually
+      checked; broader105-page object not fully read.
+    review_event_ids:
+    - r3_fairness_03
+  - citation_key: wang_decodingtrust_2023
+    relation: bounds
+    version_url: https://proceedings.neurips.cc/paper_files/paper/2023/file/63cb9921eecf51bfad27a99b2c53dd6d-Paper-Datasets_and_Benchmarks.pdf
+    locator: NeurIPS2023 AppendixJ.1–J.4 PDFpp87–89/printed63–65
+    finding: DecodingTrust instead evaluates demographic parity/equalized-odds prediction gaps on200 constructed
+      Adult salary samples with separately controlled data base rates. Its Table44 zero-shot baseline needs
+      sampling/condition clarification before a cross-table quantitative claim.
+    review_basis: this_run_primary
+    checked_scope: Fairness AppendixJ introductory passagep86 and J.1–J.4pp87–89; Table43–44 visually checked.
+    review_event_ids:
+    - r3_fairness_04
+  limitation: Historical model versions, proxy extractors/classifiers and shared benchmark/task ancestry limit
+    transfer and independence. TrustLLM Table25 needs category-count/aggregation clarification. DecodingTrust
+    Table44 needs baseline/sampling/condition clarification; distinct random draws may explain cross-table
+    differences. Neither question establishes a source error or invalidates the qualitative findings; affected
+    headline totals and cross-condition remedy rates are omitted.
+  counterevidence: Several models perform well on some stereotype tasks, and balanced context can reduce reported
+    prediction gaps. These positives coexist with recognition/association weaknesses and leave population impact
+    unmeasured. Refusal can improve one fairness metric while reducing utility or opinion-distribution alignment.
+  next_check: Resolve exact dataset category counts, conditional denominators, metric conventions and classifier
+    validity; report each tested construct/threat model and avoid inferred universal fairness or independent
+    corroboration.
+- id: C60
+  section: governance
+  claim: The inspected 2024 federal-agency-use plans report specific organizational acts alongside prospective
+    or incompletely specified risk-control procedures; these historical self-descriptions do not establish
+    that high-impact testing, waivers or remediation operated effectively.
+  status: scoped_check
+  evidence:
+  - citation_key: exim_complianceplanomb_2024
+    relation: supports
+    version_url: https://img.exim.gov/s3fs-public/documents/EXIM%20Compliance%20Plan%20for%20OMB%20Memorandum%20M-24-10Final.pdf
+    locator: September 24, 2024 v1.0 pp.5–9,11–16
+    finding: EXIM reports governance/training/IT-policy updates, while strategy and waiver formalization remain
+      prospective; it reports no rights/safety-impacting or waiver cases.
+    review_basis: this_run_primary
+    checked_scope: All extracted text on PDF pp. 1–18, including cover, revision history, contents, governance,
+      inventory, innovation, risk-management sections and Appendix A definitions; no linked underlying policies
+      or successor plan.
+    review_event_ids:
+    - r3_public_01
+  - citation_key: sba_complianceplanomb_2024
+    relation: supports
+    version_url: https://legacy.sba.gov/sites/default/files/2024-10/Final%20508-Compliant%20SBA%20M-24-10%20Implementation%20Plan%20for%20AI%20-%20September%202024.pdf
+    locator: September 2024 pp.3–4,9,11,15–16
+    finding: SBA reports a use-case form and temporary public-GenAI restriction, explicitly lacks waiver criteria/process,
+      and describes future council approval and annual certification.
+    review_basis: this_run_primary
+    checked_scope: 'PDF pp. 3–4,9,11,15–17 only: governance steps, inventory form, generative AI notice and
+      risk-management plans. Existing inherited full reading is not repeated/certified.'
+    review_event_ids:
+    - r3_public_03
+  - citation_key: eac_complianceplanomb_2024
+    relation: supports
+    version_url: https://www.eac.gov/sites/default/files/2024-10/EAC_Compliance_Plan_OMB_Memorandum_FINAL_508.pdf
+    locator: September 20 FINAL revision; pp.3–6,11–12
+    finding: EAC reports CAIO/board/guidance, but describes inventory and risk/redress processes prospectively
+      or in mixed tenses; scope is EAC internal resources.
+    review_basis: this_run_primary
+    checked_scope: 'PDF pp. 1–6,10–13: cover/revision history, purpose/scope, established governance, prospective
+      inventory, risk/redress sections and selected definitions; no reread of pp. 7–9 or14.'
+    review_event_ids:
+    - r3_public_04
+  limitation: Selected source-specific historical comparators, not a representative agency survey or direct
+    evidence of frontier-model release decisions. Shared M-24-10/template lineage means these are not three
+    independent corroborations of control effectiveness. M-24-10 was later rescinded/replaced.
+  counterevidence: Reported completed organizational/policy acts may be useful implementation indicators; absence
+    of independent case evidence does not establish that controls failed. Plan publication, office creation
+    and intended control operation remain distinct.
+  next_check: Read underlying policies and dated case records only where needed to test operation; review successor
+    plans before claims about current policy.
+- id: C61
+  section: governance
+  claim: In the April 3, 2025 M-25-21 design for covered federal use, high-impact classification can trigger
+    documented testing, impact assessment, review by a nondeveloper within the agency, risk acceptance, monitoring
+    and discontinuation; scope limits, pilots and waivers qualify that pathway.
+  status: scoped_check
+  evidence:
+  - citation_key: omb_m2521_2025
+    relation: supports
+    version_url: https://www.whitehouse.gov/wp-content/uploads/2025/02/M-25-21-Accelerating-Federal-Use-of-AI-through-Innovation-Governance-and-Public-Trust.pdf
+    locator: Overview p.1; Appendix §§1,3(a)(i)(F),4(a)–(b),5 pp.4–5,11,14–20
+    finding: Memo replaces M-24-10, defines the principal-basis high-impact trigger, assigns minimum practices
+      and permits qualified pilots/waivers. Impact-assessment reviewer is internal and uninvolved in development.
+    review_basis: this_run_primary
+    checked_scope: All extracted text on PDF pp. 1–25, including main memorandum, Appendix §§1–8, footnotes,
+      high-impact definitions/categories and consolidated actions table. Operative narrative clauses, rather
+      than the summary table, support timing/obligation paraphrases.
+    review_event_ids:
+    - r3_public_02
+  limitation: Normative policy design in exact April 2025 edition, not current-law verification, observed compliance
+    or a frontier-developer rule. Sections4(a)–(b) exclude Intelligence Community elements, national security
+    systems are outside memo scope, and feasibility/appropriateness qualifications vary by practice.
+  counterevidence: The design includes formal consequences and documentary artifacts beyond voluntary advice,
+    but its exemptions/waivers and permitted alternative black-box/vendor-result testing bound claims of uniform
+    independent assurance.
+  next_check: Check later instruments only if making dated current-duty claims; seek completed tests, review
+    comments, signed risk acceptance, waiver records and termination evidence before effectiveness claims.
+- id: C62
+  section: governance
+  claim: The pinned January 23, 2025 federal AI inventory can substantiate counts of publicly reported administrative
+    use-case records and their declared categories; it cannot by itself substantiate deployed-system prevalence
+    or effective compliance.
+  status: scoped_check
+  evidence:
+  - citation_key: omb_2024federalagency_2024
+    relation: supports
+    version_url: https://raw.githubusercontent.com/ombegov/2024-Federal-AI-Use-Case-Inventory/4a29d132291261d4829b187acd8af618e7295294/README.md
+    locator: README Summary, Key Considerations and Repository Structure at commit 4a29d132291261d4829b187acd8af618e7295294
+    finding: README dates2,133 records/41 agency submissions/351 rights-or-safety cases to January 23 and specifies
+      scope/exclusions.
+    review_basis: this_run_primary
+    checked_scope: Complete README text only at immutable commit 4a29d132291261d4829b187acd8af618e7295294;
+      repository tree used to identify files; this is not a comprehensive reading of the cited dataset.
+    review_event_ids:
+    - r3_public_06
+  - citation_key: omb_2024federalagency_2024
+    relation: supports
+    version_url: https://api.github.com/repos/ombegov/2024-Federal-AI-Use-Case-Inventory/git/blobs/1efc086ad73dc7e0647968e3ecab60e9b9da88f0
+    locator: raw_v2.csv via immutable blob 1efc086ad73dc7e0647968e3ecab60e9b9da88f0; Agency, development-stage
+      and impact columns
+    finding: Exact v2 documentary recount reproduces2,133 rows,41 stripped agency names and351 normalized rights/safety/both
+      labels; rows span multiple lifecycle stages.
+    review_basis: this_run_primary
+    checked_scope: Immutable GitHub blob API JSON and its base64-decoded exact raw_v2.csv bytes. Strict cp1252
+      parse of all rows for headers, row count, agency labels, impact categories and development-stage distributions;
+      no substantive reading of every narrative field or row.
+    review_event_ids:
+    - r3_public_07
+  - citation_key: omb_2024federalagency_2024
+    relation: bounds
+    version_url: https://raw.githubusercontent.com/ombegov/2024-Federal-AI-Use-Case-Inventory/4a29d132291261d4829b187acd8af618e7295294/validation/data_dictionary.yaml
+    locator: data_dictionary.yaml fields 16–17,51–56
+    finding: Question conditions and distinct evaluation categories prevent treating blanks as universal noncompliance
+      or internal nondeveloper review as external audit.
+    review_basis: this_run_primary
+    checked_scope: 'YAML lines 1–110 and 680–835 only: identifiers, stage/impact fields and risk-management
+      fields 51–56; no whole-dictionary read.'
+    review_event_ids:
+    - r3_public_08
+  - citation_key: omb_2024federalagency_2024
+    relation: bounds
+    version_url: https://raw.githubusercontent.com/ombegov/2024-Federal-AI-Use-Case-Inventory/4a29d132291261d4829b187acd8af618e7295294/data/2024_consolidated_ai_inventory_raw.csv
+    locator: Older raw.csv in same commit
+    finding: Older raw.csv has1,757 rows; use exact v2 artifact for January 23 summary rather than silently
+      mixing files.
+    review_basis: this_run_primary
+    checked_scope: Older raw.csv strict UTF-8-sig parse of headers and all rows for row count and selected
+      category distributions; no substantive reading of all free-text entries.
+    review_event_ids:
+    - r3_public_09
+  limitation: Administrative self-report with exclusions and possible withheld details. Only documentation,
+    schema excerpts and categorical fields were checked; underlying case narratives/assessments were not comprehensively
+    read or independently verified. Strict cp1252 v2 bytes preserved via byte-identical base64 API representation.
+  counterevidence: The inventory is a concrete disclosure artifact beyond a future commitment. Its structured
+    fields can guide audit, but publication alone is neither safety evidence nor proof that control duties
+    were executed.
+  next_check: Use explicit snapshot/file/hash/normalization when quoting totals. Review full schema-to-v2 mapping
+    and primary agency evidence before deriving compliance or outcome rates.
+- id: C63
+  section: policy_implementation
+  claim: The 2025 Foundation Model Transparency Index measures disclosed information for 13 developers across
+    100 indicators. Its reported mean of 40.69/100 describes disclosure, rather than verified control effectiveness
+    or a controlled annual change in safety.
+  status: scoped_check
+  evidence:
+  - citation_key: wan_foundationmodeltransparency_2025
+    relation: supports
+    version_url: https://arxiv.org/pdf/2512.10169v1
+    locator: v1§§3.3–4.5 pp. 14–18; Figure 7 p. 19; Figure 15/§5.3 pp. 32–36; AppendixA pp. 48–49
+    finding: Methods combine seven solicited reports and six FMTI-prepared issuer-source reports, two FMTI
+      scorers per 1,300 pairs and company responses. The mean is 529/13=40.69; changed indicators/reporting/flagship
+      models bound annual comparisons. Non-disclosure is not absence of practice.
+    review_basis: this_run_primary
+    checked_scope: 'Exact arXiv v1 PDF pp. 1,3–6,14–19,32–39,48–49: abstract, index/instrument background and
+      changes, full §§4.1–4.5 methods, overall results/Figure 7, reporting-method comparison, longitudinal
+      discussion/Figures 16–17/Table 3, conclusion/conflicts, and AppendixA including agent prompt and retrieval
+      comparison. Other results subsections, indicator tables and bibliography pages not fully read.'
+    review_event_ids:
+    - r3_provider_01
+  limitation: Selected source reading; no independent re-scoring or underlying developer-source audit. The
+    scores are investigator judgments about issuer information, not independent observation of controls. Changes
+    to the sample, instrument and process complicate trend inference.
+  counterevidence: Structured reporting and engagement can produce new public information; some companies score
+    highly and some fixed-indicator examples show actual disclosure regressions. These positive and negative
+    observations should not be discarded merely because transparency is distinct from realized safety.
+  next_check: Audit any publication-leading indicator regression against exact published developer reports.
+    Use 40.69/100 with the 13×100 denominator; omit causal safety or controlled-trend interpretations unless
+    stronger evidence is supplied.
+- id: C64
+  section: policy_implementation
+  claim: NVIDIA’s report, applicable as of August 2025, describes screening, approval, reassessment and pre-release
+    testing mechanisms, including reported Garak use. Its risk-analysis template and issuer descriptions do
+    not demonstrate realized risk reduction.
+  status: scoped_check
+  evidence:
+  - citation_key: nvidia_frontierriskassessment_2025
+    relation: supports
+    version_url: https://images.nvidia.com/content/pdf/NVIDIA-Frontier-AI-Risk-Assessment.pdf
+    locator: Coverp. 1; PRA/DRA pp. 2–5; risk formula/Table 1 pp. 6–7; Table 2 p. 8; Garak p. 13; Governance
+      pp. 14–15
+    finding: Positive reported operational mechanisms coexist with limits on enforcing controls across all
+      products. Table 2 is explicitly an example/template, not a measured 49→5 product result. The cover’s
+      no-frontier-development statement is historical.
+    review_basis: this_run_primary
+    checked_scope: All 15 PDF pages, including cover/abstract/executive summary, Preliminary and Detailed Risk
+      Assessments, both V-model figures, Tables 1–2, risk mitigation/tool descriptions, risk evaluation and
+      governance, and the footnotes printed in this document. Linked tools, model cards and cited studies were
+      not independently opened.
+    review_event_ids:
+    - r3_provider_02
+  limitation: Full reading of the 15-page document does not verify tool efficacy, actual deployment decisions
+    or applicability to all products. August applicability is established, but the canonical February 17 publication
+    date remains unchecked. Table2 is an illustrative template; no observed risk-reduction percentage should
+    be inferred.
+  counterevidence: The report names specific workflows and reports actual pre-release Garak use, so treating
+    it as content-free or purely aspirational would erase useful evidence. Conversely internal committees are
+    not independent external assurance and downloadable weights limit downstream control.
+  next_check: Seek dated product assessments/model cards and review records for a consequential effectiveness
+    claim. Retain specific attributed mechanisms and omit template risk-reduction arithmetic now.
+- id: C65
+  section: policy_implementation
+  claim: Meta’s April 7, 2026 v2 framework combines a material-contribution risk trigger with conditional mitigated
+    development/deployment and more explicit accountability. The inspected text alone does not establish overall
+    strengthening or weakening, adherence, or a safety effect.
+  status: scoped_check
+  evidence:
+  - citation_key: meta_advancedaiscalingframeworkv2_2026
+    relation: supports
+    version_url: https://ai.meta.com/static-resource/Meta_Advanced-AI-Scaling-Framework-v2/
+    locator: §§2–3 pp. 4–17; Table 1 p. 15; §§4.1–4.2 pp. 25–28; §5 p. 40; terminology/change log pp. 41–44
+    finding: V 2 conditions deployment of high/critical models on validated mitigation to moderate-or-lower
+      risk and specifies responsible officers, reporting/update processes and deployment-sensitive elicitation.
+      Its change log describes both changed threshold criteria and response labels; some protocols remain future/developing.
+    review_basis: this_run_primary
+    checked_scope: 'PDF pp. 1–17,25–28,39–44: executive summary, scope, complete governance/transparency/accountability
+      sections, outcomes/threat-model inclusion criteria and risk thresholds, evaluation environment and elicitation/deployment-context
+      passages, first cybersecurity threshold example, benefits assessment, future work, terminology and change
+      log. Risk-domain scenarios and detailed domain-specific implementation pp. 18–24,29–38 not read in full.'
+    review_event_ids:
+    - r3_provider_03
+  limitation: Selected 44-page source reading; old/new comparison is attributed to v2’s change log, not an
+    independently captured v1 comparison. Scope excludes some gradual or remediable serious harms, and no released
+    model’s compliance or effectiveness is established.
+  counterevidence: Broader threshold criteria and more explicit processes may strengthen a policy, while conditional
+    continuation and scope exclusions may reduce restraint in some interpretations. Those effects depend on
+    actual risk decisions, mitigations and governance, not tier labels alone.
+  next_check: If overall policy direction leads the publication, compare exact v1 bytes and actual preparedness
+    reports/risk decisions. Preserve v2’s conditions now and leave the consequential interpretive judgment
+    open.
 families:
 - id: F01
   citation_keys:
@@ -1732,3 +2425,38 @@ families:
   relationship: Shared author and conceptual lineage across internal lifecycle and external-audit arguments.
   basis: Fresh source authorship/methods review and C39/C41.
   status: Complementary institutional arguments; no independent causal outcome replication is claimed.
+- id: F09
+  citation_keys:
+  - ameisen_circuittracingrevealing_2025
+  - lindsey_biology_2025
+  relationship: Companion methods and case-study articles from one Anthropic circuit-tracing project.
+  basis: Shared replacement-model method, authorship and reciprocal article links; r3_circuits_01–02.
+  status: One research family; case interventions are affirmative evidence but not two independent validations
+    of comprehensive faithfulness.
+- id: F10
+  citation_keys:
+  - cunningham_sparseautoencoders_2024
+  - makelov_principledevaluations_2024
+  relationship: Distinct SAE studies with shared indirect-object-identification task lineage; different model
+    families and intervention protocols.
+  basis: Pinned arXiv methods and limitations; r3_mechvalidation_02,04.
+  status: Task-family dependence recorded; exact item overlap and cross-edition equivalence remain unchecked.
+    Not an independent task-generalization replication.
+- id: F11
+  citation_keys:
+  - sba_complianceplanomb_2024
+  - eac_complianceplanomb_2024
+  - exim_complianceplanomb_2024
+  relationship: Historical agency self-descriptions under the same M-24-10 mandate and common reporting structure.
+  basis: Selected SBA/EAC and complete EXIM plan text; r3_public_01,03–04.
+  status: Specific reported acts differ by agency. Three plans are not three independent tests of control effectiveness
+    or frontier-provider governance.
+- id: F12
+  citation_keys:
+  - huang_trustllm_2024
+  - wang_decodingtrust_2023
+  relationship: Broad evaluation suites with documented shared benchmark/method ancestry, including salary-prediction
+    and robustness tasks.
+  basis: TrustLLM fairness AppendixF and its explicit DecodingTrust references; r3_fairness_03–04.
+  status: Construct definitions and model conditions differ. Exact item overlap is not reconstructed; do not
+    count as independent population-impact corroboration.

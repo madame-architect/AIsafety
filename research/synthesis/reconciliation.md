@@ -1,6 +1,48 @@
 # Research reconciliation and publication decisions
 
-## Current thematic round after PR #22
+## Current mechanistic, audit, fairness and implementation round
+
+This local round starts from `017bd8f3dc67d8a329e75c4c53ad36c1355c4577`, the earlier unpublished thematic round below, and therefore stacks on merged PR #22. Remote main and open PR state were inspected before this work; no open PR was present. No push, PR, merge, release or deposit is part of this round. The [source history](rounds.md) records its purposeful selection, bounded stopping rule, exact editions and scopes.
+
+The latest round logs **35 events across 28 keys** selected from 29 keys. Heap was not substantively reread. Six representations received complete-text readings: five match their records, with NVIDIA already inherited full text; CCAI is a related arXiv edition. Thus **four new eligible completions** raise combined counts to **115 full text, 158 selected sections, 6 abstract only, 6 metadata only and 1 inaccessible**; **171 records** still lack the full-text label. The 105 inherited full-text labels remain unrecertified. Mökander’s narrative and methodology appendix were read, but unread bibliography pages keep that event at selected sections. Programmatic inventory parsing does not certify complete narrative reading.
+
+Across both later rounds there are **69 events for 54 keys**. The map now has **62 claims and 106 mapped keys**; three additional keys have explicit non-claim roles and **177 roles remain unresolved**. TrustLLM’s earlier background role now has scoped fairness evidence. Bender and original-edition METR retain explained background roles rather than being forced into support. State’s requested PDF and Anthropic’s requested compliance-framework body remain inaccessible; HTTP200 error/application pages are not read source texts.
+
+| Strand | Substantive addition | Boundary that changes interpretation |
+|---|---|---|
+| Mechanistic validation, [C48–C53](claims.md#c48) | Positive reference-task recovery, selected original-output interventions, improved training objectives and feature-description endpoints. | Recovery, semantic interpretation, reconstruction, pathway fidelity and causal control differ. Controls reveal shortcuts or underdetermination; shared tasks/research families limit independence and broader generalization. |
+| Deferred audit papers, [C38–C41](claims.md#c38), [C54–C55](claims.md#c54) | Final Longpre reporting/access proposal; Mökander’s review-/stakeholder-informed layered blueprint; Homewood’s concrete adherence-review options. | “Third-party” definitions differ; mock/counterfactual examples are not observed audit results. Adherence, framework adequacy and effects need separate evidence. |
+| Fairness/values, [C57–C59](claims.md#c57) | Lower BBQ bias alongside lower OpinionQA representativeness; constructive minimax preference optimization; explicit benchmark constructs. | One metric cannot settle public legitimacy, all fairness objectives or actual harm; researcher mediation, sampling, preference assumptions and proxy extraction remain consequential. |
+| Implementation, [C60–C65](claims.md#c60) | Specific reported agency/provider acts, a formal federal-use pathway, recounted inventory records and externally scored disclosure. | Prescribed, prospective, self-reported, disclosed and independently verified operation are distinct. Historical federal-use comparators are not frontier-provider rules; disclosure trends are not measured safety trends. |
+
+The proposed editorial interpretation remains constructive and conditional: methods and institutions can improve evidence and decisions under specified conditions. The strongest positive results and their alternatives belong together. Whether that argument or the unresolved frontier-scale barriers should lead a publication remains the maintainer’s decision.
+
+### Active questions and scoped dispositions
+
+| Question | Current disposition | Remaining work if consequential to publication |
+|---|---|---|
+| Mechanistic metrics and interventions | Retain affirmative recovery/control findings and negative/shortcut controls. Do not turn local metrics, frozen-attention direct effects or filtered similarity into comprehensive faithfulness or deployed-monitor assurance. | Complete claim-specific graphs, intervention configurations and omitted appendices; require broader tasks or actual downstream validation for broader claims. |
+| Karvonen Table1/Table4 | No error is established: aggregation, SAE selection and masking equivalence are unresolved. Omit a headline best reconstruction number. | Check exact evaluation code/results only if that number matters. The qualitative trained/random contrast remains usable. |
+| Proceedings and related editions | Cunningham’s complete reading is the canonically identified arXivv3, not verified ICLR proceedings equivalence. CCAI, Paulo and Lan edition limits remain explicit. | Compare the exact final/older editions before attributing results to a different edition. No related-edition full-depth upgrade. |
+| Audit independence and adequacy | Compare contractual, organizational, access and follow-up conditions rather than pool “third-party” labels. Treat Longpre examples and Homewood mock tables as proposals. | Seek actual review/remediation records and a separate adequacy assessment before effectiveness claims. Mökander’s blueprint has a research basis but not implemented-effect evidence. |
+| CCAI Elo labels | Table1’s harm/help terminology and adjacent interpretation need clarification; omit Elo/equivalence inferences. Positive BBQ and contrary OpinionQA findings remain usable within their inspected arXiv edition. | Inspect publisher text/underlying outputs only if those measures lead. Voting thresholds refer to different stages and are not treated as a discrepancy. |
+| TrustLLM Table25 | Category counts in AppendixF and example row aggregation need clarification. Do not supply corrected totals from inferred weights. | Check the exact dataset/code before quantitative category/overall comparisons; retain the distinct-construct finding. |
+| DecodingTrust Table44 | The zero-shot baseline differs from another stated condition, but random draws or sampling choices may explain it. No source error is established; omit the affected cross-table remedy rate. | Resolve draws, base-rate setup and aggregation before that numerical contrast. C47’s broader result is retained. |
+| FMTI measurement and change | Use 40.69/100 with 13×100 scope. Do not interpret changed indicators/reporting/flagship models as a controlled safety trend. Selected internal longitudinal prose/count differences are not used. | Audit publication-leading individual disclosure changes against exact developer reports; external scoring does not independently verify practices. |
+| Provider and public implementation | Preserve reported mechanisms and prospective verbs. NVIDIA’s 49→5 is a template; Meta’s v2 change log is not an independently captured v1 comparison. M-25-21 review is within the agency. | Review dated underlying policies, actual product/case decisions, tests and completed responses for operational-effect claims. Recheck subsequent legal instruments before present-duty assertions. |
+| Federal inventory snapshot | The exact v2 recount reproduces 2,133/41/351. Older raw.csv is a different artifact; no issuer-error explanation is inferred. | Pin snapshot/file/hash/encoding/normalization. Full schema-to-v2 mapping and underlying case evidence are needed before compliance-rate inference. |
+| Unavailable State and Anthropic bodies | Failed attempts remain explicit and add no substantive findings or recertification of inherited claims. | Obtain an accessible authenticated exact edition if its content could change a leading claim; otherwise retain the gap. |
+| Earlier numerical/access holds | Earlier Phuong, CAISI, Xu, ARTEMIS, CyberSecEval2, ARIA, Barrett and audit-program holds remain scoped as recorded below. | Resolve only publication-critical affected assertions; omit/qualify others without blocking the rest of the synthesis. |
+
+The latest round has 33 captured representation events and two unavailable events; source payloads remain outside Git. Across both rounds strict validation checks 63 distinct local payloads (the DecodingTrust PDF is reused), with source metadata retaining original retrievals where bytes were reused. No independent archival preservation, human review or experimental replication is claimed. Documentary recounts and arithmetic checks are labeled separately.
+
+Next work should follow the publication-leading claims: final-edition equivalence, causal/pathway validation or actual review/implementation records where they could change the conclusion. The 177 unresolved corpus roles remain a thematic research queue, and 171 records still lack a full-text label. Selected long texts and linked artifacts remain unfinished even where an inherited label is already full. Completing the corpus remains a separate objective from deciding whether a bounded output is useful now.
+
+Validation for this round passed: all **54 unit tests**, bibliography generation and semantic lint (0 failures/0 warnings), strict research generation/checking (63 distinct local payloads checked, none missing), commitment/operational/joint-dataset checks, and the Carbon candidate metadata audit. Fresh implementation QA additionally reproduced the generated views in a capture-free fixture (0 checked/63 missing) and confirmed strict rejection of missing bytes, preserved every inherited CSV field except the 17 current-review overlays, and checked all 570 local links/anchors. The older cyber audit still checked 0 original private payloads with two explicit legacy gaps; Carbon’s five candidates remain pending. No new capture success or admission is inferred for either package.
+
+Fresh separate-agent research and implementation review examined the complete new diff with selected primary-source checks. Root synthesis and rereading retained the positive results while narrowing ambiguous quantitative statements. No material issue remains within that review scope. These checks are not a full reread of all 28 records, independent human review, experimental replication or a publication endorsement. Source payloads, diagnostic files and private inputs are excluded from the commit; the authoritative bibliography and existing pipelines are unchanged.
+
+## Earlier thematic challenge round after PR #22
 
 The new local round starts from merged commit `269d2856bab868ecce3d80ac2fb36f273fb5d22a`. Its [selection, source events and exact reading scopes](rounds.md) are recorded separately from the initial integration below. It makes progress on both broad thematic coverage and consequential claim questions; it does not complete the remaining corpus or select a publication thesis.
 
@@ -17,7 +59,7 @@ The map now has **45 claims and 83 mapped keys**. Of the other 203 keys, two hav
 
 These additions support a more constructive conditional synthesis: evaluations can improve particular decisions and designs when their methods, outcomes and institutional use fit the question. The strongest competing explanation or simpler comparator belongs beside each affirmative finding. This is a proposed editorial direction for maintainer adjudication, not the final thesis.
 
-## Active claim-level decisions
+## Decisions recorded in the earlier thematic round
 
 | Claim or issue | Disposition after this round | What remains necessary |
 |---|---|---|

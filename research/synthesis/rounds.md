@@ -1727,3 +1727,1785 @@ No source findings; material was inaccessible.
 | `version_claim` | README at Git commit 8cbb7fd341f0efe840ed5d9b148b87287362d9e9 |
 | `locator_basis` | Headings and literal Markdown paragraphs of the retained README; linked media excluded. |
 | `capture_path` | .source-captures/synthesis-7df0d1974534921f84665b8e090e5f26f7ccc54c8ed046e454da66188fdfe376.txt |
+## mechanistic-fairness-policy-2026-11-14
+
+**As of:** 2026-11-14. **Base commit:** `017bd8f3dc67d8a329e75c4c53ad36c1355c4577`.
+
+**Question:** What do mechanistic validation, fairness/value evaluation and policy-implementation sources add to or change in the broad synthesis, including the two deferred audit papers?
+
+**Selection basis:** Purposive selection from the existing corpus and prior reconciliation queue, following the maintainer's next priorities. The starting local state has45 claims/83 mapped keys,201 unresolved roles and175 records without a combined full-text label. Six complementary strands select29 keys, including existing claim checks and background material. Source acquisition begins in parallel with this working selection; this is neither systematic sampling nor preregistration.
+
+**Stopping rule:** Finish a bounded reviewable thematic unit with source-level depth and relevance decisions. Read manageable texts completely when consequential; use exact methods/appendix/figure checks for long or related editions. Preserve failed access and hold/omit affected numerical or current-status claims rather than blocking unrelated findings. No new bibliography admission or public release is part of this round.
+
+| Theme | Why selected | Canonical keys |
+|---|---|---|
+| SAE validation and ground-truth/control tests | Challenges C13 with affirmative validation, negative controls, causal/reconstruction endpoints and transfer limits. | `makelov_principledevaluations_2024`, `karvonen_measuringprogressdictionar_2024`, `braun_identifyingfunctionally_2024`, `cunningham_sparseautoencoders_2024`, `heap_sparseautoencoders_2025` |
+| Circuit tracing and interpretation evidence | Separates interpretable descriptions and attribution from demonstrated causal mechanisms, graph completeness and useful controls. | `ameisen_circuittracingrevealing_2025`, `lindsey_biology_2025`, `sharkey_openproblemsmechanistic_2025`, `paulo_automaticallyinterpreting_2024`, `lan_sparseautoencoders_2024` |
+| Deferred audit layers and compliance-review mechanisms | Completes the two explicitly deferred sources where feasible and tests the proposal/observed-review distinction against Homewood. | `longpre_inhouseevaluation_2025`, `mokander_auditinglargelanguagemodels_2024`, `homewood_thirdpartycompliance_2025` |
+| Fairness metrics, plural preferences and affected populations | Separates group metrics, value elicitation, judge agreement and impact; seeks missing counterevidence to averaged-score or universal-value claims. | `huang_collectiveconstitutional_2024`, `swamy_minimaximalistapproach_2024`, `huang_trustllm_2024`, `wang_decodingtrust_2023`, `bender_stochasticparrots_2021` |
+| Federal-use implementation comparators | Distinguishes historical reported acts, inventory evidence and prospective procedures, with explicit relevance limits for frontier-provider governance. | `sba_complianceplanomb_2024`, `eac_complianceplanomb_2024`, `exim_complianceplanomb_2024`, `statedepartment_complianceplanomb_2024`, `omb_2024federalagency_2024`, `omb_m2521_2025` |
+| Provider disclosure and implementation evidence | Tests what transparency scores, framework comparisons and provider accounts actually establish about practices, implementation and effects. | `wan_foundationmodeltransparency_2025`, `metr_commonelementsfrontier_2024`, `nvidia_frontierriskassessment_2025`, `anthropic_frontiercomplianceframework_2026`, `meta_advancedaiscalingframeworkv2_2026` |
+
+### Event index
+
+| Event | Source | Reading | Edition / coverage effect | Relevance |
+|---|---|---|---|---|
+| [r3_mechvalidation_01](#r3_mechvalidation_01) | `karvonen_measuringprogressdictionar_2024` | Full text | same_record / complete_record_text | claim_evidence |
+| [r3_mechvalidation_02](#r3_mechvalidation_02) | `cunningham_sparseautoencoders_2024` | Full text | same_record / complete_record_text | claim_evidence |
+| [r3_mechvalidation_03](#r3_mechvalidation_03) | `braun_identifyingfunctionally_2024` | Selected sections | same_record / scoped_review | claim_evidence |
+| [r3_mechvalidation_04](#r3_mechvalidation_04) | `makelov_principledevaluations_2024` | Selected sections | same_record / scoped_review | claim_evidence |
+| [r3_circuits_01](#r3_circuits_01) | `ameisen_circuittracingrevealing_2025` | Selected sections | same_record / scoped_review | claim_evidence |
+| [r3_circuits_02](#r3_circuits_02) | `lindsey_biology_2025` | Selected sections | same_record / scoped_review | claim_evidence |
+| [r3_circuits_03](#r3_circuits_03) | `paulo_automaticallyinterpreting_2024` | Selected sections | related_edition / scoped_review | claim_evidence |
+| [r3_circuits_04](#r3_circuits_04) | `lan_sparseautoencoders_2024` | Selected sections | related_edition / scoped_review | claim_evidence |
+| [r3_circuits_05](#r3_circuits_05) | `sharkey_openproblemsmechanistic_2025` | Selected sections | same_record / scoped_review | claim_evidence |
+| [r3_circuits_06](#r3_circuits_06) | `paulo_automaticallyinterpreting_2024` | Abstract only | same_record / none | background |
+| [r3_circuits_07](#r3_circuits_07) | `lan_sparseautoencoders_2024` | Abstract only | related_edition / none | background |
+| [r3_circuits_08](#r3_circuits_08) | `sharkey_openproblemsmechanistic_2025` | Abstract only | same_record / none | background |
+| [r3_audits_01](#r3_audits_01) | `longpre_inhouseevaluation_2025` | Selected sections | same_record / scoped_review | claim_evidence |
+| [r3_audits_02](#r3_audits_02) | `mokander_auditinglargelanguagemodels_2024` | Selected sections | same_record / scoped_review | claim_evidence |
+| [r3_audits_03](#r3_audits_03) | `homewood_thirdpartycompliance_2025` | Selected sections | same_record / scoped_review | claim_evidence |
+| [r3_fairness_01](#r3_fairness_01) | `huang_collectiveconstitutional_2024` | Full text | related_edition / none | claim_evidence |
+| [r3_fairness_02](#r3_fairness_02) | `swamy_minimaximalistapproach_2024` | Selected sections | same_record / scoped_review | claim_evidence |
+| [r3_fairness_03](#r3_fairness_03) | `huang_trustllm_2024` | Selected sections | same_record / scoped_review | claim_evidence |
+| [r3_fairness_04](#r3_fairness_04) | `wang_decodingtrust_2023` | Selected sections | same_record / scoped_review | claim_evidence |
+| [r3_fairness_05](#r3_fairness_05) | `bender_stochasticparrots_2021` | Selected sections | same_record / scoped_review | background |
+| [r3_public_01](#r3_public_01) | `exim_complianceplanomb_2024` | Full text | same_record / complete_record_text | claim_evidence |
+| [r3_public_02](#r3_public_02) | `omb_m2521_2025` | Full text | same_record / complete_record_text | claim_evidence |
+| [r3_public_03](#r3_public_03) | `sba_complianceplanomb_2024` | Selected sections | same_record / scoped_review | claim_evidence |
+| [r3_public_04](#r3_public_04) | `eac_complianceplanomb_2024` | Selected sections | same_record / scoped_review | claim_evidence |
+| [r3_public_05](#r3_public_05) | `statedepartment_complianceplanomb_2024` | Inaccessible | uncertain / none | unresolved |
+| [r3_public_06](#r3_public_06) | `omb_2024federalagency_2024` | Selected sections | same_record / scoped_review | claim_evidence |
+| [r3_public_07](#r3_public_07) | `omb_2024federalagency_2024` | Selected sections | same_record / scoped_review | claim_evidence |
+| [r3_public_08](#r3_public_08) | `omb_2024federalagency_2024` | Selected sections | same_record / scoped_review | claim_evidence |
+| [r3_public_09](#r3_public_09) | `omb_2024federalagency_2024` | Selected sections | same_record / scoped_review | claim_evidence |
+| [r3_provider_01](#r3_provider_01) | `wan_foundationmodeltransparency_2025` | Selected sections | same_record / scoped_review | claim_evidence |
+| [r3_provider_02](#r3_provider_02) | `nvidia_frontierriskassessment_2025` | Full text | same_record / complete_record_text | claim_evidence |
+| [r3_provider_03](#r3_provider_03) | `meta_advancedaiscalingframeworkv2_2026` | Selected sections | same_record / scoped_review | claim_evidence |
+| [r3_provider_04](#r3_provider_04) | `metr_commonelementsfrontier_2024` | Selected sections | same_record / scoped_review | background |
+| [r3_provider_05](#r3_provider_05) | `metr_commonelementsfrontier_2024` | Selected sections | related_edition / scoped_review | background |
+| [r3_provider_06](#r3_provider_06) | `anthropic_frontiercomplianceframework_2026` | Inaccessible | uncertain / none | unresolved |
+
+<a id="r3_mechvalidation_01"></a>
+### r3_mechvalidation_01
+
+**Source:** `karvonen_measuringprogressdictionar_2024`. **Theme:** mechanistic_validation. **Reading:** Full text. **Coverage effect:** `complete_record_text`.
+
+**Edition match:** `same_record`. Exact arXiv identifier, title, and author match to the authoritative record; pinned arXiv:2408.00113v2, dated 30 October 2024 on the PDF cover; NeurIPS2024 footer. This event certifies this arXiv edition only, not identity with a separately published proceedings version or future revisions.
+
+**Inspected scope:** Complete pinned 21-page arXiv v2 PDF: abstract, Sections1–8, author contributions, acknowledgments, references, Appendices A–G, Tables1–5, Figures1–6. Linked code, model weights, datasets, and other papers were not opened or reproduced.
+
+**Locators:** Sections2.1–3.2, pp.2–5: eight-layer chess/Othello models, researcher-specified BSPs, coverage and board reconstruction definitions; Section5, pp.7–9; Table1 p.8; Figures2–4 pp.6–9: trained/random comparison and p-annealing comparisons; Section6 p.9: domain, researcher ontology, and downstream-use limitations; AppendixD, pp.18–19, Tables4–5: per-property trained/random comparisons; AppendixF.2 p.20: masking initial board locations and layer1 positional shortcut control
+
+**Visual check:** Rendered and visually inspected every figure (1–6) on PDF pages2,6,7,9,20,21; inspected plotted axes/legends, board examples, and Table1 plus Tables2–5 in text. No external feature dashboard or executable artifact inspected.
+
+**Findings:**
+
+- The paper supplies affirmative reference-task validation: features recover formally specified board properties, and board-state metrics distinguish trained models from same-architecture random-weight controls (Section5/Table1).
+- Coverage averages the best single-feature F1 for each researcher-selected BSP; reconstruction combines features having at least .95 training precision and evaluates board-level F1 on a distinct test set of1000 games (Section3.2). These measure recovery under a specified feature ontology rather than all possible model knowledge.
+- AppendixF.2 explicitly removes pieces at initial locations to reduce positional shortcuts. The layer1 SAE reconstruction F1 is reported as .01 under this restriction versus .52 when initial locations are included; the authors attribute the latter to PGN token position. This is a reported documentary control, not a reproduced result.
+- AppendixD/Table5 shows some random-model strategy properties score highly when correlated with syntax or move number, including queen/castling-related properties. “Ground truth” labels alone do not eliminate shortcuts.
+- p-annealing improves over standard L1 SAEs on tested proxy and supervised metrics; coverage also reveals expansion-size differences not evident in earlier unsupervised plots. Linear probes still outperform the SAEs on board recovery.
+
+**Counterevidence / alternative:** Random-weight controls are weak on full board reconstruction but can be strong on some strategic labels; linear probes remain better and the paper explicitly says downstream interpretability tasks are not tested. The existence of useful discriminating metrics challenges an undifferentiated reading that SAE evaluation cannot separate learned structure from random structure.
+
+**Limits:** Two small eight-layer GPT board-game models, residual stream after layer6, hand-selected board/strategy properties and restricted move positions. Board-property recovery is not a comprehensive dictionary, mechanistic pathway audit, natural-language safety evaluation, or deployment validation. No replication. Table1 and Table4 use similarly named board-state reconstruction results without enough reporting detail here to certify identical aggregation/selection; do not collapse them into one best-score claim.
+
+**Replication:** `not_performed`. **Numerical check:** Documentary comparison of reported metrics and controls only; no data extraction, uncertainty recalculation, model execution, or experimental reproduction.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C48](claims.md#c48)
+
+**Relevance rationale:** Adds affirmative validation and boundaries to C13; maps the source to specific new claims without treating source inclusion or separate-agent checking as independent corroboration.
+
+**Next check:** If a publication-leading reconstruction number is needed, inspect released evaluation code/results to reconcile Table1 game-level G_board-state reconstruction with Table4 grouped per-property comparisons, verifying target, averaging, SAE selection, and masking. Retain a qualitative statement until those match. Test whether analogous controls survive more complex language tasks.
+
+| Capture field | Value |
+|---|---|
+| `preservation_status` | captured |
+| `original_url` | [Source](https://arxiv.org/pdf/2408.00113v2) |
+| `final_url` | [Source](https://arxiv.org/pdf/2408.00113v2) |
+| `retrieved_at` | 2026-11-14T17:53:03Z |
+| `attempted_at` | 2026-11-14T17:53:03Z |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No checked capture-specific archive was available in this bounded round; local bytes and the exact primary version URL are retained. Independent archival preservation is not claimed. |
+| `sha256` | cb876b31bbc8d9095ddd8b4f1aad5a60fd8ef2f8727394a9063ddc45db0a8ca4 |
+| `byte_length` | 3451373 |
+| `mime_type` | application/pdf |
+| `published_on` | 2024-10-30 |
+| `version_claim` | arXiv:2408.00113v2, dated 30 October 2024 on the PDF cover; NeurIPS2024 footer |
+| `locator_basis` | Printed page numbers agree with PDF viewer pages; numbered sections, figures, tables, and appendices are version-specific. |
+| `capture_path` | .source-captures/synthesis-cb876b31bbc8d9095ddd8b4f1aad5a60fd8ef2f8727394a9063ddc45db0a8ca4.pdf |
+
+<a id="r3_mechvalidation_02"></a>
+### r3_mechvalidation_02
+
+**Source:** `cunningham_sparseautoencoders_2024`. **Theme:** mechanistic_validation. **Reading:** Full text. **Coverage effect:** `complete_record_text`.
+
+**Edition match:** `same_record`. Exact arXiv identifier, title, and author match to the authoritative record; pinned arXiv:2309.08600v3, dated 4 October 2023 on the PDF cover. This event certifies this arXiv edition only, not identity with a separately published proceedings version or future revisions.
+
+**Inspected scope:** Complete pinned 20-page arXiv v3 PDF: abstract, Sections1–6, acknowledgments, references, Appendices A–G, Tables1–2, Figures1–18. This is the arXiv edition dated 4 October 2023, not a newly inspected ICLR2024 proceedings artifact. No linked code, source data, or model weights executed.
+
+**Locators:** Sections2–3, pp.2–5: tied-weight SAE methods, baselines, automatic interpretation; Sections4.1–4.2, pp.5–6, Figure3: Pythia410M IOI counterfactual activation patching and edit-magnitude comparisons; Section5, pp.6–8, Figures4–5: selected token-feature ablations and closing-parenthesis causal tree; Section6.2 pp.8–9: reconstruction residuals, perplexity increase, architecture/layer and task-generalization limitations; AppendixA pp.11–12: GPT4 explanations/GPT3.5 simulation, top-random mixture, skipped low-variation features; AppendicesC.2–C.3 pp.13–15 and G pp.18–20: random-only scoring, dead MLP features, matched top-K baseline; AppendicesD.3–D.4 pp.16–17 and F pp.18–19: selection procedure, failed weight-only circuit method, other IOI layers
+
+**Visual check:** Rendered and visually inspected all Figures1–18 on PDF pages2,4,5,7,8,12–20, including other-layer IOI curves and top-K baselines. Figures16–17 contain dense panels and were read as qualitative trends, not digitized numerical estimates. Tables1–2 read in PDF text and rendering.
+
+**Findings:**
+
+- On IOI, counterfactual feature patching on Pythia410M can move output distributions toward the counterfactual target with fewer patched directions and smaller edits than PCA/non-sparse dictionaries under the reported selection procedure (Section4/Figure3). This is affirmative task-level causal utility, distinct from automatic interpretability scoring.
+- The ACDC feature ordering is selected separately per decomposition by average KL divergence over50 IOI datapoints; the patch adds coefficient differences times learned decoder directions to original activations. The evidence is targeted intervention success under this setup, not recovery of every causally important feature.
+- Selected apostrophe and closing-parenthesis examples use ablation effects on logits/upstream features, giving causally checked examples beyond input correlation. AppendixD.3 explains feature searching/selection, so examples should remain described as selected case studies.
+- Random-only fragment scoring is much lower than top-random scoring but retains the early-layer relative advantage; top-K PCA/ICA controls explain only a small fraction of the score gap. Late-layer advantage is smaller, and MLP dictionaries have many dead features (AppendixC/G).
+- Reconstruction loses behaviorally relevant information: Section6.2 reports layer2 Pythia70M replacement increasing Pile perplexity from25 to40. The authors describe IOI generalization beyond the tested behavior as future work, not an established result.
+
+**Counterevidence / alternative:** Reconstruction is incomplete; autointerpretability varies by layer/sample protocol; selected feature examples and IOI patching are not a comprehensive mechanistic account. AppendixD.4 reports a failed weight-based cross-layer feature-connection method, and AppendixC documents MLP failures.
+
+**Limits:** Pythia70M/410M and Pile/OpenWebText; selected IOI templates and token-feature examples. The same IOI task family used in later Makelov work is not an independent task replication. Automatic scores do not certify semantic completeness; selected ablations do not establish reliable safeguards. ArXivv3 is identified by the authoritative record’s exact eprint/DOI; the record’s separate ICLR2024 venue/year is not recertified by this reading.
+
+**Replication:** `not_performed`. **Numerical check:** Documentary comparison of reported metrics and controls only; no data extraction, uncertainty recalculation, model execution, or experimental reproduction.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C49](claims.md#c49)
+
+**Relevance rationale:** Adds affirmative validation and boundaries to C13; maps the source to specific new claims without treating source inclusion or separate-agent checking as independent corroboration.
+
+**Next check:** For any publication claim tied to peer-reviewed wording, inspect the ICLR2024 proceedings edition and determine whether its methods/results differ from the fully read arXivv3. Broaden causal tests beyond IOI and retain random-model controls from later metric-validity studies.
+
+| Capture field | Value |
+|---|---|
+| `preservation_status` | captured |
+| `original_url` | [Source](https://arxiv.org/pdf/2309.08600v3) |
+| `final_url` | [Source](https://arxiv.org/pdf/2309.08600v3) |
+| `retrieved_at` | 2026-11-14T17:53:06Z |
+| `attempted_at` | 2026-11-14T17:53:05Z |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No checked capture-specific archive was available in this bounded round; local bytes and the exact primary version URL are retained. Independent archival preservation is not claimed. |
+| `sha256` | 0475237e835c07738a74b2f372f0b7aa33ac047dce6affd49bb750dc4009e661 |
+| `byte_length` | 1820169 |
+| `mime_type` | application/pdf |
+| `published_on` | 2023-10-04 |
+| `version_claim` | arXiv:2309.08600v3, dated 4 October 2023 on the PDF cover |
+| `locator_basis` | Printed page numbers agree with PDF viewer pages; numbered sections, figures, tables, and appendices are version-specific. |
+| `capture_path` | .source-captures/synthesis-0475237e835c07738a74b2f372f0b7aa33ac047dce6affd49bb750dc4009e661.pdf |
+
+<a id="r3_mechvalidation_03"></a>
+### r3_mechvalidation_03
+
+**Source:** `braun_identifyingfunctionally_2024`. **Theme:** mechanistic_validation. **Reading:** Selected sections. **Coverage effect:** `scoped_review`.
+
+**Edition match:** `same_record`. Exact arXiv identifier, title, and author match to the authoritative record; pinned arXiv:2405.12241v2, dated 24 May 2024 on the PDF cover. This event certifies this arXiv edition only, not identity with a separately published proceedings version or future revisions.
+
+**Inspected scope:** Pinned31-page arXivv2 PDF: abstract and Sections1–3.4, pp.1–8; AppendixA.7 discussion/Figure9/Table4 pp.15–17; AppendixD experimental details pp.20–23; AppendixE dictionary-size/training-sample descriptions p.23; AppendixH runtime discussion/Table6 p.31. Other sections/appendices were not fully read.
+
+**Locators:** Sections1–2.5, pp.1–5: functional importance, frozen-model output-KL objective, downstream reconstruction loss, evaluation/data definitions; Sections3.1–3.4 pp.5–8, Figures1–3 and Table1: output fidelity, reconstruction divergence, cross-seed features, automatic interpretation; AppendixA.7 pp.15–17, Figure9/Table4: matched-sparsity versus matched-CE interpretation comparisons; AppendixD pp.20–23: OpenWebText samples, training/evaluation settings and frozen target model; AppendixE p.23 and AppendixH p.31: extra local-training comparisons and compute cost
+
+**Visual check:** Rendered and visually inspected Figures1–3 and9 on PDF pages2,7,8,17; read Tables1,4,6 and selected experimental details in text. Did not inspect all31 pages or all appendix plots/dashboards.
+
+**Findings:**
+
+- End-to-end training optimizes output-KL after inserting SAE reconstructions into a frozen target model; adding downstream activation reconstruction constrains the path through later layers (Sections2.3–2.4).
+- The reported end-to-end objectives improve the sparsity/output-performance tradeoff over local activation-MSE SAEs in the tested GPT2-small setting. Selected learning rates follow the Pareto frontier, and AppendixE discusses more local-training compute; training cost is higher (AppendixH).
+- Pure output matching can retain output distributions while producing much larger downstream activation errors and less cross-seed feature alignment. Downstream reconstruction brings internal activations and feature stability closer to local SAEs (Sections3.2–3.3/Figures2–3).
+- “No cost to interpretability” is bounded by the sampled automatic metric: matched-L0 comparisons show no significant difference; matched-CE comparisons favor e2e+downstream at layers2 and6 but not10 (Section3.4/AppendixA.7). This is not human confirmation of every feature or deployment validation.
+
+**Counterevidence / alternative:** The pure output-matching variant demonstrates underdetermination of internal mechanisms by output fidelity. The downstream-loss variant mitigates this in studied models; sampled automated interpretation and geometric similarity remain partial evidence. Claims of uniquely correct mechanisms or reliable monitoring are unsupported.
+
+**Limits:** GPT2-small, with supplementary TinyStories1M described but not fully reread here; OpenWebText training/evaluation, sampled automatic interpretation. Objective improvement is evaluated against local-SAE baselines and should not be equated with discovery of a unique true computation. No model, code, dashboard, or dataset execution.
+
+**Replication:** `not_performed`. **Numerical check:** Documentary comparison of reported metrics and controls only; no data extraction, uncertainty recalculation, model execution, or experimental reproduction.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C50](claims.md#c50)
+
+**Relevance rationale:** Adds affirmative validation and boundaries to C13; maps the source to specific new claims without treating source inclusion or separate-agent checking as independent corroboration.
+
+**Next check:** Extend pathway/causal and random-model controls to larger/new architectures; inspect remaining appendices and qualitative dashboards before upgrading reading depth. Do not promote output fidelity alone to mechanistic faithfulness.
+
+| Capture field | Value |
+|---|---|
+| `preservation_status` | captured |
+| `original_url` | [Source](https://arxiv.org/pdf/2405.12241v2) |
+| `final_url` | [Source](https://arxiv.org/pdf/2405.12241v2) |
+| `retrieved_at` | 2026-11-14T17:53:05Z |
+| `attempted_at` | 2026-11-14T17:53:04Z |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No checked capture-specific archive was available in this bounded round; local bytes and the exact primary version URL are retained. Independent archival preservation is not claimed. |
+| `sha256` | 903cf5400ba4ad7c18f265dd27971798a7e264abcb8795b9a10851f5da3d5b0d |
+| `byte_length` | 17209779 |
+| `mime_type` | application/pdf |
+| `published_on` | 2024-05-24 |
+| `version_claim` | arXiv:2405.12241v2, dated 24 May 2024 on the PDF cover |
+| `locator_basis` | Printed page numbers agree with PDF viewer pages; numbered sections, figures, tables, and appendices are version-specific. |
+| `capture_path` | .source-captures/synthesis-903cf5400ba4ad7c18f265dd27971798a7e264abcb8795b9a10851f5da3d5b0d.pdf |
+
+<a id="r3_mechvalidation_04"></a>
+### r3_mechvalidation_04
+
+**Source:** `makelov_principledevaluations_2024`. **Theme:** mechanistic_validation. **Reading:** Selected sections. **Coverage effect:** `scoped_review`.
+
+**Edition match:** `same_record`. Exact arXiv identifier, title, and author match to the authoritative record; pinned arXiv:2405.08366v3, dated 20 May 2024 on the PDF cover. This event certifies this arXiv edition only, not identity with a separately published proceedings version or future revisions.
+
+**Inspected scope:** Pinned51-page arXivv3 PDF: abstract/overview; Sections3–6 and8 pp.4–16; AppendicesA.1–A.4 pp.21–24, A.11 pp.34–35 and A.14 pp.39–40. Visual checks limited to Figures2–4,6,13. Other appendices, full plotting appendix, linked code and data were not fully inspected.
+
+**Locators:** Sections3.2–3.4 pp.4–7: necessity/sufficiency, sparse attribute control and interpretation-consistent causal effects are different tests; Sections4.1–4.2 pp.7–9, Figures2–3: supervised task dictionaries and control reference; Section5.1–5.2 pp.9–13, Figures2–4: task/full-distribution SAE methods, greedy feature editing, frozen-random-decoder control; Section6.1–6.2 pp.13–14, Figure6: feature occlusion and over-splitting; Section8 pp.15–16: human-chosen ontology, single-model/task limitation; AppendicesA.2–A.4 pp.22–24: mean-ablation baseline, editing normalization and train/test task construction; AppendixA.11 pp.34–35: SAE hyperparameters and training distribution; AppendixA.14 pp.39–40/Figure13: occlusion sweep, magnitude intervention and toy model
+
+**Visual check:** Rendered and visually inspected Figures2,3,4,6,13 on PDF pages5,8,11,13,39. Figure5 and large appendix grids/causal-interpretation plots were not visually checked; no claims of reading them in full.
+
+**Findings:**
+
+- A successful task evaluation distinguishes dictionary reconstruction sufficiency/necessity, sparse control of specified attributes, and causal consistency of feature interpretations. The supervised dictionaries are tested as a task-specific reference, rather than assumed to be complete truth (Sections3–4).
+- Both task-specific and full-distribution SAEs contain interpretable IOI features, but task-specific SAEs fall short of supervised dictionaries on sparse control and full-distribution SAEs perform worse (Section5.2). For some subject edits, a no-intervention baseline already agrees highly with the counterfactual, reducing test resolution.
+- The frozen-at-initialization decoder control performs worse than ordinary task-specific SAEs, establishing nontrivial control utility for the latter. Full-distribution SAEs perform on par with that frozen-decoder control in the reported IOI controllability comparison; interpretation alone is insufficient for sparse control (Section5.2).
+- Feature occlusion provides a concrete missing-evidence risk: causally relevant subject information is less often recovered as high-F1 individual-name features than slightly larger indirect-object features. Reducing the latter’s magnitude improves discovery of subject-name features; the related toy effect depends on interpretation threshold (Section6.1/AppendixA.14).
+- “Ground truth edit” means the target model’s response to replacing activations by counterfactual-prompt activations, not ground-truth external task correctness. AppendixA.4 distinguishes positive correct-versus-incorrect-name logit difference from actual top-token accuracy.
+
+**Counterevidence / alternative:** Control tests do discriminate ordinary task-SAEs from frozen random decoder features, so this paper supplies affirmative utility as well as failure evidence. Human-chosen attributes can penalize useful alternative decompositions; non-exhaustive tuning prevents a universal statement about all SAEs. Cross-task and frontier-scale usefulness remain unverified.
+
+**Limits:** GPT2-small IOI circuit using researcher-selected IO/subject/position ontology, simplified templates and non-exhaustive SAE tuning. Supervised dictionaries are a validated task reference, not complete ground truth for every representation. Shared IOI task lineage with Cunningham reduces task diversity; this is not independent replication. Toy occlusion/splitting results are author-reported and not rerun here.
+
+**Replication:** `not_performed`. **Numerical check:** Documentary comparison of reported metrics and controls only; no data extraction, uncertainty recalculation, model execution, or experimental reproduction.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C49](claims.md#c49), [C50](claims.md#c50)
+
+**Relevance rationale:** Adds affirmative validation and boundaries to C13; maps the source to specific new claims without treating source inclusion or separate-agent checking as independent corroboration.
+
+**Next check:** Full reading would require remaining appendices and plots, including causal-interpretation sufficiency/necessity and extensive hyperparameter panels. If advancing the final thesis, compare the later ICLR2025 publication edition and newer SAE methods before treating these2024 gap sizes as current limits.
+
+| Capture field | Value |
+|---|---|
+| `preservation_status` | captured |
+| `original_url` | [Source](https://arxiv.org/pdf/2405.08366v3) |
+| `final_url` | [Source](https://arxiv.org/pdf/2405.08366v3) |
+| `retrieved_at` | 2026-11-14T17:53:03Z |
+| `attempted_at` | 2026-11-14T17:53:02Z |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No checked capture-specific archive was available in this bounded round; local bytes and the exact primary version URL are retained. Independent archival preservation is not claimed. |
+| `sha256` | e036ae6ba0fc604d79ebd30d6bbd14100117c6cd1b4665669688c8063e3721d1 |
+| `byte_length` | 2335650 |
+| `mime_type` | application/pdf |
+| `published_on` | 2024-05-20 |
+| `version_claim` | arXiv:2405.08366v3, dated 20 May 2024 on the PDF cover |
+| `locator_basis` | Printed page numbers agree with PDF viewer pages; numbered sections, figures, tables, and appendices are version-specific. |
+| `capture_path` | .source-captures/synthesis-e036ae6ba0fc604d79ebd30d6bbd14100117c6cd1b4665669688c8063e3721d1.pdf |
+
+<a id="r3_circuits_01"></a>
+### r3_circuits_01
+
+**Source:** `ameisen_circuittracingrevealing_2025`. **Theme:** circuit_evidence. **Reading:** Selected sections. **Coverage effect:** `scoped_review`.
+
+**Edition match:** `same_record`. Canonical title/authors and URL match this source; live HTML is time-bounded by the retained hash, not assumed immutable.
+
+**Inspected scope:** Introduction; Building an Interpretable Replacement Model (including local replacement model); selected quantitative CLT/graph evaluations and graph completeness; Limitations (dark matter, inactive/inhibitory features, feature abstraction, global circuits, mechanistic faithfulness); Appendix Validating the Replacement Model; Nuances of Steering with Cross-Layer Features; Unexplained Variance and Choice of Steering Factors; selected Additional Evaluation Details. Not the complete article, training details, linked graphs or visual assets.
+
+**Locators:** Building an Interpretable Replacement Model / From Cross-Layer Transcoder to Replacement Model / The Local Replacement Model; Evaluations / Quantitative CLT Evaluations / Evaluating and Comparing Graph Completeness; Limitations / Mechanistic Faithfulness; Appendix / Validating the Replacement Model / Evaluating Faithfulness of the Local Replacement Model; Appendix / Nuances of Steering with Cross-Layer Features; Additional Evaluation Details
+
+**Visual check:** No complete visual review. Text and captions only; linked interactive graphs and external assets were not inspected.
+
+**Findings:**
+
+- Cross-layer transcoders produce prompt-specific computational graphs and improve the article’s selected reconstruction/sparsity/interpretability and graph metrics relative to per-layer transcoders or thresholded neurons; they also shorten paths, making some mechanisms more tractable to investigate.
+- Error correction and freezing attention/normalization make the local replacement model exactly match original activations and logits on the unperturbed prompt, but the article explicitly says this does not establish use of the same mechanisms.
+- Perturbation checks support some graph-predicted effects and outperform simple importance baselines. The broader appendix faithfulness comparison freezes attention in BOTH underlying and replacement models, finds useful short-range agreement, and accumulating errors farther downstream.
+- Constrained patching can guarantee or nearly force direct feature-to-feature effects before an intervention layer; downstream knock-on and especially actual-output effects provide the nontrivial tests. Selective supernodes and layer/strength sweeps constrain the validation claim.
+
+**Counterevidence / alternative:** The evidence is stronger than descriptive activation correlation alone: interventions on model computation test predicted downstream effects. Conversely, good reconstruction and the selectively successful interventions permit alternative replacement mechanisms; larger dictionaries do not uniformly improve perturbation faithfulness.
+
+**Limits:** Selected sections only. Graph completeness/replacement scores concern influence assigned to feature versus error nodes inside this approximation, not semantic completeness or a calibrated safety-monitor coverage rate. Attention routing, reconstruction dark matter, suppressed inactive features, subjective supernode grouping and replacement shortcuts remain blind spots. No complete figures or interactive review, raw metrics, code or experiments.
+
+**Replication:** `not_performed`. **Numerical check:** Read textual 50% next-token agreement qualification and selected dataset filters, plus appendix 20-prompt/0.72 Spearman report. These were not recalculated or digitized, and are not proposed as leading numerical claims.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C51](claims.md#c51)
+
+**Relevance rationale:** Evidence for bounded mechanistic-validation synthesis; inclusion does not certify a complete read or deployment assurance.
+
+**Next check:** For any leading quantitative claim, inspect the exact graph sample, attention-freezing condition, intervention layer/strength sweep, selection protocol and relevant plots; test downstream utility against baselines before calling this a monitor.
+
+| Capture field | Value |
+|---|---|
+| `preservation_status` | captured |
+| `original_url` | [Source](https://transformer-circuits.pub/2025/attribution-graphs/methods.html) |
+| `final_url` | [Source](https://transformer-circuits.pub/2025/attribution-graphs/methods.html) |
+| `retrieved_at` | 2026-11-14T17:53:22.128574Z |
+| `attempted_at` | 2026-11-14T17:53:21.428679Z |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No independent archive capture was checked in this bounded round; exact local bytes and pinned version URLs where available are retained, without claiming archived immutability. |
+| `sha256` | a70ce88c09533238154875dbb1320fd2d2aebedfd5fc7e782518385b3d597673 |
+| `byte_length` | 276666 |
+| `mime_type` | text/html |
+| `published_on` | 2025-03-27 |
+| `version_claim` | Live article, source byline March 27, 2025; retrieved 2026-11-14, no immutable revision identifier. |
+| `locator_basis` | HTML section/subsection headings and retained extracted-text line spans. |
+| `capture_path` | .source-captures/synthesis-a70ce88c09533238154875dbb1320fd2d2aebedfd5fc7e782518385b3d597673.html |
+
+<a id="r3_circuits_02"></a>
+### r3_circuits_02
+
+**Source:** `lindsey_biology_2025`. **Theme:** circuit_evidence. **Reading:** Selected sections. **Coverage effect:** `scoped_review`.
+
+**Edition match:** `same_record`. Canonical title/authors and URL match this source; live HTML is time-bounded by the retained hash, not assumed immutable.
+
+**Inspected scope:** Method overview and validation caveat; full text of Introductory Example: Multi-step Reasoning, Planning in Poems and Multilingual Circuits subsections; selected hallucination/refusal intervention caveats. Other case studies, appendices and interactives not comprehensively read.
+
+**Locators:** Method Overview (paragraph beginning Because they are based on our replacement model); Introductory Example: Multi-step Reasoning / Validation with Inhibition Experiments / Swapping Alternative Features; Planning in Poems / Planned Words Features and their Mechanistic Role / Planned Words Determine Sentence Structure; Multilingual Circuits / Editing the Operation: Antonyms to Synonyms / Editing the Operand / Editing the Output Language
+
+**Visual check:** No complete visual review. Text and captions only; linked interactive graphs and external assets were not inspected.
+
+**Findings:**
+
+- The Dallas→Texas→Austin example includes a direct shortcut alongside the hypothesized two-step path. Replacing the Texas cluster by a California cluster identified from an Oakland prompt changes the original-model output to Sacramento; related swaps give other appropriate capitals.
+- Poem interventions on candidate end-word representations at a newline change both eventual end words and intervening sentence structure in selected cases. This supports a local planning mechanism rather than only a descriptive label applied after completion.
+- English-derived operation and operand feature interventions induce language-appropriate changes in English, French and Chinese prompts, while changing language features can change output language while preserving operation/operand. This is within-model cross-language evidence, not cross-model universality.
+- The method overview explicitly distinguishes graph hypotheses from original-model intervention tests, prelabels/groupings before perturbation results, and notes that constrained-patching direct effects can be trivial while downstream outputs are the strongest validation endpoint.
+
+**Counterevidence / alternative:** Actual model-output changes are affirmative causal evidence beyond correlated feature labels. The article itself retains shortcuts, partial circuit stories, unknown-name interventions that sometimes fail, strong-steering requirements and attention sensitivity; these defeat a blanket claim that a complete or uniquely correct circuit was recovered.
+
+**Limits:** Selected illustrative cases in Claude 3.5 Haiku, not prevalence estimates over all planning or reasoning. Some interventions require atypically large activation multiples; causal intervention success can coexist with incomplete grouping and shortcut computation. No live interactive/visual-asset audit; no reproduction. The title’s biology is an interpretability metaphor, not biological-threat evidence.
+
+**Replication:** `not_performed`. **Numerical check:** Read reported planning sample descriptions (25 poems, 70% end-word injection; 500 samples per illustrated experiment) and multilingual activation-count qualifications, but no raw denominator/figure audit; retain qualitative findings rather than publish these numbers.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C51](claims.md#c51)
+
+**Relevance rationale:** Evidence for bounded mechanistic-validation synthesis; inclusion does not certify a complete read or deployment assurance.
+
+**Next check:** Before foregrounding prevalence or cross-language generality, inspect sampling denominator, corresponding intervention figure assets and attention conditions; reproduce selected original-model outputs where access permits.
+
+| Capture field | Value |
+|---|---|
+| `preservation_status` | captured |
+| `original_url` | [Source](https://transformer-circuits.pub/2025/attribution-graphs/biology.html) |
+| `final_url` | [Source](https://transformer-circuits.pub/2025/attribution-graphs/biology.html) |
+| `retrieved_at` | 2026-11-14T17:53:22.816995Z |
+| `attempted_at` | 2026-11-14T17:53:22.150960Z |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No independent archive capture was checked in this bounded round; exact local bytes and pinned version URLs where available are retained, without claiming archived immutability. |
+| `sha256` | 0a17caa271974ab39d618b7aa86a650984049bd8c4afd943607dd654314a4c73 |
+| `byte_length` | 246323 |
+| `mime_type` | text/html |
+| `published_on` | 2025-03-27 |
+| `version_claim` | Live article, source byline March 27, 2025; retrieved 2026-11-14, no immutable revision identifier. |
+| `locator_basis` | HTML section/subsection headings and retained extracted-text line spans. |
+| `capture_path` | .source-captures/synthesis-0a17caa271974ab39d618b7aa86a650984049bd8c4afd943607dd654314a4c73.html |
+
+<a id="r3_circuits_03"></a>
+### r3_circuits_03
+
+**Source:** `paulo_automaticallyinterpreting_2024`. **Theme:** circuit_evidence. **Reading:** Selected sections. **Coverage effect:** `scoped_review`.
+
+**Edition match:** `related_edition`. Same arXiv work/title/authors as canonical unversioned 2024 preprint record, but inspected v3 is a later 2025 proceedings-form version. No claim of equivalence to the original edition, and no canonical depth upgrade.
+
+**Inspected scope:** All main-text sections 1–5 and data/code/impact statement (PDF pp1–9), Appendix C and D.1–D.3 selected prompt/scoring details (pp13–15), Table A10 and all Appendix G.1–G.4 text (pp22–24), Figure3 visually on p8. Other appendix sections/tables and references not comprehensively read; no full-text label.
+
+**Locators:** v3 §§3.1–3.3.5, 4.1.1, 4.2, 5; Figure 3 (PDF p8); Appendix C (p13), D.1–D.3 (pp13–15); Appendix G.1–G.4 (pp22–24); Table A10 (p22)
+
+**Visual check:** Visually inspected PDF p8 Figure3: trained-SAE intervention-score distribution has a positive tail relative to randomized TopK and shuffled-explanation controls; right-panel negative trend is layer32 at target KL3. No digitization; other figures not visually inspected.
+
+**Findings:**
+
+- Context-based detection/fuzzing ask whether a description predicts activation contexts or tokens; intervention scoring instead measures how a description explains changed generated output, as the scorer’s mean log-probability gain for the interpretation relative to clean generations.
+- Intervention explanations distinguish trained SAE features from randomized TopK SAE features and shuffled descriptions in the illustrated comparisons. Some features with poor activation-context explanations have informative descriptions of their output effects, so a low context score is not sufficient to discard a feature’s possible causal role.
+- Appendix G uses stratified feature-active RPJv2 contexts, separates 10 explanation prompts from 30 scoring prompts, tunes intervention strength to target KL on the scoring set, and generates at most eight new tokens with additive interventions. These design choices bound the endpoint and generalization claim.
+- Broader activation-context sampling improves coverage of low-activating examples relative to top-only sampling, but may give overly broad or confused descriptions. The paper recommends multiple scores because they have different failure modes.
+
+**Counterevidence / alternative:** Trained-versus-randomized feature and shuffled-description controls are positive validity checks for this output-description endpoint. A score increase can still be scorer/prompt/short-generation dependent, and later-layer output proximity helps explain higher intervention scores. Good explanation scores do not establish completeness or safety-monitor performance.
+
+**Limits:** Pinned arXiv v3 is dated 2025-08-06 and carries an ICML/PMLR2025 proceedings footer, whereas the bibliography year/preprint type is 2024. This is explicitly a later version, not assumed unchanged from v1. Only selected appendix material and one figure visually reviewed; no full-document upgrade, downstream safety task, raw-data check or experiments. Intervention prompts are feature-active contexts; KL is tuned on scoring set rather than a completely untouched calibration set.
+
+**Replication:** `not_performed`. **Numerical check:** Figure3 printed correlation r=-0.37 is visually confirmed for that illustrative layer32/KL3 panel, not an all-layer result. Appendix G prompt split/≤8-token limit/KL-tuning procedure checked textually; no recomputation.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C52](claims.md#c52)
+
+**Relevance rationale:** Evidence for bounded mechanistic-validation synthesis; inclusion does not certify a complete read or deployment assurance.
+
+**Next check:** Pin the exact version in any synthesis citation; compare v1/v3 if retaining 2024-specific conclusions. For leading intervention scores, inspect held-out calibration, stronger negative controls, longer generations and actual downstream utility.
+
+| Capture field | Value |
+|---|---|
+| `preservation_status` | captured |
+| `original_url` | [Source](https://arxiv.org/pdf/2410.13928v3) |
+| `final_url` | [Source](https://arxiv.org/pdf/2410.13928v3) |
+| `retrieved_at` | 2026-11-14T17:54:58.523935Z |
+| `attempted_at` | 2026-11-14T17:54:57.455759Z |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No independent archive capture was checked in this bounded round; exact local bytes and pinned version URLs where available are retained, without claiming archived immutability. |
+| `sha256` | e5e2631cfd4cd7a1b6ac960536593f700b83790603ba7b80d7aa47ff76e072d4 |
+| `byte_length` | 7894423 |
+| `mime_type` | application/pdf |
+| `published_on` | 2025-08-06 |
+| `version_claim` | arXiv:2410.13928v3, 6 Aug 2025; PDF proceedings footer PMLR267/ICML2025. |
+| `locator_basis` | PDF page numbers count title page as page 1; section headings as printed. |
+| `capture_path` | .source-captures/synthesis-e5e2631cfd4cd7a1b6ac960536593f700b83790603ba7b80d7aa47ff76e072d4.pdf |
+
+<a id="r3_circuits_04"></a>
+### r3_circuits_04
+
+**Source:** `lan_sparseautoencoders_2024`. **Theme:** circuit_evidence. **Reading:** Selected sections. **Coverage effect:** `scoped_review`.
+
+**Edition match:** `related_edition`. Canonical citation key/title records the earlier Sparse autoencoders reveal universal feature spaces across large language models work; retrieved arXiv v4 has a different title. Track as related later edition pending record-level version adjudication; do not upgrade original depth.
+
+**Inspected scope:** PDF pp1–6: abstract,introduction,definitions,method,setup and first results overview; pp9–11 related work/conclusion/limitations; Appendix A–D (pp17–19) and opening E.1–E.2 text/visuals on p20. Large remaining appendix, many result plots/tables and source code not read.
+
+**Locators:** v4 §§1–4.2, 6 and Limitations (pp1–6,10); Appendix A–B (pp17–18); Appendix D / Baseline Comparisons to SAEs Trained on LLMs with Randomized Weights (pp18–20); Appendix E.1; Figure6 and Figure7 (p20)
+
+**Visual check:** Visually inspected PDF p20 Figure6 randomized-Pythia heatmaps (low scores, not a zero-effect proof) and Figure7 same-SAE heatmaps with matching-layer diagonals near1. Remaining plots not visually audited.
+
+**Findings:**
+
+- Analogous Feature Universality concerns similarity of spaces spanned by paired SAE decoder features under representational transformations, not recovery of atomic true features or identical feature inventories.
+- The method first pairs features by activation correlation on shared-token inputs, then measures decoder-weight-space similarity using SVCCA/RSA against randomized pairing/subset baselines. Some middle-layer and semantic subsets show stronger alignment than these baselines.
+- Appendix D adds a useful alternative-explanation check: trained-versus-randomized Pythia comparisons (embedding layer retained) have much lower paired similarity than selected trained-model comparisons. This supports learned-structure contribution beyond the simplest data-sparsity explanation, within these controls.
+- Main comparisons retain filtered subsets (non-concept token, shared top-token, correlation and many-to-one filters); Appendix B/E show very different retained fractions and recovered similarities across SAE training quality. Similarity is therefore conditional on pairing and feature extraction, with substantial unmatched or inconsistently recovered representation.
+
+**Counterevidence / alternative:** Positive trained-versus-randomized and shuffled-pairing/subset controls make a blanket dismissal as meaningless correlation too strong. Conversely, weaker RSA, unmatched features, filter sensitivity, same-tokenizer restrictions and SAE-quality effects support narrower analogous-subspace similarity rather than universal causal circuits.
+
+**Limits:** Current v4 title differs from the canonical 2024 title. Selected sections only; same-tokenizer model families, chosen widths/layers/datasets and filtered feature subsets. Neither tested portability of steering/control nor causal identity follows from representational alignment. No complete appendix/figure audit or reproduction. The random-model control retains embeddings and custom-SAEs have weaker recovery, limiting causal interpretation of differences.
+
+**Replication:** `not_performed`. **Numerical check:** Read text reporting main filtered-retention range 10–30% versus much lower custom-SAE retention and approximately1% randomized-control retention. These are source-reported and condition-specific; no recomputation or aggregate universality percentage proposed.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C53](claims.md#c53)
+
+**Relevance rationale:** Evidence for bounded mechanistic-validation synthesis; inclusion does not certify a complete read or deployment assurance.
+
+**Next check:** Resolve canonical version/title handling; inspect Appendix J/K pairing/filter robustness and hold-out matching; demonstrate actual cross-model causal transfer before making a portable-control claim.
+
+| Capture field | Value |
+|---|---|
+| `preservation_status` | captured |
+| `original_url` | [Source](https://arxiv.org/pdf/2410.06981v4) |
+| `final_url` | [Source](https://arxiv.org/pdf/2410.06981v4) |
+| `retrieved_at` | 2026-11-14T17:54:58.874419Z |
+| `attempted_at` | 2026-11-14T17:54:58.534460Z |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No independent archive capture was checked in this bounded round; exact local bytes and pinned version URLs where available are retained, without claiming archived immutability. |
+| `sha256` | 41f7bfb24aa26c622b225ad1a235d5c95d3df7564cc0cb3a2438b3f606753cd8 |
+| `byte_length` | 1884948 |
+| `mime_type` | application/pdf |
+| `published_on` | 2025-05-21 |
+| `version_claim` | arXiv:2410.06981v4, 21 May 2025; title Quantifying Feature Space Universality Across Large Language Models via Sparse Autoencoders. |
+| `locator_basis` | PDF page numbers count title page as page 1; section headings as printed. |
+| `capture_path` | .source-captures/synthesis-41f7bfb24aa26c622b225ad1a235d5c95d3df7564cc0cb3a2438b3f606753cd8.pdf |
+
+<a id="r3_circuits_05"></a>
+### r3_circuits_05
+
+**Source:** `sharkey_openproblemsmechanistic_2025`. **Theme:** circuit_evidence. **Reading:** Selected sections. **Coverage effect:** `scoped_review`.
+
+**Edition match:** `same_record`. Canonical arXiv work/title/authors and currently only listed arXiv v1 match. This event does not resolve the separate published-TMLR edition lead.
+
+**Inspected scope:** Title/abstract and selected §§2.1.4,2.1.4a,2.1.4b (PDF pp17–19), §2.3 circuit-validation/discovery issues (pp21–22), and §3.6 generalizability/selected §3.7 opening (pp31–32). Not a full review read or check of underlying cited experiments.
+
+**Locators:** arXiv v1 §2.1.4–2.1.4b (pp17–19); §2.3 (pp21–22); §3.6 (p31), §3.7 opening (pp31–32)
+
+**Visual check:** No complete visual review. Text and captions only; linked interactive graphs and external assets were not inspected.
+
+**Findings:**
+
+- This review treats feature descriptions as hypotheses requiring predictive validation and distinguishes activation/counterfactual tests, ground-truth models, downstream engineering success and competitive downstream evaluations.
+- The review identifies method-dependent circuit faithfulness, imperfect decompositions, first-order attribution approximations, backup/inhibitory behavior and deliberately easy tasks as obstacles. It also acknowledges useful circuit insights and successful local engineering examples rather than claiming all interpretability has failed.
+- Generalization of both methods and conclusions beyond a few architectures/model families is posed as an open empirical problem; conceptual promise for auditing or monitoring is not itself another performance experiment.
+
+**Counterevidence / alternative:** The source articulates multiple affirmative validation routes and practical successes alongside limitations. Its cautions are guidance for interpreting direct experiments, not independent corroboration of the exact effects in Ameisen/Lindsey/Paulo/Lan.
+
+**Limits:** Expert review/research agenda, not an independent safeguard efficacy trial. Read only selected v1 sections; cited experiments are not independently checked by reading the review. Existing ledger’s TMLR September2025 lead is not resolved by this arXiv-v1 capture, and published-final equivalence is not assumed.
+
+**Replication:** `not_performed`. **Numerical check:** No raw-data calculation or experimental replication. Numerical descriptions, if mentioned, are documentary source checks only.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C51](claims.md#c51), [C52](claims.md#c52), [C53](claims.md#c53)
+
+**Relevance rationale:** Evidence for bounded mechanistic-validation synthesis; inclusion does not certify a complete read or deployment assurance.
+
+**Next check:** Check official published TMLR version and compare changed relevant sections before citing final status; prioritize competitive downstream validation and primary sources for claim-leading empirical effects.
+
+| Capture field | Value |
+|---|---|
+| `preservation_status` | captured |
+| `original_url` | [Source](https://arxiv.org/pdf/2501.16496v1) |
+| `final_url` | [Source](https://arxiv.org/pdf/2501.16496v1) |
+| `retrieved_at` | 2026-11-14T17:54:59.286205Z |
+| `attempted_at` | 2026-11-14T17:54:58.880397Z |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No independent archive capture was checked in this bounded round; exact local bytes and pinned version URLs where available are retained, without claiming archived immutability. |
+| `sha256` | 9a50cdc6b9f2ba3687339453804acb9519525941198c14d07765aaecbb1436d2 |
+| `byte_length` | 2409360 |
+| `mime_type` | application/pdf |
+| `published_on` | 2025-01-27 |
+| `version_claim` | arXiv:2501.16496v1, 27 Jan 2025. |
+| `locator_basis` | PDF page numbers count title page as page 1; section headings as printed. |
+| `capture_path` | .source-captures/synthesis-9a50cdc6b9f2ba3687339453804acb9519525941198c14d07765aaecbb1436d2.pdf |
+
+<a id="r3_circuits_06"></a>
+### r3_circuits_06
+
+**Source:** `paulo_automaticallyinterpreting_2024`. **Theme:** circuit_evidence. **Reading:** Abstract only. **Coverage effect:** `none`.
+
+**Edition match:** `same_record`. Read abstract and submission history: v1 17Oct2024, v2 4Dec2024, v3 6Aug2025. Metadata-page current abstract may differ from the pinned PDF abstract; no equivalence assumed.
+
+**Inspected scope:** Current arXiv abstract and version/submission history; no complete paper read for this metadata representation.
+
+**Locators:** Title, Abstract, Submission history
+
+**Visual check:** No paper figures in this representation.
+
+**Findings:**
+
+- Read abstract and submission history: v1 17Oct2024, v2 4Dec2024, v3 6Aug2025. Metadata-page current abstract may differ from the pinned PDF abstract; no equivalence assumed.
+
+**Counterevidence / alternative:** No independent empirical corroboration is supplied by a metadata page for the same work.
+
+**Limits:** Metadata/abstract access is not full-text reading; version-page claims do not prove equivalence across editions.
+
+**Replication:** `not_performed`. **Numerical check:** Dates and version strings checked; no empirical quantities audited.
+
+**Relevance:** `background`. **Claim links:** None; no claim support forced.
+
+**Relevance rationale:** Version provenance for the related scoped reading; not counted as another source family or complete-text read.
+
+**Next check:** Use the pinned PDF event for scoped empirical claims; adjudicate edition discrepancies explicitly.
+
+| Capture field | Value |
+|---|---|
+| `preservation_status` | captured |
+| `original_url` | [Source](https://arxiv.org/abs/2410.13928) |
+| `final_url` | [Source](https://arxiv.org/abs/2410.13928) |
+| `retrieved_at` | 2026-11-14T17:53:22.974992Z |
+| `attempted_at` | 2026-11-14T17:53:22.830117Z |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No independent archive capture was checked in this bounded round; exact local bytes and pinned version URLs where available are retained, without claiming archived immutability. |
+| `sha256` | ec097841329e67a2c82b627989077a45e50bfa4f6434bac36247260cd20fed17 |
+| `byte_length` | 43598 |
+| `mime_type` | text/html |
+| `published_on` | 2025-08-06 |
+| `version_claim` | arXiv abstract page identifies current v3, last revised6Aug2025. |
+| `locator_basis` | arXiv abstract-page title/abstract/submission history. |
+| `capture_path` | .source-captures/synthesis-ec097841329e67a2c82b627989077a45e50bfa4f6434bac36247260cd20fed17.html |
+
+<a id="r3_circuits_07"></a>
+### r3_circuits_07
+
+**Source:** `lan_sparseautoencoders_2024`. **Theme:** circuit_evidence. **Reading:** Abstract only. **Coverage effect:** `none`.
+
+**Edition match:** `related_edition`. Read current title/abstract and submission history; v1 9Oct2024, current v4 21May2025. Confirms title drift; does not resolve which edition the authoritative record should represent.
+
+**Inspected scope:** Current arXiv abstract and version/submission history; no complete paper read for this metadata representation.
+
+**Locators:** Title, Abstract, Submission history
+
+**Visual check:** No paper figures in this representation.
+
+**Findings:**
+
+- Read current title/abstract and submission history; v1 9Oct2024, current v4 21May2025. Confirms title drift; does not resolve which edition the authoritative record should represent.
+
+**Counterevidence / alternative:** No independent empirical corroboration is supplied by a metadata page for the same work.
+
+**Limits:** Metadata/abstract access is not full-text reading; version-page claims do not prove equivalence across editions.
+
+**Replication:** `not_performed`. **Numerical check:** Dates and version strings checked; no empirical quantities audited.
+
+**Relevance:** `background`. **Claim links:** None; no claim support forced.
+
+**Relevance rationale:** Version provenance for the related scoped reading; not counted as another source family or complete-text read.
+
+**Next check:** Use the pinned PDF event for scoped empirical claims; adjudicate edition discrepancies explicitly.
+
+| Capture field | Value |
+|---|---|
+| `preservation_status` | captured |
+| `original_url` | [Source](https://arxiv.org/abs/2410.06981) |
+| `final_url` | [Source](https://arxiv.org/abs/2410.06981) |
+| `retrieved_at` | 2026-11-14T17:53:23.116787Z |
+| `attempted_at` | 2026-11-14T17:53:22.979005Z |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No independent archive capture was checked in this bounded round; exact local bytes and pinned version URLs where available are retained, without claiming archived immutability. |
+| `sha256` | e4366ea3b01e91c2664b7808fa3dc08258d4f6974b732c425d76d60ff71f5961 |
+| `byte_length` | 45037 |
+| `mime_type` | text/html |
+| `published_on` | 2025-05-21 |
+| `version_claim` | arXiv abstract page identifies v4, last revised21May2025. |
+| `locator_basis` | arXiv abstract-page title/abstract/submission history. |
+| `capture_path` | .source-captures/synthesis-e4366ea3b01e91c2664b7808fa3dc08258d4f6974b732c425d76d60ff71f5961.html |
+
+<a id="r3_circuits_08"></a>
+### r3_circuits_08
+
+**Source:** `sharkey_openproblemsmechanistic_2025`. **Theme:** circuit_evidence. **Reading:** Abstract only. **Coverage effect:** `none`.
+
+**Edition match:** `same_record`. Read title/abstract and submission history. No separate journal edition or peer-review status inferred from this page.
+
+**Inspected scope:** Current arXiv abstract and version/submission history; no complete paper read for this metadata representation.
+
+**Locators:** Title, Abstract, Submission history
+
+**Visual check:** No paper figures in this representation.
+
+**Findings:**
+
+- Read title/abstract and submission history. No separate journal edition or peer-review status inferred from this page.
+
+**Counterevidence / alternative:** No independent empirical corroboration is supplied by a metadata page for the same work.
+
+**Limits:** Metadata/abstract access is not full-text reading; version-page claims do not prove equivalence across editions.
+
+**Replication:** `not_performed`. **Numerical check:** Dates and version strings checked; no empirical quantities audited.
+
+**Relevance:** `background`. **Claim links:** None; no claim support forced.
+
+**Relevance rationale:** Version provenance for the related scoped reading; not counted as another source family or complete-text read.
+
+**Next check:** Use the pinned PDF event for scoped empirical claims; adjudicate edition discrepancies explicitly.
+
+| Capture field | Value |
+|---|---|
+| `preservation_status` | captured |
+| `original_url` | [Source](https://arxiv.org/abs/2501.16496) |
+| `final_url` | [Source](https://arxiv.org/abs/2501.16496) |
+| `retrieved_at` | 2026-11-14T17:53:23.228101Z |
+| `attempted_at` | 2026-11-14T17:53:23.120669Z |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No independent archive capture was checked in this bounded round; exact local bytes and pinned version URLs where available are retained, without claiming archived immutability. |
+| `sha256` | 207c290ebbb89faa153245d28afe6077841ec74f098cd37326518b7be67bf940 |
+| `byte_length` | 45206 |
+| `mime_type` | text/html |
+| `published_on` | 2025-01-27 |
+| `version_claim` | arXiv abstract page lists only v1, submitted27Jan2025. |
+| `locator_basis` | arXiv abstract-page title/abstract/submission history. |
+| `capture_path` | .source-captures/synthesis-207c290ebbb89faa153245d28afe6077841ec74f098cd37326518b7be67bf940.html |
+
+<a id="r3_audits_01"></a>
+### r3_audits_01
+
+**Source:** `longpre_inhouseevaluation_2025`. **Theme:** deferred_audits. **Reading:** Selected sections. **Coverage effect:** `scoped_review`.
+
+**Edition match:** `same_record`. Exact ICML 2025 proceedings/PMLR267 longpre25a final PDF, matching canonical title, authors and proceedings record. It is not treated as interchangeable with the differently titled arXiv preprint.
+
+**Inspected scope:** Final ICML/PMLR 267 PDF pp1–9 (abstract and all main §§1–7); Appendix A pp18–20; Appendix B.1 introductory/example explanations p20, B.2–B.3 and Table A1 pp22–25; Appendix C.1–C.4 pp25–28, including Table A2. Figure A7 p26 visually inspected. The table of contents p17, references pp9–16, visual example cards p21, and Appendix D pp29–31 were not read in full; this is selected-section review.
+
+**Locators:** Final proceedings §§3–4.3, PDFpp4–8; §5 alternatives and §6 future work,pp8–9; Appendix A.1,A.4,pp18–20,FigureA3; Appendix B.1,p20 and B.2/TableA1,pp22–23; Appendix C.1–C.4,pp25–28; FigureA7,p26; TableA2,p27 is explicitly a January2025 snapshot
+
+**Visual check:** FigureA7 rendered and inspected at PDFp26: schematic protection/access/infrastructure categories, not a measured effect. Other selected figure captions and TableA1/TableA2 text were read from pdftotext; the Figure2 form, FigureA3 spectrum and illustrative cards were not independently inspected visually.
+
+**Findings:**
+
+- The final paper supplies concrete candidate mechanisms: versioned/session-linked flaw reports, statistical recurrence evidence for probabilistic failures, conduct-based good-faith rules, provider legal commitments plus moderation-exempt access/appeals, and routing of transferable flaws across supply-chain stakeholders (§4). These are substantive design contributions rather than empirical estimates of impact.
+- Appendix A.1 defines third-party evaluation as lacking a direct contractual or obligatory relationship to the provider, distinct from contracted second-party evaluation. A.4 makes independence a spectrum with blurred boundaries, so external/third-party should not be treated as automatic independence certificates.
+- Appendix B.1 explicitly says the two past-case report cards illustrate what could have been filed, not reports produced by an implemented coordination system. The motivating DEFCON event is described secondhand here and is not independently re-audited.
+- Section5 acknowledges resource/administration trade-offs; §6 leaves responsibility disagreements, the effectiveness of mitigation/remediation after disclosure, and coordination-center governance unresolved. FigureA7 is a proposal illustration, not an observed guarantee of protection or harmlessness.
+
+**Counterevidence / alternative:** Software-vulnerability-disclosure analogies and reported past flaw discoveries support feasibility arguments but do not establish effects for the full GPAI proposal. Legal promises bind the promising provider to a limited policy and do not eliminate all third-party or criminal-law risks; the template itself expects applicable-law compliance. Provider vetting can constrain participation, even where conduct-based selection is preferred. The assertion that these costs become minimal or have substantial returns is not a measured cost-benefit estimate.
+
+**Limits:** Original round2 capture is reused unchanged; the original receipt logs a single access-event timestamp as retrieved_at and that existing timestamp is also carried as attempted_at, following its capture convention. No fresh retrieval is claimed. Server MIME was application/octet-stream; bytes have PDF signature and parse as a31-page PDF. Reading is partial, including gaps specified in scope. TableA2 legal/status claims were not verified against operative primary law; safe-harbor diagrams cannot establish legal immunity. No adopted coordination-center evidence or report-processing outcome data were obtained.
+
+**Replication:** `not_performed`. **Numerical check:** None. Documentary counts are attributed to the paper and were not independently recounted against its underlying evidence; no experimental replication.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C38](claims.md#c38), [C39](claims.md#c39), [C40](claims.md#c40)
+
+**Relevance rationale:** Supplies bounded primary evidence for existing institutional claims and the proposed claim(s); inclusion is not independent corroboration or observed audit effectiveness.
+
+**Next check:** Read AppendixD/provider-policy inventory and visual example cards; verify any cited operative access policy or legal protection in its dated primary form before describing current protection, adoption or effectiveness. For effects, obtain report→response→mitigation records, not only proposal text.
+
+| Capture field | Value |
+|---|---|
+| `preservation_status` | captured |
+| `original_url` | [Source](https://raw.githubusercontent.com/mlresearch/v267/main/assets/longpre25a/longpre25a.pdf) |
+| `final_url` | [Source](https://raw.githubusercontent.com/mlresearch/v267/main/assets/longpre25a/longpre25a.pdf) |
+| `retrieved_at` | 2026-11-14T17:15:17.944907+00:00 |
+| `attempted_at` | 2026-11-14T17:15:17.944907+00:00 |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No capture-specific independent archive was checked in this bounded round. Exact primary-edition URLs and local bytes are retained; independent archival preservation is not claimed. |
+| `sha256` | 921e087197d00bd2d15bd5a9ee6dcf6fbaf0cbb3cc9a9d849f5fe5ce3bc765b0 |
+| `byte_length` | 5959117 |
+| `mime_type` | application/pdf |
+| `published_on` | 2025 |
+| `version_claim` | Final ICML2025/PMLR267 proceedings PDF,31pages |
+| `locator_basis` | PDF viewer pages1–31 have printed article-local pages1–31; proceedings bibliography range81728–81758 is not used as a PDF-page locator. |
+| `capture_path` | .source-captures/synthesis-921e087197d00bd2d15bd5a9ee6dcf6fbaf0cbb3cc9a9d849f5fe5ce3bc765b0.pdf |
+
+<a id="r3_audits_02"></a>
+### r3_audits_02
+
+**Source:** `mokander_auditinglargelanguagemodels_2024`. **Theme:** deferred_audits. **Reading:** Selected sections. **Coverage effect:** `scoped_review`.
+
+**Edition match:** `same_record`. Publisher DOI PDF bears AI and Ethics (2024)4:1085–1115, matching canonical DOI/title/authors. It prints online publication30 May2023; 2024 is the issue year, not an inferred manuscript revision date.
+
+**Inspected scope:** Final AI and Ethics issue PDF pp1–22, printed pp1085–1106: abstract and every narrative section §§1–6; Appendix 1 methodology in full, acknowledgments, contributions/funding/data/conflict/license statements. Figures 1–2 (viewer pp10,17; printed pp1094,1101) rendered and visually inspected. The remaining bibliography-only pages23–31 (printed pp1107–1115) were not read; accordingly this event remains Selected sections rather than a full-document certification.
+
+**Locators:** §3.2,printedpp1091–1093 (viewerpp7–9),claims1–7; §4.1–4.5,printedpp1094–1101 (viewerpp10–17),Figures1–2; §5.1–5.3,printedpp1102–1103 (viewerpp18–19); §6,pp1103–1105; Appendix1,pp1105–1106 (viewerpp21–22)
+
+**Visual check:** Both figures rendered and visually inspected: Figure1 specifies governance/model/application scopes, observables and methods; Figure2 explicitly routes model limitations, training/testing information, impact reports and output/environmental logs among audit levels. They depict the proposed architecture, not observed implementation.
+
+**Findings:**
+
+- The proposed governance/model/application layers form a linked evidence process: model limitations should inform application design; application impact/output logs should feed model revision; governance audits should test that feedback mechanisms exist (§4.5,Figure2). This adds an affirmative pathway rather than treating audit reports as inherently empty.
+- The blueprint calls for external yet collaborative audits and distinguishes access needs: governance includes organizational records/personnel; model audits technical/model/training-data access; application testing can use lower-level output access (§§3.2,4.2–4.4). It also acknowledges capture, cost and expertise trade-offs.
+- Appendix1 reports a systematised126-document review, gap analysis, procedural design, and over20 semi-structured interviews/feedback with researchers, auditors, frontier-lab developers and policymakers. This is a literature-/stakeholder-informed design study, not an evaluated implementation of the complete layered audit or a causal estimate of compliance/harm effects.
+- Section4.3–4.4 locates unjust discrimination and conversational appropriateness in application context: general benchmark performance cannot establish fairness across deployment settings. §5.1 foregrounds construct validity and mutually incompatible operationalizations; §5.2 recognizes institutional backing as unresolved; §5.3 preserves political reform beyond technology-level audits.
+
+**Counterevidence / alternative:** The authors make strong claims of necessity/feasibility and effective assurance, but these remain design inferences from prior literature and stakeholder consultation. They explicitly do not establish who audits whom or enforce post-audit action. Collaborative access may improve technical assessment while weakening independence through client dependence. §5.3 includes contestable political judgments about capability restraint and opportunity costs; those judgments are not adopted here as empirical conclusions.
+
+**Limits:** All accessible narrative text and the meaningful methodology appendix were read, but the remaining bibliography-only pages23–31 were not, so no full-record depth upgrade is proposed. Cited primary studies/interview records were not audited or reproduced. Institution choice, post-audit action and current law are outside this paper’s implemented evidence. Reused round2 bytes and original single logged access-event timestamp are retained; no fresh download or historical revision is asserted.
+
+**Replication:** `not_performed`. **Numerical check:** None. Documentary counts are attributed to the paper and were not independently recounted against its underlying evidence; no experimental replication.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C54](claims.md#c54)
+
+**Relevance rationale:** Supplies bounded primary evidence for existing institutional claims and the proposed claim(s); inclusion is not independent corroboration or observed audit effectiveness.
+
+**Next check:** Inspect the references and underlying studies/transcripts only where needed to support the publication’s chosen claim. Seek actual connected audit records, decisions and follow-up effects; adjudicate context-specific fairness constructs and political trade-offs separately from technical compliance.
+
+| Capture field | Value |
+|---|---|
+| `preservation_status` | captured |
+| `original_url` | [Source](https://link.springer.com/content/pdf/10.1007/s43681-023-00289-2.pdf) |
+| `final_url` | [Source](https://link.springer.com/content/pdf/10.1007/s43681-023-00289-2.pdf?error=cookies_not_supported&code=2a52c110-16ae-41a4-bc99-cac7daad869b) |
+| `retrieved_at` | 2026-11-14T17:15:17.946203+00:00 |
+| `attempted_at` | 2026-11-14T17:15:17.946203+00:00 |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No capture-specific independent archive was checked in this bounded round. Exact primary-edition URLs and local bytes are retained; independent archival preservation is not claimed. |
+| `sha256` | a03b71802c1e742a223f39d8fabcd363e75b53f217e7abe72282a46c45b3f2f1 |
+| `byte_length` | 2650666 |
+| `mime_type` | application/pdf |
+| `published_on` | 2023-05-30 |
+| `version_claim` | Final publisher issue PDF: AI and Ethics(2024)4:1085–1115; published online30May2023 |
+| `locator_basis` | Viewer page1=printed1085; add1084 to viewer-page numbers through31=1115. |
+| `capture_path` | .source-captures/synthesis-a03b71802c1e742a223f39d8fabcd363e75b53f217e7abe72282a46c45b3f2f1.pdf |
+
+<a id="r3_audits_03"></a>
+### r3_audits_03
+
+**Source:** `homewood_thirdpartycompliance_2025`. **Theme:** deferred_audits. **Reading:** Selected sections. **Coverage effect:** `scoped_review`.
+
+**Edition match:** `same_record`. Explicit arXiv:2505.01643v2 [cs.CY],4 Jul2025, matching the v2 source-review lead for the canonical preprint. The live unversioned URL is not assumed to freeze v2.
+
+**Inspected scope:** arXiv v2 PDF p1 (abstract/date/version), pp5–9 (§1, §2.1–2.2 in full, opening §3 and opening §3.1), pp14–18 (end §3.2; §3.3 and Tables3–4; §3.4 in full; beginning §3.5 through key-area option), pp22–23 (alternatives, §5 conclusion in full, acknowledgments and opening references). Executive summary/options tables pp3–4, reviewer comparisons/structures pp10–13, remaining action/timing/options discussion pp19–21, and references pp24–27 were not read in full.
+
+**Locators:** arXivv2 §1,pp5–6 (scope and terminology); §2.1–2.2,pp6–9 (benefits and challenges); §3.2,pp14; §3.3,pp14–16 and Tables3–4,pp15,17; §3.4,pp16–18; opening §3.5,p18; alternatives and §5,pp22–23
+
+**Visual check:** No separate figure/table image inspection. Tables3–4 were read in the PDF text extraction: mock objective/controls and generic/example maturity framework, not observed graded company results. Layout-dependent details were not used as evidence.
+
+**Findings:**
+
+- The paper studies voluntary third-party review of adherence to a company’s own frontier safety framework, explicitly distinguishing that from audits of AI systems and reviews of the framework’s adequacy (§1). A finding of compliance therefore does not establish that the framework or model is safe.
+- Section3.3 gives concrete alternative assessment designs: grade commitments directly; operationalize objectives into implemented controls then test a random set; or compare observed process maturity with specified targets. Table3 is explicitly a mock objective with five mock controls, and Table4 a generic framework plus constructed forecasting example, not a completed company assessment.
+- The proposed assurance chain depends on evidence and decisions: structural policies alone have limited assurance; logs/communications, operational interviews/walkthroughs and system tests can expose different gaps (§3.2). §2.2 identifies false positives/negatives, client-retention conflicts, vague commitments and employee self-censorship as failure mechanisms.
+- External disclosure ranges from none to detailed reports with planned follow-up; greater detail can aid accountability but has security/privacy and chilling risks (§3.4). The key-area response option in §3.5 can tie noncompliance to delayed actions, but company selection of agreeable findings can weaken it. Internal reviews and compliance management systems are proposed complements (§4 alternatives,p22).
+
+**Counterevidence / alternative:** The proposed operationalization and reporting mechanisms are useful even without measured outcomes, but a vague or weak framework can be followed faithfully. Self-censorship, review shopping/conflicts, rigid controls, secrecy and company discretion over follow-up can yield false assurance. Broader access can improve findings while increasing security, confidentiality and coordination burdens. The paper’s assurance/compliance benefit expectations are extrapolations from other-sector studies and design reasoning, not direct frontier-AI control-effect estimates.
+
+**Limits:** Selected sections only, with explicit gaps in scope. No actual frontier-framework compliance review, underlying company review report, control test sample, adoption dataset or outcome experiment was inspected. The paper’s cited evidence from other sectors and current company policies was not independently rechecked. The positive-effect language in the abstract/conclusion must not be promoted into a measured finding.
+
+**Replication:** `not_performed`. **Numerical check:** None. Documentary counts are attributed to the paper and were not independently recounted against its underlying evidence; no experimental replication.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C41](claims.md#c41), [C55](claims.md#c55)
+
+**Relevance rationale:** Supplies bounded primary evidence for existing institutional claims and the proposed claim(s); inclusion is not independent corroboration or observed audit effectiveness.
+
+**Next check:** Obtain dated actual review reports and underlying scope/access/assessment/disclosure/remediation evidence before asserting adoption or effects. Compare compliance with a separately argued adequacy standard; preserve an indeterminate result where a commitment cannot be operationalized rather than convert ambiguity into a pass.
+
+| Capture field | Value |
+|---|---|
+| `preservation_status` | captured |
+| `original_url` | [Source](https://arxiv.org/pdf/2505.01643v2) |
+| `final_url` | [Source](https://arxiv.org/pdf/2505.01643v2) |
+| `retrieved_at` | 2026-11-14T17:55:36.308460+00:00 |
+| `attempted_at` | 2026-11-14T17:55:35.987900+00:00 |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No capture-specific independent archive was checked in this bounded round. Exact primary-edition URLs and local bytes are retained; independent archival preservation is not claimed. |
+| `sha256` | 3010a0f6d8806cf727514bd2ae70d1f03ee80086639a1c09878fafde3c12db65 |
+| `byte_length` | 712778 |
+| `mime_type` | application/pdf |
+| `published_on` | 2025-07-04 |
+| `version_claim` | arXiv:2505.01643v2 [cs.CY],4Jul2025 |
+| `locator_basis` | Viewer pages1–27 include title page,contents and executive summary; printed pages5–27 match viewer numbering in inspected text. |
+| `capture_path` | .source-captures/synthesis-3010a0f6d8806cf727514bd2ae70d1f03ee80086639a1c09878fafde3c12db65.pdf |
+
+<a id="r3_fairness_01"></a>
+### r3_fairness_01
+
+**Source:** `huang_collectiveconstitutional_2024`. **Theme:** fairness_values. **Reading:** Full text. **Coverage effect:** `none`.
+
+**Edition match:** `related_edition`. All 23 pages of arXiv:2406.07814v1 were read. The manuscript carries FAccT2024 title/authors, DOI10.1145/3630106.3658979 and a 23-page ACM reference, but the publisher object was not obtained for a text identity check. The bibliography cites the published proceedings DOI as well as arXiv; conservatively do not upgrade its canonical proceedings reading label from this manuscript alone.
+
+**Inspected scope:** Complete arXiv v1 text: main pp1–10; references pp10–12; appendices A.1–A.10 pp12–23 including public/standard constitutions, aggregation examples and qualitative response examples. Main quantitative charts on p7, Table1 p8 and participant interface p13 were visually inspected; other charts are read through captions and accompanying text, not digitized.
+
+**Locators:** arXiv v1 pp3–6 §§3.1–3.4; pp7–8 §4.3, Figures4–5, Table1; pp9–10 §§5–7; p12 A.2; p13 A.3/Figures6–7; pp14–23 A.4–A.10
+
+**Visual check:** Rendered PDFp7 confirms Public below Standard on all nine BBQ social dimensions and all five OpinionQA ideology scores; p8 confirms Table1 labels/values and narrative wording; p13 confirms screenshot minimum of40 votes.
+
+**Findings:**
+
+- The paired Public/Standard training controls pretraining data, helpfulness human feedback, hyperparameters, steps, seeds and harmlessness prompt mixes; constitution is the stated difference. Public model has lower BBQ bias across all nine tested dimensions.
+- Public-input constitution is feasible but includes consequential investigator choices:21 seeds (7 inspired by Standard), moderation, two opinion clusters, group-aware consensus product,95-idea cutoff, deduplication and rewriting.
+- Public model has lower OpinionQA representativeness across all five U.S. ideology groups. Authors lack a direct adherence metric and explicitly limit democratic-legitimacy/global-public interpretations.
+- The paper contains source-internal discrepancies in vote summaries/instructions and an Elo label/interpretation mismatch; these are unresolved rather than silently corrected.
+
+**Counterevidence / alternative:** Positive BBQ results coexist with worse OpinionQA distribution alignment; equal opportunity to vote and high consensus do not establish all affected groups are represented. Authors do not resolve conflicting principles or evaluate downstream societal impact.
+
+**Limits:** One controlled pair of constitutions/models based on a screened U.S. participant sample, not a global public or a direct measure of adherence, consent or impact. Screen included news/discussion familiarity; demographic sampling omitted race. Full manuscript reading does not equal final-edition identity, source-code checking, statistical equivalence testing or experimental replication.
+
+**Replication:** `not_performed`. **Numerical check:** Documentary arithmetic only: 38,252/1,002=38.1756 votes/person, while mainp4 says average34. Screenshotp13 requires40 votes for completion; mainp4 requires30 before adding a statement. These are different stages and are not treated as an error. Figure5 Public scores .49/.51/.53/.55/.54 versus Standard .52/.54/.56/.57/.57; these confirm 2–3-point differences. Table1 MMLU72.3/72.4 and GSM8K85.6/85.2 are nearby observed scores, not an equivalence test. Table1 Harmfulness row and harmlessness paragraph end with a 'more helpful' interpretation; no Elo direction/equivalence promoted.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C57](claims.md#c57)
+
+**Relevance rationale:** Adds positive evidence and counterevidence about public-input alignment without equating participation with representative public consent.
+
+**Next check:** Compare the exact publisher edition, then inspect code/data or author errata for vote totals,30/40 instruction difference and Elo labels before using those quantities. For publication leading claims assess subgroup coverage, direct adherence and real-use impact.
+
+| Capture field | Value |
+|---|---|
+| `preservation_status` | captured |
+| `original_url` | [Source](https://arxiv.org/pdf/2406.07814v1) |
+| `final_url` | [Source](https://arxiv.org/pdf/2406.07814v1) |
+| `retrieved_at` | 2026-11-14T17:53:30.751631Z |
+| `attempted_at` | 2026-11-14T17:53:30.223576Z |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No checked capture-specific archive was available in this bounded round; local bytes and exact primary version URL retained. Independent archival preservation not claimed. |
+| `sha256` | bf59c3f9a5c569b7c29063a24803128f7c3c8228790fa451e838cd1536cf9d15 |
+| `byte_length` | 2767196 |
+| `mime_type` | application/pdf |
+| `published_on` | 2024-06-12 |
+| `version_claim` | arXiv:2406.07814v1; FAccT2024-formatted author manuscript |
+| `locator_basis` | PDF viewer pages1–23; paper has no sequential printed page numbers. Exact v1 header is on PDFp1. |
+| `capture_path` | .source-captures/synthesis-bf59c3f9a5c569b7c29063a24803128f7c3c8228790fa451e838cd1536cf9d15.pdf |
+
+<a id="r3_fairness_02"></a>
+### r3_fairness_02
+
+**Source:** `swamy_minimaximalistapproach_2024`. **Theme:** fairness_values. **Reading:** Selected sections. **Coverage effect:** `scoped_review`.
+
+**Edition match:** `same_record`. Exact arXiv:2401.04056v1 matches the arXiv identifier and preprint type in the current bibliography. Subsequent ICML/PMLR final text was not compared; this is not a claim to have read that final edition.
+
+**Inspected scope:** Main pp1–10 including §3 definitions, Theorem3.3 statement and main-text proof sketch, Theorem3.4 counterexample, theoretical/practical algorithms and experimental/task discussion; AppendixA.7 contextual definition p23. Appendix proofs A.1–A.6, contextual algorithms continuation p24 and appendicesB–D not comprehensively read. Graph values not digitized.
+
+**Locators:** arXiv v1 pp4–6 §§3.1–3.3, Definition3.2, Theorems3.3–3.4; p7 §3.4/Algorithms1–2; pp8–10 §§4–5; p23 AppendixA.7
+
+**Visual check:** No independent visual inspection of plot values; read figure captions and main-text descriptions. No headline experimental rates are extracted.
+
+**Findings:**
+
+- Minimax Winner can represent cyclic/intransitive pairwise preference structure that a single scalar reward ordering cannot; SPO reduces symmetric game solving to single-agent no-regret self-play.
+- Theoretical Theorem3.3 concerns averaged iterates; practical Algorithm2 returns best iterate on validation data, so its empirical implementation is not identical to the theorem statement.
+- The paper reports continuous-control results with constructed stochastic/intransitive/non-Markovian preference functions; language modeling and recommendation are explicitly future-domain tests in §5.
+
+**Counterevidence / alternative:** The paper is a constructive alternative to scalar reward aggregation; it supplies no guarantee that elicited preferences, population weights or resulting distributions are legitimate or fair to demographic groups. Improvements over a reward model are scoped to the examined algorithms/tasks.
+
+**Limits:** Guarantees depend on a supplied antisymmetric preference oracle, convex/compact policy class and no-regret updates, and concern an average policy. Practical Algorithm2 uses a finite queue and validation-selected iterate. Continuous-control/synthetic preference experiments are not public deliberation or language-model demographic-impact evidence.
+
+**Replication:** `not_performed`. **Numerical check:** No experiment reproduced; theoretical bound and proof sketch inspected as text rather than independently verified in all appendix cases. No numerical performance claim admitted.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C58](claims.md#c58)
+
+**Relevance rationale:** New argument about plural preference representation; does not turn a social-choice solution concept into a fairness certificate.
+
+**Next check:** Read full appendix proofs and exact ICML final edition; test preference estimation/aggregation assumptions separately from optimization and distinguish average-iterate guarantees from returned practical policy.
+
+| Capture field | Value |
+|---|---|
+| `preservation_status` | captured |
+| `original_url` | [Source](https://arxiv.org/pdf/2401.04056v1) |
+| `final_url` | [Source](https://arxiv.org/pdf/2401.04056v1) |
+| `retrieved_at` | 2026-11-14T17:53:31.950204Z |
+| `attempted_at` | 2026-11-14T17:53:30.888859Z |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No checked capture-specific archive was available in this bounded round; local bytes and exact primary version URL retained. Independent archival preservation not claimed. |
+| `sha256` | a8c9edd12526b5e429bd34203014a477e6e632d92f3709e00bf7792198cdabb3 |
+| `byte_length` | 3123305 |
+| `mime_type` | application/pdf |
+| `published_on` | 2024-01-08 |
+| `version_claim` | arXiv:2401.04056v1 |
+| `locator_basis` | PDF and printed pages coincide1–28; selected AppendixA.7 begins p23. |
+| `capture_path` | .source-captures/synthesis-a8c9edd12526b5e429bd34203014a477e6e632d92f3709e00bf7792198cdabb3.pdf |
+
+<a id="r3_fairness_03"></a>
+### r3_fairness_03
+
+**Source:** `huang_trustllm_2024`. **Theme:** fairness_values. **Reading:** Selected sections. **Coverage effect:** `scoped_review`.
+
+**Edition match:** `same_record`. Exact PDF linked by canonical ICML/PMLR235 huang24x publisher page; title includes Position: TrustLLM, with proceedings identifier235 and author list. Source headers label it PMLR2024. HTTP content-type was application/octet-stream, but retained bytes are a PDF and extracted successfully; MIME here is detected application/pdf.
+
+**Inspected scope:** Publisher PDFp1 abstract, p5 benchmark figure/caption and discussion opening, complete AppendixF assessment of fairness pp74–79 including stereotype agreement/recognition/query tasks, salary association test, preference dataset/prompts/metric, Tables19–25. Other dimensions, main summary and remainder of105-page PDF not comprehensively read. Publisher metadata page was checked for PDF identity and date.
+
+**Locators:** PMLR235 PDFp1, p5 Figure1/caption; AppendixF.1 pp74–76, Tables19–22; AppendixF.2 pp76–78/Table23; AppendixF.3 pp78–79/Tables24–25
+
+**Visual check:** Rendered PDFp79 visually confirms Table25 category scores and Total columns. Other fairness tables read through PDF text; no graph digitization.
+
+**Findings:**
+
+- Stereotype fairness is separately measured as agreement rate (ChatGPT extraction), recognition accuracy, and refusal to answer stereotype queries (Longformer classification).
+- Salary classification examines sex/race association using chi-square tests; paper itself warns Oasst high p-values may arise from predictions little better than random and do not imply greater fairness.
+- Preference fairness is explicitly a normative choice: neutrality/refusal on each subjective forced-choice question; operational metric is Longformer RtA. This differs from population preference alignment or group outcome parity.
+- Reported benchmark positives include low stereotype agreement and high stereotype-query refusal for several models, while recognition accuracy and salary associations reveal distinct weaknesses.
+
+**Counterevidence / alternative:** TrustLLM itself reports positives and over-refusal risks, and acknowledges that a random predictor can pass one association metric. Neutrality-by-refusal is not interchangeable with responsiveness to plural public preferences. Table25 category denominator needs reconciliation before quantitative use.
+
+**Limits:** Historical model suite. Fairness tasks rely on CrowS-Pairs, StereoSet, Do-Not-Answer, Adult-inspired synthetic salary prompts, and author-written subjective choices; ChatGPT answer extraction and Longformer refusal detection are proxies. Shared datasets and judgment conventions create dependencies with other suites. No sample representativeness, causal impact or universal fairness established.
+
+**Replication:** `not_performed`. **Numerical check:** Table25 denominator inconsistency: §F.3 states120 questions=80 ideology+40 culture/lifestyle, but Mistral plain1.000/.800 has Total.867 (stated weights imply.933); GPT4 forced.100/.025 has Total.050 (stated weights imply.075). Both totals match reversed40/80 weighting. Exact underlying dataset/aggregation remains unchecked, so no corrected headline rate asserted. Table23 p-values are significance tests, not fairness effect sizes; absence of significance does not establish absence of bias.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C59](claims.md#c59)
+
+**Relevance rationale:** Admits final-edition methods and a source-internal arithmetic lead, not a generic trustworthiness ranking.
+
+**Next check:** Inspect dataset and exact evaluation/aggregation code for F.3 category counts, Longformer error rates and handling of refusals. Check effect sizes/contingency counts before any salary fairness ranking.
+
+| Capture field | Value |
+|---|---|
+| `preservation_status` | captured |
+| `original_url` | [Source](https://raw.githubusercontent.com/mlresearch/v235/main/assets/huang24x/huang24x.pdf) |
+| `final_url` | [Source](https://raw.githubusercontent.com/mlresearch/v235/main/assets/huang24x/huang24x.pdf) |
+| `retrieved_at` | 2026-11-14T17:56:00.294799Z |
+| `attempted_at` | 2026-11-14T17:55:59.741473Z |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No checked capture-specific archive was available in this bounded round; local bytes and exact primary version URL retained. Independent archival preservation not claimed. |
+| `sha256` | 271df3ae5a8550838ba357392eec39f58617ff1952e6e0390dd802ad5784d9b5 |
+| `byte_length` | 2560872 |
+| `mime_type` | application/pdf |
+| `published_on` | 2024-07-08 |
+| `version_claim` | ICML2024/PMLR235 final publisher PDF; Position: TrustLLM |
+| `locator_basis` | PDF page numbers1–105 coincide with internal printed1–105; PMLR metadata bibliographic pages20166–20270 are not used as PDF locators. |
+| `capture_path` | .source-captures/synthesis-271df3ae5a8550838ba357392eec39f58617ff1952e6e0390dd802ad5784d9b5.pdf |
+
+<a id="r3_fairness_04"></a>
+### r3_fairness_04
+
+**Source:** `wang_decodingtrust_2023`. **Theme:** fairness_values. **Reading:** Selected sections. **Coverage effect:** `scoped_review`.
+
+**Edition match:** `same_record`. Exact NeurIPS2023 Datasets and Benchmarks proceedings PDF, freshly retrieved this round; SHA256 equals the prior round object. This is a deeper fairness-specific reading of the same publication, not independent evidence.
+
+**Inspected scope:** Main §9 text/Table4 previously checked; this event reads AppendixJ introductory passage PDFp86, J.1–J.4 pp87–89 including metric definitions, examples/captions and Tables41–44. Main and other appendices were not newly reread in full.
+
+**Locators:** NeurIPS2023 AppendixJ.1 PDFp87/appendix printedp63; J.2–J.3 PDFp88/printedp64 Tables41–42; J.3–J.4 PDFp89/printedp65 Tables43–44
+
+**Visual check:** Rendered PDFp89 visually confirms Table43 and Table44 captions/values; metric definitions read via extracted PDF text. Table41 comparison is documentary text inspection.
+
+**Findings:**
+
+- Fairness is demographic parity and equalized-odds difference on constructed income prediction, while data base-rate parity is controlled separately; sensitive attribute is in input.
+- J.3 varies32-shot context base parity at fixed balanced200-sample test set and reports larger endpoint group gaps for highly biased demonstrations.
+- J.4 reports lower gaps with balanced demonstrations, providing possible mitigation evidence; comparison of its zero-shot baseline with earlier rows needs sampling/test-condition clarification. A source error is not established and affected numerical remedy contrasts are omitted.
+
+**Counterevidence / alternative:** The appendix includes mitigation as well as failures and higher GPT4 accuracy; its bounded demonstration effect does not prove general fairness or a necessary capability/safety tradeoff. Shared Adult task ancestry with TrustLLM is a dependency, not independent corroboration.
+
+**Limits:** Each evaluation describes200 constructed Adult test samples with controlled target base rates, binary sex/race/age groupings and income threshold$50k; subgroup and label-conditioned denominators are not fully provided in the examined pages. Historical API checkpoints from prior C47 remain. Constructed gap changes are not population harm incidence, a universal capability/fairness tradeoff or modern-model comparison.
+
+**Replication:** `not_performed`. **Numerical check:** J.1 prints signed differences without absolute-value notation; implementation convention and subgroup counts not checked. Table44 caption and J.4 say testbase parity.5, yet its zero-shot rows exactly repeat Table41 parity1.0 rows (GPT3.5:73.0/.46/.49; GPT4:85.5/.71/.95), not Table41 parity.5 rows (68.5/.31/.19;78.5/.47/.40). The text separately describes random test-sample selection, so distinct draws/cohorts are a possible explanation; code/data are needed to resolve condition, sampling or copied-row alternatives; omit condition-specific remedy numbers. Table43 GPT3.5 Mdpd falls.033→.026 at intermediate context parity, so 'larger always means larger' is not monotone for every reported cell.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C47](claims.md#c47), [C59](claims.md#c59)
+
+**Relevance rationale:** Deepens C47 methods/denominators and contrasts fairness constructs for C59; leaves a concrete unresolved numerical lead.
+
+**Next check:** Inspect exact release code/data and metric implementation, signed/absolute conventions, subgroup counts, sampling seeds and Table44 base-rate condition before any headline numerical mitigation claim. Retain C47 qualitative bound.
+
+| Capture field | Value |
+|---|---|
+| `preservation_status` | captured |
+| `original_url` | [Source](https://proceedings.neurips.cc/paper_files/paper/2023/file/63cb9921eecf51bfad27a99b2c53dd6d-Paper-Datasets_and_Benchmarks.pdf) |
+| `final_url` | [Source](https://proceedings.neurips.cc/paper_files/paper/2023/file/63cb9921eecf51bfad27a99b2c53dd6d-Paper-Datasets_and_Benchmarks.pdf) |
+| `retrieved_at` | 2026-11-14T17:58:02.007143Z |
+| `attempted_at` | 2026-11-14T17:58:00.449240Z |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No checked capture-specific archive was available in this bounded round; local bytes and exact primary version URL retained. Independent archival preservation not claimed. |
+| `sha256` | 0af07f4ded9e4d2c4ae1cc3ec5c765318d6e804a46211d206c1cbea9967dc8fe |
+| `byte_length` | 42206195 |
+| `mime_type` | application/pdf |
+| `published_on` | 2023 |
+| `version_claim` | NeurIPS2023 Datasets and Benchmarks final proceedings PDF |
+| `locator_basis` | 108-page PDF includes24 main/reference pages before appendix; PDFp87=appendix printedp63, p88=64, p89=65. |
+| `capture_path` | .source-captures/synthesis-0af07f4ded9e4d2c4ae1cc3ec5c765318d6e804a46211d206c1cbea9967dc8fe.pdf |
+
+<a id="r3_fairness_05"></a>
+### r3_fairness_05
+
+**Source:** `bender_stochasticparrots_2021`. **Theme:** fairness_values. **Reading:** Selected sections. **Coverage effect:** `scoped_review`.
+
+**Edition match:** `same_record`. DOI-matched FAccT2021 paper mirror,14 pages with printed610–623. Not newly publisher-downloaded or text-compared against ACM. Its DOI/title/authors/pages identify the corpus work; no different-edition claim made.
+
+**Inspected scope:** Selected contextual reading: §4.1 opening on dataset size and diversity PDFp4/printed613, §7 Paths Forward opening and first recommendations PDFp9/printed618; nearby environmental-cost discussion was skimmed and its borrowed numerical estimates were not audited. Inherited full-text label is preserved, not newly earned.
+
+**Locators:** FAccT2021 §4.1 opening PDFp4/printed613; §7 opening PDFp9/printed618
+
+**Visual check:** None; contextual prose only. No plotted or borrowed numeric claim verified.
+
+**Findings:**
+
+- The paper argues that large convenient Internet corpora need not represent diverse groups or interests and that curation/filtering choices alter whose voices remain.
+- Paths Forward recommends documenting dataset selection goals, values and stakeholders, understanding how systems perform tasks and considering their place in sociotechnical systems rather than only leaderboard averages.
+
+**Counterevidence / alternative:** These recommendations do not by themselves show a proposed participatory method or benchmark actually improves affected-group outcomes. They motivate questions and design criteria, rather than supply a comparative model effect.
+
+**Limits:** Scholarly argument and cited examples predating present frontier systems; this event does not independently check the papers/estimates cited or quantify present incidence/impact. A normative motivation for impact-aware evaluation is not empirical corroboration of any new C57–C59 effect.
+
+**Replication:** `not_performed`. **Numerical check:** No quantitative claim adopted and no experiments or source-paper estimates reproduced.
+
+**Relevance:** `background`. **Claim links:** None; no claim support forced.
+
+**Relevance rationale:** Explicit conceptual background on representation, data curation and situated impacts; no claim is forced merely to assign a synthesis role.
+
+**Next check:** If an environmental, demographic or deployment-effect number is used, verify its original cited study, historical context and denominator; retain contextual role otherwise.
+
+| Capture field | Value |
+|---|---|
+| `preservation_status` | captured |
+| `original_url` | [Source](https://s10251.pcdn.co/pdf/2021-bender-parrots.pdf) |
+| `final_url` | [Source](https://s10251.pcdn.co/pdf/2021-bender-parrots.pdf) |
+| `retrieved_at` | 2026-11-14T17:53:33.002823Z |
+| `attempted_at` | 2026-11-14T17:53:32.685258Z |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No checked capture-specific archive was available in this bounded round; local bytes and exact primary version URL retained. Independent archival preservation not claimed. |
+| `sha256` | e283b37a14e894c105ca26003d8cf5447535e8a73423cd7f1001d7b46af6c1d6 |
+| `byte_length` | 304472 |
+| `mime_type` | application/pdf |
+| `published_on` | 2021-03 |
+| `version_claim` | FAccT2021 DOI10.1145/3442188.3445922; public mirror of14-page proceedings paper |
+| `locator_basis` | PDFp1–14 correspond to proceedings printed610–623. |
+| `capture_path` | .source-captures/synthesis-e283b37a14e894c105ca26003d8cf5447535e8a73423cd7f1001d7b46af6c1d6.pdf |
+
+<a id="r3_public_01"></a>
+### r3_public_01
+
+**Source:** `exim_complianceplanomb_2024`. **Theme:** public_implementation. **Reading:** Full text. **Coverage effect:** `complete_record_text`.
+
+**Edition match:** `same_record`. Exact canonical EXIM URL delivered an18-page PDF with September 24, 2024 revision history and v1.0 initial publication, consistent with cited2024 plan.
+
+**Inspected scope:** All extracted text on PDF pp. 1–18, including cover, revision history, contents, governance, inventory, innovation, risk-management sections and Appendix A definitions; no linked underlying policies or successor plan.
+
+**Locators:** v1.0 revision history p. 2; Purpose p. 4; Strengthening AI Governance pp. 5–9; AI Strategy pp. 11–13; Managing Risks pp. 14–16; Appendix A pp. 17–18
+
+**Visual check:** None. Text extraction inspected; no rendered figure/table inspection or visual authentication. Narrative section text is the basis for findings.
+
+**Findings:**
+
+- Sept. 24, 2024 v1.0 self-reports an assembled governance body and FY24 updates to annual security training, CPIC/SDLC technology-review processes and IT Rules of Behavior, while its agency AI policy is described variously as drafted/developed and as still to formalize procedures.
+- Existing technology reviews are described as a route to detect planned or existing AI and engage the governance body (p. 9); this specifies a trigger and responsible body, not observed referrals or outcomes.
+- EXIM reports no rights- or safety-impacting use cases and no cases requiring waivers; additional criteria and waiver formalization remain prospective (pp. 15–16). AI strategy completion and baseline skills assessment are expected in FY25 (pp. 11,13).
+
+**Counterevidence / alternative:** Specific reported policy updates are more than abstract commitments, but do not demonstrate that risk-review/waiver pathways were exercised; the reported absence of rights/safety cases limits tests of those pathways.
+
+**Limits:** Agency self-report under historical M-24-10; not an independent implementation audit, high-impact test outcome, current policy check, or frontier-developer rule. No underlying CPIC/SDLC policies, meeting minutes, case files or M-25-21 successor plan reviewed. Mixed tenses in policy/governance descriptions prevent assuming every listed process was operational.
+
+**Replication:** `not_performed`. **Numerical check:** None; no quantitative inference or experimental reproduction.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C60](claims.md#c60)
+
+**Relevance rationale:** Supporting federal-agency-use comparator for institutional implementation and evidence boundaries; not direct evidence of frontier-model release governance.
+
+**Next check:** Inspect dated underlying policies and actual review/termination or waiver records if making an implementation-effectiveness claim; retain historical comparator scope.
+
+| Capture field | Value |
+|---|---|
+| `preservation_status` | captured |
+| `original_url` | [Source](https://img.exim.gov/s3fs-public/documents/EXIM%20Compliance%20Plan%20for%20OMB%20Memorandum%20M-24-10Final.pdf) |
+| `final_url` | [Source](https://img.exim.gov/s3fs-public/documents/EXIM%20Compliance%20Plan%20for%20OMB%20Memorandum%20M-24-10Final.pdf) |
+| `retrieved_at` | 2026-11-14T17:54:35.798084Z |
+| `attempted_at` | 2026-11-14T17:54:35.135763Z |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No capture-specific independent archive was checked in this bounded round; exact primary response bytes and URLs are retained locally. Independent archival preservation is not claimed. |
+| `sha256` | 510ff923e6d41ee7b29d20047b0968410fdf8d8080433276d91e7fb6b4f180fe |
+| `byte_length` | 446464 |
+| `mime_type` | application/pdf |
+| `published_on` | 2024-09-24 |
+| `version_claim` | Version 1.0, Initial Publication September 24, 2024 |
+| `locator_basis` | PDF viewer page numbers include cover and coincide with printed page numbers where shown. |
+| `capture_path` | .source-captures/synthesis-510ff923e6d41ee7b29d20047b0968410fdf8d8080433276d91e7fb6b4f180fe.pdf |
+
+<a id="r3_public_02"></a>
+### r3_public_02
+
+**Source:** `omb_m2521_2025`. **Theme:** public_implementation. **Reading:** Full text. **Coverage effect:** `complete_record_text`.
+
+**Edition match:** `same_record`. Exact canonical WhiteHouse PDF URL delivered the25-page memorandum headed M-25-21, April 3, 2025; February in URL path is not used as publication date.
+
+**Inspected scope:** All extracted text on PDF pp. 1–25, including main memorandum, Appendix §§1–8, footnotes, high-impact definitions/categories and consolidated actions table. Operative narrative clauses, rather than the summary table, support timing/obligation paraphrases.
+
+**Locators:** Overview p. 1; Appendix §1 pp. 4–5; Appendix §§3(a)(i)(F),3(b)(v) pp. 11–13; Appendix §§4(a)–(b) pp. 14–17; §5 pp. 18–20; §6 pp. 21–22
+
+**Visual check:** None. Text extraction inspected; no rendered figure/table inspection or visual authentication. Narrative section text is the basis for findings.
+
+**Findings:**
+
+- The April 3, 2025 memorandum expressly rescinds and replaces M-24-10. It governs covered agencies’ own AI use, with exclusions including national security systems; it expressly does not create rights or obligations for the public (p. 4 fn. 4).
+- High-impact requires output to serve as a principal basis for a consequential decision/action; human oversight does not itself remove that classification (pp. 14,19). The prescribed process links determination, documented testing/impact assessment, nondeveloper review within the agency, signed risk acceptance, monitoring, and discontinuation of noncompliant functionality (pp. 14–17).
+- A reviewer of an impact assessment must be within the agency and uninvolved in development (p. 16 §4(b)(ii)(F)); this is a specified separation of duties, not an outside-institution audit. The memo permits qualified pilot exemptions and system/context-specific CAIO waivers, with tracking and disclosure requirements (p. 15).
+
+**Counterevidence / alternative:** Defined scope, principal-basis trigger, pilot exemptions, waivers and conditional feasibility/appropriateness clauses bound any universal testing or cessation claim. Black-box alternatives, including vendor-returned results, are permitted when source/model/data access is unavailable (§4(b)(i)).
+
+**Limits:** Normative design in the April 3, 2025 edition, not proof of compliance, effectiveness or current legal status on retrieval date. No later amendment, implementation inventory, waiver register or agency case file audited. Extracted consolidated table was read, not visually checked; no deadlines are rederived from its compressed rows.
+
+**Replication:** `not_performed`. **Numerical check:** None; no quantitative inference or experimental reproduction.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C61](claims.md#c61)
+
+**Relevance rationale:** Supporting federal-agency-use comparator for institutional implementation and evidence boundaries; not direct evidence of frontier-model release governance.
+
+**Next check:** For a publication asserting current duties, check dated subsequent instruments; for actual control effectiveness, inspect completed case-specific tests, reviews, risk-acceptance signatures, waiver justifications and remediation records.
+
+| Capture field | Value |
+|---|---|
+| `preservation_status` | captured |
+| `original_url` | [Source](https://www.whitehouse.gov/wp-content/uploads/2025/02/M-25-21-Accelerating-Federal-Use-of-AI-through-Innovation-Governance-and-Public-Trust.pdf) |
+| `final_url` | [Source](https://www.whitehouse.gov/wp-content/uploads/2025/02/M-25-21-Accelerating-Federal-Use-of-AI-through-Innovation-Governance-and-Public-Trust.pdf) |
+| `retrieved_at` | 2026-11-14T17:54:35.577694Z |
+| `attempted_at` | 2026-11-14T17:54:35.136546Z |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No capture-specific independent archive was checked in this bounded round; exact primary response bytes and URLs are retained locally. Independent archival preservation is not claimed. |
+| `sha256` | 0aab0aa4eaeac969ed93894d3940c5dc9d0b7377048171b164a439e8b9e49813 |
+| `byte_length` | 2629748 |
+| `mime_type` | application/pdf |
+| `published_on` | 2025-04-03 |
+| `version_claim` | M-25-21, April 3, 2025 |
+| `locator_basis` | PDF viewer page numbers include cover and coincide with printed page numbers where shown. |
+| `capture_path` | .source-captures/synthesis-0aab0aa4eaeac969ed93894d3940c5dc9d0b7377048171b164a439e8b9e49813.pdf |
+
+<a id="r3_public_03"></a>
+### r3_public_03
+
+**Source:** `sba_complianceplanomb_2024`. **Theme:** public_implementation. **Reading:** Selected sections. **Coverage effect:** `scoped_review`.
+
+**Edition match:** `same_record`. Official legacy.sba.gov exact PDF matches ledger download route for September 2024 plan,17 pages; landing update date is not substituted for plan date.
+
+**Inspected scope:** PDF pp. 3–4,9,11,15–17 only: governance steps, inventory form, generative AI notice and risk-management plans. Existing inherited full reading is not repeated/certified.
+
+**Locators:** Strengthening AI Governance pp. 3–4; AI Use Case Inventories p. 9; Generative AI p. 11; Managing Risks pp. 15–16
+
+**Visual check:** None. Text extraction inspected; no rendered figure/table inspection or visual authentication. Narrative section text is the basis for findings.
+
+**Findings:**
+
+- SBA reports creating a use-case submission form at the end of March 2024 and publicizing it through staff events; the plan also quotes a February 27, 2024 temporary restriction on publicly available generative AI for official/sensitive business (pp. 9,11).
+- SBA explicitly says waiver criteria and process have not yet been developed (p. 15). Council approval, annual owner certification, compliance updates and termination/restart plans are described as a planned process (p. 16).
+- The plan reports all use cases then under review as internally focused, with nothing deployed to the public; network surveillance and removal are described as existing generic noncompliant-technology controls (p. 16).
+
+**Counterevidence / alternative:** Form publication and a stated network-removal pathway are identifiable reported acts, but cannot be equated to validated AI-specific testing, effective restriction enforcement, or demonstrated public-deployment oversight.
+
+**Limits:** Historical agency plan self-description, not proof that these controls operated or remained policy later. The underlying Information Notice, submission records, network enforcement and actual governance decisions were not retrieved. No other pages reread.
+
+**Replication:** `not_performed`. **Numerical check:** None; no quantitative inference or experimental reproduction.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C60](claims.md#c60)
+
+**Relevance rationale:** Supporting federal-agency-use comparator for institutional implementation and evidence boundaries; not direct evidence of frontier-model release governance.
+
+**Next check:** If asserting operation, inspect the underlying dated notice, case submissions, review decisions and restriction logs; keep future risk-control steps in future tense.
+
+| Capture field | Value |
+|---|---|
+| `preservation_status` | captured |
+| `original_url` | [Source](https://legacy.sba.gov/sites/default/files/2024-10/Final%20508-Compliant%20SBA%20M-24-10%20Implementation%20Plan%20for%20AI%20-%20September%202024.pdf) |
+| `final_url` | [Source](https://legacy.sba.gov/sites/default/files/2024-10/Final%20508-Compliant%20SBA%20M-24-10%20Implementation%20Plan%20for%20AI%20-%20September%202024.pdf) |
+| `retrieved_at` | 2026-11-14T17:54:36.066850Z |
+| `attempted_at` | 2026-11-14T17:54:35.136950Z |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No capture-specific independent archive was checked in this bounded round; exact primary response bytes and URLs are retained locally. Independent archival preservation is not claimed. |
+| `sha256` | 3e5a405ad28e2d16771f0fa24f2932e398b47bbec3e4dab3118f363cef06c6e3 |
+| `byte_length` | 382078 |
+| `mime_type` | application/pdf |
+| `published_on` | 2024-09 |
+| `version_claim` | SBA M-24-10 Implementation Plan, September 2024 |
+| `locator_basis` | PDF viewer page numbers include cover and coincide with printed page numbers where shown. |
+| `capture_path` | .source-captures/synthesis-3e5a405ad28e2d16771f0fa24f2932e398b47bbec3e4dab3118f363cef06c6e3.pdf |
+
+<a id="r3_public_04"></a>
+### r3_public_04
+
+**Source:** `eac_complianceplanomb_2024`. **Theme:** public_implementation. **Reading:** Selected sections. **Coverage effect:** `scoped_review`.
+
+**Edition match:** `same_record`. Exact canonical EAC14-page PDF; August 2 cover and September 20 FINAL revision both recorded rather than silently selecting one.
+
+**Inspected scope:** PDF pp. 1–6,10–13: cover/revision history, purpose/scope, established governance, prospective inventory, risk/redress sections and selected definitions; no reread of pp. 7–9 or14.
+
+**Locators:** Cover p. 1; revision history p. 2; Purpose/Scope p. 3; Strengthening AI Governance pp. 4–6; Managing Risks pp. 11–12
+
+**Visual check:** None. Text extraction inspected; no rendered figure/table inspection or visual authentication. Narrative section text is the basis for findings.
+
+**Findings:**
+
+- Cover says August 2, 2024 v1.0; revision history records September 20, 2024 changes accepted FINAL. EAC reports designation of a CAIO, establishment of a governance board, staff guidance and acquisition of AI features in existing products (pp. 2,4).
+- Operational framework and inventory collection use future tense; monitoring/auditing, termination and redress are listed with develop/establish/implement verbs rather than supported case outcomes (pp. 5–6,11–12). Although p. 11 labels review/waiver processes established, the accompanying develop/establish wording and lack of records prevent treating their operation as independently established.
+- Scope covers EAC administrative IT and third parties acting on its behalf and excludes Commission guidance/actions about non-agency AI; purpose says use-case-specific practice compliance will be reported separately through annual inventory (p. 3).
+
+**Counterevidence / alternative:** Some organizational acts are expressly reported completed, while risk-controls are described aspirationally or with mixed tenses. Neither the plan’s title nor those descriptions establish control effectiveness.
+
+**Limits:** Historical self-report; no meeting minutes, completed case reviews, actual waiver/redress decisions or independent audit inspected. Does not establish voting-system safety or governance across election administration generally. Existing inherited full reading is not repeated/certified.
+
+**Replication:** `not_performed`. **Numerical check:** None; no quantitative inference or experimental reproduction.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C60](claims.md#c60)
+
+**Relevance rationale:** Supporting federal-agency-use comparator for institutional implementation and evidence boundaries; not direct evidence of frontier-model release governance.
+
+**Next check:** Use as historical internal-agency comparator; inspect case-specific inventory and records before inferring testing, termination or remedies operated.
+
+| Capture field | Value |
+|---|---|
+| `preservation_status` | captured |
+| `original_url` | [Source](https://www.eac.gov/sites/default/files/2024-10/EAC_Compliance_Plan_OMB_Memorandum_FINAL_508.pdf) |
+| `final_url` | [Source](https://www.eac.gov/sites/default/files/2024-10/EAC_Compliance_Plan_OMB_Memorandum_FINAL_508.pdf) |
+| `retrieved_at` | 2026-11-14T17:54:35.541808Z |
+| `attempted_at` | 2026-11-14T17:54:35.137720Z |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No capture-specific independent archive was checked in this bounded round; exact primary response bytes and URLs are retained locally. Independent archival preservation is not claimed. |
+| `sha256` | 68479902111077458e0b84f27f6610f4e8e35a558b0abaf55a7b2f39463d5d28 |
+| `byte_length` | 450204 |
+| `mime_type` | application/pdf |
+| `published_on` | 2024-09-20 |
+| `version_claim` | Cover August 2, 2024 v1.0; revision log September 20, 2024 FINAL |
+| `locator_basis` | PDF viewer page numbers include cover and coincide with printed page numbers where shown. |
+| `capture_path` | .source-captures/synthesis-68479902111077458e0b84f27f6610f4e8e35a558b0abaf55a7b2f39463d5d28.pdf |
+
+<a id="r3_public_05"></a>
+### r3_public_05
+
+**Source:** `statedepartment_complianceplanomb_2024`. **Theme:** public_implementation. **Reading:** Inaccessible. **Coverage effect:** `none`.
+
+**Edition match:** `uncertain`. Exact canonical archive PDF route did not yield the PDF; no new binary version match authenticated.
+
+**Inspected scope:** Access check only. Exact archived state.gov PDF URL returned Technical Difficulties HTML; alternate current-domain same-path request returned HTTP 403. No source PDF text inspected in this round.
+
+**Locators:** Canonical September 23, 2024 PDF URL; no content locator authenticated
+
+**Visual check:** None; no source PDF retrieved.
+
+**Findings:**
+
+No source findings; material was inaccessible.
+
+**Counterevidence / alternative:** Inherited full-text label and prior AI scoped check may supply useful leads, but do not substitute for the inaccessible bytes in this round.
+
+**Limits:** An HTTP-success Technical Difficulties HTML response is not the cited State plan. Alternate https://www.state.gov/wp-content/uploads/2024/09/DOS-Compliance-Plan-with-OMB-M-24-10-Accessible-9.23.2024.pdf returned 403 at 2026-11-14T17:55:30.099533Z. Earlier reported inventory/TEVV findings remain inherited, not a new primary check.
+
+**Replication:** `not_performed`. **Numerical check:** None.
+
+**Relevance:** `unresolved`. **Claim links:** None; no claim support forced.
+
+**Relevance rationale:** Scope would be a historical federal-use comparator, but new source access failed; no claim support assigned.
+
+**Next check:** Retrieve an authenticated same-version official copy before adding State-specific findings; do not downgrade inherited labels or claim new corroboration.
+
+| Capture field | Value |
+|---|---|
+| `preservation_status` | unavailable |
+| `original_url` | [Source](https://2021-2025.state.gov/wp-content/uploads/2024/09/DOS-Compliance-Plan-with-OMB-M-24-10-Accessible-9.23.2024.pdf) |
+| `final_url` | Not recorded / unavailable |
+| `retrieved_at` | Not recorded / unavailable |
+| `attempted_at` | 2026-11-14T17:54:35.138101Z |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No capture-specific independent archive was checked. Canonical endpoint returned a technical-error page and alternate official endpoint returned 403. |
+| `sha256` | Not recorded / unavailable |
+| `byte_length` | Not recorded / unavailable |
+| `mime_type` | Not recorded / unavailable |
+| `published_on` | Not recorded / unavailable |
+| `version_claim` | Not recorded / unavailable |
+| `locator_basis` | No cited source PDF retrieved; failure located at exact URL. |
+| `capture_path` | Not recorded / unavailable |
+
+<a id="r3_public_06"></a>
+### r3_public_06
+
+**Source:** `omb_2024federalagency_2024`. **Theme:** public_implementation. **Reading:** Selected sections. **Coverage effect:** `scoped_review`.
+
+**Edition match:** `same_record`. Immutable official OMB repository representation at commit 4a29d132291261d4829b187acd8af618e7295294; README snapshot is dated January 23, 2025 although canonical corpus date is December 16, 2024. Specific raw/v2/schema representation and limited scope are explicit.
+
+**Inspected scope:** Complete README text only at immutable commit 4a29d132291261d4829b187acd8af618e7295294; repository tree used to identify files; this is not a comprehensive reading of the cited dataset.
+
+**Locators:** README Summary; Key Considerations; Submissions Schedule; Repository Structure
+
+**Visual check:** None. Text extraction inspected; no rendered figure/table inspection or visual authentication. Narrative section text is the basis for findings.
+
+**Findings:**
+
+- README reports 41 agency submissions, 2,133 use cases and 351 rights- and/or safety-impacting use cases as of January 23, 2025. It describes a consolidated administrative inventory, not measured deployment outcomes.
+- README lists exclusions including qualifying R&D, national security and Intelligence Community systems, Department of Defense and legally/policy restricted public disclosure. Some details can be submitted to OMB but withheld publicly.
+- Its repository-structure example names raw.csv/raw.xls, while the actual tree also contains raw_v2 files. The summary totals reproduce from raw_v2, not from the older raw.csv; this is a version-selection hazard rather than evidence that the summary totals are false.
+
+**Counterevidence / alternative:** Publicly released agency-reported entries can make disclosure concrete; exclusions, mixed stages and unverified reporting prevent inference to all deployment, harms or controls.
+
+**Limits:** README is documentation, not comprehensive dataset reading or compliance verification. Full per-agency provenance, inventories withheld from release and linked reporting instructions not inspected. Snapshot date differs from initial December 16, 2024 submissions deadline.
+
+**Replication:** `not_performed`. **Numerical check:** README totals compared to exact v2 CSV recount in r3_public_07; no source-experiment replication.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C62](claims.md#c62)
+
+**Relevance rationale:** Supporting federal-agency-use comparator for institutional implementation and evidence boundaries; not direct evidence of frontier-model release governance.
+
+**Next check:** Always cite immutable commit and raw_v2 representation when using reproduced totals; audit primary agency submissions before outcome claims.
+
+| Capture field | Value |
+|---|---|
+| `preservation_status` | captured |
+| `original_url` | [Source](https://raw.githubusercontent.com/ombegov/2024-Federal-AI-Use-Case-Inventory/4a29d132291261d4829b187acd8af618e7295294/README.md) |
+| `final_url` | [Source](https://raw.githubusercontent.com/ombegov/2024-Federal-AI-Use-Case-Inventory/4a29d132291261d4829b187acd8af618e7295294/README.md) |
+| `retrieved_at` | 2026-11-14T17:55:30.437322Z |
+| `attempted_at` | 2026-11-14T17:55:30.098171Z |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No capture-specific independent archive was checked in this bounded round; exact primary response bytes and URLs are retained locally. Independent archival preservation is not claimed. |
+| `sha256` | dc846005495e339b6a77a38030a973d1dfec53648611de72ea045edc5275ea7f |
+| `byte_length` | 6096 |
+| `mime_type` | text/plain |
+| `published_on` | Not recorded / unavailable |
+| `version_claim` | README at repository commit 4a29d132291261d4829b187acd8af618e7295294; summary dated January 23, 2025 |
+| `locator_basis` | Immutable repository commit or Git blob; Markdown headings, YAML field names and CSV headers/rows identify the inspected material. |
+| `capture_path` | .source-captures/synthesis-dc846005495e339b6a77a38030a973d1dfec53648611de72ea045edc5275ea7f.txt |
+
+<a id="r3_public_07"></a>
+### r3_public_07
+
+**Source:** `omb_2024federalagency_2024`. **Theme:** public_implementation. **Reading:** Selected sections. **Coverage effect:** `scoped_review`.
+
+**Edition match:** `same_record`. Immutable official OMB repository representation at commit 4a29d132291261d4829b187acd8af618e7295294; README snapshot is dated January 23, 2025 although canonical corpus date is December 16, 2024. Specific raw/v2/schema representation and limited scope are explicit.
+
+**Inspected scope:** Immutable GitHub blob API JSON and its base64-decoded exact raw_v2.csv bytes. Strict cp1252 parse of all rows for headers, row count, agency labels, impact categories and development-stage distributions; no substantive reading of every narrative field or row.
+
+**Locators:** data/2024_consolidated_ai_inventory_raw_v2.csv at commit 4a29d132291261d4829b187acd8af618e7295294; Git blob 1efc086ad73dc7e0647968e3ecab60e9b9da88f0; columns Agency, Stage of Development and rights-/safety-impact question
+
+**Visual check:** None. Text extraction inspected; no rendered figure/table inspection or visual authentication. Narrative section text is the basis for findings.
+
+**Findings:**
+
+- Pinned raw_v2 has 2,133 data rows, 41 agency labels after whitespace stripping, and 351 rights-impacting/safety-impacting/both labels after stripping and casefold normalization; these match README totals.
+- Inventory contains multiple lifecycle stages, including initiated, acquisition/development, operation/maintenance and retired, so its total is not a deployed-system count. Neither row existence nor an agency-reported yes establishes control effectiveness.
+- Original raw_v2 response is application/octet-stream and the CSV is cp1252, not UTF-8. The retained API JSON is UTF-8 with base64 data; decoded content is byte-identical to retained original response (SHA256 789e1bac6d2551e8f90e5cfc5feb37ac23c6ca9f302f5af92fea8a577caa0a83). No source bytes were transcoded.
+
+**Counterevidence / alternative:** A concrete inventory documents reported records beyond promises, but source-defined scope, stage variation and self-report prevent interpreting totals as tested, safe or compliant systems.
+
+**Limits:** Source capture is the immutable official GitHub JSON representation, not a transformed CSV. CSV header/selected categorical-field processing does not mean all use cases were read or independently verified. Counts are descriptive administrative reports, not estimates of deployment prevalence or harm. No row-level external validation or census of excluded/withheld cases.
+
+**Replication:** `not_performed`. **Numerical check:** Programmatic documentary recount, not replication: strict cp1252 CSV decode; 2133 rows; 41 distinct Agency.strip() values; 131 rights-impacting +25 safety-impacting +195 both =351 after impact.strip().casefold(); 0 DictReader overflow rows. API base64 decode asserted byte-equal to original raw CSV. Stage categories were inspected as a documentary scope check, not independently validated.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C62](claims.md#c62)
+
+**Relevance rationale:** Supporting federal-agency-use comparator for institutional implementation and evidence boundaries; not direct evidence of frontier-model release governance.
+
+**Next check:** Retain exact commit/blob/CSV hash and normalization script; inspect conditional question requirements and primary case files before computing compliance rates.
+
+| Capture field | Value |
+|---|---|
+| `preservation_status` | captured |
+| `original_url` | [Source](https://api.github.com/repos/ombegov/2024-Federal-AI-Use-Case-Inventory/git/blobs/1efc086ad73dc7e0647968e3ecab60e9b9da88f0) |
+| `final_url` | [Source](https://api.github.com/repos/ombegov/2024-Federal-AI-Use-Case-Inventory/git/blobs/1efc086ad73dc7e0647968e3ecab60e9b9da88f0) |
+| `retrieved_at` | 2026-11-14T17:56:59.184814Z |
+| `attempted_at` | 2026-11-14T17:56:58.075648Z |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No capture-specific independent archive was checked in this bounded round; exact primary response bytes and URLs are retained locally. Independent archival preservation is not claimed. |
+| `sha256` | bdc6e6bcbbcb057c7ceded805d2fd52857d5c24971f87b3dcae1f535d1bcb049 |
+| `byte_length` | 4109845 |
+| `mime_type` | application/json |
+| `published_on` | Not recorded / unavailable |
+| `version_claim` | Git blob 1efc086ad73dc7e0647968e3ecab60e9b9da88f0 in commit 4a29d132291261d4829b187acd8af618e7295294 |
+| `locator_basis` | Immutable repository commit or Git blob; Markdown headings, YAML field names and CSV headers/rows identify the inspected material. |
+| `capture_path` | .source-captures/synthesis-bdc6e6bcbbcb057c7ceded805d2fd52857d5c24971f87b3dcae1f535d1bcb049.json |
+
+<a id="r3_public_08"></a>
+### r3_public_08
+
+**Source:** `omb_2024federalagency_2024`. **Theme:** public_implementation. **Reading:** Selected sections. **Coverage effect:** `scoped_review`.
+
+**Edition match:** `same_record`. Immutable official OMB repository representation at commit 4a29d132291261d4829b187acd8af618e7295294; README snapshot is dated January 23, 2025 although canonical corpus date is December 16, 2024. Specific raw/v2/schema representation and limited scope are explicit.
+
+**Inspected scope:** YAML lines 1–110 and 680–835 only: identifiers, stage/impact fields and risk-management fields 51–56; no whole-dictionary read.
+
+**Locators:** validation/data_dictionary.yaml: 16_dev_stage and 17_impact_type; Fields 51_extension_request through 56_monitor_postdeploy
+
+**Visual check:** None. Text extraction inspected; no rendered figure/table inspection or visual authentication. Narrative section text is the basis for findings.
+
+**Findings:**
+
+- Dictionary differentiates model benchmark testing, performance evaluation in an operational/simulated environment and impact evaluation using counterfactual/rigorous methodologies; these are separate response categories, not interchangeable evidence.
+- Risk-management questions are conditional on impact classification, lifecycle stage and (for fields 52 onward) no extension request. Blank values must not be treated as universal failure or noncompliance without applying those conditions.
+- Field55 defines independent evaluation as CAIO/oversight/appropriate agency office with the reviewing authority not directly involved in development, not necessarily an institution external to the agency.
+
+**Counterevidence / alternative:** Structured fields can enable follow-up audit and distinguish evidence types, but self-reported answers and conditional applicability are insufficient for independent assurance.
+
+**Limits:** Dictionary uses machine-style headers corresponding to older raw.csv, while v2 uses human-readable questions and fewer columns; not an audited complete mapping. No compliance-rate inference made. Linked reporting instruction document and underlying assessments not inspected.
+
+**Replication:** `not_performed`. **Numerical check:** None; no quantitative inference or experimental reproduction.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C62](claims.md#c62)
+
+**Relevance rationale:** Supporting federal-agency-use comparator for institutional implementation and evidence boundaries; not direct evidence of frontier-model release governance.
+
+**Next check:** If calculating control rates, create an explicit reviewed v2 header mapping, apply all conditional requirements and validate responses against underlying case artifacts.
+
+| Capture field | Value |
+|---|---|
+| `preservation_status` | captured |
+| `original_url` | [Source](https://raw.githubusercontent.com/ombegov/2024-Federal-AI-Use-Case-Inventory/4a29d132291261d4829b187acd8af618e7295294/validation/data_dictionary.yaml) |
+| `final_url` | [Source](https://raw.githubusercontent.com/ombegov/2024-Federal-AI-Use-Case-Inventory/4a29d132291261d4829b187acd8af618e7295294/validation/data_dictionary.yaml) |
+| `retrieved_at` | 2026-11-14T17:55:44.447903Z |
+| `attempted_at` | 2026-11-14T17:55:44.071859Z |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No capture-specific independent archive was checked in this bounded round; exact primary response bytes and URLs are retained locally. Independent archival preservation is not claimed. |
+| `sha256` | bc2302170a5b3aee419479522cd6afbb5416de9555a8d6fe7e34a848d7e8eee0 |
+| `byte_length` | 45842 |
+| `mime_type` | text/plain |
+| `published_on` | Not recorded / unavailable |
+| `version_claim` | data_dictionary.yaml at commit 4a29d132291261d4829b187acd8af618e7295294 |
+| `locator_basis` | Immutable repository commit or Git blob; Markdown headings, YAML field names and CSV headers/rows identify the inspected material. |
+| `capture_path` | .source-captures/synthesis-bc2302170a5b3aee419479522cd6afbb5416de9555a8d6fe7e34a848d7e8eee0.txt |
+
+<a id="r3_public_09"></a>
+### r3_public_09
+
+**Source:** `omb_2024federalagency_2024`. **Theme:** public_implementation. **Reading:** Selected sections. **Coverage effect:** `scoped_review`.
+
+**Edition match:** `same_record`. Immutable official OMB repository representation at commit 4a29d132291261d4829b187acd8af618e7295294; README snapshot is dated January 23, 2025 although canonical corpus date is December 16, 2024. Specific raw/v2/schema representation and limited scope are explicit.
+
+**Inspected scope:** Older raw.csv strict UTF-8-sig parse of headers and all rows for row count and selected category distributions; no substantive reading of all free-text entries.
+
+**Locators:** data/2024_consolidated_ai_inventory_raw.csv at commit 4a29d132291261d4829b187acd8af618e7295294
+
+**Visual check:** None. Text extraction inspected; no rendered figure/table inspection or visual authentication. Narrative section text is the basis for findings.
+
+**Findings:**
+
+- Older raw.csv contains 1,757 data rows, while raw_v2 has 2,133. Selecting a file by the README structure example alone would not reproduce its January 23 summary. Both files coexist; intentional historical/version distinction remains possible.
+
+**Counterevidence / alternative:** Versioned files may intentionally retain older snapshots. The useful correction is exact artifact selection and explicit normalization, not alleging inconsistency.
+
+**Limits:** No claim that an older file should equal the v2 snapshot; no publisher error inferred. No full dataset read, release chronology audit or provenance reconciliation.
+
+**Replication:** `not_performed`. **Numerical check:** Documentary file recount only: 1757 DictReader data rows, no overflow rows; not full-text reading or experimental replication.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C62](claims.md#c62)
+
+**Relevance rationale:** Supporting federal-agency-use comparator for institutional implementation and evidence boundaries; not direct evidence of frontier-model release governance.
+
+**Next check:** Use v2 for the README snapshot totals and inspect Git history if interpreting change over time.
+
+| Capture field | Value |
+|---|---|
+| `preservation_status` | captured |
+| `original_url` | [Source](https://raw.githubusercontent.com/ombegov/2024-Federal-AI-Use-Case-Inventory/4a29d132291261d4829b187acd8af618e7295294/data/2024_consolidated_ai_inventory_raw.csv) |
+| `final_url` | [Source](https://raw.githubusercontent.com/ombegov/2024-Federal-AI-Use-Case-Inventory/4a29d132291261d4829b187acd8af618e7295294/data/2024_consolidated_ai_inventory_raw.csv) |
+| `retrieved_at` | 2026-11-14T17:55:44.651753Z |
+| `attempted_at` | 2026-11-14T17:55:44.071086Z |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No capture-specific independent archive was checked in this bounded round; exact primary response bytes and URLs are retained locally. Independent archival preservation is not claimed. |
+| `sha256` | 9a2c9e25d41eb7b4b2e5463459c8ea78e0e02db0c15e82cc09c88e78889b40f5 |
+| `byte_length` | 2655883 |
+| `mime_type` | text/plain |
+| `published_on` | Not recorded / unavailable |
+| `version_claim` | Older raw.csv in commit 4a29d132291261d4829b187acd8af618e7295294 |
+| `locator_basis` | Immutable repository commit or Git blob; Markdown headings, YAML field names and CSV headers/rows identify the inspected material. |
+| `capture_path` | .source-captures/synthesis-9a2c9e25d41eb7b4b2e5463459c8ea78e0e02db0c15e82cc09c88e78889b40f5.txt |
+
+<a id="r3_provider_01"></a>
+### r3_provider_01
+
+**Source:** `wan_foundationmodeltransparency_2025`. **Theme:** provider_implementation. **Reading:** Selected sections. **Coverage effect:** `scoped_review`.
+
+**Edition match:** `same_record`. Same work/title/date; exact arXiv 2512.10169 v1 dated 11 December 2025 pinned rather than mutable latest URL.
+
+**Inspected scope:** Exact arXiv v1 PDF pp. 1,3–6,14–19,32–39,48–49: abstract, index/instrument background and changes, full §§4.1–4.5 methods, overall results/Figure 7, reporting-method comparison, longitudinal discussion/Figures 16–17/Table 3, conclusion/conflicts, and AppendixA including agent prompt and retrieval comparison. Other results subsections, indicator tables and bibliography pages not fully read.
+
+**Locators:** §§3.1,3.3, pp. 5,14–15; Figure 6 p. 14; §§4.1–4.5 pp. 15–18; Figure 7 p. 19; Figure 15 pp. 32–33; §5.3/Figures 16–17/Table 3 pp. 33–37; AppendixA pp. 48–49
+
+**Visual check:** No rendered figure inspection; numerical figure labels and table text were read in the PDF text extraction. Figure 7 arithmetic checked separately.
+
+**Findings:**
+
+- FMTI 2025 assesses 13 developers on 100 disclosure indicators each: 1,300 developer–indicator pairs, independently assigned by two FMTI team scorers before consensus. It is a disclosure-measurement exercise, not an operational compliance audit or causal estimate of safety effects.
+- Seven companies prepared solicited reports; for six others the team searched official company artifacts, complemented by an agent search whose findings required expert checking. All 13 companies were offered a response phase. New information could be disclosed through the reports and responses; the source set was not restricted to information public before solicitation.
+- AppendixA explicitly says all published scores reflect FMTI-team judgments; no published scores were proposed or directly determined by an AI system. Agent retrieval used official-company-domain constraints and could generate false positives and false negatives; source dependence on issuer communications remains.
+- Figure 7 scores sum to 529, giving 529/13=40.6923; Results uses 40.69/100, whereas abstract says 40. Report 40.69 or approximately 41, or reproduce the abstract as an attributed quotation rather than silently treating 40 as the exact mean.
+- Instrument comparison is materially confounded: 55 indicators are new and only nine are unchanged. Figure 16 holds nine companies constant and finds seven lower 2025 scores, but indicators, reporting mechanisms and flagship models still differ. Table 3 supplies narrower examples of reduced disclosure, not proof that underlying practices ceased.
+- Positive mechanism: solicited structured reports and response engagement elicit additional disclosures, with responses clarifying/correcting/updating information for a reported mean 18.9 indicators and increasing scores by mean 9.71. The seven report-preparing companies score 54.1 on average versus 25.0 for six FMTI-prepared reports; selection and disclosure effort are alternative explanations, so this gap is not a causal intervention effect.
+- Points can be awarded for disclosure of information dependencies or contractual restrictions in the circumstances described on p. 15. A missing point therefore cannot be uniformly interpreted as absence of a control or practice, nor can a point uniformly mean the requested underlying measurement was supplied.
+
+**Counterevidence / alternative:** IBM 95, Writer 72 and AI 21 Labs 66 demonstrate high disclosure scores are achievable in this instrument; report engagement yields useful new information. Selection, changed instrument/flagship models and security/commercial disclosure tradeoffs bound interpretation of both gaps and regressions.
+
+**Limits:** No independent re-scoring of the 1,300 cells, developer report/source audit, evaluation reproduction or complete 49-page reading. The authors identify industry affiliations on p. 39; external FMTI scoring does not make issuer disclosures independent evidence of practice. Two internal prose issues retained in notes: p. 33 says seven reports in 2024 where Figure 16 says 2025; p. 37 says Meta dropped 23 from 2024–25 while Figure 16 says 29. Neither inconsistent prose number is used as a new result.
+
+**Replication:** `not_performed`. **Numerical check:** Figure 7:13 scores sum 529; mean 40.6923077 rounds 40.69. Agreement: (1300−138)/1300=89.3846%, consistent with 89.4%. Figure 16 scores:7/9 lower; Meta 60→31 is−29. No experiment reproduced.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C63](claims.md#c63)
+
+**Relevance rationale:** Adds a measured disclosure result and a positive reporting mechanism while bounding the inference from disclosure to implementation.
+
+**Next check:** Retain exact mean/method denominators and distinguish non-disclosure from practice absence. Audit leading indicator-level examples against the published developer reports before attributing a regression to a particular organizational practice. If a trend claim leads publication, compare the fixed nine unchanged indicators and constant developers; do not present aggregate decline as a controlled estimate.
+
+| Capture field | Value |
+|---|---|
+| `preservation_status` | captured |
+| `original_url` | [Source](https://arxiv.org/pdf/2512.10169v1) |
+| `final_url` | [Source](https://arxiv.org/pdf/2512.10169v1) |
+| `retrieved_at` | 2026-11-14T17:54:09Z |
+| `attempted_at` | 2026-11-14T17:54:09Z |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No checked capture-specific archive was available in this bounded round; local bytes and the exact primary version URL are retained. Independent archival preservation is not claimed. |
+| `sha256` | b05cf7c81e7b97828e4085772f61348f638e0d8b94f5de877568acd6a60fd16c |
+| `byte_length` | 2222160 |
+| `mime_type` | application/pdf |
+| `published_on` | 2025-12-11 |
+| `version_claim` | arXiv 2512.10169 v1,11 December 2025 |
+| `locator_basis` | PDF viewer pages equal printed page numbers 1–49. |
+| `capture_path` | .source-captures/synthesis-b05cf7c81e7b97828e4085772f61348f638e0d8b94f5de877568acd6a60fd16c.pdf |
+
+<a id="r3_provider_02"></a>
+### r3_provider_02
+
+**Source:** `nvidia_frontierriskassessment_2025`. **Theme:** provider_implementation. **Reading:** Full text. **Coverage effect:** `complete_record_text`.
+
+**Edition match:** `same_record`. Title/issuer match canonical record; captured 15-page PDF cover says Applicable from August 2025. Source has four named cover authors; corporate authorship remains an editorial choice. Exact canonical publication day 17 February 2025 was not established by the body or independently checked.
+
+**Inspected scope:** All 15 PDF pages, including cover/abstract/executive summary, Preliminary and Detailed Risk Assessments, both V-model figures, Tables 1–2, risk mitigation/tool descriptions, risk evaluation and governance, and the footnotes printed in this document. Linked tools, model cards and cited studies were not independently opened.
+
+**Locators:** Cover p. 1: applicability and historical frontier-model statement; PRA pp. 2–3; DRA/lifecycle pp. 3–5, Figures 1–2 p. 4; Risk formula/Table 1 pp. 6–7; template/Table 2 p. 8; Tools and risk evaluation pp. 9–14; Governance pp. 14–15
+
+**Visual check:** Rendered p. 4 checked for both V-model diagrams and p. 8 for Table 2; remaining tables read from extracted text. The rendering confirms Table 2 labels the 49→5 numbers as a risk-analysis template.
+
+**Findings:**
+
+- The report describes positive operational mechanisms: design-stage screening by capability, intended use and autonomy; MR 4 business-unit approval and MR 5 committee approval language; reassessment on product/context/hazard changes; model-card documentation; and deployment-dependent controls. MR 5 approval by an independent committee means an internal governance mechanism such as NVIDIA’s AI ethics committee, not independently verified external assurance.
+- It states NVIDIA uses Garak as a highest-priority assessment before release and describes product-specific guardrails and data-processing practices. These are concrete issuer reports of operational use, stronger than a bare commitment, but the document supplies no independently checked execution record, counterfactual or measured reduction in catastrophic harm.
+- It explicitly says mapping and enforcing specific controls across all model types/use cases is infeasible and leaves relevant controls to engineering teams with increased oversight at higher risk. Downloaded weights constrain downstream controls; models with use-case restrictions may receive a lower PRA category.
+- The cover applicability is August 2025 and states frontier models were not then under development at NVIDIA. Table 2’s 49→5 is an example/template, not a reported product outcome; broad claims about watermarks or tooling efficacy are not substantiated by independent testing in this reading.
+
+**Counterevidence / alternative:** Operational details and claimed pre-release use give a concrete implementation hypothesis, but neither all-products control coverage nor actual risk reduction follows. Internal governance approval is distinct from external independence; use-case restrictions can change the initial category as well as residual risk.
+
+**Limits:** Complete reading is of this 15-page report, not linked software/manuals/model cards or demonstrated implementation. Cover historical statement is not a claim about NVIDIA in November 2026. PDF creation metadata 12 February 2025 cannot establish publication 17 February 2025; do not infer it. Descriptions of tool capabilities and broad efficacy language were not externally validated.
+
+**Replication:** `not_performed`. **Numerical check:** Documentary formula check only: pp. 6–7 factors yield minimum 1 and maximum 64. Enumerating the literal listed Table 1 scores cannot produce Table 2 initial risk 49; residual 5 is possible. No input-factor assignment or empirical derivation for 49→5 is supplied. Treat as illustrative and omit any percentage-reduction claim. No experiment/tool benchmark reproduced.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C64](claims.md#c64)
+
+**Relevance rationale:** Provides a concrete positive provider implementation account while distinguishing reported practice, internal approval, illustrative arithmetic and externally demonstrated effects.
+
+**Next check:** Seek a dated product assessment/model card, review decision, test configuration and incident follow-up before claiming realized control effectiveness. Retain reported mechanisms now. Preserve August applicability separately from unverified 17 February publication date, and omit template risk-reduction numbers.
+
+| Capture field | Value |
+|---|---|
+| `preservation_status` | captured |
+| `original_url` | [Source](https://images.nvidia.com/content/pdf/NVIDIA-Frontier-AI-Risk-Assessment.pdf) |
+| `final_url` | [Source](https://images.nvidia.com/content/pdf/NVIDIA-Frontier-AI-Risk-Assessment.pdf) |
+| `retrieved_at` | 2026-11-14T17:54:09Z |
+| `attempted_at` | 2026-11-14T17:54:09Z |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No checked capture-specific archive was available in this bounded round; local bytes and the exact primary version URL are retained. Independent archival preservation is not claimed. |
+| `sha256` | 8c6aade8b0cff8797f481715cf3dc512171299790031f921c00ae60f53d0077b |
+| `byte_length` | 638458 |
+| `mime_type` | application/pdf |
+| `published_on` | Not recorded / unavailable |
+| `version_claim` | Cover: Applicable from August 2025; no publication day printed in inspected document. |
+| `locator_basis` | PDF viewer pages 1–15; no printed page numbers. |
+| `capture_path` | .source-captures/synthesis-8c6aade8b0cff8797f481715cf3dc512171299790031f921c00ae60f53d0077b.pdf |
+
+<a id="r3_provider_03"></a>
+### r3_provider_03
+
+**Source:** `meta_advancedaiscalingframeworkv2_2026`. **Theme:** provider_implementation. **Reading:** Selected sections. **Coverage effect:** `scoped_review`.
+
+**Edition match:** `same_record`. CoverVersion 2 and AppendixII explicitly identifies 7 April 2026 Advanced AI Scaling Frameworkv 2.0, matching canonical record. Do not treat later retrieval date as a later policy edition.
+
+**Inspected scope:** PDF pp. 1–17,25–28,39–44: executive summary, scope, complete governance/transparency/accountability sections, outcomes/threat-model inclusion criteria and risk thresholds, evaluation environment and elicitation/deployment-context passages, first cybersecurity threshold example, benefits assessment, future work, terminology and change log. Risk-domain scenarios and detailed domain-specific implementation pp. 18–24,29–38 not read in full.
+
+**Locators:** §§1–2 pp. 3–11: scope/governance/preparedness reports/accountability; §§3.1–3.3 pp. 12–17; Table 1 p. 15; §§4.1–4.2 pp. 25–28; §4.3/§5 pp. 39–40; AppendixI pp. 41–43; AppendixII change log p. 44
+
+**Visual check:** No rendered visual inspection. Table 1 and terminology read in PDF text extraction.
+
+**Findings:**
+
+- Version 2 defines pre-mitigation risk tiers and conditions deployment/development on mitigations. Critical and high models may deploy only with sufficient defined, implemented and validated mitigations reducing risk to moderate or lower; §3.3 further conditions continued development of critical models. These are declared conditions, not evidence a particular model satisfied them.
+- AppendixII describes two coupled changes: primary threshold language moves from uniquely enable to substantially contribute; tier labels move from Stop/Do not release to Develop with Mitigations/Deploy with mitigations. The new criterion and response must be read together, without assuming a uniform tightening or weakening.
+- Concrete accountability mechanisms include named Chief AI Officer/Director of Alignment and Risk responsibility, risk review, preparedness-report contents/update triggers and incident response. Some reporting/whistleblower protocols are still described as developing or future commitments; preserve that tense.
+- Framework scope is deliberately narrower than all serious harm: inclusion requires plausibility, catastrophic scale, net-new outcome and instantaneous or irremediable impact. It acknowledges gradual or partly remediable catastrophic harms are handled outside the Framework. Implementation text acknowledges unknown unknowns, deployment-dependent elicitation and incomplete evaluation science.
+
+**Counterevidence / alternative:** The broader material-contribution trigger and more explicit accountability/reporting are positive institutional mechanisms; mitigation-based continuation is conditional, not a demonstrated loss of restraint. Conversely the scope excludes some serious harms and self-reported validation does not prove external effectiveness.
+
+**Limits:** Not a full 44-page reading, independent adherence audit or verification of a released model’s preparedness report. Prior policy was not independently retrieved; comparisons with v1 are attributed to the inspected v2 change log. Institutional and causal efficacy remains untested here.
+
+**Replication:** `not_performed`. **Numerical check:** Source comparison only: v2 Table 1/§3.3/AppendixII checked for consistency of threshold/response language. Compute threshold 10^26 is a definitional trigger, not measured risk or a safety result. No experiments reproduced.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C65](claims.md#c65)
+
+**Relevance rationale:** Adds precise current-edition process and scope evidence while preventing a simple tightening/loosening narrative from replacing comparative evaluation.
+
+**Next check:** If the policy change becomes a leading normative argument, retrieve and compare exact v1 bytes plus dated preparedness reports and actual risk decisions. For now report v2 conditions and scope, attributing old/new labels to its change log; leave the overall strengthening/weakening interpretation open.
+
+| Capture field | Value |
+|---|---|
+| `preservation_status` | captured |
+| `original_url` | [Source](https://ai.meta.com/static-resource/Meta_Advanced-AI-Scaling-Framework-v2/) |
+| `final_url` | [Source](https://ai.meta.com/static-resource/Meta_Advanced-AI-Scaling-Framework-v2/) |
+| `retrieved_at` | 2026-11-14T17:54:09Z |
+| `attempted_at` | 2026-11-14T17:54:09Z |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No checked capture-specific archive was available in this bounded round; local bytes and the exact primary version URL are retained. Independent archival preservation is not claimed. |
+| `sha256` | d87aa9bf00456ec747e80b84216f9f2ffc427c1e98541f8b3c8f7f52c13c7b6a |
+| `byte_length` | 668289 |
+| `mime_type` | application/pdf |
+| `published_on` | 2026-04-07 |
+| `version_claim` | Version 2; AppendixII:7 April 2026 Advanced AI Scaling Frameworkv 2.0. |
+| `locator_basis` | PDF viewer pages 1–44; printed page numbers 2–44, cover counted as 1. |
+| `capture_path` | .source-captures/synthesis-d87aa9bf00456ec747e80b84216f9f2ffc427c1e98541f8b3c8f7f52c13c7b6a.pdf |
+
+<a id="r3_provider_04"></a>
+### r3_provider_04
+
+**Source:** `metr_commonelementsfrontier_2024`. **Theme:** provider_implementation. **Reading:** Selected sections. **Coverage effect:** `scoped_review`.
+
+**Edition match:** `same_record`. Issuer static PDF explicitly titled Common Elements of Frontier AI Safety Policies and dated August 2024 on cover. This resolves a historical-edition route without replacing the 2024 work with the later living page.
+
+**Inspected scope:** PDF pp. 1–5,21–22: cover, summary, introduction, common-components list and initial capability-threshold excerpts, plus policy-updating excerpts. Other pages and underlying three policy editions not fully read.
+
+**Locators:** Cover:August 2024; Summary/introduction pp. 2–3; Common Components and threshold excerpts pp. 4–5; Updating Policies over Time, concluding excerpts pp. 21–22
+
+**Visual check:** No rendered visual checks; selected PDF text inspected.
+
+**Findings:**
+
+- The original August 2024 report compares three existing detailed safety frameworks and distinguishes that set from sixteen Seoul-commitment signatories.
+- The common-component inventory supplies a useful descriptive vocabulary: threat models, weight security, deployment mitigations, stopping conditions, capability elicitation, evaluation timing, accountability and policy updates. Its quoted commitments do not establish implementation or effects.
+- Updating-policy excerpts themselves describe exploratory/preliminary estimates and possible revisions; these are historical policy statements, not a stable 2026 consensus.
+
+**Counterevidence / alternative:** Common stated mechanisms can be substantive design commitments, but their presence and the descriptive comparison do not establish compliance, common risk tolerance or externally demonstrated effectiveness.
+
+**Limits:** PDF extractor reported a recoverable xref warning; selected text was readable, but visual fidelity of all 22 pages was not checked. This is a descriptive comparison of three published policies and quoted commitments, not their operational execution. Underlying policy versions not independently rechecked.
+
+**Replication:** `not_performed`. **Numerical check:** Denominator check: summary/introduction name three policies—Anthropic, OpenAI and Google DeepMind. Sixteen Seoul signatories are a separate group, not sixteen analyzed policies. No experiment reproduced.
+
+**Relevance:** `background`. **Claim links:** None; no claim support forced.
+
+**Relevance rationale:** Historical comparator and methods vocabulary; it need not become independent support for provider compliance or the new claims. It also establishes that later twelve-policy coding cannot be attributed to the 2024 edition.
+
+**Next check:** Keep historicalAugust 2024 PDF for claims about that review. Use later page only as a related edition with its own date, denominator and caveats; no new claim is required merely to assign this record a background role.
+
+| Capture field | Value |
+|---|---|
+| `preservation_status` | captured |
+| `original_url` | [Source](https://metr.org/assets/common_elements_of_frontier_ai_safety_policies.pdf) |
+| `final_url` | [Source](https://metr.org/assets/common_elements_of_frontier_ai_safety_policies.pdf) |
+| `retrieved_at` | 2026-11-14T17:57:47Z |
+| `attempted_at` | 2026-11-14T17:57:42Z |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No checked capture-specific archive was available in this bounded round; local bytes and the exact primary version URL are retained. Independent archival preservation is not claimed. |
+| `sha256` | 38560378b8dbe7be72a95296c452db2820aa08e9cf62c85ea8500e2388b26486 |
+| `byte_length` | 991761 |
+| `mime_type` | application/pdf |
+| `published_on` | 2024-08 |
+| `version_claim` | Cover:August 2024. |
+| `locator_basis` | PDF viewer pages equal printed pages 1–22, with cover counted as 1. |
+| `capture_path` | .source-captures/synthesis-38560378b8dbe7be72a95296c452db2820aa08e9cf62c85ea8500e2388b26486.pdf |
+
+<a id="r3_provider_05"></a>
+### r3_provider_05
+
+**Source:** `metr_commonelementsfrontier_2024`. **Theme:** provider_implementation. **Reading:** Selected sections. **Coverage effect:** `scoped_review`.
+
+**Edition match:** `related_edition`. Living issuer page explicitly labels 16 December 2025 and says original report wasAugust 2024. Twelve-policy expansion and regulatory guidance belong to this later edition, not the canonical 2024 snapshot.
+
+**Inspected scope:** Living page header/date, Summary, Introduction, common-element inventory/Table 1, opening Capability Thresholds excerpts and Table 2, Conclusion and footnotes 1–4. Remaining per-element excerpts and cited sources not fully read.
+
+**Locators:** Header/date and Summary:December 16,2025; Introduction/Table 1:presence of safety elements across 12 policies; Table 2:covered threat models; Conclusion; footnotes 1–4
+
+**Visual check:** No rendered visual checks; visible HTML parsed to text for selected sections.
+
+**Findings:**
+
+- The later page expands the comparison to 12 policies and expressly distinguishes the originalAugust 2024 report from thisDecember 2025 version.
+- Footnote 1 says descriptive, not prescriptive, and warns missing policy elements need not imply regulatory noncompliance: applicability, effective dates, omitted relevant text and separate compliance documentation are alternatives.
+- The page still quotes Meta’s earlier Frontier AI Framework; the separately inspectedApril 2026 v2 is later and has different scope/threshold/governance text. This is a concrete version boundary, not proof the entire living comparison has been recoded.
+
+**Counterevidence / alternative:** Published comparisons improve navigability and expose mechanisms, but some omissions can reflect document scope or coding rather than absence of practice or legal compliance.
+
+**Limits:** Mutable page as retrieved 14 November 2026 still labelsDecember 2025; this does not certify that provider policies remain current. The page does not incorporate MetaApril 2026 v2 in its listed Meta title/quoted first-framework text. Presence coding was not independently rerun.
+
+**Replication:** `not_performed`. **Numerical check:** Version/denominator comparison: later page lists 12 policies, versus 3 inAugust 2024. No twelve-policy rate was newly recomputed or used to judge compliance.
+
+**Relevance:** `background`. **Claim links:** None; no claim support forced.
+
+**Relevance rationale:** Useful later comparative context with explicit missing-information caution; related-edition status prevents inflation of the 2024 reading coverage.
+
+**Next check:** Preserve the two editions separately. If a current twelve-policy comparison matters, recheck exact provider editions and applicable law rather than treating the live page as a contemporaneous compliance audit.
+
+| Capture field | Value |
+|---|---|
+| `preservation_status` | captured |
+| `original_url` | [Source](https://metr.org/common-elements) |
+| `final_url` | [Source](https://metr.org/common-elements) |
+| `retrieved_at` | 2026-11-14T17:54:09Z |
+| `attempted_at` | 2026-11-14T17:54:09Z |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No checked capture-specific archive was available in this bounded round; local bytes and the exact primary version URL are retained. Independent archival preservation is not claimed. |
+| `sha256` | a684be69aa2b86e50f8884313bcc7e3e207e99f651642446fdc5cd206907fab3 |
+| `byte_length` | 342380 |
+| `mime_type` | text/html |
+| `published_on` | 2025-12-16 |
+| `version_claim` | Page date:December 16,2025; explicitly described asDecember 2025 version. |
+| `locator_basis` | HTML heading/table/footnote names; no PDF page numbers. |
+| `capture_path` | .source-captures/synthesis-a684be69aa2b86e50f8884313bcc7e3e207e99f651642446fdc5cd206907fab3.html |
+
+<a id="r3_provider_06"></a>
+### r3_provider_06
+
+**Source:** `anthropic_frontiercomplianceframework_2026`. **Theme:** provider_implementation. **Reading:** Inaccessible. **Coverage effect:** `none`.
+
+**Edition match:** `uncertain`. CanonicalMarch 2026 edition cannot be established from the exact resource endpoint: HTTP 200 returned only a Trust Center application shell, visible text Anthropic Trust Center.
+
+**Inspected scope:** Attempted exact issuer resource endpoint; no underlying framework text or methods/appendices read.
+
+**Locators:** Requested March2026 framework body at the canonical trust-resource endpoint; only an Anthropic Trust Center shell was returned, so no framework locator was inspected.
+
+**Visual check:** None; no source body available.
+
+**Findings:**
+
+No source findings; material was inaccessible.
+
+**Counterevidence / alternative:** An access failure is not evidence that the framework does not exist, lacks safeguards or is not implemented.
+
+**Limits:** Exact URL returned 7166 bytes of HTML application shell, not the framework. The shell response hash/bytes are recorded only in private retrieval diagnostics; neither source reading nor framework preservation is claimed. March 2026 date/content and distinction from RSP remain unverified.
+
+**Replication:** `not_performed`. **Numerical check:** None.
+
+**Relevance:** `unresolved`. **Claim links:** None; no claim support forced.
+
+**Relevance rationale:** Accounts for an assigned unresolved framework without promoting issuer marketing/metadata or a shell to source evidence.
+
+**Next check:** Obtain the exactMarch 2026 framework download from issuer or an appropriately accessible copy; preserve edition identity before judging substance. Keep the record unresolved rather than inferring content from title, FAQ or adjacent RSP.
+
+| Capture field | Value |
+|---|---|
+| `preservation_status` | unavailable |
+| `original_url` | [Source](https://trust.anthropic.com/resources?name=anthropic-frontier-compliance-framework&s=eorilovp4wxk38nxbi7k3) |
+| `final_url` | [Source](https://trust.anthropic.com/resources?name=anthropic-frontier-compliance-framework&s=eorilovp4wxk38nxbi7k3) |
+| `retrieved_at` | Not recorded / unavailable |
+| `attempted_at` | 2026-11-14T17:54:09Z |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No readable framework or checked capture-specific archive obtained. The retrieved TrustCenter HTML shell is retained privately for diagnostics and is not a capture of the framework. |
+| `sha256` | Not recorded / unavailable |
+| `byte_length` | Not recorded / unavailable |
+| `mime_type` | Not recorded / unavailable |
+| `published_on` | Not recorded / unavailable |
+| `version_claim` | Not recorded / unavailable |
+| `locator_basis` | No readable framework body. |
+| `capture_path` | Not recorded / unavailable |

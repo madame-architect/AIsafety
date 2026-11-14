@@ -30,18 +30,18 @@ The supplied prior AI-assisted audit logs scoped central-claim checks for **105 
 
 [Reading events and thematic decisions](rounds.md) preserve fresh inspection, exact versions, captures, contrary evidence and limitations separately from the inherited CSV. Full-text reading is not experimental replication, and reading a related or uncertain edition does not increase canonical-record coverage.
 
-Later rounds log **34 reading events** for **28 unique keys**. **7 keys** have eligible complete-record-text events, including **6** that lacked an inherited full-text label. These remain recorded reading claims, not independent certification of every figure, supplement or source finding.
+Later rounds log **69 reading events** for **54 unique keys**. **12 keys** have eligible complete-record-text events, including **10** that lacked an inherited full-text label. These remain recorded reading claims, not independent certification of every figure, supplement or source finding.
 
 | Layer | Full text | Selected sections | Abstract only | Metadata only | Inaccessible |
 |---|---:|---:|---:|---:|---:|
-| Fresh reading events (representations may repeat a key) | 9 | 20 | 1 | 1 | 3 |
-| Combined best same-record inspection | 111 | 161 | 7 | 6 | 1 |
+| Fresh reading events (representations may repeat a key) | 15 | 44 | 4 | 1 | 5 |
+| Combined best same-record inspection | 115 | 158 | 6 | 6 | 1 |
 
-**175 records** remain without a full-text label after eligible new reading. Combined inspection retains earlier full-text labels without recertifying them; a later selected-section check neither erases nor independently confirms an earlier complete read. The reading event records replication and numerical checking separately. Missing local captures are reported by the validator; ordinary CI does not claim byte verification of absent private files.
+**171 records** remain without a full-text label after eligible new reading. Combined inspection retains earlier full-text labels without recertifying them; a later selected-section check neither erases nor independently confirms an earlier complete read. The reading event records replication and numerical checking separately. Missing local captures are reported by the validator; ordinary CI does not claim byte verification of absent private files.
 
 ## Argument coverage
 
-The current map has **45 claims** linked to **83 unique bibliography keys**. The other **203 keys** are not mapped as claim evidence. Of these, **2** have an explicit non-claim relevance decision in later rounds and **201** retain an unresolved role. An unmapped record is neither excluded nor evidence for a claim. A source may bound or challenge a proposition; inclusion is not corroboration. Shared study families are listed in the [claim map](claims.md).
+The current map has **62 claims** linked to **106 unique bibliography keys**. The other **180 keys** are not mapped as claim evidence. Of these, **3** have an explicit non-claim relevance decision in later rounds and **177** retain an unresolved role. An unmapped record is neither excluded nor evidence for a claim. A source may bound or challenge a proposition; inclusion is not corroboration. Shared study families are listed in the [claim map](claims.md).
 
 **238 records** have proposed corrections or checks. These are review leads, not established errors. Current adjudications and publication-critical holds belong in the reconciliation note and claim map; inherited notes are retained with that boundary.
 
@@ -66,14 +66,14 @@ Use the CSV for full source notes. Links below identify explicit claim roles; al
 | `aisi_year_2024` | Full text | Logged; see CSV scope | Unresolved | — | — |
 | `amazon_fortigateaiaugmented_2026` | Full text | Logged; see CSV scope | [C22](claims.md#c22) | — | — |
 | `amazon_frontiermodelsafetyframework_2025` | Selected sections | Outside 105-record register | Unresolved | — | — |
-| `ameisen_circuittracingrevealing_2025` | Selected sections | Outside 105-record register | Unresolved | — | — |
+| `ameisen_circuittracingrevealing_2025` | Selected sections | Outside 105-record register | [C51](claims.md#c51) | — | [r3_circuits_01](rounds.md#r3_circuits_01) |
 | `amironesei_aria_pilot_2025` | Selected sections | Outside 105-record register | [C45](claims.md#c45) | Later methods/appendix checking distinguishes testing sessions, dialogues and annotation judgments. Main text reports 52 violations in267 dialogues while Appendix C Table7 reports49; no affected violation rate is adopted. CoRIx characterizes the pilot applications rather than calibrating cross-system ranks. See C45 and r2_sociotechnical_03. | [r2_sociotechnical_03](rounds.md#r2_sociotechnical_03) |
 | `anderljung_frontierairegulation_2023` | Selected sections | Outside 105-record register | Unresolved | — | — |
 | `andriushchenko_agentharm_2025` | Selected sections | Outside 105-record register | Unresolved | — | — |
 | `anil_manyshotjailbreaking_2024` | Selected sections | Outside 105-record register | [C05](claims.md#c05) | — | — |
 | `ankner_critiqueoutloud_2024` | Selected sections | Outside 105-record register | Unresolved | — | — |
 | `anthropic_anthropicsresponsible_2026` | Full text | Logged; see CSV scope | Unresolved | — | — |
-| `anthropic_frontiercomplianceframework_2026` | Metadata only | Outside 105-record register | Unresolved | — | — |
+| `anthropic_frontiercomplianceframework_2026` | Metadata only | Outside 105-record register | Unresolved | 2026-11-14 mechanistic/fairness/policy round: Requested exact framework URL delivered only a Trust Center application shell. Framework body and March2026 edition remain inaccessible/unverified; no source finding is inferred. r3_provider_06. | [r3_provider_06](rounds.md#r3_provider_06) |
 | `anthropic_responsiblescaling_2024` | Full text | Logged; see CSV scope | Unresolved | — | — |
 | `anthropic_responsiblescaling_2025` | Full text | Logged; see CSV scope | Unresolved | — | — |
 | `anthropic_responsiblescalingv32_2026` | Full text | Logged; see CSV scope | Unresolved | — | — |
@@ -83,7 +83,7 @@ Use the CSV for full source notes. Links below identify explicit claim roles; al
 | `barbero_extractingalignment_2025` | Selected sections | Outside 105-record register | Unresolved | — | — |
 | `barrett_assessingconfidence_2025` | Selected sections | Outside 105-record register | Unresolved | — | — |
 | `barrett_quantitativecyberrisk_2025` | Full text | Logged; see CSV scope | [C25](claims.md#c25) | — | — |
-| `bender_stochasticparrots_2021` | Full text | Logged; see CSV scope | Unresolved | — | — |
+| `bender_stochasticparrots_2021` | Full text | Logged; see CSV scope | background | — | [r3_fairness_05](rounds.md#r3_fairness_05) |
 | `bengio_internationalsafety_2026` | Selected sections | Outside 105-record register | Unresolved | — | — |
 | `bengio_managingextremeairisks_2024` | Selected sections | Outside 105-record register | Unresolved | — | — |
 | `benton_sabotageevaluations_2024` | Selected sections | Outside 105-record register | Unresolved | — | — |
@@ -92,7 +92,7 @@ Use the CSV for full source notes. Links below identify explicit claim roles; al
 | `bis_artificialintelligence_2025` | Selected sections | Outside 105-record register | Unresolved | The supplied correction distinguishes Diffusion Rule nonenforcement from formal legal status. GAO May12,2026 and the Aug14,2026 plan support the last verified formal position; an exhaustive current-status determination is not claimed. See reconciliation.md. | — |
 | `bis_establishmentreporting_2024` | Selected sections | Outside 105-record register | Unresolved | The supplied correction records historical/withdrawn proposal status. Fresh RIN0694-AJ55 text confirms withdrawal12/16/2025; its URL now returns PublicationID2026 rather than a frozen202510 edition. See reconciliation.md. | — |
 | `bloomfield_assurancesystemsdependabil_2024` | Selected sections | Outside 105-record register | Unresolved | — | — |
-| `braun_identifyingfunctionally_2024` | Selected sections | Outside 105-record register | Unresolved | — | — |
+| `braun_identifyingfunctionally_2024` | Selected sections | Outside 105-record register | [C50](claims.md#c50) | 2026-11-14 mechanistic/fairness/policy round: Later selected arXivv2 methods/appendices separate output fidelity from internal pathway fidelity; downstream reconstruction mitigates divergence. Automatic interpretation is sampled, not comprehensive human validation. C50; r3_mechvalidation_03. | [r3_mechvalidation_03](rounds.md#r3_mechvalidation_03) |
 | `brundage_frontierauditingrigorous_2026` | Selected sections | Outside 105-record register | Unresolved | — | — |
 | `buhl_safetycasesfrontier_2024` | Selected sections | Outside 105-record register | Unresolved | — | — |
 | `bullwinkel_triggerhaystackextracting_2026` | Selected sections | Outside 105-record register | Unresolved | — | — |
@@ -117,7 +117,7 @@ Use the CSV for full source notes. Links below identify explicit claim roles; al
 | `cset_incidentskeycomponents_2025` | Selected sections | Outside 105-record register | Unresolved | — | — |
 | `cui_persistentbackdoor_2025` | Selected sections | Outside 105-record register | Unresolved | — | — |
 | `cunningham_constitutionalclassifiers_2026` | Selected sections | Outside 105-record register | [C06](claims.md#c06) | — | — |
-| `cunningham_sparseautoencoders_2024` | Selected sections | Outside 105-record register | Unresolved | — | — |
+| `cunningham_sparseautoencoders_2024` | Selected sections | Outside 105-record register | [C49](claims.md#c49) | 2026-11-14 mechanistic/fairness/policy round: Complete pinned arXivv3 reading supports selected IOI counterfactual patching and documents incomplete reconstruction/selected examples. The ICLR2024 proceedings identity remains unverified; no experiments rerun. C49; r3_mechvalidation_02. | [r3_mechvalidation_02](rounds.md#r3_mechvalidation_02) |
 | `dai_saferlhfsafe_2024` | Selected sections | Outside 105-record register | Unresolved | — | — |
 | `davies_boundarypointjailbreaking_2026` | Selected sections | Outside 105-record register | Unresolved | — | — |
 | `deepmind_frontiersafetyv1_2024` | Full text | Logged; see CSV scope | Unresolved | — | — |
@@ -127,7 +127,7 @@ Use the CSV for full source notes. Links below identify explicit claim roles; al
 | `dsit_tacklingsecurityrisks_2025` | Full text | Logged; see CSV scope | Unresolved | — | — |
 | `du_textualunlearning_2025` | Selected sections | Outside 105-record register | Unresolved | — | — |
 | `dubois_skewedscore_2025` | Selected sections | Outside 105-record register | Unresolved | — | — |
-| `eac_complianceplanomb_2024` | Full text | Logged; see CSV scope | Unresolved | — | — |
+| `eac_complianceplanomb_2024` | Full text | Logged; see CSV scope | [C60](claims.md#c60) | — | [r3_public_04](rounds.md#r3_public_04) |
 | `ec_approachartificial_nd` | Full text | Logged; see CSV scope | Unresolved | The supplied correction distinguishes this Commission information/guidance page from statutory legal authority. Current legal_status is not_applicable; see reconciliation.md. | — |
 | `ec_gpai_codepractice_final_2025` | Full text | Logged; see CSV scope | [C17](claims.md#c17) | The supplied correction codes the GPAI Code nonbinding and identifies its voluntary compliance-tool role. Signing or publishing a code does not prove compliance; see C17 and reconciliation.md. | — |
 | `ec_gpai_trainingcontenttemplate_2025` | Selected sections | Outside 105-record register | [C17](claims.md#c17) | The supplied correction separates the explanatory notice from mandatory use of the linked template under Article53(1)(d). Fresh Commission FAQ text supports that linkage. It is not a new duty created by the notice; see reconciliation.md. | — |
@@ -135,7 +135,7 @@ Use the CSV for full source notes. Links below identify explicit claim roles; al
 | `ec_scientificpanel_2025_454` | Full text | Logged; see CSV scope | Unresolved | This record was outside the specific legal recoding changes in the supplied patch. Existing status/application labels remain inherited and require dated review before current-law use. See reconciliation.md. | — |
 | `engels_scalinglawsscalable_2025` | Selected sections | Outside 105-record register | Unresolved | — | — |
 | `eu_regulationeu2024_2024` | Selected sections | Outside 105-record register | Unresolved | This record was outside the specific legal recoding changes in the supplied patch. Existing status/application labels remain inherited and require dated review before current-law use. See reconciliation.md. | — |
-| `exim_complianceplanomb_2024` | Selected sections | Outside 105-record register | Unresolved | — | — |
+| `exim_complianceplanomb_2024` | Selected sections | Outside 105-record register | [C60](claims.md#c60) | — | [r3_public_01](rounds.md#r3_public_01) |
 | `federalregister_safesecuretrustworthy_2023` | Selected sections | Outside 105-record register | Unresolved | The supplied correction sets historical status for revoked EO14110. This run checked EO14148 section2(ggg); no compliance or broader current-law determination is claimed. See reconciliation.md. | — |
 | `fmf_bioworkstream_nd` | Full text | Logged; see CSV scope | Unresolved | — | — |
 | `fmf_capabilityassessments_2025` | Selected sections | Outside 105-record register | Unresolved | — | — |
@@ -174,13 +174,13 @@ Use the CSV for full source notes. Links below identify explicit claim roles; al
 | `heap_sparseautoencoders_2025` | Full text | Logged; see CSV scope | [C13](claims.md#c13) | — | — |
 | `heim_trainingcomputethresholds_2024` | Selected sections | Outside 105-record register | Unresolved | — | — |
 | `hilton_safetycasesscalable_2025` | Full text | Logged; see CSV scope | Unresolved | — | — |
-| `homewood_thirdpartycompliance_2025` | Selected sections | Outside 105-record register | Unresolved | — | — |
+| `homewood_thirdpartycompliance_2025` | Selected sections | Outside 105-record register | [C41](claims.md#c41), [C55](claims.md#c55) | 2026-11-14 mechanistic/fairness/policy round: Selected arXivv2 review distinguishes adherence from framework/system adequacy. Mock control/maturity tables are constructed examples; actual review findings and follow-up remain needed. C55; r3_audits_03. | [r3_audits_03](rounds.md#r3_audits_03) |
 | `hsu_safelorasilver_2024` | Selected sections | Outside 105-record register | Unresolved | — | — |
 | `hu_realignsafetyaligning_2026` | Selected sections | Outside 105-record register | Unresolved | — | — |
 | `hua_steeringevaluation_2025` | Selected sections | Outside 105-record register | Unresolved | — | — |
-| `huang_collectiveconstitutional_2024` | Selected sections | Outside 105-record register | Unresolved | — | — |
+| `huang_collectiveconstitutional_2024` | Selected sections | Outside 105-record register | [C57](claims.md#c57) | 2026-11-14 mechanistic/fairness/policy round: Complete related arXivv1 manuscript reading preserves lower BBQ bias and lower OpinionQA alignment together. No universal public-consent, direct adherence or capability-equivalence claim. Table1 Elo labeling/interpretation needs clarification before quantitative reuse; no canonical full-depth upgrade. C57; r3_fairness_01. | [r3_fairness_01](rounds.md#r3_fairness_01) |
 | `huang_endlessjailbreaksbijection_2024` | Full text | Logged; see CSV scope | Unresolved | — | — |
-| `huang_trustllm_2024` | Selected sections | Outside 105-record register | background | — | [r2_sociotechnical_06](rounds.md#r2_sociotechnical_06) |
+| `huang_trustllm_2024` | Selected sections | Outside 105-record register | [C59](claims.md#c59) | 2026-11-14 mechanistic/fairness/policy round: Later final-PMLR AppendixF review distinguishes stereotype, salary-association and subjective-choice-neutrality constructs. Table25 category counts/aggregation need clarification; affected totals are omitted rather than corrected by assumption. C59; r3_fairness_03. | [r2_sociotechnical_06](rounds.md#r2_sociotechnical_06), [r3_fairness_03](rounds.md#r3_fairness_03) |
 | `hubinger_sleeperagentstraining_2024` | Selected sections | Outside 105-record register | Unresolved | — | — |
 | `isoiec_42001_2023` | Metadata only | Outside 105-record register | Unresolved | — | — |
 | `isoiec_42006_2025` | Metadata only | Outside 105-record register | [C17](claims.md#c17) | The supplied correction codes legal_status not_applicable for this certification-body standard. Catalog/preview inspection does not verify licensed normative clauses or a statutory duty; see C17 and reconciliation.md. | — |
@@ -189,7 +189,7 @@ Use the CSV for full source notes. Links below identify explicit claim roles; al
 | `joshi_robustevaluationunlearning_2024` | Full text | Logged; see CSV scope | [C04](claims.md#c04) | — | — |
 | `kamath_tracingattentioncomputatio_2025` | Full text | Logged; see CSV scope | [C13](claims.md#c13) | — | — |
 | `kapoor_aiagentsmatter_2024` | Selected sections | Outside 105-record register | [C43](claims.md#c43) | — | [r2_sociotechnical_02](rounds.md#r2_sociotechnical_02) |
-| `karvonen_measuringprogressdictionar_2024` | Selected sections | Outside 105-record register | Unresolved | — | — |
+| `karvonen_measuringprogressdictionar_2024` | Selected sections | Outside 105-record register | [C48](claims.md#c48) | 2026-11-14 mechanistic/fairness/policy round: Later complete arXivv2 reading adds positive board-structure recovery plus trained/random and positional-shortcut controls. Table1/Table4 aggregation/selection equivalence is unresolved, not an established error; no headline reconstruction number is used. C48; r3_mechvalidation_01. | [r3_mechvalidation_01](rounds.md#r3_mechvalidation_01) |
 | `kenton_scalableoversightweak_2024` | Full text | Logged; see CSV scope | [C11](claims.md#c11), [C12](claims.md#c12) | — | — |
 | `khan_debatingmorepersuasive_2024` | Full text | Logged; see CSV scope | [C11](claims.md#c11), [C12](claims.md#c12) | — | — |
 | `kirk_sabotageaisafetyresearch_2026` | Selected sections | Outside 105-record register | [C14](claims.md#c14) | — | — |
@@ -197,7 +197,7 @@ Use the CSV for full source notes. Links below identify explicit claim roles; al
 | `kressel_safeai_2025` | Selected sections | Outside 105-record register | Unresolved | — | — |
 | `kutasov_evaluatingsabotage_2025` | Selected sections | Outside 105-record register | Unresolved | — | — |
 | `lambert_rewardbenchevaluating_2024` | Selected sections | Outside 105-record register | Unresolved | — | — |
-| `lan_sparseautoencoders_2024` | Selected sections | Outside 105-record register | Unresolved | — | — |
+| `lan_sparseautoencoders_2024` | Selected sections | Outside 105-record register | [C53](claims.md#c53) | — | [r3_circuits_04](rounds.md#r3_circuits_04), [r3_circuits_07](rounds.md#r3_circuits_07) |
 | `lang_debatehelpsweak_2025` | Full text | Logged; see CSV scope | [C28](claims.md#c28), [C29](claims.md#c29) | The newly retained arXiv v1 has9 PDF pages, while the inherited reading description names17. This run checked selected methods/results and does not recertify that earlier full-text label or infer an error without the earlier bytes. Training findings retain task/model-gap/ensemble limits. See C28–C29 and r2_oversight_03. | [r2_oversight_03](rounds.md#r2_oversight_03) |
 | `lee_constructingsafety_2026` | Selected sections | Outside 105-record register | Unresolved | — | — |
 | `li_backdoorllmcomprehensive_2024` | Selected sections | Outside 105-record register | Unresolved | — | — |
@@ -205,21 +205,21 @@ Use the CSV for full source notes. Links below identify explicit claim roles; al
 | `li_wmdpbenchmarkmeasuring_2024` | Selected sections | Outside 105-record register | [C04](claims.md#c04) | — | — |
 | `liang_helm_2023` | Selected sections | Outside 105-record register | [C46](claims.md#c46) | — | [r2_sociotechnical_04](rounds.md#r2_sociotechnical_04) |
 | `lin_artemispenetration_2026` | Full text | Logged; see CSV scope | [C21](claims.md#c21) | Later v2 checking confirms the scoped comparison and corrects locators: Cybench is Table2/section3.3, costs section5.4, and human attack-graph design Appendix E opening. Table3/section6 disagree on TinyPilot hint levels, which are omitted. Final OpenReview access remains blocked; no venue upgrade. See C21 and r2_claimchecks_03–04. | [r2_claimchecks_03](rounds.md#r2_claimchecks_03), [r2_claimchecks_04](rounds.md#r2_claimchecks_04) |
-| `lindsey_biology_2025` | Selected sections | Outside 105-record register | Unresolved | — | — |
+| `lindsey_biology_2025` | Selected sections | Outside 105-record register | [C51](claims.md#c51) | — | [r3_circuits_02](rounds.md#r3_circuits_02) |
 | `liu_agentbench_2023` | Selected sections | Outside 105-record register | Unresolved | — | — |
 | `liu_promptinjectionattacks_2025` | Full text | Logged; see CSV scope | [C07](claims.md#c07) | The supplied correction package is integrated, preserving this citation key and identifying the USENIX2024 Liu paper/arXiv2310.12815. The unrelated StruQ identifier/abstract are removed. Inherited full-text depth refers to the intended proceedings paper, not StruQ or the expanded preprint; see C07 and reconciliation.md. | — |
 | `liu_rethinkingmachineunlearnin_2024` | Selected sections | Outside 105-record register | [C04](claims.md#c04) | — | — |
-| `longpre_inhouseevaluation_2025` | Selected sections | Outside 105-record register | Unresolved | — | — |
+| `longpre_inhouseevaluation_2025` | Selected sections | Outside 105-record register | [C38](claims.md#c38), [C39](claims.md#c39), [C40](claims.md#c40) | 2026-11-14 mechanistic/fairness/policy round: Deferred final-PMLR paper now receives scoped substantive review. Concrete reporting/access/protection proposals are preserved; illustrative report cards are counterfactual, not deployed outcomes. Its noncontractual third-party definition differs from other audit papers. C38–C40; r3_audits_01. | [r3_audits_01](rounds.md#r3_audits_01) |
 | `longpre_safeharbor_2024` | Selected sections | Outside 105-record register | [C40](claims.md#c40) | — | [r2_institutions_04](rounds.md#r2_institutions_04) |
 | `macdiarmid_naturalemergentmisalignmen_2025` | Selected sections | Outside 105-record register | Unresolved | — | — |
 | `magic_agireadinesspolicy_2024` | Full text | Logged; see CSV scope | Unresolved | — | — |
-| `makelov_principledevaluations_2024` | Selected sections | Outside 105-record register | Unresolved | — | — |
+| `makelov_principledevaluations_2024` | Selected sections | Outside 105-record register | [C49](claims.md#c49), [C50](claims.md#c50) | 2026-11-14 mechanistic/fairness/policy round: Selected v3 methods/appendices distinguish necessity/sufficiency, sparse control and interpretation-consistent effects. Positive task dictionaries and weaker full-distribution SAE controls bound claims in both directions. C49–C50; r3_mechvalidation_04. | [r3_mechvalidation_04](rounds.md#r3_mechvalidation_04) |
 | `maple_jailbreak07methodology_2026` | Selected sections | Outside 105-record register | Unresolved | — | — |
 | `mazeika_harmbenchstandardized_2024` | Selected sections | Outside 105-record register | [C34](claims.md#c34) | Fresh PMLR metadata and selected final-paper methods corroborate the same named study family as harmbench_standardizedevaluation_2024. Exact DOI/alias mapping and edition equivalence remain open; both keys are retained and not counted as independent corroboration. See F01/C34 and r2_safeguards_02–03. | [r2_safeguards_02](rounds.md#r2_safeguards_02) |
 | `mcgregor_preventingrepeatedfailures_2021` | Full text | Logged; see CSV scope | Unresolved | — | — |
 | `meinke_frontiercapablecontext_2024` | Selected sections | Outside 105-record register | Unresolved | — | — |
-| `meta_advancedaiscalingframeworkv2_2026` | Selected sections | Outside 105-record register | Unresolved | — | — |
-| `metr_commonelementsfrontier_2024` | Selected sections | Outside 105-record register | Unresolved | — | — |
+| `meta_advancedaiscalingframeworkv2_2026` | Selected sections | Outside 105-record register | [C65](claims.md#c65) | 2026-11-14 mechanistic/fairness/policy round: Selected exact Apr7,2026 v2 text checked; broader trigger and conditional mitigation-based continuation need clause-specific interpretation. Earlier version not independently captured; no overall strengthened/weakened, adherence or effect verdict. C65; r3_provider_03. | [r3_provider_03](rounds.md#r3_provider_03) |
+| `metr_commonelementsfrontier_2024` | Selected sections | Outside 105-record register | background | — | [r3_provider_04](rounds.md#r3_provider_04), [r3_provider_05](rounds.md#r3_provider_05) |
 | `metr_examplesafetysecurity_2025` | Selected sections | Outside 105-record register | Unresolved | — | — |
 | `metr_timehorizons_2026` | Full text | Logged; see CSV scope | Unresolved | — | — |
 | `mialon_gaia_2023` | Full text | Logged; see CSV scope | Unresolved | — | — |
@@ -230,7 +230,7 @@ Use the CSV for full source notes. Links below identify explicit claim roles; al
 | `mlcommons_ailuminate_2026` | Full text | Logged; see CSV scope | Unresolved | — | — |
 | `mlcommons_ailuminatejailbreakv05_2025` | Full text | Logged; see CSV scope | Unresolved | — | — |
 | `mlcommons_ailuminatev10_2025` | Selected sections | Outside 105-record register | Unresolved | — | — |
-| `mokander_auditinglargelanguagemodels_2024` | Selected sections | Outside 105-record register | Unresolved | — | — |
+| `mokander_auditinglargelanguagemodels_2024` | Selected sections | Outside 105-record register | [C54](claims.md#c54) | 2026-11-14 mechanistic/fairness/policy round: All final-issue narrative, methodology appendix and both figures inspected; bibliography-only pages remain unread. Blueprint is review-/stakeholder-informed, not an implemented complete-audit effect estimate. C54; r3_audits_02. | [r3_audits_02](rounds.md#r3_audits_02) |
 | `murray_mappingbenchmarkdata_2025` | Full text | Logged; see CSV scope | [C25](claims.md#c25) | Use the hypothetical malware-development/deployment step rather than infrastructure-attack shorthand. The strongest elicitation condition covered five selected tasks, not all 40. The estimate is expert judgment, not observed causal uplift; see reconciliation.md. | — |
 | `nasr_scalableextraction_2025` | Selected sections | Outside 105-record register | Unresolved | — | — |
 | `naver_aisafetyframework_2024` | Full text | Logged; see CSV scope | Unresolved | — | — |
@@ -243,7 +243,7 @@ Use the CSV for full source notes. Links below identify explicit claim roles; al
 | `nist_managingmisuserisk_2025_2pd` | Selected sections | Outside 105-record register | Unresolved | — | — |
 | `nist_outlineproposedzero_2025` | Full text | Logged; see CSV scope | Unresolved | — | — |
 | `nist_systemdocumentation_nd` | Inaccessible | Outside 105-record register | Unresolved | — | — |
-| `nvidia_frontierriskassessment_2025` | Full text | Logged; see CSV scope | Unresolved | — | — |
+| `nvidia_frontierriskassessment_2025` | Full text | Logged; see CSV scope | [C64](claims.md#c64) | 2026-11-14 mechanistic/fairness/policy round: Complete15-page recheck retains reported screening/approval/Garak/reassessment mechanisms and August2025 applicability. Table2 is a template, not observed49→5 risk reduction. Publication date and actual product decisions are not verified. C64; r3_provider_02. | [r3_provider_02](rounds.md#r3_provider_02) |
 | `oecd_commonreportingincidents_2025` | Selected sections | Outside 105-record register | Unresolved | — | — |
 | `oecd_dashboardentryhlab_2025` | Full text | Logged; see CSV scope | Unresolved | — | — |
 | `oecd_hiroshimaprocesscode_2025` | Selected sections | Outside 105-record register | Unresolved | — | — |
@@ -252,9 +252,9 @@ Use the CSV for full source notes. Links below identify explicit claim roles; al
 | `oecd_launchespilotmonitor_2024` | Full text | Logged; see CSV scope | Unresolved | — | — |
 | `oecd_trendsincidentshazards_2026` | Selected sections | Outside 105-record register | [C27](claims.md#c27) | — | — |
 | `oecd_wonk_nd` | Full text | Logged; see CSV scope | Unresolved | — | — |
-| `omb_2024federalagency_2024` | Selected sections | Outside 105-record register | Unresolved | — | — |
+| `omb_2024federalagency_2024` | Selected sections | Outside 105-record register | [C62](claims.md#c62) | 2026-11-14 mechanistic/fairness/policy round: Pinned Jan23,2025 README plus exact v2 documentary recount match2133/41/351. Older raw.csv has1757 rows; do not mix artifacts or infer deployed prevalence/compliance from administrative self-report. Programmatic parse is not full narrative reading or experimental replication. C62; r3_public_06–09. | [r3_public_06](rounds.md#r3_public_06), [r3_public_07](rounds.md#r3_public_07), [r3_public_08](rounds.md#r3_public_08), [r3_public_09](rounds.md#r3_public_09) |
 | `omb_m2410_2024` | Selected sections | Outside 105-record register | Unresolved | The supplied correction repairs the official URL and retains superseded status. The prior review identifies rescission/replacement by M25-21; no fresh full-history verification is claimed. See reconciliation.md. | — |
-| `omb_m2521_2025` | Selected sections | Outside 105-record register | Unresolved | This record was outside the specific legal recoding changes in the supplied patch. Existing status/application labels remain inherited and require dated review before current-law use. See reconciliation.md. | — |
+| `omb_m2521_2025` | Selected sections | Outside 105-record register | [C61](claims.md#c61) | This record was outside the specific legal recoding changes in the supplied patch. Existing status/application labels remain inherited and require dated review before current-law use. See reconciliation.md. 2026-11-14 mechanistic/fairness/policy round: Complete April3,2025 text read. High-impact review uses a nondeveloper within the agency, with defined scope, pilots and waivers. Historical normative pathway only; present legal force and actual operation are not recertified. C61; r3_public_02. | [r3_public_02](rounds.md#r3_public_02) |
 | `omb_m2522_2025` | Selected sections | Outside 105-record register | Unresolved | This record was outside the specific legal recoding changes in the supplied patch. Existing status/application labels remain inherited and require dated review before current-law use. See reconciliation.md. | — |
 | `openai_blogupdatingpreparedness_2025` | Full text | Logged; see CSV scope | Unresolved | — | — |
 | `openai_frontiertrainingenvironment_2026` | Full text | Logged; see CSV scope | Unresolved | — | — |
@@ -266,7 +266,7 @@ Use the CSV for full source notes. Links below identify explicit claim roles; al
 | `openai_preparednessv2_2025` | Full text | Logged; see CSV scope | [C19](claims.md#c19) | — | — |
 | `owasp_aitestingguidev1_2025` | Metadata only | Outside 105-record register | Unresolved | — | — |
 | `owasp_llmtop10_2025` | Selected sections | Outside 105-record register | Unresolved | — | — |
-| `paulo_automaticallyinterpreting_2024` | Selected sections | Outside 105-record register | Unresolved | — | — |
+| `paulo_automaticallyinterpreting_2024` | Selected sections | Outside 105-record register | [C52](claims.md#c52) | — | [r3_circuits_03](rounds.md#r3_circuits_03), [r3_circuits_06](rounds.md#r3_circuits_06) |
 | `pavlova_automatedredteaming_2024` | Full text | Logged; see CSV scope | [C33](claims.md#c33) | — | [r2_safeguards_06](rounds.md#r2_safeguards_06) |
 | `perset_developersmanaging_2025` | Selected sections | Outside 105-record register | Unresolved | — | — |
 | `phuong_evaluatingfrontier_2024` | Full text | Logged; see CSV scope | [C02](claims.md#c02) | — | — |
@@ -279,23 +279,23 @@ Use the CSV for full source notes. Links below identify explicit claim roles; al
 | `salvi_conversationalpersuasivene_2025` | Full text | Logged; see CSV scope | [C15](claims.md#c15) | — | — |
 | `samvelyan_rainbowteamingopen_2024` | Selected sections | Outside 105-record register | Unresolved | — | — |
 | `sastry_computingpowergovernance_2024` | Selected sections | Outside 105-record register | Unresolved | — | — |
-| `sba_complianceplanomb_2024` | Full text | Logged; see CSV scope | Unresolved | — | — |
+| `sba_complianceplanomb_2024` | Full text | Logged; see CSV scope | [C60](claims.md#c60) | — | [r3_public_03](rounds.md#r3_public_03) |
 | `scheurer_canstrategicallydeceive_2024` | Selected sections | Outside 105-record register | Unresolved | — | — |
 | `schuett_frontierdevelopers_2024` | Selected sections | Outside 105-record register | Unresolved | — | — |
 | `schuett_surveythresholdsadvanced_2025` | Selected sections | Outside 105-record register | Unresolved | — | — |
 | `sehwag_propensitybench_2026` | Selected sections | Outside 105-record register | Unresolved | — | — |
-| `sharkey_openproblemsmechanistic_2025` | Selected sections | Outside 105-record register | Unresolved | — | — |
+| `sharkey_openproblemsmechanistic_2025` | Selected sections | Outside 105-record register | [C51](claims.md#c51), [C52](claims.md#c52), [C53](claims.md#c53) | — | [r3_circuits_05](rounds.md#r3_circuits_05), [r3_circuits_08](rounds.md#r3_circuits_08) |
 | `sharma_constitutionalclassifiers_2025` | Selected sections | Outside 105-record register | [C06](claims.md#c06) | — | — |
 | `sharma_criticalevaluation_2024` | Selected sections | Outside 105-record register | Unresolved | — | — |
 | `sheshadri_whydosome_2025` | Abstract only | Outside 105-record register | [C14](claims.md#c14) | — | — |
 | `shevlane_modelevaluationextreme_2023` | Selected sections | Outside 105-record register | Unresolved | — | — |
 | `souly_astraunsanctioned_2026` | Full text | Logged; see CSV scope | [C24](claims.md#c24) | The supplied correction is integrated: selected simulated scenarios bound generalization; prompt restrictions differ from live controls and defense_persistence has a bounds link. Original assessments remain. See C24 and reconciliation.md. | — |
 | `souly_poisoningattacksrequire_2025` | Selected sections | Outside 105-record register | [C07](claims.md#c07) | — | — |
-| `statedepartment_complianceplanomb_2024` | Full text | Logged; see CSV scope | Unresolved | — | — |
+| `statedepartment_complianceplanomb_2024` | Full text | Logged; see CSV scope | Unresolved | 2026-11-14 mechanistic/fairness/policy round: New attempt returned a technical-difficulties page rather than the requested PDF. No substantive reading or recertification of inherited depth/findings. r3_public_05. | [r3_public_05](rounds.md#r3_public_05) |
 | `stelling_evaluatingaiproviders_2025` | Abstract only | Outside 105-record register | [C17](claims.md#c17) | — | — |
 | `stix_behindcloseddoors_2025` | Abstract only | Outside 105-record register | Unresolved | — | — |
 | `sudhir_benchmarkscalableoversight_2025` | Selected sections | Outside 105-record register | [C32](claims.md#c32) | — | [r2_oversight_01](rounds.md#r2_oversight_01) |
-| `swamy_minimaximalistapproach_2024` | Abstract only | Outside 105-record register | Unresolved | — | — |
+| `swamy_minimaximalistapproach_2024` | Abstract only | Outside 105-record register | [C58](claims.md#c58) | — | [r3_fairness_02](rounds.md#r3_fairness_02) |
 | `tamirisa_tamperresistantsafeguards_2024` | Selected sections | Outside 105-record register | [C07](claims.md#c07) | — | — |
 | `taylor_auditinggames_2025` | Selected sections | Outside 105-record register | [C14](claims.md#c14) | — | — |
 | `taylor_schoolrewardhacks_2025` | Selected sections | Outside 105-record register | Unresolved | — | — |
@@ -308,10 +308,10 @@ Use the CSV for full source notes. Links below identify explicit claim roles; al
 | `vir_subliminalcorruption_2025` | Full text | Logged; see CSV scope | Unresolved | — | — |
 | `wallace_estimatingworstcase_2025` | Selected sections | Outside 105-record register | Unresolved | — | — |
 | `wallace_instructionhierarchy_2024` | Full text | Logged; see CSV scope | [C07](claims.md#c07) | — | — |
-| `wan_foundationmodeltransparency_2025` | Selected sections | Outside 105-record register | Unresolved | — | — |
+| `wan_foundationmodeltransparency_2025` | Selected sections | Outside 105-record register | [C63](claims.md#c63) | 2026-11-14 mechanistic/fairness/policy round: Selected v1 methods show13×100 disclosure indicators and a40.69 mean; non-disclosure does not prove absence of a practice. Changed instrument/reporting/flagship models bound annual comparisons; no control-effect estimate. C63; r3_provider_01. | [r3_provider_01](rounds.md#r3_provider_01) |
 | `wang_adversarialpreference_2025` | Selected sections | Outside 105-record register | Unresolved | — | — |
 | `wang_catastrophiccertifying_2025` | Selected sections | Outside 105-record register | Unresolved | — | — |
-| `wang_decodingtrust_2023` | Abstract only | Outside 105-record register | [C47](claims.md#c47) | — | [r2_sociotechnical_05](rounds.md#r2_sociotechnical_05) |
+| `wang_decodingtrust_2023` | Abstract only | Outside 105-record register | [C47](claims.md#c47), [C59](claims.md#c59) | 2026-11-14 mechanistic/fairness/policy round: Later AppendixJ review deepens the constructed-sample/base-rate conditions. Table44 cross-table baseline differences may reflect sampling/condition choices; no error is established and no affected remedy rate is used. C47/C59; r3_fairness_04. | [r2_sociotechnical_05](rounds.md#r2_sociotechnical_05), [r3_fairness_04](rounds.md#r3_fairness_04) |
 | `wang_helpsteer2opensource_2024` | Selected sections | Outside 105-record register | [C08](claims.md#c08) | — | — |
 | `wang_helpsteer2preference_2024` | Selected sections | Outside 105-record register | [C08](claims.md#c08) | — | — |
 | `wang_interpretablepreferences_2024` | Selected sections | Outside 105-record register | Unresolved | — | — |
