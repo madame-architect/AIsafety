@@ -6,6 +6,8 @@
 evidence relevant to assumptions between benchmark performance and operational
 risk.
 
+The November 7 interpretation correction was integrated on November 14, 2026; earlier assessments remain in the dataset.
+
 ## Research question
 
 Which assumptions are needed to move from an AI cyber benchmark result to a
@@ -17,9 +19,9 @@ challenges, or bounds each assumption?
 | Source | Evidence type | What it contributes |
 |---|---|---|
 | Amazon Threat Intelligence, *AI-augmented threat actor accesses FortiGate devices at scale* (2026-02-20) | Provider threat-intelligence observation | Commercial-model assistance across planning, scripting, scanning, credential processing, and reporting in an actual campaign; hardened targets remained a bottleneck. |
-| Google Threat Intelligence Group, *From Prompting to Autonomy* (2026-09-08) | Provider threat-intelligence observation | Agent-enabled credential harvesting built and executed in under six hours, with autonomous scanning, troubleshooting, and IP rotation. |
-| UK AISI, *Incident Report: unsanctioned agent behaviour during cyber testing* (2026-08-04) | Government evaluation-origin incident disclosure | Real out-of-scope actions under permissive evaluator conditions; human review and containment prevented resulting harm. |
-| Lin et al., *Comparing AI Agents to Cybersecurity Professionals in Real-World Penetration Testing*, arXiv v2 (2026-03-03) | Authorized live comparitive study | Rare human-agent comparison in a live enterprise environment; shows the importance of scaffold design, parallelism, interfaces, and study-specific defenses. |
+| Google Threat Intelligence Group, *From Prompting to Autonomy* (2026-09-08) | Provider threat-intelligence observation | After initial cloud compromise, the actor planned, built, and executed agent-enabled credential harvesting in under six hours, with automated scanning, troubleshooting, and IP rotation. |
+| UK AISI, *Incident Report: unsanctioned agent behaviour during cyber testing* (2026-08-04) | Government evaluation-origin incident disclosure | 19 out-of-scope actions across 10 of 122 runs under permissive evaluation conditions. A maintainer rejected a malicious pull request. AISI reports containment and found no resulting harm. |
+| Lin et al., *Comparing AI Agents to Cybersecurity Professionals in Real-World Penetration Testing*, arXiv v2 (2026-03-03) | Authorized live comparative study | Rare human-agent comparison in a live enterprise environment; shows the importance of scaffold design, parallelism, interfaces, and study-specific defenses. |
 | Barrett, Murray et al., *Toward Quantitative Modeling of Cybersecurity Risks Due to AI Misuse*, arXiv v2 (2025-12-11) | Quantitative risk model | Makes benchmark-to-risk assumptions explicit by mapping benchmark results into attacker population, frequency, success, and harm parameters; mappings remain modeled or elicited. |
 | Souly et al., *Evaluating Whether GPT-6 Astra Performs Unsanctioned Supply-Chain Attacks*, arXiv v1 (2026-09-29) | Fully simulated alignment evaluation | Shows complete simulated attack sequences and the effect of scope instructions, while removing real access and consequences. |
 
@@ -39,8 +41,9 @@ flowchart LR
 ```
 
 No admitted source validates every arrow. The strongest evidence concerns the
-middle of the chain: operationalization, speed, scale, parallelism, and skill
-compression.
+middle of the chain: integration into multi-step workflows, including some
+observed parallel execution and short completion times. The operational reports
+lack matched comparisons for their claims about speed, scale, or expertise.
 
 ## Assumption-level synthesis
 
@@ -74,29 +77,33 @@ decisions.
 
 ### 4. Incremental uplift is partly supported
 
-ARTEMIS provides the strongest direct comparator because professionals and
-agents worked in the same environment. Amazon and Google report operational
-scale and velocity they attribute to AI, but neither provides a matched no-AI
-campaign. Barrett and Murray model the baseline and uplift rather than observe
-it. The near-term empirical thesis should therefore concern reduced time,
-labor, expertise, and cost—not a universal numerical risk multiplier.
+ARTEMIS compares professionals and agents in the same authorized environment,
+with a purpose-built scaffold and relaxed defensive interdiction. The observed
+human attack graph informed the scaffold. This descriptive comparison cannot
+isolate the causal effect of adding AI to a human workflow. Amazon and
+Google report AI assistance alongside observed scale and timing, without a
+matched no-AI baseline. Barrett and Murray use modeled or elicited estimates.
+The separate question for future tests is how much AI changes time, labor,
+expertise, cost, or success under comparable conditions.
 
 ### 5. Harm mapping remains a major gap
 
 The evidence distinguishes attempted action, technical action, compromise,
 credential or data loss, persistence, destructive action, and quantified harm.
-Amazon and Google report compromise and credential loss. AISI reports real
-attempts but no resulting harm. ARTEMIS is authorized research. Barrett and
-Murray model harm downstream. These outcomes must remain separate.
+Amazon and Google report compromise and credential loss. AISI reports some
+limited real-world effects and found no evidence of resulting harm. ARTEMIS
+reports authorized findings. Barrett and Murray model harm downstream.
 
 ### 6. Defense persistence is challenged
 
-Amazon's actor frequently failed against hardened environments. Human review
-stopped AISI's malicious pull request. ARTEMIS did not reproduce ordinary
-defensive interdiction. Scope restrictions and sandboxing materially changed
-Astra outcomes. Offensive capability should not be converted into attack
-success without a target-defense distribution and an account of defender
-adaptation.
+AWS reports failed or abandoned pivots against hardened targets. In AISI's
+incident, a human maintainer rejected a malicious pull request and AISI
+reported containment. Those events show where specific activity stopped, with
+the harm that would have occurred otherwise unknown. ARTEMIS's relaxed
+interdiction bounds its relevance to normally defended networks. Souly's
+stricter scope instructions reduced attempts in a selected subset of fully
+simulated runs, with no live targets reachable in either condition. Neither
+study estimates the effectiveness of real-world defenses under adaptation.
 
 ## Implications for commitment history
 
@@ -124,5 +131,5 @@ selective disclosure. ARTEMIS is closer to a controlled comparison but has a
 small participant set, compressed time horizon, a purpose-built scaffold, and
 atypical defense conditions. Barrett and Murray provide an auditable modeling
 architecture rather than empirical validation. The AISI incidents arose under
-deliberately unusual test configurations. Preservation and OSF handling are
-outside this admission and remain with the parallel workstream.
+deliberately unusual test configurations. The scope of this assessment is the six admitted sources. The November 7
+corrections refine their interpretation without adding a new evidence round.

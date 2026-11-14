@@ -88,6 +88,16 @@ def validate_payload(files: dict[str, bytes]) -> dict:
         for path, expected in outputs.items():
             if files.get(path.as_posix()) != expected.encode():
                 raise ValueError(f'generated output is missing or stale at release commit: {path}')
+        # Historical tagged payloads predate the broad-research layer. When any
+        # of that layer is packaged, validate it using the tagged tooling too.
+        if any(path.startswith('research/synthesis/') for path in files):
+            script = 'scripts/build_research.py'
+            if script not in files:
+                raise ValueError('broad research payload lacks its validation tooling')
+            result = subprocess.run([sys.executable, '-B', str(root / script), '--check'],
+                                    cwd=root, capture_output=True, text=True)
+            if result.returncode:
+                raise ValueError(f'broad research validation failed: {result.stdout}{result.stderr}')
         for script in ('research/cyber-deployment/operational-risk/build.py',
                        'scripts/build_cyber_datasets.py', 'scripts/audit_cyber_bibliography.py'):
             flags = [] if script.endswith('audit_cyber_bibliography.py') else ['--check']

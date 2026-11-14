@@ -3811,57 +3811,45 @@
     urldate = {2026-05-25},
 }
 
-@misc{liu_promptinjectionattacks_2025,
-    abstract = {Recent advances in Large Language Models (LLMs) enable exciting LLM-integrated applications, which perform
-                text-based tasks by utilizing their advanced language understanding capabilities. However, as LLMs have
-                improved, so have the attacks against them. Prompt injection attacks are an important threat: they trick the
-                model into deviating from the original application’s instructions and instead follow user directives. These
-                attacks rely on the LLM’s ability to follow instructions and inability to separate prompts and user data. We
-                introduce structured queries, a general approach to tackle this problem. Structured queries separate prompts
-                and data into two channels. We implement a system that supports structured queries. This system is made of
-                (1) a secure front-end that formats a prompt and user data into a special format, and (2) a specially
-                trained LLM that can produce highquality outputs from these inputs. The LLM is trained using a novel
-                fine-tuning strategy: we convert a base (non-instructiontuned) LLM to a structured instruction-tuned model
-                that will only follow instructions in the prompt portion of a query. To do so, we augment standard
-                instruction tuning datasets with examples that also include instructions in the data portion of the query,
-                and fine-tune the model to ignore these. Our system significantly improves resistance to prompt injection
-                attacks, with little or no impact on utility. Our code is released here.},
-    annotation = {Use for research writing on frontier AI governance and evaluations. Maps 'Prompt injection attacks and defenses in {LLM}-integrated applications' to paper source; risk domains: cyber; lifecycle: deployment; assurance functions: mitigation; threat vectors: adaptive attacker.},
+@inproceedings{liu_promptinjectionattacks_2025,
+    annotation = {Compares five attacks and ten defenses across ten models and seven tasks. Section 8 leaves adaptive attacks against known-answer detection for future work.},
     artifact_type = {technical_paper},
     attestation_relation = {author_attested},
     author = {Yupei Liu and Yuqi Jia and Runpeng Geng and Jinyuan Jia and Neil Zhenqiang Gong},
+    booktitle = {33rd USENIX Security Symposium (USENIX Security 24)},
     classification_confidence = {medium},
-    date = {2025},
-    doi = {10.48550/arXiv.2402.06363},
-    eprint = {2402.06363},
+    date = {2024-08},
+    eprint = {2310.12815},
     eprinttype = {arXiv},
     evidence_basis = {research},
     evidence_independence = {author_attested},
+    evidence_note = {Metadata verified against the USENIX proceedings. The earlier draft had a different title. The former arXiv identifier and abstract belonged to the separate StruQ paper.},
     function_role = {enabling},
     governance_artifact = {research_analysis},
-    governance_function = {mitigation},
-    inclusion_reason = {Included as a supporting paper for frontier AI governance/evals; classified as research_analysis with original_research source role; used for mitigation; lifecycle coverage: deployment; risk domains: cyber; evidence basis: research; function role: enabling.},
+    governance_function = {evaluation, mitigation},
+    inclusion_reason = {Benchmarks prompt-injection attacks and defenses across LLM-integrated application tasks.},
     independence_from = {not_independently_verified},
     issuer_sector = {academic},
     issuer_type = {academic_or_research},
-    keywords = {source_form/paper, source_role/original_research, governance_artifact/research_analysis, scope_relevance/supporting, issuer_type/academic_or_research, issuer_sector/academic, review_process/author_posted_preprint, attestation_relation/author_attested, independence_from/not_independently_verified, evidence_basis/research, governance_function/mitigation, function_role/enabling, risk_domain/cyber, threat_vector/adaptive_attacker, lifecycle_stage/deployment, maintenance_status/static, legal_status/not_applicable, classification_confidence/medium, synthesis_stream/technical_eval, source_relation/primary, artifact_type/technical_paper, review_status/preprint, evidence_independence/author_attested},
+    keywords = {source_form/paper, source_role/original_research, governance_artifact/research_analysis, scope_relevance/supporting, issuer_type/academic_or_research, issuer_sector/academic, review_process/peer_reviewed, attestation_relation/author_attested, independence_from/not_independently_verified, evidence_basis/research, governance_function/evaluation, governance_function/mitigation, function_role/enabling, risk_domain/cyber, threat_vector/prompt_injection, lifecycle_stage/deployment, maintenance_status/static, legal_status/not_applicable, classification_confidence/medium, synthesis_stream/technical_eval, source_relation/primary, artifact_type/technical_paper, review_status/peer_reviewed, evidence_independence/author_attested},
     legal_status = {not_applicable},
     lifecycle_stage = {deployment},
     maintenance_status = {static},
-    pubstate = {preprint},
-    review_process = {author_posted_preprint},
-    review_status = {preprint},
+    pages = {1831--1847},
+    publisher = {USENIX Association},
+    review_process = {peer_reviewed},
+    review_status = {peer_reviewed},
     risk_domain = {cyber},
     scope_relevance = {supporting},
     source_form = {paper},
     source_relation = {primary},
     source_role = {original_research},
-    stream_note = {Provisional: Technical analysis of prompt-injection attacks and defenses in applications.},
+    stream_note = {Technical benchmark of prompt injection in LLM-integrated applications. The proceedings record and arXiv:2310.12815 identify the same work. The earlier citation key is retained for continuity.},
     synthesis_stream = {technical_eval},
-    threat_vector = {adaptive_attacker},
-    title = {Prompt injection attacks and defenses in {LLM}-integrated applications},
-    url = {https://arxiv.org/abs/2402.06363},
-    urldate = {2026-04-25},
+    threat_vector = {prompt_injection},
+    title = {Formalizing and Benchmarking Prompt Injection Attacks and Defenses},
+    url = {https://www.usenix.org/conference/usenixsecurity24/presentation/liu-yupei},
+    urldate = {2026-11-07},
 }
 
 @misc{liu_rethinkingmachineunlearnin_2024,

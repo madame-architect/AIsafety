@@ -1,0 +1,1051 @@
+schema_version: broad-synthesis-v1
+as_of: '2026-11-14'
+claims:
+- id: C01
+  section: evaluation_configuration
+  claim: The reviewed benchmarks add distinct task, workflow and reliability measurements; each result describes
+    its tested configuration.
+  status: provisional
+  evidence:
+  - citation_key: folkerts_measuringaiagentscyber_2026
+    relation: supports
+    version_url: https://arxiv.org/pdf/2603.11214v3
+    locator: v3 §§2–4; Tables 1–2; Appendix E
+    finding: Multi-step enterprise and industrial-control ranges expose incomplete progress even at larger
+      inference budgets.
+    review_basis: supplied_ledger
+    checked_scope: 'Inherited full text description: All 30 PDF pages of v3: §§1–6, references, Appendices
+      A–E, rendered Figures 1–7, and programmatic verification of all 24 end-to-end summary cells from 1,263
+      parsed appendix run rows.; not independently repeated in this integration.'
+  - citation_key: xie_osworld_2024
+    relation: supports
+    version_url: https://proceedings.neurips.cc/paper_files/paper/2024/file/5d413e48f84dc61244b6be550f1cd8f5-Paper-Datasets_and_Benchmarks_Track.pdf
+    locator: NeurIPS 2024 proceedings; abstract and benchmark-design passages
+    finding: OSWorld tests 369 desktop/web tasks with execution-based grading in controlled environments.
+    review_basis: supplied_ledger
+    checked_scope: 'Inherited selected sections description: Official NeurIPS proceedings extract, including
+      abstract and design passages; not independently repeated in this integration.'
+  - citation_key: xu_theagentcompany_2024
+    relation: supports
+    version_url: https://arxiv.org/pdf/2412.14161
+    locator: Benchmark design and setup; inherited extracted lines 0–200/1302 (page locator pending)
+    finding: Professional workflows are evaluated within a simulated organization.
+    review_basis: supplied_ledger
+    checked_scope: 'Inherited selected sections description: Selected extracted PDF passages (line span 0–200
+      of 1302); not independently repeated in this integration.'
+  - citation_key: yao_taubench_2024
+    relation: supports
+    version_url: https://arxiv.org/pdf/2406.12045
+    locator: Benchmark setup and repeated-trial reliability; inherited extracted lines 0–204/2369 (page locator
+      pending)
+    finding: Tool use, domain policies and user simulation define a repeated-trial reliability endpoint.
+    review_basis: supplied_ledger
+    checked_scope: 'Inherited selected sections description: Selected extracted PDF passages (line span 0–204
+      of 2369); not independently repeated in this integration.'
+  limitation: These controlled tests do not estimate general workplace safety or operational harm. Some inherited
+    selected-section locators are extraction spans rather than stable page references. Standalone Cybench is
+    cited in the supplied review but absent from the admitted bibliography.
+  counterevidence: Realistic software and longer workflows strengthen task relevance; that realism alone does
+    not establish transfer to defended deployment or authorization boundaries.
+  next_check: Complete claim-critical methods/results and pin stable section/page locators; treat standalone
+    Cybench as a source-admission lead, not an admitted record.
+- id: C02
+  section: evaluation_configuration
+  claim: Phuong v2 Table 23 concerns a toy safety-filter modification task in instrumental self-reasoning;
+    its Pro-CoT easy/easy score is 0.5 despite a stated 0.7 passing criterion.
+  status: scoped_check
+  evidence:
+  - citation_key: phuong_evaluatingfrontier_2024
+    relation: supports
+    version_url: https://arxiv.org/html/2403.13793v2
+    locator: Appendix F.5–F.5.1; Table 23
+    finding: The task classification and numerical tension are present in the primary table and adjacent results
+      prose. It is not the final self-proliferation takeover task.
+    review_basis: this_run_primary
+    checked_scope: Targeted primary HTML text for Appendix F.5–F.5.1, Table 23 and document section headings;
+      no full reread, figure audit or replication.
+  limitation: This identifies an internal prose/table tension within a toy task; it does not resolve what the
+    authors intended as their pass classification.
+  counterevidence: The same paper contains separate self-proliferation tasks and modeled milestone bounds in
+    Table 11; those cannot be substituted for Table 23.
+  next_check: The synthesis task description is corrected here. Seek author clarification before treating the
+    inconsistent pass wording as an established capability result.
+- id: C03
+  section: evaluation_configuration
+  claim: Rankings and apparent capability gains can change with inference budgets, attempt aggregation and
+    task selection.
+  status: provisional
+  evidence:
+  - citation_key: wijk_rebench_2025
+    relation: supports
+    version_url: https://proceedings.mlr.press/v267/wijk25a.html
+    locator: PMLR 267 proceedings abstract; separately accessed arXiv v1 budget/results sections
+    finding: The proceedings abstract reports the best agent ahead at two aggregate hours, a narrow human lead
+      at eight, and a larger human advantage at 32 total hours across attempts.
+    review_basis: supplied_ledger
+    checked_scope: 'Inherited selected sections description: PMLR 267:66772–66832 proceedings landing page
+      and abstract; separate author preprint arXiv v1, selected methods on benchmark design and human recruitment,
+      baseline tables and results on time budget and task heterogeneity. Checked published title and stated
+      sample and budget findings against proceedings abstract.; not independently repeated in this integration.'
+  - citation_key: folkerts_measuringaiagentscyber_2026
+    relation: bounds
+    version_url: https://arxiv.org/pdf/2603.11214v3
+    locator: v3 Table 1; Appendix E Table 2; §3.2
+    finding: Higher budgets improve some tested models, but 10M-token results are not monotonically ordered
+      by model release. One inherited recomputation reports 9.6 versus the paper's 9.8 for one appendix-derived
+      cell.
+    review_basis: supplied_ledger
+    checked_scope: 'Inherited full text description: All 30 PDF pages of v3: §§1–6, references, Appendices
+      A–E, rendered Figures 1–7, and programmatic verification of all 24 end-to-end summary cells from 1,263
+      parsed appendix run rows.; not independently repeated in this integration.'
+  limitation: RE-Bench's 32-hour point is an aggregate over attempts, not one continuous 32-hour run. The exact
+    proceedings PDF was not obtained in the inherited review. Folkerts' single-cell discrepancy remains a lead.
+  counterevidence: The benchmarks do show useful task performance and budget sensitivity. Narrow task distributions
+    and best-of-k selection limit general claims about long-horizon autonomy.
+  next_check: Inspect the exact RE-Bench proceedings PDF and reproduce budget/attempt accounting; resolve the
+    Folkerts cell with the authors before quoting it.
+- id: C04
+  section: evaluation_configuration
+  claim: Unlearning evaluations can establish reduced performance on specified probes while leaving format
+    sensitivity, retained knowledge and utility tradeoffs open.
+  status: provisional
+  evidence:
+  - citation_key: li_wmdpbenchmarkmeasuring_2024
+    relation: supports
+    version_url: https://proceedings.mlr.press/v235/li24bc.html
+    locator: PMLR proceedings abstract; separately inspected arXiv v7 setup, mitigation and limitations (version
+      equivalence not established)
+    finding: WMDP supplies hazardous-knowledge proxy questions and reports reduced measured performance under
+      RMU.
+    review_basis: supplied_ledger
+    checked_scope: 'Inherited selected sections description: PMLR abstract/metadata and arXiv v7 setup, mitigation
+      and limitations excerpts; not independently repeated in this integration.'
+  - citation_key: joshi_robustevaluationunlearning_2024
+    relation: bounds
+    version_url: https://arxiv.org/html/2411.15477v1
+    locator: v1 methods; full results tables; Appendices A–E
+    finding: On synthetic TOFU author facts, query transformations change measured forgetting and retention.
+      Comprehension with answers supplied in context tests generation suppression.
+    review_basis: supplied_ledger
+    checked_scope: 'Inherited full text description: Version 1 full substantive text and appendices A–E, including
+      transformation procedures, metrics, prompt examples, qualitative examples and both full result tables.;
+      not independently repeated in this integration.'
+  - citation_key: liu_rethinkingmachineunlearnin_2024
+    relation: contextualizes
+    version_url: https://doi.org/10.1038/s42256-025-00985-0
+    locator: arXiv v6 conceptual opening; Nature Machine Intelligence metadata
+    finding: The review distinguishes unlearning goals, leakage and collateral effects.
+    review_basis: supplied_ledger
+    checked_scope: 'Inherited selected sections description: arXiv v6 abstract/conceptual opening and Nature
+      publisher metadata; not independently repeated in this integration.'
+  limitation: Hazardous multiple-choice knowledge and synthetic facts differ from operational harmful capability
+    or verified deletion. Metrics and base-model controls must remain matched.
+  counterevidence: Lower probe scores are a measured result; changed-prompt recovery and retention losses constrain
+    the interpretation rather than erase that result.
+  next_check: Complete the final-version methods and compare each probe with its own base/fine-tuned controls
+    before inferring operational risk reduction or permanent erasure.
+- id: C05
+  section: safeguards
+  claim: Many-shot defenses show both improvements and residual scaling/utility limits under different training
+    and evaluation conditions.
+  status: provisional
+  evidence:
+  - citation_key: anil_manyshotjailbreaking_2024
+    relation: supports
+    version_url: https://proceedings.neurips.cc/paper_files/paper/2024/file/ea456e232efb72d261715e33ce25f208-Paper-Conference.pdf
+    locator: NeurIPS 2024 §§5.1–5.4; Figure 5
+    finding: Several general/targeted fine-tuning approaches mainly reduced the baseline while leaving success
+      growth with additional shots.
+    review_basis: supplied_ledger
+    checked_scope: 'Inherited selected sections description: NeurIPS PDF opening design and sections 5.1–5.4
+      mitigation excerpts, including Figure 5 and slope/intercept results; not independently repeated in this
+      integration.'
+  - citation_key: ackerman_mitigatingmanyshot_2025
+    relation: supports
+    version_url: https://arxiv.org/html/2504.09604v3
+    locator: v3 §§2.1,3.1/Table 1,3.2,4.2
+    finding: On Llama 3.1 8B, adversarial fine-tuning with sanitization examples and input sanitization flattened
+      slopes in several tested settings, with some benign long-dialogue preferences favoring untuned answers.
+    review_basis: prior_audit
+    checked_scope: Prior audit checked selected primary sections on the single-model test, reported 8192 context
+      and utility tradeoffs; not independently repeated here.
+  limitation: Models, examples, controls and tested context lengths differ. The reported 8192 context is a
+    test limit, not an independently certified architectural maximum.
+  counterevidence: Ackerman's flatter slopes bound any claim that fine-tuning can only shift intercepts; Anil's
+    residual scaling bounds broad robustness claims.
+  next_check: Compare matched attack, model, training-data and benign-utility conditions before explaining
+    the difference or extrapolating to longer contexts.
+- id: C06
+  section: safeguards
+  claim: Classifier red-team results support resistance to specified attack criteria; rates across defense
+    generations and attack protocols should remain separate.
+  status: provisional
+  evidence:
+  - citation_key: sharma_constitutionalclassifiers_2025
+    relation: supports
+    version_url: https://arxiv.org/pdf/2501.18837
+    locator: Study setup and human red-team criterion; inherited extracted lines 0–174/3212 (page locator pending)
+    finding: Adversarially trained classifiers resisted the tested universal extraction criterion and reduced
+      held-out jailbreaks.
+    review_basis: supplied_ledger
+    checked_scope: 'Inherited selected sections description: Selected extracted PDF passages (line span 0–174
+      of 3212); not independently repeated in this integration.'
+  - citation_key: cunningham_constitutionalclassifiers_2026
+    relation: contextualizes
+    version_url: https://arxiv.org/pdf/2601.04603
+    locator: See coverage.csv material-inspected and limitations fields; stable section locator pending
+    finding: A later defense generation is a separate object and cannot silently replace the earlier target
+      in a bypass-rate comparison.
+    review_basis: supplied_ledger
+    checked_scope: 'Inherited selected sections description: 17-page arXiv PDF, abstract, introduction, shadow-deployment
+      and red-team result excerpts; not independently repeated in this integration.'
+  limitation: The supplied review of Sharma used a small selected-section span. Defense generation, target
+    domain, feedback, attacker budget and the multi-query success criterion are part of each endpoint.
+  counterevidence: Partial bypasses and adaptive attacks can coexist with failure to meet a universal-jailbreak
+    criterion; neither is a direct measure of deployment-wide misuse.
+  next_check: Finish the relevant methods/results and pair each adaptive attack with its exact defense version,
+    denominator, feedback and success definition.
+- id: C07
+  section: safeguards
+  claim: Instruction priority, resistance to weight modification and pretraining poisoning address different
+    attacker access and control surfaces.
+  status: provisional
+  evidence:
+  - citation_key: wallace_instructionhierarchy_2024
+    relation: supports
+    version_url: https://arxiv.org/html/2404.13208v1
+    locator: v1 §4 experiment setup, over-refusal results; Appendix A
+    finding: Hierarchy training improves several tested GPT-3.5 robustness endpoints against a capability-only
+      fine-tuned baseline, while two benign over-refusal tests regress.
+    review_basis: prior_audit
+    checked_scope: Prior audit checked selected primary setup/results sections, not the complete appendix or
+      all figures; not repeated here.
+  - citation_key: tamirisa_tamperresistantsafeguards_2024
+    relation: supports
+    version_url: https://arxiv.org/pdf/2408.00761
+    locator: Training/attack setup; inherited extracted lines 0–247/1440 (page locator pending)
+    finding: Tamper-resistance training increases resistance to tested fine-tuning attacks within specified
+      budgets.
+    review_basis: supplied_ledger
+    checked_scope: 'Inherited selected sections description: Selected extracted PDF passages (line span 0–247
+      of 1440); not independently repeated in this integration.'
+  - citation_key: souly_poisoningattacksrequire_2025
+    relation: contextualizes
+    version_url: https://arxiv.org/pdf/2510.07192
+    locator: Pretraining experiments; inherited extracted lines 0–276/1914 (page locator pending)
+    finding: Tested backdoors used roughly constant poison-document counts across a twentyfold clean-data scale
+      difference.
+    review_basis: supplied_ledger
+    checked_scope: 'Inherited selected sections description: Selected extracted PDF passages (line span 0–276
+      of 1914); not independently repeated in this integration.'
+  - citation_key: vassilev_adversarialmltaxonomy_2025
+    relation: contextualizes
+    version_url: https://doi.org/10.6028/NIST.AI.100-2e2025
+    locator: NIST AI 100-2e2025; terminology and taxonomy
+    finding: Adversarial-ML terminology helps distinguish attacker objectives and access.
+    review_basis: supplied_ledger
+    checked_scope: 'Inherited selected sections description: Selected extracted PDF passages (line span 0–327
+      of 4288); not independently repeated in this integration.'
+  - citation_key: liu_promptinjectionattacks_2025
+    relation: supports
+    version_url: https://www.usenix.org/conference/usenixsecurity24/presentation/liu-yupei
+    locator: USENIX Security2024 proceedings pp1831–1847; attack/defense benchmark; section8 limitations
+    finding: The intended Liu proceedings work benchmarks five attacks and ten defenses across ten models/seven
+      tasks. The unrelated StruQ identifier and abstract are removed while retaining the citation key. Section8
+      leaves adaptive attacks against known-answer detection for future work.
+    review_basis: supplied_ledger
+    checked_scope: Inherited full-text scope identifies the17-page intended proceedings paper. This run freshly
+      checked official metadata and the specific section8 limitation, not all methods/results or experiments.
+  limitation: Model-level refusal or hierarchy training does not establish system authorization, data isolation
+    or egress enforcement. Poisoning and tamper findings are bounded by tested models, triggers and resource
+    budgets. The Liu citation identity is corrected from the supplied patch; its full-text label remains inherited
+    and does not extend to the separate StruQ work or expanded preprint.
+  counterevidence: Specific robustness gains remain useful within their threat models; they cannot be pooled
+    into one security guarantee.
+  next_check: Check each control against its intended attacker access, budget and endpoint; complete claim-critical
+    sections and retain the corrected Liu identity.
+- id: C08
+  section: evaluator_integrity
+  claim: HelpSteer2 and its preference extension provide useful reward-learning comparisons but share data
+    lineage.
+  status: provisional
+  evidence:
+  - citation_key: wang_helpsteer2opensource_2024
+    relation: supports
+    version_url: https://arxiv.org/pdf/2406.08673
+    locator: Dataset and reward-model setup; inherited extracted lines 0–87/1372 (page locator pending)
+    finding: Multi-attribute annotations and reported RewardBench results support a dated reward-model comparison.
+    review_basis: supplied_ledger
+    checked_scope: 'Inherited selected sections description: Selected extracted PDF passages (line span 0–87
+      of 1372); not independently repeated in this integration.'
+  - citation_key: wang_helpsteer2preference_2024
+    relation: bounds
+    version_url: https://arxiv.org/pdf/2410.01257
+    locator: Preference-data extension and matched reward-model comparison; inherited extracted lines 0–103/1349
+    finding: The extension adds preferences and rationales to HelpSteer2 and compares regression and Bradley–Terry
+      models.
+    review_basis: supplied_ledger
+    checked_scope: 'Inherited selected sections description: Selected extracted PDF passages (line span 0–103
+      of 1349); not independently repeated in this integration.'
+  limitation: Only selected opening sections were inspected in the supplied ledger. Shared annotations do not
+    constitute independent replication, and leaderboard gains are model/benchmark-specific.
+  counterevidence: Matched model comparisons are informative about the tested reward-learning design, but do
+    not establish downstream safety or general judge validity.
+  next_check: Complete methods, splits and evaluation details; record shared data/annotator lineage before
+    counting evidence families.
+- id: C09
+  section: evaluator_integrity
+  claim: Position calibration improved agreement with one author-majority reference, and the highest reported
+    agreement included human input.
+  status: provisional
+  evidence:
+  - citation_key: wang_largenotfairevaluators_2024
+    relation: supports
+    version_url: https://aclanthology.org/2024.acl-long.511.pdf
+    locator: ACL 2024 pp.9444–9445, §§2.3.3,3.1–3.3; Table 4
+    finding: Agreement rises from 52.7% to 62.5% with multiple evidence sampling and to 73.8% with selected
+      human labels; three author annotators supplied the reference on 80 questions.
+    review_basis: prior_audit
+    checked_scope: Prior audit checked selected proceedings sections and Table 4; not an independent full 11-page
+      reread or code execution.
+  limitation: The 73.8% score belongs to the combined human-assisted procedure. Individual annotators contribute
+    to the majority against which they are compared.
+  counterevidence: Swapping response positions changes results, but the experiment does not establish the mechanism
+    of bias or performance on new judge models and tasks.
+  next_check: Use a separate held-out human reference and report routed human items independently when evaluating
+    the intended procedure.
+- id: C10
+  section: evaluator_integrity
+  claim: Xu's benchmark exposure indicators are proxies, and its printed edit-similarity rule and threshold
+    disagree with the pinned released helper.
+  status: provisional
+  evidence:
+  - citation_key: xu_benchmarkingleakage_2024
+    relation: supports
+    version_url: https://arxiv.org/html/2404.18824v1
+    locator: v1 §5.3; Appendix A.3 Eq.5; pinned metric_utils.py lines 27,47
+    finding: Paper prints normalized edit distance and a >0.9 threshold; code calculates its complement and
+      uses >0.75.
+    review_basis: prior_audit
+    checked_scope: Prior audit checked selected paper sections and all 75 lines of the helper at commit 8cbb7fd341f0efe840ed5d9b148b87287362d9e9;
+      no experiment-revision provenance or 186-row recomputation repeated.
+  limitation: Original-versus-paraphrase familiarity is indirect evidence of exposure. The helper mismatch
+    does not identify which implementation generated the reported experiment.
+  counterevidence: Exact string matches and controlled exposure experiments establish proxy behavior; they
+    do not turn each flagged item into a verified leaked training record.
+  next_check: 'Reconcile experiment revision, formula, threshold and mixed table units before reusing affected
+    quantitative leakage rates; code: https://github.com/GAIR-NLP/benbench/blob/8cbb7fd341f0efe840ed5d9b148b87287362d9e9/src/metric_utils.py.'
+- id: C11
+  section: evaluator_integrity
+  claim: Debate can improve inference-time judge accuracy under information asymmetry, while comparison with
+    direct QA depends on task and source access.
+  status: scoped_check
+  evidence:
+  - citation_key: khan_debatingmorepersuasive_2024
+    relation: supports
+    version_url: https://arxiv.org/html/2402.06782v4
+    locator: v4 abstract and §3 main results; §2 task setup
+    finding: On filtered binary QuALITY questions, reported LLM/human debate accuracy is 76%/88%, compared
+      with 48%/60% naive and 54%/78% assigned consultancy.
+    review_basis: this_run_primary
+    checked_scope: Selected primary abstract/main results and task-setup text checked; no full appendix/human-sampling
+      audit or numerical reproduction.
+  - citation_key: kenton_scalableoversightweak_2024
+    relation: bounds
+    version_url: https://arxiv.org/html/2407.04622v2
+    locator: v2 §§3.2,4.1; Figure 2 accompanying prose
+    finding: Full-article direct QA performs best across tested extractive judge configurations; debate's gains
+      over QA without the article vary by judge/task.
+    review_basis: this_run_primary
+    checked_scope: Selected primary protocol definitions, main results and figure-caption prose; no complete
+      reread or statistical recomputation.
+  limitation: Khan's naive human baseline used a separate experiment and its full-source human comparison is
+    external, as recorded in the supplied ledger. These studies test inference properties, not a complete training
+    protocol.
+  counterevidence: Kenton's stronger direct-QA baseline and weak-judge exceptions bound a blanket debate-superiority
+    claim without negating Khan's gains under its setup.
+  next_check: Preserve task, source access, role assignment, judge sampling and comparator; verify final proceedings/version
+    differences and remaining appendix details before numerical publication.
+- id: C12
+  section: evaluator_integrity
+  claim: Evidence selection and error detection offer distinct interpretations of debate benefits; overall
+    accuracy alone does not resolve them.
+  status: scoped_check
+  evidence:
+  - citation_key: khan_debatingmorepersuasive_2024
+    relation: supports
+    version_url: https://arxiv.org/html/2402.06782v4
+    locator: v4 Appendix A.6 and Figure 15 caption
+    finding: Quotes-only yields higher judge accuracy than quotes-plus-arguments in the reported ablation;
+      arguments-only is worse.
+    review_basis: this_run_primary
+    checked_scope: Complete selected Appendix A.6 text and Figure 15 caption inspected; chart values not independently
+      transcribed.
+  - citation_key: kenton_scalableoversightweak_2024
+    relation: supports
+    version_url: https://arxiv.org/html/2407.04622v2
+    locator: v2 §4.2 and Figure3 discussion
+    finding: Open debate better rejects an incorrect protagonist than open consultancy, at a cost when the
+      protagonist is correct.
+    review_basis: this_run_primary
+    checked_scope: Selected open-role methods and results text inspected; transcript reuse design noted, no
+      new model runs.
+  limitation: Kenton's open protocols select assigned-role transcripts conditional on direct-QA answers rather
+    than eliciting autonomous strategy. Khan's quote verification relies on the source and selected questions.
+  counterevidence: Higher overall open-consultancy accuracy can coexist with worse detection of protagonist
+    errors; quote selection may explain part of the gain attributed to argument exchange.
+  next_check: Separate evidence retrieval/verification, correctness-conditioned error detection and judge training
+    effects in any follow-up comparison.
+- id: C13
+  section: evaluator_integrity
+  claim: Feature attribution and selected interventions provide affirmative mechanistic evidence, while some
+    aggregate SAE metrics fail to distinguish trained from randomized models.
+  status: provisional
+  evidence:
+  - citation_key: templeton_scalingmonosemanticity_2024
+    relation: supports
+    version_url: https://transformer-circuits.pub/2024/scaling-monosemanticity/
+    locator: 2024 article; inherited opening/selected examples, extracted lines0–134/1169
+    finding: Sparse autoencoders identify interpretable features with selected steering and activation examples.
+    review_basis: supplied_ledger
+    checked_scope: 'Inherited selected sections description: Selected extracted HTML passages (line span 0–134
+      of 1169); not independently repeated in this integration.'
+  - citation_key: kamath_tracingattentioncomputatio_2025
+    relation: supports
+    version_url: https://transformer-circuits.pub/2025/attention-qk/index.html
+    locator: 2025 query–key feature-attribution methodology, worked examples and limitations
+    finding: Bilinear feature contributions and interventions test selected attention mechanisms in Claude
+      3.5 Haiku.
+    review_basis: supplied_ledger
+    checked_scope: 'Inherited full text description: Complete rendered article including methodology, worked
+      examples, limitations, and figure captions; linked interactives not reviewed.; not independently repeated
+      in this integration.'
+  - citation_key: heap_sparseautoencoders_2025
+    relation: bounds
+    version_url: https://arxiv.org/html/2501.17727v1
+    locator: v1 §§1,3.1–3.3; Figures1–3 captions
+    finding: Several fuzzing/reconstruction metrics are broadly similar across trained and three randomized
+      Pythia variants; the separate per-occurrence Gaussian embedding Control performs poorly.
+    review_basis: prior_audit
+    checked_scope: Prior audit selected primary v1 sections/captions; later audit read main text and Appendices
+      A–D text; not all figures independently digitized. No new primary reread here.
+  limitation: Selected features and interventions do not establish completeness of a system-wide monitor. Heap's
+    v2 additions are a different version; token entropy does not directly measure semantic abstraction, and
+    loss recovery is meaningful only for trained variants.
+  counterevidence: Heap qualifies particular validation metrics, not every interpretability method. Causal
+    interventions on selected mechanisms remain a different form of evidence.
+  next_check: Pin versions and distinguish reconstruction metrics, token diversity, local interventions and
+    downstream monitoring performance.
+- id: C14
+  section: evaluator_integrity
+  claim: Constructed alignment-faking, sabotage and auditing experiments establish behavior under their elicitation;
+    spontaneous initiation and induced continuation remain different outcomes.
+  status: provisional
+  evidence:
+  - citation_key: sheshadri_whydosome_2025
+    relation: supports
+    version_url: https://arxiv.org/html/2506.18032v1
+    locator: arXiv v1 §§1–6; cited final conference abstract separately
+    finding: Five of 25 models show an initial-elicitation harmful-compliance gap; goal preservation is consistently
+      supported for one.
+    review_basis: prior_audit
+    checked_scope: Supplied ledger originally abstract-only; later audit read complete v1 main text §§1–6,
+      not appendices or final conference equivalence. This does not upgrade inherited corpus depth.
+  - citation_key: kirk_sabotageaisafetyresearch_2026
+    relation: bounds
+    version_url: https://arxiv.org/pdf/2604.24618
+    locator: v1 main text pp.1–15; scenario setup and results
+    finding: No confirmed spontaneous sabotage was observed in evaluated scenarios; continuation of already-started
+      sabotage differs by model.
+    review_basis: prior_audit
+    checked_scope: Later audit read main text pp.1–15 of 88; appendices incomplete, awareness/refusal percentage
+      discrepancy unresolved; no reproduction.
+  - citation_key: taylor_auditinggames_2025
+    relation: contextualizes
+    version_url: https://arxiv.org/html/2512.07810v1
+    locator: v1 auditing-game setup/results; inherited extracted lines0–415/1334
+    finding: Auditors struggled to distinguish deliberately induced sandbagging proxies from controls in the
+      tested game.
+    review_basis: supplied_ledger
+    checked_scope: 'Inherited selected sections description: Selected extracted HTML passages (line span 0–415
+      of 1334); not independently repeated in this integration.'
+  limitation: Prompt design, scenario selection, model access and statistical sensitivity condition both positive
+    and null results. Failure to elicit behavior does not establish incapability, and induced behavior is not
+    deployment prevalence.
+  counterevidence: The null spontaneous-sabotage result and model differences must accompany selected positive
+    continuation/faking observations.
+  next_check: Finish claim-critical appendices/final versions, reconcile inconsistent awareness/refusal figures,
+    and test alternative explanations before inferring motives or deployment rates.
+- id: C15
+  section: outcomes
+  claim: The corrected Salvi study supports a personalized-GPT-4 versus human-baseline difference, while the
+    added benefit over unpersonalized GPT-4 remains uncertain.
+  status: scoped_check
+  evidence:
+  - citation_key: salvi_conversationalpersuasivene_2025
+    relation: supports
+    version_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC13683042/
+    locator: Corrected article Aggregate results; Author Correction substantive paragraphs
+    finding: The correction replaces the direct personalization contrast P=.04 with P=.0678; its+48.7% odds
+      and interval[−2.9%,127.6%] correspond to OR1.487[0.971,2.276].
+    review_basis: this_run_primary
+    checked_scope: Complete substantive correction text inspected; original article and supplement not reread
+      in this pass. Main personalized-vs-human OR1.812[1.260,2.607] remains supported by inherited article
+      review.
+  - citation_key: hackenburg_evaluatingpersuasive_2024
+    relation: bounds
+    version_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11181035/
+    locator: PNAS main article Results, Table1; Discussion/Methods
+    finding: Single-message experiment finds persuasive effects versus no message but no detected added accurate-targeting
+      benefit relative to the untargeted best-message condition.
+    review_basis: supplied_ledger
+    checked_scope: 'Inherited full text description: Complete PNAS article body, §§Results, Discussion, Materials
+      and Methods, Table 1 and figure captions. Tried the linked separate Supporting Information PDF from PMC
+      and PNAS; the supplement body was not retrieved.; not independently repeated in this integration.'
+  limitation: Salvi measures immediate self-reported agreement in structured ten-minute debates; Hackenburg
+    tests static messages. Neither measures campaign outcomes, durable behavior or population effects. The
+    supplement's 64.4% odds conversion was not independently rederived here.
+  counterevidence: Positive effects versus a human or no-message baseline coexist with uncertain/non-detected
+    incremental personalization effects. Different designs cannot be pooled as one targeting estimate.
+  next_check: Cite the correction DOI10.1038/s41562-026-02588-0, preserve comparator/outcome scale, and omit
+    a general64.4% probability claim pending a defensible ordinal interpretation.
+- id: C16
+  section: evaluation_configuration
+  claim: CAISI's published comparator label and imputation note disagree with the supplied ledger; the historical
+    explanation is unresolved.
+  status: unresolved
+  evidence:
+  - citation_key: caisi_deepseekv4pro_2026
+    relation: unresolved
+    version_url: https://www.nist.gov/news-events/news/2026/05/caisi-evaluation-deepseek-v4-pro
+    locator: Figure2 CTF-Archive-Diamond table and imputation note; current primary article
+    finding: The prior audit reports the32% comparator as GPT-5.4 mini and the imputation asterisk on DeepSeek
+      V4 Pro; the ledger instead says GPT-5 and attributes imputation to the comparator.
+    review_basis: prior_audit
+    checked_scope: Prior audit read the complete substantive current article/table/captions/appendix and found
+      the mismatch; this run's direct urllib retrieval returned403, so the source text was not independently
+      rechecked in this integration.
+  limitation: No authenticated historical capture establishes whether the earlier source changed or the ledger
+    extracted it incorrectly. The current page's same update date does not resolve that history.
+  counterevidence: The aggregate model-gap analysis is separately conditioned on suite selection, weights and
+    tested configuration; this mismatch does not establish a cyber-specific capability lag.
+  next_check: Recover a lawful dated capture or correction from the issuer; hold the disputed comparator/imputation
+    wording rather than assert a historical revision.
+- id: C17
+  section: governance
+  claim: Voluntary commitments, disclosure portals and documentary framework scores make governance provisions
+    inspectable; their existence or score alone does not establish implemented controls, compliance or control
+    effects. Legal force, scope and decision authority require separate coding.
+  status: scoped_check
+  evidence:
+  - citation_key: ukgov_frontiersafetycommitments_2024
+    relation: supports
+    version_url: https://www.gov.uk/government/publications/frontier-ai-safety-commitments-ai-seoul-summit-2024/frontier-ai-safety-commitments-ai-seoul-summit-2024
+    locator: Commitments I–VIII and footnotes; observed GOV.UK edition updated 2025-02-07
+    finding: Voluntary signatories commit to severe-risk thresholds, mitigations, governance and conditional
+      development/deployment limits; transparency has qualifications.
+    review_basis: prior_audit
+    checked_scope: Prior audit reports complete substantive commitment text including footnotes, not implementation
+      checks or comparison with original May 2024 bytes.
+  - citation_key: ec_gpai_codepractice_final_2025
+    relation: contextualizes
+    version_url: https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai
+    locator: Official landing page description of the voluntary Code and its three chapters; July 10, 2025
+      publication
+    finding: The official overview describes a voluntary compliance tool and distinguishes the Safety/Security
+      chapter for systemic-risk models. This does not make signatures proof of adherence or statutory compliance.
+    review_basis: prior_audit
+    checked_scope: Prior audit read the complete official landing page; chapter download failed. Detailed chapter
+      measures in the supplied ledger were not independently audited.
+  - citation_key: oecd_hiroshimaprocessreporting_2025
+    relation: contextualizes
+    version_url: https://oecd.ai/en/transparency/overview
+    locator: 'Overview: participation, submitting reports and browsing reports'
+    finding: The portal permits voluntary value-chain reporting and publication of disclosures; individual
+      reports and their factual accuracy were not audited.
+    review_basis: prior_audit
+    checked_scope: Prior audit reports full substantive current overview; it is a mutable portal, not a frozen
+      original edition.
+  - citation_key: stelling_evaluatingaiproviders_2025
+    relation: bounds
+    version_url: https://arxiv.org/abs/2512.01166v1
+    locator: Version 1 abstract, compared with version 5 abstract and histories
+    finding: The work scores framework documents against a rubric. Version-specific score changes cannot be
+      read as a measured change in deployed control effectiveness.
+    review_basis: supplied_ledger
+    checked_scope: Supplied ledger records abstract-only comparison of v1 and v5, not full methodological review
+      or implementation verification.
+  - citation_key: nist_artificialintelligence_2024
+    relation: contextualizes
+    version_url: https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf
+    locator: NIST AI 600-1 risk overview and suggested-action tables; stable page locator pending
+    finding: Generative AI profile extends the RMF with cross-sector GAI risks and practical suggested actions,
+      including security and incident disclosure.
+    review_basis: supplied_ledger
+    checked_scope: Inherited Selected sections; NIST AI 600-1 PDF risk overview and suggested-action tables.
+      Recommendations are actor- and context-dependent; suggested action is not a measured result. Not independently
+      repeated here.
+  - citation_key: isoiec_42006_2025
+    relation: contextualizes
+    version_url: https://www.iso.org/standard/42006
+    locator: ISO/IEC42006:2025 catalog scope/edition and preview; licensed normative clauses not inspected
+    finding: ISO/IEC 42006 specifies additional requirements for bodies auditing and certifying AI management
+      systems against ISO/IEC 42001.
+    review_basis: supplied_ledger
+    checked_scope: Inherited Metadata only; ISO catalog scope, edition and preview entry. Licensed normative
+      clauses unavailable in this audit. It governs certification bodies rather than prescribing model thresholds.
+      Not independently repeated here.
+  - citation_key: ec_guidelinesgpaiproviders_2025
+    relation: contextualizes
+    version_url: https://ec.europa.eu/newsroom/dae/redirection/document/118340
+    locator: C(2025)7719final, cover Nov19,2025; paragraph9, printedp2/PDFviewerp5
+    finding: The current linked English edition says the guidelines are not binding and reserves authoritative
+      AIAct interpretation to the CJEU. Its later cover date does not authenticate the inherited July edition.
+    review_basis: this_run_primary
+    checked_scope: Fresh selected cover/paragraph9 and canonical landing-page metadata only; no complete36-page
+      reread. Historical version reconciliation remains open.
+  - citation_key: ec_gpai_trainingcontenttemplate_2025
+    relation: contextualizes
+    version_url: https://www.sidley.com/en/-/media/resource-pages/ai-monitor/guidance/eu-explanatory-notice-and-template-for-the-public-summary-of-training-content.pdf?la=en
+    locator: C(2025)5235 final explanatory notice and template; cover and Article53(1)(d) basis; mirror identity
+      unverified
+    finding: Commission notice/template specifies a public, sufficiently detailed yet broadly comprehensive
+      training-content summary; Article 53(2) open-source exception does not waive this obligation.
+    review_basis: supplied_ledger
+    checked_scope: Inherited Selected sections; official-titled C(2025) 5235 final PDF mirror, cover, Article
+      53(1)(d) basis and template design. Issuer HTML returned 429. Mirror permits text inspection, without
+      byte identity to an issuer copy. Summary is distinct from disclosure of the complete training dataset.
+      Not independently repeated here.
+  limitation: This is a distinction between kinds of evidence, not a determination of every instrument’s present
+    legal force. The supplied patch corrects specified legal-status fields; unreviewed instruments and current
+    application still require dated source checks. ISO evidence is catalog/preview scope only. The Commission
+    template was inspected through a mirror; issuer-byte identity and exact clause locators remain open. The
+    supplied correction package is now integrated; it does not recertify all instruments or editions.
+  counterevidence: Statutory duties and enforceable decisions can exist alongside voluntary tools; documented
+    implementation or outcome studies could provide additional evidence beyond a policy text or disclosure
+    score.
+  next_check: The supplied status corrections are integrated. Complete remaining dated jurisdiction/operative-version
+    checks and Stelling methods before broader legal or score conclusions.
+- id: C18
+  section: governance
+  claim: 'Within-issuer edition comparisons reveal specific documentary changes: DeepMind’s cyber weight-security
+    recommendation moves from SL2 in v3.0 to SL2+ in v3.1; Microsoft changes screening and reassessment scope/timing
+    while retaining materially similar offensive-cyber tier descriptions.'
+  status: scoped_check
+  evidence:
+  - citation_key: deepmind_frontiersafetyv3_2025
+    relation: supports
+    version_url: https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/strengthening-our-frontier-safety-framework/frontier-safety-framework_3.pdf
+    locator: September 22, 2025 v3.0; Table 2.2.2.a and §2.1 external-deployment review
+    finding: Cyber Uplift Level 1 weight-security recommendation is SL2, with rationale including potential
+      automated defense and societal adaptation; external deployment has a governance safety-case decision.
+    review_basis: prior_audit
+    checked_scope: Prior audit initially checked selected clauses; its later deeper pass reports complete extracted
+      16-page text and selected visual table checks, not implementation or experimental validation.
+  - citation_key: deepmind_frontiersafetyv31_2026
+    relation: supports
+    version_url: https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/strengthening-our-frontier-safety-framework/frontier-safety-framework_3-1.pdf
+    locator: April 17, 2026 v3.1; §2.2.2 cyber mitigation table; §1.3.2 footnote 4
+    finding: Recommendation becomes SL2+. Footnote 4 conditionally permits omitting the critical-capability
+      assessment for some low-risk external deployments after a governance residual-risk determination; it
+      does not remove all governance or establish a named model’s use of the exception.
+    review_basis: prior_audit
+    checked_scope: Prior audit initially checked selected sections; later deeper pass reports complete extracted
+      20-page text and key table/footnote visual checks. No implementation check.
+  - citation_key: microsoft_frontiergovernance_2025
+    relation: contextualizes
+    version_url: https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/final/en-us/microsoft-brand/documents/Microsoft-Frontier-Governance-Framework.pdf
+    locator: February 2025 edition §§1–3, especially leading-indicator trigger and six-month deeper-assessment
+      provisions; Appendix I printed p. 12
+    finding: First edition screens internally identified frontier models or more than 10^26 pretraining FLOPs
+      and repeats deeper assessment at least every six months.
+    review_basis: prior_audit
+    checked_scope: Prior audit selected PDF sections and compared offensive-cyber tier text across editions;
+      not a complete-document reread or compliance check.
+  - citation_key: microsoft_frontiergovernance_2026
+    relation: contextualizes
+    version_url: https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/Frontier-Governance-Framework-Feb-2026.pdf
+    locator: February 2026 edition §§1–3; post-training leading assessment, six-month leading review and material-change
+      deeper reassessment; Appendix I printed p. 12
+    finding: Later edition changes screening scope and timing, including fine-tuning and post-training, while
+      offensive-cyber tier wording remains materially similar.
+    review_basis: prior_audit
+    checked_scope: Prior audit selected corresponding PDF clauses and Appendix I, not all document content
+      or implemented practices.
+  limitation: Recommended security goals, assessment triggers and actual operational controls are different
+    units. Threshold names across issuers are not normalized or treated as equivalent.
+  counterevidence: DeepMind’s retained defense/adaptation rationale and Microsoft’s retained cyber tier descriptions
+    limit any broad claim of uniform tightening or weakening. Other clauses, exceptions and internal-deployment
+    scope also matter.
+  next_check: Keep clause-level date, modality, scope and qualifications attached to each comparison; verify
+    full document and appendix coverage before extending these findings beyond the specified provisions.
+- id: C19
+  section: governance
+  claim: OpenAI Preparedness v2 distinguishes the conditional halt for attained Critical cyber capability from
+    additional development safeguards for attained or forecast Critical capability; High predeployment provisions
+    and later internal-use/containment statements have separate scopes.
+  status: scoped_check
+  evidence:
+  - citation_key: openai_preparednessv2_2025
+    relation: supports
+    version_url: https://cdn.openai.com/pdf/18a02b5d-6b67-4cec-ab64-68cdfbddebcd/preparedness-framework-v2.pdf
+    locator: April 15, 2025 v2; Table 1 Critical row (printed pp. 5–6, including p. 6 / viewer p. 7), §§4.2–4.4
+      and Appendix B
+    finding: Table 1’s halt concerns attained Critical capability pending specified safeguards/security standards.
+      Section 4.4 adds safety/security controls for attained or forecast Critical capability regardless of
+      external deployment. A forecast alone is not encoded as triggering that Table 1 halt.
+    review_basis: repo_source_review
+    checked_scope: Existing October 24 integration and regression checks preserve this clause distinction;
+      prior audit’s later deeper pass reports all 22 extracted pages and a key table visual check, not deployed-control
+      verification.
+  - citation_key: openai_preparednessv2_2025
+    relation: bounds
+    version_url: https://cdn.openai.com/pdf/18a02b5d-6b67-4cec-ab64-68cdfbddebcd/preparedness-framework-v2.pdf
+    locator: §3.1; §4.3 marginal-risk conditions and disclosure/validation provision; Appendix B governance
+      roles
+    finding: Elicitation is a lower-bound exercise; marginal-risk adjustments, disclosure and external validation
+      are conditional. Advisory assessment and leadership decision authority differ.
+    review_basis: prior_audit
+    checked_scope: Prior audit checked central clauses and later complete extracted text; it did not verify
+      model-specific risk decisions or underlying validation information.
+  - citation_key: openai_preparednessbeta_2023
+    relation: contextualizes
+    version_url: https://cdn.openai.com/openai-preparedness-framework-beta.pdf
+    locator: December 18, 2023 beta; printed pp. 20–22 deployment/development ceilings and forecast-linked
+      planning
+    finding: Beta uses post-mitigation Medium and High risk ceilings; these historical risk levels should not
+      silently become v2 capability levels.
+    review_basis: prior_audit
+    checked_scope: Prior audit selected indexed official-PDF text because direct binary exceeded its retrieval
+      limit; no independent full read or historical byte-authentication claim.
+  - citation_key: openai_preparednessv2_2025
+    relation: bounds
+    version_url: https://cdn.openai.com/pdf/18a02b5d-6b67-4cec-ab64-68cdfbddebcd/preparedness-framework-v2.pdf
+    locator: Section4.3, printedp12/PDFviewerp13
+    finding: Keeping safeguards more protective than the comparator is paired with sharing information to validate
+      that claim. The uploaded patch omitted this qualification; the existing observation is corrected without
+      adding a policy event.
+    review_basis: this_run_primary
+    checked_scope: Fresh publisher PDF retrieval and selected section4.3 extracted text; no new full read,
+      independent-control check or source-admission capture.
+  limitation: This map preserves existing coding rather than reopening policy observations or inferring that
+    stated obligations were carried out. Later statements are separately dated in the repository’s commitment
+    history.
+  counterevidence: 'Prospective safeguards did not disappear: forecast Critical capability still triggers development
+    safeguards. Section 4.3 also includes provision of validation information; omitting that condition would
+    overstate lack of scrutiny.'
+  next_check: Section4.3 information sharing is now included in the existing observation qualifications after
+    a fresh selected source check. Verify model-specific application, decision authority and actual information
+    access before assurance conclusions.
+- id: C20
+  section: governance
+  claim: 'Inability-oriented safety cases, broader system safety arguments and model cards are complementary
+    proposals: they structure different claims and disclosures, but their publication does not validate a deployment
+    or establish that safety cases are the only valid governance method.'
+  status: scoped_check
+  evidence:
+  - citation_key: goemans_safetycasetemplate_2024
+    relation: supports
+    version_url: https://arxiv.org/html/2411.08088v1
+    locator: Exact v1 §§4.1–4.2; Appendix A definitions
+    finding: The proposed cyber-inability template connects a specified threat actor, harm vector and target
+      to proxy tasks, human baselines and elicitation evidence; conventional and novel-attack branches differ.
+    review_basis: prior_audit
+    checked_scope: Prior audit checked selected primary sections and definitions, not the complete diagram/PDF;
+      supplied ledger separately reports complete text and diagram-label review.
+  - citation_key: habli_bigargumentsafety_2025
+    relation: contextualizes
+    version_url: https://arxiv.org/html/2503.11705v1
+    locator: Exact v1 §§3–4, §7 general-purpose module and §8 synthesis
+    finding: The Balanced, Integrated and Grounded proposal links ethical trade-offs and system hazards to
+      model evidence; its model module permits inability, controlled capability, trustworthy behavior or oversight
+      arguments.
+    review_basis: supplied_ledger
+    checked_scope: Supplied ledger reports selected framework/model-argument sections, not all worked cases
+      or figure-only materials. This run did not independently retrieve it.
+  - citation_key: mitchell_modelcards_2019
+    relation: contextualizes
+    version_url: https://arxiv.org/html/1810.03993v2
+    locator: Exact arXiv v2 §5 worked examples and §6 discussion
+    finding: Model cards organize intended uses, evaluation results and caveats. Section 6 says accuracy depends
+      on creators and calls for complementary third-party audits, adversarial testing and user feedback.
+    review_basis: prior_audit
+    checked_scope: Prior audit inspected abstract, example cards and complete discussion, not a full methods
+      reread, chart transcription or effectiveness study.
+  limitation: Goemans’ worked results are hypothetical; Habli proposes an argument pattern and reuses evidence
+    in examples; model-card examples are scoped disclosures. None establishes calibrated deployment assurance
+    merely by using its format.
+  counterevidence: Cards can expose useful, checkable evaluation results, and safety-case structures can make
+    defeaters explicit. Their value depends on evidence quality, coverage and review rather than their label.
+  next_check: Tie any applied case to the exact claim, test, counterevidence, decision owner and update trigger.
+    Complete Habli’s worked-case and figure review before stronger comparisons.
+- id: C21
+  section: cyber_case_study
+  claim: 'ARTEMIS supplies a descriptive human-agent performance comparison in one authorized university network:
+    A2 reported nine valid findings from eleven submissions and outranked nine of ten professionals under the
+    study score; it does not estimate the causal uplift of AI assistance in general operations.'
+  status: scoped_check
+  evidence:
+  - citation_key: lin_artemispenetration_2026
+    relation: supports
+    version_url: https://arxiv.org/html/2512.09882v2
+    locator: Exact v2 Tables 1–2; §§3.3 and 5.4; study setting and scoring descriptions
+    finding: A2’s stronger ensemble has nine of eleven valid submissions and $59/hour API cost. The $18.21/hour
+      figure belongs to A1, which outranked five of ten professionals.
+    review_basis: prior_audit
+    checked_scope: Prior audit checked selected primary sections and tables; no independent finding tally or
+      full appendix reread. Supplied ledger separately reports all 29 extracted PDF pages.
+  - citation_key: lin_artemispenetration_2026
+    relation: bounds
+    version_url: https://arxiv.org/html/2512.09882v2
+    locator: §3.3 scaffold/attack-graph setup; §5.4 Cybench comparison; limitations and defense/approval conditions
+    finding: Purpose-built orchestration, previously observed human attack-graph information, manual approvals
+      and relaxed interdiction constrain transfer. The reported Cybench comparison did not show significant
+      A1 scaffold uplift over GPT-5 CyAgent.
+    review_basis: supplied_ledger
+    checked_scope: Supplied ledger records full extracted text and appendix review, with graphical details
+      not independently transcribed; this run did not reproduce performance, costs or the comparison.
+  limitation: One site, ten professionals and one run per evaluated variant are a small descriptive comparison.
+    API cost excludes human oversight and infrastructure. Finding remediation is author-reported and does not
+    measure harm reduction.
+  counterevidence: The stronger ensemble’s observed comparative success is positive evidence within this setting.
+    The null Cybench scaffold result and study-specific defensive allowances prevent a universal agent superiority
+    or defense-effect claim.
+  next_check: Inspect exact final conference version against v2 before citation changes; resolve the TinyPilot
+    hint discrepancy and inspect run-level scoring/defensive permissions before broader inference.
+- id: C22
+  section: cyber_case_study
+  claim: AWS and GTIG document AI-assisted components in real compromises, supporting concrete operational
+    pathways; provider-attributed speed or scale is not a matched estimate of incremental AI-caused attacks
+    or harm.
+  status: scoped_check
+  evidence:
+  - citation_key: amazon_fortigateaiaugmented_2026
+    relation: supports
+    version_url: https://aws.amazon.com/blogs/security/ai-augmented-threat-actor-accesses-fortigate-devices-at-scale/
+    locator: Opening and threat-actor assessment; exposed administration/credentials and hardened-target observations
+    finding: AWS reports access to over 600 FortiGate devices in 55 countries, no observed FortiGate vulnerability
+      exploitation in this campaign, and abandonment/failure against hardened targets.
+    review_basis: prior_audit
+    checked_scope: Prior audit selected provider narrative passages, not full article reread, independent telemetry
+      audit or a matched no-AI campaign.
+  - citation_key: google_gtig_promptingautonomy_2026
+    relation: supports
+    version_url: https://cloud.google.com/blog/topics/threat-intelligence/from-prompting-to-autonomy-the-evolution-of-adversarial-ai
+    locator: Executive Summary; AI-Augmented Vulnerability Research and credential-harvesting case
+    finding: GTIG reports autonomous components and credential extraction in under six hours after an initial
+      cloud compromise, not the end-to-end time to gain that initial access; it does not claim an observed
+      fully autonomous attack lifecycle in the wild.
+    review_basis: prior_audit
+    checked_scope: Prior audit selected primary provider sections; no independent telemetry, full article reread
+      or matched baseline.
+  limitation: Telemetry is selectively disclosed and provider-authored. Attribution confidence concerns whether
+    AI was involved, while causal uplift concerns what would differ without it; these are separate judgments.
+  counterevidence: These are positive operational observations rather than only benchmark proxies. Hardened-target
+    failures and continued human roles bound the operational pathway; they do not establish the average durability
+    of defenses.
+  next_check: The supplied wording correction is integrated, preserving earlier assessments; retain actor access,
+    human roles, initial-compromise timing, target defenses and outcome stage in every quotation. Seek matched
+    baselines before numeric uplift claims.
+- id: C23
+  section: cyber_case_study
+  claim: AISI’s July incident account reports nineteen out-of-scope actions across ten of 122 evaluation runs,
+    a rejected malicious pull request and rapid containment, with no resulting real-world harm evidenced by
+    investigators. These reported interventions do not estimate how much harm the controls prevented.
+  status: scoped_check
+  evidence:
+  - citation_key: aisi_unsanctionedagentincident_2026
+    relation: supports
+    version_url: https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing
+    locator: What happened; evaluation set-up; How we discovered the incident; What we found; factors limiting
+      damage
+    finding: The account describes nineteen clustered actions in ten runs, deliberately permitted internet
+      access and disabled provider cyber classifiers, public maintainer rejection and containment within roughly
+      one hour of discovery. Investigators say they have not evidenced resulting real-world harm.
+    review_basis: this_run_primary
+    checked_scope: This run directly retrieved and inspected selected current article passages on setup, counts,
+      discovery, rejection and containment; did not read linked technical PDF, authenticate historical bytes
+      or reproduce event counts.
+  limitation: This is one disclosed investigation under permissive testing conditions, not a deployment incidence
+    rate. Actions are clustered, not nineteen independent incidents. Current HTML was checked; no new source-admission
+    capture is claimed.
+  counterevidence: Maintainer rejection and isolation are observed interruption mechanisms. Some actions reached
+    real services; absence of identified harm does not establish that no external effects occurred or identify
+    an unobserved harmful counterfactual.
+  next_check: The existing causal-wording patch is integrated. Treat AISI and Anthropic follow-ups as analyses
+    of a shared incident, not independent incident replication; assess technical reports and any public independent
+    review separately.
+- id: C24
+  section: cyber_case_study
+  claim: Souly et al.’s fully simulated evaluation shows that out-of-scope behavior is sensitive to explicit
+    prompt scope in a selected scenario set; its reported 26/50 versus 4/49 comparison bounds generalization
+    and does not establish deployed network-control effectiveness or population attack rates.
+  status: scoped_check
+  evidence:
+  - citation_key: souly_astraunsanctioned_2026
+    relation: bounds
+    version_url: https://arxiv.org/html/2609.38415v1
+    locator: Exact v1 §2 selected ten-scenario comparison and §1/§3 simulation/access qualifications
+    finding: Within ten scenarios selected for high early Astra rates, the stricter scope intervention changes
+      the reported most-severe behavior count from 26/50 to 4/49. Tools, repositories and maintainers were
+      simulated and cyber safeguards disabled; the intervention is an explicit allowlist instruction, not a
+      live egress block.
+    review_basis: prior_audit
+    checked_scope: Prior audit checked selected §2 primary passages and scoped counts, not a complete reread
+      or visual verification of Figure 2 percentages. Supplied ledger separately reports all 33 PDF pages and
+      figures/Appendix A review.
+  limitation: Selection, simulation awareness and auditor rollbacks affect interpretation. No-compaction conditions
+    differ in scenario selection/realism. Figure n labels and rounded rates should not be converted into exact
+    independent trajectory counts without source data.
+  counterevidence: Behavior remained possible under the stricter instruction, and the positive scoped reduction
+    does not make the control universally sufficient. Sandboxed absence of real access bounds harm conclusions
+    rather than demonstrating real-world defensive offset.
+  next_check: The supplied defense-persistence recoding and dated append-only assessment are integrated. Inspect
+    raw trajectories, judge outputs and selected-scenario denominators before causal or deployment-rate interpretation.
+- id: C25
+  section: cyber_case_study
+  claim: Barrett’s risk-model architecture and Murray’s structured elicitation expose assumptions linking benchmarks
+    to hypothetical cyber risk; they do not observe matched changes in attack or harm rates. Hold Barrett’s
+    numerical human-versus-LLM SME ransomware comparison while its task-ranking/input discrepancy remains unresolved.
+  status: unresolved
+  evidence:
+  - citation_key: barrett_quantitativecyberrisk_2025
+    relation: supports
+    version_url: https://arxiv.org/html/2512.08864v2
+    locator: Exact v2 modeling architecture and Appendix E scenario inputs
+    finding: The work makes attacker population, frequency, success and harm assumptions inspectable. Illustrative
+      harm scenarios condition on capability access and do not empirically validate every benchmark-to-harm
+      link.
+    review_basis: supplied_ledger
+    checked_scope: Supplied ledger reports complete v2 text, appendices and selected PDF figure/table checks
+      plus code/input review; this run did not replicate that work.
+  - citation_key: barrett_quantitativecyberrisk_2025
+    relation: unresolved
+    version_url: https://arxiv.org/html/2512.08864v2
+    locator: Table 3 printed p. 52 and Appendix B.1 printed p. 53; Figure 6 comparison
+    finding: Table 3 puts LibreChat arbitrary file deletion at rank 16; Appendix B.1 calls it rank 13 and uses
+      a rank-14 cutoff. Rank 13 names a different LibreChat task. A public rerun uses a different order and
+      does not authenticate the paper’s human-model inputs.
+    review_basis: prior_audit
+    checked_scope: Prior audit independently confirmed the internal table/appendix discrepancy in selected
+      primary passages; it did not rederive code or Figure 6. Supplied ledger’s separate code review did not
+      recover the exact human input vector/model or inaccessible canonical ranking archive.
+  - citation_key: murray_mappingbenchmarkdata_2025
+    relation: contextualizes
+    version_url: https://arxiv.org/html/2503.04299v2
+    locator: Exact v2 §§4.1.1–4.1.2 scenario/tasks; §4.2 baseline/order; §4.3 recruitment; §5 exclusions; §6.1
+      limitations
+    finding: Experts give conditional judgments for a hypothetical malware-development/deployment step after
+      successful spearphishing and with model access. The highest capability condition covers five selected
+      tasks, not saturation of the forty-task benchmark; fixed task ordering and the separately sourced baseline
+      limit inference.
+    review_basis: prior_audit
+    checked_scope: Prior audit reports complete accessible main text §§1–7 and acknowledgments, but not appendices,
+      visual figure read or raw-estimate/statistical reproduction. Seven experts completed elicitation, two
+      excluded from central estimates.
+  limitation: An internal documentary mismatch is not proof that a particular numerical Figure 6 estimate is
+    wrong. The inspected public rerun cannot resolve the original human-model provenance. These sources are
+    modeling and elicitation, not observed attack experiments.
+  counterevidence: The architecture is useful even while one numerical comparison is held. Public rerun ordering
+    makes selection compatible with the cutoff under that different order; this is a possible explanation,
+    not verification of the paper’s run.
+  next_check: Obtain the archived canonical task order, exact selected task, human elicitation input vector,
+    model and Figure 6 run manifest. Preserve the proposed numerical hold until those objects reconcile; do
+    not substitute the public rerun silently.
+- id: C26
+  section: governance
+  claim: xAI’s December2025 framework discloses basic-refusal reliance for its cyber assessment and tiered/trusted-party
+    deployment exceptions; underlying assessment and implementation remain unverified.
+  status: provisional
+  evidence:
+  - citation_key: xai_frontierartificialintelligenceframework_2025
+    relation: supports
+    version_url: https://data.x.ai/2025-12-31-xai-frontier-artificial-intelligence-framework.pdf
+    locator: Official11-page edition; cover December30,2025 (filename December31); cyber/basic-refusal passages
+      and deployment-decision section; prior extraction lines77–103,179–184,320–338
+    finding: xAI documents a tiered deployment approach and states it relied on basic refusal for its December
+      2025 cyber assessment, with potential trusted-party access exceptions.
+    review_basis: prior_audit
+    checked_scope: 'Prior audit: Selected sections of official11-page PDF; Cover December30 2025; basic refusal/cyber
+      lines77–103,179–184; deployment decisions320–338.; No underlying third-party cyber reports, actual implementation,
+      current version, or full-document reread verified.'
+  limitation: Historical framework self-report, not a current-policy or deployed-control verification. No underlying
+    third-party cyber reports were inspected.
+  counterevidence: Tiered access and named external assessors are positive governance disclosures. Without
+    their underlying evidence they do not establish the sufficiency of the basic-refusal approach or acceptable
+    residual risk.
+  next_check: Recover the referenced assessment, pin its model/access configuration and operative policy edition,
+    and assess the disclosed exceptions before any implementation conclusion.
+- id: C27
+  section: outcomes
+  claim: 'Sociotechnical evaluation levels and media-based incident trends address different objects: capability
+    and system results require additional evidence to support impact claims or population incident rates.'
+  status: provisional
+  evidence:
+  - citation_key: weidinger_sociotechnicalsafety_2023
+    relation: contextualizes
+    version_url: https://arxiv.org/pdf/2310.11986
+    locator: Framework opening; inherited extracted lines0–117/5025; stable section/page locator pending
+    finding: Separates capability, system interaction and broader sociotechnical impact as levels of safety
+      evaluation.
+    review_basis: supplied_ledger
+    checked_scope: Inherited Selected sections; Selected extracted PDF passages (line span 0–117 of 5025).
+      Framework and illustrative cases. Each layer needs appropriately designed empirical evidence. Not independently
+      repeated here.
+  - citation_key: oecd_trendsincidentshazards_2026
+    relation: bounds
+    version_url: https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/02/trends-in-ai-incidents-and-hazards-reported-by-the-media_7c824ca9/4f5ff43c-en.pdf
+    locator: OECD report executive summary, theme analysis and methodological annex excerpts; exact pages pending
+    finding: Studies trends and theme clusters in media reports collected by the OECD AI Incidents and Hazards
+      Monitor.
+    review_basis: supplied_ledger
+    checked_scope: Inherited Selected sections; OECD PDF contents, executive summary, theme analysis, and methodological
+      annex excerpts. Media, language, search and classification selection change observed coverage; there
+      is no denominator for underlying incident rates. Not independently repeated here.
+  limitation: The framework is conceptual with illustrative cases. The incident analysis uses selected media
+    reports; language, reporting, search and classification affect observed coverage and provide no denominator
+    of underlying incidents.
+  counterevidence: Level distinctions improve evaluation design and reported incident clusters can identify
+    concrete harms and leads. Neither source supplies matched causal estimates of the effect of an individual
+    model or safeguard.
+  next_check: Complete the claim-critical framework/report methods and stable locators; keep reported-record
+    counts separate from population rates and connect each impact assertion to its own denominator and comparator.
+families:
+- id: F01
+  citation_keys:
+  - mazeika_harmbenchstandardized_2024
+  - harmbench_standardizedevaluation_2024
+  relationship: Possible duplicate or related-version records for the same HarmBench study; no independent
+    corroboration count.
+  basis: Supplied ledger entries115 and161 describe18 attacks and33 targets; primary ICML/PMLR identity is
+    a reconciliation lead.
+  status: Unresolved citation/edition lineage; preserve both existing keys pending adjudication.
+- id: F02
+  citation_keys:
+  - wang_helpsteer2opensource_2024
+  - wang_helpsteer2preference_2024
+  relationship: Distinct contributions with shared dataset/annotation lineage.
+  basis: The preference extension adds preferences and rationales to HelpSteer2; supplied ledger and C08.
+  status: Shared lineage recorded; full splits/annotator dependency review pending.
+- id: F03
+  citation_keys:
+  - aisi_unsanctionedagentincident_2026
+  relationship: One incident, with AISI and Anthropic follow-up analyses outside the canonical corpus.
+  basis: The incident disclosure and cited follow-ups in review.md concern the same July testing event; replays/simulations
+    are different observations.
+  status: Incident dependence explicit; candidate sources not assigned new canonical keys or admitted.
+- id: F04
+  citation_keys:
+  - deepmind_frontiersafetyv3_2025
+  - deepmind_frontiersafetyv31_2026
+  relationship: Within-issuer framework editions, compared clause by clause rather than counted as independent
+    empirical support.
+  basis: Existing commitment history and C18.
+  status: Edition relation established for scoped comparison; implementation unverified.
+- id: F05
+  citation_keys:
+  - openai_preparednessbeta_2023
+  - openai_preparednessv2_2025
+  relationship: Within-issuer policy lineage with changed risk/capability terminology.
+  basis: Existing commitment history and C19.
+  status: Historical comparison retained; later statements have separate observations.

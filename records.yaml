@@ -1393,7 +1393,7 @@ records:
     institution: Office of Management and Budget
     type: Memorandum
     date: '2024'
-    url: https://www.whitehouse.gov/wp-content/uploads/2024/03/M-24-10.pdf
+    url: https://www.whitehouse.gov/wp-content/uploads/2024/03/M-24-10-Advancing-Governance-Innovation-and-Risk-Management-for-Agency-Use-of-Artificial-Intelligence.pdf
     urldate: '2026-04-25'
     source_relation: primary
     source_role: legal_or_regulatory_instrument
@@ -4890,32 +4890,18 @@ records:
     synthesis_stream: technical_eval
     stream_note: 'Provisional: Experimental scaling evidence for poisoning attacks.'
 - id: liu_promptinjectionattacks_2025
-  entry_type: misc
+  entry_type: inproceedings
   fields:
     author: Yupei Liu and Yuqi Jia and Runpeng Geng and Jinyuan Jia and Neil Zhenqiang Gong
-    title: Prompt injection attacks and defenses in {LLM}-integrated applications
-    date: '2025'
-    doi: 10.48550/arXiv.2402.06363
+    title: Formalizing and Benchmarking Prompt Injection Attacks and Defenses
+    booktitle: 33rd USENIX Security Symposium (USENIX Security 24)
+    publisher: USENIX Association
+    pages: 1831--1847
+    date: '2024-08'
     eprinttype: arXiv
-    eprint: '2402.06363'
-    pubstate: preprint
-    url: https://arxiv.org/abs/2402.06363
-    urldate: '2026-04-25'
-    abstract: |-
-      Recent advances in Large Language Models (LLMs) enable exciting LLM-integrated applications, which perform
-                      text-based tasks by utilizing their advanced language understanding capabilities. However, as LLMs have
-                      improved, so have the attacks against them. Prompt injection attacks are an important threat: they trick the
-                      model into deviating from the original application’s instructions and instead follow user directives. These
-                      attacks rely on the LLM’s ability to follow instructions and inability to separate prompts and user data. We
-                      introduce structured queries, a general approach to tackle this problem. Structured queries separate prompts
-                      and data into two channels. We implement a system that supports structured queries. This system is made of
-                      (1) a secure front-end that formats a prompt and user data into a special format, and (2) a specially
-                      trained LLM that can produce highquality outputs from these inputs. The LLM is trained using a novel
-                      fine-tuning strategy: we convert a base (non-instructiontuned) LLM to a structured instruction-tuned model
-                      that will only follow instructions in the prompt portion of a query. To do so, we augment standard
-                      instruction tuning datasets with examples that also include instructions in the data portion of the query,
-                      and fine-tune the model to ignore these. Our system significantly improves resistance to prompt injection
-                      attacks, with little or no impact on utility. Our code is released here.
+    eprint: '2310.12815'
+    url: https://www.usenix.org/conference/usenixsecurity24/presentation/liu-yupei
+    urldate: '2026-11-07'
     source_relation: primary
     source_role: original_research
     source_form: paper
@@ -4924,32 +4910,32 @@ records:
     scope_relevance: supporting
     issuer_type: academic_or_research
     issuer_sector: academic
-    review_status: preprint
-    review_process: author_posted_preprint
+    review_status: peer_reviewed
+    review_process: peer_reviewed
     evidence_independence: author_attested
     attestation_relation: author_attested
     independence_from: not_independently_verified
     evidence_basis: research
     governance_function:
+    - evaluation
     - mitigation
     function_role: enabling
     risk_domain:
     - cyber
     threat_vector:
-    - adaptive_attacker
+    - prompt_injection
     lifecycle_stage:
     - deployment
     maintenance_status: static
     legal_status: not_applicable
-    inclusion_reason: 'Included as a supporting paper for frontier AI governance/evals; classified as
-      research_analysis with original_research source role; used for mitigation; lifecycle coverage: deployment;
-      risk domains: cyber; evidence basis: research; function role: enabling.'
+    inclusion_reason: Benchmarks prompt-injection attacks and defenses across LLM-integrated application tasks.
     classification_confidence: medium
-    annotation: 'Use for research writing on frontier AI governance and evaluations. Maps ''Prompt injection
-      attacks and defenses in {LLM}-integrated applications'' to paper source; risk domains: cyber; lifecycle:
-      deployment; assurance functions: mitigation; threat vectors: adaptive attacker.'
+    annotation: Compares five attacks and ten defenses across ten models and seven tasks. Section 8 leaves adaptive attacks against known-answer detection for future work.
     synthesis_stream: technical_eval
-    stream_note: 'Provisional: Technical analysis of prompt-injection attacks and defenses in applications.'
+    evidence_note: Metadata verified against the USENIX proceedings. The earlier draft had a different
+      title. The former arXiv identifier and abstract belonged to the separate StruQ paper.
+    stream_note: Technical benchmark of prompt injection in LLM-integrated applications. The proceedings record
+      and arXiv:2310.12815 identify the same work. The earlier citation key is retained for continuity.
 - id: zhao_surveyrecentbackdoor_2024
   entry_type: misc
   fields:
@@ -9007,10 +8993,13 @@ records:
     - open_weights
     maintenance_status: static
     legal_status: authoritative
-    evidence_note: GovInfo Federal Register PDF retained as the official primary publication. This was
-      an interim final export-control rule with delayed compliance dates, but BIS announced on May 13,
-      2025 that it was rescinding and not enforcing the AI Diffusion Rule pending formal replacement.
-      Use as historical/rescinded regulatory evidence, not as a current binding obligation.
+    evidence_note: >-
+      This interim final rule took effect on January 13, 2025. BIS announced categorical non-enforcement
+      on May 13, 2025. GAO B-337935 (https://www.gao.gov/products/b-337935) confirmed on May 12, 2026
+      that the rule remained legally in effect at that time. The August 14, 2026 regulatory plan
+      (https://www.govinfo.gov/content/pkg/FR-2026-08-14/pdf/2026-16603.pdf, RIN 0694-AJ90)
+      continued to describe formal rescission as a future action. The legal_status records the last
+      verified formal position. It does not imply enforcement or a current compliance determination.
     inclusion_reason: 'Included as a core regulation for frontier AI governance/evals; classified as legal_instrument
       with legal_or_regulatory_instrument source role; used for monitoring, reporting; lifecycle coverage:
       post_deployment; evidence basis: legal; function role: direct.'
@@ -9311,11 +9300,13 @@ records:
     lifecycle_stage:
     - pretraining
     maintenance_status: static
-    legal_status: authoritative
-    evidence_note: GovInfo Federal Register PDF retained as the official primary publication. This is
-      a proposed rule/request for comments, not binding law; it proposed notification and reporting requirements
-      for dual-use foundation AI models and large-scale computing clusters under EO 14110, which was later
-      revoked by EO 14148. Use as proposed and historical regulatory-policy evidence.
+    legal_status: historical
+    evidence_note: >-
+      This September 11, 2024 notice proposed reporting requirements for advanced AI models and computing
+      clusters. It did not create binding duties. The Unified Agenda for RIN 0694-AJ55
+      (https://www.reginfo.gov/public/do/eAgendaViewRule?RIN=0694-AJ55&operation=OPERATION_PRINT_RULE&pubId=202510)
+      records withdrawal on December 16, 2025. On November 14, 2026 that URL returned a page labeled
+      Publication ID 2026; the query parameter does not authenticate a frozen 202510 edition.
     inclusion_reason: 'Included as a core regulation for frontier AI governance/evals; classified as legal_instrument
       with legal_or_regulatory_instrument source role; used for reporting; lifecycle coverage: pretraining;
       evidence basis: legal; function role: direct.'
@@ -9691,11 +9682,11 @@ records:
     - post_deployment
     - procurement
     maintenance_status: static
-    legal_status: authoritative
-    evidence_note: Primary URL tightened from FederalRegister.gov HTML to the official GovInfo Federal
-      Register PDF. EO 14110 was revoked by EO 14148 on January 20, 2025; cite as historical executive-order
-      authority, not current binding law. Frontier relevance is limited to provisions on dual-use foundation
-      models, compute thresholds, reporting, and testing; the order as a whole is broad AI governance.
+    legal_status: historical
+    evidence_note: >-
+      EO 14148 revoked EO 14110 on January 20, 2025
+      (https://www.govinfo.gov/content/pkg/DCPD-202500115/html/DCPD-202500115.htm). Frontier relevance
+      concerns the original provisions on dual-use foundation models, thresholds, reporting and testing.
     inclusion_reason: 'Included as a core executive_order for frontier AI governance/evals; classified
       as legal_instrument with legal_or_regulatory_instrument source role; used for reporting; evidence
       basis: legal; function role: direct.'
@@ -10374,7 +10365,7 @@ records:
     url: https://digital-strategy.ec.europa.eu/en/policies/european-approach-artificial-intelligence
     urldate: '2026-04-25'
     source_relation: primary
-    source_role: legal_or_regulatory_instrument
+    source_role: official_guidance
     source_form: policy_page
     artifact_type: policy_page
     governance_artifact: policy_page
@@ -10386,18 +10377,17 @@ records:
     evidence_independence: regulatory
     attestation_relation: regulatory_authority
     independence_from: regulatory_authority
-    evidence_basis: legal
+    evidence_basis: reference
     governance_function:
     - reporting
     function_role: direct
     maintenance_status: maintained_page
-    legal_status: authoritative
+    legal_status: not_applicable
     evidence_note: Primary European Commission policy page retained. This is an undated dynamic implementation/background
       page cited with urldate only, not binding legal text. Use as supporting EU AI-policy context, not
       as a frontier-model-specific authority or substitute for the EUR-Lex AI Act text.
     inclusion_reason: 'Included as a supporting policy_page for frontier AI governance/evals; classified
-      as policy_page with legal_or_regulatory_instrument source role; used for reporting; evidence basis:
-      legal; function role: direct.'
+      as policy_page with official_guidance source role; used for reporting; evidence basis: reference; function role: direct.'
     classification_confidence: low
     classification_note: 'Low confidence: policy page/legal guidance mixes authoritative legal context,
       implementation guidance, and reference-page functions; source_role, source_form, governance_artifact,
@@ -11013,7 +11003,7 @@ records:
     url: https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai
     urldate: '2026-04-29'
     source_relation: primary
-    source_role: legal_or_regulatory_instrument
+    source_role: official_guidance
     source_form: policy_page
     artifact_type: code_of_practice
     governance_artifact: code_of_practice
@@ -11021,7 +11011,7 @@ records:
     issuer_type: intergovernmental
     issuer_sector: multilateral
     review_status: legal_or_regulatory
-    review_process: legal_process
+    review_process: institutional_review
     evidence_independence: regulatory
     attestation_relation: regulatory_authority
     independence_from: regulatory_authority
@@ -11039,13 +11029,13 @@ records:
     - post_deployment
     version_status: current
     maintenance_status: static
-    legal_status: authoritative
+    legal_status: nonbinding
     evidence_note: Primary European Commission policy page retained for the final GPAI Code of Practice.
       The Code is a voluntary compliance tool for AI Act GPAI obligations, not binding law itself; the
       Safety and Security chapter is frontier-relevant only through the AI Act category of general-purpose
       AI models with systemic risk and the most advanced models.
     inclusion_reason: 'Included as a supporting policy_page for frontier AI governance/evals; classified
-      as code_of_practice with legal_or_regulatory_instrument source role; used for audit, reporting,
+      as code_of_practice with official_guidance source role; used for audit, reporting,
       mitigation; lifecycle coverage: pretraining, deployment, post_deployment; risk domains: systemic_risk;
       evidence basis: legal; function role: direct.'
     classification_confidence: low
@@ -11120,7 +11110,7 @@ records:
     url: https://digital-strategy.ec.europa.eu/en/library/guidelines-scope-obligations-providers-general-purpose-ai-models-under-ai-act
     urldate: '2026-04-29'
     source_relation: primary
-    source_role: legal_or_regulatory_instrument
+    source_role: official_guidance
     source_form: policy_page
     artifact_type: guidance
     governance_artifact: implementation_guidance
@@ -11128,7 +11118,7 @@ records:
     issuer_type: intergovernmental
     issuer_sector: multilateral
     review_status: legal_or_regulatory
-    review_process: legal_process
+    review_process: institutional_review
     evidence_independence: regulatory
     attestation_relation: regulatory_authority
     independence_from: regulatory_authority
@@ -11146,14 +11136,18 @@ records:
     - post_deployment
     version_status: current
     maintenance_status: static
-    legal_status: authoritative
+    legal_status: nonbinding
     evidence_note: Primary URL tightened from a general factpage to the European Commission publication/library
       page for the Guidelines on the scope of obligations for providers of general-purpose AI models under
       the AI Act. These guidelines are not legally binding but reflect the Commission interpretation and
       guide enforcement; use as implementation guidance, not as binding law. Direct frontier relevance
-      is through GPAI models with systemic risk and most advanced models.
+      is through GPAI models with systemic risk and most advanced models. On November 14, 2026 the
+      linked English download (https://ec.europa.eu/newsroom/dae/redirection/document/118340) had cover
+      November 19, 2025, C(2025) 7719 final; paragraph 9 (printed p. 2, PDF viewer p. 5) confirms
+      nonbinding status. This later linked edition does not verify the inherited July edition or
+      silently repin its publication date; version reconciliation remains open.
     inclusion_reason: 'Included as a core policy_page for frontier AI governance/evals; classified as
-      implementation_guidance with legal_or_regulatory_instrument source role; used for audit, reporting,
+      implementation_guidance with official_guidance source role; used for audit, reporting,
       mitigation; lifecycle coverage: pretraining, deployment, post_deployment; risk domains: systemic_risk;
       evidence basis: legal; function role: direct.'
     classification_confidence: low
@@ -11794,7 +11788,7 @@ records:
     - deployment
     - post_deployment
     maintenance_status: static
-    legal_status: authoritative
+    legal_status: enacted_not_in_force
     evidence_note: 'Primary source retained: NYSenate OpenLegislation codified statute page for General
       Business Law Article 44-B, not a bill tracker, private mirror, or media source. The page is dynamic
       and cited with urldate; it displays the most recent revision from 2026-04-03 and states NB effective
@@ -11943,10 +11937,12 @@ records:
     version_status: current
     maintenance_status: static
     legal_status: authoritative
-    evidence_note: Primary European Commission publication/library page retained. This is an explanatory
-      notice and template for public summaries of training content for GPAI models; use as implementation
-      guidance/template evidence for Article 53-style disclosure support, not as binding law or a full
-      frontier-model evaluation regime.
+    evidence_note: >-
+      This record links both the explanatory notice and the public-summary template. The notice is
+      explanatory. Under AI Act Article 53(1)(d), the Commission says use of the linked template
+      is mandatory for the providers subject to the disclosure duty
+      (https://digital-strategy.ec.europa.eu/en/faqs/template-general-purpose-ai-model-providers-summarise-their-training-content).
+      The legal_status reflects that statutory linkage, rather than a separate duty created by the notice.
     inclusion_reason: 'Included as a supporting guidance for frontier AI governance/evals; classified
       as implementation_guidance with legal_or_regulatory_instrument source role; used for reporting;
       lifecycle coverage: pretraining; risk domains: systemic_risk; evidence basis: legal; function role:
@@ -12765,7 +12761,7 @@ records:
     - post_deployment
     version_status: current
     maintenance_status: static
-    legal_status: authoritative
+    legal_status: not_applicable
     inclusion_reason: Included as the AI-management-system certification-body standard that specifies
       requirements for audit and certification bodies under the ISO/IEC 42001 ecosystem.
     classification_confidence: high

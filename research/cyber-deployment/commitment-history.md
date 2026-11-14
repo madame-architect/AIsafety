@@ -516,13 +516,13 @@ Publication dates describe documents; observation dates describe inspection; cla
 
 **Action:** Require safeguards judged sufficient to minimize severe-harm risk for deployment; SAG reviews Capabilities and Safeguards Reports and recommends action to leadership.
 
-**Qualifications:** Leadership retains decision authority and SSC/board oversight is described in Appendix B. Section 4.3 permits adjustments only after confirming a changed external risk landscape, assessing no meaningful overall risk increase, publicly acknowledging the adjustment, and retaining more protective safeguards than the comparator. Sufficiency is an issuer judgment, not measured effectiveness.
+**Qualifications:** Leadership retains decision authority and SSC/board oversight is described in Appendix B. Section 4.3 permits adjustments only after confirming a changed external risk landscape, assessing no meaningful overall risk increase, publicly acknowledging the adjustment, and retaining more protective safeguards than the comparator, and sharing information to validate that comparison. Sufficiency is an issuer judgment, not measured effectiveness.
 
 **Source locator:** Section 2.2, PDF viewer p. 5; section 4.2, pp. 11-13; section 4.3, p. 13; Appendix B, p. 16.
 
 **Compared with:** [openai\_frontier\_safeguard\_review\_beta](#observation-openai_frontier_safeguard_review_beta).
 
-**Analyst change note:** Replaces a post-mitigation score ceiling with capability-triggered safeguard sufficiency review and distinct reports. The qualification and decision authority remain explicit; no single strengthened/weakened rating is assigned.
+**Analyst change note:** Replaces a post-mitigation score ceiling with capability-triggered safeguard sufficiency review and distinct reports. The qualification and decision authority remain explicit; no single strengthened/weakened rating is assigned. The November 14 extraction correction includes section 4.3's information-sharing provision; this is not a new policy observation or an implementation finding.
 
 **Inspection and preservation:** [Snapshot openai\_preparedness\_v2\_captured\_2026\_10\_24](#snapshot-openai_preparedness_v2_captured_2026_10_24).
 

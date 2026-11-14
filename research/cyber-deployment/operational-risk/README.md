@@ -2,6 +2,8 @@
 
 This directory is the second of the project's two linked longitudinal cyber datasets. It tracks the assumptions needed to translate cyber evaluation performance into claims about operational risk and accumulates dated empirical, operational, simulated, and modeled evidence bearing on each assumption.
 
+It is a case study within the [broader research project](../../README.md), whose synthesis and corpus coverage extend beyond cyber evidence.
+
 The companion [commitment history](../README.md) records provider policy changes. The datasets are linked through stable assumption IDs in [dataset-links.yaml](../dataset-links.yaml).
 
 ## Files
@@ -17,7 +19,7 @@ The companion [commitment history](../README.md) records provider policy changes
 
 ## Longitudinal model
 
-Each assumption has a stable `id` and an `assessments` list. A new research round adds a dated assessment rather than overwriting the earlier one. Each evidence observation records its round, admission date, source, context, access and tooling conditions, human role, defensive conditions, outcome, harm status, causal-strength description, and roles against assumptions.
+Each assumption has a stable `id` and an `assessments` list. New evidence or a later review of the existing evidence can add a dated assessment. Earlier assessments remain in the record. Each evidence observation records its round, admission date, source, context, access and tooling conditions, human role, defensive conditions, outcome, harm status, causal-strength description, and roles against assumptions.
 
 The first round tracks:
 
@@ -30,9 +32,9 @@ The first round tracks:
 
 ## Central finding
 
-The strongest admitted evidence concerns **speed, scale, parallelism, and skill compression**. The weakest links are quantitative uplift against a matched non-AI baseline, translation from compromise to severe harm, and net effect after defenders adapt.
+The strongest admitted evidence concerns **AI assistance in multi-step workflows**, including some observed parallelism and short completion times. Incremental uplift against a matched non-AI baseline, the translation from compromise to severe harm, and the net effect after defenders adapt remain poorly measured.
 
-> When benchmark-relevant capabilities are available through an effective scaffold, supplied with suitable tools and permissions, and inserted into an operational workflow, they can reduce expertise, time, and labor requirements and automate meaningful stages of cyber operations. The resulting increase in successful compromise depends materially on target defenses, human orchestration, and downstream bottlenecks.
+> Purpose-built scaffolds and operational tooling can automate meaningful stages of cyber work under some conditions. The admitted studies and incident reports identify examples. The size and direction of the change in successful compromise depend on the baseline, access, target defenses, human orchestration, and downstream bottlenecks.
 
 ## Evidence boundaries
 
@@ -46,7 +48,7 @@ The linked AISI technical incident PDF remains pending full-text review and is n
 
 ## Bibliography and preservation status
 
-The six sources are accepted into this research dataset. Canonical admission to `records.yaml` and exact-byte capture are still pending separate reviewed integration. The preservation and OSF infrastructure has landed; this dataset no longer describes that work as concurrent or unfinished infrastructure.
+The November 7 correction package was integrated on November 14, preserving original assessments and adding dated interpretation reviews. The six sources are admitted to this research dataset and to the authoritative bibliography following the [October 24 integration](../expansion-reconciliation-2026-10-24.md). Their capture metadata are recorded in [source-captures.yaml](source-captures.yaml); retained payloads remain in the owner's private bundle. Ordinary checks validate metadata and any available local bytes, without claiming to retrieve absent payloads or establish public byte reproduction. The [parent research guide](../README.md#preservation-and-evidence-boundaries) gives the strict local audit command and preservation limits. The [release guide](../../../releases/README.md) distinguishes the October 24 deposit receipt from later un-deposited changes.
 
 ## Validate and regenerate
 
