@@ -1,0 +1,144 @@
+{
+  "checked_at": "2026-11-14T02:20:09Z",
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "scripts/build.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "summary": "Validated 286 records; all generated outputs match.\n"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/lint_bibliography.py"
+      ],
+      "exit_code": 0,
+      "summary": "schema=frontier-governance-evals-schema.yml\nschema_version=frontier-governance-evals-v3\nschema_required_fields=20\nschema_multivalue_fields=5\nschema_controlled_fields=25\nschema_keyword_mirror_fields=21\nschema_retained_legacy_fields=4\nentries=286\nfailures=0\nwarnings=0\n"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/audit_cyber_bibliography.py"
+      ],
+      "exit_code": 0,
+      "summary": "Validated 6/6 canonical sources, 6 operational captures, 5 policy captures; checked 0 local payloads; 2 explicit legacy capture gaps.\n"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/build_commitments.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "summary": "Validated 7 snapshots and 17 policy observations for 8 commitment(s).\n"
+    },
+    {
+      "command": [
+        "python3",
+        "research/cyber-deployment/operational-risk/build.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "summary": "validated 6 assumptions, 6 admitted sources, 6 observations, and 1 research round(s)\n"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/build_cyber_datasets.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "summary": "validated two linked longitudinal datasets\n"
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "summary": "venance_release.ReleaseTests.test_github_requires_matching_published_tag_and_downloaded_asset) ... ok\ntest_osf_metadata_must_confirm_project_and_version (test_provenance_release.ReleaseTests.test_osf_metadata_must_confirm_project_and_version) ... ok\ntest_osf_receipt_requires_version_object_project_and_identical_bytes (test_provenance_release.ReleaseTests.test_osf_receipt_requires_version_object_project_and_identical_bytes) ... ok\ntest_package_is_deterministic_and_binds_commit_authorities_outputs (test_provenance_release.ReleaseTests.test_package_is_deterministic_and_binds_commit_authorities_outputs) ... ok\ntest_stale_output_fails_before_packaging (test_provenance_release.ReleaseTests.test_stale_output_fails_before_packaging) ... ok\ntest_tampered_zip_hash_inventory_and_repointed_tag_fail (test_provenance_release.ReleaseTests.test_tampered_zip_hash_inventory_and_repointed_tag_fail) ... ok\n\n----------------------------------------------------------------------\nRan 31 tests in 14.669s\n\nOK\n"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/audit_carbon_candidates.py",
+        "--require-capture-files"
+      ],
+      "exit_code": 0,
+      "summary": "{\n  \"pending_sources\": 5,\n  \"proposed_records\": 5,\n  \"document_snapshots\": 6,\n  \"document_payload_checks\": 6,\n  \"retrieval_payload_checks\": 11,\n  \"unique_payloads\": 9,\n  \"missing_document_payloads\": 0,\n  \"missing_retrieval_payloads\": 0,\n  \"canonical_records\": 286,\n  \"historical_intake_prefix\": \"unchanged\",\n  \"admission\": \"pending; no corpus integration\"\n}\n"
+    }
+  ],
+  "negative_checks": [
+    {
+      "check": "digest mismatch",
+      "result": "rejected as required"
+    },
+    {
+      "check": "length mismatch",
+      "result": "rejected as required"
+    },
+    {
+      "check": "missing mandatory bytes",
+      "result": "rejected as required"
+    },
+    {
+      "check": "path traversal",
+      "result": "rejected as required"
+    },
+    {
+      "check": "false PDF equality",
+      "result": "rejected as required"
+    },
+    {
+      "check": "accidental admission",
+      "result": "rejected as required"
+    },
+    {
+      "check": "historical CSV edit",
+      "result": "rejected as required"
+    }
+  ],
+  "unchanged_authorities": [
+    {
+      "path": "records.yaml",
+      "sha256": "d8d8a725ea8b04dd8bec912baafca45206d377beefeedb108599b6163f6b1b3f",
+      "unchanged": true
+    },
+    {
+      "path": "research/cyber-deployment/evidence.yaml",
+      "sha256": "f7d8978789a1c5541c04d87c6fb4269616e06a245b0c4060c0e42e05bdfbfb5e",
+      "unchanged": true
+    },
+    {
+      "path": "research/cyber-deployment/commitments.yaml",
+      "sha256": "62fe79d7f23b74e2d55bdae530660ad4515b238fdc19aa5b19183847d97f9c8c",
+      "unchanged": true
+    },
+    {
+      "path": "research/cyber-deployment/operational-risk/assumptions.yaml",
+      "sha256": "768b1d5cd07f7bc086ee1d20a2d51a8756094c664c7a0488da66843073487b8b",
+      "unchanged": true
+    },
+    {
+      "path": "research/cyber-deployment/operational-risk/source-admission.yaml",
+      "sha256": "3dc7852f0aaa777cab66aa16df87577fdc3bfc7efa27a4c00c0b7c0750dc5469",
+      "unchanged": true
+    },
+    {
+      "path": "research/cyber-deployment/operational-risk/risk-evidence.yaml",
+      "sha256": "d216c5c8557a0abcd726915d88dc7b93877e5b80e356996f6ef16dfb2b1fa7e5",
+      "unchanged": true
+    }
+  ],
+  "local_markdown_links_checked": 40,
+  "remote_pr_head_rechecked": "72bc5de00988e5349937b54f8d7b36cf9a15fe2d",
+  "public_writes_performed_during_validation": false
+}

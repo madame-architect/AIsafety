@@ -1,0 +1,27 @@
+{
+  "base_commit": "72bc5de00988e5349937b54f8d7b36cf9a15fe2d",
+  "canonical_record_count": 286,
+  "method": "Citation ID, alphanumeric normalized title and primary URL with trailing slash removed; no candidates have DOI/arXiv IDs. Related versions still require judgment.",
+  "results": [
+    {
+      "proposed_record_id": "google_introducingcarbon_2026",
+      "matches": []
+    },
+    {
+      "proposed_record_id": "deepmind_carbonevaluation_2026",
+      "matches": []
+    },
+    {
+      "proposed_record_id": "deepmind_argonsafetyreport_2026",
+      "matches": []
+    },
+    {
+      "proposed_record_id": "google_carbonnowavailable_2026",
+      "matches": []
+    },
+    {
+      "proposed_record_id": "deepmind_carbonsafetyreport_2026",
+      "matches": []
+    }
+  ]
+}

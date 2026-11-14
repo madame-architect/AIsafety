@@ -1,0 +1,163 @@
+schema_version: carbon-source-review-captures-v1
+snapshots:
+- id: carbon_announcement_archive_observed_2026_11_14
+  record_id: google_introducingcarbon_2026
+  source_url: https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/
+  observed_on: '2026-11-14'
+  inspection_scope: Complete retained article text, title, byline and date; rollout,
+    benchmark and safety passages checked against live article. Linked ExploitGym
+    PNG separately captured and visually inspected.
+  preservation_note: New retrieval and scoped inspection. Archive timestamp is archive-attributed;
+    neither it nor this digest establishes the bytes inspected on November 3 or the
+    original publication bytes.
+  original_url: https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/
+  retrieved_at: '2026-11-14T02:10:19Z'
+  archive_url: https://web.archive.org/web/20261113174018if_/https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/
+  archive_checked_on: '2026-11-14'
+  sha256: 7bc1102b6164a46cba95135bc8b8c68088addf03eb794a621b2921c405464c37
+  byte_length: 370533
+  mime_type: text/html
+  published_on: '2026-10-28'
+  version_claim: Dated official HTML article; no numbered revision
+  locator_basis: Article title/date and rollout opening; State-of-the-art cybersecurity
+    performance to help build secure systems; Advancing frontier model safety & security.
+    Navigation, related cards and scripts excluded.
+  preservation_status: captured
+  capture_path: .source-captures/7bc1102b6164a46cba95135bc8b8c68088addf03eb794a621b2921c405464c37.html
+  capture_basis: Archive response bytes; separately retained original differs. See
+    comparisons.json.
+- id: carbon_evaluation_archive_observed_2026_11_14
+  record_id: deepmind_carbonevaluation_2026
+  source_url: https://storage.googleapis.com/deepmind-media/gemini/gemini_4_carbon_model_evaluation.pdf
+  observed_on: '2026-11-14'
+  inspection_scope: All five retained PDF pages extracted; cover, methodology, cyber
+    setup and results inspected. Results table visually checked on PDF viewer p. 5;
+    cyber methodology on viewer p. 4. Compared with separately retrieved live revision.
+  preservation_note: New retrieval and scoped inspection. Archive timestamp is archive-attributed;
+    neither it nor this digest establishes the bytes inspected on November 3 or the
+    original publication bytes.
+  original_url: https://storage.googleapis.com/deepmind-media/gemini/gemini_4_carbon_model_evaluation.pdf
+  retrieved_at: '2026-11-14T02:10:19Z'
+  archive_url: https://web.archive.org/web/20261029225211if_/https://storage.googleapis.com/deepmind-media/gemini/gemini_4_carbon_model_evaluation.pdf
+  archive_checked_on: '2026-11-14'
+  sha256: 729c10bcdcd68998f4ba3b0e81376788886e38e473c33c700ea9bd609bca45ad
+  byte_length: 808899
+  mime_type: application/pdf
+  published_on: null
+  version_claim: October 2026 results; unnumbered PDF, October archive representation
+  locator_basis: 'One-based PDF viewer pages include cover: methodology viewer pp.
+    2-4 (printed pp. 1-3); results viewer p. 5 (printed p. 4).'
+  preservation_status: captured
+  capture_path: .source-captures/729c10bcdcd68998f4ba3b0e81376788886e38e473c33c700ea9bd609bca45ad.pdf
+  capture_basis: Archive response bytes; separately retained original differs. See
+    comparisons.json.
+- id: carbon_evaluation_live_observed_2026_11_14
+  record_id: deepmind_carbonevaluation_2026
+  source_url: https://storage.googleapis.com/deepmind-media/gemini/gemini_4_carbon_model_evaluation.pdf
+  observed_on: '2026-11-14'
+  inspection_scope: All five retained PDF pages extracted; cover, methodology, cyber
+    setup and results inspected. Results table visually checked on PDF viewer p. 5;
+    cyber methodology on viewer p. 4. Compared with separately retrieved live revision.
+    Live results-table pixels not separately checked in this pass.
+  preservation_note: New retrieval and scoped inspection. Archive timestamp is archive-attributed;
+    neither it nor this digest establishes the bytes inspected on November 3 or the
+    original publication bytes.
+  original_url: https://storage.googleapis.com/deepmind-media/gemini/gemini_4_carbon_model_evaluation.pdf
+  retrieved_at: '2026-11-14T02:09:53Z'
+  archive_url: null
+  archive_checked_on: null
+  sha256: f6bb6fdc2406db5229e8d2fdf82f8844b6e9da3a5b90c58e6b72d398af81e549
+  byte_length: 812661
+  mime_type: application/pdf
+  published_on: null
+  version_claim: October 2026 results; unnumbered live PDF retrieved 2026-11-14
+  locator_basis: 'One-based PDF viewer pages include cover: methodology viewer pp.
+    2-4 (printed pp. 1-3); results viewer p. 5 (printed p. 4).'
+  preservation_status: captured
+  capture_path: .source-captures/f6bb6fdc2406db5229e8d2fdf82f8844b6e9da3a5b90c58e6b72d398af81e549.pdf
+  capture_basis: Original PDF response bytes; not byte-identical to the checked October
+    archive.
+  archive_unavailable_reason: The checked October archive differs in bytes and wording.
+    No capture-specific archive of this live revision was verified; exact live bytes
+    retained locally.
+- id: argon_report_archive_observed_2026_11_14
+  record_id: deepmind_argonsafetyreport_2026
+  source_url: https://storage.googleapis.com/deepmind-media/gemini/gemini_4_safety_report.pdf
+  observed_on: '2026-11-14'
+  inspection_scope: Fresh scoped inspection of retained original/byte-identical archived
+    PDF cover and section 3.2.2 opening, printed p. 33 / viewer p. 34; cyber determination
+    visually checked. Automated extracted-text term search is separately scoped. Other
+    pages of the 217-page report not fully read.
+  preservation_note: New retrieval and scoped inspection. Archive timestamp is archive-attributed;
+    neither it nor this digest establishes the bytes inspected on November 3 or the
+    original publication bytes.
+  original_url: https://storage.googleapis.com/deepmind-media/gemini/gemini_4_safety_report.pdf
+  retrieved_at: '2026-11-14T02:10:20Z'
+  archive_url: https://web.archive.org/web/20261020162135if_/https://storage.googleapis.com/deepmind-media/gemini/gemini_4_safety_report.pdf
+  archive_checked_on: '2026-11-14'
+  sha256: 8124f1900313b733df6329433a1376ca28285c4bd8f9a276a87328ceca956adb
+  byte_length: 17378918
+  mime_type: application/pdf
+  published_on: 2026-10
+  version_claim: October 2026 cover; no numbered revision verified
+  locator_basis: 'One-based PDF viewer pages include cover: cover viewer p. 1; section
+    3.2.2 opening viewer p. 34, printed p. 33. This is the scoped determination, not
+    a full cyber-chapter review.'
+  preservation_status: captured
+  capture_path: .source-captures/8124f1900313b733df6329433a1376ca28285c4bd8f9a276a87328ceca956adb.pdf
+  capture_basis: Archive PDF bytes; separately retrieved original matched byte for
+    byte.
+- id: carbon_expansion_archive_observed_2026_11_14
+  record_id: google_carbonnowavailable_2026
+  source_url: https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/
+  observed_on: '2026-11-14'
+  inspection_scope: Complete retained article text, title, byline and date; opening,
+    Frontier cybersecurity capabilities, Progress in model safety and security, Getting
+    started, and linked report identity checked against live article.
+  preservation_note: New retrieval and scoped inspection. Archive timestamp is archive-attributed;
+    neither it nor this digest establishes the bytes inspected on November 3 or the
+    original publication bytes.
+  original_url: https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/
+  retrieved_at: '2026-11-14T02:10:19Z'
+  archive_url: https://web.archive.org/web/20261112163435if_/https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/
+  archive_checked_on: '2026-11-14'
+  sha256: 2939925ed68ed5fc53ff0c7e867c10b3eb6941f0fcbfde5dba92515f579ce6db
+  byte_length: 411757
+  mime_type: text/html
+  published_on: '2026-11-10'
+  version_claim: Dated official HTML article; no numbered revision
+  locator_basis: Article title/date; opening and Getting started product/access lists;
+    Frontier cybersecurity capabilities; Progress in model safety and security, report
+    link.
+  preservation_status: captured
+  capture_path: .source-captures/2939925ed68ed5fc53ff0c7e867c10b3eb6941f0fcbfde5dba92515f579ce6db.html
+  capture_basis: Archive response bytes; separately retained original differs. See
+    comparisons.json.
+- id: carbon_report_archive_observed_2026_11_14
+  record_id: deepmind_carbonsafetyreport_2026
+  source_url: https://storage.googleapis.com/deepmind-media/gemini/gemini_4_carbon_safety_report.pdf
+  observed_on: '2026-11-14'
+  inspection_scope: 'Cover and selected sections: 2.5.1; 3.1.1 and Table 3.1; 3.2.2;
+    3.3.1.1; 3.3.2.1-2; 7.1.2 setup paragraph. Cyber conclusions and safeguard results
+    visually checked on printed pp. 19-20 and 26-27 / viewer pp. 20-21 and 27-28.
+    Remaining report not fully read.'
+  preservation_note: New retrieval and scoped inspection. Archive timestamp is archive-attributed;
+    neither it nor this digest establishes the bytes inspected on November 3 or the
+    original publication bytes.
+  original_url: https://storage.googleapis.com/deepmind-media/gemini/gemini_4_carbon_safety_report.pdf
+  retrieved_at: '2026-11-14T02:10:20Z'
+  archive_url: https://web.archive.org/web/20261110162659if_/https://storage.googleapis.com/deepmind-media/gemini/gemini_4_carbon_safety_report.pdf
+  archive_checked_on: '2026-11-14'
+  sha256: 78179c76c34e3f6f57cbc36fc672c8fb5d15afb0209bd98a46adacebb43774eb
+  byte_length: 7351721
+  mime_type: application/pdf
+  published_on: 2026-11
+  version_claim: November 2026 cover; no numbered revision verified
+  locator_basis: 'One-based PDF viewer pages include cover: 2.5.1 viewer p. 11 / printed
+    p. 10; 3.1.1 viewer pp. 13-16 / printed pp. 12-15; 3.2.2 viewer pp. 20-21 / printed
+    pp. 19-20; 3.3 cyber coverage/robustness viewer pp. 23-28 / printed pp. 22-27;
+    7.1.2 setup viewer p. 89 / printed p. 88.'
+  preservation_status: captured
+  capture_path: .source-captures/78179c76c34e3f6f57cbc36fc672c8fb5d15afb0209bd98a46adacebb43774eb.pdf
+  capture_basis: Archive PDF bytes; separately retrieved original matched byte for
+    byte.

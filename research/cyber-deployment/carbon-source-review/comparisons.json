@@ -1,0 +1,51 @@
+[
+  {
+    "source_id": "carbon_announcement",
+    "original_sha256": "5a979cf1c3e1cd588331c12c5f40dbba0e49fe56dc15d5061216c8762e0425bd",
+    "archive_sha256": "7bc1102b6164a46cba95135bc8b8c68088addf03eb794a621b2921c405464c37",
+    "original_byte_length": 367968,
+    "archive_byte_length": 370533,
+    "byte_identical": false,
+    "archive_url": "https://web.archive.org/web/20261113174018if_/https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+    "normalized_article_text_identical": true,
+    "comparison_scope": "Whitespace-normalized article text; not HTML byte identity, external images or scripts."
+  },
+  {
+    "source_id": "carbon_evaluation",
+    "original_sha256": "f6bb6fdc2406db5229e8d2fdf82f8844b6e9da3a5b90c58e6b72d398af81e549",
+    "archive_sha256": "729c10bcdcd68998f4ba3b0e81376788886e38e473c33c700ea9bd609bca45ad",
+    "original_byte_length": 812661,
+    "archive_byte_length": 808899,
+    "byte_identical": false,
+    "archive_url": "https://web.archive.org/web/20261029225211if_/https://storage.googleapis.com/deepmind-media/gemini/gemini_4_carbon_model_evaluation.pdf"
+  },
+  {
+    "source_id": "argon_report",
+    "original_sha256": "8124f1900313b733df6329433a1376ca28285c4bd8f9a276a87328ceca956adb",
+    "archive_sha256": "8124f1900313b733df6329433a1376ca28285c4bd8f9a276a87328ceca956adb",
+    "original_byte_length": 17378918,
+    "archive_byte_length": 17378918,
+    "byte_identical": true,
+    "archive_url": "https://web.archive.org/web/20261020162135if_/https://storage.googleapis.com/deepmind-media/gemini/gemini_4_safety_report.pdf"
+  },
+  {
+    "source_id": "carbon_expansion",
+    "original_sha256": "5bbc366ac4603f695d47c810a1c51b9d400f77486dabd8b5ae4df3d6e3cd97e7",
+    "archive_sha256": "2939925ed68ed5fc53ff0c7e867c10b3eb6941f0fcbfde5dba92515f579ce6db",
+    "original_byte_length": 408198,
+    "archive_byte_length": 411757,
+    "byte_identical": false,
+    "archive_url": "https://web.archive.org/web/20261112163435if_/https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+    "normalized_article_text_identical": true,
+    "comparison_scope": "Whitespace-normalized article text; not HTML byte identity, external images or scripts."
+  },
+  {
+    "source_id": "carbon_report",
+    "original_sha256": "78179c76c34e3f6f57cbc36fc672c8fb5d15afb0209bd98a46adacebb43774eb",
+    "archive_sha256": "78179c76c34e3f6f57cbc36fc672c8fb5d15afb0209bd98a46adacebb43774eb",
+    "original_byte_length": 7351721,
+    "archive_byte_length": 7351721,
+    "byte_identical": true,
+    "archive_url": "https://web.archive.org/web/20261110162659if_/https://storage.googleapis.com/deepmind-media/gemini/gemini_4_carbon_safety_report.pdf"
+  }
+]

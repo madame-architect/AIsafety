@@ -1,0 +1,20 @@
+[
+  {
+    "source_id": "exploitgym_chart",
+    "original_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini_4_carbon_exploitgym.original.png",
+    "http_status": 200,
+    "final_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini_4_carbon_exploitgym.original.png",
+    "retrieved_at": "2026-11-14T02:09:53Z",
+    "sha256": "83fa5d4c5917d6b06d7c8ad54f6fa32802c2b53599120c3e65da471e6086ff8e",
+    "byte_length": 211132,
+    "mime_type": "image/png",
+    "capture_path": ".source-captures/83fa5d4c5917d6b06d7c8ad54f6fa32802c2b53599120c3e65da471e6086ff8e.png",
+    "response_metadata": {
+      "content-length": "211132",
+      "date": "Sat, 14 Nov 2026 02:09:53 GMT",
+      "last-modified": "Wed, 28 Oct 2026 16:18:34 GMT",
+      "etag": "\"7e219b0da6dd8416fbc9504f6727b67e\"",
+      "content-type": "image/png"
+    }
+  }
+]

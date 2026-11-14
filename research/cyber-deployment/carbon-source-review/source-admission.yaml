@@ -1,0 +1,142 @@
+schema_version: carbon-source-review-admission-v1
+repository_base_commit: 72bc5de00988e5349937b54f8d7b36cf9a15fe2d
+admission_pending: true
+sources:
+- source_id: carbon_announcement
+  proposed_record_id: google_introducingcarbon_2026
+  title: 'Gemini 4 Carbon: our next frontier model'
+  primary_url: https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/
+  original_pr21_candidate: true
+  research_admission: pending
+  bibliography_admission: pending
+  admitted_on: null
+  record_id: null
+  preservation_status: captured
+  capture_ids:
+  - carbon_announcement_archive_observed_2026_11_14
+  inspection_scope: Complete retained article text, title, byline and date; rollout,
+    benchmark and safety passages checked against live article. Linked ExploitGym
+    PNG separately captured and visually inspected.
+  full_text_read: true
+  review_completed_at: '2026-11-14T02:17:55Z'
+  remaining_review:
+  - Approve admission as an attributed, dated rollout announcement; not proof of actual
+    access or standing policy.
+- source_id: carbon_evaluation
+  proposed_record_id: deepmind_carbonevaluation_2026
+  title: Gemini 4 Carbon Model Evaluation
+  primary_url: https://storage.googleapis.com/deepmind-media/gemini/gemini_4_carbon_model_evaluation.pdf
+  original_pr21_candidate: true
+  research_admission: pending
+  bibliography_admission: pending
+  admitted_on: null
+  record_id: null
+  preservation_status: captured
+  capture_ids:
+  - carbon_evaluation_archive_observed_2026_11_14
+  - carbon_evaluation_live_observed_2026_11_14
+  inspection_scope: All five retained PDF pages extracted; cover, methodology, cyber
+    setup and results inspected. Results table visually checked on PDF viewer p. 5;
+    cyber methodology on viewer p. 4. Compared with separately retrieved live revision.
+  full_text_read: false
+  review_completed_at: '2026-11-14T02:17:55Z'
+  remaining_review:
+  - Select the October archived methodology for the historical note; keep the changed
+    live revision separate.
+  - Confirm metric denominator and configuration before dataset admission; do not
+    infer task count from percentages.
+- source_id: argon_report
+  proposed_record_id: deepmind_argonsafetyreport_2026
+  title: Gemini 4 Argon Safety & Security Report
+  primary_url: https://storage.googleapis.com/deepmind-media/gemini/gemini_4_safety_report.pdf
+  original_pr21_candidate: true
+  research_admission: pending
+  bibliography_admission: pending
+  admitted_on: null
+  record_id: null
+  preservation_status: captured
+  capture_ids:
+  - argon_report_archive_observed_2026_11_14
+  inspection_scope: Fresh scoped inspection of retained original/byte-identical archived
+    PDF cover and section 3.2.2 opening, printed p. 33 / viewer p. 34; cyber determination
+    visually checked. Automated extracted-text term search is separately scoped. Other
+    pages of the 217-page report not fully read.
+  full_text_read: false
+  review_completed_at: '2026-11-14T02:17:55Z'
+  remaining_review:
+  - Approve scoped comparator admission; do not label the whole report fully inspected.
+- source_id: carbon_expansion
+  proposed_record_id: google_carbonnowavailable_2026
+  title: Gemini 4 Carbon is now available
+  primary_url: https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/
+  original_pr21_candidate: false
+  research_admission: pending
+  bibliography_admission: pending
+  admitted_on: null
+  record_id: null
+  preservation_status: captured
+  capture_ids:
+  - carbon_expansion_archive_observed_2026_11_14
+  inspection_scope: Complete retained article text, title, byline and date; opening,
+    Frontier cybersecurity capabilities, Progress in model safety and security, Getting
+    started, and linked report identity checked against live article.
+  full_text_read: true
+  review_completed_at: '2026-11-14T02:17:55Z'
+  remaining_review:
+  - Approve admission as an attributed, dated rollout announcement; not proof of actual
+    access or standing policy.
+- source_id: carbon_report
+  proposed_record_id: deepmind_carbonsafetyreport_2026
+  title: Gemini 4 Carbon Safety & Security Report
+  primary_url: https://storage.googleapis.com/deepmind-media/gemini/gemini_4_carbon_safety_report.pdf
+  original_pr21_candidate: false
+  research_admission: pending
+  bibliography_admission: pending
+  admitted_on: null
+  record_id: null
+  preservation_status: captured
+  capture_ids:
+  - carbon_report_archive_observed_2026_11_14
+  inspection_scope: 'Cover and selected sections: 2.5.1; 3.1.1 and Table 3.1; 3.2.2;
+    3.3.1.1; 3.3.2.1-2; 7.1.2 setup paragraph. Cyber conclusions and safeguard results
+    visually checked on printed pp. 19-20 and 26-27 / viewer pp. 20-21 and 27-28.
+    Remaining report not fully read.'
+  full_text_read: false
+  review_completed_at: '2026-11-14T02:17:55Z'
+  remaining_review:
+  - Assess the carry-forward rule and the link from tested safeguards to each deployment
+    configuration; scoped admission only.
+inspection_events:
+- id: pr21_review_2026_11_03
+  event_date: '2026-11-03'
+  provenance: 'PR #21 head 72bc5de00988e5349937b54f8d7b36cf9a15fe2d; intake.csv and
+    case note'
+  status: recorded_prior_review_not_reconstructed
+  scope: The note records title-page and cyber-determination inspection of the publisher
+    Argon PDF, plus a third-party transcription search and model-card cross-check.
+  capture_identity: unverified; no original reading record or source bytes from that
+    event recovered
+- id: later_argon_review_2026_11_08
+  event_date: '2026-11-08'
+  provenance: User-supplied private publication update; underlying chat not independently
+    opened
+  status: secondary_account_of_prior_review
+  scope: Later review did not independently verify the full original PDF interior;
+    attempted web route exceeded its size limit.
+  capture_identity: unverified; does not disprove the earlier scoped inspection
+- id: fresh_argon_review_2026_11_14
+  event_date: '2026-11-14'
+  provenance: This package; UTC retrieval timestamps and retained-byte records
+  status: performed_in_this_pass
+  scope: Fresh scoped inspection of retained original/byte-identical archived PDF
+    cover and section 3.2.2 opening, printed p. 33 / viewer p. 34; cyber determination
+    visually checked. Automated extracted-text term search is separately scoped. Other
+    pages of the 217-page report not fully read.
+  capture_identity: argon_report_archive_observed_2026_11_14
+unchanged_authorities:
+- records.yaml
+- research/cyber-deployment/evidence.yaml
+- research/cyber-deployment/commitments.yaml
+- research/cyber-deployment/operational-risk/assumptions.yaml
+- research/cyber-deployment/operational-risk/source-admission.yaml
+- research/cyber-deployment/operational-risk/risk-evidence.yaml

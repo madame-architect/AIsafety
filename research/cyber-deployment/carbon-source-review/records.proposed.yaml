@@ -1,0 +1,243 @@
+schema_version: frontier-governance-evals-v3
+records:
+- id: google_introducingcarbon_2026
+  entry_type: online
+  fields:
+    author: Koray Kavukcuoglu
+    title: 'Gemini 4 Carbon: our next frontier model'
+    url: https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/
+    urldate: '2026-11-14'
+    source_relation: primary
+    source_role: official_statement
+    source_form: blog_post
+    artifact_type: blog_post
+    governance_artifact: official_communication
+    scope_relevance: supporting
+    issuer_type: company
+    issuer_sector: private
+    review_status: institutional
+    review_process: institutional_review
+    evidence_independence: self_attested
+    attestation_relation: self_attested
+    independence_from: subject_self
+    evidence_basis: reference
+    governance_function:
+    - reporting
+    function_role: background
+    risk_domain:
+    - cyber
+    - misuse
+    lifecycle_stage:
+    - deployment
+    maintenance_status: maintained_page
+    legal_status: not_applicable
+    classification_confidence: medium
+    synthesis_stream: contextual
+    stream_note: Proposed route only. Dated model-specific access announcement; no
+      standing-policy observation or independent implementation finding.
+    inclusion_reason: Proposed scoped source for tracing announced access, evaluated
+      cyber capability, or the stated safeguard/risk decision in the Carbon case.
+    note: DRAFT, pending admission. Complete retained article text, title, byline
+      and date; rollout, benchmark and safety passages checked against live article.
+      Linked ExploitGym PNG separately captured and visually inspected. Publication/edition
+      precision and exact retained representation are recorded separately in source-captures.yaml.
+    archiveurl: https://web.archive.org/web/20261113174018if_/https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/
+    evidence_note: Exact archive bytes and locators in the pending source package;
+      this does not establish November 3 byte identity. AI-assisted scoped review,
+      not independent experimental validation.
+    date: '2026-10-28'
+- id: deepmind_carbonevaluation_2026
+  entry_type: report
+  fields:
+    author: '{Google DeepMind}'
+    title: Gemini 4 Carbon Model Evaluation
+    url: https://storage.googleapis.com/deepmind-media/gemini/gemini_4_carbon_model_evaluation.pdf
+    urldate: '2026-11-14'
+    source_relation: primary
+    source_role: original_research
+    source_form: report
+    artifact_type: eval_method
+    governance_artifact: eval_method
+    scope_relevance: supporting
+    issuer_type: company
+    issuer_sector: private
+    review_status: institutional
+    review_process: institutional_review
+    evidence_independence: self_attested
+    attestation_relation: self_attested
+    independence_from: subject_self
+    evidence_basis: research
+    governance_function:
+    - evaluation
+    - reporting
+    function_role: direct
+    risk_domain:
+    - cyber
+    - misuse
+    lifecycle_stage:
+    - deployment
+    maintenance_status: static
+    legal_status: not_applicable
+    classification_confidence: medium
+    synthesis_stream: technical_eval
+    stream_note: Proposed route only. Provider evaluation report, admitted only for
+      explicitly inspected cyber passages if approved; no independent validation.
+    inclusion_reason: Proposed scoped source for tracing announced access, evaluated
+      cyber capability, or the stated safeguard/risk decision in the Carbon case.
+    note: DRAFT, pending admission. All five retained PDF pages extracted; cover,
+      methodology, cyber setup and results inspected. Results table visually checked
+      on PDF viewer p. 5; cyber methodology on viewer p. 4. Compared with separately
+      retrieved live revision. Publication/edition precision and exact retained representation
+      are recorded separately in source-captures.yaml. October 2026 is a results-as-of
+      date; publication date and revision date remain unverified. Historical archive
+      and live revision must not be collapsed.
+    archiveurl: https://web.archive.org/web/20261029225211if_/https://storage.googleapis.com/deepmind-media/gemini/gemini_4_carbon_model_evaluation.pdf
+    evidence_note: Exact archive bytes and locators in the pending source package;
+      this does not establish November 3 byte identity. AI-assisted scoped review,
+      not independent experimental validation.
+    institution: Google DeepMind
+- id: deepmind_argonsafetyreport_2026
+  entry_type: report
+  fields:
+    author: '{Google DeepMind}'
+    title: Gemini 4 Argon Safety & Security Report
+    url: https://storage.googleapis.com/deepmind-media/gemini/gemini_4_safety_report.pdf
+    urldate: '2026-11-14'
+    source_relation: primary
+    source_role: original_research
+    source_form: report
+    artifact_type: system_card
+    governance_artifact: system_card
+    scope_relevance: supporting
+    issuer_type: company
+    issuer_sector: private
+    review_status: institutional
+    review_process: institutional_review
+    evidence_independence: self_attested
+    attestation_relation: self_attested
+    independence_from: subject_self
+    evidence_basis: research
+    governance_function:
+    - evaluation
+    - reporting
+    function_role: direct
+    risk_domain:
+    - cyber
+    - misuse
+    lifecycle_stage:
+    - deployment
+    maintenance_status: static
+    legal_status: not_applicable
+    classification_confidence: medium
+    synthesis_stream: technical_eval
+    stream_note: Proposed route only. Provider evaluation report, admitted only for
+      explicitly inspected cyber passages if approved; no independent validation.
+    inclusion_reason: Proposed scoped source for tracing announced access, evaluated
+      cyber capability, or the stated safeguard/risk decision in the Carbon case.
+    note: DRAFT, pending admission. Fresh scoped inspection of retained original/byte-identical
+      archived PDF cover and section 3.2.2 opening, printed p. 33 / viewer p. 34;
+      cyber determination visually checked. Automated extracted-text term search is
+      separately scoped. Other pages of the 217-page report not fully read. Publication/edition
+      precision and exact retained representation are recorded separately in source-captures.yaml.
+    archiveurl: https://web.archive.org/web/20261020162135if_/https://storage.googleapis.com/deepmind-media/gemini/gemini_4_safety_report.pdf
+    evidence_note: Exact archive bytes and locators in the pending source package;
+      this does not establish November 3 byte identity. AI-assisted scoped review,
+      not independent experimental validation.
+    date: 2026-10
+    institution: Google DeepMind
+- id: google_carbonnowavailable_2026
+  entry_type: online
+  fields:
+    author: Koray Kavukcuoglu
+    title: Gemini 4 Carbon is now available
+    url: https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/
+    urldate: '2026-11-14'
+    source_relation: primary
+    source_role: official_statement
+    source_form: blog_post
+    artifact_type: blog_post
+    governance_artifact: official_communication
+    scope_relevance: supporting
+    issuer_type: company
+    issuer_sector: private
+    review_status: institutional
+    review_process: institutional_review
+    evidence_independence: self_attested
+    attestation_relation: self_attested
+    independence_from: subject_self
+    evidence_basis: reference
+    governance_function:
+    - reporting
+    function_role: background
+    risk_domain:
+    - cyber
+    - misuse
+    lifecycle_stage:
+    - deployment
+    maintenance_status: maintained_page
+    legal_status: not_applicable
+    classification_confidence: medium
+    synthesis_stream: contextual
+    stream_note: Proposed route only. Dated model-specific access announcement; no
+      standing-policy observation or independent implementation finding.
+    inclusion_reason: Proposed scoped source for tracing announced access, evaluated
+      cyber capability, or the stated safeguard/risk decision in the Carbon case.
+    note: DRAFT, pending admission. Complete retained article text, title, byline
+      and date; opening, Frontier cybersecurity capabilities, Progress in model safety
+      and security, Getting started, and linked report identity checked against live
+      article. Publication/edition precision and exact retained representation are
+      recorded separately in source-captures.yaml.
+    archiveurl: https://web.archive.org/web/20261112163435if_/https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/
+    evidence_note: Exact archive bytes and locators in the pending source package;
+      this does not establish November 3 byte identity. AI-assisted scoped review,
+      not independent experimental validation.
+    date: '2026-11-10'
+- id: deepmind_carbonsafetyreport_2026
+  entry_type: report
+  fields:
+    author: '{Google DeepMind}'
+    title: Gemini 4 Carbon Safety & Security Report
+    url: https://storage.googleapis.com/deepmind-media/gemini/gemini_4_carbon_safety_report.pdf
+    urldate: '2026-11-14'
+    source_relation: primary
+    source_role: original_research
+    source_form: report
+    artifact_type: system_card
+    governance_artifact: system_card
+    scope_relevance: supporting
+    issuer_type: company
+    issuer_sector: private
+    review_status: institutional
+    review_process: institutional_review
+    evidence_independence: self_attested
+    attestation_relation: self_attested
+    independence_from: subject_self
+    evidence_basis: research
+    governance_function:
+    - evaluation
+    - reporting
+    function_role: direct
+    risk_domain:
+    - cyber
+    - misuse
+    lifecycle_stage:
+    - deployment
+    maintenance_status: static
+    legal_status: not_applicable
+    classification_confidence: medium
+    synthesis_stream: technical_eval
+    stream_note: Proposed route only. Provider evaluation report, admitted only for
+      explicitly inspected cyber passages if approved; no independent validation.
+    inclusion_reason: Proposed scoped source for tracing announced access, evaluated
+      cyber capability, or the stated safeguard/risk decision in the Carbon case.
+    note: 'DRAFT, pending admission. Cover and selected sections: 2.5.1; 3.1.1 and
+      Table 3.1; 3.2.2; 3.3.1.1; 3.3.2.1-2; 7.1.2 setup paragraph. Cyber conclusions
+      and safeguard results visually checked on printed pp. 19-20 and 26-27 / viewer
+      pp. 20-21 and 27-28. Remaining report not fully read. Publication/edition precision
+      and exact retained representation are recorded separately in source-captures.yaml.'
+    archiveurl: https://web.archive.org/web/20261110162659if_/https://storage.googleapis.com/deepmind-media/gemini/gemini_4_carbon_safety_report.pdf
+    evidence_note: Exact archive bytes and locators in the pending source package;
+      this does not establish November 3 byte identity. AI-assisted scoped review,
+      not independent experimental validation.
+    date: 2026-11
+    institution: Google DeepMind
