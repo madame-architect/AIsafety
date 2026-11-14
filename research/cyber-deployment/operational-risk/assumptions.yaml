@@ -62,6 +62,13 @@ assumptions:
       The evidence strongly suggests speed, scale, parallelism, and skill compression, but most
       operational reports lack matched counterfactuals. ARTEMIS provides a rare direct human comparison
       under study-specific conditions.
+  - id: incremental_uplift_2026_11_07
+    as_of: '2026-11-07'
+    round_id: recent-real-world-cyber-evidence-2026-10
+    code: mixed
+    summary: >-
+      ARTEMIS compares agents with human professionals in one authorized network. AWS and GTIG
+      attribute AI assistance to real campaigns, but provide no matched estimate of incremental uplift.
 - id: harm_mapping
   label: Technical capability and compromise translate into realized harm
   claim: >-
@@ -90,3 +97,10 @@ assumptions:
     summary: >-
       Hardened targets, human review, network controls, monitoring, and ordinary security architecture
       materially changed or prevented outcomes in several admitted sources.
+  - id: defense_persistence_2026_11_07
+    as_of: '2026-11-07'
+    round_id: recent-real-world-cyber-evidence-2026-10
+    code: challenged
+    summary: >-
+      AWS reports failed pivots against hardened targets. AISI reports rejection of a malicious
+      pull request. ARTEMIS and Souly bound generalization. Average defense effects remain unknown.

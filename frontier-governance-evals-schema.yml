@@ -336,6 +336,8 @@ fields:
     values:
     - not_applicable
     - authoritative
+    - enacted_not_in_force
+    - nonbinding
     - proposed
     - superseded
     - historical

@@ -1,6 +1,8 @@
 # Frontier AI Governance Evals
 
-A curated, AI-assisted collection of sources about frontier AI evaluation and governance. The collection records source roles, evidence provenance, risk areas, lifecycle stages, and other research annotations.
+A curated, AI-assisted research project about what frontier AI evaluations establish, how governance uses them, and where the evidence remains limited. The broad bibliography and provisional review are central; the linked cyber datasets provide a worked case study.
+
+Start with the [provisional synthesis](research/synthesis/review.md) for findings, then use its [claim-and-evidence map](research/synthesis/claims.md) and [coverage summary](research/synthesis/coverage-summary.md) to examine their basis. The map is generated from [claims.yaml](research/synthesis/claims.yaml). This is an integration of existing research, not a completed independent rereading of the corpus or a publication endorsement. [Reconciliation and remaining decisions](research/synthesis/reconciliation.md) identify unresolved work.
 
 **Edit `records.yaml`.** BibTeX and the stream views are generated from it. The YAML schema defines permitted fields and classifications; it does not contain the source records.
 
@@ -8,21 +10,18 @@ The current collection contains **286 records**: 156 technical evaluations/metho
 
 ## Start here
 
-| File or directory | Purpose |
+| Reader task | Start here |
 |---|---|
-| [records.yaml](records.yaml) | Authoritative editable source records |
-| [views/index.md](views/index.md) | Generated index of technical, governance, and contextual sources |
-| [frontier-governance-evals.bib](frontier-governance-evals.bib) | Generated complete BibLaTeX bibliography |
-| [frontier-governance-evals-schema.yml](frontier-governance-evals-schema.yml) | Schema version, supported entry types, controlled values, and keyword policy |
-| [frontier-governance-evals-taxonomy.md](frontier-governance-evals-taxonomy.md) | Definitions and interpretation guidance |
-| [METHODS.md](METHODS.md) | Reconstructed collection history, stabilization methods, and prospective intake rules |
-| [MIGRATION.md](MIGRATION.md) | Baseline reconciliation and current limitations |
-| [provenance/](provenance/) | Frozen input files, checksums, and the record-change report |
-| [intake.csv](intake.csv) | Actual discoveries and dated review decisions, including later checks of legacy records |
-| [Cyber source verification](research/cyber-deployment/source-verification.md) | Five-source claim, classification, and version check for the next research output |
-| [Cyber commitment history](research/cyber-deployment/README.md) | Linked longitudinal datasets: eight scoped commitments, 17 policy observations, and six operational-risk evidence sources |
-| [Stabilization release](releases/stabilization-2026-10-16.md) | Exact merged release identity and OSF synchronization status |
-| [evals-datamodel.dbx](evals-datamodel.dbx) | Custom BibLaTeX data model for the exported fields |
+| Understand findings and limitations | [Broad synthesis](research/synthesis/review.md) and [research guide](research/README.md) |
+| Check a substantive claim | [Claim-and-evidence map](research/synthesis/claims.md), with source versions, locators and review limits |
+| Inspect reading coverage | [Generated summary](research/synthesis/coverage-summary.md) and [per-record ledger](research/synthesis/coverage.csv) |
+| Find and cite a source | [Source index](views/index.md), [complete BibLaTeX export](frontier-governance-evals.bib), and authoritative [records.yaml](records.yaml) |
+| Understand methods and history | [METHODS.md](METHODS.md), [migration](MIGRATION.md), and [provenance](provenance/) |
+| Examine the cyber case study | [Research guide and linked datasets](research/cyber-deployment/README.md), including dated Carbon observations and pending source candidates |
+| Review unresolved work and publication decisions | [Reconciliation](research/synthesis/reconciliation.md) |
+| Add or correct source records | [Intake log](intake.csv), [schema](frontier-governance-evals-schema.yml), and [taxonomy](frontier-governance-evals-taxonomy.md) |
+| Reproduce or deposit an exact revision | Commands below and [release protocol](releases/README.md); the [stabilization note](releases/stabilization-2026-10-16.md) remains historical |
+| Inspect the published October 24 revision | [v2026.10.24 release and deposit receipt](https://github.com/madame-architect/AIsafety/releases/tag/v2026.10.24) |
 
 ## Build and verify
 
@@ -32,6 +31,7 @@ Use Python 3.10 or later. From the repository root:
 python3 -m pip install -r requirements.txt
 python3 scripts/build.py
 python3 scripts/build.py --check
+python3 scripts/build_research.py --check
 python3 scripts/lint_bibliography.py
 python3 scripts/build_commitments.py --check
 python3 research/cyber-deployment/operational-risk/build.py --check
@@ -40,7 +40,7 @@ python3 scripts/audit_cyber_bibliography.py
 python3 -m unittest discover -s tests -v
 ```
 
-The build validates the YAML records, regenerates keyword mirrors, and writes the complete bibliography and disjoint stream exports. `--check` verifies the same outputs without changing files and fails if an export is missing or stale. Validation checks metadata consistency and export integrity; source findings still require scholarly assessment.
+The bibliography build validates `records.yaml`, regenerates keyword mirrors, and writes the complete bibliography and disjoint stream exports. The research check reconciles the coverage ledger and claim references with that authority and checks generated research outputs. `--check` does not change files. These checks demonstrate consistency; source findings still require scholarly assessment.
 
 The [cyber commitment pilot](research/cyber-deployment/README.md) uses companion
 YAML linked to the bibliography. Run `python3 scripts/build_commitments.py --write`
@@ -55,7 +55,7 @@ evidence.
 - **Governance artifacts:** actual frameworks, requirements, standards, guidance, commitments, organizational disclosures, and governance portals. Their existence does not establish implementation or effectiveness.
 - **Contextual sources:** policy analysis, commentary, and supporting research that belongs in neither primary synthesis stream.
 
-Each record has one primary `synthesis_stream` and a `stream_note`. A mixed-purpose source can inform multiple discussions while retaining one citation identity. Routing began as provisional and AI-assisted, based on inherited metadata, titles, and available abstracts. Five starting sources for the cyber/deployment study received an AI-assisted full-text and version check on 2026-10-16; their dated `stream_note` fields and the [verification report](research/cyber-deployment/source-verification.md) identify that scope. That dated review covered five records, not the whole collection. The October 24 integration separately records its six operational-source rechecks and five scoped OpenAI source inspections. Existing `classification_confidence` values were preserved and do not grade the new routing or the quality of the evidence.
+Each record has one primary `synthesis_stream` and a `stream_note`. A mixed-purpose source can inform multiple discussions while retaining one citation identity. Routing began as provisional and AI-assisted, based on inherited metadata, titles, and available abstracts. The [coverage ledger](research/synthesis/coverage.csv) now records the supplied research's inspection labels and source-level qualifications, separately from later checking and replication. Those inherited labels have not been recertified by this integration. Earlier targeted checks retain their dated scope in [METHODS.md](METHODS.md). Existing `classification_confidence` values do not grade the routing or the quality of the evidence.
 
 ## Updating the collection
 
@@ -68,7 +68,7 @@ The stabilization log began empty because that release added no newly discovered
 
 ## Releases and citation
 
-GitHub is the working project. The associated [OSF project](https://osf.io/9ks5m/) is intended for matching versioned research deposits. A GitHub update does not automatically update OSF. The project page returned a scheduled-maintenance notice on 2026-10-16, preventing comparison or upload. The [release note and manifest](releases/stabilization-2026-10-16.md) identify the exact merged stabilization package prepared for deposit; synchronization remains unconfirmed.
+GitHub is the working project, with matching versioned research deposits in the associated [OSF project](https://osf.io/9ks5m/). The published [v2026.10.24 release](https://github.com/madame-architect/AIsafety/releases/tag/v2026.10.24) targets commit `1bb1672` and records a verified OSF deposit receipt for object `s5ey4`, version 1. The November 14 integration confirmed the GitHub release and its receipt text; it did not freshly re-download or verify the OSF bytes. The [October 16 stabilization note](releases/stabilization-2026-10-16.md) describes an earlier, separately unconfirmed deposit attempt. A later GitHub update does not automatically update either published package.
 
 For the next release, follow the [release and OSF deposit protocol](releases/README.md).
 It binds the exact tagged commit, authoritative YAML, generated outputs and hashes
@@ -80,7 +80,7 @@ To reference this collection, include its title, maintainer (Cassandra Ansara),
 revision date, and exact commit or deposited version. Cite original publications
 directly for their findings.
 
-Collection stabilization was merged in [PR #13](https://github.com/madame-architect/AIsafety/pull/13). The next research focus is how cyber capability evidence informs deployment safeguards. The October 24 integration completes six earlier operational-source admissions and adds four policy sources for the OpenAI comparison. It does not add a new empirical evidence round or reproduce experiments. See [METHODS.md](METHODS.md) for AI assistance and inspection limits.
+Collection stabilization was merged in [PR #13](https://github.com/madame-architect/AIsafety/pull/13). The [research guide](research/README.md) connects the broad review with the cyber case study and the remaining full-corpus objective. Source admission, synthesis judgments, and publication are separate decisions; the pending Carbon package does not enlarge the admitted bibliography or its reading counts. See [METHODS.md](METHODS.md) for AI assistance and inspection limits.
 
 ## License
 

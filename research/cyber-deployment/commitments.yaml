@@ -179,13 +179,15 @@ observations:
   qualifications: Leadership retains decision authority and SSC/board oversight is described in Appendix
     B. Section 4.3 permits adjustments only after confirming a changed external risk landscape, assessing
     no meaningful overall risk increase, publicly acknowledging the adjustment, and retaining more protective
-    safeguards than the comparator. Sufficiency is an issuer judgment, not measured effectiveness.
+    safeguards than the comparator, and sharing information to validate that comparison. Sufficiency is an
+    issuer judgment, not measured effectiveness.
   locator: Section 2.2, PDF viewer p. 5; section 4.2, pp. 11-13; section 4.3, p. 13; Appendix B, p. 16.
   change_type: revised
   previous_observation_id: openai_frontier_safeguard_review_beta
   change_note: Replaces a post-mitigation score ceiling with capability-triggered safeguard sufficiency
     review and distinct reports. The qualification and decision authority remain explicit; no single strengthened/weakened
-    rating is assigned.
+    rating is assigned. The November 14 extraction correction includes section 4.3's information-sharing
+    provision; this is not a new policy observation or an implementation finding.
 - id: openai_frontier_reassessment_beta
   commitment_id: openai_frontier_reassessment
   issuer: OpenAI

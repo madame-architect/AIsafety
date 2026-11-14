@@ -101,6 +101,6 @@ Validation checks structure, identifiers, cross-file references, chronological a
 
 The commitment dataset contains **eight scoped commitments, 17 observations, and seven source observations**. One DeepMind provision has two historical editions; seven OpenAI provision histories span the beta framework, v2, an internal-use clarification, and the August/October 2026 development and containment statements. Publication date, capture date, and effective date are not interchangeable. The system-card clarification has no verified insertion date.
 
-The benchmark-to-risk dataset remains **one bounded research round, six stable assumptions, six admitted sources, and six evidence observations**. Its earlier assessments are unchanged. The datasets have 25 analytical links, not 25 independent findings or causal relationships.
+The benchmark-to-risk dataset remains **one bounded research round, six stable assumptions, six admitted sources, and six evidence observations**. Its original October assessments are preserved; the integrated November 7 correction package appends two interpretation assessments for incremental uplift and defense persistence, without adding an empirical round. The datasets have 25 analytical links, not 25 independent findings or causal relationships.
 
 [The integration report](expansion-reconciliation-2026-10-24.md) explains changes and qualifications. Compare within an issuer before normalizing threshold names across organizations. These policy observations do not establish implementation, compliance, or safeguard effectiveness.

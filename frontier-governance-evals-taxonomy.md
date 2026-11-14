@@ -91,7 +91,7 @@ These five fields are optional and can contain multiple values. Missing values i
 |---|---|---|
 | `version_status` | Artifact lineage status. Omit when unknown. | `current`, `draft`, `superseded`, `historical`, `living_document` |
 | `maintenance_status` | Whether the cited object is static or maintained. | `static`, `maintained_page`, `living_document` |
-| `legal_status` | Legal force for legal/regulatory instruments; `not_applicable` otherwise. | `not_applicable`, `authoritative`, `proposed`, `superseded`, `historical` |
+| `legal_status` | Formal legal force or instrument status at the documented check. Use `enacted_not_in_force` for enacted provisions with a future effective date and `nonbinding` for instruments such as voluntary compliance codes or interpretive guidelines. Issuer authority, enforceability in practice and standards conformity are separate. | `not_applicable`, `authoritative`, `enacted_not_in_force`, `nonbinding`, `proposed`, `superseded`, `historical` |
 | `supersedes` | Citation key for an earlier artifact superseded by this entry. | Citation key |
 | `superseded_by` | Citation key for the later artifact that supersedes this entry. | Citation key |
 | `evidence_note` | Free-text explanation for special validation or interpretation cases. | Free text |

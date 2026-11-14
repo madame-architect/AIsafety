@@ -170,6 +170,20 @@ class ReleaseTests(unittest.TestCase):
         for path in release.AUTHORITIES:
             self.assertEqual(next(item for item in self.manifest['files'] if item['path'] == path)['role'], 'authoritative_yaml')
 
+    def test_release_validates_broad_views_when_present_and_accepts_older_payloads(self):
+        files = release.inventory(self.root, self.manifest['github_commit'])
+        changed = dict(files)
+        changed['research/synthesis/claims.md'] += b'\nStale evidence view.\n'
+        with self.assertRaisesRegex(ValueError, 'broad research validation failed'):
+            release.validate_payload(changed)
+        changed = dict(files)
+        changed.pop('scripts/build_research.py')
+        with self.assertRaisesRegex(ValueError, 'lacks its validation tooling'):
+            release.validate_payload(changed)
+        historical = {path: payload for path, payload in files.items()
+                      if not path.startswith('research/synthesis/') and path != 'scripts/build_research.py'}
+        release.validate_payload(historical)
+
     def test_tampered_zip_hash_inventory_and_repointed_tag_fail(self):
         with self.assertRaisesRegex(ValueError, 'hash'):
             release.verify(self.manifest, self.payload + b'changed')
