@@ -2,7 +2,7 @@
 
 Generated from [claims.yaml](claims.yaml). Source identities resolve through [records.yaml](../../records.yaml); record-level inspection and limitations appear in [coverage.csv](coverage.csv). This is a provisional map of selected synthesis propositions, not a claim that the entire corpus supports them.
 
-Assessment date: **2026-11-14**. `supplied_ledger` means inherited notes; `prior_audit` means a separate AI-assisted source check reported by the supplied audit; `this_run_primary` means scoped primary inspection in this run; `repo_source_review` means an existing dated repository review. None denotes independent human review or replication.
+Assessment date: **2026-11-14**. `supplied_ledger` means inherited notes; `prior_audit` means a separate AI-assisted source check reported by the supplied audit; `this_run_primary` means scoped primary inspection reported by the project integration or a linked review round, not a recheck whenever this view is generated; `repo_source_review` means an existing dated repository review. None denotes independent human review or replication.
 
 Status `provisional` identifies a working synthesis; `scoped_check` identifies a proposition with the stated source-level checking basis (which may be a prior audit); `unresolved` retains a material discrepancy or hold; `historical` limits a finding to its dated record. A scoped check does not verify every source claim.
 
@@ -12,14 +12,14 @@ Status `provisional` identifies a working synthesis; `scoped_check` identifies a
 |---|---|---|---|
 | [C01](#c01) | evaluation_configuration | provisional | The reviewed benchmarks add distinct task, workflow and reliability measurements; each result describes its tested configuration. |
 | [C02](#c02) | evaluation_configuration | scoped_check | Phuong v2 Table 23 concerns a toy safety-filter modification task in instrumental self-reasoning; its Pro-CoT easy/easy score is 0.5 despite a stated 0.7 passing criterion. |
-| [C03](#c03) | evaluation_configuration | provisional | Rankings and apparent capability gains can change with inference budgets, attempt aggregation and task selection. |
+| [C03](#c03) | evaluation_configuration | scoped_check | Rankings and apparent capability gains can change with inference budgets, attempt aggregation and task selection. |
 | [C04](#c04) | evaluation_configuration | provisional | Unlearning evaluations can establish reduced performance on specified probes while leaving format sensitivity, retained knowledge and utility tradeoffs open. |
 | [C05](#c05) | safeguards | provisional | Many-shot defenses show both improvements and residual scaling/utility limits under different training and evaluation conditions. |
 | [C06](#c06) | safeguards | provisional | Classifier red-team results support resistance to specified attack criteria; rates across defense generations and attack protocols should remain separate. |
 | [C07](#c07) | safeguards | provisional | Instruction priority, resistance to weight modification and pretraining poisoning address different attacker access and control surfaces. |
 | [C08](#c08) | evaluator_integrity | provisional | HelpSteer2 and its preference extension provide useful reward-learning comparisons but share data lineage. |
 | [C09](#c09) | evaluator_integrity | provisional | Position calibration improved agreement with one author-majority reference, and the highest reported agreement included human input. |
-| [C10](#c10) | evaluator_integrity | provisional | Xu's benchmark exposure indicators are proxies, and its printed edit-similarity rule and threshold disagree with the pinned released helper. |
+| [C10](#c10) | evaluator_integrity | scoped_check | Xu's benchmark exposure indicators are proxies, and its printed edit-similarity rule and threshold disagree with the pinned released helper. |
 | [C11](#c11) | evaluator_integrity | scoped_check | Debate can improve inference-time judge accuracy under information asymmetry, while comparison with direct QA depends on task and source access. |
 | [C12](#c12) | evaluator_integrity | scoped_check | Evidence selection and error detection offer distinct interpretations of debate benefits; overall accuracy alone does not resolve them. |
 | [C13](#c13) | evaluator_integrity | provisional | Feature attribution and selected interventions provide affirmative mechanistic evidence, while some aggregate SAE metrics fail to distinguish trained from randomized models. |
@@ -37,6 +37,24 @@ Status `provisional` identifies a working synthesis; `scoped_check` identifies a
 | [C25](#c25) | cyber_case_study | unresolved | Barrett’s risk-model architecture and Murray’s structured elicitation expose assumptions linking benchmarks to hypothetical cyber risk; they do not observe matched changes in attack or harm rates. Hold Barrett’s numerical human-versus-LLM SME ransomware comparison while its task-ranking/input discrepancy remains unresolved. |
 | [C26](#c26) | governance | provisional | xAI’s December2025 framework discloses basic-refusal reliance for its cyber assessment and tiered/trusted-party deployment exceptions; underlying assessment and implementation remain unverified. |
 | [C27](#c27) | outcomes | provisional | Sociotechnical evaluation levels and media-based incident trends address different objects: capability and system results require additional evidence to support impact claims or population incident rates. |
+| [C28](#c28) | evaluator_integrity | scoped_check | Weak-to-strong supervision experiments demonstrate recoverable performance beyond a weak supervisor, while the amount recovered depends on task, labels and learning method; recovery is not equivalent to superhuman alignment. |
+| [C29](#c29) | evaluator_integrity | scoped_check | Debate has a training strand as well as inference-time oversight results: trained debaters and debate-assisted weak supervisors can improve measured downstream judgments, with evidence exposure, ensembles and training incentives as alternative mechanisms to explicit refutation. |
+| [C30](#c30) | evaluator_integrity | scoped_check | Control evaluations can compare system-level monitoring, routing and editing protocols under an explicit intentional-subversion threat model; the published APPS testbed demonstrates conditional safety/usefulness improvements without certifying deployed-model safety. |
+| [C31](#c31) | evaluator_integrity | scoped_check | Reasoning-trace access and compute choices can improve measured monitoring performance, while monitorability is a relation between agent, monitor, observation scope and endpoint rather than a general guarantee of faithful reasoning or harm prevention. |
+| [C32](#c32) | evaluator_integrity | scoped_check | Judge accuracy and an agent’s incentive to advocate truth are different evaluation targets; a protocol can improve one without establishing the other. |
+| [C33](#c33) | safeguards | scoped_check | Standardized jailbreak evaluations can improve comparability through explicit behaviors, judges, attack adaptation and resource accounting; their remaining limits do not erase this methodological progress. |
+| [C34](#c34) | safeguards | scoped_check | Adversarial training and recovery-data interventions provide positive model-level defense results under specified tests, with attack-diversity and utility-comparator limits that constrain generalization. |
+| [C35](#c35) | outcomes | scoped_check | Inexact-unlearning evaluation needs per-example and retained-data privacy checks: average-case forgetting or weak membership tests can hide remaining or displaced privacy leakage. |
+| [C36](#c36) | safeguards | scoped_check | CyberSecEval2 supports configured prompt-injection and malicious-code-compliance findings, while its inconsistent prompt-injection summaries and nonexecuted interpreter tests rule out a single unqualified headline range or sandbox-escape rate. |
+| [C38](#c38) | governance | provisional | Audit access is a set of enabling conditions: usable model interfaces, model and process information, evaluator time and resources affect which claims can be tested. A label such as external evaluator or white-box access does not establish adequate evaluation. |
+| [C39](#c39) | governance | provisional | The accountability value of an audit depends on its institutional design, including scope, auditor selection and payment, access and legal protection, professional standards, follow-up and disclosure. Restricted public disclosure with fuller regulator access is one proposed pathway, rather than proof that maximum public transparency is always best. |
+| [C40](#c40) | governance | provisional | Legal protection for good-faith research and protection against technical exclusion address different barriers to external evaluation. The safe-harbor proposal links them to disclosure rules, independent access review and appeals; it does not show that legal language alone supplies access or improves safety. |
+| [C41](#c41) | governance | provisional | Internal lifecycle audits and external scrutiny can play complementary roles. Internal access and documentary records can support prospective testing, remediation and deployment decisions, while external challenge can test organizational priorities and omissions; neither role is validated merely by producing an audit report. |
+| [C43](#c43) | evaluation_configuration | scoped_check | Cost-controlled agent comparisons can both overturn apparent architecture gains and improve usable designs; the relevant comparison depends on whether the decision concerns model science or downstream use. |
+| [C44](#c44) | governance | scoped_check | Dataset documentation can make intended use, sampling, provenance and maintenance inspectable through a reflective workflow; automated metadata completion is not equivalent to that proposed process or proof of representative data. |
+| [C45](#c45) | outcomes | scoped_check | Layered model, red-team and human field testing can expose different application-validity problems and user perceptions; the ARIA pilot demonstrates an implemented method, not a calibrated cross-application safety ranking or a measured reduction in harms. |
+| [C46](#c46) | evaluation_configuration | scoped_check | Standardized multi-metric evaluation can produce useful common comparisons and reveal tradeoffs while explicitly restricting the measured subspace; broad coverage should remain distinct from deployment validity. |
+| [C47](#c47) | evaluator_integrity | scoped_check | Historical trustworthiness evaluations show both standard-condition improvements and metric/access-specific reversals; higher average accuracy alone does not fix fairness or robustness under an altered threat model. |
 
 <a id="c01"></a>
 ## C01
@@ -80,18 +98,18 @@ Phuong v2 Table 23 concerns a toy safety-filter modification task in instrumenta
 
 Rankings and apparent capability gains can change with inference budgets, attempt aggregation and task selection.
 
-**Status:** provisional. **Theme:** evaluation_configuration.
+**Status:** scoped_check. **Theme:** evaluation_configuration.
 
 | Source and relation | Version / locator | Scoped finding | Review basis and depth |
 |---|---|---|---|
-| `wijk_rebench_2025` — supports | [Source](https://proceedings.mlr.press/v267/wijk25a.html); PMLR 267 proceedings abstract; separately accessed arXiv v1 budget/results sections | The proceedings abstract reports the best agent ahead at two aggregate hours, a narrow human lead at eight, and a larger human advantage at 32 total hours across attempts. | `supplied_ledger`; Inherited selected sections description: PMLR 267:66772–66832 proceedings landing page and abstract; separate author preprint arXiv v1, selected methods on benchmark design and human recruitment, baseline tables and results on time budget and task heterogeneity. Checked published title and stated sample and budget findings against proceedings abstract.; not independently repeated in this integration. |
-| `folkerts_measuringaiagentscyber_2026` — bounds | [Source](https://arxiv.org/pdf/2603.11214v3); v3 Table 1; Appendix E Table 2; §3.2 | Higher budgets improve some tested models, but 10M-token results are not monotonically ordered by model release. One inherited recomputation reports 9.6 versus the paper's 9.8 for one appendix-derived cell. | `supplied_ledger`; Inherited full text description: All 30 PDF pages of v3: §§1–6, references, Appendices A–E, rendered Figures 1–7, and programmatic verification of all 24 end-to-end summary cells from 1,263 parsed appendix run rows.; not independently repeated in this integration. |
+| `wijk_rebench_2025` — supports | [Source](https://raw.githubusercontent.com/mlresearch/v267/main/assets/wijk25a/wijk25a.pdf); Final ICML 2025 proceedings: Figure 2 printed p. 3; §§ 3.2–3.3 pp. 5–6; Appendix A.1 p. 14; A.2 pp. 15–16 | Final paper confirms best-of-k resampling and human 32-hour result as best of four 8-hour attempts. Human participants could use LLMs and other tools; agents and expert workflows are compared under wall-clock budgets, not a no-AI human counterfactual. | `this_run_primary`; Selected exact final PDF methods/results/appendix passages and Figure 2 visual check; not all 61 pages or experimental reproduction.; review events: [r2_claimchecks_01](rounds.md#r2_claimchecks_01), [r2_claimchecks_02](rounds.md#r2_claimchecks_02) |
+| `folkerts_measuringaiagentscyber_2026` — bounds | [Source](https://arxiv.org/pdf/2603.11214v3); v3 Table 1; Appendix E Table 2; § 3.2 | Higher budgets improve some tested models, but 10M-token results are not monotonically ordered by model release. One inherited recomputation reports 9.6 versus the paper's 9.8 for one appendix-derived cell. | `supplied_ledger`; Inherited full text description: All 30 PDF pages of v3: §§ 1–6, references, Appendices A–E, rendered Figures 1–7, and programmatic verification of all 24 end-to-end summary cells from 1,263 parsed appendix run rows.; not independently repeated in this integration. |
 
-**Limits:** RE-Bench's 32-hour point is an aggregate over attempts, not one continuous 32-hour run. The exact proceedings PDF was not obtained in the inherited review. Folkerts' single-cell discrepancy remains a lead.
+**Limits:** RE-Bench’s32-hour point aggregates attempts rather than one continuous32-hour run. The exact final proceedings PDF has now been retrieved and its relevant methods checked, but remaining appendices/run-level data were not fully reviewed. Experts could use LLMs/tools; human-source heterogeneity and best-observed allocation matter. Folkerts’ single-cell discrepancy remains a separate lead.
 
-**Counterevidence / alternative:** The benchmarks do show useful task performance and budget sensitivity. Narrow task distributions and best-of-k selection limit general claims about long-horizon autonomy.
+**Counterevidence / alternative:** The benchmarks show useful task performance, budget sensitivity and some agent strengths. RE-Bench also notes that lower agent cost and different workflows could make agents economically competitive despite a longer-time score disadvantage; time-matched results do not settle economic automation or causal AI assistance.
 
-**Next check:** Inspect the exact RE-Bench proceedings PDF and reproduce budget/attempt accounting; resolve the Folkerts cell with the authors before quoting it.
+**Next check:** Use final-publication locators and aggregate-attempt/comparator qualifications. Omit broad long-horizon/no-AI uplift extrapolations. Complete run-level reproduction or other appendices only if needed by a leading claim; separately resolve or omit the Folkerts cell.
 
 <a id="c04"></a>
 ## C04
@@ -110,7 +128,7 @@ Unlearning evaluations can establish reduced performance on specified probes whi
 
 **Counterevidence / alternative:** Lower probe scores are a measured result; changed-prompt recovery and retention losses constrain the interpretation rather than erase that result.
 
-**Next check:** Complete the final-version methods and compare each probe with its own base/fine-tuned controls before inferring operational risk reduction or permanent erasure.
+**Next check:** Complete the final-version methods and compare each probe with its own base/fine-tuned controls before inferring operational risk reduction or permanent erasure. The related Hayes preprint in C35 adds per-example and retained-data privacy outcomes; it does not authenticate the final SaTML edition.
 
 <a id="c05"></a>
 ## C05
@@ -209,17 +227,17 @@ Position calibration improved agreement with one author-majority reference, and 
 
 Xu's benchmark exposure indicators are proxies, and its printed edit-similarity rule and threshold disagree with the pinned released helper.
 
-**Status:** provisional. **Theme:** evaluator_integrity.
+**Status:** scoped_check. **Theme:** evaluator_integrity.
 
 | Source and relation | Version / locator | Scoped finding | Review basis and depth |
 |---|---|---|---|
-| `xu_benchmarkingleakage_2024` — supports | [Source](https://arxiv.org/html/2404.18824v1); v1 §5.3; Appendix A.3 Eq.5; pinned metric_utils.py lines 27,47 | Paper prints normalized edit distance and a >0.9 threshold; code calculates its complement and uses >0.75. | `prior_audit`; Prior audit checked selected paper sections and all 75 lines of the helper at commit 8cbb7fd341f0efe840ed5d9b148b87287362d9e9; no experiment-revision provenance or 186-row recomputation repeated. |
+| `xu_benchmarkingleakage_2024` — supports | [Source](https://arxiv.org/html/2404.18824v1); arXiv v1§§ 3.2–3.3,4,5.3; Appendix A.3 Eq5; pinned metric_utils.py lines23–28,40–48; same-revision README Examples paragraph | The formula orientation and >.9 versus >.75 threshold mismatch survive a fresh paper/helper check; pinned README also states >.9. The helper preserves preexisting scores and its main loop is not a complete experiment manifest. | `this_run_primary`; Selected primary paper sections; complete75-line pinned helper and completeREADME text, excluding linked media. No 186-row recomputation or model experiment reproduced.; review events: [r2_claimchecks_05](rounds.md#r2_claimchecks_05), [r2_claimchecks_06](rounds.md#r2_claimchecks_06), [r2_claimchecks_07](rounds.md#r2_claimchecks_07) |
 
-**Limits:** Original-versus-paraphrase familiarity is indirect evidence of exposure. The helper mismatch does not identify which implementation generated the reported experiment.
+**Limits:** The documentary mismatch is confirmed, but does not identify the code revision or threshold used for every reported experiment. Original/paraphrase familiarity remains an exposure proxy; controlled intentional exposure and exact-match observations do not authenticate each observationally flagged training item.
 
 **Counterevidence / alternative:** Exact string matches and controlled exposure experiments establish proxy behavior; they do not turn each flagged item into a verified leaked training record.
 
-**Next check:** Reconcile experiment revision, formula, threshold and mixed table units before reusing affected quantitative leakage rates; code: https://github.com/GAIR-NLP/benbench/blob/8cbb7fd341f0efe840ed5d9b148b87287362d9e9/src/metric_utils.py.
+**Next check:** Omit affected lenient edit-similarity leakage rates from leading publication claims. Retain the confirmed documentary discrepancy and scoped proxy findings; pursue an experiment manifest only if those rates become necessary.
 
 <a id="c11"></a>
 ## C11
@@ -233,7 +251,7 @@ Debate can improve inference-time judge accuracy under information asymmetry, wh
 | `khan_debatingmorepersuasive_2024` — supports | [Source](https://arxiv.org/html/2402.06782v4); v4 abstract and §3 main results; §2 task setup | On filtered binary QuALITY questions, reported LLM/human debate accuracy is 76%/88%, compared with 48%/60% naive and 54%/78% assigned consultancy. | `this_run_primary`; Selected primary abstract/main results and task-setup text checked; no full appendix/human-sampling audit or numerical reproduction. |
 | `kenton_scalableoversightweak_2024` — bounds | [Source](https://arxiv.org/html/2407.04622v2); v2 §§3.2,4.1; Figure 2 accompanying prose | Full-article direct QA performs best across tested extractive judge configurations; debate's gains over QA without the article vary by judge/task. | `this_run_primary`; Selected primary protocol definitions, main results and figure-caption prose; no complete reread or statistical recomputation. |
 
-**Limits:** Khan's naive human baseline used a separate experiment and its full-source human comparison is external, as recorded in the supplied ledger. These studies test inference properties, not a complete training protocol.
+**Limits:** Khan's naive human baseline used a separate experiment and its full-source human comparison is external, as recorded in the supplied ledger. These studies test inference properties, not a complete training protocol. This inference-time comparison is one strand of the corpus; C29 separately assesses debate-training and debate-assisted supervision results.
 
 **Counterevidence / alternative:** Kenton's stronger direct-QA baseline and weak-judge exceptions bound a blanket debate-superiority claim without negating Khan's gains under its setup.
 
@@ -255,7 +273,7 @@ Evidence selection and error detection offer distinct interpretations of debate 
 
 **Counterevidence / alternative:** Higher overall open-consultancy accuracy can coexist with worse detection of protagonist errors; quote selection may explain part of the gain attributed to argument exchange.
 
-**Next check:** Separate evidence retrieval/verification, correctness-conditioned error detection and judge training effects in any follow-up comparison.
+**Next check:** Separate evidence retrieval/verification, correctness-conditioned error detection and judge training effects in any follow-up comparison. Compare the new training and incentive-proxy evidence in C29 and C32 rather than assuming all debate studies share one target.
 
 <a id="c13"></a>
 ## C13
@@ -293,7 +311,7 @@ Constructed alignment-faking, sabotage and auditing experiments establish behavi
 
 **Counterevidence / alternative:** The null spontaneous-sabotage result and model differences must accompany selected positive continuation/faking observations.
 
-**Next check:** Finish claim-critical appendices/final versions, reconcile inconsistent awareness/refusal figures, and test alternative explanations before inferring motives or deployment rates.
+**Next check:** Finish claim-critical appendices/final versions, reconcile inconsistent awareness/refusal figures, and test alternative explanations before inferring motives or deployment rates. Include the affirmative protocol and monitoring evidence in C30–C31 when assessing what this strand establishes.
 
 <a id="c15"></a>
 ## C15
@@ -422,14 +440,14 @@ ARTEMIS supplies a descriptive human-agent performance comparison in one authori
 
 | Source and relation | Version / locator | Scoped finding | Review basis and depth |
 |---|---|---|---|
-| `lin_artemispenetration_2026` — supports | [Source](https://arxiv.org/html/2512.09882v2); Exact v2 Tables 1–2; §§3.3 and 5.4; study setting and scoring descriptions | A2’s stronger ensemble has nine of eleven valid submissions and $59/hour API cost. The $18.21/hour figure belongs to A1, which outranked five of ten professionals. | `prior_audit`; Prior audit checked selected primary sections and tables; no independent finding tally or full appendix reread. Supplied ledger separately reports all 29 extracted PDF pages. |
-| `lin_artemispenetration_2026` — bounds | [Source](https://arxiv.org/html/2512.09882v2); §3.3 scaffold/attack-graph setup; §5.4 Cybench comparison; limitations and defense/approval conditions | Purpose-built orchestration, previously observed human attack-graph information, manual approvals and relaxed interdiction constrain transfer. The reported Cybench comparison did not show significant A1 scaffold uplift over GPT-5 CyAgent. | `supplied_ledger`; Supplied ledger records full extracted text and appendix review, with graphical details not independently transcribed; this run did not reproduce performance, costs or the comparison. |
+| `lin_artemispenetration_2026` — supports | [Source](https://arxiv.org/html/2512.09882v2); arXiv v2 Table 1 printed p. 2; § 5.4 costs printed p. 8 | A2’s stronger ensemble has nine of eleven valid submissions and $59/hour API cost. The $18.21/hour figure belongs to A1, which outranked five of ten professionals. | `this_run_primary`; Fresh selected exact v2 PDF abstract/Table 1/cost text;9/11rounding check only, no independent finding tally or full reread.; review events: [r2_claimchecks_03](rounds.md#r2_claimchecks_03) |
+| `lin_artemispenetration_2026` — bounds | [Source](https://arxiv.org/html/2512.09882v2); arXiv v2§ 3.3 Benchmarks and Table 2 printed p. 5; Appendix E opening p. 22; § 7 limitations pp. 8–9 | Purpose-built orchestration, previously observed human attack-graph information, manual approvals and relaxed interdiction constrain transfer. The reported Cybench comparison did not show significant A1 scaffold uplift over GPT-5 CyAgent. | `this_run_primary`; Fresh selectedv2 PDF benchmark/scaffold/limitation passages and Appendix E opening; not the full appendix or run-level scoring. OpenReview final access failed.; review events: [r2_claimchecks_03](rounds.md#r2_claimchecks_03), [r2_claimchecks_04](rounds.md#r2_claimchecks_04) |
 
-**Limits:** One site, ten professionals and one run per evaluated variant are a small descriptive comparison. API cost excludes human oversight and infrastructure. Finding remediation is author-reported and does not measure harm reduction.
+**Limits:** One site, ten professionals and one evaluated run per variant form a small descriptive comparison. API cost excludes oversight/infrastructure. Conference-final equivalence remains unverified after OpenReview 403/challenge. V2Table 3 and§ 6 disagree on TinyPilot successful hint levels, so that specific detail is omitted.
 
 **Counterevidence / alternative:** The stronger ensemble’s observed comparative success is positive evidence within this setting. The null Cybench scaffold result and study-specific defensive allowances prevent a universal agent superiority or defense-effect claim.
 
-**Next check:** Inspect exact final conference version against v2 before citation changes; resolve the TinyPilot hint discrepancy and inspect run-level scoring/defensive permissions before broader inference.
+**Next check:** Retain the v2 comparison with correctedTable 2/§ 3.3 and§ 5.4 locators. Omit TinyPilot hint-level claims until source data or authenticated later text resolves the inconsistency; retain final-version access as a bounded publication-metadata task.
 
 <a id="c22"></a>
 ## C22
@@ -537,14 +555,332 @@ Sociotechnical evaluation levels and media-based incident trends address differe
 
 **Next check:** Complete the claim-critical framework/report methods and stable locators; keep reported-record counts separate from population rates and connect each impact assertion to its own denominator and comparator.
 
+<a id="c28"></a>
+## C28
+
+Weak-to-strong supervision experiments demonstrate recoverable performance beyond a weak supervisor, while the amount recovered depends on task, labels and learning method; recovery is not equivalent to superhuman alignment.
+
+**Status:** scoped_check. **Theme:** evaluator_integrity.
+
+| Source and relation | Version / locator | Scoped finding | Review basis and depth |
+|---|---|---|---|
+| `burns_weakstronggeneralization_2024` — supports | [Source](https://arxiv.org/pdf/2312.09390v1); arXiv v1 §§3–4.3, 5.1, 6.1 | Weak-label training can elicit stronger performance; NLP, chess and reward-modeling results differ, and no tested method works universally. | `this_run_primary`; Selected primary preprint text: pp 1–10 abstract/introduction/related work, methodology and main results; §5.1 pp 11–12 overfitting text; §6.1–6.2 pp 16–18 disanalogies/future-work text. Remaining methods/results pages and appendices were not completely read. Large49-page preprint only selected sections; not final ICML verification, complete appendix read, graph transcription or replication. PDF extraction reported a recoverable xref warning; inspected text is coherent, but complete extraction fidelity was not certified.; review events: [r2_oversight_04](rounds.md#r2_oversight_04) |
+| `lang_debatehelpsweak_2025` — contextualizes | [Source](https://arxiv.org/pdf/2501.13124v1); Methods; Table 2; Limitations | Improved weak supervision via debate ensembles raises subsequent student accuracy on four converted binary NLP tasks under a small 7B/14B gap. | `this_run_primary`; Selected introduction/related-work distinction, complete methods/setup and main-results/ablation/limitations text, including Tables 1–5 and Figure 2–3 captions. Final references and any final-AAAI-version differences were not completely checked. No complete-document reread, final venue authentication, plot digitization, significance/raw-run verification or replication. The converted binary tasks and model/compute gap constrain transfer.; review events: [r2_oversight_03](rounds.md#r2_oversight_03) |
+
+**Limits:** Burns was read as a related original preprint, not authenticated final proceedings text. Both studies use task labels/representations that may be easier to elicit than future latent capabilities; downstream RL robustness remains open.
+
+**Counterevidence / alternative:** Reward-model recovery is poor for naive transfer; confidence loss can worsen small-gap cases, while bootstrapping helps chess but not all task families. These nulls bound the positive recovery finding rather than erase it.
+
+**Next check:** Verify final Burns proceedings and complete claim-critical appendices; examine optimization against the learned reward model before treating classifier accuracy as an alignment solution.
+
+<a id="c29"></a>
+## C29
+
+Debate has a training strand as well as inference-time oversight results: trained debaters and debate-assisted weak supervisors can improve measured downstream judgments, with evidence exposure, ensembles and training incentives as alternative mechanisms to explicit refutation.
+
+**Status:** scoped_check. **Theme:** evaluator_integrity.
+
+| Source and relation | Version / locator | Scoped finding | Review basis and depth |
+|---|---|---|---|
+| `arnesen_trainingwindebates_2024` — supports | [Source](https://arxiv.org/pdf/2409.16636v1); §§3–4.2; §4.3; §5.2; Appendices B,D,G | Self-play DPO-trained debaters improve a fixed calibrated judge’s measured accuracy; double consultancy closes much of the gap and one-turn evidence does not support a simple refutation explanation. | `this_run_primary`; Complete main text §§1–6, printed pp 1–10; acknowledgments/references inspected in the extraction; Appendices A–G, printed pp 16–23, plus H opening/evaluation prompt on p 24. The rest of H and sample transcriptsI pp 31–48 were not read. No full 48-page read, remaining prompt/transcript appendix read, chart transcription, significance recomputation or experiment replication. Main text and captions were checked; graph values were not independently digitized.; review events: [r2_oversight_02](rounds.md#r2_oversight_02) |
+| `lang_debatehelpsweak_2025` — supports | [Source](https://arxiv.org/pdf/2501.13124v1); Methods; Tables 2, 4, 5; turn and ensemble ablations | Debate-generated information trains an improved weak supervisor; extra ensemble/sampling compute and a weak single-turn comparator are part of the result. | `this_run_primary`; Selected introduction/related-work distinction, complete methods/setup and main-results/ablation/limitations text, including Tables 1–5 and Figure 2–3 captions. Final references and any final-AAAI-version differences were not completely checked. No complete-document reread, final venue authentication, plot digitization, significance/raw-run verification or replication. The converted binary tasks and model/compute gap constrain transfer.; review events: [r2_oversight_03](rounds.md#r2_oversight_03) |
+
+**Limits:** Arnesen uses information-asymmetric QuALITY reading comprehension, prior human/GPT training transcripts and a fine-tuned judge. Lang uses four converted binary tasks with a modest model-size gap. Neither establishes broad training scalability or independent source-family replication.
+
+**Counterevidence / alternative:** Double/ensembled consultancy, one-turn results, cost differences and null turn-length gains qualify a blanket debate advantage. The whole Arnesen pipeline is not ground-truth-free because its judge/SFT stages use prior labeled data.
+
+**Next check:** Keep C11’s inference-time scope for Khan/Kenton but add this distinct training strand. Omit leading numerical estimates unless final versions, uncertainty and budget matching are checked.
+
+<a id="c30"></a>
+## C30
+
+Control evaluations can compare system-level monitoring, routing and editing protocols under an explicit intentional-subversion threat model; the published APPS testbed demonstrates conditional safety/usefulness improvements without certifying deployed-model safety.
+
+**Status:** scoped_check. **Theme:** evaluator_integrity.
+
+| Source and relation | Version / locator | Scoped finding | Review basis and depth |
+|---|---|---|---|
+| `greenblatt_controlimprovingsafety_2024` — supports | [Source](https://raw.githubusercontent.com/mlresearch/v235/main/assets/greenblatt24a/greenblatt24a.pdf); ICML proceedings §§2–3; Table 1; §5; Appendix K and Table 5 | Trusted editing and untrusted monitoring with safeguards improve the studied frontier over simpler protocols, conditional on its auditor, attack-policy and simulated-scenario assumptions. | `this_run_primary`; Published primary main text §§1–6, printed pp 1–9, including Table 1 and figure captions; Appendix K sampling/uncertainty text pp 22–23 and selected Appendix L/M protocol details/Table 5 pp 23–25. Other appendices/examples not fully read. No full 42-page read, remaining detailed red-team prompts/example investigation, raw simulations or replication. The observed HTTP MIME was application/octet-stream; PDF type was verified from%PDF bytes and pdfinfo. Publisher raw URL is mutable; local bytes/hash identify the inspected edition.; review events: [r2_oversight_05](rounds.md#r2_oversight_05) |
+
+**Limits:** Safety is a simulated probability of no submitted backdoor across5000 problems; usefulness is rescaled between model baselines. High-quality trusted auditing labor is simulated with GPT-4, while the weaker trusted model is GPT-3.5, the backdoor definition privileges the auditor, attacks are constrained, and1500 observed problem interactions are resampled without a held-out test split.
+
+**Counterevidence / alternative:** Attack-policy collusion and subtle-backdoor results show that simple upfront or trusted-only monitoring can fail. Conversely, the measured protocol improvements are positive system-level results, so a claim that the corpus offers only model benchmarks would omit useful evidence.
+
+**Next check:** Carry exact metrics, threat model and sampling/auditor assumptions in applied claims; test held-out tasks and stronger auditors/attack policies before extrapolating the numerical safety rates.
+
+<a id="c31"></a>
+## C31
+
+Reasoning-trace access and compute choices can improve measured monitoring performance, while monitorability is a relation between agent, monitor, observation scope and endpoint rather than a general guarantee of faithful reasoning or harm prevention.
+
+**Status:** scoped_check. **Theme:** evaluator_integrity.
+
+| Source and relation | Version / locator | Scoped finding | Review basis and depth |
+|---|---|---|---|
+| `openai_monitoringmonitorability_2025` — supports | [Source](https://arxiv.org/pdf/2512.18311v1); §§2.1–2.2, 3.3, 4–7, 9 | The suite finds positive CoT-versus-action and monitor-compute effects, with cost, model-family, label/filter and follow-up failure conditions. | `this_run_primary`; Selected90-page primary PDF: pp 1–3 and5–8 conceptual/metric/scope definitions; pp 15–26 outcome-label limitations and §§4–9 results/scaling/follow-ups/discussion, including captions. Detailed intervention estimators and appendicesA–J not comprehensively read. No full 90-page read, complete appendix, figure digitization, raw metric or experimental reproduction. Agent-vs-monitor comparisons use OpenAI monitors; filters/data differ across plots and only tool-free environments are used for some external-model comparisons.; review events: [r2_oversight_07](rounds.md#r2_oversight_07) |
+| `korbak_chainthoughtmonitorability_2025` — contextualizes | [Source](https://arxiv.org/pdf/2507.11473v2); §§1–5 | The conceptual agenda distinguishes necessity from propensity and permits alignment/monitorability tradeoffs; it does not contribute another independent empirical effect. | `this_run_primary`; All 11 PDF pages of accessible extracted text read: §§1–6, Figure 1 caption and references. No separately linked source papers/interactives were read for this event. This is a position/research-agenda paper that synthesizes cited experiments, not a new primary monitoring-effect trial. Architecture diagram was read through caption/text, not independently visually evaluated; references are not audited by reading their citation strings.; review events: [r2_oversight_06](rounds.md#r2_oversight_06) |
+
+**Limits:** Only selected parts of the 90-page empirical report were checked. Non-intervention g-mean² is TPR×TNR; the intervention variant needs separate estimator review. These measures do not determine low-prevalence positive predictive value; some target labels are model-judged and some ambiguous outputs are filtered. Two ordinary RL runs cannot establish a universal scaling trend.
+
+**Counterevidence / alternative:** Direct obfuscation reduces monitorability, but ordinary RL does not consistently reduce its mean in the tested runs. Follow-ups help some settings but can degrade subtle-framing cases; preserving all current CoT behavior can conflict with useful safety training.
+
+**Next check:** For any deployment-leading number, inspect estimators, per-environment filters, operating-point calibration, latency and adaptive evasion. Qualitative channel/compute evidence can enter the synthesis now.
+
+<a id="c32"></a>
+## C32
+
+Judge accuracy and an agent’s incentive to advocate truth are different evaluation targets; a protocol can improve one without establishing the other.
+
+**Status:** scoped_check. **Theme:** evaluator_integrity.
+
+| Source and relation | Version / locator | Scoped finding | Review basis and depth |
+|---|---|---|---|
+| `sudhir_benchmarkscalableoversight_2025` — supports | [Source](https://arxiv.org/pdf/2504.03731v1); §§2–3.1; §4; Table 1; §5 | ASD compares rewards across prompted true/false advocacy and differs from raw judge accuracy for consultancy. The demonstrative comparison is based on 100 math questions and one judge, with simplified protocol proxies. | `this_run_primary`; All 15 PDF pages of accessible extracted text read: main §§1–5, captions, Table 1, references, and Appendices A–D including setup, pseudocode and prompts. Linked code was not inspected. Plot coordinates/error bars were not digitized and linked implementation was not inspected. Printed pseudocode duplicates agent_response rather than appending adversary_response; whether this is only a documentation error is unresolved and no implementation-error conclusion is drawn.; review events: [r2_oversight_01](rounds.md#r2_oversight_01) |
+| `arnesen_trainingwindebates_2024` — contextualizes | [Source](https://arxiv.org/pdf/2409.16636v1); §4.3 and Appendix G | Evidence exposure and the training objective, rather than observed multi-turn refutation alone, explain competing interpretations of better judge accuracy. | `this_run_primary`; Complete main text §§1–6, printed pp 1–10; acknowledgments/references inspected in the extraction; Appendices A–G, printed pp 16–23, plus H opening/evaluation prompt on p 24. The rest of H and sample transcriptsI pp 31–48 were not read. No full 48-page read, remaining prompt/transcript appendix read, chart transcription, significance recomputation or experiment replication. Main text and captions were checked; graph values were not independently digitized.; review events: [r2_oversight_02](rounds.md#r2_oversight_02) |
+
+**Limits:** ASD is an empirical proposed proxy based on instructed model behavior and known truth, not a formal guarantee of incentive compatibility. Average scores and extrapolated capability trends do not establish worst-case safety.
+
+**Counterevidence / alternative:** Debate’s positive scoped average results survive the metric distinction. Stronger consultancy baselines and grounded evidence can improve accuracy even when an adversarial-incentive argument remains unproven.
+
+**Next check:** Specify whether the applied research target is answer accuracy, relative truthful reward, learned policy behavior, or worst-case harmful failure; retain separate endpoints rather than declare one proxy the sole definition of oversight quality.
+
+<a id="c33"></a>
+## C33
+
+Standardized jailbreak evaluations can improve comparability through explicit behaviors, judges, attack adaptation and resource accounting; their remaining limits do not erase this methodological progress.
+
+**Status:** scoped_check. **Theme:** safeguards.
+
+| Source and relation | Version / locator | Scoped finding | Review basis and depth |
+|---|---|---|---|
+| `chao_jailbreakbenchopen_2024` — supports | [Source](https://arxiv.org/pdf/2404.01318v5); §§3.1,3.4–3.7; §4 Tables1–3; AppendicesB–E; data cardI.5.2 | JBB provides artifacts, standardized configurations, judge comparison and matched benign behaviors; its defense tables explicitly use nonadaptive transferred prompts and its data card warns against existing-attack-only robustness conclusions. | `this_run_primary`; All25pages of retained v5 accessible text read; no benchmark execution or plot digitization.; review events: [r2_safeguards_01](rounds.md#r2_safeguards_01) |
+| `pavlova_automatedredteaming_2024` — contextualizes | [Source](https://arxiv.org/html/2410.01606v1); §§4–5 success metric, budget and Crescendo comparison | GOAT holds attacker and target-call budget fixed against a Crescendo reimplementation, while using JBB behaviors/judge and cumulative best-of-k success. | `this_run_primary`; Selected setup/results only; shared dataset/judge is not independent replication.; review events: [r2_safeguards_06](rounds.md#r2_safeguards_06) |
+
+**Limits:** Standardized within-benchmark comparisons do not make different threat models or benchmarks interchangeable. Judge reference labels, hidden initialization costs, model revisions and adaptation still matter.
+
+**Counterevidence / alternative:** JBB itself shows defensive reductions against transfer attacks and residual successes; adaptation may change rankings. Its100 benign behaviors are only a sanity check, not a complete utility evaluation.
+
+**Next check:** Pin artifact/model/judge versions and test defense-aware attacks. Record JBB/HarmBench/GOAT behavior and judge lineage before aggregating evidence.
+
+<a id="c34"></a>
+## C34
+
+Adversarial training and recovery-data interventions provide positive model-level defense results under specified tests, with attack-diversity and utility-comparator limits that constrain generalization.
+
+**Status:** scoped_check. **Theme:** safeguards.
+
+| Source and relation | Version / locator | Scoped finding | Review basis and depth |
+|---|---|---|---|
+| `mazeika_harmbenchstandardized_2024` — supports | [Source](https://raw.githubusercontent.com/mlresearch/v235/main/assets/mazeika24a/mazeika24a.pdf); ICML/PMLR final §5.2; AppendixA.1; Table12 p33 | R2D2 improves tested robustness, with weaker gains on attacks unlike its training adversary; Table12 explicitly notes that the ZephyrBeta comparator includes DPO whereas R2D2 does not. | `this_run_primary`; Selected final-PDF methods/results/appendix/table text; related edition of canonical arXiv work; no full44page read or experimental reproduction.; review events: [r2_safeguards_02](rounds.md#r2_safeguards_02) |
+| `qi_safetyalignmentshould_2025` — supports | [Source](https://arxiv.org/html/2406.05946v1); §§3.1–3.2/Table2; AppendixA.4/C | Recovery augmentation improves tested prefill/jailbreak endpoints while AlpacaEval is somewhat lower; constrained later fine-tuning is a distinct intervention, and combined methods are not consistently better. | `this_run_primary`; Selected v1 results/aggregation/ablation discussion; ICLR final inaccessible in this round.; review events: [r2_safeguards_07](rounds.md#r2_safeguards_07) |
+
+**Limits:** These are scoped7B-model experiments with automatic behavioral judges. Neither a mismatched training comparator nor a limited benign benchmark establishes zero utility cost or broad deployed security.
+
+**Counterevidence / alternative:** HarmBench finds no model uniformly robust; cross-attack generalization is weaker away from the train-time adversary. Qi reports residual vulnerability, regularization/optimizer dependence and non-monotonic combined-method benefit.
+
+**Next check:** Retain affirmative gains without pooling ASRs. Match attack budgets, training pipelines and utility baselines, and verify final-version equivalence before headline numbers.
+
+<a id="c35"></a>
+## C35
+
+Inexact-unlearning evaluation needs per-example and retained-data privacy checks: average-case forgetting or weak membership tests can hide remaining or displaced privacy leakage.
+
+**Status:** scoped_check. **Theme:** outcomes.
+
+| Source and relation | Version / locator | Scoped finding | Review basis and depth |
+|---|---|---|---|
+| `hayes_inexactunlearningneeds_2024` — supports | [Source](https://arxiv.org/pdf/2403.01218v3); §§1,3.1–3.3,4.4 and5; pp6–8,13–15 | The related preprint distinguishes per-example from population U-MIA and reports heterogeneous forget-example outcomes and worsened privacy for some retained examples; its PaLM2 setting is constructed fine-tuning, not complete pretraining erasure. | `this_run_primary`; Selected preprint methods/results only; final SaTML edition not authenticated and no37page full read.; review events: [r2_safeguards_05](rounds.md#r2_safeguards_05) |
+
+**Limits:** The audit adversary assumes training/data access and many shadow models. Source findings are version-limited and do not establish that all unlearning or exact-retraining schemes fail.
+
+**Counterevidence / alternative:** Some examples become less distinguishable after unlearning, and exact methods offer a different guarantee/cost tradeoff. Strong audit leakage does not directly estimate practical attacker prevalence.
+
+**Next check:** Replace inherited “user-level” shorthand with per-example U-MIA. Review exact SaTML final and appendices before quantitative claims; preserve the distinction from hazardous-capability probe forgetting.
+
+<a id="c36"></a>
+## C36
+
+CyberSecEval2 supports configured prompt-injection and malicious-code-compliance findings, while its inconsistent prompt-injection summaries and nonexecuted interpreter tests rule out a single unqualified headline range or sandbox-escape rate.
+
+**Status:** scoped_check. **Theme:** safeguards.
+
+| Source and relation | Version / locator | Scoped finding | Review basis and depth |
+|---|---|---|---|
+| `bhatt_cyberseceval2wide_2024` — supports | [Source](https://arxiv.org/pdf/2404.13161v1); Abstract/introduction; §§4.1,4.3,5.2,5.4,6; Figure3 p12 | Prompt-injection prose ranges disagree; interpreter evaluation judges500 generated responses acrossfive abuse categories without executing them. False refusal separately probes benign cybersecurity utility. | `this_run_primary`; Selected v1 methods/results plus direct visual page12 Figure3 check; no raw-result reconstruction.; review events: [r2_safeguards_04](rounds.md#r2_safeguards_04) |
+
+**Limits:** Figure3 does not by itself reconcile exact aggregation or source revisions. Iterative/multi-turn/optimization attacks are excluded, API safety defaults vary, and automatic response judging is not execution.
+
+**Counterevidence / alternative:** The benchmark still provides concrete failure observations and a usable false-refusal design. Withholding the disputed range does not invalidate those narrower results.
+
+**Next check:** Omit the affected headline number and continue the synthesis. Use only exact model/variant results after released-data/aggregation reconciliation; do not relabel compliance as escape success.
+
+<a id="c38"></a>
+## C38
+
+Audit access is a set of enabling conditions: usable model interfaces, model and process information, evaluator time and resources affect which claims can be tested. A label such as external evaluator or white-box access does not establish adequate evaluation.
+
+**Status:** provisional. **Theme:** governance.
+
+| Source and relation | Version / locator | Scoped finding | Review basis and depth |
+|---|---|---|---|
+| `charnock_expandingexternalaccess_2026` — supports | [Source](https://arxiv.org/pdf/2601.11916v1); v1 §§2–3.4, Tables1–2; §5 | The proposed taxonomy separates model access, information and timeframe and explains their interactions, possible false-positive and false-negative benefits, and security/capacity burdens. | `this_run_primary`; All accessible text of the 20-page arXiv v1 PDF: introduction, §§2–5, Tables 1–5 and references. This is a text reading of the identified PDF, not an audit of cited primary studies or current Code obligations.; review events: [r2_institutions_01](rounds.md#r2_institutions_01) |
+| `casper_blackboxaccessaudits_2024` — supports | [Source](https://arxiv.org/pdf/2401.14446v3); arXiv v3 §§2.1,5–7; AppendixD | Access to internals and process information enables techniques unavailable from output-only queries; resources, scope, incentives and representation remain additional conditions. | `this_run_primary`; Selected arXiv v3: §2.1 and Table 1 access definitions; portions of §§3–4.1 reviewing access-enabled testing; §§5–7 on outside-the-box information, security and discussion; Appendix D in full. Not the complete paper or all technical appendices/references.; review events: [r2_institutions_02](rounds.md#r2_institutions_02) |
+
+**Limits:** These are methodological and institutional arguments, not a controlled estimate of better safety outcomes. Charnock’s AL1–AL3 and Code interpretation are proposals; Casper’s ACM-final equivalence was not established in this round.
+
+**Counterevidence / alternative:** Black-box tests can still reveal consequential failures; deeper access adds security and capacity burdens and may be unhelpful without time or relevant information. Shared author and citation lineage do not supply independent experimental corroboration.
+
+**Next check:** Compare concrete evaluation agreements, interfaces, information, time and resources against the publication claim being tested. Avoid an unconditional access ranking.
+
+<a id="c39"></a>
+## C39
+
+The accountability value of an audit depends on its institutional design, including scope, auditor selection and payment, access and legal protection, professional standards, follow-up and disclosure. Restricted public disclosure with fuller regulator access is one proposed pathway, rather than proof that maximum public transparency is always best.
+
+**Status:** provisional. **Theme:** governance.
+
+| Source and relation | Version / locator | Scoped finding | Review basis and depth |
+|---|---|---|---|
+| `raji_outsideroversight_2022` — supports | [Source](https://dho.stanford.edu/wp-content/uploads/Outsider_Oversight.pdf); §§3–4.5.2 and §5; mainFigure1 printedp561 | The cross-sector review identifies five design dimensions, mixed evidence for some arrangements, interactions among them, and a registered-report/limited-disclosure proposal. | `this_run_primary`; All accessible text of the 15-page published-format PDF, printed pp557–571: §§1–6, references, Appendix Tables1–2, plus visual inspection of the main audit matrix and the disputed appendix rows.; review events: [r2_institutions_03](rounds.md#r2_institutions_03) |
+| `casper_blackboxaccessaudits_2024` — contextualizes | [Source](https://arxiv.org/pdf/2401.14446v3); arXiv v3 AppendixD | The authors identify conflicts, constrained resources, narrow scope, excluded viewpoints and capture as failure modes beyond technical access. | `this_run_primary`; Selected arXiv v3: §2.1 and Table 1 access definitions; portions of §§3–4.1 reviewing access-enabled testing; §§5–7 on outside-the-box information, security and discussion; Appendix D in full. Not the complete paper or all technical appendices/references.; review events: [r2_institutions_02](rounds.md#r2_institutions_02) |
+
+**Limits:** Cross-industry analogies and proposed arrangements do not measure present frontier-AI audit effectiveness. Outsider Oversight’s AppendixTable2 appears to swap FDAFAERS and FCCTCB descriptions; those two program examples are omitted from this inference pending primary verification.
+
+**Counterevidence / alternative:** Internal audits retain useful access and preventive functions; independence can trade off with expertise, and formal licensing or disclosure can produce exclusion, cost or box-ticking. The five design dimensions are not validated as a universal scoring formula.
+
+**Next check:** For applied cases, record who selected/paid the assessor, what could be tested, who received the findings and who acted on them. Verify affected FDA/FCC program descriptions before reuse.
+
+<a id="c40"></a>
+## C40
+
+Legal protection for good-faith research and protection against technical exclusion address different barriers to external evaluation. The safe-harbor proposal links them to disclosure rules, independent access review and appeals; it does not show that legal language alone supplies access or improves safety.
+
+**Status:** provisional. **Theme:** governance.
+
+| Source and relation | Version / locator | Scoped finding | Review basis and depth |
+|---|---|---|---|
+| `longpre_safeharbor_2024` — supports | [Source](https://raw.githubusercontent.com/mlresearch/v235/main/assets/longpre24a/longpre24a.pdf); PMLR 2024 Table1, §4, Figure1 and §§4.1–4.2, PDFpp6–9 | The authors distinguish civil legal protection from account-suspension protections, propose conditional researcher and company commitments, and describe third-party review/appeal mechanisms. | `this_run_primary`; PMLR published PDF pp1–4 (abstract, introduction, definitions/Table1 and researcher-experience discussion/Table2), the sampling-qualification paragraph at the beginning of p5, plus §4, §§4.1–4.2 and Figure1 text on PDFpp6–9. Remaining company-policy text/Table3 and later sections/appendices were not read in full.; review events: [r2_institutions_04](rounds.md#r2_institutions_04) |
+
+**Limits:** The paper is a position argument informed by nonrepresentative informal experience. Its 2024 company/legal snapshot has not been revalidated as current law; company promises do not remove criminal liability or create unrestricted research rights.
+
+**Counterevidence / alternative:** Trusted intermediaries and preregistration may narrow participation, preserve company gatekeeping or exclude critical groups. Technical exemptions can add misuse and administration costs; this round did not measure the proposed trade-offs.
+
+**Next check:** Read the implementation appendices and obtain dated operative policy/legal evidence before claiming current protection, participation change or safety effects.
+
+<a id="c41"></a>
+## C41
+
+Internal lifecycle audits and external scrutiny can play complementary roles. Internal access and documentary records can support prospective testing, remediation and deployment decisions, while external challenge can test organizational priorities and omissions; neither role is validated merely by producing an audit report.
+
+**Status:** provisional. **Theme:** governance.
+
+| Source and relation | Version / locator | Scoped finding | Review basis and depth |
+|---|---|---|---|
+| `raji_closingaccountabilitygap_2020` — supports | [Source](https://arxiv.org/pdf/2001.00973v1); v1 §2.4, §§4.1–4.6, Figures1–2 and §5 | The proposed SMACTR workflow connects development-stage artifacts and testing to reflection and post-audit action, while acknowledging internal organizational interests and wider checks and balances. | `this_run_primary`; All accessible text of the 12-page arXiv v1 PDF: §§1–6, references and both hypothetical CompanyX examples. Figures1–2 were also rendered and visually inspected. Linked supplementary worked templates were not retrieved/read.; review events: [r2_institutions_05](rounds.md#r2_institutions_05) |
+| `raji_outsideroversight_2022` — contextualizes | [Source](https://dho.stanford.edu/wp-content/uploads/Outsider_Oversight.pdf); §5 Limitations; §§4.2–4.5 | The authors explicitly preserve the value of internal audits and argue against relying on them alone; design arrangements shape whether external review adds accountability. | `this_run_primary`; All accessible text of the 15-page published-format PDF, printed pp557–571: §§1–6, references, Appendix Tables1–2, plus visual inspection of the main audit matrix and the disputed appendix rows.; review events: [r2_institutions_03](rounds.md#r2_institutions_03) |
+
+**Limits:** SMACTR’s two CompanyX cases are hypothetical, not an implementation or harm-reduction study. The sources share an author and scholarly lineage; they are complementary arguments rather than independent outcome replications.
+
+**Counterevidence / alternative:** Internal processes can miss affected populations or translate company principles into self-serving criteria; external reviewers can lack data, resources or practical leverage. Lifecycle documentation can become box-ticking if no one owns mitigation and follow-up.
+
+**Next check:** Look for actual audit records, affected-stakeholder participation, decision authority, completed mitigation and response to external challenge before claiming effectiveness.
+
+<a id="c43"></a>
+## C43
+
+Cost-controlled agent comparisons can both overturn apparent architecture gains and improve usable designs; the relevant comparison depends on whether the decision concerns model science or downstream use.
+
+**Status:** scoped_check. **Theme:** evaluation_configuration.
+
+| Source and relation | Version / locator | Scoped finding | Review basis and depth |
+|---|---|---|---|
+| `kapoor_aiagentsmatter_2024` — supports | [Source](https://arxiv.org/pdf/2407.01502v1); arXiv v1 §§2–4 pp3–7; TablesA1/A3 pp20/23; AppendixA–B pp18–26 | Simple HumanEval retry/warming baselines lie on or improve the cost–accuracy frontier relative to selected complex architectures; HotPotQA joint optimization lowers variable cost with similar retrieval performance. | `this_run_primary`; Complete main text §§1–7, PDF pp1–11; complete AppendixA–B text/tables/captions pp18–26 plus AppendixC/D opening/selection and NovelQA setup onp26. References pp12–17 and remaining AppendicesC–I/NeurIPS checklist pp27–33 were not read completely; image-only plot values were not digitized. Selected33-page preprint, not a full read. Experiments are the authors' own reproduced/re-evaluated runs in historical2024 model/pricing conditions; this review ran no agents. Five-run confidence intervals omit optimization/resampling variability, as FigureA5 notes. Holdout appropriateness counts include stated intentions, not only existing holdouts. NovelQA comparison was one run and its sequential-cost extrapolation is modeled.; review events: [r2_sociotechnical_02](rounds.md#r2_sociotechnical_02) |
+
+**Limits:** The paper uses selected historical models/benchmarks, modified HumanEval example tests and dated API prices. Its confidence intervals omit optimization/resampling variation; NovelQA was run once. This review does not reproduce its experiments.
+
+**Counterevidence / alternative:** Complex planning/reflection may still help on harder tasks. Autonomous-only evaluations may also understate utility when humans provide feedback; the latter is a review argument relying in part on external studies.
+
+**Next check:** Keep cost, token, task, model, retry and human-supervision conditions attached to any comparison; complete remaining appendix/run-level checks before numerical publication.
+
+<a id="c44"></a>
+## C44
+
+Dataset documentation can make intended use, sampling, provenance and maintenance inspectable through a reflective workflow; automated metadata completion is not equivalent to that proposed process or proof of representative data.
+
+**Status:** scoped_check. **Theme:** governance.
+
+| Source and relation | Version / locator | Scoped finding | Review basis and depth |
+|---|---|---|---|
+| `gebru_datasheets_2021` — supports | [Source](https://arxiv.org/pdf/1803.09010v8); arXiv v8 §§1.1–4 pp2–11; AppendixA pp14–18 | Datasheets asks factual lifecycle questions, recommends recording unknowns, and explicitly treats creator reflection as an objective that should not be automated. It reports development feedback and organizational pilots without evaluating causal effects. | `this_run_primary`; All18 pages of arXivv8 accessible extracted text read in three complete six-page blocks: introduction/objectives, development process, all questions/workflow, impact/challenges, acknowledgments/references, AppendixA and all four text-based example datasheet figures. External cited datasets/links were not opened. Published CACM equivalence not authenticated. Reported organizational pilots are author reports, not independently verified adoption or causal evidence of harm reduction. Examples disclose unknowns; full text does not include all linked datasets or web resources.; review events: [r2_sociotechnical_01](rounds.md#r2_sociotechnical_01) |
+
+**Limits:** Full reading covers the18-page arXivv8 object linked by the canonical record. The CACM layout/bytes and linked datasets were not authenticated; reported pilots are author reports rather than verified adoption or measured harm reduction.
+
+**Counterevidence / alternative:** Documentation has a plausible and practical communication/selection role and reported uptake, even though it cannot anticipate every use or guarantee fairness. Organizational incentives, overhead and dynamic-data maintenance constrain implementation.
+
+**Next check:** Use disclosure gaps to guide targeted source checks and creator questions; preserve unknowns. Inspect the published CACM object separately if citing its exact layout/DOI.
+
+<a id="c45"></a>
+## C45
+
+Layered model, red-team and human field testing can expose different application-validity problems and user perceptions; the ARIA pilot demonstrates an implemented method, not a calibrated cross-application safety ranking or a measured reduction in harms.
+
+**Status:** scoped_check. **Theme:** outcomes.
+
+| Source and relation | Version / locator | Scoped finding | Review basis and depth |
+|---|---|---|---|
+| `amironesei_aria_pilot_2025` — supports | [Source](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.700-2.pdf); NIST AI700-2 §§2–5, printedpp2–12/viewer9–19; §5.2 and AppendixC | ARIA combines annotations and tester questionnaires in transparent measurement trees; example applications obtain their largest signals from different testing levels, and tester perceptions can diverge from annotated violations. | `this_run_primary`; Abstract/TOC PDF pp4–5; main text §§1–7 PDF pp8–21 (printed1–14), including testing, annotation, crosswalk, CoRIx topology, example interpretations and future work; AppendixC PDFp29/printed22. Other appendices and rendered tree graphics not completely reviewed. Exploratory seven-application pilot with51 red teamers and19 field testers under English scenarios, not representative deployment outcomes. Proxy scenarios differ from severe harms; not every application was tested at every level. Questionnaires and annotations are not directly comparable, and scores are characterized as better for describing than ranking applications. Uncertainty propagation and questionnaire validation remain future work.; review events: [r2_sociotechnical_03](rounds.md#r2_sociotechnical_03) |
+
+**Limits:** Small English-language pilot of proxy scenarios. Testers, annotators, dialogues and annotation judgments have different denominators. The source says initial CoRIx is better for characterization than comparison; questionnaire/annotation questions differ and uncertainty quantification remains open. Main267/52 versus AppendixC267/49 count tension is held rather than turned into a violation rate.
+
+**Counterevidence / alternative:** Field-style use may reveal failures absent in fixed prompts, while model testing may reveal issues that field users miss or do not commonly elicit. Neither direction is a general guarantee of ecological validity.
+
+**Next check:** Retain qualitative findings and omit affected violation numbers pending source clarification. Complete measurement and appendix/visual review before any numerical cross-system inference.
+
+<a id="c46"></a>
+## C46
+
+Standardized multi-metric evaluation can produce useful common comparisons and reveal tradeoffs while explicitly restricting the measured subspace; broad coverage should remain distinct from deployment validity.
+
+**Status:** scoped_check. **Theme:** evaluation_configuration.
+
+| Source and relation | Version / locator | Scoped finding | Review basis and depth |
+|---|---|---|---|
+| `liang_helm_2023` — supports | [Source](https://arxiv.org/pdf/2211.09110v2); arXiv v2 §1; §4.1–4.2/Tables2–4 pp25–27; §4.6–4.8; §10.1–10.5 pp78–80 | HELMv2 operationalizes selected scenarios and metrics under common adaptation, exposes cross-metric differences, and makes missing scenario/metric/model coverage explicit. Its seven metrics cover98 of112 selected scenario–desideratum pairs, with exclusions explained. | `this_run_primary`; Title/abstract and §1 overview; selected §1.2 top-level findings pp7–10; selected scenario and metric-method text pp23–32, especially §4.1–4.2 Tables2–4 and §4.6–4.8; missing-scenario/metric/model/adaptation discussion §10.1–10.5 pp78–80. Not a complete162-page read; full appendices, results figures and live raw outputs not audited. Historical30-model comparison. Metric coverage and known omissions are part of the result. Fairness perturbations may miss complex distribution differences; demographic group labels are missing for many scenarios; bias/toxicity proxies have acknowledged validity limits. No underlying prediction matrix or live leaderboard was reproduced. Some PDF diagram text/URLs extract poorly; no graph-coordinate verification.; review events: [r2_sociotechnical_04](rounds.md#r2_sociotechnical_04) |
+
+**Limits:** Selected portions of a162-page historical report, not complete text or raw-output replication. Scalable fairness/bias/toxicity proxies have acknowledged limits; many social/system properties require access and contextual knowledge outside its evaluation interface.
+
+**Counterevidence / alternative:** Recognition of incompleteness does not erase the constructive value of unified comparison. Conversely, adding more metrics does not automatically validate them or produce a single trustworthy-system ranking.
+
+**Next check:** For a publication-leading numerical result, inspect its exact scenario/metric methods, model checkpoint, raw outputs and stakeholder validity rather than reuse overall benchmark coverage as assurance.
+
+<a id="c47"></a>
+## C47
+
+Historical trustworthiness evaluations show both standard-condition improvements and metric/access-specific reversals; higher average accuracy alone does not fix fairness or robustness under an altered threat model.
+
+**Status:** scoped_check. **Theme:** evaluator_integrity.
+
+| Source and relation | Version / locator | Scoped finding | Review basis and depth |
+|---|---|---|---|
+| `wang_decodingtrust_2023` — supports | [Source](https://proceedings.neurips.cc/paper_files/paper/2023/file/63cb9921eecf51bfad27a99b2c53dd6d-Paper-Datasets_and_Benchmarks.pdf); NeurIPS2023 §§2–9/Tables1–4 pp4–10; mainp2 footnote3; AppendixB.1 PDFp30 | On fixed March2023 GPT checkpoints, benign toxicity and some robustness/OOD outcomes improve, while adversarial system/demonstration conditions and constructed fairness base rates expose different weaknesses. | `this_run_primary`; Main text PDF/printed pp1–2 and4–10; AppendixB preliminaries/model/role setup PDFp30 (appendix printedp6). Includes text of Tables1–4 and selected method/result discussions for toxicity, robustness, OOD, demonstrations, privacy and fairness. Main Figure1 page3, full108-page appendices and graph values are not fully reviewed. Historical March2023 API checkpoints. Researchers can set system and user roles, so adversarial-system conditions are a particular access threat model rather than all ordinary deployments. Proxy toxic classifiers, prompted stereotype agreement and Adult salary prediction fairness do not estimate population harm. Proposed mechanisms attributing vulnerability to instruction following are hypotheses, not isolated causal tests. No full appendix or code/data reproduction.; review events: [r2_sociotechnical_05](rounds.md#r2_sociotechnical_05) |
+
+**Limits:** Selected methods/results and one appendix section from a108-page proceedings object. System-role attacker access, proxy toxicity judgments, Adult salary tasks and historical checkpoints constrain transfer. No modern-deployment incidence or isolated causal mechanism is established.
+
+**Counterevidence / alternative:** Several standard robustness and OOD results favor GPT-4, so the findings do not establish a universal capability-versus-safety tradeoff. Shared datasets across broad suites are dependencies, not independent corroboration.
+
+**Next check:** Complete relevant appendix/classifier/source-data checks before headline rates; keep model IDs, role permissions, sampling and each outcome definition explicit.
+
 ## Source families and dependencies
 
 These family annotations identify shared work, data or incidents where known. They do not comprehensively certify independence across the collection. Citation keys are retained pending identity adjudication.
 
 | Family | Citation keys | Relationship | Basis | Status |
 |---|---|---|---|---|
-| `F01` | `mazeika_harmbenchstandardized_2024`, `harmbench_standardizedevaluation_2024` | Possible duplicate or related-version records for the same HarmBench study; no independent corroboration count. | Supplied ledger entries115 and161 describe18 attacks and33 targets; primary ICML/PMLR identity is a reconciliation lead. | Unresolved citation/edition lineage; preserve both existing keys pending adjudication. |
+| `F01` | `mazeika_harmbenchstandardized_2024`, `harmbench_standardizedevaluation_2024` | The two records describe the same named HarmBench study family; the preprint and proceedings representations do not supply independent corroboration. | Fresh PMLR metadata and selected final-paper methods identify the title, twelve authors, eighteen red-team methods and thirty-three targets. See r2_safeguards_02–03. | Named-study family corroborated. Exact DOI/alias mapping and edition equivalence remain unresolved; both citation keys are preserved and the second record is not used as separate empirical support. |
 | `F02` | `wang_helpsteer2opensource_2024`, `wang_helpsteer2preference_2024` | Distinct contributions with shared dataset/annotation lineage. | The preference extension adds preferences and rationales to HelpSteer2; supplied ledger and C08. | Shared lineage recorded; full splits/annotator dependency review pending. |
 | `F03` | `aisi_unsanctionedagentincident_2026` | One incident, with AISI and Anthropic follow-up analyses outside the canonical corpus. | The incident disclosure and cited follow-ups in review.md concern the same July testing event; replays/simulations are different observations. | Incident dependence explicit; candidate sources not assigned new canonical keys or admitted. |
 | `F04` | `deepmind_frontiersafetyv3_2025`, `deepmind_frontiersafetyv31_2026` | Within-issuer framework editions, compared clause by clause rather than counted as independent empirical support. | Existing commitment history and C18. | Edition relation established for scoped comparison; implementation unverified. |
 | `F05` | `openai_preparednessbeta_2023`, `openai_preparednessv2_2025` | Within-issuer policy lineage with changed risk/capability terminology. | Existing commitment history and C19. | Historical comparison retained; later statements have separate observations. |
+| `F06` | `chao_jailbreakbenchopen_2024`, `pavlova_automatedredteaming_2024`, `mazeika_harmbenchstandardized_2024`, `harmbench_standardizedevaluation_2024` | Shared benchmark lineage: JBB reports 27% of behaviors from TDC/HarmBench, 18% from AdvBench and 55% original; GOAT uses JBB behaviors/judging. | JBB v5 §3.1 and Appendix B; GOAT v1 evaluation setup; r2_safeguards_01 and06. | Reuse documented at the reported dataset level; exact item-level overlap across every evaluated condition is not independently reconstructed. Distinct methods are not independent task-distribution replications. |
+| `F07` | `khan_debatingmorepersuasive_2024`, `kenton_scalableoversightweak_2024`, `arnesen_trainingwindebates_2024` | QuALITY-centered debate task lineage, with different protocols, judges and training or inference targets. | Existing C11–C12 and fresh Arnesen methods in C29; Kenton also tests other task families. | Task-family overlap is explicit; exact item/split reuse is not fully reconciled. These are distinct contributions, not three independent demonstrations of broad generalization. |
+| `F08` | `raji_closingaccountabilitygap_2020`, `raji_outsideroversight_2022` | Shared author and conceptual lineage across internal lifecycle and external-audit arguments. | Fresh source authorship/methods review and C39/C41. | Complementary institutional arguments; no independent causal outcome replication is claimed. |

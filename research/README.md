@@ -9,6 +9,7 @@ The broad bibliography and review examine what frontier AI evaluation research e
 | What has the research established, under which conditions? | [Broad synthesis](synthesis/review.md), organized across evaluation, safeguards, oversight, governance and cyber evidence |
 | Which evidence supports or qualifies a claim? | [Claim-and-evidence map](synthesis/claims.md), including versions, locators and review limits; generated from authoritative [claims.yaml](synthesis/claims.yaml) |
 | What was actually read or checked? | [Coverage summary](synthesis/coverage-summary.md) and [source-level ledger](synthesis/coverage.csv) |
+| What changed in later thematic research? | [Review rounds and source events](synthesis/rounds.md), with explicit relevance decisions, reading scopes and preservation limits |
 | What remains unresolved? | [Reconciliation and decisions](synthesis/reconciliation.md) |
 | Where are the original source identities? | Authoritative [records.yaml](../records.yaml), [stream index](../views/index.md), and [complete bibliography](../frontier-governance-evals.bib) |
 | How was this assembled, and how can I reproduce the outputs? | [Methods](../METHODS.md) and [root build instructions](../README.md#build-and-verify) |
@@ -21,6 +22,8 @@ Technical readers can trace a result through its task, model, scaffold, comparat
 The November 8 review supplies the broad organizing argument and source-level notes; the November 14 audit and evidence update qualify that work. Their adapted research content is integrated here without reproducing private conversations. Original reading labels, subsequent checking depth and experimental replication remain separate. The prior audit's central-claim pass across 105 full-text-labeled records was not 105 complete-document rereads. This integration does not certify those labels or complete the remaining sources.
 
 The complete-corpus objective remains: deepen reading where needed, connect claim-critical evidence and counterevidence, reconcile source families and versions, and test the synthesis against alternative interpretations. The claim map is a curated starting set rather than an exhaustive account of every possible claim. All current bibliography records belong in coverage; they need not all support an argument.
+
+Later rounds preserve the inherited ledger and append source-reading events. A source can acquire a background, related-work or exclusion role without supporting a claim. Complete reading counts advance only for a captured, completely read text whose edition matches the record; related preprints and scoped checks remain separately labeled. Read the generated summary for current counts and the reconciliation queue for numbers omitted or qualified after checking.
 
 Some gaps concern evidence: incomplete appendices, uncertain historical versions, missing comparators, shared data lineage and unverified implementation or causal effects. Others concern research organization: precise locators, relevance decisions, consistent counts and navigable links. Better organization makes the first group visible; it does not resolve it.
 
