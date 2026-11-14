@@ -53,7 +53,9 @@ For example, the DeepMind model-weight security rationale relies on access, tran
 
 ## Deployment case notes
 
-- [Gemini 4 Carbon’s restricted cyber rollout](carbon-restricted-access-2026-10-28.md) examines what Google disclosed about defender access and what remains open about Carbon’s cyber threshold assessment and residual risk.
+- [Gemini 4 Carbon’s restricted cyber rollout](carbon-restricted-access-2026-10-28.md) preserves the November 3 review of the October 28 announcement and its historical evidence limits.
+- [Gemini 4 Carbon’s November 10 expansion](carbon-expansion-2026-11-10.md) records the subsequent Carbon-specific decision and safeguard rationale, with public and Fairwind configurations kept separate.
+- [Carbon source review](carbon-source-review/README.md) prepares five source candidates, exact-byte capture records, and checks for admission review. These drafts do not change the admitted bibliography or either dataset.
 
 ## Preservation and evidence boundaries
 

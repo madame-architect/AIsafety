@@ -1,0 +1,93 @@
+schema_version: carbon-observation-drafts-v1
+status: pending_admission
+observations:
+- id: carbon_initial_access_announcement
+  source_id: carbon_announcement
+  event_on: '2026-10-28'
+  evidence_type: provider_announced_access_phases
+  configuration: Initial defender subset followed by additional trusted Fairwind partners; later product access intended.
+  result: Announced rollout and voluntary pre-release testing participation, without a test result.
+  first_actual_access_on: null
+  assumption_relation: contextualizes capability_access; does not demonstrate availability or control effectiveness
+- id: carbon_exploitgym_october
+  source_id: carbon_evaluation
+  snapshot_id: carbon_evaluation_archive_observed_2026_11_14
+  evidence_type: provider_reported_safeguards_off_benchmark
+  results_as_of: '2026-10'
+  configuration: One attempt per task; Antigravity harness; no internet; mitigations off in archived methodology and guardrails-off framing in announcement.
+  measures:
+  - metric: task success confirmed by target flag and intended-vulnerability LLM judge
+    time_cap_hours: 6
+    percent: 53.5
+  - metric: task success confirmed by target flag and intended-vulnerability LLM judge
+    time_cap_hours: 10
+    percent: 54.8
+  observed_task_denominator: null
+  denominator_note: October PDF/chart do not give a denominator for these percentages. The later report describes 869 benchmark challenges; do not silently backfill a historical evaluated-task count.
+  auxiliary_asset: exploitgym_chart
+  assumption_relation: bounds capability_access; deployed tools/permissions/safeguards/retry-budget equivalence unresolved
+  realized_harm: not measured
+- id: argon_cyber_comparator
+  source_id: argon_report
+  snapshot_id: argon_report_archive_observed_2026_11_14
+  evidence_type: provider_attributed_model_specific_risk_assessment
+  model: Gemini 4 Argon
+  locator: Section 3.2.2 opening; printed p. 33 / viewer p. 34
+  unmitigated_determination: Cyber CCL cannot be ruled out
+  safeguarded_assessment: Provider assesses risk below the cyber CCL
+  carbon_threshold_inference: none; comparator only
+- id: carbon_expanded_access_announcement
+  source_id: carbon_expansion
+  event_on: '2026-11-10'
+  evidence_type: provider_announced_product_expansion
+  configurations:
+  - Public Carbon paid API access and rollout to Ultra subscribers
+  - Carbon for cyber through Fairwind on a rolling basis
+  independently_confirmed_access: false
+- id: carbon_ccl_carry_forward
+  source_id: carbon_report
+  snapshot_id: carbon_report_archive_observed_2026_11_14
+  evidence_type: provider_attributed_carbon_decision_and_rationale
+  locator: Sections 3.1.1 and 3.2.2; printed pp. 12-15 and 19-20 / viewer pp. 13-16 and 20-21
+  material_capability_change_rule: Aggregate GCI v2 increase exceeding four months of fitted frontier progress; approximately 4.7 GCI points per month reported.
+  full_new_critical_capability_assessment: not performed; provider says below trigger
+  unmitigated_determination: Cyber CCL cannot be ruled out; carried forward from Argon
+  cross_check:
+    benchmark: CyScenarioBench V2 without out-of-model safeguards
+    carbon: {challenges_solved: 12, challenges_total: 14, segments_solved: 88, segments_total: 104}
+    argon: {challenges_solved: 13, challenges_total: 14, segments_solved: 90, segments_total: 104}
+    prior_12_challenge_subset: {carbon_solved: 11, argon_solved: 12, total: 12}
+  residual_risk_assessment: Provider judges strengthened safeguards lower cyber risk below CCL
+  sufficiency_or_independent_safety_validation: not established by publication of rationale
+- id: carbon_safeguarded_tests
+  source_id: carbon_report
+  snapshot_id: carbon_report_archive_observed_2026_11_14
+  evidence_type: provider_reported_safeguarded_sandbox_evaluations
+  locator: Section 3.3; printed pp. 22-27 / viewer pp. 23-28
+  agentic_adaptive:
+    rollouts: 18
+    scenarios: 6
+    maximum_outer_attempts_per_rollout: 40
+    maximum_inner_turns_per_attempt: 300
+    actual_total_attempts: null
+    carbon_attempt_breach_percent: 0.8
+    argon_attempt_breach_percent: 3.1
+    carbon_cumulative_rollout_breach_percent: 27.8
+    argon_cumulative_rollout_breach_percent: 72.2
+  gray_swan_cyber:
+    tasks: 25
+    attempts_per_seed_prompt: 200
+    carbon_query_success_percent: 2.17
+    argon_query_success_percent: 9.86
+    carbon_objective_success_percent: 40
+    argon_objective_success_percent: 56
+  trajectory_labs:
+    hours: 132
+    request_count_lower_bound: 13000
+    new_universal_jailbreaks_reported: 0
+    individual_task_successes: reported with substantial human intervention; not a zero-success result
+  configuration_transfer: Public Carbon versus Fairwind cyber equivalence unresolved; tailored Fairwind mitigations described in section 2.5.1.
+  assumption_relations:
+  - capability_access bounded by tested access and tools
+  - defense_persistence bounded by retry budget and safeguards; no automatic assumption rescoring
+  realized_harm: not measured

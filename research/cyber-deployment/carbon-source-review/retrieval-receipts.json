@@ -1,0 +1,184 @@
+[
+  {
+    "source_id": "carbon_announcement",
+    "original_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+    "http_status": 200,
+    "final_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+    "retrieved_at": "2026-11-14T02:09:53Z",
+    "sha256": "5a979cf1c3e1cd588331c12c5f40dbba0e49fe56dc15d5061216c8762e0425bd",
+    "byte_length": 367968,
+    "mime_type": "text/html",
+    "capture_path": ".source-captures/5a979cf1c3e1cd588331c12c5f40dbba0e49fe56dc15d5061216c8762e0425bd.html",
+    "response_metadata": {
+      "content-type": "text/html; charset=utf-8",
+      "date": "Sat, 14 Nov 2026 02:09:53 GMT",
+      "content-length": "367968"
+    }
+  },
+  {
+    "source_id": "carbon_evaluation",
+    "original_url": "https://storage.googleapis.com/deepmind-media/gemini/gemini_4_carbon_model_evaluation.pdf",
+    "http_status": 200,
+    "final_url": "https://storage.googleapis.com/deepmind-media/gemini/gemini_4_carbon_model_evaluation.pdf",
+    "retrieved_at": "2026-11-14T02:09:53Z",
+    "sha256": "f6bb6fdc2406db5229e8d2fdf82f8844b6e9da3a5b90c58e6b72d398af81e549",
+    "byte_length": 812661,
+    "mime_type": "application/pdf",
+    "capture_path": ".source-captures/f6bb6fdc2406db5229e8d2fdf82f8844b6e9da3a5b90c58e6b72d398af81e549.pdf",
+    "response_metadata": {
+      "content-length": "812661",
+      "date": "Sat, 14 Nov 2026 02:09:53 GMT",
+      "last-modified": "Tue, 10 Nov 2026 16:04:29 GMT",
+      "etag": "\"c508b5d3396548599bac096c70aac352\"",
+      "content-type": "application/pdf"
+    }
+  },
+  {
+    "source_id": "argon_report",
+    "original_url": "https://storage.googleapis.com/deepmind-media/gemini/gemini_4_safety_report.pdf",
+    "http_status": 200,
+    "final_url": "https://storage.googleapis.com/deepmind-media/gemini/gemini_4_safety_report.pdf",
+    "retrieved_at": "2026-11-14T02:09:53Z",
+    "sha256": "8124f1900313b733df6329433a1376ca28285c4bd8f9a276a87328ceca956adb",
+    "byte_length": 17378918,
+    "mime_type": "application/pdf",
+    "capture_path": ".source-captures/8124f1900313b733df6329433a1376ca28285c4bd8f9a276a87328ceca956adb.pdf",
+    "response_metadata": {
+      "content-type": "application/pdf",
+      "date": "Sat, 14 Nov 2026 02:09:53 GMT",
+      "last-modified": "Tue, 20 Oct 2026 13:35:04 GMT",
+      "etag": "\"adabea34d51b1666984535b36ddc8480\"",
+      "content-length": "17378918"
+    }
+  },
+  {
+    "source_id": "carbon_expansion",
+    "original_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+    "http_status": 200,
+    "final_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+    "retrieved_at": "2026-11-14T02:09:53Z",
+    "sha256": "5bbc366ac4603f695d47c810a1c51b9d400f77486dabd8b5ae4df3d6e3cd97e7",
+    "byte_length": 408198,
+    "mime_type": "text/html",
+    "capture_path": ".source-captures/5bbc366ac4603f695d47c810a1c51b9d400f77486dabd8b5ae4df3d6e3cd97e7.html",
+    "response_metadata": {
+      "content-type": "text/html; charset=utf-8",
+      "date": "Sat, 14 Nov 2026 02:09:53 GMT",
+      "content-length": "408198"
+    }
+  },
+  {
+    "source_id": "carbon_report",
+    "original_url": "https://storage.googleapis.com/deepmind-media/gemini/gemini_4_carbon_safety_report.pdf",
+    "http_status": 200,
+    "final_url": "https://storage.googleapis.com/deepmind-media/gemini/gemini_4_carbon_safety_report.pdf",
+    "retrieved_at": "2026-11-14T02:09:53Z",
+    "sha256": "78179c76c34e3f6f57cbc36fc672c8fb5d15afb0209bd98a46adacebb43774eb",
+    "byte_length": 7351721,
+    "mime_type": "application/pdf",
+    "capture_path": ".source-captures/78179c76c34e3f6f57cbc36fc672c8fb5d15afb0209bd98a46adacebb43774eb.pdf",
+    "response_metadata": {
+      "content-length": "7351721",
+      "date": "Sat, 14 Nov 2026 01:12:47 GMT",
+      "last-modified": "Tue, 10 Nov 2026 16:06:30 GMT",
+      "etag": "\"2fed4260f90b65be8ee0f2e429f65094\"",
+      "content-type": "application/pdf"
+    }
+  },
+  {
+    "source_id": "exploitgym_chart",
+    "original_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini_4_carbon_exploitgym.original.png",
+    "http_status": 200,
+    "final_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini_4_carbon_exploitgym.original.png",
+    "retrieved_at": "2026-11-14T02:09:53Z",
+    "sha256": "83fa5d4c5917d6b06d7c8ad54f6fa32802c2b53599120c3e65da471e6086ff8e",
+    "byte_length": 211132,
+    "mime_type": "image/png",
+    "capture_path": ".source-captures/83fa5d4c5917d6b06d7c8ad54f6fa32802c2b53599120c3e65da471e6086ff8e.png",
+    "response_metadata": {
+      "content-length": "211132",
+      "date": "Sat, 14 Nov 2026 02:09:53 GMT",
+      "last-modified": "Wed, 28 Oct 2026 16:18:34 GMT",
+      "etag": "\"7e219b0da6dd8416fbc9504f6727b67e\"",
+      "content-type": "image/png"
+    }
+  },
+  {
+    "source_id": "carbon_announcement_archive",
+    "original_url": "https://web.archive.org/web/20261113174018if_/https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+    "http_status": 200,
+    "final_url": "https://web.archive.org/web/20261113174018if_/https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+    "retrieved_at": "2026-11-14T02:10:19Z",
+    "sha256": "7bc1102b6164a46cba95135bc8b8c68088addf03eb794a621b2921c405464c37",
+    "byte_length": 370533,
+    "mime_type": "text/html",
+    "capture_path": ".source-captures/7bc1102b6164a46cba95135bc8b8c68088addf03eb794a621b2921c405464c37.html",
+    "response_metadata": {
+      "date": "Sat, 14 Nov 2026 02:10:19 GMT",
+      "content-type": "text/html; charset=utf-8"
+    }
+  },
+  {
+    "source_id": "carbon_evaluation_archive",
+    "original_url": "https://web.archive.org/web/20261029225211if_/https://storage.googleapis.com/deepmind-media/gemini/gemini_4_carbon_model_evaluation.pdf",
+    "http_status": 200,
+    "final_url": "https://web.archive.org/web/20261029225211if_/https://storage.googleapis.com/deepmind-media/gemini/gemini_4_carbon_model_evaluation.pdf",
+    "retrieved_at": "2026-11-14T02:10:19Z",
+    "sha256": "729c10bcdcd68998f4ba3b0e81376788886e38e473c33c700ea9bd609bca45ad",
+    "byte_length": 808899,
+    "mime_type": "application/pdf",
+    "capture_path": ".source-captures/729c10bcdcd68998f4ba3b0e81376788886e38e473c33c700ea9bd609bca45ad.pdf",
+    "response_metadata": {
+      "date": "Sat, 14 Nov 2026 02:10:19 GMT",
+      "content-type": "application/pdf",
+      "content-length": "808899"
+    }
+  },
+  {
+    "source_id": "argon_report_archive",
+    "original_url": "https://web.archive.org/web/20261020162135if_/https://storage.googleapis.com/deepmind-media/gemini/gemini_4_safety_report.pdf",
+    "http_status": 200,
+    "final_url": "https://web.archive.org/web/20261020162135if_/https://storage.googleapis.com/deepmind-media/gemini/gemini_4_safety_report.pdf",
+    "retrieved_at": "2026-11-14T02:10:20Z",
+    "sha256": "8124f1900313b733df6329433a1376ca28285c4bd8f9a276a87328ceca956adb",
+    "byte_length": 17378918,
+    "mime_type": "application/pdf",
+    "capture_path": ".source-captures/8124f1900313b733df6329433a1376ca28285c4bd8f9a276a87328ceca956adb.pdf",
+    "response_metadata": {
+      "date": "Sat, 14 Nov 2026 02:10:19 GMT",
+      "content-type": "application/pdf",
+      "content-length": "17378918"
+    }
+  },
+  {
+    "source_id": "carbon_expansion_archive",
+    "original_url": "https://web.archive.org/web/20261112163435if_/https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+    "http_status": 200,
+    "final_url": "https://web.archive.org/web/20261112163435if_/https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+    "retrieved_at": "2026-11-14T02:10:19Z",
+    "sha256": "2939925ed68ed5fc53ff0c7e867c10b3eb6941f0fcbfde5dba92515f579ce6db",
+    "byte_length": 411757,
+    "mime_type": "text/html",
+    "capture_path": ".source-captures/2939925ed68ed5fc53ff0c7e867c10b3eb6941f0fcbfde5dba92515f579ce6db.html",
+    "response_metadata": {
+      "date": "Sat, 14 Nov 2026 02:10:19 GMT",
+      "content-type": "text/html; charset=utf-8"
+    }
+  },
+  {
+    "source_id": "carbon_report_archive",
+    "original_url": "https://web.archive.org/web/20261110162659if_/https://storage.googleapis.com/deepmind-media/gemini/gemini_4_carbon_safety_report.pdf",
+    "http_status": 200,
+    "final_url": "https://web.archive.org/web/20261110162659if_/https://storage.googleapis.com/deepmind-media/gemini/gemini_4_carbon_safety_report.pdf",
+    "retrieved_at": "2026-11-14T02:10:20Z",
+    "sha256": "78179c76c34e3f6f57cbc36fc672c8fb5d15afb0209bd98a46adacebb43774eb",
+    "byte_length": 7351721,
+    "mime_type": "application/pdf",
+    "capture_path": ".source-captures/78179c76c34e3f6f57cbc36fc672c8fb5d15afb0209bd98a46adacebb43774eb.pdf",
+    "response_metadata": {
+      "date": "Sat, 14 Nov 2026 02:10:19 GMT",
+      "content-type": "application/pdf",
+      "content-length": "7351721"
+    }
+  }
+]

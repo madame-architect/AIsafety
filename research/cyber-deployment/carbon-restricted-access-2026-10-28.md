@@ -1,6 +1,6 @@
 # Gemini 4 Carbon’s restricted cyber rollout
 
-Google announced the rollout on 2026-10-28. Public sources were reviewed on 2026-11-03. This is a case note and source intake for the cyber research. The date identifies the announcement. The exact date on which the first partner received access is unresolved.
+Google announced the rollout on 2026-10-28. This note records the public-source review of 2026-11-03 and its historical evidence limits. The date identifies the announcement. The exact date on which the first partner received access is unresolved. The [November 10 expansion observation](carbon-expansion-2026-11-10.md) records later Carbon-specific threshold and residual-risk disclosures; the earlier absence finding below is bounded to the November 3 review.
 
 ## What the public record establishes
 
@@ -19,11 +19,15 @@ DeepMind’s Frontier Safety Framework v3.1 treats deployment scope and safeguar
 2. **Residual risk for the initial cohort.** Which access conditions and misuse controls were applied to Carbon, how were they tested with the partner configuration in place, and what supported the conclusion that remaining risk was acceptable for that cohort?
 3. **Expansion criteria.** What observed control failures, attempted misuse, or changes in users and tool permissions would pause or trigger a reassessment before the next phase?
 
-The Carbon announcement, evaluation methodology, public model-card index and Fairwind page yielded no Carbon-specific cyber CCL determination, residual-risk rationale for the initial cohort, or criteria for approving expansion. This is a bounded finding about the public materials reviewed. This AI-assisted review inspected the title page and cybersecurity determination in the publisher’s Argon PDF and used a third-party transcription for the document-wide term search. The announcement and methodology were inspected through public web retrieval. Exact source bytes and a capture-specific archive were not verified for this note. [Model-card index][cards]
+At the November 3 review, the Carbon announcement, evaluation methodology, public model-card index and Fairwind page yielded no Carbon-specific cyber CCL determination, residual-risk rationale for the initial cohort, or criteria for approving expansion. This is a bounded historical finding about the materials reviewed, not a current claim that no rationale is public. [Model-card index][cards]
+
+The November 3 note records a scoped inspection of the publisher Argon PDF's title page and cyber determination, alongside a third-party transcription search. A later review did not independently verify the original PDF's full interior. These scopes can coexist; full-document verification is not claimed. The original reading record and byte identity for the November 3 event remain unresolved. A fresh scoped review and exact-byte capture, recorded separately in the [source review](carbon-source-review/README.md), do not reconstruct that event. The announcement and methodology were inspected through public web retrieval in the original review; exact source bytes and a capture-specific archive were not verified then.
 
 ## Research treatment
 
 Record the model-specific rollout by its announcement date. Use the ExploitGym result as a candidate benchmark observation for `capability_access`, where the unresolved issue is whether the evaluated capability is accessible with the tools, permissions, safeguards and attempt budget of the deployment. A safeguards-off score supplies no test of whether offensive uplift persists with the deployed defenses in place. The sources are logged as deferred candidates in [the intake register][intake].
+
+The [source review](carbon-source-review/README.md) retains the October archived methodology separately from a changed live PDF. The latter qualifies the benchmark mitigation wording and associates the cyber results with Fairwind access. It cannot silently replace the historical representation or establish that public Carbon exposes the same capability or controls.
 
 [carbon]: https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/
 [method]: https://storage.googleapis.com/deepmind-media/gemini/gemini_4_carbon_model_evaluation.pdf#page=4
