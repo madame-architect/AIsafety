@@ -602,7 +602,7 @@ Publication dates describe documents; observation dates describe inspection; cla
 
 **Locator basis:** Named headings and numbered article-body paragraphs or bullet labels in the retained HTML; navigation, duplicated table of contents, related-content cards and archive toolbar excluded.
 
-**Preservation:** Complete article body retained as a capture-specific archived HTML representation. SHA-256 and length describe that archived response, not the live page or extracted text. The archive timestamp is an archive assertion and is not the publication date or our retrieval date.
+**Preservation:** Complete article body retained as a capture-specific archived HTML representation. SHA-256 and length describe that archived response, not the live page or extracted text. The archive timestamp is an archive assertion and is not the publication date or our retrieval date. Exact-byte public reproduction of this historical file is not asserted. Follow-up recovery, comparison and fresh-retrieval results are recorded separately in provenance/html-reproducibility/README.md.
 
 **Checked archive:** [https://web.archive.org/web/20261024161822/https://openai.com/index/securing-our-frontier-model-training-environment/](https://web.archive.org/web/20261024161822/https://openai.com/index/securing-our-frontier-model-training-environment/) (checked 2026-10-24).
 
@@ -658,7 +658,7 @@ Publication dates describe documents; observation dates describe inspection; cla
 
 **Locator basis:** Named headings and numbered article-body paragraphs or bullet labels in the retained HTML; navigation, duplicated table of contents, related-content cards and archive toolbar excluded.
 
-**Preservation:** Complete article body retained as a capture-specific archived HTML representation. SHA-256 and length describe that archived response, not the live page or extracted text. The archive timestamp is an archive assertion and is not the publication date or our retrieval date.
+**Preservation:** Complete article body retained as a capture-specific archived HTML representation. SHA-256 and length describe that archived response, not the live page or extracted text. The archive timestamp is an archive assertion and is not the publication date or our retrieval date. Exact-byte public reproduction of this historical file is not asserted. Follow-up recovery, comparison and fresh-retrieval results are recorded separately in provenance/html-reproducibility/README.md.
 
 **Checked archive:** [https://web.archive.org/web/20261016033459/https://openai.com/index/pacing-model-development-cyber-capabilities/](https://web.archive.org/web/20261016033459/https://openai.com/index/pacing-model-development-cyber-capabilities/) (checked 2026-10-24).
 

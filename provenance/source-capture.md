@@ -43,7 +43,8 @@ which bytes were inspected earlier.
    If comparing a live original, require an exact byte match before claiming
    that the two representations share a digest.
 3. For mutable HTML, preserve a capture-specific archive where feasible. Hash
-   the actual saved representation, including any archive rewriting. Check
+   the actual saved representation, and state whether it is raw archive HTML
+   or a rewritten replay. Check
    completeness and record its relationship to the original. A current URL,
    extracted text, or archive search page is insufficient. When remote
    archiving is unavailable, retain a local HTML representation and explain
@@ -91,8 +92,40 @@ HTML, whose archival representation may legitimately differ from the live page.
 Preserve local captures in durable storage outside Git when redistribution is
 inappropriate. Large copyrighted PDFs need not enter Git: retain checked stable
 archive references, exact cryptographic provenance and material limitations.
-A digest alone does not preserve access. Builds validate structure and any
+A digest alone does not preserve access. A replay URL may return different
+HTML bytes on a later request even at the same archive timestamp. A successful
+fresh download never replaces a historical digest or proves historical byte
+reproduction. Builds validate structure and any
 locally present bytes; they do not recheck remote archives.
+
+## Raw HTML and follow-up verification
+
+For Wayback HTML, use `--raw-archive` to request the timestamped `id_`
+representation explicitly. Without that flag the supplied replay URL is used
+as written. Raw HTML is a different representation from a rewritten replay;
+give it a new retrieval ID and retain the old record, dates and fingerprints.
+
+The tool retains the received HTTP response body and the decoded HTML entity
+separately when HTTP content encoding is present. SHA-256 and `byte_length` in
+the YAML identify the decoded entity saved without HTML rewriting. The
+immutable retrieval sidecar records the requested/final URLs, request/response
+headers, content encoding, both fingerprints, and actual retrieval time. This
+does not preserve TLS, HTTP chunk framing, linked assets, or browser state.
+
+Use repeated `--expect-text` arguments for article-specific markers from the
+beginning, supporting passages and end, including material qualifications,
+numbers, table cells and footnotes where present. Checks run against visible
+HTML text rather than script/JSON copies. These checks detect specified
+omissions; they cannot certify completeness. Inspect the retained article,
+tables, notes and relevant dependencies before admitting an observation.
+The sidecar states when marker checks were not requested. Retrieval IDs cannot
+reuse an existing source record or sidecar, even if the payload hash matches.
+
+The [five-page follow-up](html-reproducibility/README.md) provides historical
+fingerprints, new retrieval receipts, comparison scope and public verification
+commands. It distinguishes recovery of retained bytes from reproducing those
+historical bytes over a public network. The fresh raw captures are separate
+verification events and do not backdate or replace the original observations.
 
 ## Recovering the October 24 bundle
 
