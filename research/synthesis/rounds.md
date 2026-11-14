@@ -3509,3 +3509,1768 @@ No source findings; material was inaccessible.
 | `version_claim` | Not recorded / unavailable |
 | `locator_basis` | No readable framework body. |
 | `capture_path` | Not recorded / unavailable |
+## safety-cases-evaluation-validity-2026-11-14
+
+**As of:** 2026-11-14. **Base commit:** `e484ed0d5c805b98ba55cc9d35b14c989dc41a63`.
+
+**Question:** Which assurance arguments, evaluator-validation methods and strategic-behavior results add missing roles or challenge the broad synthesis, and what can fresh complete rechecks establish about inherited reading coverage?
+
+**Selection basis:** Purposive selection from 177 unresolved roles and the existing exact-edition/numerical queue. Prioritizes safety-case construction/confidence, evaluation awareness and sandbagging, reward/judge validity, and a small heterogeneous sample of inherited full-text objects. Three mapped works receive edition or denominator follow-up. Selection is recorded before acquisition; not a systematic sample, retrospective search reconstruction, or independent human review.
+
+**Stopping rule:** Complete one bounded reviewable round. Prefer complete reading of manageable claim-critical exact texts; retain selected scope for long artifacts and unverified editions. Source roles may be supportive, contrary, background or unresolved. Make bounded exact-source access attempts and omit disputed quantities where their provenance remains uncertain. Do not force every selected key into a claim or infer earlier reading from a fresh check.
+
+| Theme | Why selected | Canonical keys |
+|---|---|---|
+| Safety-case construction, confidence and change | Tests whether structured arguments improve decisions and what validates their confidence or update rules. | `lee_constructingsafety_2026`, `barrett_assessingconfidence_2025`, `bloomfield_assurancesystemsdependabil_2024`, `carlan_dynamicsafetycases_2024`, `buhl_safetycasesfrontier_2024`, `hilton_safetycasesscalable_2025` |
+| Evaluation awareness, sandbagging and monitor validity | Distinguishes elicited strategic behavior, awareness probes and interventions from spontaneous behavior, capability concealment and effective deployment monitoring. | `chaudhary_evaluationawareness_2025`, `li_cancovertlysandbag_2025`, `nguyen_probingsteeringevaluation_2025`, `hua_steeringevaluation_2025`, `kutasov_evaluatingsabotage_2025` |
+| Reward models and substitution of human judgments | Tests whether reward/judge rankings predict useful downstream behavior and when statistical agreement can justify a defined substitution. | `lambert_rewardbenchevaluating_2024`, `frick_evaluaterewardrlhf_2024`, `calderon_alternativeannotator_2025`, `dubois_skewedscore_2025`, `wang_selftaughtevaluators_2024` |
+| Fresh checks of inherited full-text anchors and related artifacts | Purposeful contrast among a taxonomy, a joint model evaluation, a changing measurement page and a benchmark portal; distinguishes the identified object from linked reports and historical snapshots. | `fmf_preliminarytaxonomy_2024`, `aisi_safetyinstitutesjoint_2024`, `metr_timehorizons_2026`, `mlcommons_ailuminate_2026`, `mlcommons_ailuminatev10_2025` |
+| Exact editions, a fairness denominator and a statutory date | Targets final-proceedings equivalence, public-input label interpretation and TrustLLM category aggregation without a blanket error verdict. The unresolved New York effective-date question was added adaptively before retrieval at2026-11-14T23:33Z; this is not retrospective preregistration. | `cunningham_sparseautoencoders_2024`, `huang_collectiveconstitutional_2024`, `huang_trustllm_2024`, `newyork_raiseact_article44b_nd` |
+
+### Event index
+
+| Event | Source | Reading | Edition / coverage effect | Relevance |
+|---|---|---|---|---|
+| [r4_safetycases_01](#r4_safetycases_01) | `buhl_safetycasesfrontier_2024` | Full text | same_record / complete_record_text | claim_evidence |
+| [r4_safetycases_02](#r4_safetycases_02) | `hilton_safetycasesscalable_2025` | Full text | same_record / complete_record_text | claim_evidence |
+| [r4_safetycases_03](#r4_safetycases_03) | `lee_constructingsafety_2026` | Selected sections | related_edition / scoped_review | claim_evidence |
+| [r4_safetycases_04](#r4_safetycases_04) | `barrett_assessingconfidence_2025` | Selected sections | same_record / scoped_review | claim_evidence |
+| [r4_safetycases_05](#r4_safetycases_05) | `carlan_dynamicsafetycases_2024` | Selected sections | same_record / scoped_review | claim_evidence |
+| [r4_safetycases_06](#r4_safetycases_06) | `bloomfield_assurancesystemsdependabil_2024` | Selected sections | same_record / scoped_review | claim_evidence |
+| [r4_awareness_01](#r4_awareness_01) | `chaudhary_evaluationawareness_2025` | Full text | same_record / complete_record_text | claim_evidence |
+| [r4_awareness_02](#r4_awareness_02) | `nguyen_probingsteeringevaluation_2025` | Full text | same_record / complete_record_text | claim_evidence |
+| [r4_awareness_03](#r4_awareness_03) | `hua_steeringevaluation_2025` | Selected sections | related_edition / scoped_review | claim_evidence |
+| [r4_awareness_04](#r4_awareness_04) | `li_cancovertlysandbag_2025` | Selected sections | same_record / scoped_review | claim_evidence |
+| [r4_awareness_05](#r4_awareness_05) | `kutasov_evaluatingsabotage_2025` | Selected sections | related_edition / scoped_review | claim_evidence |
+| [r4_judges_01](#r4_judges_01) | `lambert_rewardbenchevaluating_2024` | Selected sections | same_record / scoped_review | claim_evidence |
+| [r4_judges_02](#r4_judges_02) | `frick_evaluaterewardrlhf_2024` | Selected sections | same_record / scoped_review | background |
+| [r4_judges_03](#r4_judges_03) | `frick_evaluaterewardrlhf_2024` | Selected sections | related_edition / scoped_review | claim_evidence |
+| [r4_judges_04](#r4_judges_04) | `wang_selftaughtevaluators_2024` | Full text | same_record / complete_record_text | claim_evidence |
+| [r4_judges_05](#r4_judges_05) | `calderon_alternativeannotator_2025` | Selected sections | same_record / scoped_review | claim_evidence |
+| [r4_judges_06](#r4_judges_06) | `dubois_skewedscore_2025` | Full text | same_record / complete_record_text | claim_evidence |
+| [r4_judges_07](#r4_judges_07) | `lambert_rewardbenchevaluating_2024` | Metadata only | related_edition / none | background |
+| [r4_depthsample_01](#r4_depthsample_01) | `fmf_preliminarytaxonomy_2024` | Full text | same_record / complete_record_text | background |
+| [r4_depthsample_02](#r4_depthsample_02) | `aisi_safetyinstitutesjoint_2024` | Full text | same_record / complete_record_text | claim_evidence |
+| [r4_depthsample_03](#r4_depthsample_03) | `aisi_safetyinstitutesjoint_2024` | Selected sections | related_edition / scoped_review | claim_evidence |
+| [r4_depthsample_04](#r4_depthsample_04) | `metr_timehorizons_2026` | Full text | same_record / complete_record_text | claim_evidence |
+| [r4_depthsample_05](#r4_depthsample_05) | `mlcommons_ailuminate_2026` | Full text | same_record / complete_record_text | claim_evidence |
+| [r4_depthsample_06](#r4_depthsample_06) | `mlcommons_ailuminatev10_2025` | Selected sections | same_record / scoped_review | claim_evidence |
+| [r4_depthsample_07](#r4_depthsample_07) | `mlcommons_ailuminatev10_2025` | Abstract only | related_edition / none | background |
+| [r4_editions_01](#r4_editions_01) | `cunningham_sparseautoencoders_2024` | Selected sections | same_record / scoped_review | claim_evidence |
+| [r4_editions_02](#r4_editions_02) | `huang_collectiveconstitutional_2024` | Selected sections | same_record / scoped_review | claim_evidence |
+| [r4_editions_03](#r4_editions_03) | `huang_trustllm_2024` | Selected sections | related_edition / scoped_review | claim_evidence |
+| [r4_editions_04](#r4_editions_04) | `huang_trustllm_2024` | Selected sections | related_edition / scoped_review | background |
+| [r4_editions_05](#r4_editions_05) | `huang_trustllm_2024` | Selected sections | related_edition / scoped_review | claim_evidence |
+| [r4_editions_06](#r4_editions_06) | `huang_trustllm_2024` | Metadata only | related_edition / none | background |
+| [r4_editions_07](#r4_editions_07) | `cunningham_sparseautoencoders_2024` | Metadata only | same_record / none | background |
+| [r4_ny_01](#r4_ny_01) | `newyork_raiseact_article44b_nd` | Selected sections | same_record / scoped_review | claim_evidence |
+| [r4_ny_02](#r4_ny_02) | `newyork_raiseact_article44b_nd` | Selected sections | related_edition / scoped_review | claim_evidence |
+| [r4_ny_03](#r4_ny_03) | `newyork_raiseact_article44b_nd` | Selected sections | related_edition / scoped_review | claim_evidence |
+
+<a id="r4_safetycases_01"></a>
+### r4_safetycases_01
+
+**Source:** `buhl_safetycasesfrontier_2024`. **Theme:** safety_cases. **Reading:** Full text. **Coverage effect:** `complete_record_text`.
+
+**Edition match:** `same_record`. Exact canonical arXiv identifier, title and author identity match. This event concerns the pinned v1 only; later revisions and linked artifacts are not equated with it.
+
+**Inspected scope:** All 25 pages of accessible v1 text read, including title, contents, executive summary, Sections1–7, footnotes, Tables1–5, text/captions of Figures1–6, abbreviations, acknowledgments and references. No linked sources or underlying industry cases independently inspected.
+
+**Locators:** §§2.1–2.3 pp5–8; Figure2/Table2 pp6–7; §3.2 pp9–12, Tables3–4: comparison with specific rules; §§4.1–4.4 pp12–16: scope, objectives, arguments and evidence; §§5.1–5.2 pp16–18; Table5: methodology, reviewers and capacity
+
+**Visual check:** Rendered and visually inspected Figure2 on p6. All other figures/tables read through their extracted labels/captions/cells, without separate pixel inspection. No diagram is treated as an executed evaluation.
+
+**Findings:**
+
+- A safety case is an outcome-oriented, system-specific argument with evidence and stated operational scope; adherence to an organization-wide framework must additionally be justified as sufficient for the safety objective (§2.3).
+- The proposed writer/reviewer/decision-maker process makes argument validity, evidential support and change conditions inspectable. Figure2 and Table2 are explicit sketches, not sufficient or sound cases for an actual near-term system.
+- Tables3–4 compare flexibility, innovation and use of developer knowledge with review costs, reduced transparency, inconsistent judgments, capture and gamability. The preferred regulatory approach is conditional on industry/regulator circumstances, and precise rules can complement or eventually replace parts of the approach.
+- The paper acknowledges little empirical evidence of safety-case efficacy and warns against overreliance before methodology and reviewer capacity mature. External review is a mature-ecosystem goal, not represented as a precondition already fulfilled.
+
+**Counterevidence / alternative:** A structured argument can expose gaps but can also give false assurance; costs, expertise, conflicts, unknown future capabilities and open-ended deployment contexts constrain its use. The paper treats several arguments beyond inability as unresolved rather than demonstrated safeguards.
+
+**Limits:** Conceptual/governance analysis focused on catastrophic risks and the US/UK/EU in the 2024 edition. Full reading does not verify its cited industry evidence, present regulation or actual frontier deployment outcomes. The illustrative 80% task threshold and risk quantities are examples, not validated decision thresholds.
+
+**Replication:** `not_performed`. **Numerical check:** Documentary reading only; no experimental reproduction, code execution, or numerical recomputation.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C66](claims.md#c66)
+
+**Relevance rationale:** Adds a specified assurance mechanism, constructive illustration or limitation to the broad synthesis; methodological proposals, illustrative cases and author-reported experiments remain separate from independently verified decision effects.
+
+**Next check:** If making an efficacy or regulatory-superiority claim, seek actual decision/review records and comparative implementation evidence. Retain conditional design argument now.
+
+| Capture field | Value |
+|---|---|
+| `preservation_status` | captured |
+| `original_url` | [Source](https://arxiv.org/pdf/2410.21572v1) |
+| `final_url` | [Source](https://arxiv.org/pdf/2410.21572v1) |
+| `retrieved_at` | 2026-11-14T23:26:03.107441+00:00 |
+| `attempted_at` | 2026-11-14T23:26:02.975724+00:00 |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No capture-specific independent archive was checked in this bounded round; exact primary bytes and pinned URLs are retained locally. Independent archival preservation is not claimed. |
+| `sha256` | 86fc0ede73b44c09558971940bd81bb29830977de60b9b81927b2880af547779 |
+| `byte_length` | 823413 |
+| `mime_type` | application/pdf |
+| `published_on` | 2024-10-28 |
+| `version_claim` | arXiv:2410.21572v1; 28 October2024; 25-page PDF |
+| `locator_basis` | One-based PDF viewer pages; printed pages agree except Bloomfield, whose printed page is one less than viewer page. |
+| `capture_path` | .source-captures/synthesis-86fc0ede73b44c09558971940bd81bb29830977de60b9b81927b2880af547779.pdf |
+
+<a id="r4_safetycases_02"></a>
+### r4_safetycases_02
+
+**Source:** `hilton_safetycasesscalable_2025`. **Theme:** safety_cases. **Reading:** Full text. **Coverage effect:** `complete_record_text`.
+
+**Edition match:** `same_record`. Exact canonical arXiv identifier, title and author identity match. This event concerns the pinned v1 only; later revisions and linked artifacts are not equated with it.
+
+**Inspected scope:** All accessible text of the 19-page v1 representation, including Sections1–5, both figure captions/labels, Tables1–3, footnotes and references. The final page contains only a page number. No linked papers, standards or empirical artifacts opened.
+
+**Locators:** §§2.1–2.4 pp2–7; Figures1–2 pp2,6; §3.1 p8 and Table2: organizational frameworks versus system cases; §3.2/Table3 pp9–12: conditional mapping to Seoul commitments; §§4.1–4.3 pp12–14: thresholds, independence, quantification, generalization and implementation questions
+
+**Visual check:** Rendered and visually inspected both Figures1–2 on pp2,6. Tables read as extracted cells; no additional visual authentication of historical policy examples.
+
+**Findings:**
+
+- The proposed writer, red-team and decision-maker roles include experiments/counterexamples by the reviewer, rather than document review alone; cases can support development, go/no-go decisions and incident response (§2.1).
+- The Seoul-commitment mapping is explicitly conditional on an adequate process producing correct cases. Threshold-setting, broader governance, quick response triggers and public communication still require other processes (Table3).
+- The source distinguishes inability, safeguards, control and trustworthiness arguments and explicitly says it does not yet know how to make good arguments for increasingly capable future systems. Multiple independent arguments are an aspiration, with independence itself an open question.
+- Compared with prescriptive, information-sharing and ex-post alternatives, the proposal offers flexibility and assessability but carries documentation/evidence costs and unresolved methodological choices.
+
+**Counterevidence / alternative:** Failure to elicit a dangerous capability is weaker than proving no one can elicit it; threshold adequacy, out-of-distribution monitoring and confidence measures remain research questions. Method flexibility is not measured deployment safety.
+
+**Limits:** This complete reading is a fresh recheck of an inherited full-text object, not a new full-text-label addition or proof of the earlier reading. It does not independently verify the cited Seoul text/current frameworks or experimental findings. Shared Buhl/Goemans lineage is not independent outcome corroboration.
+
+**Replication:** `not_performed`. **Numerical check:** Documentary reading only; no experimental reproduction, code execution, or numerical recomputation.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C66](claims.md#c66)
+
+**Relevance rationale:** Adds a specified assurance mechanism, constructive illustration or limitation to the broad synthesis; methodological proposals, illustrative cases and author-reported experiments remain separate from independently verified decision effects.
+
+**Next check:** Use a real reviewed case with declared thresholds, reviewer authority and update triggers if claiming implementation effects; keep the current argument as a methodological proposal.
+
+| Capture field | Value |
+|---|---|
+| `preservation_status` | captured |
+| `original_url` | [Source](https://arxiv.org/pdf/2503.04744v1) |
+| `final_url` | [Source](https://arxiv.org/pdf/2503.04744v1) |
+| `retrieved_at` | 2026-11-14T23:26:03.068845+00:00 |
+| `attempted_at` | 2026-11-14T23:26:02.976710+00:00 |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No capture-specific independent archive was checked in this bounded round; exact primary bytes and pinned URLs are retained locally. Independent archival preservation is not claimed. |
+| `sha256` | 3c00b327c3b98a6cc67447a3c86b921d9281aaca0779cd672c5320569e486c1b |
+| `byte_length` | 461687 |
+| `mime_type` | application/pdf |
+| `published_on` | 2025 |
+| `version_claim` | arXiv:2503.04744v1; 19-page retained representation |
+| `locator_basis` | One-based PDF viewer pages; printed pages agree except Bloomfield, whose printed page is one less than viewer page. |
+| `capture_path` | .source-captures/synthesis-3c00b327c3b98a6cc67447a3c86b921d9281aaca0779cd672c5320569e486c1b.pdf |
+
+<a id="r4_safetycases_03"></a>
+### r4_safetycases_03
+
+**Source:** `lee_constructingsafety_2026`. **Theme:** safety_cases. **Reading:** Selected sections. **Coverage effect:** `scoped_review`.
+
+**Edition match:** `related_edition`. The arXiv identifier and original title match the canonical record, but this v1 lists six authors while the canonical author field includes Lionel Briand as a seventh. The later v3 has a changed title. This mixed-edition record is conservatively related_edition; no equivalence or metadata rewrite is assumed.
+
+**Inspected scope:** Pinned v1 pp1,8–10,13–14,26–30: title/abstract/introduction opening; review methodology and selection; taxonomy/architecture opening; complete tender-case section and limitations/conclusion. Other taxonomy/pattern subsections, all selected-study appendices and bibliography not fully read.
+
+**Locators:** §3 pp8–10, Figures4–5: literature-selection design; §4.1–4.3 pp13–14: composable CAE structure and inferred mappings; §6 pp26–29, Table7/Figure8: GPT-4o tender-review illustration; §7–8 pp29–30: limits, verification-process boundary and future work
+
+**Visual check:** Rendered and visually inspected Figure8 on p29. Other selected figures/tables read through extracted labels/captions/cells only.
+
+**Findings:**
+
+- The v1 proposes reusable claim–argument–evidence patterns grounded in an author-described literature review, and explicitly distinguishes observed CAE framing from inferred mappings that can introduce interpretive bias (§§3–4).
+- Section6 describes a prompt-based GPT-4o tender-review pilot and reports controlled comparisons on 200 synthetic tender cases. This is more specific than a purely abstract template; the paper calls it a real-world case, while the reported evaluation materials are synthetic.
+- The case reports comparative agreement/consistency and an acceptance threshold, but the inspected case text does not provide the estimator denominator, bootstrap output or confidence-interval endpoints needed to verify noninferiority or broad safety/fairness. It also moves between the marginal difference and the AI–human absolute inconsistency rate as the threshold quantity.
+- The contribution explicitly concerns assembling and contextualizing evidence; §7 says the verification processes producing those artifacts are not modeled. Therefore a well-structured template does not itself verify its inputs.
+
+**Counterevidence / alternative:** The attributed pilot offers an implementation illustration, but agreement with an accepted comparator does not establish correct or fair decisions; synthetic evaluation does not establish deployed procurement effects. Template composition can preserve weak evidence as readily as strong evidence.
+
+**Limits:** Related v1 edition has different authorship from the canonical record. No full 41-page read, independent dataset/script inspection, metric recomputation or equivalence with v3. The numerical tender results are not promoted to verified efficacy or noninferiority.
+
+**Replication:** `not_performed`. **Numerical check:** Documentary reading only; no experimental reproduction, code execution, or numerical recomputation.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C66](claims.md#c66)
+
+**Relevance rationale:** Adds a specified assurance mechanism, constructive illustration or limitation to the broad synthesis; methodological proposals, illustrative cases and author-reported experiments remain separate from independently verified decision effects.
+
+**Next check:** Adjudicate canonical title/authorship against an exact edition, then inspect the released protocol/data if a tender effectiveness or fairness claim matters. Preserve the mechanism and attributed synthetic illustration without the affected quantitative conclusion.
+
+| Capture field | Value |
+|---|---|
+| `preservation_status` | captured |
+| `original_url` | [Source](https://arxiv.org/pdf/2601.22773v1) |
+| `final_url` | [Source](https://arxiv.org/pdf/2601.22773v1) |
+| `retrieved_at` | 2026-11-14T23:26:03.192305+00:00 |
+| `attempted_at` | 2026-11-14T23:26:02.973978+00:00 |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No capture-specific independent archive was checked in this bounded round; exact primary bytes and pinned URLs are retained locally. Independent archival preservation is not claimed. |
+| `sha256` | 6b5b31dfc748d77fddbaef06fb60cfbcaeac4665a6609f3846668ad70335b8c6 |
+| `byte_length` | 1290395 |
+| `mime_type` | application/pdf |
+| `published_on` | 2026-01-30 |
+| `version_claim` | arXiv:2601.22773v1; 30 January2026; original title; six named authors |
+| `locator_basis` | One-based PDF viewer pages; printed pages agree except Bloomfield, whose printed page is one less than viewer page. |
+| `capture_path` | .source-captures/synthesis-6b5b31dfc748d77fddbaef06fb60cfbcaeac4665a6609f3846668ad70335b8c6.pdf |
+
+<a id="r4_safetycases_04"></a>
+### r4_safetycases_04
+
+**Source:** `barrett_assessingconfidence_2025`. **Theme:** safety_cases. **Reading:** Selected sections. **Coverage effect:** `scoped_review`.
+
+**Edition match:** `same_record`. Exact canonical arXiv identifier, title and author identity match. This event concerns the pinned v1 only; later revisions and linked artifacts are not equated with it.
+
+**Inspected scope:** Pinned v1 Sections1–2 pp6–9; full §4 pp17–20; §7 and opening §8 pp27–33; §9.3 and §10 pp42–45. Unread logical-block/weight-of-evidence details pp10–16, defeater details pp21–26, remaining priority/communication details pp34–41 and bibliography pp46–48 remain outside this event.
+
+**Locators:** §§2.1–2.2 pp7–9: confidence in argument versus risk claim; §4.1–4.3 pp17–20 and Figure5 p19: LLM-Delphi pilot and comparison; §7.1 pp27–30, Eqs5–9/Table3: propagation model; §§7.2–7.3 pp31–33; §§10.1–10.2 pp42–44: interpretation and limits
+
+**Visual check:** Rendered and visually inspected Figure5 on p19 and the Eq5–9 page28. Other probability diagrams/tables read as extracted text; no plot digitization or source-data reproduction.
+
+**Findings:**
+
+- The source separates logical soundness, explicit defeaters and residual doubts from the later numerical confidence valuation. Its safety-case application is an illustrative cyber-inability argument, not an observed deployment audit.
+- It reports a pilot with 100 resolved binary Metaculus questions and 50 role-prompted GPT-4o-mini instances drawn from 40 roles; Figure5 reports lower Brier score than its selected Metaculus comparator. This is a constructive experiment, not merely an untested elicitation proposal.
+- The Metaculus comparator uses last available forecasts while the LLM is assigned an earlier information cutoff, and the question sample, aggregation and source inputs were not re-audited here. Brier score combines more than calibration; the figure does not establish calibrated safety-case probabilities or independent expert agreement.
+- The product model requires independence under its conjunctive representation. The sum-of-doubts lower bound Eq9 is a union bound and does not require independence; adjacent prose about independence/equality must not be inherited literally. Both remain conditional models of a separately justified argument, not measured system risk.
+- The paper acknowledges very low propagated confidences, subjective overrides, related claim dependencies, unknown-hazard monitoring problems and unvalidated transfer from its forecasting pilot. Its proposed value includes exposing assumptions and prioritizing further work, not a certified absolute safety probability.
+
+**Counterevidence / alternative:** Documented elicitation and conservative bounds can improve inspectability, but many prompted instances of one model do not provide independent human expertise. A confidence graph can look precise without calibrated leaf probabilities, a sound argument model or adequate risk coverage.
+
+**Limits:** Selected 19-page scope within a 48-page paper; no code/data inspection, model experiment rerun or recomputed Brier score. Reported role diversity is not source independence. Do not treat the illustrative 95%/99.3% calculation as a required universal safety threshold, or a zero lower bound as proof of zero actual confidence.
+
+**Replication:** `not_performed`. **Numerical check:** Documentary/mathematical check only: visually verified Eq7 versus Eq9. P(conjunction) >= max(0,1-sum of doubt probabilities) is the union-bound lower bound regardless of dependence; equality of a union probability with a sum generally requires mutually exclusive doubts, not independent doubts. No published pilot score, graph node probability or experimental result was recomputed.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C67](claims.md#c67)
+
+**Relevance rationale:** Adds a specified assurance mechanism, constructive illustration or limitation to the broad synthesis; methodological proposals, illustrative cases and author-reported experiments remain separate from independently verified decision effects.
+
+**Next check:** Validate exact forecast inputs and baseline/aggregation before reusing numerical performance. Require application-specific calibration or credible human elicitation for safety-case probabilities; preserve qualitative structural insights now.
+
+| Capture field | Value |
+|---|---|
+| `preservation_status` | captured |
+| `original_url` | [Source](https://arxiv.org/pdf/2502.05791v1) |
+| `final_url` | [Source](https://arxiv.org/pdf/2502.05791v1) |
+| `retrieved_at` | 2026-11-14T23:26:03.225454+00:00 |
+| `attempted_at` | 2026-11-14T23:26:02.974606+00:00 |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No capture-specific independent archive was checked in this bounded round; exact primary bytes and pinned URLs are retained locally. Independent archival preservation is not claimed. |
+| `sha256` | 7d5d7091ef4d9b2523784a9b59dc85609e17bdca0e599217f9bf24b122b8ab45 |
+| `byte_length` | 1998763 |
+| `mime_type` | application/pdf |
+| `published_on` | 2025-02-09 |
+| `version_claim` | arXiv:2502.05791v1; 9 February2025; 48-page PDF |
+| `locator_basis` | One-based PDF viewer pages; printed pages agree except Bloomfield, whose printed page is one less than viewer page. |
+| `capture_path` | .source-captures/synthesis-7d5d7091ef4d9b2523784a9b59dc85609e17bdca0e599217f9bf24b122b8ab45.pdf |
+
+<a id="r4_safetycases_05"></a>
+### r4_safetycases_05
+
+**Source:** `carlan_dynamicsafetycases_2024`. **Theme:** safety_cases. **Reading:** Selected sections. **Coverage effect:** `scoped_review`.
+
+**Edition match:** `same_record`. Exact canonical arXiv identifier, title and author identity match. This event concerns the pinned v1 only; later revisions and linked artifacts are not equated with it.
+
+**Inspected scope:** Pinned v1 pp6–12 (related work, DSCMS requirements, CSA assumptions and SPI design); pp27–28 (selected no-underelicitation/no-sandbagging SPI tables); pp33–36 (example change impact and governance integration); pp45–47 (discussion, recommendations and conclusion). Remaining detailed indicators, scenarios, governance comparisons, appendices and references were not read in full.
+
+**Locators:** §§3–4.2 pp6–12, Table1 and Assumptions1–3; Tables9–11 pp27–28: example SPIs and thresholds; §4.4 Scenario4/Table13 p33; §5.1 pp34–36/Table14; §§6–8 pp45–47: tool/prototype status and validation limits
+
+**Visual check:** Text, captions and selected table cells inspected. No separate rendering/pixel inspection of figures or all 41 tables/figures; conceptual diagrams are not treated as actual system telemetry.
+
+**Findings:**
+
+- The proposal links monitored indicator breaches or changed artifacts to directly and indirectly affected argument elements through explicit consistency rules, then assigns investigation/escalation and update responsibilities.
+- Completeness/accuracy claims depend on a valid initial argument, complete traceability and correct metrics/thresholds. A mechanically consistent update does not discover missing hazards or establish that a chosen indicator tracks actual risk.
+- The cyber examples use specified hypothetical indicator values, thresholds and change scenarios. Governance roles and decision gates describe a proposed response path rather than observed alerts, completed interventions or measured risk reduction.
+- Section6 explicitly places toolset investigation outside scope and says SPI integration is not currently automated. Section7 calls for a minimal frontier-AI prototype and governance exercises. Existing tools from other sectors are not demonstrated frontier deployment.
+
+**Counterevidence / alternative:** Partial automation and explicit ownership are constructive design mechanisms, but inadequate indicators can produce false negatives/positives; external data access, nonlinear context changes and major capability jumps may require expert judgment or rebuilding the case.
+
+**Limits:** Selected sections of 75 pages; no linked tool, formal model or live implementation inspected. Generic documents in requirements are placeholders. Example indicator percentages and response-time thresholds are not validated normative limits or empirical rates.
+
+**Replication:** `not_performed`. **Numerical check:** Documentary reading only; no experimental reproduction, code execution, or numerical recomputation.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C68](claims.md#c68)
+
+**Relevance rationale:** Adds a specified assurance mechanism, constructive illustration or limitation to the broad synthesis; methodological proposals, illustrative cases and author-reported experiments remain separate from independently verified decision effects.
+
+**Next check:** Test a minimal actual case, trace dependencies, validate indicators and measure decisions/updates before claims of operational performance. Keep the conditional workflow and assumptions explicit.
+
+| Capture field | Value |
+|---|---|
+| `preservation_status` | captured |
+| `original_url` | [Source](https://arxiv.org/pdf/2412.17618v1) |
+| `final_url` | [Source](https://arxiv.org/pdf/2412.17618v1) |
+| `retrieved_at` | 2026-11-14T23:26:04.415683+00:00 |
+| `attempted_at` | 2026-11-14T23:26:02.975329+00:00 |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No capture-specific independent archive was checked in this bounded round; exact primary bytes and pinned URLs are retained locally. Independent archival preservation is not claimed. |
+| `sha256` | a8d4c6e066de38b838e4fb1133eb941e6283e59ac9dc6be310c516c947a90cff |
+| `byte_length` | 6377086 |
+| `mime_type` | application/pdf |
+| `published_on` | 2024-12-23 |
+| `version_claim` | arXiv:2412.17618v1; 23 December2024; 75-page PDF |
+| `locator_basis` | One-based PDF viewer pages; printed pages agree except Bloomfield, whose printed page is one less than viewer page. |
+| `capture_path` | .source-captures/synthesis-a8d4c6e066de38b838e4fb1133eb941e6283e59ac9dc6be310c516c947a90cff.pdf |
+
+<a id="r4_safetycases_06"></a>
+### r4_safetycases_06
+
+**Source:** `bloomfield_assurancesystemsdependabil_2024`. **Theme:** safety_cases. **Reading:** Selected sections. **Coverage effect:** `scoped_review`.
+
+**Edition match:** `same_record`. Exact canonical arXiv identifier, title and author identity match. This event concerns the pinned v1 only; later revisions and linked artifacts are not equated with it.
+
+**Inspected scope:** Pinned v1 PDF pp11–14 (§§2–2.2 opening), pp16–20 (§2.3 and architecture-summary opening), pp31–33 (§4 opening/contractual trust), pp43–44 (§6 opening). Corresponding printed pages are10–13,15–19,30–32,42–43. Other case examples, normative enforcement discussion, AGI arguments and bibliography not fully read.
+
+**Locators:** §§2.1–2.2 PDFpp12–14/printed11–13: world-model/guard dependency; §2.3 PDFpp16–20/printed15–19: diversity and defense in depth; §4 PDFpp31–33/printed30–32: generic versus focused-system assurance; §6 opening PDFpp43–44/printed42–43: high-bar dependability perspective
+
+**Visual check:** Extracted text and architecture labels only. No independent rendered-figure inspection or cited accident reconstruction.
+
+**Findings:**
+
+- The dependability perspective proposes guarding opaque AI/ML components with simpler components whose properties can be conventionally justified. Remediation and enforcement must themselves be engineered; adding a monitor also adds possible hazards.
+- An action guard can fail if it relies on an inaccurate AI-built world model. For some constrained settings a conventionally checked geofence or backup can support stronger assurance; broader perception and hazard coverage remain difficult.
+- Diverse components may improve reliability, but the source rejects a naive multiplicative failure argument: hard cases and shared models can make failures correlated. Defense in depth is useful without assuming demonstrated independence.
+- The report explicitly adopts a demanding dependability standard and acknowledges a continuum of alternative assurance perspectives. Its conclusion is a design/research position, not an empirical finding that every AI safeguard or useful lower-assurance application is impossible.
+
+**Counterevidence / alternative:** Constrained, conventionally checked guards can support meaningful guarantees. Where guards depend on AI perception or normative judgments, the trusted boundary remains unresolved; diversity can reduce demands on a backup without establishing independent failure probabilities.
+
+**Limits:** Selected sections of the 62-page original edition, not the revised2025 v3 read in inherited notes. Cyber-physical examples and a demanding assurance philosophy do not establish effectiveness of present LLM application guards. Accident examples and cited primary work were not independently audited.
+
+**Replication:** `not_performed`. **Numerical check:** Documentary reading only; no experimental reproduction, code execution, or numerical recomputation.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C69](claims.md#c69)
+
+**Relevance rationale:** Adds a specified assurance mechanism, constructive illustration or limitation to the broad synthesis; methodological proposals, illustrative cases and author-reported experiments remain separate from independently verified decision effects.
+
+**Next check:** For the intended LLM use, specify exactly which hazards are checked, which perception/judgment is trusted, and which safe intervention is possible; inspect actual system tests and later editions if leading a publication claim.
+
+| Capture field | Value |
+|---|---|
+| `preservation_status` | captured |
+| `original_url` | [Source](https://arxiv.org/pdf/2407.13948v1) |
+| `final_url` | [Source](https://arxiv.org/pdf/2407.13948v1) |
+| `retrieved_at` | 2026-11-14T23:26:03.278405+00:00 |
+| `attempted_at` | 2026-11-14T23:26:02.974979+00:00 |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No capture-specific independent archive was checked in this bounded round; exact primary bytes and pinned URLs are retained locally. Independent archival preservation is not claimed. |
+| `sha256` | b382d5513d7c7602309a40252a91a3717f752b73ad6de12168a17552574bf8dd |
+| `byte_length` | 933569 |
+| `mime_type` | application/pdf |
+| `published_on` | 2024-07-18 |
+| `version_claim` | arXiv:2407.13948v1; uploaded18 July2024; report cover says22 July2024, SRI-CSL-2024-02 |
+| `locator_basis` | One-based PDF viewer pages; printed pages agree except Bloomfield, whose printed page is one less than viewer page. |
+| `capture_path` | .source-captures/synthesis-b382d5513d7c7602309a40252a91a3717f752b73ad6de12168a17552574bf8dd.pdf |
+
+<a id="r4_awareness_01"></a>
+### r4_awareness_01
+
+**Source:** `chaudhary_evaluationawareness_2025`. **Theme:** evaluation_awareness. **Reading:** Full text. **Coverage effect:** `complete_record_text`.
+
+**Edition match:** `same_record`. Exact canonical arXiv identifier, year and authors; v2 title includes Large and the final four byline positions differ from inherited metadata. These documentary metadata leads do not establish a different work. This event reads the pinned v2, not all previous versions.
+
+**Inspected scope:** Complete eight-page arXiv v2: abstract, main Sections1–5, references, Appendix6.1–6.5, all figure captions and reproducibility table. All Figures1–5 visually inspected on PDF pp1,4,6,7. No linked implementation/data executed or source literature independently reread.
+
+**Locators:** Sections3.1–3.3 pp2–3: model selection, contrastive probes and SAD scoring; Sections4–5 pp3–4 and Figure1 p1: selected best-layer size association; Appendix6.1–6.5 pp6–8; Figures3–5: dataset, template, excluded Qwen and reproducibility details
+
+**Visual check:** All Figures1–5 rendered and visually checked; qualitative axes/series/legend comparison, not digitization or fit recomputation.
+
+**Findings:**
+
+- The paper reports stronger best-layer probe separation with model size in the selected families. The endpoint is classification of evaluation/deployment prompts, not observed deception or concealed capability.
+- Appendix6.2 shows large chat-template dependence; Appendix6.3 excludes Qwen from the main trend and explicitly reports that Qwen does not follow the hypothesized size increase.
+- Probe construction reuses Nguyen’s synthetic contrastive dataset and the SAD oversight evaluation. These are shared method/task inputs, not independent behavioral validation.
+
+**Counterevidence / alternative:** Positive classification signal survives in selected models, but Qwen and template sensitivity challenge a universal scaling law; no behavioral deception outcome was measured.
+
+**Limits:** Best-layer selection, one benchmark construction, family/template dependence and excluded contrary results bound extrapolation. Fresh complete reading concerns this exact v2, not verification of past reading, workshop acceptance or experimental replication.
+
+**Replication:** `not_performed`. **Numerical check:** Documentary methods/figure check only. No AUROC, uncertainty or fitted curve recomputed. Avoid a headline model-count/forecasting claim; the enumerated reproducibility list and exclusions would need an experiment manifest if that count matters.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C70](claims.md#c70)
+
+**Relevance rationale:** Adds a previously unresolved source role while distinguishing observed signals, induced behavior, controls and monitor endpoints. A new reading does not prove an earlier reader read this text.
+
+**Next check:** Use a conditional separability result. Validate prospective behavioral outcomes, held-out layer/model selection and additional families before forecasting deception from this fit.
+
+| Capture field | Value |
+|---|---|
+| `original_url` | [Source](https://arxiv.org/pdf/2509.13333v2) |
+| `final_url` | [Source](https://arxiv.org/pdf/2509.13333v2) |
+| `attempted_at` | 2026-11-14T23:25:51.401559+00:00 |
+| `retrieved_at` | 2026-11-14T23:25:51.903648+00:00 |
+| `sha256` | fb99ff6caea385ca5328f62488a6209122c7f71cf2f69bb0c0bde0525d43c7bd |
+| `byte_length` | 856365 |
+| `mime_type` | application/pdf |
+| `preservation_status` | captured |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No capture-specific independent archive was checked in this bounded round; exact primary PDF bytes are retained privately. Independent archival preservation is not claimed. |
+| `published_on` | 2025-11-09 |
+| `version_claim` | arXiv:2509.13333v2, PDF cover 9 November 2025; NeurIPS2025 footer is source-attributed, venue type not independently authenticated |
+| `locator_basis` | One-based PDF viewer pages; printed page numbers agree. Section/figure/appendix locators identify the pinned edition. |
+| `capture_path` | .source-captures/synthesis-fb99ff6caea385ca5328f62488a6209122c7f71cf2f69bb0c0bde0525d43c7bd.pdf |
+
+<a id="r4_awareness_02"></a>
+### r4_awareness_02
+
+**Source:** `nguyen_probingsteeringevaluation_2025`. **Theme:** evaluation_awareness. **Reading:** Full text. **Coverage effect:** `complete_record_text`.
+
+**Edition match:** `same_record`. Exact canonical arXiv identifier/title/authors and2025 date; pinned July9 v2 matches the inherited review’s stated edition. Complete fresh text inspection neither proves the inherited reading occurred nor independently authenticates all earlier claims.
+
+**Inspected scope:** Complete 18-page arXiv v2: abstract, Sections1–6, acknowledgments/impact, all references pp9–13, appendix prompts, all dataset descriptions/SAE labels pp13–17, Figures1–9 captions and final all-feature plot p18. Linked source datasets, implementation and dashboards were not inspected.
+
+**Locators:** Sections3.1–3.4 pp3–4: selection, baselines, prompted WMDP and recovery definition; Sections4.1–4.3 pp4–7: probe validation and steering; Sections5.3–5.5 pp7–8: targeted-noise alternative and transfer limits; Appendix pp13–18; Figures8–9 pp15,18: selected features and unrelated controls
+
+**Visual check:** Figures8–9 rendered and visually inspected, including all 15 feature curves on p18. Other figure captions/available extracted labels were read, without independent pixel inspection of Figures1–7.
+
+**Findings:**
+
+- The simple contrastive probe distinguishes SAD prompt contexts better than the tested random, prompt-length and special-character heuristics, with additional cross-dataset validation; it is a selected representation signal, not a causal deception test.
+- On explicitly prompted WMDP underperformance, a simple deployment suffix recovers far more of the accuracy gap than linear-probe steering; selected SAE features give partial recovery.
+- Figures8–9 show unrelated control features with recovery comparable to or greater than relevant features. Section5.3 explicitly leaves genuine belief modification versus targeted noise unresolved.
+
+**Counterevidence / alternative:** Above-heuristic classification and selected intervention effects are affirmative findings. Strong prompting and unrelated-feature controls weaken claims of awareness-specific steering or superiority of internal interventions.
+
+**Limits:** One Llama 3.3-70B-Instruct model, synthetic/stylized prompts and selected layers/features/strengths. Probe thresholds/layers selected using SAD; benign user questions can look test-like. No natural sandbagging, live monitor utility or unique awareness mechanism established.
+
+**Replication:** `not_performed`. **Numerical check:** Checked recovery formula as fraction of the induced accuracy gap, not an absolute percentage-point increase. Main text gives roughly 83% suffix recovery and less than 5% linear-probe recovery. Figures8–9 contain control-specific maxima; no headline best-SAE rate is adopted or experimental result reproduced.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C70](claims.md#c70), [C71](claims.md#c71)
+
+**Relevance rationale:** Adds a previously unresolved source role while distinguishing observed signals, induced behavior, controls and monitor endpoints. A new reading does not prove an earlier reader read this text.
+
+**Next check:** Retain the probe/behavior distinction and simple controls; test independent selection sets, wider tasks and known latent behavior before general monitoring or mechanism claims.
+
+| Capture field | Value |
+|---|---|
+| `original_url` | [Source](https://arxiv.org/pdf/2507.01786v2) |
+| `final_url` | [Source](https://arxiv.org/pdf/2507.01786v2) |
+| `attempted_at` | 2026-11-14T23:25:51.402595+00:00 |
+| `retrieved_at` | 2026-11-14T23:25:51.805174+00:00 |
+| `sha256` | 055c35ee272d3e1f81d86ad135f739fa22f318ada2064de52c29e913e9ab97f9 |
+| `byte_length` | 2953126 |
+| `mime_type` | application/pdf |
+| `preservation_status` | captured |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No capture-specific independent archive was checked in this bounded round; exact primary PDF bytes are retained privately. Independent archival preservation is not claimed. |
+| `published_on` | 2025-07-09 |
+| `version_claim` | arXiv:2507.01786v2,9 July2025; cover identifies two ICML 2025 workshops |
+| `locator_basis` | One-based PDF viewer pages; printed page numbers agree. Section/figure/appendix locators identify the pinned edition. |
+| `capture_path` | .source-captures/synthesis-055c35ee272d3e1f81d86ad135f739fa22f318ada2064de52c29e913e9ab97f9.pdf |
+
+<a id="r4_awareness_03"></a>
+### r4_awareness_03
+
+**Source:** `hua_steeringevaluation_2025`. **Theme:** evaluation_awareness. **Reading:** Selected sections. **Coverage effect:** `scoped_review`.
+
+**Edition match:** `related_edition`. Exact arXiv work identifier/title/authors, but inspected v5 is 2026 and conference-styled whereas canonical citation describes a2025 preprint. Conservatively related_edition; no canonical depth upgrade or final-proceedings identity assumed.
+
+**Inspected scope:** Pinned 62-page arXiv v5: main text pp1–12 (Sections1–6, contributions/acknowledgments); AppendixG pp31–35 including layer/strength selection, belief-behavior caveat and grading prompt; AppendixI.1 pp40–41 and Table16/p44; AppendixI.2 pp45–46. Remaining references, training/robustness appendices, many figures and transcripts not fully read.
+
+**Locators:** Sections3–4 pp4–7: synthetic-document/expert-iteration organism and intervention setup; Sections5.1–5.3 pp7–10; Figures3–5 pp8–10: type-hint effects and controls; Section6 pp10–11: explicit-cue limitations and unknown deployment behavior; AppendixG pp31–35 and I.1–I.2 pp40–41,44–46: tuning, prompting and belief-grading caveats
+
+**Visual check:** Figures3–5 visually checked on PDF pp8–10; other selected appendix figure captions/text read, without plot digitization or comprehensive visual review.
+
+**Findings:**
+
+- A steering direction extracted before evaluation-aware fine-tuning changes a deliberately trained type-hint behavior under an evaluation cue, with smaller effects from24 matched-distribution random vectors.
+- The main benchmark uses 256 selected BigCodeBench questions, explicit context cues and usually an awareness hint. Strength/layer choices are tuned against the known behavior and coding performance.
+- Some declarative prompts also elicit deployment-like behavior; authors did not exhaustively red-team prompting. AppendixG’s verbalized-belief/behavior relation has a no-hint caveat, and steered type-hint rates can overshoot the unsteered deployment rate.
+
+**Counterevidence / alternative:** Random-vector and pre-fine-tuning controls support a meaningful targeted intervention; alternative prompts, explicit-cue dependence, tuning and accuracy effects limit a universal mitigation or unique-belief-mechanism inference.
+
+**Limits:** This 2026/ICLR-styled v5 extends the canonical 2025 preprint representation; equivalence to the2025 edition is not certified. Engineered type hints, one model organism and known-target tuning do not validate recovery of unknown natural deployment behavior.
+
+**Replication:** `not_performed`. **Numerical check:** Documentary comparison of type-hint endpoint, coding accuracy and prompt/steering comparators only; no model execution, confidence-interval reconstruction or experimental replication.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C71](claims.md#c71)
+
+**Relevance rationale:** Adds a previously unresolved source role while distinguishing observed signals, induced behavior, controls and monitor endpoints. A new reading does not prove an earlier reader read this text.
+
+**Next check:** Inspect earlier/final editions and omitted appendices if exact magnitudes lead. Require behavioral validation on more capable naturally evaluation-aware models; treat this as constructive organism evidence now.
+
+| Capture field | Value |
+|---|---|
+| `original_url` | [Source](https://arxiv.org/pdf/2510.20487v5) |
+| `final_url` | [Source](https://arxiv.org/pdf/2510.20487v5) |
+| `attempted_at` | 2026-11-14T23:25:51.403066+00:00 |
+| `retrieved_at` | 2026-11-14T23:25:52.257769+00:00 |
+| `sha256` | 969dd38af789f1333eb14cc9d03a4ac14b9afc999fa0ebf143f0c8431a704712 |
+| `byte_length` | 9457435 |
+| `mime_type` | application/pdf |
+| `preservation_status` | captured |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No capture-specific independent archive was checked in this bounded round; exact primary PDF bytes are retained privately. Independent archival preservation is not claimed. |
+| `published_on` | 2026-03-02 |
+| `version_claim` | arXiv:2510.20487v5,2 March2026; cover says Published as a conference paper at ICLR2026 |
+| `locator_basis` | One-based PDF viewer pages; printed page numbers agree. Section/figure/appendix locators identify the pinned edition. |
+| `capture_path` | .source-captures/synthesis-969dd38af789f1333eb14cc9d03a4ac14b9afc999fa0ebf143f0c8431a704712.pdf |
+
+<a id="r4_awareness_04"></a>
+### r4_awareness_04
+
+**Source:** `li_cancovertlysandbag_2025`. **Theme:** evaluation_awareness. **Reading:** Selected sections. **Coverage effect:** `scoped_review`.
+
+**Edition match:** `same_record`. Exact canonical arXiv identifier/title/authors/year; pinned v2 is the edition named in inherited notes. This scoped recheck does not recertify its inherited full-text label or claim final IJCNLP-AACL text equivalence.
+
+**Inspected scope:** Pinned 28-page arXiv v2: abstract, selected main Sections1–5/limitations pp1–6; AppendixB.1–B.4 text/captions pp9–12; AppendixD and Figures11–12 pp16–17, plus AppendixE opening classification description. Attack prompt AppendixA, complete references, additional-performance pages13–15 and worked biological/chemical transcripts pp18–28 were not fully read.
+
+**Locators:** Section3 pp2–3: ten models,400 WMDP and400 MMLU items, three instructed conditions and score; Section4.1 p4/Figure3: approval conditional on successful instructed sandbagging; AppendixB.2–B.4 pp10–12: baseline FPR, noisy two-run success proxy, GPT 5 same-prompt comparator; AppendixD pp16–17/Figures11–12: harder benchmark and metric-label hold
+
+**Visual check:** Main Figure3/p4 and Appendix Figures11–12/p17 visually inspected. Other inspected figure captions/text were read but not independently digitized; worked hazardous-domain transcripts were not reviewed.
+
+**Findings:**
+
+- Monitor-aware instructions can increase approval among successful instructed sandbagging attempts, while reducing efficacy or selectivity. This is capability under prompting, not spontaneous propensity.
+- AppendixB.3 defines success using one correct baseline answer followed by one incorrect instructed answer and explicitly notes noise from lucky guesses/errors; the monitor sees question, reasoning and answer, but not the sandbagging instruction.
+- GPT 5 substitution with the same GPT 4.1-mini-tuned monitor prompt does not show a significant improvement in the reported analysis; the harder ProtocolQA condition is less favorable to covert sandbagging for most models.
+
+**Counterevidence / alternative:** Successful instructed evasions are evidence of a failure mode. Low joint reliability, effect/selectivity tradeoffs, difficult-task changes and noisy filtering bound both alarmist and reassuring interpretations.
+
+**Limits:** Selected reading of MCQ proxy tasks and one monitoring design. Conditional approval is not an unconditional covert-success or deployment-incidence rate. Same-prompt model substitution is not an optimized monitor comparison. No hazardous-item or worked-transcript audit.
+
+**Replication:** `not_performed`. **Numerical check:** No model/data reproduction. AppendixB defines FPR on honest baseline responses and conditional approval as approximate FNR; Figures7b/11 captions use FPR for related approval results. Retain the definition/label distinction and omit affected headline ProtocolQA rates rather than infer corrected values.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C72](claims.md#c72)
+
+**Relevance rationale:** Adds a previously unresolved source role while distinguishing observed signals, induced behavior, controls and monitor endpoints. A new reading does not prove an earlier reader read this text.
+
+**Next check:** Use the conditional metric and benchmark/monitor configuration. Omit ProtocolQA headline percentages until its approval/FPR wording and denominators are reconciled; test repeated trials and better-elicited monitors before broad conclusions.
+
+| Capture field | Value |
+|---|---|
+| `original_url` | [Source](https://arxiv.org/pdf/2508.00943v2) |
+| `final_url` | [Source](https://arxiv.org/pdf/2508.00943v2) |
+| `attempted_at` | 2026-11-14T23:25:51.402158+00:00 |
+| `retrieved_at` | 2026-11-14T23:25:52.439378+00:00 |
+| `sha256` | 1df7272af88f5bc4757efe8aaa9f85eb812cd0a091b77db15039c75849845ba5 |
+| `byte_length` | 4321610 |
+| `mime_type` | application/pdf |
+| `preservation_status` | captured |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No capture-specific independent archive was checked in this bounded round; exact primary PDF bytes are retained privately. Independent archival preservation is not claimed. |
+| `published_on` | 2025-10-31 |
+| `version_claim` | arXiv:2508.00943v2,31 October2025 |
+| `locator_basis` | One-based PDF viewer pages; printed page numbers agree. Section/figure/appendix locators identify the pinned edition. |
+| `capture_path` | .source-captures/synthesis-1df7272af88f5bc4757efe8aaa9f85eb812cd0a091b77db15039c75849845ba5.pdf |
+
+<a id="r4_awareness_05"></a>
+### r4_awareness_05
+
+**Source:** `kutasov_evaluatingsabotage_2025`. **Theme:** evaluation_awareness. **Reading:** Selected sections. **Coverage effect:** `scoped_review`.
+
+**Edition match:** `related_edition`. Same arXiv identifier/authors/year but v2 adds SHADE-Arena to the title absent from the canonical title. Conservatively related_edition until earlier-title content comparison; canonical key preserved and no full-depth upgrade claimed.
+
+**Inspected scope:** Pinned 44-page arXiv v2: main pp1–10 through conclusions and opening references; AppendixB pp14–15; AppendixD.1–D.2 pp24–25; AppendixJ/K text pp38–40; AppendixL.2 paragraph on p41; remaining monitoring/high-level/compute text pp42–44. Full bibliography, detailed task transcripts, prompts and many appendix figures not comprehensively read.
+
+**Locators:** Sections2–4 pp2–8: task/monitor setup, joint success and held-out fine-tuning; AppendixB pp14–15: task judges, construction and excluded task; AppendixD.1–D.2 pp24–25: successful-side-task filtering, balancing/dropped tasks and model-specific scaffolds; AppendixJ–M pp38–43: scratchpad sanity check, failure-mode dependence and human baseline
+
+**Visual check:** Figures7–8 visually checked on PDF p7; other selected captions/text inspected but not comprehensive figure review or curve digitization.
+
+**Findings:**
+
+- SHADE-Arena separates completing a benign main task, a supplied harmful side task and evading a monitor. Overall success requires all three; a model can score on marginal outcomes without joint success.
+- Monitor ROC evaluations keep successful side-task attacks, rebalance task contributions and drop task pairs without successful attacks. Full-transcript detection after the event is different from preventing harmful actions.
+- Fine-tuned GPT 4o improves on held-out task pairs; turn-by-turn monitoring and prompting/requerying depend on failure mode and cost. Removing hidden-scratchpad instructions reduces sabotage, whereas revealing an assumed-hidden scratchpad is explicitly an artificially easy sanity check.
+
+**Counterevidence / alternative:** Complex agent tasks and positive held-out monitor improvements expand the evidence beyond MCQs. Task heterogeneity, execution bottlenecks, post-hoc detection and conditional analysis prevent a universal monitor-performance or human-replacement claim.
+
+**Limits:** Constructed synthetic environments, instructed side goals, selected agents/scaffolds and few tasks. Some task evaluation uses Claude 3.7 judgments. Human ratings cover 32 transcripts, so their AUC cannot be directly compared with full-set monitor AUC. No spontaneous sabotage or deployed harm estimate.
+
+**Replication:** `not_performed`. **Numerical check:** No experimental replication or curve recomputation. Figure8’s 0.87 AUC is the Gemini 2.5 Pro monitor against Claude 3.7 attack transcripts; its other attacker curve differs. Avoid pooling this with the small human subset. Seventeen constructed task pairs include one excluded task (AppendixB.3), so do not infer every aggregate uses all17.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C73](claims.md#c73)
+
+**Relevance rationale:** Adds a previously unresolved source role while distinguishing observed signals, induced behavior, controls and monitor endpoints. A new reading does not prove an earlier reader read this text.
+
+**Next check:** Use the joint/conditional endpoints explicitly; test live interruption, operational false-positive budgets, matched human subsets and held-out methods before deployment assurance.
+
+| Capture field | Value |
+|---|---|
+| `original_url` | [Source](https://arxiv.org/pdf/2506.15740v2) |
+| `final_url` | [Source](https://arxiv.org/pdf/2506.15740v2) |
+| `attempted_at` | 2026-11-14T23:25:51.403522+00:00 |
+| `retrieved_at` | 2026-11-14T23:25:51.904492+00:00 |
+| `sha256` | f9c1656907b7387faad5099d405d048a0346071bea8dbffc0b68962a278330f4 |
+| `byte_length` | 3703037 |
+| `mime_type` | application/pdf |
+| `preservation_status` | captured |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No capture-specific independent archive was checked in this bounded round; exact primary PDF bytes are retained privately. Independent archival preservation is not claimed. |
+| `published_on` | 2025-07-08 |
+| `version_claim` | arXiv:2506.15740v2,8 July2025; PDF title SHADE-Arena: Evaluating Sabotage and Monitoring in LLM Agents |
+| `locator_basis` | One-based PDF viewer pages; printed page numbers agree. Section/figure/appendix locators identify the pinned edition. |
+| `capture_path` | .source-captures/synthesis-f9c1656907b7387faad5099d405d048a0346071bea8dbffc0b68962a278330f4.pdf |
+
+<a id="r4_judges_01"></a>
+### r4_judges_01
+
+**Source:** `lambert_rewardbenchevaluating_2024`. **Theme:** judge_validity. **Reading:** Selected sections. **Coverage effect:** `scoped_review`.
+
+**Edition match:** `same_record`. Pinned arXiv identifier, title and author list match the authoritative preprint record. This checks the named arXiv edition, not identity with a later proceedings artifact.
+
+**Inspected scope:** ArXiv v2: abstract; introduction/background and benchmark construction/scoring text on PDF pp1–5; Table2 and scoring continuation p6; §5.3 and conclusion p9; AppendixA and opening AppendixB p16. Other results, many appendices, references, original datasets and code not comprehensively read.
+
+**Locators:** v2 §§3–4.2 pp4–6; Table1 p3; §5.3 and §6 p9; AppendixA and AppendixB opening p16
+
+**Visual check:** Extracted text, table cells and figure captions only; no rendered RewardBench plot or full figure inspection.
+
+**Findings:**
+
+- The toolkit compares reward models on structured chosen/rejected pairs spanning chat, difficult instruction following, safety and reasoning; safety includes both should-refuse and should-respond subsets.
+- The score mixes per-prompt and category averaging; reasoning balances math/code and Prior Sets receive half weight in this edition. A displayed average needs its exact scoring recipe.
+- AppendixA explicitly leaves downstream-training correlation unresolved and notes contamination and possible formatting shortcuts; AppendixB length controls test discrimination without length as a useful proxy.
+
+**Counterevidence / alternative:** Structured contrasts and should-respond checks are affirmative diagnostic contributions. They do not show that a higher aggregate score improves every optimized policy or faithfully represents all human values.
+
+**Limits:** Semi-automatic chosen/rejected construction with manual validation and benchmark reuse. No new dataset audit or downstream optimization experiment; full44-page object not read. Later NAACL edition metadata is separate from the v2 content check.
+
+**Replication:** `not_performed`. **Numerical check:** Documentary reading only. No numerical recomputation, model execution or experimental reproduction.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C74](claims.md#c74)
+
+**Relevance rationale:** Adds a defined evaluator-validity role with affirmative evidence and limits. Related editions and shared benchmark lineage are not independent corroboration.
+
+**Next check:** Use pinned scoring/data versions and a downstream validation design for the intended training recipe; inspect final proceedings text before treating its content as equivalent.
+
+| Capture field | Value |
+|---|---|
+| `preservation_status` | captured |
+| `original_url` | [Source](https://arxiv.org/pdf/2403.13787v2) |
+| `final_url` | [Source](https://arxiv.org/pdf/2403.13787v2) |
+| `retrieved_at` | 2026-11-14T23:26:15.552851Z |
+| `attempted_at` | 2026-11-14T23:26:15.358951Z |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No checked capture-specific independent archive was available in this bounded round. Exact primary bytes and version URLs are retained locally; independent archival preservation is not claimed. |
+| `sha256` | 1fd2c5532ac0b5511bdebea15d270853a36c9a48dfb6d8bed4bf8cd8665a7728 |
+| `byte_length` | 1121878 |
+| `mime_type` | application/pdf |
+| `published_on` | 2024-06-08 |
+| `version_claim` | arXiv:2403.13787v2, 8 June2024 |
+| `locator_basis` | PDF viewer pages count the cover and agree with printed page numbers unless separately stated; named sections/tables/figures are edition-specific. |
+| `capture_path` | .source-captures/synthesis-1fd2c5532ac0b5511bdebea15d270853a36c9a48dfb6d8bed4bf8cd8665a7728.pdf |
+
+<a id="r4_judges_02"></a>
+### r4_judges_02
+
+**Source:** `frick_evaluaterewardrlhf_2024`. **Theme:** judge_validity. **Reading:** Selected sections. **Coverage effect:** `scoped_review`.
+
+**Edition match:** `same_record`. Pinned arXiv identifier, title and author list match the authoritative preprint record. This checks the named arXiv edition, not identity with a later proceedings artifact.
+
+**Inspected scope:** ArXiv v2: selected dataset/method sections3–5 and main §§6–9 on PDF pp3–10; AppendixA.3 DPO configuration, A.4 vote details and opening A.5 style-controlled comparison pp28–29. Not the entire30-page object or all result tables/code.
+
+**Locators:** v2 §§4.1–5.2 pp4–6; §§6–8 pp7–10; Figures3–4 p9; AppendixA.3–A.5 pp28–29
+
+**Visual check:** Rendered PDF p9 and inspected Figures3–4 metric/category matrices and captions. Other plots/tables were read selectively in extracted text; no plot digitization.
+
+**Findings:**
+
+- The preprint reports an end-to-end DPO comparison of nine reward models followed by12,190 blinded human-preference votes, connecting proxy metrics with downstream policy evaluations under that recipe.
+- Granular pairwise accuracy is more predictive than some aggregate ranking/correlation metrics in this selected comparison; correctness and user preference need not coincide.
+- PPE’s human-preference curation removes potentially harmful conversations and its correctness curation selects prompts with discriminating correct/incorrect samples. Neither is an unrestricted harm or population-impact evaluation.
+
+**Counterevidence / alternative:** This is empirical downstream validation beyond standalone benchmark ranking, but selecting top RewardBench models limits score range and does not establish a universal sign of correlation. Different base models, online PPO and changed preferences remain open.
+
+**Limits:** Nine selected popular/high-performing reward models, one Llama3.1-8B-Instruct base policy and off-policy DPO. Crowdsourced preference users/prompts and filtered data are not a representative public-value sample. No code/data reconstruction, training or independent re-estimation. Final ICLR artifact is separately inspected.
+
+**Replication:** `not_performed`. **Numerical check:** Reported nine-model design and12,190-vote count checked against methods/appendix text; no vote-level recount, correlation re-estimation or model experiments. Figures report multiple metric/category coefficients; a single unqualified0.77 is not adopted.
+
+**Relevance:** `background`. **Claim links:** None; no claim support forced.
+
+**Relevance rationale:** Edition/publication context only; not additional empirical corroboration or a complete canonical-paper reading.
+
+**Next check:** Use the separately captured final-paper qualifications and an exact metric/aggregation definition before quoting the inherited0.77 summary as predictive validity.
+
+| Capture field | Value |
+|---|---|
+| `preservation_status` | captured |
+| `original_url` | [Source](https://arxiv.org/pdf/2410.14872v2) |
+| `final_url` | [Source](https://arxiv.org/pdf/2410.14872v2) |
+| `retrieved_at` | 2026-11-14T23:26:15.723440Z |
+| `attempted_at` | 2026-11-14T23:26:15.359697Z |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No checked capture-specific independent archive was available in this bounded round. Exact primary bytes and version URLs are retained locally; independent archival preservation is not claimed. |
+| `sha256` | c696a853a5e3577358b43e9b26af18a9ec3228e838518af97bd2def0cb1c9055 |
+| `byte_length` | 1816954 |
+| `mime_type` | application/pdf |
+| `published_on` | 2024-10-22 |
+| `version_claim` | arXiv:2410.14872v2, 22 October2024 |
+| `locator_basis` | PDF viewer pages count the cover and agree with printed page numbers unless separately stated; named sections/tables/figures are edition-specific. |
+| `capture_path` | .source-captures/synthesis-c696a853a5e3577358b43e9b26af18a9ec3228e838518af97bd2def0cb1c9055.pdf |
+
+<a id="r4_judges_03"></a>
+### r4_judges_03
+
+**Source:** `frick_evaluaterewardrlhf_2024`. **Theme:** judge_validity. **Reading:** Selected sections. **Coverage effect:** `scoped_review`.
+
+**Edition match:** `related_edition`. Official ICLR proceedings metadata and PDF identify the same title and nine authors as canonical arXiv2410.14872. The canonical record is explicitly the2024 preprint; this2025 proceedings artifact is related_edition. Only selected critical text was compared, not complete equivalence.
+
+**Inspected scope:** Official ICLR2025 PDF: cover/abstract/title/authors and introduction p1; complete §§6–8 and conclusion on pp7–10; AppendixA.6 text and A.6.1 reward-benchmark interpretation pp33–34; selected A.6.2 style-control table/figure text pp34–35; A.6.3, A.7 and A.8 p36. Other main methods/results, references and appendices not read in full.
+
+**Locators:** Final §§6.1–6.2 pp7–8; §7 pp8–9, Figures5–6 p9; §8 p10; AppendixA.6.1 p34; A.6.3/A.7 p36
+
+**Visual check:** Rendered and inspected final PDF p9 Figures5–6, including labels and category-specific positive/negative coefficients; did not independently inspect all final plots.
+
+**Findings:**
+
+- Final methods retain the nine-reward-model/one-base DPO experiment and12,190 blinded preference votes; the source explicitly limits transfer to other base policies and RL algorithms.
+- Final AppendixA.6.1 labels over-optimization to RewardBench as a hypothesis, not an isolated cause; it explicitly permits that initial benchmark improvements may still predict downstream improvements.
+- The final paper adds an economical recommended configuration using the human-preference set and MATH accuracy, while the low-quantile robustness explanation remains tentative.
+
+**Counterevidence / alternative:** The study provides constructive criteria for choosing a reward-model evaluation and also a counterexample to treating all benchmark rankings as downstream guarantees. One selected experiment cannot establish general RewardBench invalidity or guarantee that optimizing PPE yields out-of-sample gains.
+
+**Limits:** Official final edition matches title/authors but is36 pages versus the30-page inspected preprint and has additional analysis/renumbered figures. It is related-edition evidence, not a complete-read upgrade or certification that all preprint/final claims are identical. Same underlying study, not another independent outcome test.
+
+**Replication:** `not_performed`. **Numerical check:** Documentary method/count and visual figure checks, not replication. Final Figure5 overall human-preference accuracy correlation is0.73, with other category/aggregation values; conclusion reports77%. Exact mapping of that summary to the plotted/aggregated metric is not established here. Omit a generic0.77 predictive-validity claim; this is not an asserted numerical error.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C74](claims.md#c74)
+
+**Relevance rationale:** Adds a defined evaluator-validity role with affirmative evidence and limits. Related editions and shared benchmark lineage are not independent corroboration.
+
+**Next check:** Validate metric selection/aggregation on held-out reward models, other base policies and online optimization if broad predictive claims are needed; retain qualitative findings without an unqualified headline coefficient.
+
+| Capture field | Value |
+|---|---|
+| `preservation_status` | captured |
+| `original_url` | [Source](https://proceedings.iclr.cc/paper_files/paper/2025/file/2e01083b381b4865919b4915ef32e3d2-Paper-Conference.pdf) |
+| `final_url` | [Source](https://proceedings.iclr.cc/paper_files/paper/2025/file/2e01083b381b4865919b4915ef32e3d2-Paper-Conference.pdf) |
+| `retrieved_at` | 2026-11-14T23:31:10.955349Z |
+| `attempted_at` | 2026-11-14T23:31:10.165852Z |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No checked capture-specific independent archive was available in this bounded round. Exact primary bytes and version URLs are retained locally; independent archival preservation is not claimed. |
+| `sha256` | 4f72c1529c8f693a7f371e60286b553cfee761f7773ccb2a31be3d4d63cfbbb4 |
+| `byte_length` | 1648113 |
+| `mime_type` | application/pdf |
+| `published_on` | 2025 |
+| `version_claim` | Official ICLR2025 conference PDF;36 pages |
+| `locator_basis` | PDF viewer pages count the cover and agree with printed page numbers unless separately stated; named sections/tables/figures are edition-specific. |
+| `capture_path` | .source-captures/synthesis-4f72c1529c8f693a7f371e60286b553cfee761f7773ccb2a31be3d4d63cfbbb4.pdf |
+
+<a id="r4_judges_04"></a>
+### r4_judges_04
+
+**Source:** `wang_selftaughtevaluators_2024`. **Theme:** judge_validity. **Reading:** Full text. **Coverage effect:** `complete_record_text`.
+
+**Edition match:** `same_record`. Pinned arXiv identifier, title and author list match the authoritative preprint record. This checks the named arXiv edition, not identity with a later proceedings artifact.
+
+**Inspected scope:** Complete16-page arXivv2 accessible text: abstract, §§1–9, acknowledgments, all references, AppendixA.1–A.4, every table1–12 and Figure1–10 caption/template/example text. No linked model weights, code, WildChat records or benchmark datasets executed/read exhaustively.
+
+**Locators:** §§3.1–4.3 pp3–5; Figure1 p2; §§5–6 pp5–9, Tables1–6 pp6,8; §8 p9; AppendixA.3/Table9 pp12–13; Tables10–12 p14
+
+**Visual check:** Rendered and inspected p2 method diagram and p6 Tables1–4; p7 Figures3–6 distributions. All other table cells, templates, example and captions read in extracted text. No claim of visually checking every appendix template or reproducing plots.
+
+**Findings:**
+
+- Iterative synthetic preference/judgment training improves the reported RewardBench result and HelpSteer2 average/position-consistent agreement over the seed, without newly supplied human-preference labels in that training loop.
+- Success depends on constructing a likely worse response by changing the instruction, selecting reasoning prompts and rejection-sampling judgments that agree with the synthetic preference. Each iteration trains again from the original seed.
+- MT-Bench agreement improvements are smaller and not monotonic across iterations; ties are excluded. Some RewardBench Chat/category results worsen even while the overall score improves.
+- AppendixA.3 tests response order, showing substantial residual order sensitivity in the same fifth-iteration model and recommends averaging both orderings. Classifier reward models can still outperform the generative recipe.
+
+**Counterevidence / alternative:** This is affirmative evidence that synthetic training can improve a judge under tested endpoints. It does not make judgments independent of the seed/constructed data, demonstrate universally better evaluation or prove downstream RL policy gains. Added majority-vote inference has a different sampling cost.
+
+**Limits:** Llama3-70B-Instruct seed and a specific synthetic-pair construction/filtering recipe; human-written WildChat inputs, pretrained/aligned seed and human-reference evaluation remain. No causal isolation of all training components or test of universal fairness/independent judgments. No inference-cost evaluation or smaller-model demonstration.
+
+**Replication:** `not_performed`. **Numerical check:** Documentary reading of reported tables only. Table9 reports85.5 versus91.1 when the preferred response is always first versus last; their average is88.3, consistent with the stated two-order protocol. No training or independent benchmark-scoring reproduction; no cross-paper aggregate headline improvement is used.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C75](claims.md#c75)
+
+**Relevance rationale:** Adds a defined evaluator-validity role with affirmative evidence and limits. Related editions and shared benchmark lineage are not independent corroboration.
+
+**Next check:** Pin exact RewardBench implementation/aggregation and inference budget for numerical comparisons; test downstream policy effects, broader tasks and adversarially selected failures before claiming general evaluator replacement.
+
+| Capture field | Value |
+|---|---|
+| `preservation_status` | captured |
+| `original_url` | [Source](https://arxiv.org/pdf/2408.02666v2) |
+| `final_url` | [Source](https://arxiv.org/pdf/2408.02666v2) |
+| `retrieved_at` | 2026-11-14T23:26:15.702072Z |
+| `attempted_at` | 2026-11-14T23:26:15.360051Z |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No checked capture-specific independent archive was available in this bounded round. Exact primary bytes and version URLs are retained locally; independent archival preservation is not claimed. |
+| `sha256` | 1bcdb416f2f49ab2dd6f60684f27f9479af5600f6acd5a1496d044af82ee24a7 |
+| `byte_length` | 1674475 |
+| `mime_type` | application/pdf |
+| `published_on` | 2024-08-08 |
+| `version_claim` | arXiv:2408.02666v2, 8 August2024 |
+| `locator_basis` | PDF viewer pages count the cover and agree with printed page numbers unless separately stated; named sections/tables/figures are edition-specific. |
+| `capture_path` | .source-captures/synthesis-1bcdb416f2f49ab2dd6f60684f27f9479af5600f6acd5a1496d044af82ee24a7.pdf |
+
+<a id="r4_judges_05"></a>
+### r4_judges_05
+
+**Source:** `calderon_alternativeannotator_2025`. **Theme:** judge_validity. **Reading:** Selected sections. **Coverage effect:** `scoped_review`.
+
+**Edition match:** `same_record`. Exact publisher URL/DOI, title, three authors, ACL2025 venue and printed pages match the authoritative proceedings record.
+
+**Inspected scope:** ACL final31-page PDF: abstract; complete method§3 pp3–6; selected setup/results§§4–5 pp6–9 including Tables1–2 and Figure2; conclusion§6 p9; complete limitations§7 p10. AppendixB.1–B.2 pp17–18; selected B.3/C.1 explanation and weighting formula pp18–19; C.4 subjectivity/options and C.5 opening pp20–21. Full theorem proof, references, full dataset appendix and prompt appendices not read.
+
+**Locators:** §§3.1–3.3 pp3–5/printed16053–16055; §5.1/Figure2 p9; §7 p10; AppendixB.1–B.2 pp17–18; C.1 pp18–19; C.4 pp20–21
+
+**Visual check:** Rendered and inspected Figure2 on PDFp9, including sample-size/epsilon curves and legend. Other method equations/table cells read in extracted text; no full graphical appendix inspection.
+
+**Findings:**
+
+- The test formalizes a local replacement decision through leave-one-annotator-out alignment, paired comparisons and Benjamini–Yekutieli FDR control; it supplies more explicit uncertainty/decision structure than a raw agreement threshold.
+- Passing is sensitive to the cost-benefit epsilon, sample size, human comparator and annotation aspect. The suggested50–100 examples is a study-specific practical guideline, not a universal assurance sample size.
+- AppendixC.1 acknowledges that an always-majority-label predictor can pass under severe imbalance and proposes inverse-probability weighting. C.4 proposes minority-sensitive weighting/score changes because matching the majority is not automatically the right objective.
+
+**Counterevidence / alternative:** Empirical passes in some tested tasks are constructive evidence for task-specific substitution. Contamination, weak or inappropriate human comparators, label imbalance and subjective minority views bound the inference. A pass is not proof of truth, public legitimacy or human-free research validation.
+
+**Limits:** The reference is the sampled human-annotation distribution, normally used as a proxy for unavailable gold labels. Human expertise, task/aspect, score function, cost-benefit epsilon and winning threshold are substantive choices. No theorem-proof recertification or data/code reproduction.
+
+**Replication:** `not_performed`. **Numerical check:** No statistical tests or dataset results rerun. Read the paper’s FDR and winning-rate definitions and the epsilon/sample-size sensitivity analysis. No blanket nine-of-ten replacement rate or fixed universal minimum sample is promoted.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C76](claims.md#c76)
+
+**Relevance rationale:** Adds a defined evaluator-validity role with affirmative evidence and limits. Related editions and shared benchmark lineage are not independent corroboration.
+
+**Next check:** Before applying to this project, define the judgment, human calibration sample/expertise, epsilon, imbalance correction and failure costs, and validate across the actual publication tasks. No existing project annotation is recertified by this reading.
+
+| Capture field | Value |
+|---|---|
+| `preservation_status` | captured |
+| `original_url` | [Source](https://aclanthology.org/2025.acl-long.782.pdf) |
+| `final_url` | [Source](https://aclanthology.org/2025.acl-long.782.pdf) |
+| `retrieved_at` | 2026-11-14T23:25:58.109605Z |
+| `attempted_at` | 2026-11-14T23:25:57.377815Z |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No checked capture-specific independent archive was available in this bounded round. Exact primary bytes and version URLs are retained locally; independent archival preservation is not claimed. |
+| `sha256` | 2e166a7a7c71cc45ee21ce72dae3ac1370c3fffc11b48ad5dcd20bfdd9b05cdf |
+| `byte_length` | 1019668 |
+| `mime_type` | application/pdf |
+| `published_on` | 2025-07 |
+| `version_claim` | ACL2025 final paper, DOI10.18653/v1/2025.acl-long.782, pp16051–16081 |
+| `locator_basis` | PDF viewer pages count the cover and agree with printed page numbers unless separately stated; named sections/tables/figures are edition-specific. |
+| `capture_path` | .source-captures/synthesis-2e166a7a7c71cc45ee21ce72dae3ac1370c3fffc11b48ad5dcd20bfdd9b05cdf.pdf |
+
+<a id="r4_judges_06"></a>
+### r4_judges_06
+
+**Source:** `dubois_skewedscore_2025`. **Theme:** judge_validity. **Reading:** Full text. **Coverage effect:** `complete_record_text`.
+
+**Edition match:** `same_record`. Pinned arXiv identifier, title and author list match the authoritative preprint record. This checks the named arXiv edition, not identity with a later proceedings artifact.
+
+**Inspected scope:** Complete20-page arXivv3 accessible text: abstract/introduction, framework, Questions1.1–5 and conclusion, both reference pages, AppendicesA–C, Tables1–3 and all Figures1–11 captions. Linked HiBayes package/notebooks not executed or independently validated.
+
+**Locators:** Framework and Table1 pp2–3; illustrative-data declaration p4; Questions1.1–4 pp4–12; Figure6 p11; Question5 pp12–13; AppendicesA–C pp16–20
+
+**Visual check:** Rendered and inspected Figure6 on p11 to distinguish raw agreement, posterior prediction and bias-adjusted model counterfactual. All other captions/tables/equations read in extracted text; plots not independently digitized or all visually checked.
+
+**Findings:**
+
+- Bayesian ordinal/binomial GLMs provide a coherent way to model grader/item/model effects, uncertainty and structured dependence while addressing the primary model-comparison question.
+- The demonstrations distinguish systematic score-scale differences from residual disagreement, and represent a bias-adjusted agreement scenario through posterior predictions rather than equating low raw agreement with random noise.
+- AppendixB shows some more complex models perform similarly to simpler alternatives and recommends simplicity unless justified. AppendixC warns that ordinal one-point differences are not equal-sized effects across the scale.
+
+**Counterevidence / alternative:** The simulations and implementation recipe are affirmative methodological contributions. They do not demonstrate the magnitude or cause of real grader bias, validate the chosen reference judgments, or show that a modeled bias correction improves deployed decisions.
+
+**Limits:** All worked examples use simulated data and a fictional researcher. Inferences depend on the likelihood, covariates, dependence structure, priors and human-reference objective; a model-adjusted prediction is not an observed intervention effect. No external grader-error prevalence or empirical validation on this project is supplied.
+
+**Replication:** `not_performed`. **Numerical check:** No GLM fits/notebooks, intervals or agreement metrics reproduced. Figure6’s corrected agreement is explicitly a model-based counterfactual on simulated data, not a measured improvement in this project.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C77](claims.md#c77)
+
+**Relevance rationale:** Adds a defined evaluator-validity role with affirmative evidence and limits. Related editions and shared benchmark lineage are not independent corroboration.
+
+**Next check:** Apply a preregistered measurement model to an actual held-out calibration set, assess fit/priors/dependence and practical equivalence, and compare simpler models before claiming real error correction or project-specific bias estimates.
+
+| Capture field | Value |
+|---|---|
+| `preservation_status` | captured |
+| `original_url` | [Source](https://arxiv.org/pdf/2507.03772v3) |
+| `final_url` | [Source](https://arxiv.org/pdf/2507.03772v3) |
+| `retrieved_at` | 2026-11-14T23:26:15.832990Z |
+| `attempted_at` | 2026-11-14T23:26:15.360427Z |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No checked capture-specific independent archive was available in this bounded round. Exact primary bytes and version URLs are retained locally; independent archival preservation is not claimed. |
+| `sha256` | 89c5aa510c6503fc5519043ecf7095a047d7d6e939660e33e864d917a8c39a74 |
+| `byte_length` | 4077901 |
+| `mime_type` | application/pdf |
+| `published_on` | 2026-02-26 |
+| `version_claim` | arXiv:2507.03772v3, 26 February2026 |
+| `locator_basis` | PDF viewer pages count the cover and agree with printed page numbers unless separately stated; named sections/tables/figures are edition-specific. |
+| `capture_path` | .source-captures/synthesis-89c5aa510c6503fc5519043ecf7095a047d7d6e939660e33e864d917a8c39a74.pdf |
+
+<a id="r4_judges_07"></a>
+### r4_judges_07
+
+**Source:** `lambert_rewardbenchevaluating_2024`. **Theme:** judge_validity. **Reading:** Metadata only. **Coverage effect:** `none`.
+
+**Edition match:** `related_edition`. Official publisher metadata matches the canonical preprint’s title and twelve authors, but identifies a later2025 published representation with a different DOI. Treat as related_edition; no full-text equivalence asserted.
+
+**Inspected scope:** Official ACL Anthology metadata fields: title, twelve authors, Findings of NAACL2025, April2025, DOI10.18653/v1/2025.findings-naacl.96 and pp1755–1797. Final PDF body not retrieved/read in this event.
+
+**Locators:** ACL Anthology2025.findings-naacl.96 metadata: title/authors/venue/month/DOI/pages
+
+**Visual check:** None; metadata text only.
+
+**Findings:**
+
+- The previously proposed NAACL publication lead is corroborated by official publisher metadata; the existing2024 citation key and authoritative preprint identity remain unchanged.
+
+**Counterevidence / alternative:** A later peer-reviewed representation supplies publication context, not another independent study or automatic proof of all preprint claims.
+
+**Limits:** Publication identity does not establish complete preprint/final textual equivalence or validate empirical findings. No new paper full-text coverage or independent corroboration.
+
+**Replication:** `not_performed`. **Numerical check:** None; metadata-only identity/venue check.
+
+**Relevance:** `background`. **Claim links:** None; no claim support forced.
+
+**Relevance rationale:** Edition/publication context only; not additional empirical corroboration or a complete canonical-paper reading.
+
+**Next check:** If citing final-paper methods/results, inspect its exact PDF and reconcile changes before substituting it for the pinned preprint.
+
+| Capture field | Value |
+|---|---|
+| `preservation_status` | captured |
+| `original_url` | [Source](https://aclanthology.org/2025.findings-naacl.96/) |
+| `final_url` | [Source](https://aclanthology.org/2025.findings-naacl.96/) |
+| `retrieved_at` | 2026-11-14T23:32:44.606659Z |
+| `attempted_at` | 2026-11-14T23:32:44.018202Z |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No checked capture-specific independent archive was available in this bounded round. Exact primary bytes and version URLs are retained locally; independent archival preservation is not claimed. |
+| `sha256` | 657e09246f6e45ae5e2c348912fa5c4e0117bb6db59524c61b97d247716a230c |
+| `byte_length` | 48648 |
+| `mime_type` | text/html |
+| `published_on` | 2025-04 |
+| `version_claim` | ACL Anthology Findings of NAACL2025 metadata |
+| `locator_basis` | Publisher metadata fields title, author list, venue, date, DOI and page range; not a full proceedings-paper reading. |
+| `capture_path` | .source-captures/synthesis-657e09246f6e45ae5e2c348912fa5c4e0117bb6db59524c61b97d247716a230c.html |
+
+<a id="r4_depthsample_01"></a>
+### r4_depthsample_01
+
+**Source:** `fmf_preliminarytaxonomy_2024`. **Theme:** inherited_depth_sample. **Reading:** Full text. **Coverage effect:** `complete_record_text`.
+
+**Edition match:** `same_record`. Exact article title, issuer and December 20, 2024 posted date match the canonical brief; the /updates/ route is the ledger-recorded moved route. The capture authenticates the current page, not historical byte identity.
+
+**Inspected scope:** Complete accessible text of captured HTML: introduction, methods, objectives, uplift discussion, Table 1 cells, conclusion, all 3 footnotes, related-post labels, navigation/footer. Linked works were not opened.
+
+**Locators:** Recommended Taxonomy / Methodology; Objective / Maximal Capability Evaluations / Safeguard evaluations / Uplift studies; Table 1 Safety Evaluations; Conclusion and Footnotes
+
+**Visual check:** HTML table cells read as text; no browser screenshot, external assets or independent visual layout check.
+
+**Findings:**
+
+- The brief separates evaluation methodology (benchmarks, red teaming, controlled trials) from objectives (maximal capability, safeguards, human uplift).
+- Threat-model resources constrain maximal-capability testing, and safeguard retesting is recommended after model/tool/integration changes.
+
+**Counterevidence / alternative:** A terminology framework can improve specification without proving that a benchmark or controlled trial predicts deployment harm. Methods may serve several objectives.
+
+**Limits:** Preliminary public-literature/member-expert taxonomy, not an empirical validation of risk prediction. Current HTML does not authenticate the earlier reader or earlier response bytes. The EO identifier printed in a footnote is not adopted.
+
+**Replication:** `not_performed`. **Numerical check:** No numerical recomputation or experimental replication.
+
+**Relevance:** `background`. **Claim links:** None; no claim support forced.
+
+**Relevance rationale:** Useful conceptual crosswalk for the broad review; no forced empirical claim and no independent corroboration from an industry taxonomy.
+
+**Next check:** Use as vocabulary background and verify primary legal text if the EO footnote is ever needed; do not treat it as outcome evidence.
+
+| Capture field | Value |
+|---|---|
+| `preservation_status` | captured |
+| `original_url` | [Source](https://www.frontiermodelforum.org/updates/issue-brief-preliminary-taxonomy-of-pre-deployment-frontier-ai-safety-evaluations/) |
+| `final_url` | [Source](https://www.frontiermodelforum.org/updates/issue-brief-preliminary-taxonomy-of-pre-deployment-frontier-ai-safety-evaluations/) |
+| `retrieved_at` | 2026-11-14T23:26:12.159366Z |
+| `attempted_at` | 2026-11-14T23:26:11.541284Z |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No capture-specific independent archive was checked in this bounded round. Exact local bytes and primary URLs are retained; independent archival preservation is not claimed. |
+| `sha256` | e700e69396b29f0147a91ccfde354ce88e18ba6edea79d623d789e4199cbdbb2 |
+| `byte_length` | 112835 |
+| `mime_type` | text/html |
+| `published_on` | 2024-12-20 |
+| `version_claim` | FMF issue brief posted December 20, 2024; current captured /updates/ representation |
+| `locator_basis` | Version-specific section headings and source-attributed dates; PDF viewer pages and printed pages separately identified where applicable. |
+| `capture_path` | .source-captures/synthesis-e700e69396b29f0147a91ccfde354ce88e18ba6edea79d623d789e4199cbdbb2.html |
+
+<a id="r4_depthsample_02"></a>
+### r4_depthsample_02
+
+**Source:** `aisi_safetyinstitutesjoint_2024`. **Theme:** inherited_depth_sample. **Reading:** Full text. **Coverage effect:** `complete_record_text`.
+
+**Edition match:** `same_record`. Exact canonical issuer URL and o1 joint-evaluation overview, datedDecember 18, 2024. This object is explicitly a high-level overview; the linked 37-page report is separate.
+
+**Inspected scope:** Complete accessible captured HTML text: Introduction, Overview, Methodology, selected findings in all 3 domains, Conclusion, report links, date/name-change note and footer. No linked report is included in this complete-page event.
+
+**Locators:** Introduction; Overview of the Joint Safety Research & Testing Exercise; Methodology; Evaluations and Findings; Conclusion; Footer: research organisation within UK Department for Science, Innovation and Technology
+
+**Visual check:** No plots/tables in this overview were independently rendered; accessible prose read in full.
+
+**Findings:**
+
+- US/UK institutes report limited pre-release access, scaffold adjustments for tool-calling/output-formatting problems and sharing findings before release.
+- The overview reports comparison and tool-augmentation results with an explicit tested-version limitation; it does not endorse the release as safe.
+- Issuer attribution and DSIT footer establish government-institute context rather than a private company issuer.
+
+**Counterevidence / alternative:** Better elicitation or a different released version may perform differently. Reported external testing is not proof of a complete audit or harm prevented.
+
+**Limits:** Complete-page reading is not a full technical-report read, independent human review or proof of the earlier reading. Results apply to the tested pre-deployment version/scaffolding; the overview itself warns about finite access and uncertainty.
+
+**Replication:** `not_performed`. **Numerical check:** No numerical recomputation or experimental replication.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C01](claims.md#c01)
+
+**Relevance rationale:** Primary example of an actual external pre-deployment evaluation with explicit configuration/resource limits; supports C01 without claiming effects or complete assessment.
+
+**Next check:** Use exact technical methods before quoting rates; preserve separate overview/report scopes and historical institute names.
+
+| Capture field | Value |
+|---|---|
+| `preservation_status` | captured |
+| `original_url` | [Source](https://www.aisi.gov.uk/blog/pre-deployment-evaluation-of-openais-o1-model) |
+| `final_url` | [Source](https://www.aisi.gov.uk/blog/pre-deployment-evaluation-of-openais-o1-model) |
+| `retrieved_at` | 2026-11-14T23:26:12.520645Z |
+| `attempted_at` | 2026-11-14T23:26:11.541892Z |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No capture-specific independent archive was checked in this bounded round. Exact local bytes and primary URLs are retained; independent archival preservation is not claimed. |
+| `sha256` | 827419fa116269ecba52bedcd9826f306352a070da378d64db1287de7c0ee6d7 |
+| `byte_length` | 31277 |
+| `mime_type` | text/html |
+| `published_on` | 2024-12-18 |
+| `version_claim` | Issuer overview datedDecember 18, 2024; later AISI name-change note and current footer |
+| `locator_basis` | Version-specific section headings and source-attributed dates; PDF viewer pages and printed pages separately identified where applicable. |
+| `capture_path` | .source-captures/synthesis-827419fa116269ecba52bedcd9826f306352a070da378d64db1287de7c0ee6d7.html |
+
+<a id="r4_depthsample_03"></a>
+### r4_depthsample_03
+
+**Source:** `aisi_safetyinstitutesjoint_2024`. **Theme:** inherited_depth_sample. **Reading:** Selected sections. **Coverage effect:** `scoped_review`.
+
+**Edition match:** `related_edition`. 37-page December 2024 US/UK technical report linked directly from the canonical overview. Companion report for the same exercise, not the identical HTML object or an independent study.
+
+**Inspected scope:** PDF cover/contents pp1–3; printedpp1–7/viewerpp4–10 (Introduction, disclaimers, complete general methods, US Cybench methods/results/Table 4.1); viewerp12/printedp9 (future-work discussion/UK methods opening); printedpp11–14/viewerpp14–17 (UK agent setup/results, selected domain discussions); printedpp17–20/viewerpp20–23 (LAB-Bench methods, tooling, scoring and selected results). Plot text on viewerp11 was partly unreadable and is not used for numerical claims. Other pages/remaining software/AI sections/references were not fully read.
+
+**Locators:** §§1–2.6 printedpp1–4 / viewerpp4–7; §§3–5; Table 4.1 printedpp5–9 / viewerpp8–12; PartI overview printedp5; §7 printedp11; Figure 7.1 printedp12 / viewerp15; §§9–10.4 printedpp17–20 / viewerpp20–23
+
+**Visual check:** Rendered/visually checked Table 4.1 continuation on viewerp10 and Figures 7.1–7.2 on viewerp15. Other plots were not visually authenticated or digitized.
+
+**Findings:**
+
+- The report specifies development-set elicitation/scaffold repair before final runs and warns comparisons need not rank suitability for real applications.
+- US Cybench methods use40 tasks,10 attempts each and up to100 messages. Table 4.1 reports45% Pass@10 for o1 versus35% for the strongest reference; these are configured challenge results.
+- LAB-Bench tool ablations, abstention rules and a separate accuracy@20 procedure show how access and scoring affect biological-task comparisons. No biological outcome or misuse incidence is measured.
+
+**Counterevidence / alternative:** Reported capability gains are real within the protocol, while narrow tasks, resource limits and altered configurations constrain transfer. Biological-tool gains and the US cryptography result do not establish general dominance or deployed risk.
+
+**Limits:** Limited access, incomplete mitigations, scaffold dependence and fixed attempts/message budgets rather than equal costs bound model comparisons. General-method error bars exclude variation in scaffold design. Source capture closes the prior PDF access gap for these sections only; no full-report or experiment-reproduction claim.
+
+**Replication:** `not_performed`. **Numerical check:** Documentary comparison only. US Table 4.1 clearly separates Pass@1 from Pass@10. UK PartI overview printedp5 gives46% at apprentice Pass@10, while §7 printedp11 and issuerHTML give36% with the same label versus46% reference. Figure 7.1 was visually checked but its aggregation is not established by this bounded read. Private task/run data and weighting were not inspected, so no error cause or corrected rate is asserted; affected UK headline omitted.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C01](claims.md#c01)
+
+**Relevance rationale:** Deepens C01 with actual methods, positive results and counterevidence. Same joint exercise as the overview, not a second independent validation.
+
+**Next check:** Omit the UK apprentice headline until its differently reported figures/aggregation are reconciled; preserve the supported qualitative configuration finding and US metric scope.
+
+| Capture field | Value |
+|---|---|
+| `preservation_status` | captured |
+| `original_url` | [Source](https://cdn.prod.website-files.com/663bd486c5e4c81588db7a1d/6763fac97cd22a9484ac3c37_o1_uk_us_december_publication_final.pdf) |
+| `final_url` | [Source](https://cdn.prod.website-files.com/663bd486c5e4c81588db7a1d/6763fac97cd22a9484ac3c37_o1_uk_us_december_publication_final.pdf) |
+| `retrieved_at` | 2026-11-14T23:27:09.054549Z |
+| `attempted_at` | 2026-11-14T23:27:08.564687Z |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No capture-specific independent archive was checked in this bounded round. Exact local bytes and primary URLs are retained; independent archival preservation is not claimed. |
+| `sha256` | 1152b10cb28865acf923e97de9adb2e9d915dda94fd1950f5bd36ce06188f229 |
+| `byte_length` | 2132284 |
+| `mime_type` | application/pdf |
+| `published_on` | 2024-12 |
+| `version_claim` | December 2024 technical report linked from December18 issuer overview |
+| `locator_basis` | Version-specific section headings and source-attributed dates; PDF viewer pages and printed pages separately identified where applicable. |
+| `capture_path` | .source-captures/synthesis-1152b10cb28865acf923e97de9adb2e9d915dda94fd1950f5bd36ce06188f229.pdf |
+
+<a id="r4_depthsample_04"></a>
+### r4_depthsample_04
+
+**Source:** `metr_timehorizons_2026`. **Theme:** inherited_depth_sample. **Reading:** Full text. **Coverage effect:** `complete_record_text`.
+
+**Edition match:** `same_record`. Exact canonical living measurement page and named Time Horizon 1.1 suite match the record. Current page displays last updatedSeptember 8, 2026; the prior May-dated snapshot/values are not authenticated. Same maintained-page record, explicitly a later captured state.
+
+**Inspected scope:** Complete accessible captured HTML prose: definition, controls/labels, Methodological Details, every FAQ, update history, citation text, navigation/footer. Interactive chart values/embedded datasets, linked paper, code and follow-up studies were not read/reproduced.
+
+**Locators:** Opening / LAST UPDATED / Time Horizon 1.1; Methodological Details / Task distribution / Human task duration estimates; FAQ: autonomous runtime, jobs,99% reliability, task meaning, evaluation procedure and reporting coverage; Updates: September 8, 2026 maintenance notice and March3 regularization correction
+
+**Visual check:** No chart pixels, interactive values or external figure assets were independently inspected. Plot descriptions/captions are prose only.
+
+**Findings:**
+
+- The horizon is a fitted success-probability crossing on tasks measured by human expert completion time, not AI elapsed runtime.
+- The page specifies self-contained mostly software/ML/cyber tasks, low-context human baselines, scaffold elicitation and six runs per test task, with reward-hack review.
+- The page explicitly limits domain/job transfer, model-release completeness and higher-reliability inference, and says it is no longer actively updated.
+
+**Counterevidence / alternative:** A common duration/reliability axis is useful for comparing tested agents, while low-context tasks, jagged domain capability and uncertain long-task estimates limit labor-automation or general-autonomy conclusions.
+
+**Limits:** Complete accessible-page text is not a full data/paper audit. Current state cannot establish earlier reading or exact historic values. The page says measurements above 16 hours are unreliable with its suite; higher-reliability extrapolation is not measured here.
+
+**Replication:** `not_performed`. **Numerical check:** No numerical recomputation or experimental replication.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C78](claims.md#c78)
+
+**Relevance rationale:** Supplies a measurement construct and transfer boundary relevant to the broad capability/configuration synthesis, not an autonomous-runtime claim.
+
+**Next check:** Pin data/code and chart state before quoting model values or trends. Keep the current maintenance notice distinct from historical metadata.
+
+| Capture field | Value |
+|---|---|
+| `preservation_status` | captured |
+| `original_url` | [Source](https://metr.org/time-horizons/) |
+| `final_url` | [Source](https://metr.org/time-horizons/) |
+| `retrieved_at` | 2026-11-14T23:26:12.287227Z |
+| `attempted_at` | 2026-11-14T23:26:11.542262Z |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No capture-specific independent archive was checked in this bounded round. Exact local bytes and primary URLs are retained; independent archival preservation is not claimed. |
+| `sha256` | 186c10c0ef80685095f7b197d53a78a45054b9896a2bb24a3735350d5f4475d9 |
+| `byte_length` | 685671 |
+| `mime_type` | text/html |
+| `published_on` | Not recorded / unavailable |
+| `version_claim` | Current Time Horizon 1.1 page; LAST UPDATED September 8, 2026; no longer actively updated |
+| `locator_basis` | Version-specific section headings and source-attributed dates; PDF viewer pages and printed pages separately identified where applicable. |
+| `capture_path` | .source-captures/synthesis-186c10c0ef80685095f7b197d53a78a45054b9896a2bb24a3735350d5f4475d9.html |
+
+<a id="r4_depthsample_05"></a>
+### r4_depthsample_05
+
+**Source:** `mlcommons_ailuminate_2026`. **Theme:** inherited_depth_sample. **Reading:** Full text. **Coverage effect:** `complete_record_text`.
+
+**Edition match:** `same_record`. Exact canonical AILuminate suite URL/title match the 2026 record. Current page names Safety 1.2.1 and Jailbreak 1.1; no byte equivalence to April/earlier captured states is asserted.
+
+**Inspected scope:** Complete accessible captured HTML text: suite descriptions, credibility/stewardship/objectivity sections,2026 timeline, results-use rules, Candela/configuration description, future benchmarks, contributor list, partnerships and footer/cookie text. Linked standards, result pages, prompts and benchmark code not read.
+
+**Locators:** The suite of benchmarks / Safety 1.2.1 / Jailbreak 1.1; Technical independence / Stewardship / Objectivity; 2026 at a glance; Using AILuminate results; Privately test your own system
+
+**Visual check:** No external graphics or browser screenshots inspected; the relevant version and usage statements are accessible prose.
+
+**Findings:**
+
+- Current suite distinguishes direct hazardous-request Safety from published-attack Jailbreak testing, with different category scopes.
+- The issuer reports a purpose-built non-LLM evaluator starting with Safety 1.2.1/Jailbreak 1.1 and separates confidential Official runs from internal-use Practice results.
+- The page expressly says MLCommons measures rather than certifies systems/audits organizations/decides acceptable risk; deployment configuration can change results.
+
+**Counterevidence / alternative:** Confidential tests and structured rules can reduce some contamination/comparison problems, but do not prove an ungameable instrument or establish appropriate risk acceptance. Versioned evaluator changes matter.
+
+**Limits:** Issuer account of instrument design/stewardship, not independently validated score comparability or real-world safety. Confidential prompts and evaluator details were not audited. Complete portal reading does not recertify linked papers or an earlier snapshot.
+
+**Replication:** `not_performed`. **Numerical check:** No numerical recomputation or experimental replication.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C79](claims.md#c79)
+
+**Relevance rationale:** Adds constructive measurement/stewardship design with explicit assurance boundary and version dependence.
+
+**Next check:** Inspect exact release methods/results and data when making a leading score-comparability claim; do not transfer v1.0 grading/evaluator details to 1.2.1.
+
+| Capture field | Value |
+|---|---|
+| `preservation_status` | captured |
+| `original_url` | [Source](https://mlcommons.org/ailuminate/) |
+| `final_url` | [Source](https://mlcommons.org/ailuminate/) |
+| `retrieved_at` | 2026-11-14T23:26:12.090289Z |
+| `attempted_at` | 2026-11-14T23:26:11.542648Z |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No capture-specific independent archive was checked in this bounded round. Exact local bytes and primary URLs are retained; independent archival preservation is not claimed. |
+| `sha256` | 72fb5c9e6c2ca17e2cbbaf6c0dae68d069a5189ff3e5d4a0466488ae1ffa1749 |
+| `byte_length` | 157454 |
+| `mime_type` | text/html |
+| `published_on` | Not recorded / unavailable |
+| `version_claim` | Current2026 suite overview naming Safety 1.2.1 and Jailbreak 1.1 |
+| `locator_basis` | Version-specific section headings and source-attributed dates; PDF viewer pages and printed pages separately identified where applicable. |
+| `capture_path` | .source-captures/synthesis-72fb5c9e6c2ca17e2cbbaf6c0dae68d069a5189ff3e5d4a0466488ae1ffa1749.html |
+
+<a id="r4_depthsample_06"></a>
+### r4_depthsample_06
+
+**Source:** `mlcommons_ailuminatev10_2025`. **Theme:** inherited_depth_sample. **Reading:** Selected sections. **Coverage effect:** `scoped_review`.
+
+**Edition match:** `same_record`. Exact canonical arXiv identifier/title match; pinned2503.05731v1, cover datedFebruary 19, 2025, benchmark releasev1.0. Generic arXiv page now offers v2; equivalence is not assumed.
+
+**Inspected scope:** PDF pp1–5 cover/abstract/executive summary/contents; pp7–9 overview/scope/use; pp15–22 prompt-quality discussion, response-evaluator methods, grading/reference and limitations. Remaining hazard details, results, large Appendix A questionnaire and references not fully read.
+
+**Locators:** §2 pp7–9: scope, basic approach and use; §§5–6 pp15–21: ensemble, entropy, human labels, false-safe tradeoff, reference-relative grading; §7 pp21–22: limitations; Figure 6 p21
+
+**Visual check:** Figure 6 p21 rendered and visually inspected as a schematic evaluator-uncertainty/grade-band figure. Tables 2–3 read in extracted text; no empirical results digitized.
+
+**Findings:**
+
+- The v1.0 method provides a standard, confidential/practice prompts, an LLM ensemble plus human checks, and reference-relative grades.
+- Entropy thresholds and ensemble logic prioritize low false-safe rates; the paper reports substantial evaluator uncertainty that can span grades.
+- Explicit limits include single-turn constructed prompts, absent expert adaptive adversaries, US-cultural policy framing, unmeasured hazards and heterogeneous deployment configurations.
+
+**Counterevidence / alternative:** Standardized evaluation offers useful repeatable targets and hazard-specific diagnosis; the paper itself supplies reasons not to equate a grade with general safety. Current portal instrumentation differs, so the two cannot be silently pooled.
+
+**Limits:** Selected 51-page arXivv1 object only, not current implementation audit. Exact ensemble model/logic/training details are intentionally confidential. Benchmark grading/uncertainty and hazard categories are not field-harm estimates.
+
+**Replication:** `not_performed`. **Numerical check:** No scoring/model reproduction. Documentary inspection of equations/reference definition and uncertainty discussion only; no claimed empirical uncertainty recalculation.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C79](claims.md#c79)
+
+**Relevance rationale:** Methods/limitations complement the suite overview as one benchmark family, not independent empirical corroboration.
+
+**Next check:** Read remaining Appendix A/results and exact later release methods if claims require them; verify first-author order and publication-versus-submission dating before metadata changes.
+
+| Capture field | Value |
+|---|---|
+| `preservation_status` | captured |
+| `original_url` | [Source](https://arxiv.org/pdf/2503.05731v1) |
+| `final_url` | [Source](https://arxiv.org/pdf/2503.05731v1) |
+| `retrieved_at` | 2026-11-14T23:26:12.085701Z |
+| `attempted_at` | 2026-11-14T23:26:11.543016Z |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No capture-specific independent archive was checked in this bounded round. Exact local bytes and primary URLs are retained; independent archival preservation is not claimed. |
+| `sha256` | 480273f4382dbfc411928ade3db96f7eec2bcf72365f3d2930e3124d0c44ff6b |
+| `byte_length` | 2312460 |
+| `mime_type` | application/pdf |
+| `published_on` | 2025-02-19 |
+| `version_claim` | arXiv2503.05731v1 cover datedFebruary 19, 2025; benchmarkv1.0 |
+| `locator_basis` | Version-specific section headings and source-attributed dates; PDF viewer pages and printed pages separately identified where applicable. |
+| `capture_path` | .source-captures/synthesis-480273f4382dbfc411928ade3db96f7eec2bcf72365f3d2930e3124d0c44ff6b.pdf |
+
+<a id="r4_depthsample_07"></a>
+### r4_depthsample_07
+
+**Source:** `mlcommons_ailuminatev10_2025`. **Theme:** inherited_depth_sample. **Reading:** Abstract only. **Coverage effect:** `none`.
+
+**Edition match:** `related_edition`. Generic canonical arXiv metadata page currently describesv2 revisedApril 18, 2025; used to distinguish version provenance from the inspectedv1 PDF.
+
+**Inspected scope:** Complete visible arXiv metadata/abstract page text, author sequence and submission history, not v2 full paper.
+
+**Locators:** Title/Authors/Abstract; Submission history v1/v2
+
+**Visual check:** No figure/table inspection.
+
+**Findings:**
+
+- The displayed author order starts Shaona Ghosh and Heather Frase; Peter Mattson appears among the closing chairs.
+- History lists v1 submissionFebruary 19, 2025 and v2 revisionApril 18, 2025; the canonical dateMarch 7 may encode a different publication/announcement event and is not corrected by assumption.
+
+**Counterevidence / alternative:** Current metadata supplies identity/version clues, but cannot certify methods equivalence or prior reading.
+
+**Limits:** Metadata/abstract does not certify v1–v2 methods or full author identity details beyond displayed ordering. Submission date need not equal intended public-publication date in records.yaml.
+
+**Replication:** `not_performed`. **Numerical check:** No numerical recomputation or experimental replication.
+
+**Relevance:** `background`. **Claim links:** None; no claim support forced.
+
+**Relevance rationale:** Version/author provenance only; not an extra empirical study or full-paper read.
+
+**Next check:** If editing bibliography metadata, use actual author order and distinguish submission/revision/publication dates.
+
+| Capture field | Value |
+|---|---|
+| `preservation_status` | captured |
+| `original_url` | [Source](https://arxiv.org/abs/2503.05731) |
+| `final_url` | [Source](https://arxiv.org/abs/2503.05731) |
+| `retrieved_at` | 2026-11-14T23:26:11.733057Z |
+| `attempted_at` | 2026-11-14T23:26:11.543407Z |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No capture-specific independent archive was checked in this bounded round. Exact local bytes and primary URLs are retained; independent archival preservation is not claimed. |
+| `sha256` | 1ca1355ce262b9fefa7561268096d13ce00a98c9a5a4890cd70917c9c75236f6 |
+| `byte_length` | 61248 |
+| `mime_type` | text/html |
+| `published_on` | Not recorded / unavailable |
+| `version_claim` | arXiv metadata page currentlyv2; revisionApril 18, 2025 |
+| `locator_basis` | Version-specific section headings and source-attributed dates; PDF viewer pages and printed pages separately identified where applicable. |
+| `capture_path` | .source-captures/synthesis-1ca1355ce262b9fefa7561268096d13ce00a98c9a5a4890cd70917c9c75236f6.html |
+
+<a id="r4_editions_01"></a>
+### r4_editions_01
+
+**Source:** `cunningham_sparseautoencoders_2024`. **Theme:** edition_questions. **Reading:** Selected sections. **Coverage effect:** `scoped_review`.
+
+**Edition match:** `same_record`. Official ICLR2024 proceedings PDF linked from its exact titled proceedings entry. PDF title and five printed authors match the canonical arXiv-associated work and named venue; this is a separately captured final conference artifact, not asserted byte-identical to arXiv v3.
+
+**Inspected scope:** PDF cover/§§1–2 pp1–3; complete §4 pp5–6 and Figure 4; selected §5 examples pp7–8; §6.1–6.3 p9; AppendixA–B text p12; AppendixE–G text pp17–19. Remaining §3, references, parts of §5 and appendices were not comprehensively reread. Text-diff discovery was followed by reading claim-critical passages; it is not a full 19-page certification.
+
+**Locators:** §2 Equation 4/Figure 2 p3; §§4.1–4.2 pp5–6, Figure 4 p6; §6.2 p9; AppendixF/Figure 16 p19; AppendicesA–B p12; G pp17–19
+
+**Visual check:** Rendered and visually inspected arXiv v3 Equation 4 on p3, final Equation 4/Figure 2 on p3 and IOI Figure 4 on p6; no plot digitization, remaining figures not comprehensively checked.
+
+**Findings:**
+
+- The exact ICLR artifact preserves the affirmative IOI result: sparse dictionary patches move Pythia410M outputs toward counterfactual target distributions with fewer directions/smaller edits than tested PCA/non-sparse dictionaries under per-decomposition ACDC ordering over 50 IOI datapoints.
+- Final proceedings locators differ: main IOI result is Figure 4 (rather than arXiv v3 Figure 3), and cross-layer IOI plots are AppendixF/Figure 16 (rather than Figure 17).
+- The representations differ at the text/formula level: the final PDF is 19 pages and Equation 4 divides squared reconstruction loss by dim(x); arXiv v3 is 20 pages and prints the unnormalized term. The final places a sparsity/reconstruction tradeoff figure in the main text and changes figure numbering. This documents representation changes, not a reproduced change in trained models or effect estimates.
+- Final §6.2 still treats broader-task generalization as future work. The arXiv v3 perplexity25→40 sentence is not present in the final extracted text and must not be attributed to this final edition.
+
+**Counterevidence / alternative:** Successful selected interventions remain positive causal evidence; reconstruction error, automated interpretation, task choice and feature-selection procedures bound scope. A changed printed normalization is not evidence that the underlying experiment was rerun or that the previous qualitative result is wrong.
+
+**Limits:** Selected final-edition check only; no model/data execution, exhaustive cross-edition result comparison or full final-paper reading. No causal mechanism for changed wording is inferred.
+
+**Replication:** `not_performed`. **Numerical check:** Documentary version/formula/locator comparison only, not experimental replication.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C49](claims.md#c49)
+
+**Relevance rationale:** Resolves or narrows a specific edition/denominator question without recertifying earlier reading, pooling related representations as independent evidence, or inferring model experiment replication.
+
+**Next check:** Use the final artifact for its verified IOI claim/locators; retain separately scoped arXiv findings and do not transfer unverified numbers across editions. Compare code/training manifest only if quantitative normalization or across-edition result changes lead the publication.
+
+| Capture field | Value |
+|---|---|
+| `preservation_status` | captured |
+| `original_url` | [Source](https://proceedings.iclr.cc/paper_files/paper/2024/file/1fa1ab11f4bd5f94b2ec20e794dbfa3b-Paper-Conference.pdf) |
+| `final_url` | [Source](https://proceedings.iclr.cc/paper_files/paper/2024/file/1fa1ab11f4bd5f94b2ec20e794dbfa3b-Paper-Conference.pdf) |
+| `retrieved_at` | 2026-11-14T23:26:50.159336+00:00 |
+| `attempted_at` | 2026-11-14T23:26:49.427968+00:00 |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No capture-specific independent archive was checked in this bounded round; exact primary bytes and immutable source URLs where available are retained locally. Independent archival preservation is not claimed. |
+| `sha256` | 13c0747d472efa103ae5a6898299bb805be87b7a8bda408b4286fe23a5287bcd |
+| `byte_length` | 1818039 |
+| `mime_type` | application/pdf |
+| `published_on` | 2024 |
+| `version_claim` | ICLR2024 official proceedings PDF;19 pages |
+| `locator_basis` | Version-specific page/section locators; PDF viewer page numbers include cover. |
+| `capture_path` | .source-captures/synthesis-13c0747d472efa103ae5a6898299bb805be87b7a8bda408b4286fe23a5287bcd.pdf |
+
+<a id="r4_editions_02"></a>
+### r4_editions_02
+
+**Source:** `huang_collectiveconstitutional_2024`. **Theme:** edition_questions. **Reading:** Selected sections. **Coverage effect:** `scoped_review`.
+
+**Edition match:** `same_record`. Official FAccT conference-hosted23-page PDF prints the exact canonical ACM DOI10.1145/3630106.3658979, title and seven authors. Publisher/conference edition access gap is closed for the inspected content; byte-equivalence to arXiv v1 is not claimed.
+
+**Inspected scope:** Cover/abstract and selected introduction; participant/input transformation/training methods §§3.1–3.4 pp3–6; quantitative/qualitative findings §§4.1–4.4 pp6–9; limitations §5 p9; discussion/ethics §§6–7 p10. References and appendices were not newly read in full. A programmatic comparison covers normalized extracted text on pages2–23, not substantive rereading or visual certification of every page.
+
+**Locators:** Cover DOI/reference/license p1; §§3.1–3.4 pp3–6; §4.3 Figures4–5 p7 and Table 1/adjacent Elo text p8; §5 p9; §§6–7 p10
+
+**Visual check:** Rendered and visually inspected Figures4–5 on p7 and Table 1 plus adjacent interpretation on p8; other figures/appendix screenshots not comprehensively rechecked.
+
+**Findings:**
+
+- Official conference copy preserves the positive BBQ result across nine tested dimensions and the contrary OpinionQA pattern: Public scores are2–3 percentage points below Standard across the five displayed ideology groups.
+- The official artifact retains the existing Elo label/interpretation ambiguity: Table 1 labels a row Harmfulness, the adjacent text calls it harmlessness, then interprets that contrast using helpful language. Source access does not resolve the inference.
+- After whitespace normalization, extracted text on PDF pages2–23 exactly matches the prior arXiv v1 extraction. Page1 differs in reference/license and arXiv wrapper information. This is text-level comparison, not a global image or byte-identity claim.
+
+**Counterevidence / alternative:** Controlled training differs by constitution and yields affirmative benchmark changes; screened U.S. participants, researcher translation of principles, no direct adherence metric and no general equivalence/legitimacy test remain material limits.
+
+**Limits:** Selected conference-edition reading only; no final-paper full-text upgrade or independent verification of the earlier full arXiv read. Text equality does not verify every figure or source study. No Elo/equivalence inference is licensed by resolving the source-access question.
+
+**Replication:** `not_performed`. **Numerical check:** Documentary text comparison: whitespace-normalized pages2–23 match the earlier arXiv extraction; printed OpinionQA values checked in Figure 5. No experimental replication.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C57](claims.md#c57)
+
+**Relevance rationale:** Resolves or narrows a specific edition/denominator question without recertifying earlier reading, pooling related representations as independent evidence, or inferring model experiment replication.
+
+**Next check:** Use the authenticated conference copy for the verified findings. Keep Elo/equivalence wording held unless underlying judgments/labels are clarified; final-text completion remains separate from edition authentication.
+
+| Capture field | Value |
+|---|---|
+| `preservation_status` | captured |
+| `original_url` | [Source](https://facctconference.org/static/papers24/facct24-94.pdf) |
+| `final_url` | [Source](https://facctconference.org/static/papers24/facct24-94.pdf) |
+| `retrieved_at` | 2026-11-14T23:26:28.774066+00:00 |
+| `attempted_at` | 2026-11-14T23:26:27.937361+00:00 |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No capture-specific independent archive was checked in this bounded round; exact primary bytes and immutable source URLs where available are retained locally. Independent archival preservation is not claimed. |
+| `sha256` | 79dcefab2fc9b267c7e3811be654e1fa91898d8911a72075af7ad53758f00452 |
+| `byte_length` | 2663083 |
+| `mime_type` | application/pdf |
+| `published_on` | 2024 |
+| `version_claim` | Official FAccT2024 conference-hosted ACM-format PDF; DOI10.1145/3630106.3658979;23 pages |
+| `locator_basis` | Version-specific page/section locators; PDF viewer page numbers include cover. |
+| `capture_path` | .source-captures/synthesis-79dcefab2fc9b267c7e3811be654e1fa91898d8911a72075af7ad53758f00452.pdf |
+
+<a id="r4_editions_03"></a>
+### r4_editions_03
+
+**Source:** `huang_trustllm_2024`. **Theme:** edition_questions. **Reading:** Selected sections. **Coverage effect:** `scoped_review`.
+
+**Edition match:** `related_edition`. Ancillary dataset artifact in the paper-linked official repository, at the historical July 31, 2024 commit3f55a278511218e1bc7152e77d74d5f5383b3dbc. It is not the paper or a proven experiment manifest. Git tree maps dataset/dataset.zip to immutable blobceb7df55bd8b795f6f1de3524d6c03dd54ebc3bf.
+
+**Inspected scope:** Base64-decoded exact GitHub blob API representation of the dataset ZIP; selected fairness/preference.json member only. Parsed all 240 rows and type/option fields, checked matching120 option pairs across plain/force templates, and read the120 unique option-pair labels. Other datasets, classifier outputs and response narratives were not audited.
+
+**Locators:** Commit3f55a278511218e1bc7152e77d74d5f5383b3dbc: dataset/dataset.zip; Blobceb7df55bd8b795f6f1de3524d6c03dd54ebc3bf → fairness/preference.json; Member fields option_a,option_b,question,prompt,type; first 80/last 40 unique option pairs
+
+**Visual check:** None; no rendered figures independently inspected.
+
+**Findings:**
+
+- The artifact contains240 prompts:120 plain and120 force, sharing120 unique ordered option pairs. Its row schema has no explicit ideology/culture category field.
+- Reading the option pairs shows the first 80 address public-policy/ideological choices and the last 40 culture/lifestyle, consistent with the paper’s prose. This is a source inspection of the ordering, not independently validated category annotation.
+- The released input artifact does not identify which category slice/column mapping generated Table 25; finding the dataset therefore does not justify reversing category weights or correcting reported totals.
+
+**Counterevidence / alternative:** The input list supports the described120-question construction and the distinct neutrality/refusal target. It does not resolve the table discrepancy without per-model responses, refusal classifications and exact table-producing aggregation.
+
+**Limits:** One selected ZIP member and categorical fields only. Current/historical commit availability is not proof that this exact dataset generated published runs. No LLM generation, Longformer inference, answer-label reproduction or fairness-effect estimate.
+
+**Replication:** `not_performed`. **Numerical check:** Programmatic documentary recount:240 rows,120 plain+120 force,120 unique option pairs; templates have identical option lists. Member SHA25608b29a25278c7710af130368c1c4194928fe5617f7f8d39dff54cced48f3ac3f; decoded ZIP SHA256495d6cf967dce12a0b7d30f95a5155eda3edd57fc175084db9126a4e9743d803. No experimental replication.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C59](claims.md#c59)
+
+**Relevance rationale:** Resolves or narrows a specific edition/denominator question without recertifying earlier reading, pooling related representations as independent evidence, or inferring model experiment replication.
+
+**Next check:** Keep affected category/total rates held. Seek the exact experiment manifest, raw responses/classifier outputs and category/table aggregation script only if those numbers are needed.
+
+| Capture field | Value |
+|---|---|
+| `preservation_status` | captured |
+| `original_url` | [Source](https://api.github.com/repos/HowieHwong/TrustLLM/git/blobs/ceb7df55bd8b795f6f1de3524d6c03dd54ebc3bf) |
+| `final_url` | [Source](https://api.github.com/repos/HowieHwong/TrustLLM/git/blobs/ceb7df55bd8b795f6f1de3524d6c03dd54ebc3bf) |
+| `retrieved_at` | 2026-11-14T23:28:54.798839+00:00 |
+| `attempted_at` | 2026-11-14T23:28:53.838705+00:00 |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No capture-specific independent archive was checked in this bounded round; exact primary bytes and immutable source URLs where available are retained locally. Independent archival preservation is not claimed. |
+| `sha256` | b92eda5aa4e2ed10b6eb23af70d177f511ee7e61fe4a1a152abbdc0a13932f3a |
+| `byte_length` | 2334300 |
+| `mime_type` | application/json |
+| `published_on` | Not recorded / unavailable |
+| `version_claim` | Git blobceb7df55bd8b795f6f1de3524d6c03dd54ebc3bf in commit3f55a278511218e1bc7152e77d74d5f5383b3dbc; selected member fairness/preference.json |
+| `locator_basis` | Version-specific page/section locators; PDF viewer page numbers include cover. |
+| `capture_path` | .source-captures/synthesis-b92eda5aa4e2ed10b6eb23af70d177f511ee7e61fe4a1a152abbdc0a13932f3a.json |
+
+<a id="r4_editions_04"></a>
+### r4_editions_04
+
+**Source:** `huang_trustllm_2024`. **Theme:** edition_questions. **Reading:** Selected sections. **Coverage effect:** `scoped_review`.
+
+**Edition match:** `related_edition`. Ancillary dataset in current checked repository commitc3edca246f39f778f666366c1e30cfdb95b2e43e (committer timestamp October 4, 2026), separately pinned from the historical2024 artifact. No identity with the full original experiment is asserted.
+
+**Inspected scope:** Base64-decoded exact GitHub blob API representation of the dataset ZIP; selected fairness/preference.json member only. Parsed all 240 rows and type/option fields, checked matching120 option pairs across plain/force templates, and read the120 unique option-pair labels. Other datasets, classifier outputs and response narratives were not audited.
+
+**Locators:** Commitc3edca246f39f778f666366c1e30cfdb95b2e43e: dataset/dataset.zip; Blob7679a9c4d7d657f35304df6a6f9770f2f1d9a3a4 → dataset/fairness/preference.json
+
+**Visual check:** None; no rendered figures independently inspected.
+
+**Findings:**
+
+- The current ZIP differs as a package, but its selected preference member is byte-identical to the historical2024 member, preserving240 prompts/120 option pairs. Member path changed from fairness/preference.json to dataset/fairness/preference.json.
+- No category field or table-producing output is introduced by this member; later availability does not resolve published Table 25.
+
+**Counterevidence / alternative:** Stable member bytes rule out a simple current-input-member change as an explanation for the observed aggregate tension, but do not rule out older run variants, category slicing, column labels, omitted outputs or different scoring procedures.
+
+**Limits:** Selected member inspection only. Full ZIP equivalence is explicitly not claimed and other package changes were not audited. This is not a second independent dataset or corroborating experiment.
+
+**Replication:** `not_performed`. **Numerical check:** The selected member SHA256 matches historical08b29a25278c7710af130368c1c4194928fe5617f7f8d39dff54cced48f3ac3f exactly. Decoded currentZIP SHA2560433f79bc8dc8a5869af253d4a70067eda82f5651b89b7235a0220a8bf775317 differs from historical ZIP. Documentary comparison only.
+
+**Relevance:** `background`. **Claim links:** None; no claim support forced.
+
+**Relevance rationale:** Resolves or narrows a specific edition/denominator question without recertifying earlier reading, pooling related representations as independent evidence, or inferring model experiment replication.
+
+**Next check:** Use the historical snapshot and shared member hash for the bounded input observation; keep the experiment/aggregation provenance question open.
+
+| Capture field | Value |
+|---|---|
+| `preservation_status` | captured |
+| `original_url` | [Source](https://api.github.com/repos/HowieHwong/TrustLLM/git/blobs/7679a9c4d7d657f35304df6a6f9770f2f1d9a3a4) |
+| `final_url` | [Source](https://api.github.com/repos/HowieHwong/TrustLLM/git/blobs/7679a9c4d7d657f35304df6a6f9770f2f1d9a3a4) |
+| `retrieved_at` | 2026-11-14T23:28:54.728927+00:00 |
+| `attempted_at` | 2026-11-14T23:28:53.839364+00:00 |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No capture-specific independent archive was checked in this bounded round; exact primary bytes and immutable source URLs where available are retained locally. Independent archival preservation is not claimed. |
+| `sha256` | 1bcc176fc59fea7af67e1fd289c84f8856ad82f9eb9abdf29838d5df9735a2cb |
+| `byte_length` | 2451024 |
+| `mime_type` | application/json |
+| `published_on` | Not recorded / unavailable |
+| `version_claim` | Git blob7679a9c4d7d657f35304df6a6f9770f2f1d9a3a4 in commitc3edca246f39f778f666366c1e30cfdb95b2e43e; member dataset/fairness/preference.json |
+| `locator_basis` | Version-specific page/section locators; PDF viewer page numbers include cover. |
+| `capture_path` | .source-captures/synthesis-1bcc176fc59fea7af67e1fd289c84f8856ad82f9eb9abdf29838d5df9735a2cb.json |
+
+<a id="r4_editions_05"></a>
+### r4_editions_05
+
+**Source:** `huang_trustllm_2024`. **Theme:** edition_questions. **Reading:** Selected sections. **Coverage effect:** `scoped_review`.
+
+**Edition match:** `related_edition`. Ancillary scoring source from the paper-linked repository, pinned to July 31, 2024 commit3f55a278511218e1bc7152e77d74d5f5383b3dbc. The same file is byte-identical in checked October2026 commitc3edca246f39f778f666366c1e30cfdb95b2e43e; neither is an authenticated published run manifest.
+
+**Inspected scope:** Inspected FairnessEval.preference_eval and its surrounding class interface in the6617-byte fairness.py file. Read filtering/scoring/return paths, without importing or executing model/classifier dependencies. Other fairness methods were not validated as an entire package.
+
+**Locators:** trustllm_pkg/trustllm/task/fairness.py: FairnessEval.preference_eval, lines131–164; Pinned source at3f55a278511218e1bc7152e77d74d5f5383b3dbc
+
+**Visual check:** None; no rendered figures independently inspected.
+
+**Findings:**
+
+- preference_eval filters plain/force rows by type, invokes Longformer/refusal scoring, computes each template’s overall refusal rate, then averages the two rates. Its forced branch excludes short A/B responses before Longformer scoring and divides refusal count by all forced prompts. The inspected routine has no ideology/culture slicing or Table 25 category-column construction.
+- The routine’s existence supports how the toolkit operationalizes refusal-based preference evaluation, but does not authenticate paper-specific category rates or prove this exact path generated the reported table.
+
+**Counterevidence / alternative:** The paper’s qualitative distinct-construct argument survives; source code provides a constructive implementation detail. It cannot supply missing per-model outputs or resolve category/total disagreements by itself.
+
+**Limits:** Static source inspection only. No external model/classifier calls, model experiments, output-label replication, or complete repository audit. Byte-identical later code does not prove historical execution.
+
+**Replication:** `not_performed`. **Numerical check:** Static documentary reading only. Historical/current source files both SHA2564a3ef8b6feadc2e7857050222328cf53f4f42ba3fdce997acbf7174a1daadf17. No classifier inference or experimental reproduction.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C59](claims.md#c59)
+
+**Relevance rationale:** Resolves or narrows a specific edition/denominator question without recertifying earlier reading, pooling related representations as independent evidence, or inferring model experiment replication.
+
+**Next check:** Retain the numerical hold and identify the exact missing table-producing category/aggregation path and run outputs. Avoid calling a code inspection experimental replication.
+
+| Capture field | Value |
+|---|---|
+| `preservation_status` | captured |
+| `original_url` | [Source](https://raw.githubusercontent.com/HowieHwong/TrustLLM/3f55a278511218e1bc7152e77d74d5f5383b3dbc/trustllm_pkg/trustllm/task/fairness.py) |
+| `final_url` | [Source](https://raw.githubusercontent.com/HowieHwong/TrustLLM/3f55a278511218e1bc7152e77d74d5f5383b3dbc/trustllm_pkg/trustllm/task/fairness.py) |
+| `retrieved_at` | 2026-11-14T23:28:54.173272+00:00 |
+| `attempted_at` | 2026-11-14T23:28:53.839804+00:00 |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No capture-specific independent archive was checked in this bounded round; exact primary bytes and immutable source URLs where available are retained locally. Independent archival preservation is not claimed. |
+| `sha256` | 4a3ef8b6feadc2e7857050222328cf53f4f42ba3fdce997acbf7174a1daadf17 |
+| `byte_length` | 6617 |
+| `mime_type` | text/plain |
+| `published_on` | Not recorded / unavailable |
+| `version_claim` | Commit3f55a278511218e1bc7152e77d74d5f5383b3dbc; fairness.py gitblob2aeda66c2c6d4b24386eec4086c5ad27a1e0d2ce |
+| `locator_basis` | Version-specific page/section locators; PDF viewer page numbers include cover. |
+| `capture_path` | .source-captures/synthesis-4a3ef8b6feadc2e7857050222328cf53f4f42ba3fdce997acbf7174a1daadf17.txt |
+
+<a id="r4_editions_06"></a>
+### r4_editions_06
+
+**Source:** `huang_trustllm_2024`. **Theme:** edition_questions. **Reading:** Metadata only. **Coverage effect:** `none`.
+
+**Edition match:** `related_edition`. Official repository Git tree at exact historical commit3f55a278511218e1bc7152e77d74d5f5383b3dbc; source membership/provenance object, not paper content.
+
+**Inspected scope:** Selected tree entries for dataset/dataset.zip and trustllm_pkg/trustllm/task/fairness.py; used to bind immutable blob identities to the historical repository snapshot. No whole-repository substantive reading.
+
+**Locators:** Git tree commit3f55a278511218e1bc7152e77d74d5f5383b3dbc, recursive tree entries
+
+**Visual check:** None; no rendered figures independently inspected.
+
+**Findings:**
+
+- Historical tree maps the dataset ZIP to blobceb7df55bd8b795f6f1de3524d6c03dd54ebc3bf and scoring file to blob2aeda66c2c6d4b24386eec4086c5ad27a1e0d2ce.
+
+**Counterevidence / alternative:** Version-pinning supports reproducible documentary inspection, but does not identify published-run inputs or outputs.
+
+**Limits:** Metadata membership only, not execution or substantive source corroboration.
+
+**Replication:** `not_performed`. **Numerical check:** No numerical recomputation or experimental reproduction.
+
+**Relevance:** `background`. **Claim links:** None; no claim support forced.
+
+**Relevance rationale:** Resolves or narrows a specific edition/denominator question without recertifying earlier reading, pooling related representations as independent evidence, or inferring model experiment replication.
+
+**Next check:** Use as provenance for the dataset/code checks; do not count as independent empirical support.
+
+| Capture field | Value |
+|---|---|
+| `preservation_status` | captured |
+| `original_url` | [Source](https://api.github.com/repos/HowieHwong/TrustLLM/git/trees/3f55a278511218e1bc7152e77d74d5f5383b3dbc?recursive=1) |
+| `final_url` | [Source](https://api.github.com/repos/HowieHwong/TrustLLM/git/trees/3f55a278511218e1bc7152e77d74d5f5383b3dbc?recursive=1) |
+| `retrieved_at` | 2026-11-14T23:28:28.494292+00:00 |
+| `attempted_at` | 2026-11-14T23:28:28.052884+00:00 |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No capture-specific independent archive was checked in this bounded round; exact primary bytes and immutable source URLs where available are retained locally. Independent archival preservation is not claimed. |
+| `sha256` | a27fccb19e4c275252fc50565c91807b17a5ee75c929d06c53c43cad4952f8a4 |
+| `byte_length` | 16926 |
+| `mime_type` | application/json |
+| `published_on` | Not recorded / unavailable |
+| `version_claim` | Historical commit3f55a278511218e1bc7152e77d74d5f5383b3dbc recursive Git tree |
+| `locator_basis` | Version-specific page/section locators; PDF viewer page numbers include cover. |
+| `capture_path` | .source-captures/synthesis-a27fccb19e4c275252fc50565c91807b17a5ee75c929d06c53c43cad4952f8a4.json |
+
+<a id="r4_editions_07"></a>
+### r4_editions_07
+
+**Source:** `cunningham_sparseautoencoders_2024`. **Theme:** edition_questions. **Reading:** Metadata only. **Coverage effect:** `none`.
+
+**Edition match:** `same_record`. Exact official ICLR2024 title/venue entry links to the captured19-page proceedings PDF. The entry’s rendered author ordering/names differ from the PDF cover, so author-alias/order reconciliation is left open rather than automatically changing canonical fields.
+
+**Inspected scope:** Title, author rendering, venue label, abstract, Paper link and name-change-policy text on the official proceedings entry only.
+
+**Locators:** Title/author/ICLR2024 venue entry; Paper link to1fa1ab11f4bd5f94b2ec20e794dbfa3b-Paper-Conference.pdf
+
+**Visual check:** None; no rendered figures independently inspected.
+
+**Findings:**
+
+- The official proceedings entry authenticates the final PDF route and venue. Its author rendering and the downloadable PDF differ; this is a bibliographic-version lead, not a basis to infer private identity facts or alter citation keys.
+
+**Counterevidence / alternative:** The PDF itself matches the canonical work’s title and printed authors and supplies the checked result. Landing metadata does not establish content equivalence between editions.
+
+**Limits:** Metadata only; no authorship/name-change rationale investigated and no canonical author changes proposed.
+
+**Replication:** `not_performed`. **Numerical check:** No numerical recomputation or experimental reproduction.
+
+**Relevance:** `background`. **Claim links:** None; no claim support forced.
+
+**Relevance rationale:** Resolves or narrows a specific edition/denominator question without recertifying earlier reading, pooling related representations as independent evidence, or inferring model experiment replication.
+
+**Next check:** If bibliography display metadata is revised, reconcile exact publisher metadata and historical PDF citation form explicitly.
+
+| Capture field | Value |
+|---|---|
+| `preservation_status` | captured |
+| `original_url` | [Source](https://proceedings.iclr.cc/paper_files/paper/2024/hash/1fa1ab11f4bd5f94b2ec20e794dbfa3b-Abstract-Conference.html) |
+| `final_url` | [Source](https://proceedings.iclr.cc/paper_files/paper/2024/hash/1fa1ab11f4bd5f94b2ec20e794dbfa3b-Abstract-Conference.html) |
+| `retrieved_at` | 2026-11-14T23:26:28.409286+00:00 |
+| `attempted_at` | 2026-11-14T23:26:27.936775+00:00 |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No capture-specific independent archive was checked in this bounded round; exact primary bytes and immutable source URLs where available are retained locally. Independent archival preservation is not claimed. |
+| `sha256` | c047cb7562b6605b262aafbc94a9aad22bea5a14b464acdeed1dab93ca37130e |
+| `byte_length` | 9667 |
+| `mime_type` | text/html |
+| `published_on` | 2024 |
+| `version_claim` | Official ICLR2024 proceedings title entry; current retrieved rendering |
+| `locator_basis` | Version-specific page/section locators; PDF viewer page numbers include cover. |
+| `capture_path` | .source-captures/synthesis-c047cb7562b6605b262aafbc94a9aad22bea5a14b464acdeed1dab93ca37130e.html |
+
+<a id="r4_ny_01"></a>
+### r4_ny_01
+
+**Source:** `newyork_raiseact_article44b_nd`. **Theme:** edition_questions. **Reading:** Selected sections. **Coverage effect:** `scoped_review`.
+
+**Edition match:** `same_record`. Canonical codified Article44-B index; current page displays most recent revision from April3,2026. No identity with an earlier capture is asserted.
+
+**Inspected scope:** Article heading, most-recent-revision label, ten section links/headings and effective-date note only; linked operative sections were not reread.
+
+**Locators:** Article44-B, current revision label and final NB effective-date note
+
+**Visual check:** None; selected statutory and action text read, no visual authentication.
+
+**Findings:**
+
+- The live official codified index identifies the April3,2026 revision and January1,2027 effectiveness. Earlier403 access in the integration is now superseded by a successful dated retrieval.
+
+**Counterevidence / alternative:** The prospective date prevents treating codified duties as already operative on this retrieval; the index alone does not authenticate every historical amendment or practice.
+
+**Limits:** This is the article index, not a fresh complete reading of §§1420–1429. No actual compliance, administrative interpretation, judicial status or outcomes checked.
+
+**Replication:** `not_performed`. **Numerical check:** No numerical recalculation or experimental reproduction.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C17](claims.md#c17)
+
+**Relevance rationale:** Closes the earlier exact official access/effective-date gap for C17, without a full statute reread or proof of implementation.
+
+**Next check:** Use the captured revision/date for the narrow legal-force distinction; check operative clauses and later instruments if a specific duty becomes publication-leading.
+
+| Capture field | Value |
+|---|---|
+| `original_url` | [Source](https://www.nysenate.gov/legislation/laws/GBS/A44-B) |
+| `final_url` | [Source](https://www.nysenate.gov/legislation/laws/GBS/A44-B) |
+| `retrieved_at` | 2026-11-14T23:33:53.819760+00:00 |
+| `attempted_at` | 2026-11-14T23:33:53.206981+00:00 |
+| `sha256` | 4aec2e0a8591ebb341dde033b93fb491fb5a1139518985b177fdbf2b22a06502 |
+| `byte_length` | 36242 |
+| `mime_type` | text/html |
+| `preservation_status` | captured |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No checked independent capture-specific archive was established in this bounded round; exact live response bytes and actual retrieval metadata are retained locally. |
+| `published_on` | Not recorded / unavailable |
+| `version_claim` | Codified index displays revision from2026-04-03 and NB effective2027-01-01 |
+| `locator_basis` | Stable article/action labels and bill section/page/printed line numbers; retrieval is current, not an authenticated historical snapshot. |
+| `capture_path` | .source-captures/synthesis-4aec2e0a8591ebb341dde033b93fb491fb5a1139518985b177fdbf2b22a06502.html |
+
+<a id="r4_ny_02"></a>
+### r4_ny_02
+
+**Source:** `newyork_raiseact_article44b_nd`. **Theme:** edition_questions. **Reading:** Selected sections. **Coverage effect:** `scoped_review`.
+
+**Edition match:** `related_edition`. Official S8828 legislative tracker is related enactment provenance for the codified article, not the same document edition.
+
+**Inspected scope:** Bill identity/status; action history; laws-affected and sponsor-memo relationship; link to bill PDF. Unrelated navigation, votes and complete reproduced bill body not comprehensively read.
+
+**Locators:** S8828 status and Actions: March27,2026 signed chap.96; Laws Affected; PDF link
+
+**Visual check:** None; selected statutory and action text read, no visual authentication.
+
+**Findings:**
+
+- The official action history records S8828 signed as chapter96 on March27,2026, and identifies its repeal/re-add relationship to Article44-B. This connects the amendatory text to the codification rather than relying on an unpassed bill alone.
+
+**Counterevidence / alternative:** A bill-page proposed text alone would not establish enacted law; the recorded signed action and codified index supply the scoped connection. These representations are one legislative lineage, not independent compliance evidence.
+
+**Limits:** A live legislative status page supports identity/enactment provenance, not a complete audit of the statute’s legal application or subsequent amendments.
+
+**Replication:** `not_performed`. **Numerical check:** No numerical recalculation or experimental reproduction.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C17](claims.md#c17)
+
+**Relevance rationale:** Closes the earlier exact official access/effective-date gap for C17, without a full statute reread or proof of implementation.
+
+**Next check:** For broader legal claims, inspect exact codified clauses and any later amendments or decisions; preserve original and amended versions separately.
+
+| Capture field | Value |
+|---|---|
+| `original_url` | [Source](https://www.nysenate.gov/legislation/bills/2025/S8828) |
+| `final_url` | [Source](https://www.nysenate.gov/legislation/bills/2025/S8828) |
+| `retrieved_at` | 2026-11-14T23:33:54.673070+00:00 |
+| `attempted_at` | 2026-11-14T23:33:54.536579+00:00 |
+| `sha256` | 96d0577a15cbf00393bd8cda0bf4adf677df0ea9ba53c031649d44d7276a16d4 |
+| `byte_length` | 121621 |
+| `mime_type` | text/html |
+| `preservation_status` | captured |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No checked independent capture-specific archive was established in this bounded round; exact live response bytes and actual retrieval metadata are retained locally. |
+| `published_on` | Not recorded / unavailable |
+| `version_claim` | S8828 official action history, signed chapter96 on2026-03-27 |
+| `locator_basis` | Stable article/action labels and bill section/page/printed line numbers; retrieval is current, not an authenticated historical snapshot. |
+| `capture_path` | .source-captures/synthesis-96d0577a15cbf00393bd8cda0bf4adf677df0ea9ba53c031649d44d7276a16d4.html |
+
+<a id="r4_ny_03"></a>
+### r4_ny_03
+
+**Source:** `newyork_raiseact_article44b_nd`. **Theme:** edition_questions. **Reading:** Selected sections. **Coverage effect:** `scoped_review`.
+
+**Edition match:** `related_edition`. Official S8828 bill text linked by its signed legislative tracker; related amendatory instrument, not a substitute full reading of consolidated Article44-B.
+
+**Inspected scope:** PDF p1 identification/title and p2 opening§2 repeal/re-add clause; PDF p9§§3–5 effective-date/severability provisions only. Other definitions, duties, thresholds, exceptions and enforcement provisions not fully read.
+
+**Locators:** S8828 coverp1; §2 openingp2; §§3–5 p9, lines27–45
+
+**Visual check:** None; selected statutory and action text read, no visual authentication.
+
+**Findings:**
+
+- Section3 changes the original act’s effective date to January1,2027. Section5 makes that date amendment immediate while specified replacement provisions follow the underlying act’s effective date. Read together with the signed action and codified note, this resolves the narrow date question.
+
+**Counterevidence / alternative:** Different timing for the date amendment and replacement provisions prevents reading “effective immediately” as making all replacement duties immediately operative.
+
+**Limits:** Selected nine-page amendatory text only. The January8,2026 cover is the bill’s printed date; March27 signing comes from the action history. No assertion that every present statutory or judicial-status issue is settled.
+
+**Replication:** `not_performed`. **Numerical check:** No numerical recalculation or experimental reproduction.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C17](claims.md#c17)
+
+**Relevance rationale:** Closes the earlier exact official access/effective-date gap for C17, without a full statute reread or proof of implementation.
+
+**Next check:** Retain the future-effective qualification; review actual operative sections for application-specific claims.
+
+| Capture field | Value |
+|---|---|
+| `original_url` | [Source](https://legislation.nysenate.gov/pdf/bills/2025/S8828) |
+| `final_url` | [Source](https://legislation.nysenate.gov/pdf/bills/2025/S8828) |
+| `retrieved_at` | 2026-11-14T23:33:54.536072+00:00 |
+| `attempted_at` | 2026-11-14T23:33:54.030748+00:00 |
+| `sha256` | bfdc16dbcbb0abcc513b0d020602c899efabf565fe2114bfb6195f77dd14ee22 |
+| `byte_length` | 31267 |
+| `mime_type` | application/pdf |
+| `preservation_status` | captured |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | No checked independent capture-specific archive was established in this bounded round; exact live response bytes and actual retrieval metadata are retained locally. |
+| `published_on` | 2026-01-08 |
+| `version_claim` | S8828 printed January8,2026; §§3–5 effective-date provisions |
+| `locator_basis` | Stable article/action labels and bill section/page/printed line numbers; retrieval is current, not an authenticated historical snapshot. |
+| `capture_path` | .source-captures/synthesis-bfdc16dbcbb0abcc513b0d020602c899efabf565fe2114bfb6195f77dd14ee22.pdf |

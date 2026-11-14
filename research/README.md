@@ -25,6 +25,8 @@ The complete-corpus objective remains: deepen reading where needed, connect clai
 
 Later rounds preserve the inherited ledger and append source-reading events. A source can acquire a background, related-work or exclusion role without supporting a claim. Complete reading counts advance only for a captured, completely read text whose edition matches the record; related preprints and scoped checks remain separately labeled. Read the generated summary for current counts and the reconciliation queue for numbers omitted or qualified after checking.
 
+The summary separates fresh complete checks of inherited full-text records from new completions and labels without a fresh complete check. A current webpage check covers that captured page, rather than linked papers/data or an authenticated earlier snapshot. Fresh reading establishes its own scope and does not prove the earlier reading happened.
+
 Some gaps concern evidence: incomplete appendices, uncertain historical versions, missing comparators, shared data lineage and unverified implementation or causal effects. Others concern research organization: precise locators, relevance decisions, consistent counts and navigable links. Better organization makes the first group visible; it does not resolve it.
 
 The cyber datasets retain their own admission rules and dated observations. [Carbon's source-review package](cyber-deployment/carbon-source-review/README.md) remains pending despite its merged documentation. The synthesis may discuss that provisional case with its status explicit; it does not admit its proposed records automatically.

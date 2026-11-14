@@ -72,6 +72,20 @@ Status `provisional` identifies a working synthesis; `scoped_check` identifies a
 | [C63](#c63) | policy_implementation | scoped_check | The 2025 Foundation Model Transparency Index measures disclosed information for 13 developers across 100 indicators. Its reported mean of 40.69/100 describes disclosure, rather than verified control effectiveness or a controlled annual change in safety. |
 | [C64](#c64) | policy_implementation | scoped_check | NVIDIA’s report, applicable as of August 2025, describes screening, approval, reassessment and pre-release testing mechanisms, including reported Garak use. Its risk-analysis template and issuer descriptions do not demonstrate realized risk reduction. |
 | [C65](#c65) | policy_implementation | scoped_check | Meta’s April 7, 2026 v2 framework combines a material-contribution risk trigger with conditional mitigated development/deployment and more explicit accountability. The inspected text alone does not establish overall strengthening or weakening, adherence, or a safety effect. |
+| [C66](#c66) | governance | provisional | System-specific safety cases provide an explicit way to connect a deployment claim to evidence and review, while threshold choices, reviewer capacity and update rules still require justification beyond producing a document. |
+| [C67](#c67) | governance | scoped_check | Safety-case confidence analysis can expose assumptions and prioritize doubts, but propagated probabilities and an LLM-Delphi pilot do not by themselves calibrate deployment safety or supply independent expert corroboration. |
+| [C68](#c68) | governance | provisional | A dynamic safety-case design links changed artifacts or monitored indicators to affected claims and response owners, while correctness of the initial argument, traceability and indicator validity remain prerequisites rather than outputs of consistency checking. |
+| [C69](#c69) | governance | provisional | Guarded architectures can place assurance on narrower, more understandable components, but their guarantees depend on correct hazard models, trusted perception and safe enforcement; adding diversity alone does not establish independent failure probabilities. |
+| [C70](#c70) | evaluator_integrity | scoped_check | Internal probes can discriminate selected evaluation and deployment prompt distributions, but that readout and its size association do not establish deceptive behavior or a universal scaling law for concealment. |
+| [C71](#c71) | evaluator_integrity | scoped_check | Activation steering can alter engineered evaluation-conditional behavior, while simple-prompt and unrelated-feature controls show why eliciting a different output is insufficient to establish an awareness-specific mechanism or unknown deployment behavior. |
+| [C72](#c72) | evaluator_integrity | scoped_check | Prompted models can conceal some successful capability underperformance from a reasoning monitor, but conditional approval, noisy success filtering and efficacy/selectivity tradeoffs prevent interpreting this as spontaneous or reliably successful deployment sandbagging. |
+| [C73](#c73) | evaluator_integrity | scoped_check | Complex sabotage-agent tests make joint task success and monitor detection separately inspectable and show scoped monitor-training gains; those results remain conditional on instructed goals, observed information, filtering and when detection occurs. |
+| [C74](#c74) | evaluator_integrity | scoped_check | Pairwise reward-model discrimination and downstream policy quality require different validation. PPE supplies a controlled example connecting selected proxy metrics to post-DPO human preferences, while showing that familiar benchmark rankings need not predict the same outcome. |
+| [C75](#c75) | evaluator_integrity | scoped_check | Synthetic preference and judgment training can improve a generative judge on tested benchmarks, while leaving residual order sensitivity, uneven task gains and dependence on the seed model and constructed labels. |
+| [C76](#c76) | evaluator_integrity | scoped_check | A statistical annotator-substitution test can make a task-specific comparison with sampled human judgments explicit, but its pass decision depends on the reference population, cost-benefit threshold, imbalance treatment and intended construct. |
+| [C77](#c77) | evaluator_integrity | scoped_check | Joint statistical models of the answer and grading process can separate modeled score-scale shifts, item effects and uncertainty that a single agreement statistic obscures; the demonstrated bias adjustments are simulated, model-dependent counterfactuals. |
+| [C78](#c78) | evaluation_configuration | scoped_check | A task-completion time horizon supplies a common difficulty/reliability measure for a specified agent and task suite; it is not the duration an AI operates autonomously or a direct measure of whole-job automation. |
+| [C79](#c79) | evaluator_integrity | scoped_check | A standardized hazardous-response benchmark can provide explicit rules, confidential tests and configuration-sensitive feedback without certifying system safety; evaluator, grading and prompt-set versions must remain part of the result. |
 
 <a id="c01"></a>
 ## C01
@@ -86,8 +100,10 @@ The reviewed benchmarks add distinct task, workflow and reliability measurements
 | `xie_osworld_2024` — supports | [Source](https://proceedings.neurips.cc/paper_files/paper/2024/file/5d413e48f84dc61244b6be550f1cd8f5-Paper-Datasets_and_Benchmarks_Track.pdf); NeurIPS 2024 proceedings; abstract and benchmark-design passages | OSWorld tests 369 desktop/web tasks with execution-based grading in controlled environments. | `supplied_ledger`; Inherited selected sections description: Official NeurIPS proceedings extract, including abstract and design passages; not independently repeated in this integration. |
 | `xu_theagentcompany_2024` — supports | [Source](https://arxiv.org/pdf/2412.14161); Benchmark design and setup; inherited extracted lines 0–200/1302 (page locator pending) | Professional workflows are evaluated within a simulated organization. | `supplied_ledger`; Inherited selected sections description: Selected extracted PDF passages (line span 0–200 of 1302); not independently repeated in this integration. |
 | `yao_taubench_2024` — supports | [Source](https://arxiv.org/pdf/2406.12045); Benchmark setup and repeated-trial reliability; inherited extracted lines 0–204/2369 (page locator pending) | Tool use, domain policies and user simulation define a repeated-trial reliability endpoint. | `supplied_ledger`; Inherited selected sections description: Selected extracted PDF passages (line span 0–204 of 2369); not independently repeated in this integration. |
+| `aisi_safetyinstitutesjoint_2024` — supports | [Source](https://www.aisi.gov.uk/blog/pre-deployment-evaluation-of-openais-o1-model); Issuer Overview/Methodology/Conclusion, datedDecember 18, 2024 | A real external pre-release exercise reported limited access, scaffold repair and version-specific comparisons rather than a release-safety endorsement. | `this_run_primary`; Complete accessible captured HTML text: Introduction, Overview, Methodology, selected findings in all 3 domains, Conclusion, report links, date/name-change note and footer. No linked report is included in this complete-page event.; review events: [r4_depthsample_02](rounds.md#r4_depthsample_02) |
+| `aisi_safetyinstitutesjoint_2024` — supports | [Source](https://cdn.prod.website-files.com/663bd486c5e4c81588db7a1d/6763fac97cd22a9484ac3c37_o1_uk_us_december_publication_final.pdf); December 2024 technical report §§1–4,9–10.4; Table 4.1 | Exact methods specify attempts/messages rather than equal cost, uncertainty excluding scaffold variation and tool/scoring effects; positive US Cybench and bio-tool results remain configuration-specific. | `this_run_primary`; PDF cover/contents pp1–3; printedpp1–7/viewerpp4–10 (Introduction, disclaimers, complete general methods, US Cybench methods/results/Table 4.1); viewerp12/printedp9 (future-work discussion/UK methods opening); printedpp11–14/viewerpp14–17 (UK agent setup/results, selected domain discussions); printedpp17–20/viewerpp20–23 (LAB-Bench methods, tooling, scoring and selected results). Plot text on viewerp11 was partly unreadable and is not used for numerical claims. Other pages/remaining software/AI sections/references were not fully read.; review events: [r4_depthsample_03](rounds.md#r4_depthsample_03) |
 
-**Limits:** These controlled tests do not estimate general workplace safety or operational harm. Some inherited selected-section locators are extraction spans rather than stable page references. Standalone Cybench is cited in the supplied review but absent from the admitted bibliography.
+**Limits:** These controlled tests do not estimate general workplace safety or operational harm. Some inherited selected-section locators are extraction spans rather than stable page references. Standalone Cybench is cited in the supplied review but absent from the admitted bibliography. Joint AISI o1 overview and technical report describe one exercise; the newly accessible report remains selectively read. Its UK apprentice headline differs internally across the overview and result section, so no affected rate is adopted.
 
 **Counterevidence / alternative:** Realistic software and longer workflows strengthen task relevance; that realism alone does not establish transfer to defended deployment or authorization boundaries.
 
@@ -382,8 +398,9 @@ Voluntary commitments, disclosure portals and documentary framework scores make 
 | `isoiec_42006_2025` — contextualizes | [Source](https://www.iso.org/standard/42006); ISO/IEC42006:2025 catalog scope/edition and preview; licensed normative clauses not inspected | ISO/IEC 42006 specifies additional requirements for bodies auditing and certifying AI management systems against ISO/IEC 42001. | `supplied_ledger`; Inherited Metadata only; ISO catalog scope, edition and preview entry. Licensed normative clauses unavailable in this audit. It governs certification bodies rather than prescribing model thresholds. Not independently repeated here. |
 | `ec_guidelinesgpaiproviders_2025` — contextualizes | [Source](https://ec.europa.eu/newsroom/dae/redirection/document/118340); C(2025)7719final, cover Nov19,2025; paragraph9, printedp2/PDFviewerp5 | The current linked English edition says the guidelines are not binding and reserves authoritative AIAct interpretation to the CJEU. Its later cover date does not authenticate the inherited July edition. | `this_run_primary`; Fresh selected cover/paragraph9 and canonical landing-page metadata only; no complete36-page reread. Historical version reconciliation remains open. |
 | `ec_gpai_trainingcontenttemplate_2025` — contextualizes | [Source](https://www.sidley.com/en/-/media/resource-pages/ai-monitor/guidance/eu-explanatory-notice-and-template-for-the-public-summary-of-training-content.pdf?la=en); C(2025)5235 final explanatory notice and template; cover and Article53(1)(d) basis; mirror identity unverified | Commission notice/template specifies a public, sufficiently detailed yet broadly comprehensive training-content summary; Article 53(2) open-source exception does not waive this obligation. | `supplied_ledger`; Inherited Selected sections; official-titled C(2025) 5235 final PDF mirror, cover, Article 53(1)(d) basis and template design. Issuer HTML returned 429. Mirror permits text inspection, without byte identity to an issuer copy. Summary is distinct from disclosure of the complete training dataset. Not independently repeated here. |
+| `newyork_raiseact_article44b_nd` — contextualizes | [Source](https://www.nysenate.gov/legislation/laws/GBS/A44-B); Article44-B revision/effective-date note; S8828 action history and §§3–5 | The official codification displays the April3,2026 revision and January1,2027 effective date; signed chapter96 history and effective-date clauses support the prospective-duty distinction. This is a legal-text check, not implementation evidence. | `this_run_primary`; Selected official index/action and amendatory timing clauses, not all ten operative sections or subsequent legal status.; review events: [r4_ny_01](rounds.md#r4_ny_01), [r4_ny_02](rounds.md#r4_ny_02), [r4_ny_03](rounds.md#r4_ny_03) |
 
-**Limits:** This is a distinction between kinds of evidence, not a determination of every instrument’s present legal force. The supplied patch corrects specified legal-status fields; unreviewed instruments and current application still require dated source checks. ISO evidence is catalog/preview scope only. The Commission template was inspected through a mirror; issuer-byte identity and exact clause locators remain open. The supplied correction package is now integrated; it does not recertify all instruments or editions.
+**Limits:** This is a distinction between kinds of evidence, not a determination of every instrument’s present legal force. The supplied patch corrects specified legal-status fields; unreviewed instruments and current application still require dated source checks. ISO evidence is catalog/preview scope only. The Commission template was inspected through a mirror; issuer-byte identity and exact clause locators remain open. The supplied correction package is now integrated; it does not recertify all instruments or editions. The earlier New York access/date hold is closed narrowly by current official codification, signed chapter history and amendatory timing clauses; not all operative sections or later application were reread.
 
 **Counterevidence / alternative:** Statutory duties and enforceable decisions can exist alongside voluntary tools; documented implementation or outcome studies could provide additional evidence beyond a policy text or disclosure score.
 
@@ -920,12 +937,13 @@ Selected SAE interventions localize and alter counterfactual indirect-object-ide
 |---|---|---|---|
 | `cunningham_sparseautoencoders_2024` — supports | [Source](https://arxiv.org/pdf/2309.08600v3); Sections4.1–4.2, Figure3 and AppendixF/Figure17 (pp.5–6,18–19) | Counterfactual patching in Pythia410M can achieve closer target outputs using fewer directions/smaller edits than PCA and non-sparse dictionaries in the reported setup. | `this_run_primary`; Complete20-page arXivv3 including AppendicesA–G and Figures1–18; dense panels assessed qualitatively.; review events: [r3_mechvalidation_02](rounds.md#r3_mechvalidation_02) |
 | `makelov_principledevaluations_2024` — bounds | [Source](https://arxiv.org/pdf/2405.08366v3); Sections3.2–3.4,4.2,5.1–5.2, Figure4; AppendixA.2–A.4 (pp.4–13,22–24) | Task-specific SAE control outperforms the frozen-decoder control but remains weaker than supervised dictionaries; full-distribution SAEs fare worse and can match frozen-random-decoder controllability despite interpretable features. | `this_run_primary`; Selected methods/results and specified appendices; Figures2–4,6,13 only visually checked.; review events: [r3_mechvalidation_04](rounds.md#r3_mechvalidation_04) |
+| `cunningham_sparseautoencoders_2024` — supports | [Source](https://proceedings.iclr.cc/paper_files/paper/2024/file/1fa1ab11f4bd5f94b2ec20e794dbfa3b-Paper-Conference.pdf); ICLR2024 §§4.1–4.2 pp5–6, Figure 4; §6.2 p9; AppendixF/Figure 16 p19 | Exact final proceedings preserves the selected IOI causal-editing result and limitations; do not assume blanket arXiv v3 equivalence. FinalEq4 normalizes reconstruction and figure/page numbering changes. | `this_run_primary`; PDF cover/§§1–2 pp1–3; complete §4 pp5–6 and Figure 4; selected §5 examples pp7–8; §6.1–6.3 p9; AppendixA–B text p12; AppendixE–G text pp17–19. Remaining §3, references, parts of §5 and appendices were not comprehensively reread. Text-diff discovery was followed by reading claim-critical passages; it is not a full 19-page certification.; review events: [r4_editions_01](rounds.md#r4_editions_01) |
 
-**Limits:** Different small model families but shared IOI task lineage and selected interventions; this does not establish generalization beyond that task or evidence for complete feature recovery, reliable monitoring, or deployed safeguards. Neither experiment was reproduced in this round.
+**Limits:** Different small model families but shared IOI task lineage and selected interventions; this does not establish generalization beyond that task or evidence for complete feature recovery, reliable monitoring, or deployed safeguards. Neither experiment was reproduced in this round. Selected official ICLR2024 proceedings now authenticate the central IOI result, but printed reconstruction normalization and figure numbering differ from arXivv3; its perplexity sentence is absent from the final text. Keep version-specific particulars separate.
 
 **Counterevidence / alternative:** Successful ablations/editing provide affirmative causal utility under their setup. High no-intervention agreement can obscure some attribute effects; human ontologies, feature selection, and non-exhaustive tuning bound negative claims.
 
-**Next check:** Evaluate diverse task families with held-out prompts, random decoder/model controls, edit magnitude, and interpretation-consistent causal effects; compare later proceedings editions before treating gap sizes as current limits.
+**Next check:** Evaluate broader task families with held-out prompts and negative controls. Exact final proceedings access is closed for selected claim-critical passages; complete-paper reading and result-level equivalence remain open where particular numbers depend on edition.
 
 <a id="c50"></a>
 ## C50
@@ -1044,12 +1062,13 @@ Public input can change model behavior and reduce a specified bias benchmark, wh
 | Source and relation | Version / locator | Scoped finding | Review basis and depth |
 |---|---|---|---|
 | `huang_collectiveconstitutional_2024` — supports | [Source](https://arxiv.org/pdf/2406.07814v1); arXiv v1 §§3.1–3.4 pp3–6; §4.3 pp7–8 Figures4–5; §§5–7 pp9–10 | Public versus Standard constitutions are the stated training difference; Public is lower on all nine BBQ dimensions but2–3 percentage points lower on OpinionQA alignment across five U.S. ideology groups. | `this_run_primary`; All23 manuscript pages read; charts4–5/Table1/interface visually checked. Publisher edition identity and code/data not independently compared.; review events: [r3_fairness_01](rounds.md#r3_fairness_01) |
+| `huang_collectiveconstitutional_2024` — supports | [Source](https://facctconference.org/static/papers24/facct24-94.pdf); Official FAccT2024 PDF §§3.1–3.4 pp3–6; §4.3/Figures4–5 p7/Table 1 p8; §5 p9 | Conference-hosted exact-DOI edition confirms lower BBQ bias and lower OpinionQA representativeness. Access/version gap is closed for these passages; Elo label/interpretation ambiguity persists. | `this_run_primary`; Cover/abstract and selected introduction; participant/input transformation/training methods §§3.1–3.4 pp3–6; quantitative/qualitative findings §§4.1–4.4 pp6–9; limitations §5 p9; discussion/ethics §§6–7 p10. References and appendices were not newly read in full. A programmatic comparison covers normalized extracted text on pages2–23, not substantive rereading or visual certification of every page.; review events: [r4_editions_02](rounds.md#r4_editions_02) |
 
-**Limits:** Screened AI-familiar U.S. sample, one pair of controlled model trainings, researcher-mediated constitution construction and no direct adherence metric or downstream impact measure. Nearby capability scores do not establish statistical equivalence; Table1 Elo interpretation is internally inconsistent.
+**Limits:** Screened AI-familiar U.S. sample, one pair of model trainings, researcher-mediated constitution construction and no direct adherence or downstream impact measure. Official FAccT exact-DOI passages now authenticate the central results; automatic body-text comparison is not a new complete-final reading. Table1 Elo labeling/interpretation remains ambiguous, and nearby capability scores do not establish equivalence.
 
 **Counterevidence / alternative:** Positive BBQ changes coexist with less representative OpinionQA response distributions. The experiment does not confer universal public consent, resolve conflicting principles or establish legitimacy for all affected populations.
 
-**Next check:** Verify canonical publisher text and inspect underlying outputs before Elo/voting claims; prioritize direct principle adherence, subgroup coverage and actual-use impact over treating one proxy as universal fairness.
+**Next check:** Resolve Elo labels and underlying comparison outputs if consequential; retain lower BBQ and lower OpinionQA findings. Final-proceedings full reading remains unfinished; do not treat programmatic text identity as independent semantic rereading.
 
 <a id="c58"></a>
 ## C58
@@ -1079,12 +1098,14 @@ Fairness benchmark results depend on distinct constructs and normative choices: 
 |---|---|---|---|
 | `huang_trustllm_2024` — supports | [Source](https://raw.githubusercontent.com/mlresearch/v235/main/assets/huang24x/huang24x.pdf); ICML/PMLR235 AppendixF pp74–79, Tables19–25 | TrustLLM separately scores stereotype agreement/recognition/refusal, salary-prediction association and subjective-choice neutrality; subjective preference 'fairness' is defined as refusal/neutrality and measured through Longformer. Paper cautions that high association-test p-values can accompany poor predictions. | `this_run_primary`; Complete fairness AppendixFpp74–79, abstractp1 and benchmark designp5; Table25 visually checked; broader105-page object not fully read.; review events: [r3_fairness_03](rounds.md#r3_fairness_03) |
 | `wang_decodingtrust_2023` — bounds | [Source](https://proceedings.neurips.cc/paper_files/paper/2023/file/63cb9921eecf51bfad27a99b2c53dd6d-Paper-Datasets_and_Benchmarks.pdf); NeurIPS2023 AppendixJ.1–J.4 PDFpp87–89/printed63–65 | DecodingTrust instead evaluates demographic parity/equalized-odds prediction gaps on200 constructed Adult salary samples with separately controlled data base rates. Its Table44 zero-shot baseline needs sampling/condition clarification before a cross-table quantitative claim. | `this_run_primary`; Fairness AppendixJ introductory passagep86 and J.1–J.4pp87–89; Table43–44 visually checked.; review events: [r3_fairness_04](rounds.md#r3_fairness_04) |
+| `huang_trustllm_2024` — bounds | [Source](https://api.github.com/repos/HowieHwong/TrustLLM/git/blobs/ceb7df55bd8b795f6f1de3524d6c03dd54ebc3bf); Historical official Git blobceb7df55bd8b795f6f1de3524d6c03dd54ebc3bf; selected fairness/preference.json member | Input artifact has240 prompts/120 unique option pairs and no category labels. Its ordered options support80 ideology/40 culture text, but do not identify the published category-column aggregation. | `this_run_primary`; Base64-decoded exact GitHub blob API representation of the dataset ZIP; selected fairness/preference.json member only. Parsed all 240 rows and type/option fields, checked matching120 option pairs across plain/force templates, and read the120 unique option-pair labels. Other datasets, classifier outputs and response narratives were not audited.; review events: [r4_editions_03](rounds.md#r4_editions_03) |
+| `huang_trustllm_2024` — bounds | [Source](https://raw.githubusercontent.com/HowieHwong/TrustLLM/3f55a278511218e1bc7152e77d74d5f5383b3dbc/trustllm_pkg/trustllm/task/fairness.py); Commit3f55a278511218e1bc7152e77d74d5f5383b3dbc fairness.py FairnessEval.preference_eval | Routine returns plain/force/overall refusal rates and has no category split or Table 25 construction. The exact experiment/category-aggregation provenance remains missing. | `this_run_primary`; Inspected FairnessEval.preference_eval and its surrounding class interface in the6617-byte fairness.py file. Read filtering/scoring/return paths, without importing or executing model/classifier dependencies. Other fairness methods were not validated as an entire package.; review events: [r4_editions_05](rounds.md#r4_editions_05) |
 
-**Limits:** Historical model versions, proxy extractors/classifiers and shared benchmark/task ancestry limit transfer and independence. TrustLLM Table25 needs category-count/aggregation clarification. DecodingTrust Table44 needs baseline/sampling/condition clarification; distinct random draws may explain cross-table differences. Neither question establishes a source error or invalidates the qualitative findings; affected headline totals and cross-condition remedy rates are omitted.
+**Limits:** Historical model versions, proxy extractors/classifiers and shared benchmark/task ancestry limit transfer and independence. TrustLLM Table25 needs category-count/aggregation clarification. DecodingTrust Table44 needs baseline/sampling/condition clarification; distinct random draws may explain cross-table differences. Neither question establishes a source error or invalidates the qualitative findings; affected headline totals and cross-condition remedy rates are omitted. The pinned preference input has no explicit category labels and its inspected scoring function has no category-table path; manual option-group inspection is not independent category validation.
 
 **Counterevidence / alternative:** Several models perform well on some stereotype tasks, and balanced context can reduce reported prediction gaps. These positives coexist with recognition/association weaknesses and leave population impact unmeasured. Refusal can improve one fairness metric while reducing utility or opinion-distribution alignment.
 
-**Next check:** Resolve exact dataset category counts, conditional denominators, metric conventions and classifier validity; report each tested construct/threat model and avoid inferred universal fairness or independent corroboration.
+**Next check:** TrustLLM dataset and scoring-path access are now documented. Obtain raw model responses/classifier outputs plus the exact category/column/table aggregation manifest before using affected Table25 rates; no corrected totals follow from inferred weights. Resolve DecodingTrust sampling/condition comparability and retain each construct separately.
 
 <a id="c60"></a>
 ## C60
@@ -1193,6 +1214,250 @@ Meta’s April 7, 2026 v2 framework combines a material-contribution risk trigge
 
 **Next check:** If overall policy direction leads the publication, compare exact v1 bytes and actual preparedness reports/risk decisions. Preserve v2’s conditions now and leave the consequential interpretive judgment open.
 
+<a id="c66"></a>
+## C66
+
+System-specific safety cases provide an explicit way to connect a deployment claim to evidence and review, while threshold choices, reviewer capacity and update rules still require justification beyond producing a document.
+
+**Status:** provisional. **Theme:** governance.
+
+| Source and relation | Version / locator | Scoped finding | Review basis and depth |
+|---|---|---|---|
+| `buhl_safetycasesfrontier_2024` — supports | [Source](https://arxiv.org/pdf/2410.21572v1); v1 §§2–5 pp5–18, Tables1–5 | Explicit scope, outcome objectives, evidential support and review form a conditional decision process; sketches and regulatory comparisons do not measure effectiveness. | `this_run_primary`; All 25 pages of accessible v1 text read, including title, contents, executive summary, Sections1–7, footnotes, Tables1–5, text/captions of Figures1–6, abbreviations, acknowledgments and references. No linked sources or underlying industry cases independently inspected.; review events: [r4_safetycases_01](rounds.md#r4_safetycases_01) |
+| `hilton_safetycasesscalable_2025` — supports | [Source](https://arxiv.org/pdf/2503.04744v1); v1 §§2–4 pp2–14, especially §3.1/Table2 and §3.2/Table3 | Organizational frameworks and system-specific cases are complementary. Seoul-commitment mapping assumes adequate execution and correct cases; additional governance/threshold processes remain necessary. | `this_run_primary`; All accessible text of the 19-page v1 representation, including Sections1–5, both figure captions/labels, Tables1–3, footnotes and references. The final page contains only a page number. No linked papers, standards or empirical artifacts opened.; review events: [r4_safetycases_02](rounds.md#r4_safetycases_02) |
+| `lee_constructingsafety_2026` — bounds | [Source](https://arxiv.org/pdf/2601.22773v1); v1 §§3–4 pp8–14; §6–7 pp26–30 | Reusable CAE patterns include an author-reported synthetic tender-review pilot, but the inspected quantitative description does not establish a verified broad safety/fairness or noninferiority conclusion. | `this_run_primary`; Pinned v1 pp1,8–10,13–14,26–30: title/abstract/introduction opening; review methodology and selection; taxonomy/architecture opening; complete tender-case section and limitations/conclusion. Other taxonomy/pattern subsections, all selected-study appendices and bibliography not fully read.; review events: [r4_safetycases_03](rounds.md#r4_safetycases_03) |
+
+**Limits:** Methodological arguments and attributed illustrations, not controlled evidence that adopting safety cases improves frontier deployment outcomes. Lee v1 has a canonical edition mismatch. Shared authors, citations and the Goemans inability template reduce independence.
+
+**Counterevidence / alternative:** Explicit reasoning can reveal gaps and support comparison, but review cost, capture, confirmation bias, uncertain thresholds and open-ended use can produce false assurance. Rules and other governance mechanisms can remain complementary.
+
+**Next check:** Compare actual reviewed cases, adverse findings and ensuing decisions; retain positive structuring mechanisms without claiming a universally superior governance method.
+
+<a id="c67"></a>
+## C67
+
+Safety-case confidence analysis can expose assumptions and prioritize doubts, but propagated probabilities and an LLM-Delphi pilot do not by themselves calibrate deployment safety or supply independent expert corroboration.
+
+**Status:** scoped_check. **Theme:** governance.
+
+| Source and relation | Version / locator | Scoped finding | Review basis and depth |
+|---|---|---|---|
+| `barrett_assessingconfidence_2025` — supports | [Source](https://arxiv.org/pdf/2502.05791v1); v1 §§2,4,7 pp7–9,17–20,27–33; §10 pp42–45 | The study combines an explicit assurance argument, a selected forecasting pilot and illustrative confidence propagation. Product assumptions differ from a dependence-free union-bound lower bound; neither validates uncalibrated inputs or argument soundness. | `this_run_primary`; Pinned v1 Sections1–2 pp6–9; full §4 pp17–20; §7 and opening §8 pp27–33; §9.3 and §10 pp42–45. Unread logical-block/weight-of-evidence details pp10–16, defeater details pp21–26, remaining priority/communication details pp34–41 and bibliography pp46–48 remain outside this event.; review events: [r4_safetycases_04](rounds.md#r4_safetycases_04) |
+
+**Limits:** Single cyber-inability template, chosen 100-question forecasting sample and role prompts to one LLM model; no independent reanalysis or safety-case-domain calibration. Brier score is not a pure calibration measure, and graph arithmetic is not measured system risk.
+
+**Counterevidence / alternative:** The reported pilot is affirmative experimental evidence on its chosen forecasting comparison, and structured doubts can make review more inspectable. Correlated judgments, information-time differences, subjective parameters and weak lower bounds still constrain transfer.
+
+**Next check:** Audit forecast inputs/metrics and application-specific calibration; justify the conjunctive argument model separately. Do not inherit §7.1’s false independence/equality wording or turn a zero lower bound into proof of zero actual safety confidence.
+
+<a id="c68"></a>
+## C68
+
+A dynamic safety-case design links changed artifacts or monitored indicators to affected claims and response owners, while correctness of the initial argument, traceability and indicator validity remain prerequisites rather than outputs of consistency checking.
+
+**Status:** provisional. **Theme:** governance.
+
+| Source and relation | Version / locator | Scoped finding | Review basis and depth |
+|---|---|---|---|
+| `carlan_dynamicsafetycases_2024` — supports | [Source](https://arxiv.org/pdf/2412.17618v1); v1 §§3–4.2 pp6–12; Scenario4/Table13 p33; §5.1 pp34–36; §§6–8 pp45–47 | The proposed DSCMS specifies automated impact/consistency rules, indicator monitoring and governance escalation; worked cyber scenarios illustrate logic, while a frontier prototype and indicator validation remain future work. | `this_run_primary`; Pinned v1 pp6–12 (related work, DSCMS requirements, CSA assumptions and SPI design); pp27–28 (selected no-underelicitation/no-sandbagging SPI tables); pp33–36 (example change impact and governance integration); pp45–47 (discussion, recommendations and conclusion). Remaining detailed indicators, scenarios, governance comparisons, appendices and references were not read in full.; review events: [r4_safetycases_05](rounds.md#r4_safetycases_05) |
+
+**Limits:** Proposed requirements/workflow and illustrative changes, not actual frontier telemetry or evaluated live decision support. Only selected parts of the75-page paper were read; thresholds and generic documents are examples/placeholders.
+
+**Counterevidence / alternative:** Explicit links and owners may reduce manual burden and make updates inspectable, but missing or misleading indicators can leave the case mechanically consistent and substantively wrong. Fundamental context/capability changes may require a new argument.
+
+**Next check:** Inspect or build a concrete prototype only if implementation is the publication claim; test validity, update latency, missed changes and decision follow-through separately.
+
+<a id="c69"></a>
+## C69
+
+Guarded architectures can place assurance on narrower, more understandable components, but their guarantees depend on correct hazard models, trusted perception and safe enforcement; adding diversity alone does not establish independent failure probabilities.
+
+**Status:** provisional. **Theme:** governance.
+
+| Source and relation | Version / locator | Scoped finding | Review basis and depth |
+|---|---|---|---|
+| `bloomfield_assurancesystemsdependabil_2024` — supports | [Source](https://arxiv.org/pdf/2407.13948v1); v1 §§2.1–2.3 PDFpp12–20/printed11–19; §4 opening PDFpp31–33; §6 opening PDFpp43–44 | The dependability argument distinguishes conventionally assured guards from AI-dependent guards and rejects naive multiplicative reliability from diversity, while recognizing useful redundancy and constrained guarantees. | `this_run_primary`; Pinned v1 PDF pp11–14 (§§2–2.2 opening), pp16–20 (§2.3 and architecture-summary opening), pp31–33 (§4 opening/contractual trust), pp43–44 (§6 opening). Corresponding printed pages are10–13,15–19,30–32,42–43. Other case examples, normative enforcement discussion, AGI arguments and bibliography not fully read.; review events: [r4_safetycases_06](rounds.md#r4_safetycases_06) |
+
+**Limits:** A demanding design/assurance perspective with cyber-physical examples; not a new experimental estimate of frontier LLM guard effectiveness or a universal rejection of lower-assurance useful systems. Original v1 only.
+
+**Counterevidence / alternative:** A geofence-like check with an assured intervention can support strong scoped claims. Broader perception, normative outcomes and shared world models may defeat similar arguments even when an output monitor appears separate.
+
+**Next check:** Trace the intended system’s trusted components, hazard model and enforceable boundary, then seek case-specific empirical/formal evidence; keep architectural independence distinct from institutional or source independence.
+
+<a id="c70"></a>
+## C70
+
+Internal probes can discriminate selected evaluation and deployment prompt distributions, but that readout and its size association do not establish deceptive behavior or a universal scaling law for concealment.
+
+**Status:** scoped_check. **Theme:** evaluator_integrity.
+
+| Source and relation | Version / locator | Scoped finding | Review basis and depth |
+|---|---|---|---|
+| `nguyen_probingsteeringevaluation_2025` — supports | [Source](https://arxiv.org/pdf/2507.01786v2); Sections3.1–3.4 pp3–4: selection, baselines, prompted WMDP and recovery definition; Sections4.1–4.3 pp4–7: probe validation and steering; Sections5.3–5.5 pp7–8: targeted-noise alternative and transfer limits; Appendix pp13–18; Figures8–9 pp15,18: selected features and unrelated controls | A selected contrastive probe outperforms the tested trivial/random controls and generalizes unevenly across prompt datasets. | `this_run_primary`; Complete 18-page arXiv v2: abstract, Sections1–6, acknowledgments/impact, all references pp9–13, appendix prompts, all dataset descriptions/SAE labels pp13–17, Figures1–9 captions and final all-feature plot p18. Linked source datasets, implementation and dashboards were not inspected.; review events: [r4_awareness_02](rounds.md#r4_awareness_02) |
+| `chaudhary_evaluationawareness_2025` — bounds | [Source](https://arxiv.org/pdf/2509.13333v2); Sections3.1–3.3 pp2–3: model selection, contrastive probes and SAD scoring; Sections4–5 pp3–4 and Figure1 p1: selected best-layer size association; Appendix6.1–6.5 pp6–8; Figures3–5: dataset, template, excluded Qwen and reproducibility details | Selected families show a best-layer size association, while excluded Qwen and chat-template sensitivity bound extrapolation; behavior is not the measured endpoint. | `this_run_primary`; Complete eight-page arXiv v2: abstract, main Sections1–5, references, Appendix6.1–6.5, all figure captions and reproducibility table. All Figures1–5 visually inspected on PDF pp1,4,6,7. No linked implementation/data executed or source literature independently reread.; review events: [r4_awareness_01](rounds.md#r4_awareness_01) |
+
+**Limits:** Shared synthetic/SAD lineage, selected layers/templates and observational classifications; no behavior-specific causal or deployment validation.
+
+**Counterevidence / alternative:** Positive separation beyond the tested heuristics is informative, while nonmonotone family results and misclassified benign prompts challenge a universal awareness/deception interpretation.
+
+**Next check:** Separate held-out representation classification from prospective behavioral prediction, validate alternative cues and selection rules, and preserve family-specific counterevidence.
+
+<a id="c71"></a>
+## C71
+
+Activation steering can alter engineered evaluation-conditional behavior, while simple-prompt and unrelated-feature controls show why eliciting a different output is insufficient to establish an awareness-specific mechanism or unknown deployment behavior.
+
+**Status:** scoped_check. **Theme:** evaluator_integrity.
+
+| Source and relation | Version / locator | Scoped finding | Review basis and depth |
+|---|---|---|---|
+| `hua_steeringevaluation_2025` — supports | [Source](https://arxiv.org/pdf/2510.20487v5); Sections3–4 pp4–7: synthetic-document/expert-iteration organism and intervention setup; Sections5.1–5.3 pp7–10; Figures3–5 pp8–10: type-hint effects and controls; Section6 pp10–11: explicit-cue limitations and unknown deployment behavior; AppendixG pp31–35 and I.1–I.2 pp40–41,44–46: tuning, prompting and belief-grading caveats | A pre-fine-tuning direction changes a trained type-hint endpoint more than matched random vectors; explicit cues, known-target tuning and alternative prompts bound the result. | `this_run_primary`; Pinned 62-page arXiv v5: main text pp1–12 (Sections1–6, contributions/acknowledgments); AppendixG pp31–35 including layer/strength selection, belief-behavior caveat and grading prompt; AppendixI.1 pp40–41 and Table16/p44; AppendixI.2 pp45–46. Remaining references, training/robustness appendices, many figures and transcripts not fully read.; review events: [r4_awareness_03](rounds.md#r4_awareness_03) |
+| `nguyen_probingsteeringevaluation_2025` — bounds | [Source](https://arxiv.org/pdf/2507.01786v2); Sections3.1–3.4 pp3–4: selection, baselines, prompted WMDP and recovery definition; Sections4.1–4.3 pp4–7: probe validation and steering; Sections5.3–5.5 pp7–8: targeted-noise alternative and transfer limits; Appendix pp13–18; Figures8–9 pp15,18: selected features and unrelated controls | Prompt suffix intervention dominates probe steering on induced underperformance, and unrelated SAE controls can match relevant-feature recovery; targeted noise remains an explicit explanation. | `this_run_primary`; Complete 18-page arXiv v2: abstract, Sections1–6, acknowledgments/impact, all references pp9–13, appendix prompts, all dataset descriptions/SAE labels pp13–17, Figures1–9 captions and final all-feature plot p18. Linked source datasets, implementation and dashboards were not inspected.; review events: [r4_awareness_02](rounds.md#r4_awareness_02) |
+
+**Limits:** Different one-model engineered setups and endpoint/task/steering choices. Hua’s inspected 2026 v5 is a related edition, with most appendices unread. Neither experiment was reproduced.
+
+**Counterevidence / alternative:** Meaningful random-vector and pre-training controls support constructive mitigation research; they do not establish natural generalization or a unique internal-belief explanation.
+
+**Next check:** Retain positive intervention evidence alongside stronger simple controls; calibrate against known counterfactual behavior and evaluate larger naturally evaluation-aware models before assurance claims.
+
+<a id="c72"></a>
+## C72
+
+Prompted models can conceal some successful capability underperformance from a reasoning monitor, but conditional approval, noisy success filtering and efficacy/selectivity tradeoffs prevent interpreting this as spontaneous or reliably successful deployment sandbagging.
+
+**Status:** scoped_check. **Theme:** evaluator_integrity.
+
+| Source and relation | Version / locator | Scoped finding | Review basis and depth |
+|---|---|---|---|
+| `li_cancovertlysandbag_2025` — supports | [Source](https://arxiv.org/pdf/2508.00943v2); Section3 pp2–3: ten models,400 WMDP and400 MMLU items, three instructed conditions and score; Section4.1 p4/Figure3: approval conditional on successful instructed sandbagging; AppendixB.2–B.4 pp10–12: baseline FPR, noisy two-run success proxy, GPT 5 same-prompt comparator; AppendixD pp16–17/Figures11–12: harder benchmark and metric-label hold | Monitor-aware prompting changes conditional approval while reducing other success components; two-run filtering, harder-task results and an untuned stronger-monitor substitution delimit the inference. | `this_run_primary`; Pinned 28-page arXiv v2: abstract, selected main Sections1–5/limitations pp1–6; AppendixB.1–B.4 text/captions pp9–12; AppendixD and Figures11–12 pp16–17, plus AppendixE opening classification description. Attack prompt AppendixA, complete references, additional-performance pages13–15 and worked biological/chemical transcripts pp18–28 were not fully read.; review events: [r4_awareness_04](rounds.md#r4_awareness_04) |
+
+**Limits:** MCQ proxies, instructed goals and selected model/monitor versions. Approval is conditioned on a noisy success proxy; no natural propensity, deployed rate or optimized-monitor limit is measured.
+
+**Counterevidence / alternative:** Uncaught instructed attempts expose a real evaluation failure mode, while harder tasks, low joint reliability and success/covertness tradeoffs weaken claims of general evasion capability.
+
+**Next check:** Preserve conditional denominators; inspect repeated-trial evidence and stronger monitor elicitation for a broader claim, and omit unresolved metric-label rates.
+
+<a id="c73"></a>
+## C73
+
+Complex sabotage-agent tests make joint task success and monitor detection separately inspectable and show scoped monitor-training gains; those results remain conditional on instructed goals, observed information, filtering and when detection occurs.
+
+**Status:** scoped_check. **Theme:** evaluator_integrity.
+
+| Source and relation | Version / locator | Scoped finding | Review basis and depth |
+|---|---|---|---|
+| `kutasov_evaluatingsabotage_2025` — supports | [Source](https://arxiv.org/pdf/2506.15740v2); Sections2–4 pp2–8: task/monitor setup, joint success and held-out fine-tuning; AppendixB pp14–15: task judges, construction and excluded task; AppendixD.1–D.2 pp24–25: successful-side-task filtering, balancing/dropped tasks and model-specific scaffolds; AppendixJ–M pp38–43: scratchpad sanity check, failure-mode dependence and human baseline | SHADE-Arena distinguishes joint success from marginal evasion, reports held-out fine-tuning gains and failure-mode-dependent monitoring; ROC filtering and scratchpad variants alter the evaluated problem. | `this_run_primary`; Pinned 44-page arXiv v2: main pp1–10 through conclusions and opening references; AppendixB pp14–15; AppendixD.1–D.2 pp24–25; AppendixJ/K text pp38–40; AppendixL.2 paragraph on p41; remaining monitoring/high-level/compute text pp42–44. Full bibliography, detailed task transcripts, prompts and many appendix figures not comprehensively read.; review events: [r4_awareness_05](rounds.md#r4_awareness_05) |
+
+**Limits:** Selected 44-page v2 reading, synthetic environments and related-title edition; some task scoring uses an LLM. Post-hoc complete-transcript detection is not real-time harm prevention.
+
+**Counterevidence / alternative:** Longer tool workflows and held-out task gains add affirmative evidence beyond MCQs. Execution failures, task heterogeneity, conditional ROC samples and unmatched human subsets bound generality.
+
+**Next check:** Evaluate operational interruption, deployment false-positive budgets and matched samples; keep scratchpad removal, secret revelation and normal monitored reasoning distinct.
+
+<a id="c74"></a>
+## C74
+
+Pairwise reward-model discrimination and downstream policy quality require different validation. PPE supplies a controlled example connecting selected proxy metrics to post-DPO human preferences, while showing that familiar benchmark rankings need not predict the same outcome.
+
+**Status:** scoped_check. **Theme:** evaluator_integrity.
+
+| Source and relation | Version / locator | Scoped finding | Review basis and depth |
+|---|---|---|---|
+| `lambert_rewardbenchevaluating_2024` — supports | [Source](https://arxiv.org/pdf/2403.13787v2); v2 §§3–4.2 pp4–6; Table1 p3; §5.3 and §6 p9; AppendixA and AppendixB opening p16 | RewardBench supplies structured preference contrasts, should-refuse/should-respond checks and explicit aggregation, while leaving downstream-training correlation open. | `this_run_primary`; ArXiv v2: abstract; introduction/background and benchmark construction/scoring text on PDF pp1–5; Table2 and scoring continuation p6; §5.3 and conclusion p9; AppendixA and opening AppendixB p16. Other results, many appendices, references, original datasets and code not comprehensively read.; review events: [r4_judges_01](rounds.md#r4_judges_01) |
+| `frick_evaluaterewardrlhf_2024` — supports | [Source](https://proceedings.iclr.cc/paper_files/paper/2025/file/2e01083b381b4865919b4915ef32e3d2-Paper-Conference.pdf); Final §§6.1–6.2 pp7–8; §7 pp8–9, Figures5–6 p9; §8 p10; AppendixA.6.1 p34; A.6.3/A.7 p36 | One Llama3.1-8B-Instruct policy trained under nine selected reward models and evaluated through blinded human preferences supports some granular metrics; aggregate ranking relationships and low-quantile explanations remain conditional. | `this_run_primary`; Official ICLR2025 PDF: cover/abstract/title/authors and introduction p1; complete §§6–8 and conclusion on pp7–10; AppendixA.6 text and A.6.1 reward-benchmark interpretation pp33–34; selected A.6.2 style-control table/figure text pp34–35; A.6.3, A.7 and A.8 p36. Other main methods/results, references and appendices not read in full.; review events: [r4_judges_03](rounds.md#r4_judges_03) |
+
+**Limits:** Nine selected reward models, one base policy and off-policy DPO; finite crowdsourced votes and filtered prompts are not representative public values or a universal optimizer test. Related preprint/final representations are one study; no experimental replication here.
+
+**Counterevidence / alternative:** PPE’s final appendix treats RewardBench over-optimization as a hypothesis and allows that early benchmark improvements may remain useful. A stronger downstream validation method in one setting does not establish universal failure of other benchmarks or guaranteed gains from optimizing PPE.
+
+**Next check:** Specify the intended training/decision endpoint, exact benchmark/data/aggregation and model population. Validate on held-out reward models and other policy/optimization settings before general predictive or causal claims; omit the unqualified inherited0.77 summary.
+
+<a id="c75"></a>
+## C75
+
+Synthetic preference and judgment training can improve a generative judge on tested benchmarks, while leaving residual order sensitivity, uneven task gains and dependence on the seed model and constructed labels.
+
+**Status:** scoped_check. **Theme:** evaluator_integrity.
+
+| Source and relation | Version / locator | Scoped finding | Review basis and depth |
+|---|---|---|---|
+| `wang_selftaughtevaluators_2024` — supports | [Source](https://arxiv.org/pdf/2408.02666v2); §§3.1–4.3 pp3–5; Figure1 p2; §§5–6 pp5–9, Tables1–6 pp6,8; §8 p9; AppendixA.3/Table9 pp12–13; Tables10–12 p14 | Self-Taught Evaluators improves RewardBench and HelpSteer2 results under its iterative recipe; MT-Bench gains are smaller/nonmonotonic, ties are excluded and order controls remain consequential. | `this_run_primary`; Complete16-page arXivv2 accessible text: abstract, §§1–9, acknowledgments, all references, AppendixA.1–A.4, every table1–12 and Figure1–10 caption/template/example text. No linked model weights, code, WildChat records or benchmark datasets executed/read exhaustively.; review events: [r4_judges_04](rounds.md#r4_judges_04) |
+
+**Limits:** A specific70B aligned seed, human-written prompts and benchmark endpoints. The absence of new human-preference labels in the training loop is not absence of human influence, evaluator independence or demonstrated downstream-policy benefit.
+
+**Counterevidence / alternative:** Synthetic-data and human-labeled ablations support a real method contribution, but classifier reward models remain strong and some categories worsen. Additional majority voting changes inference budget; no universal replacement or fairness conclusion follows.
+
+**Next check:** Pin aggregation and inference costs, test challenging held-out task distributions and actual downstream policy optimization, and retain paired order/position-consistency checks.
+
+<a id="c76"></a>
+## C76
+
+A statistical annotator-substitution test can make a task-specific comparison with sampled human judgments explicit, but its pass decision depends on the reference population, cost-benefit threshold, imbalance treatment and intended construct.
+
+**Status:** scoped_check. **Theme:** evaluator_integrity.
+
+| Source and relation | Version / locator | Scoped finding | Review basis and depth |
+|---|---|---|---|
+| `calderon_alternativeannotator_2025` — supports | [Source](https://aclanthology.org/2025.acl-long.782.pdf); §§3.1–3.3 pp3–5/printed16053–16055; §5.1/Figure2 p9; §7 p10; AppendixB.1–B.2 pp17–18; C.1 pp18–19; C.4 pp20–21 | The Alternative Annotator Test uses leave-one-annotator-out comparisons and FDR control; its own sensitivity analysis and imbalance/minority appendices bound a generic replacement interpretation. | `this_run_primary`; ACL final31-page PDF: abstract; complete method§3 pp3–6; selected setup/results§§4–5 pp6–9 including Tables1–2 and Figure2; conclusion§6 p9; complete limitations§7 p10. AppendixB.1–B.2 pp17–18; selected B.3/C.1 explanation and weighting formula pp18–19; C.4 subjectivity/options and C.5 opening pp20–21. Full theorem proof, references, full dataset appendix and prompt appendices not read.; review events: [r4_judges_05](rounds.md#r4_judges_05) |
+
+**Limits:** Agreement with an assumed-authoritative sampled label distribution is not external truth. Selected methods/results/appendices, not a full31-page reading or proof/code recertification; no project calibration study performed.
+
+**Counterevidence / alternative:** Some empirical task/prompt/model combinations pass, demonstrating constructive local use. An always-majority predictor can pass the unadjusted procedure under severe imbalance; inappropriate human comparators or majority weighting can hide important failure modes.
+
+**Next check:** Define the precise annotation task, human expertise and sampling, epsilon/failure costs, imbalance and minority weighting, and validate the actual project use before applying the test or claiming human-equivalent research review.
+
+<a id="c77"></a>
+## C77
+
+Joint statistical models of the answer and grading process can separate modeled score-scale shifts, item effects and uncertainty that a single agreement statistic obscures; the demonstrated bias adjustments are simulated, model-dependent counterfactuals.
+
+**Status:** scoped_check. **Theme:** evaluator_integrity.
+
+| Source and relation | Version / locator | Scoped finding | Review basis and depth |
+|---|---|---|---|
+| `dubois_skewedscore_2025` — supports | [Source](https://arxiv.org/pdf/2507.03772v3); Framework and Table1 pp2–3; illustrative-data declaration p4; Questions1.1–4 pp4–12; Figure6 p11; Question5 pp12–13; AppendicesA–C pp16–20 | Skewed Score develops ordinal/binomial and hierarchical GLM recipes with simulated examples and explicit priors/model comparisons; posterior bias-adjusted agreement differs from an observed improvement in grading. | `this_run_primary`; Complete20-page arXivv3 accessible text: abstract/introduction, framework, Questions1.1–5 and conclusion, both reference pages, AppendicesA–C, Tables1–3 and all Figures1–11 captions. Linked HiBayes package/notebooks not executed or independently validated.; review events: [r4_judges_06](rounds.md#r4_judges_06) |
+
+**Limits:** All worked data are simulated. Likelihood, covariate and reference choices govern interpretation, and no real-project grader bias, causal mechanism or intervention effect is estimated. Complete text reading does not reproduce the statistics or validate the package.
+
+**Counterevidence / alternative:** The method offers a practical richer analysis, but statistical adjustment cannot choose the correct human/ethical reference or repair missing constructs by itself. Some hierarchical and flat models fit similarly; added complexity needs justification.
+
+**Next check:** Fit and validate a transparently specified model on an actual human-calibrated evaluation set, compare simpler alternatives and assess practical effects before claiming real bias correction.
+
+<a id="c78"></a>
+## C78
+
+A task-completion time horizon supplies a common difficulty/reliability measure for a specified agent and task suite; it is not the duration an AI operates autonomously or a direct measure of whole-job automation.
+
+**Status:** scoped_check. **Theme:** evaluation_configuration.
+
+| Source and relation | Version / locator | Scoped finding | Review basis and depth |
+|---|---|---|---|
+| `metr_timehorizons_2026` — supports | [Source](https://metr.org/time-horizons/); Current TH 1.1 Methodological Details and FAQ; September 8, 2026 maintenance notice | METR fits task success against human expert duration and explicitly bounds domain, low-context, reliability and reporting interpretations. | `this_run_primary`; Complete accessible captured HTML prose: definition, controls/labels, Methodological Details, every FAQ, update history, citation text, navigation/footer. Interactive chart values/embedded datasets, linked paper, code and follow-up studies were not read/reproduced.; review events: [r4_depthsample_04](rounds.md#r4_depthsample_04) |
+
+**Limits:** Current canonical page text only; chart values, model set, raw data and code were not authenticated or reproduced. Earlier snapshot/reading not certified.
+
+**Counterevidence / alternative:** The measure is informative within its specified domain and reliability target; task cleanliness, context and human baselines limit transfer, while the page warns above 16-hour estimates are unreliable.
+
+**Next check:** Inspect a pinned data/code/model/scaffold snapshot and uncertainty before publication-leading numerical or trend claims.
+
+<a id="c79"></a>
+## C79
+
+A standardized hazardous-response benchmark can provide explicit rules, confidential tests and configuration-sensitive feedback without certifying system safety; evaluator, grading and prompt-set versions must remain part of the result.
+
+**Status:** scoped_check. **Theme:** evaluator_integrity.
+
+| Source and relation | Version / locator | Scoped finding | Review basis and depth |
+|---|---|---|---|
+| `mlcommons_ailuminate_2026` — supports | [Source](https://mlcommons.org/ailuminate/); Suite overview: Technical independence, Objectivity,2026 timeline and Using AILuminate results | The current suite defines versioned Safety/Jailbreak tests, reports a non-LLM scorer, distinguishes Official/Practice runs and disclaims certification or acceptable-risk decisions. | `this_run_primary`; Complete accessible captured HTML text: suite descriptions, credibility/stewardship/objectivity sections,2026 timeline, results-use rules, Candela/configuration description, future benchmarks, contributor list, partnerships and footer/cookie text. Linked standards, result pages, prompts and benchmark code not read.; review events: [r4_depthsample_05](rounds.md#r4_depthsample_05) |
+| `mlcommons_ailuminatev10_2025` — bounds | [Source](https://arxiv.org/pdf/2503.05731v1); arXivv1 §§2,5–7,pp7–9,15–22; Figure 6 | The v1.0 paper describes a different LLM-ensemble/reference-grade instrument with uncertainty, single-turn/persona/scope limits and intentionally undisclosed implementation details. | `this_run_primary`; PDF pp1–5 cover/abstract/executive summary/contents; pp7–9 overview/scope/use; pp15–22 prompt-quality discussion, response-evaluator methods, grading/reference and limitations. Remaining hazard details, results, large Appendix A questionnaire and references not fully read.; review events: [r4_depthsample_06](rounds.md#r4_depthsample_06) |
+
+**Limits:** Same MLCommons benchmark family across different versions, not two independent validations. Exact later scorer/data and real deployments remain unaudited; only selected v1.0 paper sections read.
+
+**Counterevidence / alternative:** Standardized tests and stewardship provide affirmative measurement methods, while evaluator error, adaptive adversaries and normative hazard choices prevent a general safety or context-free ranking claim.
+
+**Next check:** Keep version/standard/evaluator/prompt set and deployment configuration with every score; authenticate later release methods and any cross-version comparability before pooling.
+
 ## Source families and dependencies
 
 These family annotations identify shared work, data or incidents where known. They do not comprehensively certify independence across the collection. Citation keys are retained pending identity adjudication.
@@ -1211,3 +1476,7 @@ These family annotations identify shared work, data or incidents where known. Th
 | `F10` | `cunningham_sparseautoencoders_2024`, `makelov_principledevaluations_2024` | Distinct SAE studies with shared indirect-object-identification task lineage; different model families and intervention protocols. | Pinned arXiv methods and limitations; r3_mechvalidation_02,04. | Task-family dependence recorded; exact item overlap and cross-edition equivalence remain unchecked. Not an independent task-generalization replication. |
 | `F11` | `sba_complianceplanomb_2024`, `eac_complianceplanomb_2024`, `exim_complianceplanomb_2024` | Historical agency self-descriptions under the same M-24-10 mandate and common reporting structure. | Selected SBA/EAC and complete EXIM plan text; r3_public_01,03–04. | Specific reported acts differ by agency. Three plans are not three independent tests of control effectiveness or frontier-provider governance. |
 | `F12` | `huang_trustllm_2024`, `wang_decodingtrust_2023` | Broad evaluation suites with documented shared benchmark/method ancestry, including salary-prediction and robustness tasks. | TrustLLM fairness AppendixF and its explicit DecodingTrust references; r3_fairness_03–04. | Construct definitions and model conditions differ. Exact item overlap is not reconstructed; do not count as independent population-impact corroboration. |
+| `F13` | `buhl_safetycasesfrontier_2024`, `hilton_safetycasesscalable_2025`, `barrett_assessingconfidence_2025`, `carlan_dynamicsafetycases_2024`, `bloomfield_assurancesystemsdependabil_2024` | Overlapping safety-case authors, concepts and worked inability templates; confidence and change-management papers build on the same assurance lineage. | Pinned source authorship, references and worked examples; r4_safetycases events. | Conceptual dependency recorded, not an assertion that every paper shares all authors or that these are independent efficacy demonstrations. |
+| `F14` | `nguyen_probingsteeringevaluation_2025`, `chaudhary_evaluationawareness_2025`, `hua_steeringevaluation_2025` | Shared evaluation-awareness prompt/probe lineage, with different model, organism and intervention choices. | Primary methods and explicit cited predecessors in r4_awareness_01–03. | Distinct contributions with shared concepts/data sources; exact item overlap is not fully reconstructed and broad independent behavioral replication is not claimed. |
+| `F15` | `lambert_rewardbenchevaluating_2024`, `frick_evaluaterewardrlhf_2024`, `wang_selftaughtevaluators_2024`, `wang_helpsteer2opensource_2024` | Reward/judge studies share RewardBench and human-preference reference lineages; Self-Taught also uses HelpSteer2 endpoints. | Primary evaluation/training methods and source references in r4_judges events. | PPE’s preprint/final are one study; benchmark success and downstream validation are different endpoints. No independent broad evaluator-validity corroboration count. |
+| `F16` | `mlcommons_ailuminate_2026`, `mlcommons_ailuminatev10_2025` | MLCommons suite portal and v1.0 paper are related objects across changing instrument/evaluator editions. | Current portal and exact arXivv1 methods, r4_depthsample_05–07. | Do not combine later non-LLM scorer descriptions with earlier LLM-ensemble results or count two entries as independent validation. |

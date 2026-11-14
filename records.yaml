@@ -8365,8 +8365,8 @@ records:
     artifact_type: eval_method
     governance_artifact: eval_method
     scope_relevance: core
-    issuer_type: ngo_research
-    issuer_sector: civil_society
+    issuer_type: company
+    issuer_sector: private
     review_status: preprint
     review_process: author_posted_preprint
     evidence_independence: author_attested
@@ -9753,8 +9753,8 @@ records:
     artifact_type: policy_report
     governance_artifact: policy_analysis
     scope_relevance: supporting
-    issuer_type: company
-    issuer_sector: private
+    issuer_type: government
+    issuer_sector: public
     review_status: institutional
     review_process: institutional_review
     evidence_independence: self_attested
