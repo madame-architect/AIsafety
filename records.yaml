@@ -833,7 +833,7 @@ records:
     institution: governance.ai
     type: Policy report
     date: '2025'
-    url: https://www.governance.ai/research/survey-thresholds-advanced-ai-systems
+    url: https://www.governance.ai/research-paper/survey-on-thresholds-for-advanced-ai-systems
     urldate: '2026-04-25'
     source_relation: primary
     source_role: external_analysis
@@ -7379,25 +7379,10 @@ records:
     doi: 10.48550/arXiv.2402.17012
     eprinttype: arXiv
     eprint: '2402.17012'
-    pubstate: preprint
+    pubstate: withdrawn
+    version_status: historical
     url: https://arxiv.org/abs/2402.17012
     urldate: '2026-04-25'
-    abstract: |-
-      In this paper we develop state-of-the-art privacy attacks against Large Language Models (LLMs), where an
-                      adversary with some access to the model tries to learn something about the underlying training data. Our
-                      headline results are new membership inference attacks (MIAs) against pretrained LLMs that perform hundreds
-                      of times better than baseline attacks, and a pipeline showing that over 50\% of the fine-tuning dataset can
-                      be extracted from a fine-tuned LLM in natural settings. We consider varying degrees of access to the
-                      underlying model, pretraining and fine-tuning data, and both MIAs and training data extraction. For
-                      pretraining data, we propose two new MIAs: a supervised neural network classifier that predicts training
-                      data membership on the basis of dimensionality-reduced model gradients, as well as a variant of this attack
-                      that only requires logit access to the model by leveraging recent model-stealing work on LLMs. To our
-                      knowledge this is the first MIA that explicitly incorporates model-stealing information. Both attacks
-                      outperform existing black-box baselines, and our supervised attack closes the gap between MIA attack success
-                      against LLMs and the strongest known attacks for other machine learning models. In fine-tuning, we find that
-                      a simple attack based on the ratio of the loss between the base and fine-tuned models is able to achieve
-                      near-perfect MIA performance; we then leverage our MIA to extract a large fraction of the fine-tuning
-                      dataset from fine-tuned Pythia and Llama models.
     source_relation: primary
     source_role: original_research
     source_form: paper
@@ -7423,6 +7408,10 @@ records:
     - deployment
     maintenance_status: static
     legal_status: not_applicable
+    evidence_note: 'Official arXiv v4 withdrawal notice dated July 15, 2024 reports a software bug
+      in the experiments and withdrawal to address/update results. No corrected later edition was listed
+      in the 2026-11-15 UTC source check. Retain for bibliographic history; archived numerical findings
+      are not accepted synthesis evidence without a corrected version or independent verification.'
     inclusion_reason: 'Included as a supporting paper for frontier AI governance/evals; classified as
       research_analysis with original_research source role; used for mitigation; lifecycle coverage: pretraining,
       post_training, deployment; risk domains: privacy; evidence basis: research; function role: enabling.'
@@ -10589,9 +10578,10 @@ records:
     title: Managing misuse risk for dual-use foundation models
     institution: National Institute of Standards and Technology
     type: Second public draft
-    number: NIST AI 800-1 ipd2
+    number: NIST AI 800-1 2pd
     date: '2025-01-09'
     version: second public draft
+    doi: 10.6028/NIST.AI.800-1.2pd
     url: https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.800-1.ipd2.pdf
     urldate: '2026-04-29'
     source_relation: primary
@@ -11710,6 +11700,7 @@ records:
     date: '2025-09-29'
     eprinttype: California Legislative Information
     eprint: 202520260SB53
+    url: https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260SB53
     urldate: '2026-05-02'
     source_relation: primary
     source_role: legal_or_regulatory_instrument
@@ -11736,14 +11727,13 @@ records:
     lifecycle_stage:
     - deployment
     - post_deployment
-    version_status: current
     maintenance_status: static
     legal_status: authoritative
-    evidence_note: Official California Legislative Information enacted bill text retained as the primary
-      source; SB 53 is Chapter 138, approved and filed September 29, 2025. Use as frontier-AI-specific
-      statutory evidence for developers of frontier/foundation models. Note that some reporting/review
-      duties begin on January 1, 2027, and administrative implementation pages should be treated as guidance
-      or implementation evidence rather than substitutes for binding statutory text.
+    evidence_note: Record identifies enacted SB 53, Chapter 138, approved and filed September 29, 2025.
+      Official Governor signing material confirms the bill and signing date. Earlier detailed-clause reading
+      used mirrors; direct official legislative HTML/PDF returned 403 in the 2026-11-15 UTC check. Exact
+      operative deadlines, subsequent amendments and present consolidated application are not recertified
+      here. No implementation or prevention effect is established by signing.
     inclusion_reason: 'Included as a core regulation for frontier AI governance/evals; classified as legal_instrument
       with legal_or_regulatory_instrument source role; used for evaluation, monitoring, reporting, mitigation;
       lifecycle coverage: deployment, post_deployment; risk domains: systemic_risk; evidence basis: legal;

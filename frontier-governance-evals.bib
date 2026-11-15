@@ -1910,7 +1910,7 @@
     eprinttype = {California Legislative Information},
     evidence_basis = {legal},
     evidence_independence = {regulatory},
-    evidence_note = {Official California Legislative Information enacted bill text retained as the primary source; SB 53 is Chapter 138, approved and filed September 29, 2025. Use as frontier-AI-specific statutory evidence for developers of frontier/foundation models. Note that some reporting/review duties begin on January 1, 2027, and administrative implementation pages should be treated as guidance or implementation evidence rather than substitutes for binding statutory text.},
+    evidence_note = {Record identifies enacted SB 53, Chapter 138, approved and filed September 29, 2025. Official Governor signing material confirms the bill and signing date. Earlier detailed-clause reading used mirrors; direct official legislative HTML/PDF returned 403 in the 2026-11-15 UTC check. Exact operative deadlines, subsequent amendments and present consolidated application are not recertified here. No implementation or prevention effect is established by signing.},
     function_role = {direct},
     governance_artifact = {legal_instrument},
     governance_function = {evaluation, monitoring, reporting, mitigation},
@@ -1919,7 +1919,7 @@
     institution = {California Legislature},
     issuer_sector = {public},
     issuer_type = {government},
-    keywords = {source_form/regulation, source_role/legal_or_regulatory_instrument, governance_artifact/legal_instrument, scope_relevance/core, issuer_type/government, issuer_sector/public, review_process/legal_process, attestation_relation/regulatory_authority, independence_from/regulatory_authority, evidence_basis/legal, governance_function/evaluation, governance_function/monitoring, governance_function/reporting, governance_function/mitigation, function_role/direct, risk_domain/systemic_risk, lifecycle_stage/deployment, lifecycle_stage/post_deployment, version_status/current, maintenance_status/static, legal_status/authoritative, classification_confidence/high, synthesis_stream/governance_artifact, source_relation/primary, artifact_type/regulation, review_status/legal_or_regulatory, evidence_independence/regulatory},
+    keywords = {source_form/regulation, source_role/legal_or_regulatory_instrument, governance_artifact/legal_instrument, scope_relevance/core, issuer_type/government, issuer_sector/public, review_process/legal_process, attestation_relation/regulatory_authority, independence_from/regulatory_authority, evidence_basis/legal, governance_function/evaluation, governance_function/monitoring, governance_function/reporting, governance_function/mitigation, function_role/direct, risk_domain/systemic_risk, lifecycle_stage/deployment, lifecycle_stage/post_deployment, maintenance_status/static, legal_status/authoritative, classification_confidence/high, synthesis_stream/governance_artifact, source_relation/primary, artifact_type/regulation, review_status/legal_or_regulatory, evidence_independence/regulatory},
     legal_status = {authoritative},
     lifecycle_stage = {deployment, post_deployment},
     maintenance_status = {static},
@@ -1934,8 +1934,8 @@
     synthesis_stream = {governance_artifact},
     title = {Senate Bill No. 53: Transparency in Frontier Artificial Intelligence Act},
     type = {Act},
+    url = {https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260SB53},
     urldate = {2026-05-02},
-    version_status = {current},
 }
 
 @misc{californiapolicyworkinggroup_thecaliforniareport_2025,
@@ -7814,6 +7814,7 @@
     author = {{U.S. AI Safety Institute} and {National Institute of Standards and Technology}},
     classification_confidence = {high},
     date = {2025-01-09},
+    doi = {10.6028/NIST.AI.800-1.2pd},
     evidence_basis = {procedural},
     evidence_independence = {issuer_attested},
     function_role = {direct},
@@ -7828,7 +7829,7 @@
     legal_status = {not_applicable},
     lifecycle_stage = {pretraining, deployment, post_deployment},
     maintenance_status = {static},
-    number = {NIST AI 800-1 ipd2},
+    number = {NIST AI 800-1 2pd},
     release_model = {open_weights},
     review_process = {institutional_review},
     review_status = {institutional},
@@ -9512,7 +9513,7 @@
     threat_vector = {expert_uplift},
     title = {Survey on thresholds for advanced {AI} systems},
     type = {Policy report},
-    url = {https://www.governance.ai/research/survey-thresholds-advanced-ai-systems},
+    url = {https://www.governance.ai/research-paper/survey-on-thresholds-for-advanced-ai-systems},
     urldate = {2026-04-25},
 }
 
@@ -11013,21 +11014,6 @@
 }
 
 @misc{wang_pandoraswhite_2024,
-    abstract = {In this paper we develop state-of-the-art privacy attacks against Large Language Models (LLMs), where an
-                adversary with some access to the model tries to learn something about the underlying training data. Our
-                headline results are new membership inference attacks (MIAs) against pretrained LLMs that perform hundreds
-                of times better than baseline attacks, and a pipeline showing that over 50\% of the fine-tuning dataset can
-                be extracted from a fine-tuned LLM in natural settings. We consider varying degrees of access to the
-                underlying model, pretraining and fine-tuning data, and both MIAs and training data extraction. For
-                pretraining data, we propose two new MIAs: a supervised neural network classifier that predicts training
-                data membership on the basis of dimensionality-reduced model gradients, as well as a variant of this attack
-                that only requires logit access to the model by leveraging recent model-stealing work on LLMs. To our
-                knowledge this is the first MIA that explicitly incorporates model-stealing information. Both attacks
-                outperform existing black-box baselines, and our supervised attack closes the gap between MIA attack success
-                against LLMs and the strongest known attacks for other machine learning models. In fine-tuning, we find that
-                a simple attack based on the ratio of the loss between the base and fine-tuned models is able to achieve
-                near-perfect MIA performance; we then leverage our MIA to extract a large fraction of the fine-tuning
-                dataset from fine-tuned Pythia and Llama models.},
     annotation = {Use for research writing on frontier AI governance and evaluations. Maps 'Pandora’s white-box: Precise training data detection and extraction in large language models' to paper source; risk domains: privacy; lifecycle: pretraining, post training, deployment; assurance functions: mitigation.},
     artifact_type = {technical_paper},
     attestation_relation = {author_attested},
@@ -11039,6 +11025,7 @@
     eprinttype = {arXiv},
     evidence_basis = {research},
     evidence_independence = {author_attested},
+    evidence_note = {Official arXiv v4 withdrawal notice dated July 15, 2024 reports a software bug in the experiments and withdrawal to address/update results. No corrected later edition was listed in the 2026-11-15 UTC source check. Retain for bibliographic history; archived numerical findings are not accepted synthesis evidence without a corrected version or independent verification.},
     function_role = {enabling},
     governance_artifact = {research_analysis},
     governance_function = {mitigation},
@@ -11046,11 +11033,11 @@
     independence_from = {not_independently_verified},
     issuer_sector = {academic},
     issuer_type = {academic_or_research},
-    keywords = {source_form/paper, source_role/original_research, governance_artifact/research_analysis, scope_relevance/supporting, issuer_type/academic_or_research, issuer_sector/academic, review_process/author_posted_preprint, attestation_relation/author_attested, independence_from/not_independently_verified, evidence_basis/research, governance_function/mitigation, function_role/enabling, risk_domain/privacy, lifecycle_stage/pretraining, lifecycle_stage/post_training, lifecycle_stage/deployment, maintenance_status/static, legal_status/not_applicable, classification_confidence/medium, synthesis_stream/technical_eval, source_relation/primary, artifact_type/technical_paper, review_status/preprint, evidence_independence/author_attested},
+    keywords = {source_form/paper, source_role/original_research, governance_artifact/research_analysis, scope_relevance/supporting, issuer_type/academic_or_research, issuer_sector/academic, review_process/author_posted_preprint, attestation_relation/author_attested, independence_from/not_independently_verified, evidence_basis/research, governance_function/mitigation, function_role/enabling, risk_domain/privacy, lifecycle_stage/pretraining, lifecycle_stage/post_training, lifecycle_stage/deployment, version_status/historical, maintenance_status/static, legal_status/not_applicable, classification_confidence/medium, synthesis_stream/technical_eval, source_relation/primary, artifact_type/technical_paper, review_status/preprint, evidence_independence/author_attested},
     legal_status = {not_applicable},
     lifecycle_stage = {pretraining, post_training, deployment},
     maintenance_status = {static},
-    pubstate = {preprint},
+    pubstate = {withdrawn},
     review_process = {author_posted_preprint},
     review_status = {preprint},
     risk_domain = {privacy},
@@ -11063,6 +11050,7 @@
     title = {Pandora’s white-box: Precise training data detection and extraction in large language models},
     url = {https://arxiv.org/abs/2402.17012},
     urldate = {2026-04-25},
+    version_status = {historical},
 }
 
 @misc{wang_selftaughtevaluators_2024,

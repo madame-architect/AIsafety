@@ -2,7 +2,7 @@
 
 Generated from [claims.yaml](claims.yaml). Source identities resolve through [records.yaml](../../records.yaml); record-level inspection and limitations appear in [coverage.csv](coverage.csv). This is a provisional map of selected synthesis propositions, not a claim that the entire corpus supports them.
 
-Assessment date: **2026-11-14**. `supplied_ledger` means inherited notes; `prior_audit` means a separate AI-assisted source check reported by the supplied audit; `this_run_primary` means scoped primary inspection reported by the project integration or a linked review round, not a recheck whenever this view is generated; `repo_source_review` means an existing dated repository review. None denotes independent human review or replication.
+Assessment date: **2026-11-15**. `supplied_ledger` means inherited notes; `prior_audit` means a separate AI-assisted source check reported by the supplied audit; `this_run_primary` means scoped primary inspection reported by the project integration or a linked review round, not a recheck whenever this view is generated; `repo_source_review` means an existing dated repository review. None denotes independent human review or replication.
 
 Status `provisional` identifies a working synthesis; `scoped_check` identifies a proposition with the stated source-level checking basis (which may be a prior audit); `unresolved` retains a material discrepancy or hold; `historical` limits a finding to its dated record. A scoped check does not verify every source claim.
 
@@ -86,6 +86,26 @@ Status `provisional` identifies a working synthesis; `scoped_check` identifies a
 | [C77](#c77) | evaluator_integrity | scoped_check | Joint statistical models of the answer and grading process can separate modeled score-scale shifts, item effects and uncertainty that a single agreement statistic obscures; the demonstrated bias adjustments are simulated, model-dependent counterfactuals. |
 | [C78](#c78) | evaluation_configuration | scoped_check | A task-completion time horizon supplies a common difficulty/reliability measure for a specified agent and task suite; it is not the duration an AI operates autonomously or a direct measure of whole-job automation. |
 | [C79](#c79) | evaluator_integrity | scoped_check | A standardized hazardous-response benchmark can provide explicit rules, confidential tests and configuration-sensitive feedback without certifying system safety; evaluator, grading and prompt-set versions must remain part of the result. |
+| [C80](#c80) | governance | scoped_check | Compute thresholds have a defensible proposed role as early screens for additional scrutiny; the reviewed design sources do not establish a universal compute-to-harm cutoff or make compute an adequate trigger for every governance duty. |
+| [C81](#c81) | governance | scoped_check | Compute can provide concrete governance levers through infrastructure visibility, mediated access and measurable resources; those affordances must be assessed separately from risk-proxy validity and the costs of surveillance, concentration and evasion. |
+| [C82](#c82) | governance | scoped_check | The 2025 threshold survey is useful evidence about elicited expert design preferences and disagreements; optional selected-sample responses and competing definitions do not validate risk boundaries or establish representative consensus. |
+| [C83](#c83) | policy_implementation | scoped_check | The reviewed frontier-governance proposals specify routes from assessment and external scrutiny to deployment conditions, monitoring and adaptive scope; their practical value depends on measurement, access and institutional capacity rather than the existence of a threshold alone. |
+| [C84](#c84) | governance | scoped_check | Internal deployment can change model configuration, privileges, tools and applications relative to a public product. The reviewed proposals therefore place internal-use permissions, evaluation and decision authority within governance scope; they do not establish that all internal governance is absent or that their proposed controls have reduced harm. |
+| [C86](#c86) | governance | scoped_check | Incident-reporting designs can make system versions, harm, context and response more inspectable, but their evidential value depends on scope, reporting thresholds and investigation. Required fields in a proposed common format do not create a legal reporting duty, and neither a template nor a reporting count demonstrates reduced harm. |
+| [C87](#c87) | outcomes | scoped_check | The AI Incident Database paper documents implemented cataloguing mechanisms—stable incident IDs, multiple reports per incident, search and plural taxonomies—that can support learning. It does not establish representative failure rates or demonstrate that database use prevents failures; report counts and illustrative mitigation workflows answer narrower questions. |
+| [C88](#c88) | oversight_control | scoped_check | Engineered backdoors can persist through specified safety-training pipelines, but persistence depends on adversarial access, objective, model and training configuration; some tested objectives or models lose the measured backdoor effect. |
+| [C89](#c89) | oversight_control | scoped_check | A model can be engineered to display a target behavior only after selected benign supervised finetuning, making pre-adaptation behavior an incomplete assurance test for that constructed threat model. |
+| [C90](#c90) | oversight_control | scoped_check | Filtered synthetic training data can transmit measured teacher traits in controlled finetuning experiments, with model-pair, trait and evaluation dependencies that prevent a universal transfer rule. |
+| [C91](#c91) | oversight_control | scoped_check | Backdoor benchmarks expose task, access and edition dependence, with positive targeted-refusal mitigation in a later comparison; unresolved jailbreak baseline/task provenance prevents a reliable quantitative jailbreak-defense conclusion. |
+| [C92](#c92) | safeguards | scoped_check | Separately modeling helpfulness and harmfulness can improve their measured tradeoff through constrained optimization, while the practical constraint remains an expectation of a learned cost. |
+| [C93](#c93) | safeguards | scoped_check | HC-RLHF’s held-out accept-or-abstain procedure supports a conditional bound on the probability of returning a model that violates an expected learned-cost constraint. The written zero-threshold case avoids an unresolved centering discrepancy. |
+| [C94](#c94) | safeguards | scoped_check | Safe LoRA provides a positive weight-space mitigation for safety degradation during controlled fine-tuning, with model-dependent projection choices and visible utility tradeoffs. |
+| [C95](#c95) | oversight_control | scoped_check | Teaching models to reason over explicit safety policies provides affirmative policy-adherence and jailbreak-resistance evidence, with limits from comparator information, overrefusal and the tested transfer distribution. |
+| [C96](#c96) | safeguards | scoped_check | Historical extraction experiments distinguish restricting ordinary output behavior from removing memorized text; their access conditions and web-matching ground truth do not establish current product exposure or certified proprietary-training membership. |
+| [C97](#c97) | outcomes | scoped_check | A deletion audit of the resulting model and privacy of the before/after update history are distinct: in Du et al.’s synthetic classification experiments, exact retraining improves single-state erasure while version comparisons can still reveal deletion membership. |
+| [C98](#c98) | audit_institutions | scoped_check | vTune supplies positive, conditional evidence of fine-tuning on marked data, while leaving requested training granularity and an exact statistical null bound unverified. |
+| [C99](#c99) | safeguards | scoped_check | Open-model post-training extraction can yield semantically similar and useful training-like data, while semantic resemblance, exact record extraction and recovery of a complete safety policy remain distinct claims. |
+| [C100](#c100) | governance | scoped_check | Draft misuse-risk guidance can make a threat-to-decision process inspectable by linking risk baselines, evaluation conditions, safeguards, deployment choices and post-deployment feedback; it does not make those choices empirically adequate or legally binding merely by documenting them. |
 
 <a id="c01"></a>
 ## C01
@@ -399,8 +419,9 @@ Voluntary commitments, disclosure portals and documentary framework scores make 
 | `ec_guidelinesgpaiproviders_2025` — contextualizes | [Source](https://ec.europa.eu/newsroom/dae/redirection/document/118340); C(2025)7719final, cover Nov19,2025; paragraph9, printedp2/PDFviewerp5 | The current linked English edition says the guidelines are not binding and reserves authoritative AIAct interpretation to the CJEU. Its later cover date does not authenticate the inherited July edition. | `this_run_primary`; Fresh selected cover/paragraph9 and canonical landing-page metadata only; no complete36-page reread. Historical version reconciliation remains open. |
 | `ec_gpai_trainingcontenttemplate_2025` — contextualizes | [Source](https://www.sidley.com/en/-/media/resource-pages/ai-monitor/guidance/eu-explanatory-notice-and-template-for-the-public-summary-of-training-content.pdf?la=en); C(2025)5235 final explanatory notice and template; cover and Article53(1)(d) basis; mirror identity unverified | Commission notice/template specifies a public, sufficiently detailed yet broadly comprehensive training-content summary; Article 53(2) open-source exception does not waive this obligation. | `supplied_ledger`; Inherited Selected sections; official-titled C(2025) 5235 final PDF mirror, cover, Article 53(1)(d) basis and template design. Issuer HTML returned 429. Mirror permits text inspection, without byte identity to an issuer copy. Summary is distinct from disclosure of the complete training dataset. Not independently repeated here. |
 | `newyork_raiseact_article44b_nd` — contextualizes | [Source](https://www.nysenate.gov/legislation/laws/GBS/A44-B); Article44-B revision/effective-date note; S8828 action history and §§3–5 | The official codification displays the April3,2026 revision and January1,2027 effective date; signed chapter96 history and effective-date clauses support the prospective-duty distinction. This is a legal-text check, not implementation evidence. | `this_run_primary`; Selected official index/action and amendatory timing clauses, not all ten operative sections or subsequent legal status.; review events: [r4_ny_01](rounds.md#r4_ny_01), [r4_ny_02](rounds.md#r4_ny_02), [r4_ny_03](rounds.md#r4_ny_03) |
+| `california_sb53_tfaia_2025` — contextualizes | [Source](https://www.gov.ca.gov/2025/09/29/governor-newsom-signs-sb-53-advancing-californias-world-leading-artificial-intelligence-industry/); Governor officialSeptember29,2025 signing release and linked signing message | Official executive evidence authenticates signing and summarizes statutory mechanisms, while direct enacted-clause retrieval still fails. Exact deadlines and current application are not recertified by the summary. | `this_run_primary`; Governor official September29,2025 release: title/date, signing statement, summary of transparency/incident/whistleblower/update mechanisms and link to signing message. Unrelated economic claims, quotations and recent-news navigation not treated as evidence.; review events: [r5_versions_07](rounds.md#r5_versions_07) |
 
-**Limits:** This is a distinction between kinds of evidence, not a determination of every instrument’s present legal force. The supplied patch corrects specified legal-status fields; unreviewed instruments and current application still require dated source checks. ISO evidence is catalog/preview scope only. The Commission template was inspected through a mirror; issuer-byte identity and exact clause locators remain open. The supplied correction package is now integrated; it does not recertify all instruments or editions. The earlier New York access/date hold is closed narrowly by current official codification, signed chapter history and amendatory timing clauses; not all operative sections or later application were reread.
+**Limits:** This is a distinction between kinds of evidence, not a determination of every instrument’s present legal force. The supplied patch corrects specified legal-status fields; unreviewed instruments and current application still require dated source checks. ISO evidence is catalog/preview scope only. The Commission template was inspected through a mirror; issuer-byte identity and exact clause locators remain open. The supplied correction package is now integrated; it does not recertify all instruments or editions. The earlier New York access/date hold is closed narrowly by current official codification, signed chapter history and amendatory timing clauses; not all operative sections or later application were reread. California signing is corroborated by official executive material, while this round’s direct official statutory-text attempts returned403. Exact California deadlines/current consolidated application remain unrecertified; signing is not observed implementation.
 
 **Counterevidence / alternative:** Statutory duties and enforceable decisions can exist alongside voluntary tools; documented implementation or outcome studies could provide additional evidence beyond a policy text or disclosure score.
 
@@ -582,12 +603,13 @@ Sociotechnical evaluation levels and media-based incident trends address differe
 |---|---|---|---|
 | `weidinger_sociotechnicalsafety_2023` — contextualizes | [Source](https://arxiv.org/pdf/2310.11986); Framework opening; inherited extracted lines0–117/5025; stable section/page locator pending | Separates capability, system interaction and broader sociotechnical impact as levels of safety evaluation. | `supplied_ledger`; Inherited Selected sections; Selected extracted PDF passages (line span 0–117 of 5025). Framework and illustrative cases. Each layer needs appropriately designed empirical evidence. Not independently repeated here. |
 | `oecd_trendsincidentshazards_2026` — bounds | [Source](https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/02/trends-in-ai-incidents-and-hazards-reported-by-the-media_7c824ca9/4f5ff43c-en.pdf); OECD report executive summary, theme analysis and methodological annex excerpts; exact pages pending | Studies trends and theme clusters in media reports collected by the OECD AI Incidents and Hazards Monitor. | `supplied_ledger`; Inherited Selected sections; OECD PDF contents, executive summary, theme analysis, and methodological annex excerpts. Media, language, search and classification selection change observed coverage; there is no denominator for underlying incident rates. Not independently repeated here. |
+| `mcgregor_preventingrepeatedfailures_2021` — bounds | [Source](https://cdn.aaai.org/ojs/17817/17817-13-21311-1-2-20210518.pdf); Final AAAI 2021 pp. 15459–15463; Figures 2/5 | Historical report volume and hypothetical mitigation do not establish population incident rates or observed prevention; stable IDs consolidate repeated reporting. | `this_run_primary`; Complete accessible text of all 6 final proceedings PDF pages, printed 15458–15463: abstract, introduction/motivation, AIID architecture and discovery/submission/taxonomy features, all figure captions, hypothetical fairness-use example, conclusions, acknowledgments and references. Figures 2–5 visually inspected on PDF pages 3–5; Figure 1 image not pixel-inspected. No current database, software or linked external source was audited.; review events: [r5_reporting_06](rounds.md#r5_reporting_06) |
 
 **Limits:** The framework is conceptual with illustrative cases. The incident analysis uses selected media reports; language, reporting, search and classification affect observed coverage and provide no denominator of underlying incidents.
 
 **Counterevidence / alternative:** Level distinctions improve evaluation design and reported incident clusters can identify concrete harms and leads. Neither source supplies matched causal estimates of the effect of an individual model or safeguard.
 
-**Next check:** Complete the claim-critical framework/report methods and stable locators; keep reported-record counts separate from population rates and connect each impact assertion to its own denominator and comparator.
+**Next check:** Complete the claim-critical framework/report methods and stable locators; keep reported-record counts separate from population rates and connect each impact assertion to its own denominator and comparator. Keep AIID source-report IDs distinct from incident IDs and inspect actual causal/response data before any population-rate or prevention-effect claim.
 
 <a id="c28"></a>
 ## C28
@@ -707,12 +729,13 @@ Adversarial training and recovery-data interventions provide positive model-leve
 |---|---|---|---|
 | `mazeika_harmbenchstandardized_2024` — supports | [Source](https://raw.githubusercontent.com/mlresearch/v235/main/assets/mazeika24a/mazeika24a.pdf); ICML/PMLR final §5.2; AppendixA.1; Table12 p33 | R2D2 improves tested robustness, with weaker gains on attacks unlike its training adversary; Table12 explicitly notes that the ZephyrBeta comparator includes DPO whereas R2D2 does not. | `this_run_primary`; Selected final-PDF methods/results/appendix/table text; related edition of canonical arXiv work; no full44page read or experimental reproduction.; review events: [r2_safeguards_02](rounds.md#r2_safeguards_02) |
 | `qi_safetyalignmentshould_2025` — supports | [Source](https://arxiv.org/html/2406.05946v1); §§3.1–3.2/Table2; AppendixA.4/C | Recovery augmentation improves tested prefill/jailbreak endpoints while AlpacaEval is somewhat lower; constrained later fine-tuning is a distinct intervention, and combined methods are not consistently better. | `this_run_primary`; Selected v1 results/aggregation/ablation discussion; ICLR final inaccessible in this round.; review events: [r2_safeguards_07](rounds.md#r2_safeguards_07) |
+| `yu_robustsafeguarding_2024` — supports | [Source](https://arxiv.org/pdf/2409.20089v1); arXiv v1 §§3–7/Table1; Appendix A–B/Tables4–5 | ReFAT links refusal-feature restoration to lower judged attack success with capability controls, then trains on ablation plus utility/overrefusal data and improves several robustness endpoints on three models; residual multilingual failures and comparator/rank limits remain. | `this_run_primary`; Cover/abstract p1; complete §§3–8 pp3–10, including mechanistic geometry/restoration, perturbation comparison, training, setup, results and limitations; Appendix A and B with Tables4–5 p14. References and full PCA/histogram Appendices C–D not comprehensively read. Main introduction/related work only abstract/heading context, not complete.; review events: [r5_mitigations_04](rounds.md#r5_mitigations_04) |
 
-**Limits:** These are scoped7B-model experiments with automatic behavioral judges. Neither a mismatched training comparator nor a limited benign benchmark establishes zero utility cost or broad deployed security.
+**Limits:** These are scoped model/training experiments with automatic behavioral judges. Neither a mismatched training comparator nor a limited benign benchmark establishes zero utility cost or broad deployed security. ReFAT successful-case geometric alignment and a comparison with99 random directions do not establish a universal attack mechanism or global worst-case perturbation. Main §5 rank64 conflicts with Appendix A ranks128/128/64; exact training recipe remains open. MT-Bench uses Prometheus and PAIR uses Mixtral in the appendix; compare those endpoints accordingly.
 
-**Counterevidence / alternative:** HarmBench finds no model uniformly robust; cross-attack generalization is weaker away from the train-time adversary. Qi reports residual vulnerability, regularization/optimizer dependence and non-monotonic combined-method benefit.
+**Counterevidence / alternative:** HarmBench finds no model uniformly robust; cross-attack generalization is weaker away from the train-time adversary. Qi reports residual vulnerability, regularization/optimizer dependence and non-monotonic combined-method benefit. ReFAT has residual attack successes, non-English/vernacular failures and utility losses, and is not best on every Table1 metric. Efficiency counts model forward/backward passes rather than wall-clock cost.
 
-**Next check:** Retain affirmative gains without pooling ASRs. Match attack budgets, training pipelines and utility baselines, and verify final-version equivalence before headline numbers.
+**Next check:** Retain affirmative gains without pooling ASRs. Match attack budgets, training pipelines and utility baselines, and verify final-version equivalence before headline numbers. Keep positive intervention evidence; reconcile LoRA rank/run configuration before reproduction and omit universal-mechanism/global-optimum/runtime-speedup claims.
 
 <a id="c35"></a>
 ## C35
@@ -760,6 +783,7 @@ Audit access is a set of enabling conditions: usable model interfaces, model and
 | `charnock_expandingexternalaccess_2026` — supports | [Source](https://arxiv.org/pdf/2601.11916v1); v1 §§2–3.4, Tables1–2; §5 | The proposed taxonomy separates model access, information and timeframe and explains their interactions, possible false-positive and false-negative benefits, and security/capacity burdens. | `this_run_primary`; All accessible text of the 20-page arXiv v1 PDF: introduction, §§2–5, Tables 1–5 and references. This is a text reading of the identified PDF, not an audit of cited primary studies or current Code obligations.; review events: [r2_institutions_01](rounds.md#r2_institutions_01) |
 | `casper_blackboxaccessaudits_2024` — supports | [Source](https://arxiv.org/pdf/2401.14446v3); arXiv v3 §§2.1,5–7; AppendixD | Access to internals and process information enables techniques unavailable from output-only queries; resources, scope, incentives and representation remain additional conditions. | `this_run_primary`; Selected arXiv v3: §2.1 and Table 1 access definitions; portions of §§3–4.1 reviewing access-enabled testing; §§5–7 on outside-the-box information, security and discussion; Appendix D in full. Not the complete paper or all technical appendices/references.; review events: [r2_institutions_02](rounds.md#r2_institutions_02) |
 | `longpre_inhouseevaluation_2025` — supports | [Source](https://raw.githubusercontent.com/mlresearch/v267/main/assets/longpre25a/longpre25a.pdf); Final PMLR267 §§4.1–4.3,pp5–8; AppendixA.1/A.4,pp18–20; AppendixB.1,p20; §6,p9 | The final proposal defines evaluator relationships as a spectrum and connects reproducible flaw reporting with conduct-based protection, technical access and coordination; it leaves remediation effects and center governance unresolved. | `this_run_primary`; Final ICML/PMLR 267 PDF pp1–9 (abstract and all main §§1–7); Appendix A pp18–20; Appendix B.1 introductory/example explanations p20, B.2–B.3 and Table A1 pp22–25; Appendix C.1–C.4 pp25–28, including Table A2. Figure A7 p26 visually inspected. The table of contents p17, references pp9–16, visual example cards p21, and Appendix D pp29–31 were not read in full; this is selected-section review.; review events: [r3_audits_01](rounds.md#r3_audits_01) |
+| `brundage_frontierauditingrigorous_2026` — supports | [Source](https://arxiv.org/pdf/2601.11699v4); v4 §5.3.3/Table 3 pp. 30–34; §5.4 opening/Figure 7 pp. 35–36 | Access comprises scope, duration, interfaces, documentation and verification; upper levels and example audit conclusions are explicitly prospective. | `this_run_primary`; v4 cover/title/byline/version; executive summary PDF pp. 2–6; PDF pp. 30–36 covering §5.3.3 AAL descriptions/Table 3, §5.3.4 assurance-level choice and §5.4 opening/Figure 7 access taxonomy. Remaining 115-page report and appendices not read.; review events: [r5_reporting_03](rounds.md#r5_reporting_03) |
 
 **Limits:** These are methodological and institutional arguments, not a controlled estimate of better safety outcomes. Charnock’s AL1–AL3 and Code interpretation are proposals; Casper’s ACM-final equivalence was not established in this round.
 
@@ -779,6 +803,7 @@ The accountability value of an audit depends on its institutional design, includ
 | `raji_outsideroversight_2022` — supports | [Source](https://dho.stanford.edu/wp-content/uploads/Outsider_Oversight.pdf); §§3–4.5.2 and §5; mainFigure1 printedp561 | The cross-sector review identifies five design dimensions, mixed evidence for some arrangements, interactions among them, and a registered-report/limited-disclosure proposal. | `this_run_primary`; All accessible text of the 15-page published-format PDF, printed pp557–571: §§1–6, references, Appendix Tables1–2, plus visual inspection of the main audit matrix and the disputed appendix rows.; review events: [r2_institutions_03](rounds.md#r2_institutions_03) |
 | `casper_blackboxaccessaudits_2024` — contextualizes | [Source](https://arxiv.org/pdf/2401.14446v3); arXiv v3 AppendixD | The authors identify conflicts, constrained resources, narrow scope, excluded viewpoints and capture as failure modes beyond technical access. | `this_run_primary`; Selected arXiv v3: §2.1 and Table 1 access definitions; portions of §§3–4.1 reviewing access-enabled testing; §§5–7 on outside-the-box information, security and discussion; Appendix D in full. Not the complete paper or all technical appendices/references.; review events: [r2_institutions_02](rounds.md#r2_institutions_02) |
 | `longpre_inhouseevaluation_2025` — supports | [Source](https://raw.githubusercontent.com/mlresearch/v267/main/assets/longpre25a/longpre25a.pdf); Final PMLR267 §§4.1–4.3,pp5–8; AppendixA.1/A.4,pp18–20; AppendixB.1,p20; §6,p9 | The final proposal defines evaluator relationships as a spectrum and connects reproducible flaw reporting with conduct-based protection, technical access and coordination; it leaves remediation effects and center governance unresolved. | `this_run_primary`; Final ICML/PMLR 267 PDF pp1–9 (abstract and all main §§1–7); Appendix A pp18–20; Appendix B.1 introductory/example explanations p20, B.2–B.3 and Table A1 pp22–25; Appendix C.1–C.4 pp25–28, including Table A2. Figure A7 p26 visually inspected. The table of contents p17, references pp9–16, visual example cards p21, and Appendix D pp29–31 were not read in full; this is selected-section review.; review events: [r3_audits_01](rounds.md#r3_audits_01) |
+| `brundage_frontierauditingrigorous_2026` — supports | [Source](https://arxiv.org/pdf/2601.11699v4); v4 executive summary pp. 2–6; §5.3.4 pp. 34–35 | Confidential expert access and audit validity conditions are proposed enabling arrangements; competence, independence and adoption remain constraints. | `this_run_primary`; v4 cover/title/byline/version; executive summary PDF pp. 2–6; PDF pp. 30–36 covering §5.3.3 AAL descriptions/Table 3, §5.3.4 assurance-level choice and §5.4 opening/Figure 7 access taxonomy. Remaining 115-page report and appendices not read.; review events: [r5_reporting_03](rounds.md#r5_reporting_03) |
 
 **Limits:** Cross-industry analogies and proposed arrangements do not measure present frontier-AI audit effectiveness. Outsider Oversight’s AppendixTable2 appears to swap FDAFAERS and FCCTCB descriptions; those two program examples are omitted from this inference pending primary verification. The new Longpre paper is a proposal with counterfactual example report cards, not measured effects. Its third-party category excludes direct contractual relationships; Mökander and Homewood use third-party for external collaborative or commissioned review. Compare the actual relationships rather than pooling these labels.
 
@@ -816,8 +841,11 @@ Internal lifecycle audits and external scrutiny can play complementary roles. In
 | `raji_closingaccountabilitygap_2020` — supports | [Source](https://arxiv.org/pdf/2001.00973v1); v1 §2.4, §§4.1–4.6, Figures1–2 and §5 | The proposed SMACTR workflow connects development-stage artifacts and testing to reflection and post-audit action, while acknowledging internal organizational interests and wider checks and balances. | `this_run_primary`; All accessible text of the 12-page arXiv v1 PDF: §§1–6, references and both hypothetical CompanyX examples. Figures1–2 were also rendered and visually inspected. Linked supplementary worked templates were not retrieved/read.; review events: [r2_institutions_05](rounds.md#r2_institutions_05) |
 | `raji_outsideroversight_2022` — contextualizes | [Source](https://dho.stanford.edu/wp-content/uploads/Outsider_Oversight.pdf); §5 Limitations; §§4.2–4.5 | The authors explicitly preserve the value of internal audits and argue against relying on them alone; design arrangements shape whether external review adds accountability. | `this_run_primary`; All accessible text of the 15-page published-format PDF, printed pp557–571: §§1–6, references, Appendix Tables1–2, plus visual inspection of the main audit matrix and the disputed appendix rows.; review events: [r2_institutions_03](rounds.md#r2_institutions_03) |
 | `homewood_thirdpartycompliance_2025` — supports | [Source](https://arxiv.org/pdf/2505.01643v2); arXivv2 §1,pp5–6; §3.2–3.4,pp14–18; Tables3–4,pp15,17; §5,pp22–23 | Voluntary adherence review is explicitly distinct from framework-adequacy/system-safety assessment; control/maturity and disclosure examples are proposed designs, not observed company review outcomes. | `this_run_primary`; arXiv v2 PDF p1 (abstract/date/version), pp5–9 (§1, §2.1–2.2 in full, opening §3 and opening §3.1), pp14–18 (end §3.2; §3.3 and Tables3–4; §3.4 in full; beginning §3.5 through key-area option), pp22–23 (alternatives, §5 conclusion in full, acknowledgments and opening references). Executive summary/options tables pp3–4, reviewer comparisons/structures pp10–13, remaining action/timing/options discussion pp19–21, and references pp24–27 were not read in full.; review events: [r3_audits_03](rounds.md#r3_audits_03) |
+| `schuett_frontierdevelopers_2024` — supports | [Source](https://pmc.ncbi.nlm.nih.gov/articles/PMC12369305/); Final article §§2.3.1–2.3.2; §3.3.2 | Internal board-facing audit and other assurance providers are proposed as complementary; shared language, information and integrated reports can reduce assurance gaps/duplication. | `this_run_primary`; PMC article title/author/publication metadata and abstract; selected §2.1.1; §§2.3.1–2.3.2; §§3.1.1–3.1.3 and 3.2.1–3.2.3; §§3.3.1–3.3.3 including all extracted Table 2 rows; §§4.1–4.3; selected definitional footnotes 5,6,12,13. References and other sections not read end to end.; review events: [r5_reporting_02](rounds.md#r5_reporting_02) |
+| `schuett_frontierdevelopers_2024` — bounds | [Source](https://pmc.ncbi.nlm.nih.gov/articles/PMC12369305/); Final article §4.2; §3.3.1 Table 2 | The author explicitly calls for later empirical effectiveness research; skill, management pressure and changing methodology constrain the transfer from IT audit. | `this_run_primary`; PMC article title/author/publication metadata and abstract; selected §2.1.1; §§2.3.1–2.3.2; §§3.1.1–3.1.3 and 3.2.1–3.2.3; §§3.3.1–3.3.3 including all extracted Table 2 rows; §§4.1–4.3; selected definitional footnotes 5,6,12,13. References and other sections not read end to end.; review events: [r5_reporting_02](rounds.md#r5_reporting_02) |
+| `brundage_frontierauditingrigorous_2026` — contextualizes | [Source](https://arxiv.org/pdf/2601.11699v4); v4 §5.3.3/Table 3 pp. 30–34; §5.3.4 pp. 34–35 | The proposed external assurance ladder varies scope, access and duration, with upper levels not yet feasible as described; it is not a measured confidence scale. | `this_run_primary`; v4 cover/title/byline/version; executive summary PDF pp. 2–6; PDF pp. 30–36 covering §5.3.3 AAL descriptions/Table 3, §5.3.4 assurance-level choice and §5.4 opening/Figure 7 access taxonomy. Remaining 115-page report and appendices not read.; review events: [r5_reporting_03](rounds.md#r5_reporting_03) |
 
-**Limits:** SMACTR’s two CompanyX cases are hypothetical, not an implementation or harm-reduction study. The sources share an author and scholarly lineage; they are complementary arguments rather than independent outcome replications. Homewood’s compliance review concerns adherence to a framework, with constructed control examples; framework adequacy remains a separate question.
+**Limits:** SMACTR’s two CompanyX cases are hypothetical, not an implementation or harm-reduction study. The sources share an author and scholarly lineage; they are complementary arguments rather than independent outcome replications. Homewood’s compliance review concerns adherence to a framework, with constructed control examples; framework adequacy remains a separate question. New internal-audit and external-assurance-level sources remain proposed institutional arrangements; upper assurance levels and example conclusions are prospective, not calibrated effectiveness measures.
 
 **Counterevidence / alternative:** Internal processes can miss affected populations or translate company principles into self-serving criteria; external reviewers can lack data, resources or practical leverage. Lifecycle documentation can become box-ticking if no one owns mitigation and follow-up.
 
@@ -867,12 +895,13 @@ Layered model, red-team and human field testing can expose different application
 | Source and relation | Version / locator | Scoped finding | Review basis and depth |
 |---|---|---|---|
 | `amironesei_aria_pilot_2025` — supports | [Source](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.700-2.pdf); NIST AI700-2 §§2–5, printedpp2–12/viewer9–19; §5.2 and AppendixC | ARIA combines annotations and tester questionnaires in transparent measurement trees; example applications obtain their largest signals from different testing levels, and tester perceptions can diverge from annotated violations. | `this_run_primary`; Abstract/TOC PDF pp4–5; main text §§1–7 PDF pp8–21 (printed1–14), including testing, annotation, crosswalk, CoRIx topology, example interpretations and future work; AppendixC PDFp29/printed22. Other appendices and rendered tree graphics not completely reviewed. Exploratory seven-application pilot with51 red teamers and19 field testers under English scenarios, not representative deployment outcomes. Proxy scenarios differ from severe harms; not every application was tested at every level. Questionnaires and annotations are not directly comparable, and scores are characterized as better for describing than ranking applications. Uncertainty propagation and questionnaire validation remain future work.; review events: [r2_sociotechnical_03](rounds.md#r2_sociotechnical_03) |
+| `amironesei_aria_pilot_2025` — bounds | [Source](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.700-2.pdf); §3.1 adjudication; AppendixC Tables5–7; pinned official CoRIx README/tree | Identical publisher bytes retain52 adjudication-prose versus49 calibrated-table violations. Current official code is available but inspected tree/README does not identify the needed pilot stage/row manifest; no corrected rate follows. | `this_run_primary`; Selected source passages and renderedAppendixC; complete ancillary README and repository path metadata, not a full paper/code/data reproduction.; review events: [r5_versions_03](rounds.md#r5_versions_03), [r5_versions_04](rounds.md#r5_versions_04), [r5_versions_05](rounds.md#r5_versions_05) |
 
-**Limits:** Small English-language pilot of proxy scenarios. Testers, annotators, dialogues and annotation judgments have different denominators. The source says initial CoRIx is better for characterization than comparison; questionnaire/annotation questions differ and uncertainty quantification remains open. Main267/52 versus AppendixC267/49 count tension is held rather than turned into a violation rate.
+**Limits:** Small English-language pilot of proxy scenarios. Testers, annotators, dialogues and annotation judgments have different denominators. The source says initial CoRIx is better for characterization than comparison; questionnaire/annotation questions differ and uncertainty quantification remains open. Main267/52 versus AppendixC267/49 count tension is held rather than turned into a violation rate. A fresh exact-byte report/appendix check and official CoRIx repository inspection narrow the remaining issue to pilot data and aggregation; code availability does not resolve it.
 
 **Counterevidence / alternative:** Field-style use may reveal failures absent in fixed prompts, while model testing may reveal issues that field users miss or do not commonly elicit. Neither direction is a general guarantee of ecological validity.
 
-**Next check:** Retain qualitative findings and omit affected violation numbers pending source clarification. Complete measurement and appendix/visual review before any numerical cross-system inference.
+**Next check:** Resolve the report’s exact pilot row/stage/aggregation manifest or an authenticated correction before a violation rate. Official CoRIx code is now accessible, but its inspected README/tree contains toy examples rather than the needed pilot-data provenance. Retain implemented layered evaluation and omit the affected count/rate.
 
 <a id="c46"></a>
 ## C46
@@ -1458,6 +1487,360 @@ A standardized hazardous-response benchmark can provide explicit rules, confiden
 
 **Next check:** Keep version/standard/evaluator/prompt set and deployment configuration with every score; authenticate later release methods and any cross-version comparability before pooling.
 
+<a id="c80"></a>
+## C80
+
+Compute thresholds have a defensible proposed role as early screens for additional scrutiny; the reviewed design sources do not establish a universal compute-to-harm cutoff or make compute an adequate trigger for every governance duty.
+
+**Status:** scoped_check. **Theme:** governance.
+
+| Source and relation | Version / locator | Scoped finding | Review basis and depth |
+|---|---|---|---|
+| `heim_trainingcomputethresholds_2024` — supports | [Source](https://arxiv.org/pdf/2405.10799v2); v2 §§3–5.1 pp9–14; footnote6 p9; Figure6; §§6.1–6.4 pp18–27 | Compute is early/measurable and potentially verifiable, while risk depends on capability, context, enhancement and defenses; threshold updating may move in either direction. | `this_run_primary`; All 36 PDF text pages, §§1–7, all figure/table text and captions and references, read in overlapping bounded chunks; Figure 6 separately rendered and inspected. No linked reference works or datasets included.; review events: [r5_thresholds_01](rounds.md#r5_thresholds_01) |
+| `californiapolicyworkinggroup_thecaliforniareport_2025` — supports | [Source](https://www.gov.ca.gov/wp-content/uploads/2025/06/June-17-2025-%E2%80%93-The-California-Report-on-Frontier-AI-Policy.pdf); Final June 2025 §5 printedpp36–40 | Align scope with regulatory purpose and determination time, measurement and external verification; use compute as a possible initial filter and permit metric changes. | `this_run_primary`; Cover/byline, authorship statement and acknowledgments; PDFviewerpp4–8 (printedpp3–7: executive principles/origins/contents/intro); all PDFviewerpp37–44 (printedpp36–43: §4 closing, entire §5 scoping, §6.1–6.3 and §6.4 opening). Remaining historical cases, detailed transparency/reporting sections, references and AppendixA feedback form not fully read.; review events: [r5_thresholds_05](rounds.md#r5_thresholds_05) |
+| `fmf_thresholdsfrontier_2025` — contextualizes | [Source](https://www.frontiermodelforum.org/updates/issue-brief-thresholds-for-frontier-ai-safety-frameworks/); Official February 7 HTML: four threshold approaches and conclusion; related representation | Distinguishes proxy and more direct approaches while retaining normative/calibration/crossing questions; canonical May PDF identity remains unresolved. | `this_run_primary`; All accessible current official HTML text read: article, four threshold approaches, tradeoffs, conclusion, footnotes, surrounding navigation and related-publication labels. The canonical May2025 PDF and linked PDF were not read; this event is scoped against the admitted object.; review events: [r5_thresholds_06](rounds.md#r5_thresholds_06) |
+
+**Limits:** These are analytic/policy-design arguments, with conceptual frameworks and historical analogies; no observed causal reduction in harm or empirically optimized numerical boundary is established. The FMF HTML remains related to the unverified canonical PDF.
+
+**Counterevidence / alternative:** Low-compute pathways, post-training and inference-time compute can bypass a pretraining screen; high capability can improve defenses or reliability. More direct capability/impact metrics can be harder to measure, verify or obtain early enough.
+
+**Next check:** Choose the specific regulatory purpose and acceptable false inclusions/exclusions before proposing a number. Verify current primary legal sources separately; omit a universal numerical trigger.
+
+<a id="c81"></a>
+## C81
+
+Compute can provide concrete governance levers through infrastructure visibility, mediated access and measurable resources; those affordances must be assessed separately from risk-proxy validity and the costs of surveillance, concentration and evasion.
+
+**Status:** scoped_check. **Theme:** governance.
+
+| Source and relation | Version / locator | Scoped finding | Review basis and depth |
+|---|---|---|---|
+| `sastry_computingpowergovernance_2024` — supports | [Source](https://arxiv.org/pdf/2402.08797v1); v1 §3.B printedpp24–30; §4 opening printedp34; §5.A printedpp60–67 | The report explains detection/access/quantification/supply-chain affordances and an exploratory visibility/allocation/enforcement taxonomy, then develops privacy, power, progress and evasion limitations. | `this_run_primary`; PDF viewer pp1–5 (cover, contents, introduction and summary); pp25–32 (printedpp24–31, all §3.B properties and opening §3.C); pp35–36 (printedpp34–35, §4 introduction and opening4.A); pp61–69 (printedpp60–68, §5 introduction, §5.A and opening5.B). Remaining §4 mechanisms, later §5 principles, appendices and references not fully read.; review events: [r5_thresholds_02](rounds.md#r5_thresholds_02) |
+
+**Limits:** The 104-page report is selectively read; detailed tool/implementation sections and appendices remain deferred. Feasibility is argued rather than demonstrated at a specified operational assurance level.
+
+**Counterevidence / alternative:** Detectable facilities do not reveal model workloads; reporting can require intrusive access, and progress or specialized low-compute models can undermine coverage. Restricting scope/protecting process may improve proportionality while weakening visibility.
+
+**Next check:** Check the exact detailed mechanism and its safeguards before selecting an implementation route; require implementation evidence before asserting effectiveness.
+
+<a id="c82"></a>
+## C82
+
+The 2025 threshold survey is useful evidence about elicited expert design preferences and disagreements; optional selected-sample responses and competing definitions do not validate risk boundaries or establish representative consensus.
+
+**Status:** scoped_check. **Theme:** governance.
+
+| Source and relation | Version / locator | Scoped finding | Review basis and depth |
+|---|---|---|---|
+| `schuett_surveythresholdsadvanced_2025` — supports | [Source](https://aigi.ox.ac.uk/wp-content/uploads/2025/08/Survey_on_thresholds_for_advanced_AI_systems_1.pdf); §2 printedpp7–11; Table1; §§4.1–4.2.1 printedpp15–17; §4.3 printedpp20–21 | 166 of 379 invited experts participated; all 13 questions were optional. Authors retain divided compute views and acknowledge selection, framing and terminology limits. | `this_run_primary`; Title/abstract, contents, executive summary (printedpp3–4), selected overview figure labels showing item-specific sample sizes, complete §2 methods (printedpp7–11), §4.1 and §4.2.1 through opening4.2.2 (printedpp15–18 opening), and §§4.3–5 plus acknowledgments (printedpp20–21). Not all §3 results/§4.2, references or questionnaire appendices.; review events: [r5_thresholds_03](rounds.md#r5_thresholds_03) |
+| `fmf_thresholdsfrontier_2025` — bounds | [Source](https://www.frontiermodelforum.org/updates/issue-brief-thresholds-for-frontier-ai-safety-frameworks/); Official February 7 HTML capability-threshold subsection; related representation | Capability in absence of mitigations differs from survey Table 1 capability-plus-adequate-mitigation definition; same terminology does not mean identical operational constructs. | `this_run_primary`; All accessible current official HTML text read: article, four threshold approaches, tradeoffs, conclusion, footnotes, surrounding navigation and related-publication labels. The canonical May2025 PDF and linked PDF were not read; this event is scoped against the admitted object.; review events: [r5_thresholds_06](rounds.md#r5_thresholds_06) |
+
+**Limits:** Only selected methods/discussion/results passages were read. The complete questionnaire, full result charts and item denominators must be checked before any leading numeric agreement claim. FMF PDF equivalence is unresolved.
+
+**Counterevidence / alternative:** Expert elicitation and structured consultation can reveal implementation needs and alternatives even without representative sampling; common design preferences can motivate tests, while leaving legitimacy and calibration open.
+
+**Next check:** For each proposed survey headline, read the exact wording/denominator and relevant figure plus appendix. Report disagreements and the operational definition alongside the preference, or omit the number.
+
+<a id="c83"></a>
+## C83
+
+The reviewed frontier-governance proposals specify routes from assessment and external scrutiny to deployment conditions, monitoring and adaptive scope; their practical value depends on measurement, access and institutional capacity rather than the existence of a threshold alone.
+
+**Status:** scoped_check. **Theme:** policy_implementation.
+
+| Source and relation | Version / locator | Scoped finding | Review basis and depth |
+|---|---|---|---|
+| `anderljung_frontierairegulation_2023` — supports | [Source](https://arxiv.org/pdf/2307.03718v1); v1 §§4.1–4.4 pp24–29; §5 pp32–33; AppendixA pp35–36 | Proposes context-sensitive capability/controllability assessment, resourced scrutiny, risk-conditioned deployment and reassessment/reporting; warns against shallow assurance and imprecise scope. | `this_run_primary`; PDFpp1–5 (authorship note, abstract, executive summary and contents), pp15–18 (§2 closing illustration and §3 institutional building-block opening), all pp24–29 (§4.1–4.4 plus §4.5 opening), pp32–36 (§5 continuation, conclusion and AppendixA.1–A.4 opening). Page19 and unlisted passages are not counted as completely read. References and remaining appendices deferred.; review events: [r5_thresholds_04](rounds.md#r5_thresholds_04) |
+| `californiapolicyworkinggroup_thecaliforniareport_2025` — supports | [Source](https://www.gov.ca.gov/wp-content/uploads/2025/06/June-17-2025-%E2%80%93-The-California-Report-on-Frontier-AI-Policy.pdf); Final June 2025 executive principles; §5 printedpp36–40; §§6.1–6.3 printedpp40–43 | Links purpose-specific, revisable threshold design to measurement/verification infrastructure and preserves consultation critiques about standards, access, reporting details and capacity. | `this_run_primary`; Cover/byline, authorship statement and acknowledgments; PDFviewerpp4–8 (printedpp3–7: executive principles/origins/contents/intro); all PDFviewerpp37–44 (printedpp36–43: §4 closing, entire §5 scoping, §6.1–6.3 and §6.4 opening). Remaining historical cases, detailed transparency/reporting sections, references and AppendixA feedback form not fully read.; review events: [r5_thresholds_05](rounds.md#r5_thresholds_05) |
+
+**Limits:** Both are selectively read policy analyses; the California report is a commissioned scholarly working-group report, not enacted law or demonstrated implementation. Historical analogy and proposed procedures do not estimate an AI policy treatment effect.
+
+**Counterevidence / alternative:** Repeated assessment and reporting can generate useful evidence while burdening evaluators, exposing confidential information or creating false assurance. More precise scope may miss emerging systems; rollback and access controls may carry openness and use-case costs.
+
+**Next check:** Separate the normative design recommendation from a claim of observed effectiveness. Prioritize exact final-edition compliance/reporting procedures and any real implementation evaluation before choosing the leading publication conclusion.
+
+<a id="c84"></a>
+## C84
+
+Internal deployment can change model configuration, privileges, tools and applications relative to a public product. The reviewed proposals therefore place internal-use permissions, evaluation and decision authority within governance scope; they do not establish that all internal governance is absent or that their proposed controls have reduced harm.
+
+**Status:** scoped_check. **Theme:** governance.
+
+| Source and relation | Version / locator | Scoped finding | Review basis and depth |
+|---|---|---|---|
+| `stix_behindcloseddoors_2025` — supports | [Source](https://arxiv.org/pdf/2504.12170v1); v1 §§2.1–2.3, PDF pp. 11–16; §§6.1–6.2 pp. 36–39; Appendix pp. 52–53 | Privileged internal use and proposed IDT/IDOB decision controls link the evaluated configuration to internal deployment choices. | `this_run_primary`; Executive summary PDF pp. 1–3; internal access/application §§2.1–2.3, pp. 11–16; recommendations §6.1 and §6.2 opening/evaluation passages, pp. 36–39 including p. 38 n. 78; proposed governance walkthrough Appendix pp. 52–53. Other report material and underlying legal instruments were not systematically checked.; review events: [r5_reporting_01](rounds.md#r5_reporting_01) |
+| `stix_behindcloseddoors_2025` — bounds | [Source](https://arxiv.org/pdf/2504.12170v1); v1 p. 38 n. 78; p. 12 staged-release uncertainty | The report acknowledges existing Anthropic/OpenAI internal-use provisions and uncertainty about staged internal releases, qualifying a broad absence-of-governance reading. | `this_run_primary`; Executive summary PDF pp. 1–3; internal access/application §§2.1–2.3, pp. 11–16; recommendations §6.1 and §6.2 opening/evaluation passages, pp. 36–39 including p. 38 n. 78; proposed governance walkthrough Appendix pp. 52–53. Other report material and underlying legal instruments were not systematically checked.; review events: [r5_reporting_01](rounds.md#r5_reporting_01) |
+| `brundage_frontierauditingrigorous_2026` — contextualizes | [Source](https://arxiv.org/pdf/2601.11699v4); v4 executive summary pp. 2–6 | The audit proposal explicitly includes internal deployment and organization-level safety/security, beyond public products. | `this_run_primary`; v4 cover/title/byline/version; executive summary PDF pp. 2–6; PDF pp. 30–36 covering §5.3.3 AAL descriptions/Table 3, §5.3.4 assurance-level choice and §5.4 opening/Figure 7 access taxonomy. Remaining 115-page report and appendices not read.; review events: [r5_reporting_03](rounds.md#r5_reporting_03) |
+
+**Limits:** These are scoped readings of design proposals. Internal practice and actual adoption may be private or changed since the cited versions; no governance-effect estimate is established.
+
+**Counterevidence / alternative:** Existing internal-use provisions could already address parts of the alleged gap. A difference in configuration can matter without demonstrating greater realized harm.
+
+**Next check:** Compare dated developer internal policies and actual permission/deployment decisions; retain the configuration-bound argument without a universal governance-absence claim.
+
+<a id="c86"></a>
+## C86
+
+Incident-reporting designs can make system versions, harm, context and response more inspectable, but their evidential value depends on scope, reporting thresholds and investigation. Required fields in a proposed common format do not create a legal reporting duty, and neither a template nor a reporting count demonstrates reduced harm.
+
+**Status:** scoped_check. **Theme:** governance.
+
+| Source and relation | Version / locator | Scoped finding | Review basis and depth |
+|---|---|---|---|
+| `cset_incidentskeycomponents_2025` — supports | [Source](https://cset.georgetown.edu/wp-content/uploads/CSET-AI-Incidents.pdf); January 2025 pp. 8–18, Tables 1–6 | A proposed mandatory regime combines incident/near-miss fields, domain tailoring and independent investigation to recover facts initial reports may lack. | `this_run_primary`; Complete accessible text of all 32 PDF pages, including cover, executive summary, §§Introduction/Defining AI Incidents/Key Components/Way Forward, all Tables 1–6, entire Appendix Tables A1–A4 and notes, About/Acknowledgments, and all endnotes. PDF pp. 8 and 19 visually checked after text reading; no linked source or underlying dataset is included in this complete-report event.; review events: [r5_reporting_04](rounds.md#r5_reporting_04) |
+| `oecd_commonreportingincidents_2025` — supports | [Source](https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/02/towards-a-common-reporting-framework-for-ai-incidents_8c488fdb/f326d4ac-en.pdf); No. 34 pp. 11–19; Annexes B–C | The common format offers 29 selected criteria and seven required schema fields, but is not an interface or a preventive/corrective-action evaluation. | `this_run_primary`; Complete accessible text of all 27 PDF pages: front matter, English/French abstracts, acknowledgments, executive summary, §§1–3, all tables, Annex A stocktaking, Annex B detailed29-field schema, Annex C relationship taxonomy, and references pp. 26–27. Rendered pp. 17,23,25 visually checked. No linked database payload or cited sources are included in the complete-document claim.; review events: [r5_reporting_05](rounds.md#r5_reporting_05) |
+| `cset_incidentskeycomponents_2025` — bounds | [Source](https://cset.georgetown.edu/wp-content/uploads/CSET-AI-Incidents.pdf); January 2025 pp. 6–7,10–11; Appendix pp. 19–26 | CSET distinguishes actual incidents/near misses from hazards and draws on shared reporting resources; its synthesis is not an independent incident-effect sample. | `this_run_primary`; Complete accessible text of all 32 PDF pages, including cover, executive summary, §§Introduction/Defining AI Incidents/Key Components/Way Forward, all Tables 1–6, entire Appendix Tables A1–A4 and notes, About/Acknowledgments, and all endnotes. PDF pp. 8 and 19 visually checked after text reading; no linked source or underlying dataset is included in this complete-report event.; review events: [r5_reporting_04](rounds.md#r5_reporting_04) |
+| `oecd_commonreportingincidents_2025` — bounds | [Source](https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/02/towards-a-common-reporting-framework-for-ai-incidents_8c488fdb/f326d4ac-en.pdf); No. 34 Annex C p. 25; conclusions p. 19 | Multiple nonexclusive reported causal relationships and hazards require explicit units; future testing is proposed, not completed effectiveness validation. | `this_run_primary`; Complete accessible text of all 27 PDF pages: front matter, English/French abstracts, acknowledgments, executive summary, §§1–3, all tables, Annex A stocktaking, Annex B detailed29-field schema, Annex C relationship taxonomy, and references pp. 26–27. Rendered pp. 17,23,25 visually checked. No linked database payload or cited sources are included in the complete-document claim.; review events: [r5_reporting_05](rounds.md#r5_reporting_05) |
+
+**Limits:** Full document readings cover the designs and their methods, not live implementation, current legal obligations or independently investigated incidents. CSET/OECD/AIID inputs overlap.
+
+**Counterevidence / alternative:** Richer schemas may be burdensome or incomplete, and mandatory regimes can still underreport. The two proposals define scope differently, so agreement cannot be inferred by pooling raw counts.
+
+**Next check:** Review actual reporting adoption, field completeness, investigations and documented remediation. Verify operative law separately whenever legal status is material.
+
+<a id="c87"></a>
+## C87
+
+The AI Incident Database paper documents implemented cataloguing mechanisms—stable incident IDs, multiple reports per incident, search and plural taxonomies—that can support learning. It does not establish representative failure rates or demonstrate that database use prevents failures; report counts and illustrative mitigation workflows answer narrower questions.
+
+**Status:** scoped_check. **Theme:** outcomes.
+
+| Source and relation | Version / locator | Scoped finding | Review basis and depth |
+|---|---|---|---|
+| `mcgregor_preventingrepeatedfailures_2021` — supports | [Source](https://cdn.aaai.org/ojs/17817/17817-13-21311-1-2-20210518.pdf); Final AAAI 2021 pp. 15459–15462; Figures 2–5 | The built architecture distinguishes incidents from source reports, permits namespaced taxonomies and supports searching/submitting reports; Figure 2 has multiple reports for Incident 36. | `this_run_primary`; Complete accessible text of all 6 final proceedings PDF pages, printed 15458–15463: abstract, introduction/motivation, AIID architecture and discovery/submission/taxonomy features, all figure captions, hypothetical fairness-use example, conclusions, acknowledgments and references. Figures 2–5 visually inspected on PDF pages 3–5; Figure 1 image not pixel-inspected. No current database, software or linked external source was audited.; review events: [r5_reporting_06](rounds.md#r5_reporting_06) |
+| `mcgregor_preventingrepeatedfailures_2021` — bounds | [Source](https://cdn.aaai.org/ojs/17817/17817-13-21311-1-2-20210518.pdf); Final AAAI 2021 p. 15462 Figure 5; p. 15463 conclusion | The fairness-use workflow and mitigation benefits are intended applications; adoption interest and historical report volume are not a controlled remediation or incidence study. | `this_run_primary`; Complete accessible text of all 6 final proceedings PDF pages, printed 15458–15463: abstract, introduction/motivation, AIID architecture and discovery/submission/taxonomy features, all figure captions, hypothetical fairness-use example, conclusions, acknowledgments and references. Figures 2–5 visually inspected on PDF pages 3–5; Figure 1 image not pixel-inspected. No current database, software or linked external source was audited.; review events: [r5_reporting_06](rounds.md#r5_reporting_06) |
+| `oecd_commonreportingincidents_2025` — contextualizes | [Source](https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/02/towards-a-common-reporting-framework-for-ai-incidents_8c488fdb/f326d4ac-en.pdf); No. 34 pp. 13–18 and Annex A | The later schema uses AIID among four stocktaking resources. This methodological reuse is not independent corroboration of the database's prevention effect. | `this_run_primary`; Complete accessible text of all 27 PDF pages: front matter, English/French abstracts, acknowledgments, executive summary, §§1–3, all tables, Annex A stocktaking, Annex B detailed29-field schema, Annex C relationship taxonomy, and references pp. 26–27. Rendered pp. 17,23,25 visually checked. No linked database payload or cited sources are included in the complete-document claim.; review events: [r5_reporting_05](rounds.md#r5_reporting_05) |
+
+**Limits:** The exact final 2021 paper was read, but database data/code, current completeness and actual user decisions were not audited. Historical counts are version-bound.
+
+**Counterevidence / alternative:** Media/reporting selection, duplicate reports and uncertain causal attribution can distort apparent frequencies; plural taxonomies expose disagreement rather than resolving it automatically.
+
+**Next check:** Look for a documented downstream decision/remediation case with causal limitations, and keep current database counts separate from the historical article.
+
+<a id="c88"></a>
+## C88
+
+Engineered backdoors can persist through specified safety-training pipelines, but persistence depends on adversarial access, objective, model and training configuration; some tested objectives or models lose the measured backdoor effect.
+
+**Status:** scoped_check. **Theme:** oversight_control.
+
+| Source and relation | Version / locator | Scoped finding | Review basis and depth |
+|---|---|---|---|
+| `hubinger_sleeperagentstraining_2024` — supports | [Source](https://arxiv.org/pdf/2401.05566v3); v3 §§1–2/model-organism framing, pp2–3,9–10; §4/HHH RL pp15,18–20; Figures10–11 captions; §6 adversarial training pp25–27; Figure17 caption; Alternative explanations/limitations pp39–40 | Constructed conditional policies persist in selected settings; smaller models and SFT show mitigation successes. | `this_run_primary`; PDF pp2–3,9–10,15,18–20,25–27,39–40 read in full; includes model-organism framing, selected RL/SFT comparisons, adversarial-training methods/results and alternative explanations. Cover title/byline identifiers checked. Remaining pages, references and appendices were not read in full.; review events: [r5_persistence_01](rounds.md#r5_persistence_01) |
+| `zhang_persistentpretraining_2025` — bounds | [Source](https://arxiv.org/pdf/2410.13722v1); v1 §3 threat model/training setup pp3–4; §4.1.3 and Figure6 p8; §4.1.4 and Figure7 pp8–9; §5 discussion pp9–10; Appendices B–C pp15–17; Tables2–3 | Data-only pretraining poisoning leaves three objectives measurably persistent, while the tested jailbreak objective does not persist after safety training. | `this_run_primary`; Every text page of the 17-page PDF read: abstract, §§1–6, all references, Appendices A–C, tables, figure captions and displayed examples. Rendered checks were separately limited to pp8 and15.; review events: [r5_persistence_02](rounds.md#r5_persistence_02) |
+
+**Limits:** Constructed settings do not estimate natural deceptive alignment or deployed-system incidence. Hubinger is selectively read; Zhang uses a shortened pretraining regime with reduced capabilities. Trigger, task, training access and endpoint differ, so the studies are not a matched contradiction or a universal scale experiment.
+
+**Counterevidence / alternative:** Both studies contain successful mitigation or null persistence results. A null measured jailbreak effect need not establish removal of every possible latent policy, while a surviving engineered effect does not show every training method fails.
+
+**Next check:** Retain positive and null findings together. Complete remaining claim-critical model-organism ablations if this becomes a leading mechanism claim; otherwise omit broad incidence and universal-training-failure language.
+
+<a id="c89"></a>
+## C89
+
+A model can be engineered to display a target behavior only after selected benign supervised finetuning, making pre-adaptation behavior an incomplete assurance test for that constructed threat model.
+
+**Status:** scoped_check. **Theme:** oversight_control.
+
+| Source and relation | Version / locator | Scoped finding | Review basis and depth |
+|---|---|---|---|
+| `gloaguen_finetuningactivated_2025` — supports | [Source](https://arxiv.org/pdf/2505.16567v1); v1 §§4.2–4.5 results/ablations pp5–9; §4.4/Table7 and §4.5/Table8 p8; §5 limitations p9; AppendixB.3 pp26–27; AppendixD.2 p32 | Original v1 reports dormant-then-active behavior with clean-baseline controls, alongside task/configuration nulls and a narrow robustness study. | `this_run_primary`; PDF pp1–2,5–9,26–27,32 read in full: original abstract/introduction, experimental results/ablations/limitations, selected evaluation details and resource notes. Core attack-construction §§3–4.1 pp3–4 and most appendices were not read.; review events: [r5_persistence_05](rounds.md#r5_persistence_05) |
+
+**Limits:** V1 tests compromised model weights and supervised finetuning in models up to 3B; it does not establish naturally occurring dormancy or all adaptation methods. Selected reading and evaluation-format exclusions limit stronger conclusions.
+
+**Counterevidence / alternative:** Task-conflicting finetuning and multiple robustness settings produce weak or absent effects; clean finetuning can also alter baseline safeguards. Utility thresholds are not formal noninferiority evidence.
+
+**Next check:** Describe adaptation as part of the evaluation boundary, with a finetuned-clean comparator. Inspect later v4 separately only if expanded RL/distillation claims become publication-critical.
+
+<a id="c90"></a>
+## C90
+
+Filtered synthetic training data can transmit measured teacher traits in controlled finetuning experiments, with model-pair, trait and evaluation dependencies that prevent a universal transfer rule.
+
+**Status:** scoped_check. **Theme:** oversight_control.
+
+| Source and relation | Version / locator | Scoped finding | Review basis and depth |
+|---|---|---|---|
+| `cloud_subliminallearning_2025` — supports | [Source](https://arxiv.org/pdf/2507.14805v1); v1 §§3–4 controlled trait-transfer studies pp4–8; §5.1 Figure8 and §5.2 in-context controls p9; §6.1 Theorem1 p10; §6.2 p11; §8 limitations p13; AppendixD.2 p28; D.4/Figure18 pp31–32 | Numbers/code/reasoning experiments show transfer with controls; model-pair exceptions, null in-context probes, limited theorem assumptions and teacher-provenance filter labels bound the mechanism claim. | `this_run_primary`; Main PDF pp2–13 (§§1–9, including selected acknowledgments/reference opening); cover/abstract identifiers; AppendixD.2 p28 and D.4 pp31–32. An unrelated illustrative list on p27 was encountered but is not evidence for the claims. Remaining references, proof appendix and other appendices were not read in full.; review events: [r5_persistence_03](rounds.md#r5_persistence_03) |
+
+**Limits:** The study does not estimate prevalence in production data. Shared initialization for named closed models is an author-attributed explanation, not independently inspected weights. The theorem and sampled multistep experiments have different assumptions; proof/appendices were not fully read.
+
+**Counterevidence / alternative:** Some traits and mismatched pairs do not transfer, while GPT-4o/GPT-4.1 are a named cross-type exception. Negative probes narrow possible explanations without excluding every semantic cue or proving filtering impossible.
+
+**Next check:** Keep transfer endpoints, model-pair exceptions and evaluation/filter conditions attached to the claim. Complete specific appendix/proof checks only if stronger mechanistic or numerical claims are retained.
+
+<a id="c91"></a>
+## C91
+
+Backdoor benchmarks expose task, access and edition dependence, with positive targeted-refusal mitigation in a later comparison; unresolved jailbreak baseline/task provenance prevents a reliable quantitative jailbreak-defense conclusion.
+
+**Status:** scoped_check. **Theme:** oversight_control.
+
+| Source and relation | Version / locator | Scoped finding | Review basis and depth |
+|---|---|---|---|
+| `li_backdoorllmcomprehensive_2024` — supports | [Source](https://arxiv.org/pdf/2408.12798v1); v1 §3/Table2 access taxonomy pp3–4; Table3 caption p5 and §4.1 metric definitions p6; §4.2–4.5/results Tables4–6 pp6–9; §5 limitations p9; AppendixA.4 p15; B.1/Figure1 p16; B.2–B.3 pp16–17 | Original v1 separates four attacker-access categories and distinct success metrics; judge/scale interpretations have limitations and robust defense support is explicitly absent. | `this_run_primary`; Every text page of the 20-page v1 PDF read: main §§1–6, all references, ethics and experimental Appendices A–B, tables, captions and displayed examples. Visual inspection separately limited to pp5 and16.; review events: [r5_persistence_04](rounds.md#r5_persistence_04) |
+| `li_backdoorllmcomprehensive_2024` — supports | [Source](https://arxiv.org/pdf/2408.12798v2); v2 §5 and Table7 p9; AppendixD.1 defense configurations p16; AppendixD/Table4 and D.2 pp17–18 | Related v2 adds defense comparisons with strong reported targeted-refusal mitigation. Jailbreak table/prose escalation wording and the no-defense baseline/task provenance remain unresolved; no affected numerical comparison is adopted. | `this_run_primary`; PDF p1 cover/abstract, pp8–10 (CoT-results continuation, full §5/Table7 and conclusion/reference opening), pp16–18 (defense taxonomy/configurations, Table4, complete D.2 discussion and beginning of additional-result sections). Other v2 pages were not fully read.; review events: [r5_persistence_06](rounds.md#r5_persistence_06) |
+
+**Limits:** Access categories and reused implementations/tasks are not independent replications. The original Table3 caption/definitions conflict and v2 table/prose escalation wording is unresolved. The v2 defense comparison is one model/two tasks/five data-poisoning methods, with perplexity as a limited auxiliary metric. The v2 Table7 jailbreak no-defense vector matches its Table3 sentiment-misclassification rather than jailbreaking vector. Checkpoint, split and run mapping were not inspected, so this is a provenance hold, not an asserted copied-row error or a replacement baseline.
+
+**Counterevidence / alternative:** Selected settings are weak or null, and some defenses strongly reduce targeted-refusal success. Residual effects and uncertain jailbreak baselines prevent universal mitigation or failure conclusions; table/prose disagreements do not establish their cause.
+
+**Next check:** Omit affected rate headlines and defense-induced-escalation language. Reconcile canonical original-title/later-abstract metadata and seek correction/clarification only if the disputed rates become consequential.
+
+<a id="c92"></a>
+## C92
+
+Separately modeling helpfulness and harmfulness can improve their measured tradeoff through constrained optimization, while the practical constraint remains an expectation of a learned cost.
+
+**Status:** scoped_check. **Theme:** safeguards.
+
+| Source and relation | Version / locator | Scoped finding | Review basis and depth |
+|---|---|---|---|
+| `dai_saferlhfsafe_2024` — supports | [Source](https://proceedings.iclr.cc/paper_files/paper/2024/file/dd1577afd396928ed64216f3f1fd5556-Paper-Conference.pdf); ICLR2024 final §§3–5, Eqs7–10; Figures5–6; Appendix A/G.2 | Separate labels/scorers and Lagrangian training improve curated human/GPT-4 comparisons and tested ablations; the desired pointwise constraint is relaxed to expected learned cost. | `this_run_primary`; Official 28-page ICLR final: main §§1–6, pp1–9; Appendix A limitations and B cost-model ablation p15; Appendix C reproducibility and D ethics plus E.1 opening p16; selected G.1 ending and complete G.2 model-selection plus G.3 opening pp21–22. Other appendix material, references, annotation protocol, proof and full implementation/red-team sections not comprehensively read.; review events: [r5_mitigations_01](rounds.md#r5_mitigations_01) |
+
+**Limits:** Official final is a related edition of the canonical preprint and only selectively read. Single-turn 7B models, curated data/scorers and changing round data limit the result; no final/preprint equivalence or deployed-harm rate is certified.
+
+**Counterevidence / alternative:** Human pairwise judgments add an endpoint beyond learned scores, but expectation constraints can hide individual harmful responses and changes in prompts/checkpoint selection. HC-RLHF uses related SafeRLHF data/method lineage, not independent confirmation.
+
+**Next check:** Compare exact canonical/preprint and final claim-critical methods and evaluation appendices before adopting numerical final results; evaluate cost construct validity and prompt shift separately.
+
+<a id="c93"></a>
+## C93
+
+HC-RLHF’s held-out accept-or-abstain procedure supports a conditional bound on the probability of returning a model that violates an expected learned-cost constraint. The written zero-threshold case avoids an unresolved centering discrepancy.
+
+**Status:** scoped_check. **Theme:** safeguards.
+
+| Source and relation | Version / locator | Scoped finding | Review basis and depth |
+|---|---|---|---|
+| `chittepu_reinforcementlearning_2025` — supports | [Source](https://arxiv.org/pdf/2506.08266v1); arXiv v1 §§3–4/Assumption4.1/Theorem4.2; Appendices A–D | Candidate selection plus held-out confidence-bound test may return No Solution Found. Statistical validity depends on iid/normal estimates for the stated Student-t theorem or bounded estimates for the Hoeffding alternative, and a stationary prompt distribution. Eq8 includes −τ but Algorithm1/§4 use uncentered cost samples and a zero acceptance threshold; zero-threshold forms coincide, while arbitrary-threshold guarantee wording is deferred. | `this_run_primary`; All accessible text of all20 PDF pages of arXiv v1: main §§1–7, references and Appendices A–F, all tables/captions and proofs. Mathematical arguments were read as source text, not independently formally verified. Linked code/data and alternative published edition were not read or run.; review events: [r5_mitigations_02](rounds.md#r5_mitigations_02) |
+
+**Limits:** The bounded object is expected learned cost, not individual-response harm or deployment harm. A read proof is not independent formal verification, and training/judge implementation is not replicated. Main/appendix judge identity differs; affected numerical comparisons are omitted. Nonzero-threshold centering differs between Eq8 and Algorithm1/§4; the general-threshold formulation needs clarification before publication. The risk bound concerns the training/test procedure returning an unsafe output, with No Solution Found defined safe; it is not a posterior or conditional guarantee of operational safety for every accepted model.
+
+**Counterevidence / alternative:** Cost-model misspecification, adaptive prompt shift or uncertified fallback on abstention can break the link to operational safety. Favorable small-model trial results do not prove zero failure probability.
+
+**Next check:** Retain conditional theorem wording, resolve exact judge run IDs/title metadata, and validate scorer/distribution assumptions before applying the procedure to a deployment decision. Check actual nonzero-threshold safety-test centering against Eq8/Algorithm1/§4; otherwise omit the arbitrary-threshold guarantee.
+
+<a id="c94"></a>
+## C94
+
+Safe LoRA provides a positive weight-space mitigation for safety degradation during controlled fine-tuning, with model-dependent projection choices and visible utility tradeoffs.
+
+**Status:** scoped_check. **Theme:** safeguards.
+
+| Source and relation | Version / locator | Scoped finding | Review basis and depth |
+|---|---|---|---|
+| `hsu_safelorasilver_2024` — supports | [Source](https://arxiv.org/pdf/2405.16833v1); arXiv v1 §§3–4, Tables1–3; Appendix A/Figures3–4 | Projecting selected LoRA updates using aligned-minus-base weights improves tested harmfulness/refusal endpoints across harmful, mixed and benign adaptation settings; projected-layer sweeps and model/dataset thresholds expose utility tradeoffs. | `this_run_primary`; All accessible text of the 15-page arXiv v1, including main §§1–5, references, Appendix A.1–A.4 and all captions/Tables1–6. Equations and threat assumptions read; no linked code, datasets or final-edition appendices inspected.; review events: [r5_mitigations_03](rounds.md#r5_mitigations_03) |
+
+**Limits:** Requires trusted base/aligned weights and control over the adaptation pipeline; tests are limited to specific7B/8B model/data/LoRA configurations. The separate longer NeurIPS final has not been substantively reread.
+
+**Counterevidence / alternative:** Utility is not uniformly preserved; baseline dose choices constrain superiority claims. Authors explicitly leave adaptive circumvention open. A method called a safety-aligned subspace is not a general proof of a unique safety mechanism.
+
+**Next check:** Use the v1 result under controlled-weight assumptions. Check final-version changes and matched utility/adaptive-attack experiments before broader claims.
+
+<a id="c95"></a>
+## C95
+
+Teaching models to reason over explicit safety policies provides affirmative policy-adherence and jailbreak-resistance evidence, with limits from comparator information, overrefusal and the tested transfer distribution.
+
+**Status:** scoped_check. **Theme:** oversight_control.
+
+| Source and relation | Version / locator | Scoped finding | Review basis and depth |
+|---|---|---|---|
+| `guan_deliberativealignment_2024` — supports | [Source](https://arxiv.org/pdf/2412.16339v1); arXiv v1 §§2–4; §6; Appendix A | Synthetic policy-reasoning SFT and outcome RL improve tested behavioral endpoints and contribute in reduced-model ablations; reported OOD transfer is relative to held-out safety-training categories, while one ablation increases overrefusal. | `this_run_primary`; Cover/abstract/introduction opening p1; §2 overview/specification/data-generation/filtering/SFT/RL pp3–9; §3.1.3 jailbreak evaluation p10; §§3.2–4.3 comparisons/compute/ablations/policy retrieval/OOD pp12–18; complete §6 discussion pp20–21; Appendix A human-review experiment and Table4 p24. Remaining examples, policies, related work and references not comprehensively read.; review events: [r5_mitigations_05](rounds.md#r5_mitigations_05) |
+
+**Limits:** Provider study of OpenAI policy/model releases, internal scorers and specified attack budgets. Selected reading, no training reproduction, no faithful-reasoning proof and no policy-legitimacy conclusion.
+
+**Counterevidence / alternative:** Inference comparators receive summarized policies rather than the same detailed training information. Internal human review checks responses but is not external validation. Pretraining/capability exposure bounds the OOD interpretation.
+
+**Next check:** If used as a leading publication finding, inspect exact release IDs, full metrics/judge implementations and attack protocols; retain the scoped affirmative result without universal harmlessness or cost-free improvement language.
+
+<a id="c96"></a>
+## C96
+
+Historical extraction experiments distinguish restricting ordinary output behavior from removing memorized text; their access conditions and web-matching ground truth do not establish current product exposure or certified proprietary-training membership.
+
+**Status:** scoped_check. **Theme:** safeguards.
+
+| Source and relation | Version / locator | Scoped finding | Review basis and depth |
+|---|---|---|---|
+| `nasr_scalableextraction_2025` — supports | [Source](https://proceedings.iclr.cc/paper_files/paper/2025/file/cce0e917b050208170151f77b497fc71-Paper-Conference.pdf); ICLR 2025 final §§2–7, pp2–10; Tables 1–2 | Specific historical model/interface comparisons show both reduced easy extraction and additional recoverable web-matching outputs under changed access. The fine-tuning exclusion control helps distinguish recovery from simply replaying supplied fine-tuning text. | `this_run_primary`; Complete main-text viewer pp1–10, abstract and §§1–8 through the beginning of the discussion on p10; Tables 1–2 and captions for Figures 1–5. Discussion continuation, references and appendices on pp11–73 were not fully read. No example strings or sensitive output passages are reproduced.; review events: [r5_privacy_01](rounds.md#r5_privacy_01) |
+
+**Limits:** Main text only; final canonical metadata pending. Unknown proprietary training data are proxied by a 9 TB auxiliary corpus and at-least-50-token matches. Historical interfaces and patched behavior are not current rates.
+
+**Counterevidence / alternative:** Transfer is uneven across models and safeguards can reduce ordinary extraction; unknown training/weight differences prevent isolating alignment as the sole cause. Contact-string classifiers do not establish person-level harm.
+
+**Next check:** Reconcile the final edition and read relevant appendices before numerical headlines; retain version/access/denominator qualifiers.
+
+<a id="c97"></a>
+## C97
+
+A deletion audit of the resulting model and privacy of the before/after update history are distinct: in Du et al.’s synthetic classification experiments, exact retraining improves single-state erasure while version comparisons can still reveal deletion membership.
+
+**Status:** scoped_check. **Theme:** outcomes.
+
+| Source and relation | Version / locator | Scoped finding | Review basis and depth |
+|---|---|---|---|
+| `du_textualunlearning_2025` — supports | [Source](https://raw.githubusercontent.com/mlresearch/v267/main/assets/du25d/du25d.pdf); ICML 2025 final §§2–5, Tables 1–2 and Figure 4; Appendices A–J | Strong counterfactual auditing exposes residual distinguishability in tested inexact methods, while before/after access creates a separate membership/reconstruction channel, including an exact-retraining comparator. | `this_run_primary`; All 19 PDF pages read: main §§1–6, all figure captions and table text, acknowledgments/impact statement, references, and Appendices A–J. Key Table 1 and Figure 4 on viewer p8 were also visually inspected. Linked code/data and other cited papers were not read as part of this event.; review events: [r5_privacy_04](rounds.md#r5_privacy_04) |
+
+**Limits:** Synthetic, deliberately mislabeled attribute-classification examples and output-score/logit/weight access do not measure generic generation or real-person exposure. Reconstruction overlap is not exact profile recovery.
+
+**Counterevidence / alternative:** Exact retraining is a positive erasure control, and batch size/model/access change recovery; the paper does not show every unlearning method fails or estimate deployed-attack prevalence.
+
+**Next check:** Cross-link C04/C35 without collapsing their different tasks or final-version status. Reproduce code or calibrate realistic generative/privacy settings only if needed for a numerical claim.
+
+<a id="c98"></a>
+## C98
+
+vTune supplies positive, conditional evidence of fine-tuning on marked data, while leaving requested training granularity and an exact statistical null bound unverified.
+
+**Status:** scoped_check. **Theme:** audit_institutions.
+
+| Source and relation | Version / locator | Scoped finding | Review basis and depth |
+|---|---|---|---|
+| `zhang_vtuneverifiablefine_2024` — supports | [Source](https://arxiv.org/pdf/2411.06611v2); arXiv v2 §§4.2–4.3,5.1,5.3–5.4 and7; §4.2.1 p7 | The method tests supplied-data influence and reports feasibility/performance comparisons, but estimates the modal probability from sampled sequences and explicitly cannot verify requested model, iterations or fine-tuning method. | `this_run_primary`; Version/title and introduction/threat/desiderata on pp1–3; §§4–4.3 pp4–7 including test and modal-probability estimator; §5 experimental setup and §5.1 downstream performance pp7–8; §§5.3–5.4 and selected §6.1 subset-training assumptions p10; §7 conclusion/limitations p12. No complete reading of §5.2 sweeps, remaining attacks, references or appendices.; review events: [r5_privacy_06](rounds.md#r5_privacy_06) |
+
+**Limits:** Selected sections; marker secrecy and tested provider threats limit transfer. Sample maxima do not supply a proved upper bound or universally calibrated tiny p-values.
+
+**Counterevidence / alternative:** Useful positive process verification under a defined threat model remains possible. Successful marker learning does not ensure the full requested training job, privacy, erasure or safety.
+
+**Next check:** Complete threat/appendix checks and statistical bound analysis before adopting significance or comprehensive-compliance claims.
+
+<a id="c99"></a>
+## C99
+
+Open-model post-training extraction can yield semantically similar and useful training-like data, while semantic resemblance, exact record extraction and recovery of a complete safety policy remain distinct claims.
+
+**Status:** scoped_check. **Theme:** safeguards.
+
+| Source and relation | Version / locator | Scoped finding | Review basis and depth |
+|---|---|---|---|
+| `barbero_extractingalignment_2025` — supports | [Source](https://arxiv.org/pdf/2510.18554v1); arXiv v1 §§2,3.3,4.2–4.3 and5–6; Table 2 | Known public post-training mixtures permit comparison, and selected re-training results show useful downstream information; semantic threshold and benchmark-dependent distillation results bound the interpretation. | `this_run_primary`; Abstract and selected introduction/nomenclature; §2 pp3–4; selected §3 method definitions including all §3.3 metric text pp4–6; §4 setup and §§4.2–4.3 coverage/distillation pp6–9; §5 RL evaluation pp10–11 and §6 conclusion p12. No full reading of §3.1 prompt procedures, §4.1 verbatim-results analysis, references or appendices. Qualitative generations are not reproduced.; review events: [r5_privacy_07](rounds.md#r5_privacy_07) |
+
+**Limits:** Selected v1 only; v2 and appendices pending. Manual embedding threshold, known public training data, filtering and different token budgets do not certify private membership or current-model incidence.
+
+**Counterevidence / alternative:** Some distillation metrics are close to original training, while MATH and IFEval are lower; utility is substantive evidence without uniform parity or complete dataset recovery.
+
+**Next check:** Check v2, threshold calibration and distillation appendices before leading with semantic-recovery magnitudes; keep broad capability alignment separate from safety-policy training data.
+
+<a id="c100"></a>
+## C100
+
+Draft misuse-risk guidance can make a threat-to-decision process inspectable by linking risk baselines, evaluation conditions, safeguards, deployment choices and post-deployment feedback; it does not make those choices empirically adequate or legally binding merely by documenting them.
+
+**Status:** scoped_check. **Theme:** governance.
+
+| Source and relation | Version / locator | Scoped finding | Review basis and depth |
+|---|---|---|---|
+| `nist_managingmisuserisk_2024` — supports | [Source](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.800-1.ipd.pdf); Initial draft §3, §4 Objectives1–7 and AppendixB/Table1 | The original lifecycle workflow specifies threat profiles, tolerances, resource-aware measurement, safeguards/deployment decisions and incident/transparency processes, with explicit alternative-practice and no-guarantee caveats. | `this_run_primary`; All27 PDF pages read: covers, comment notice/TOC, introduction, §§2–4, all seven objectives/practices/documentation, AppendixA glossary, AppendixB/Table1 and all50 endnotes. Linked studies/guidance not independently opened.; review events: [r5_versions_01](rounds.md#r5_versions_01) |
+| `nist_managingmisuserisk_2025_2pd` — supports | [Source](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.800-1.ipd2.pdf); Second draft §§2–5 Practices1.1–1.3,4.1–4.2,5.1–5.3; AppendixC/Table2 | The later draft explicitly adds marginal-risk/supply-chain framing and a richer task/measurement taxonomy, while retaining contextual, voluntary and no-prevention-guarantee qualifications. | `this_run_primary`; PDF frontmatter/intro/viewerpp1–5; complete §§2–4 and §5 through Practice6.1 opening, printedpp1–17/viewerpp6–22; complete AppendixC/Table2 printedpp26–30/viewerpp31–35. Remaining monitoring/disclosure practices, glossary, mitigation table, domain appendices and endnotes not fully read.; review events: [r5_versions_02](rounds.md#r5_versions_02) |
+
+**Limits:** Two historical public drafts from one issuer lineage, not separate independent efficacy studies, adopted statutory requirements or a complete check of later versions. The69-page second draft remains selectively read; domain appendices were not fully inspected.
+
+**Counterevidence / alternative:** Explicit practices and documentation create useful audit targets and response pathways, while uncertainty in proxy transfer, threat emulation and safeguards remains. Alternatives may be appropriate; documentation alone cannot certify implementation or outcomes.
+
+**Next check:** Match the exact edition and intended decision; inspect actual evaluations, decisions, response records and follow-through before effectiveness claims. Verify later/current instruments separately if relevant.
+
 ## Source families and dependencies
 
 These family annotations identify shared work, data or incidents where known. They do not comprehensively certify independence across the collection. Citation keys are retained pending identity adjudication.
@@ -1480,3 +1863,7 @@ These family annotations identify shared work, data or incidents where known. Th
 | `F14` | `nguyen_probingsteeringevaluation_2025`, `chaudhary_evaluationawareness_2025`, `hua_steeringevaluation_2025` | Shared evaluation-awareness prompt/probe lineage, with different model, organism and intervention choices. | Primary methods and explicit cited predecessors in r4_awareness_01–03. | Distinct contributions with shared concepts/data sources; exact item overlap is not fully reconstructed and broad independent behavioral replication is not claimed. |
 | `F15` | `lambert_rewardbenchevaluating_2024`, `frick_evaluaterewardrlhf_2024`, `wang_selftaughtevaluators_2024`, `wang_helpsteer2opensource_2024` | Reward/judge studies share RewardBench and human-preference reference lineages; Self-Taught also uses HelpSteer2 endpoints. | Primary evaluation/training methods and source references in r4_judges events. | PPE’s preprint/final are one study; benchmark success and downstream validation are different endpoints. No independent broad evaluator-validity corroboration count. |
 | `F16` | `mlcommons_ailuminate_2026`, `mlcommons_ailuminatev10_2025` | MLCommons suite portal and v1.0 paper are related objects across changing instrument/evaluator editions. | Current portal and exact arXivv1 methods, r4_depthsample_05–07. | Do not combine later non-LLM scorer descriptions with earlier LLM-ensemble results or count two entries as independent validation. |
+| `F17` | `nist_managingmisuserisk_2024`, `nist_managingmisuserisk_2025_2pd` | Initial and second NIST AI800-1 public drafts are a policy-development lineage with changed scope, numbering and methods. | Exact covers, DOI/version labels and methods in r5_versions_01–02. | Historical draft comparison, not two independent efficacy studies or proof of present final/legal status. |
+| `F18` | `hubinger_sleeperagentstraining_2024`, `zhang_persistentpretraining_2025`, `li_backdoorllmcomprehensive_2024` | Shared model-organism/benchmark and citation lineage, with different attacker access, objectives and training configurations. | Hubinger is cited/reused by the later benchmark and contrasted by Zhang; primary methods in r5_persistence events. | Transfer/null results are not a matched replication or contradiction across identical conditions; reused implementations/tasks do not give independent outcome samples. |
+| `F19` | `dai_saferlhfsafe_2024`, `chittepu_reinforcementlearning_2025` | HC-RLHF extends SafeRLHF’s separated reward/cost and dataset lineage with a held-out acceptance/abstention test. | Primary HC-RLHF §2.2/§5 and selected SafeRLHF final methods, r5_mitigations_01–02. | Different contributions with dependent methods/data. Learned-cost, training-procedure confidence and human/operational outcomes remain distinct endpoints. |
+| `F20` | `cset_incidentskeycomponents_2025`, `oecd_commonreportingincidents_2025`, `mcgregor_preventingrepeatedfailures_2021` | Reporting-design stocktaking uses overlapping incident resources, including AIID, while scope and report/incident/hazard units differ. | Complete CSET/OECD methods and AIID final paper, r5_reporting_04–06. | Resource reuse is methodological dependence, not independent prevention-effect evidence. Exact event-level overlap is not reconstructed; raw report counts must not be pooled. |
