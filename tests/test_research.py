@@ -203,6 +203,53 @@ class BroadResearchTests(unittest.TestCase):
         self.assertIn(f"[{rounds['rounds'][0]['readings'][0]['id']}](rounds.md#{rounds['rounds'][0]['readings'][0]['id']})",
                       research.generate_claims(claims))
 
+    def test_inherited_full_rechecks_count_keys_once_separately_from_new_completions(self):
+        rounds, _ = self.review_round()
+        first_key, second_key = (row["citation_key"] for row in self.rows)
+        recheck = deepcopy(rounds["rounds"][0]["readings"][0])
+        recheck.update(id="R2_inherited_recheck", citation_key=first_key)
+        rounds["rounds"][0]["themes"][0]["citation_keys"].append(first_key)
+        rounds["rounds"][0]["readings"].append(recheck)
+        repeated_round = deepcopy(rounds["rounds"][0])
+        repeated_round["id"] = "later_recheck_round"
+        repeated_round["readings"] = [dict(deepcopy(recheck), id="R3_inherited_recheck")]
+        rounds["rounds"].append(repeated_round)
+        with tempfile.TemporaryDirectory() as directory:
+            research.validate_rounds(rounds, self.records, self.claims, Path(directory))
+        progress = research.round_coverage(self.rows, rounds)
+        self.assertEqual(progress["inherited_full_rechecked"], {first_key})
+        self.assertEqual(progress["inherited_full_without_recheck"], set())
+        self.assertEqual(progress["full_additions"], {second_key})
+        summary = research.generate_summary(self.rows, self.claims, rounds)
+        self.assertIn("Of the **1 records** with inherited full-text labels, **1** have a later eligible", summary)
+        self.assertIn("**0** have not received such a recheck", summary)
+        self.assertIn("Each key is counted once across rounds", summary)
+        self.assertIn("does not prove what an earlier reader read", summary)
+
+    def test_scoped_and_ancillary_readings_do_not_recheck_inherited_full_labels(self):
+        for reading_depth, edition, effect, scope in (
+                ("Selected sections", "same_record", "scoped_review", "Methods and two appendix sections."),
+                ("Full text", "related_edition", "scoped_review", "Complete related preprint, not the cited final edition."),
+                ("Full text", "related_edition", "scoped_review", "Complete ancillary code file, not the cited paper."),
+                ("Full text", "same_record", "scoped_review", "Complete accessible text without a complete-record declaration.")):
+            with self.subTest(depth=reading_depth, edition=edition, scope=scope):
+                rounds, _ = self.review_round()
+                key = self.rows[0]["citation_key"]
+                event = rounds["rounds"][0]["readings"][0]
+                event.update(citation_key=key, reading_depth=reading_depth, edition_match=edition,
+                             coverage_effect=effect, scope=scope)
+                rounds["rounds"][0]["themes"][0]["citation_keys"] = [key]
+                with tempfile.TemporaryDirectory() as directory:
+                    research.validate_rounds(rounds, self.records, self.claims, Path(directory))
+                progress = research.round_coverage(self.rows, rounds)
+                self.assertEqual(progress["inherited_full_rechecked"], set())
+                self.assertEqual(progress["inherited_full_without_recheck"], {key})
+                self.assertEqual(progress["full_additions"], set())
+                self.assertEqual(progress["effective"][key], "Full text")
+                summary = research.generate_summary(self.rows, self.claims, rounds)
+                self.assertIn("**0** have a later eligible complete-record-text recheck", summary)
+                self.assertIn("**1** have not received such a recheck", summary)
+
     def test_round_archives_cannot_be_live_sources_or_unchecked_future_dates(self):
         rounds, _ = self.review_round()
         capture = rounds["rounds"][0]["readings"][0]["capture"]

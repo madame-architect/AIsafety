@@ -451,8 +451,11 @@ def round_coverage(rows: list[dict], rounds: dict) -> dict:
             depth = "Selected sections"
         if DEPTHS.index(depth) < DEPTHS.index(effective[key]):
             effective[key] = depth
-    additions = completed - {row["citation_key"] for row in rows if row["inherited_read_depth"] == "Full text"}
+    inherited_full = {row["citation_key"] for row in rows if row["inherited_read_depth"] == "Full text"}
+    additions = completed - inherited_full
     return {"events": events, "effective": effective, "completed": completed, "full_additions": additions,
+            "inherited_full_rechecked": completed & inherited_full,
+            "inherited_full_without_recheck": inherited_full - completed,
             "resolved": resolved, "fresh_keys": {event["citation_key"] for event in events}}
 
 
@@ -546,6 +549,12 @@ def generate_summary(rows: list[dict], data: dict, rounds: dict | None = None) -
             f"**{len(progress['completed'])} keys** have eligible complete-record-text events, including "
             f"**{len(progress['full_additions'])}** that lacked an inherited full-text label. These remain recorded reading "
             "claims, not independent certification of every figure, supplement or source finding.", "",
+            f"Of the **{counts['Full text']} records** with inherited full-text labels, "
+            f"**{len(progress['inherited_full_rechecked'])}** have a later eligible complete-record-text recheck and "
+            f"**{len(progress['inherited_full_without_recheck'])}** have not received such a recheck. "
+            "Each key is counted once across rounds. Related-edition, ancillary-object and selected-section events "
+            "do not qualify. A fresh complete reading establishes the recorded scope of the identified text; "
+            "it does not prove what an earlier reader read or constitute independent human recertification.", "",
             "| Layer | Full text | Selected sections | Abstract only | Metadata only | Inaccessible |",
             "|---|---:|---:|---:|---:|---:|",
             "| Fresh reading events (representations may repeat a key) | " + " | ".join(str(fresh[depth]) for depth in DEPTHS) + " |",
