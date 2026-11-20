@@ -30,20 +30,20 @@ The supplied prior AI-assisted audit logs scoped central-claim checks for **105 
 
 [Reading events and thematic decisions](rounds.md) preserve fresh inspection, exact versions, captures, contrary evidence and limitations separately from the inherited CSV. Full-text reading is not experimental replication, and reading a related or uncertain edition does not increase canonical-record coverage.
 
-Later rounds log **149 reading events** for **113 unique keys**. **32 keys** have eligible complete-record-text events, including **22** that lacked an inherited full-text label. These remain recorded reading claims, not independent certification of every figure, supplement or source finding.
+Later rounds log **155 reading events** for **118 unique keys**. **32 keys** have eligible complete-record-text events, including **22** that lacked an inherited full-text label. These remain recorded reading claims, not independent certification of every figure, supplement or source finding.
 
 Of the **105 records** with inherited full-text labels, **10** have a later eligible complete-record-text recheck and **95** have not received such a recheck. Each key is counted once across rounds. Related-edition, ancillary-object and selected-section events do not qualify. A fresh complete reading establishes the recorded scope of the identified text; it does not prove what an earlier reader read or constitute independent human recertification.
 
 | Layer | Full text | Selected sections | Abstract only | Metadata only | Inaccessible |
 |---|---:|---:|---:|---:|---:|
-| Fresh reading events (representations may repeat a key) | 37 | 93 | 5 | 8 | 6 |
+| Fresh reading events (representations may repeat a key) | 37 | 99 | 5 | 8 | 6 |
 | Combined best same-record inspection | 127 | 154 | 5 | 7 | 1 |
 
 **167 records** remain without a full-text label after eligible new reading. Combined inspection retains earlier full-text labels without recertifying them; a later selected-section check neither erases nor independently confirms an earlier complete read. The reading event records replication and numerical checking separately. Missing local captures are reported by the validator; ordinary CI does not claim byte verification of absent private files.
 
 ## Argument coverage
 
-The current map has **99 claims** linked to **164 unique bibliography keys**. The other **130 keys** are not mapped as claim evidence. Of these, **5** have an explicit non-claim relevance decision in later rounds and **125** retain an unresolved role. An unmapped record is neither excluded nor evidence for a claim. A source may bound or challenge a proposition; inclusion is not corroboration. Shared study families are listed in the [claim map](claims.md).
+The current map has **101 claims** linked to **170 unique bibliography keys**. The other **124 keys** are not mapped as claim evidence. Of these, **5** have an explicit non-claim relevance decision in later rounds and **119** retain an unresolved role. An unmapped record is neither excluded nor evidence for a claim. A source may bound or challenge a proposition; inclusion is not corroboration. Shared study families are listed in the [claim map](claims.md).
 
 **246 records** have proposed corrections or checks. These are review leads, not established errors. Current adjudications and publication-critical holds belong in the reconciliation note and claim map; inherited notes are retained with that boundary.
 
@@ -59,13 +59,13 @@ Use the CSV for full source notes. Links below identify explicit claim roles; al
 |---|---|---|---|---|---|
 | `ackerman_mitigatingmanyshot_2025` | Full text | Logged; see CSV scope | [C05](claims.md#c05) | — | — |
 | `aiid_snapshot_20260504` | Metadata only | Outside 105-record register | Unresolved | — | — |
-| `aisi_fourthprogress_2024` | Full text | Logged; see CSV scope | Unresolved | — | — |
+| `aisi_fourthprogress_2024` | Full text | Logged; see CSV scope | [C104](claims.md#c104) | — | [governance_implementation_aisi_progress](rounds.md#governance_implementation_aisi_progress) |
 | `aisi_frontiertrends_2025` | Full text | Logged; see CSV scope | Unresolved | — | — |
 | `aisi_inspectai_2026` | Selected sections | Outside 105-record register | Unresolved | — | — |
 | `aisi_inspectevals_2026` | Selected sections | Outside 105-record register | Unresolved | — | — |
 | `aisi_safetyinstitutesjoint_2024` | Full text | Logged; see CSV scope | [C01](claims.md#c01) | 2026-11-14 safety-case/evaluation-validity round: Complete current overview recheck plus selected newly accessible linked technical PDF. Scaffold/budget/version limits remain; UK apprentice headline differs across overview/report sections, so affected rate is omitted without an error-cause assertion. Government/public issuer fields corrected from official institute attribution; report/full-page scopes remain distinct. C01; r4_depthsample_02–03. | [r4_depthsample_02](rounds.md#r4_depthsample_02), [r4_depthsample_03](rounds.md#r4_depthsample_03) |
 | `aisi_unsanctionedagentincident_2026` | Full text | Logged; see CSV scope | [C23](claims.md#c23) | The supplied correction is integrated: interventions,19 actions across10/122 runs and no identified resulting harm are reported without a prevention counterfactual. Earlier assessments remain; see C23 and reconciliation.md. | — |
-| `aisi_year_2024` | Full text | Logged; see CSV scope | Unresolved | — | — |
+| `aisi_year_2024` | Full text | Logged; see CSV scope | [C104](claims.md#c104) | — | [governance_implementation_aisi_year](rounds.md#governance_implementation_aisi_year) |
 | `amazon_fortigateaiaugmented_2026` | Full text | Logged; see CSV scope | [C22](claims.md#c22) | — | — |
 | `amazon_frontiermodelsafetyframework_2025` | Selected sections | Outside 105-record register | Unresolved | — | — |
 | `ameisen_circuittracingrevealing_2025` | Selected sections | Outside 105-record register | [C51](claims.md#c51) | — | [r3_circuits_01](rounds.md#r3_circuits_01) |
@@ -76,7 +76,7 @@ Use the CSV for full source notes. Links below identify explicit claim roles; al
 | `ankner_critiqueoutloud_2024` | Selected sections | Outside 105-record register | Unresolved | — | — |
 | `anthropic_anthropicsresponsible_2026` | Full text | Logged; see CSV scope | Unresolved | — | — |
 | `anthropic_frontiercomplianceframework_2026` | Metadata only | Outside 105-record register | Unresolved | 2026-11-14 mechanistic/fairness/policy round: Requested exact framework URL delivered only a Trust Center application shell. Framework body and March2026 edition remain inaccessible/unverified; no source finding is inferred. r3_provider_06. | [r3_provider_06](rounds.md#r3_provider_06) |
-| `anthropic_responsiblescaling_2024` | Full text | Logged; see CSV scope | Unresolved | — | — |
+| `anthropic_responsiblescaling_2024` | Full text | Logged; see CSV scope | [C41](claims.md#c41) | — | [governance_implementation_anthropic](rounds.md#governance_implementation_anthropic) |
 | `anthropic_responsiblescaling_2025` | Full text | Logged; see CSV scope | Unresolved | — | — |
 | `anthropic_responsiblescalingv32_2026` | Full text | Logged; see CSV scope | Unresolved | — | — |
 | `arike_doesinformationaccess_2026` | Selected sections | Outside 105-record register | Unresolved | — | — |
@@ -92,7 +92,7 @@ Use the CSV for full source notes. Links below identify explicit claim roles; al
 | `bhatt_cyberseceval2wide_2024` | Full text | Logged; see CSV scope | [C36](claims.md#c36) | Fresh prompt-injection prose/Figure3 and interpreter-method checks retain a range discrepancy without assigning an unverified explanation. The interpreter evaluates judged responses without executing them; no sandbox-escape rate follows. Retain scoped findings and false-refusal design, omit disputed headline range. See C36 and r2_safeguards_04. | [r2_safeguards_04](rounds.md#r2_safeguards_04) |
 | `bhattacharjee_inferencetimecategory_2024` | Selected sections | Outside 105-record register | Unresolved | — | — |
 | `bis_artificialintelligence_2025` | Selected sections | Outside 105-record register | Unresolved | The supplied correction distinguishes Diffusion Rule nonenforcement from formal legal status. GAO May12,2026 and the Aug14,2026 plan support the last verified formal position; an exhaustive current-status determination is not claimed. See reconciliation.md. | — |
-| `bis_establishmentreporting_2024` | Selected sections | Outside 105-record register | Unresolved | The supplied correction records historical/withdrawn proposal status. Fresh RIN0694-AJ55 text confirms withdrawal12/16/2025; its URL now returns PublicationID2026 rather than a frozen202510 edition. See reconciliation.md. | — |
+| `bis_establishmentreporting_2024` | Selected sections | Outside 105-record register | [C105](claims.md#c105) | The supplied correction records historical/withdrawn proposal status. Fresh RIN0694-AJ55 text confirms withdrawal12/16/2025; its URL now returns PublicationID2026 rather than a frozen202510 edition. See reconciliation.md. | [governance_implementation_bis_proposal](rounds.md#governance_implementation_bis_proposal), [governance_implementation_bis_agenda](rounds.md#governance_implementation_bis_agenda) |
 | `bloomfield_assurancesystemsdependabil_2024` | Selected sections | Outside 105-record register | [C69](claims.md#c69) | 2026-11-14 safety-case/evaluation-validity round: Selected original v1 guarded-architecture/dependability argument distinguishes narrow assured enforcement from AI-dependent guards and naive failure-independence assumptions. Broader later editions remain separate. C69; r4_safetycases_06. | [r4_safetycases_06](rounds.md#r4_safetycases_06) |
 | `braun_identifyingfunctionally_2024` | Selected sections | Outside 105-record register | [C50](claims.md#c50) | 2026-11-14 mechanistic/fairness/policy round: Later selected arXivv2 methods/appendices separate output fidelity from internal pathway fidelity; downstream reconstruction mitigates divergence. Automatic interpretation is sampled, not comprehensive human validation. C50; r3_mechvalidation_03. | [r3_mechvalidation_03](rounds.md#r3_mechvalidation_03) |
 | `brundage_frontierauditingrigorous_2026` | Selected sections | Outside 105-record register | [C38](claims.md#c38), [C39](claims.md#c39), [C41](claims.md#c41), [C84](claims.md#c84) | 2026-11-15 UTC thresholds/resilience/reporting round: Selected related v4 distinguishes proposed scope/access/duration and prospective upper assurance levels. No calibrated confidence scale or implementation-effect estimate. C38/C39/C41/C84; reading events: r5_reporting_03. | [r5_reporting_03](rounds.md#r5_reporting_03) |
@@ -259,7 +259,7 @@ Use the CSV for full source notes. Links below identify explicit claim roles; al
 | `omb_m2521_2025` | Selected sections | Outside 105-record register | [C61](claims.md#c61) | This record was outside the specific legal recoding changes in the supplied patch. Existing status/application labels remain inherited and require dated review before current-law use. See reconciliation.md. 2026-11-14 mechanistic/fairness/policy round: Complete April3,2025 text read. High-impact review uses a nondeveloper within the agency, with defined scope, pilots and waivers. Historical normative pathway only; present legal force and actual operation are not recertified. C61; r3_public_02. | [r3_public_02](rounds.md#r3_public_02) |
 | `omb_m2522_2025` | Selected sections | Outside 105-record register | Unresolved | This record was outside the specific legal recoding changes in the supplied patch. Existing status/application labels remain inherited and require dated review before current-law use. See reconciliation.md. | — |
 | `openai_blogupdatingpreparedness_2025` | Full text | Logged; see CSV scope | Unresolved | — | — |
-| `openai_frontiertrainingenvironment_2026` | Full text | Logged; see CSV scope | Unresolved | — | — |
+| `openai_frontiertrainingenvironment_2026` | Full text | Logged; see CSV scope | [C84](claims.md#c84) | — | — |
 | `openai_gpt53codexsystemcard_2026` | Selected sections | Outside 105-record register | Unresolved | — | — |
 | `openai_monitoringmonitorability_2025` | Selected sections | Outside 105-record register | [C31](claims.md#c31) | — | [r2_oversight_07](rounds.md#r2_oversight_07) |
 | `openai_o1systemcard_2024` | Selected sections | Outside 105-record register | Unresolved | — | — |
@@ -270,7 +270,7 @@ Use the CSV for full source notes. Links below identify explicit claim roles; al
 | `owasp_llmtop10_2025` | Selected sections | Outside 105-record register | Unresolved | — | — |
 | `paulo_automaticallyinterpreting_2024` | Selected sections | Outside 105-record register | [C52](claims.md#c52) | — | [r3_circuits_03](rounds.md#r3_circuits_03), [r3_circuits_06](rounds.md#r3_circuits_06) |
 | `pavlova_automatedredteaming_2024` | Full text | Logged; see CSV scope | [C33](claims.md#c33) | — | [r2_safeguards_06](rounds.md#r2_safeguards_06) |
-| `perset_developersmanaging_2025` | Selected sections | Outside 105-record register | Unresolved | — | — |
+| `perset_developersmanaging_2025` | Selected sections | Outside 105-record register | [C17](claims.md#c17) | — | [governance_implementation_oecd](rounds.md#governance_implementation_oecd) |
 | `phuong_evaluatingfrontier_2024` | Full text | Logged; see CSV scope | [C02](claims.md#c02) | — | — |
 | `qi_safetyalignmentshould_2025` | Full text | Logged; see CSV scope | [C34](claims.md#c34) | — | [r2_safeguards_07](rounds.md#r2_safeguards_07), [r2_safeguards_09](rounds.md#r2_safeguards_09) |
 | `rai_practicalreviewmechanistic_2024` | Selected sections | Outside 105-record register | Unresolved | — | — |

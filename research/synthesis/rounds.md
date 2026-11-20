@@ -7548,3 +7548,309 @@ No source findings; material was inaccessible.
 | `locator_basis` | Printed pages where specified; statutory sections or article content for HTML. |
 | `capture_path` | .source-captures/synthesis-20abf8534641570b4bc4b9b247e943c67d5b2672987af89bb9d0dba45d598318.html |
 | `preservation_status` | captured |
+## governance-implementation-2026-11-20
+
+**As of:** 2026-11-20. **Base commit:** `dabef84518d7b4db5cbdab6a69dbf9bdad2f0803`.
+
+**Question:** Which records document a reported action or decision beyond the existence of a policy or mechanism?
+
+**Selection basis:** First check the three passages identified for C17, C41 and C84. Then review unmapped governance records for dated actions and identifiable decisions. The OpenAI decision section was checked through the publisher’s indexed HTML and is documented in C84. A direct download returned HTTP 403, so that check has no new retained-source event.
+
+**Stopping rule:** Map an existing record only where a scoped primary-source passage supports, narrows or challenges a specific proposition. Leave other records unresolved.
+
+| Theme | Why selected | Canonical keys |
+|---|---|---|
+| Reporting, internal review and decisions, and government activity | Add specific evidence of use, review, decisions or operations where the map previously had a policy, proposal or scope argument. | `perset_developersmanaging_2025`, `anthropic_responsiblescaling_2024`, `aisi_fourthprogress_2024`, `aisi_year_2024`, `bis_establishmentreporting_2024`, `openai_frontiertrainingenvironment_2026` |
+
+### Event index
+
+| Event | Source | Reading | Edition / coverage effect | Relevance |
+|---|---|---|---|---|
+| [governance_implementation_oecd](#governance_implementation_oecd) | `perset_developersmanaging_2025` | Selected sections | same_record / scoped_review | claim_evidence |
+| [governance_implementation_anthropic](#governance_implementation_anthropic) | `anthropic_responsiblescaling_2024` | Selected sections | related_edition / none | claim_evidence |
+| [governance_implementation_aisi_progress](#governance_implementation_aisi_progress) | `aisi_fourthprogress_2024` | Selected sections | same_record / scoped_review | claim_evidence |
+| [governance_implementation_aisi_year](#governance_implementation_aisi_year) | `aisi_year_2024` | Selected sections | same_record / scoped_review | claim_evidence |
+| [governance_implementation_bis_proposal](#governance_implementation_bis_proposal) | `bis_establishmentreporting_2024` | Selected sections | same_record / scoped_review | claim_evidence |
+| [governance_implementation_bis_agenda](#governance_implementation_bis_agenda) | `bis_establishmentreporting_2024` | Selected sections | related_edition / none | claim_evidence |
+
+<a id="governance_implementation_oecd"></a>
+### governance_implementation_oecd
+
+**Source:** `perset_developersmanaging_2025`. **Theme:** governance_implementation. **Reading:** Selected sections. **Coverage effect:** `scoped_review`.
+
+**Edition match:** `same_record`. Publisher PDF for the paper identified by DOI 10.1787/658c2ad6-en.
+
+**Inspected scope:** First-round dates and submission count on PDF page 10, and the analysis scope on PDF page 12.
+
+**Locators:** First-round dates and submission count on PDF page 10, and the analysis scope on PDF page 12.
+
+**Visual check:** Selected text was checked.
+
+**Findings:**
+
+- The OECD records 20 voluntary submissions between February and June 2025 and describes its findings as illustrative accounts of participants’ reported practices.
+
+**Counterevidence / alternative:** The report describes voluntary participants and illustrative examples. The reporting count has no denominator for wider adoption.
+
+**Limits:** No independent assessment of safeguards, population denominator or wider adoption is established.
+
+**Replication:** `not_performed`. **Numerical check:** Count and date range checked against the paper’s text.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C17](claims.md#c17)
+
+**Relevance rationale:** Affirmative evidence of use of the disclosure mechanism for C17.
+
+**Next check:** Seek an independently assessed implementation sample before using the reports to infer adoption or controls in operation.
+
+| Capture field | Value |
+|---|---|
+| `original_url` | [Source](https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/09/how-are-ai-developers-managing-risks_fbaeb3ad/658c2ad6-en.pdf) |
+| `attempted_at` | 2026-11-20T15:46:00.492499+00:00 |
+| `retrieved_at` | 2026-11-20T15:46:01.779061+00:00 |
+| `final_url` | [Source](https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/09/how-are-ai-developers-managing-risks_fbaeb3ad/658c2ad6-en.pdf) |
+| `sha256` | 2b49417beaded517b58e67b07bc76cbbee07db3dfecbdf83211306b46e9eb961 |
+| `byte_length` | 2991026 |
+| `mime_type` | application/pdf |
+| `capture_path` | .source-captures/synthesis-2b49417beaded517b58e67b07bc76cbbee07db3dfecbdf83211306b46e9eb961.pdf |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | Publisher response retained locally. Archive availability was outside this review. |
+| `published_on` | 2025-09-25 |
+| `version_claim` | OECD Artificial Intelligence Papers No. 45, September 2025. |
+| `locator_basis` | PDF viewer pages 10 and 12. |
+| `preservation_status` | captured |
+
+<a id="governance_implementation_anthropic"></a>
+### governance_implementation_anthropic
+
+**Source:** `anthropic_responsiblescaling_2024`. **Theme:** governance_implementation. **Reading:** Selected sections. **Coverage effect:** `none`.
+
+**Edition match:** `related_edition`. Companion announcement for the 2024 RSP update. The legacy catalog URL returns 404. The announcement and underlying policy are distinct documents.
+
+**Inspected scope:** Learning from experience in the dated issuer announcement.
+
+**Locators:** Learning from experience in the dated issuer announcement.
+
+**Visual check:** Selected text was checked.
+
+**Findings:**
+
+- Anthropic reports a first internal adherence review that identified procedural departures, including an evaluation set completed three days late, and a need to improve compliance tracking.
+
+**Counterevidence / alternative:** The company judged the identified departures to pose minimal risk. That judgment is also self-reported.
+
+**Limits:** Company account. Underlying review records, external assurance and evidence of effective follow-up were outside the check.
+
+**Replication:** `not_performed`. **Numerical check:** Three-day delay checked as reported.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C41](claims.md#c41)
+
+**Relevance rationale:** Documents a company-reported internal review finding for C41.
+
+**Next check:** Seek the underlying review and independently checked follow-up if used to support an assurance claim.
+
+| Capture field | Value |
+|---|---|
+| `original_url` | [Source](https://www.anthropic.com/news/announcing-our-updated-responsible-scaling-policy) |
+| `attempted_at` | 2026-11-20T15:46:00.494495+00:00 |
+| `retrieved_at` | 2026-11-20T15:46:01.017551+00:00 |
+| `final_url` | [Source](https://www.anthropic.com/news/announcing-our-updated-responsible-scaling-policy) |
+| `sha256` | 58a6fd3c4e7a748588a237e3346dcf64a8d6416d2bcfcd0cbba11797533328de |
+| `byte_length` | 165832 |
+| `mime_type` | text/html |
+| `capture_path` | .source-captures/synthesis-58a6fd3c4e7a748588a237e3346dcf64a8d6416d2bcfcd0cbba11797533328de.html |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | Publisher response retained locally. Archive availability was outside this review. |
+| `published_on` | 2024-10-15 |
+| `version_claim` | October 15, 2024 issuer announcement. |
+| `locator_basis` | Published date and Learning from experience heading. |
+| `preservation_status` | captured |
+
+<a id="governance_implementation_aisi_progress"></a>
+### governance_implementation_aisi_progress
+
+**Source:** `aisi_fourthprogress_2024`. **Theme:** governance_implementation. **Reading:** Selected sections. **Coverage effect:** `scoped_review`.
+
+**Edition match:** `same_record`. Current issuer HTML for the 2024 report. It includes a later institute rename notice.
+
+**Inspected scope:** Product 1, Government safety testing, and Operationalising the Bletchley Declaration.
+
+**Locators:** Product 1, Government safety testing, and Operationalising the Bletchley Declaration.
+
+**Visual check:** Selected text was checked.
+
+**Findings:**
+
+- The institute reports having run a frontier-model test before deployment and records the April 2024 UK–US agreement to cooperate on testing.
+
+**Counterevidence / alternative:** The baseline testing described separately used publicly available models.
+
+**Limits:** The account does not disclose the result of that specific earlier pre-deployment test or establish that it was a joint test.
+
+**Replication:** `not_performed`. **Numerical check:** No aggregate test count credited to this source.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C104](claims.md#c104)
+
+**Relevance rationale:** Supplies dated cooperation and testing evidence for C104.
+
+**Next check:** Check model-specific and counterpart reports for access, timing and follow-up.
+
+| Capture field | Value |
+|---|---|
+| `original_url` | [Source](https://www.aisi.gov.uk/blog/fourth-progress-report) |
+| `attempted_at` | 2026-11-20T15:46:00.497493+00:00 |
+| `retrieved_at` | 2026-11-20T15:46:00.935037+00:00 |
+| `final_url` | [Source](https://www.aisi.gov.uk/blog/fourth-progress-report) |
+| `sha256` | 9a1e5283fd0f0f7aa3c974227c970f6c60249e93780588b7f1f72c8bebdfca36 |
+| `byte_length` | 37416 |
+| `mime_type` | text/html |
+| `capture_path` | .source-captures/synthesis-9a1e5283fd0f0f7aa3c974227c970f6c60249e93780588b7f1f72c8bebdfca36.html |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | Publisher response retained locally. Archive availability was outside this review. |
+| `published_on` | 2024 |
+| `version_claim` | Fourth progress report, 2024. |
+| `locator_basis` | Named publisher sections. |
+| `preservation_status` | captured |
+
+<a id="governance_implementation_aisi_year"></a>
+### governance_implementation_aisi_year
+
+**Source:** `aisi_year_2024`. **Theme:** governance_implementation. **Reading:** Selected sections. **Coverage effect:** `scoped_review`.
+
+**Edition match:** `same_record`. Current issuer HTML for the 2024 retrospective. It includes a later institute rename notice.
+
+**Inspected scope:** A Technical Authority on AI Safety and Shaping global AI governance.
+
+**Locators:** A Technical Authority on AI Safety and Shaping global AI governance.
+
+**Visual check:** Selected text was checked.
+
+**Findings:**
+
+- AISI reports evaluating 16 models across its first year and conducting several exercises jointly with the US after the April agreement.
+
+**Counterevidence / alternative:** AISI explicitly disclaims government safety certification and model endorsement.
+
+**Limits:** The 16 includes the whole programme. The number of joint or pre-deployment tests and changes attributable to testing remain unestablished.
+
+**Replication:** `not_performed`. **Numerical check:** First-year total of 16 models checked against the published text.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C104](claims.md#c104)
+
+**Relevance rationale:** Supplies reported testing activity and its limits for C104.
+
+**Next check:** Check model-specific and counterpart reports before drawing conclusions about coverage or release decisions.
+
+| Capture field | Value |
+|---|---|
+| `original_url` | [Source](https://www.aisi.gov.uk/blog/our-first-year) |
+| `attempted_at` | 2026-11-20T15:46:00.499500+00:00 |
+| `retrieved_at` | 2026-11-20T15:46:00.906512+00:00 |
+| `final_url` | [Source](https://www.aisi.gov.uk/blog/our-first-year) |
+| `sha256` | eb5200f16afc1adf4ca6960c1ed11a906cf69187f084391e0ade79ebfcc66fd8 |
+| `byte_length` | 34421 |
+| `mime_type` | text/html |
+| `capture_path` | .source-captures/synthesis-eb5200f16afc1adf4ca6960c1ed11a906cf69187f084391e0ade79ebfcc66fd8.html |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | Publisher response retained locally. Archive availability was outside this review. |
+| `published_on` | 2024 |
+| `version_claim` | First-year retrospective, 2024. |
+| `locator_basis` | Named publisher sections. |
+| `preservation_status` | captured |
+
+<a id="governance_implementation_bis_proposal"></a>
+### governance_implementation_bis_proposal
+
+**Source:** `bis_establishmentreporting_2024`. **Theme:** governance_implementation. **Reading:** Selected sections. **Coverage effect:** `scoped_review`.
+
+**Edition match:** `same_record`. Issued Federal Register notice for the canonical September 2024 proposal.
+
+**Inspected scope:** Discussion of the Proposed Rule, printed page 73614.
+
+**Locators:** Discussion of the Proposed Rule, printed page 73614.
+
+**Visual check:** Selected text was checked.
+
+**Findings:**
+
+- BIS says it collected information via a mandatory survey issued on January 26, 2024 to selected developers. Quarterly notifications were proposed separately.
+
+**Counterevidence / alternative:** The recurring notification language is prospective. The Unified Agenda record shows withdrawal.
+
+**Limits:** The survey instrument, responses and their use were not checked.
+
+**Replication:** `not_performed`. **Numerical check:** Survey and proposed schedule dates checked against the notice.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C105](claims.md#c105)
+
+**Relevance rationale:** Provides the implementation observation and proposal for C105.
+
+**Next check:** Seek the survey instrument and records of returns or use to assess coverage.
+
+| Capture field | Value |
+|---|---|
+| `original_url` | [Source](https://www.govinfo.gov/content/pkg/FR-2024-09-11/pdf/2024-20529.pdf) |
+| `attempted_at` | 2026-11-20T15:46:00.501499+00:00 |
+| `retrieved_at` | 2026-11-20T15:46:00.979959+00:00 |
+| `final_url` | [Source](https://www.govinfo.gov/content/pkg/FR-2024-09-11/pdf/2024-20529.pdf) |
+| `sha256` | 135939e48b5c31a4cd370d8596c40cadd0123155622b044f86e6374f01d03762 |
+| `byte_length` | 282235 |
+| `mime_type` | application/pdf |
+| `capture_path` | .source-captures/synthesis-135939e48b5c31a4cd370d8596c40cadd0123155622b044f86e6374f01d03762.pdf |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | Publisher response retained locally. Archive availability was outside this review. |
+| `published_on` | 2024-09-11 |
+| `version_claim` | 89 FR 73612, FR Doc. 2024-20529. |
+| `locator_basis` | Printed page 73614, PDF viewer page 3. |
+| `preservation_status` | captured |
+
+<a id="governance_implementation_bis_agenda"></a>
+### governance_implementation_bis_agenda
+
+**Source:** `bis_establishmentreporting_2024`. **Theme:** governance_implementation. **Reading:** Selected sections. **Coverage effect:** `none`.
+
+**Edition match:** `related_edition`. Ancillary Unified Agenda record for the same RIN as the proposal. The request parameter is 202510 and the served page displays Publication ID 2026.
+
+**Inspected scope:** RIN identity, rulemaking stage and Timetable.
+
+**Locators:** RIN identity, rulemaking stage and Timetable.
+
+**Visual check:** Selected text was checked.
+
+**Findings:**
+
+- The published timetable shows a September 11, 2024 proposal and withdrawal on December 16, 2025.
+
+**Counterevidence / alternative:** The announcement of a recurring reporting proposal supplies no quarterly reports or evidence of operations.
+
+**Limits:** This administrative status record concerns this specific proposal.
+
+**Replication:** `not_performed`. **Numerical check:** Withdrawal date checked against the action table.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C105](claims.md#c105)
+
+**Relevance rationale:** Qualifies the recurring proposal’s status for C105.
+
+**Next check:** Check separate authority before making claims about other reporting obligations or collections.
+
+| Capture field | Value |
+|---|---|
+| `original_url` | [Source](https://www.reginfo.gov/public/do/eAgendaViewRule?RIN=0694-AJ55&operation=OPERATION_PRINT_RULE&pubId=202510) |
+| `attempted_at` | 2026-11-20T15:46:00.503575+00:00 |
+| `retrieved_at` | 2026-11-20T15:46:01.091913+00:00 |
+| `final_url` | [Source](https://www.reginfo.gov/public/do/eAgendaViewRule?RIN=0694-AJ55&operation=OPERATION_PRINT_RULE&pubId=202510) |
+| `sha256` | db263784651c7884d399b492c6d2f35789095aca6cc72b84de73427917c80f7d |
+| `byte_length` | 9691 |
+| `mime_type` | text/html |
+| `capture_path` | .source-captures/synthesis-db263784651c7884d399b492c6d2f35789095aca6cc72b84de73427917c80f7d.html |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | Publisher response retained locally. Archive availability was outside this review. |
+| `published_on` | Not recorded / unavailable |
+| `version_claim` | Unified Agenda RIN 0694-AJ55, displayed Publication ID 2026. |
+| `locator_basis` | Official status and timetable labels. |
+| `preservation_status` | captured |
