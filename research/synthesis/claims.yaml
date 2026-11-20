@@ -584,8 +584,9 @@ claims:
 - id: C17
   section: governance
   claim: Voluntary commitments, disclosure portals and documentary framework scores make governance provisions
-    inspectable; their existence or score alone does not establish implemented controls, compliance or control
-    effects. Legal force, scope and decision authority require separate coding.
+    inspectable. Twenty organisations used the Hiroshima reporting mechanism in its first round. The prevalence,
+    verification and effectiveness of the safeguards they described remain open. Legal force, scope and decision
+    authority require separate analysis.
   status: scoped_check
   evidence:
   - citation_key: ukgov_frontiersafetycommitments_2024
@@ -616,6 +617,17 @@ claims:
     review_basis: prior_audit
     checked_scope: Prior audit reports full substantive current overview; it is a mutable portal, not a frozen
       original edition.
+  - citation_key: perset_developersmanaging_2025
+    relation: supports
+    version_url: https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/09/how-are-ai-developers-managing-risks_fbaeb3ad/658c2ad6-en.pdf#page=10
+    locator: September 2025 OECD paper No. 45, PDF pages 10 and 12, first-round count and analysis scope
+    finding: The OECD records submissions from 20 organisations between February and June 2025. Its analysis
+      illustrates practices reported by those voluntary participants. Independent verification and broader uptake
+      of those practices are unestablished.
+    review_basis: this_run_primary
+    checked_scope: Selected source passages on submission dates, participation and the scope of the analysis.
+    review_event_ids:
+    - governance_implementation_oecd
   - citation_key: stelling_evaluatingaiproviders_2025
     relation: bounds
     version_url: https://arxiv.org/abs/2512.01166v1
@@ -707,7 +719,8 @@ claims:
     implementation or outcome studies could provide additional evidence beyond a policy text or disclosure
     score.
   next_check: The supplied status corrections are integrated. Complete remaining dated jurisdiction/operative-version
-    checks and Stelling methods before broader legal or score conclusions.
+    checks and Stelling methods before broader legal or score conclusions. Seek evidence on safeguard adoption
+    and verification beyond the voluntary submissions.
 - id: C18
   section: governance
   claim: 'Within-issuer edition comparisons reveal specific documentary changes: DeepMind’s cyber weight-security
@@ -1650,10 +1663,9 @@ claims:
     current protection, participation change or safety effects.
 - id: C41
   section: governance
-  claim: Internal lifecycle audits and external scrutiny can play complementary roles. Internal access and
-    documentary records can support prospective testing, remediation and deployment decisions, while external
-    challenge can test organizational priorities and omissions; neither role is validated merely by producing
-    an audit report.
+  claim: Internal lifecycle audits and external scrutiny can play complementary roles. Anthropic reported
+    that its first internal Responsible Scaling Policy adherence review surfaced procedural departures and a need
+    to improve compliance tracking. Independent assurance and evidence of effective follow-up remain separate questions.
   status: provisional
   evidence:
   - citation_key: raji_closingaccountabilitygap_2020
@@ -1668,6 +1680,17 @@ claims:
       templates were not retrieved/read.'
     review_event_ids:
     - r2_institutions_05
+  - citation_key: anthropic_responsiblescaling_2024
+    relation: supports
+    version_url: https://www.anthropic.com/news/announcing-our-updated-responsible-scaling-policy#learning-from-experience
+    locator: October 15, 2024 issuer announcement, Learning from experience
+    finding: Anthropic reported completing a set of evaluations three days late and finding ambiguity about where
+      to record changes to planned evaluations. It identified a need to improve its compliance tracking.
+    review_basis: this_run_primary
+    checked_scope: Dated announcement section reporting the first internal adherence review. Underlying review records,
+      external assurance and evidence on the effectiveness of follow-up were outside this source check.
+    review_event_ids:
+    - governance_implementation_anthropic
   - citation_key: raji_outsideroversight_2022
     relation: contextualizes
     version_url: https://dho.stanford.edu/wp-content/uploads/Outsider_Oversight.pdf
@@ -1734,12 +1757,13 @@ claims:
     outcome replications. Homewood’s compliance review concerns adherence to a framework, with constructed
     control examples; framework adequacy remains a separate question. New internal-audit and external-assurance-level
     sources remain proposed institutional arrangements; upper assurance levels and example conclusions are
-    prospective, not calibrated effectiveness measures.
+    prospective, not calibrated effectiveness measures. Anthropic’s account of the departures and its judgment
+    about their risk come from the company. Evidence of remediation and its effectiveness remains open.
   counterevidence: Internal processes can miss affected populations or translate company principles into self-serving
     criteria; external reviewers can lack data, resources or practical leverage. Lifecycle documentation can
     become box-ticking if no one owns mitigation and follow-up.
-  next_check: Look for actual audit records, affected-stakeholder participation, decision authority, completed
-    mitigation and response to external challenge before claiming effectiveness.
+  next_check: Look for underlying audit records, affected-stakeholder participation, decision authority, evidence
+    of follow-up and responses to external challenge before claiming effectiveness.
 - id: C43
   section: evaluation_configuration
   claim: Cost-controlled agent comparisons can both overturn apparent architecture gains and improve usable
@@ -3240,9 +3264,9 @@ claims:
 - id: C84
   section: governance
   claim: Internal deployment can change model configuration, privileges, tools and applications relative to
-    a public product. The reviewed proposals therefore place internal-use permissions, evaluation and decision
-    authority within governance scope; they do not establish that all internal governance is absent or that
-    their proposed controls have reduced harm.
+    a public product. The reviewed proposals place internal-use permissions, evaluation and decision authority
+    within governance scope. OpenAI reported an October 2026 decision to resume internal workloads after testing
+    and changes to safeguards.
   status: scoped_check
   evidence:
   - citation_key: stix_behindcloseddoors_2025
@@ -3281,12 +3305,21 @@ claims:
       115-page report and appendices not read.
     review_event_ids:
     - r5_reporting_03
-  limitation: These are scoped readings of design proposals. Internal practice and actual adoption may be private
-    or changed since the cited versions; no governance-effect estimate is established.
+  - citation_key: openai_frontiertrainingenvironment_2026
+    relation: supports
+    version_url: https://openai.com/index/securing-our-frontier-model-training-environment/#resuming-frontier-training-with-stronger-defenses
+    locator: October 23, 2026 company report, Resuming frontier training with stronger defenses
+    finding: OpenAI reports that it resumed frontier reinforcement-learning training and internal inference
+      on October 1 after an 11-day pause, citing test results and changes to safeguards as the basis for its decision.
+    review_basis: this_run_primary
+    checked_scope: Opening summary and decision section of the publisher’s indexed HTML. Fresh direct byte retrieval
+      returned HTTP 403. The reported risk judgment and its underlying test results were not independently checked.
+  limitation: The October decision and its rationale are company-reported and apply to frontier reinforcement-learning
+    training and internal inference. Risk reduction and any public release justification remain unestablished.
   counterevidence: Existing internal-use provisions could already address parts of the alleged gap. A difference
     in configuration can matter without demonstrating greater realized harm.
-  next_check: Compare dated developer internal policies and actual permission/deployment decisions; retain
-    the configuration-bound argument without a universal governance-absence claim.
+  next_check: Compare dated internal policies and operating decisions across providers. Seek independent evidence
+    on control performance in the relevant configuration before drawing conclusions about realized risk.
 - id: C86
   section: governance
   claim: Incident-reporting designs can make system versions, harm, context and response more inspectable,
@@ -3941,6 +3974,71 @@ claims:
     routing.
   next_check: Look for independent repeated checks and documented later enforcement before making claims
     about provider compliance or effectiveness.
+- id: C104
+  section: policy_implementation
+  claim: The UK AI Safety Institute reported conducting joint testing with the US after their April 2024
+    cooperation agreement. It reported at least one frontier-model test before deployment and 16 models evaluated
+    across all of its first-year work.
+  status: historical
+  evidence:
+  - citation_key: aisi_fourthprogress_2024
+    relation: supports
+    version_url: https://www.aisi.gov.uk/blog/fourth-progress-report
+    locator: Product 1, Government safety testing, and Operationalising the Bletchley Declaration
+    finding: AISI reports an earlier test on a frontier model before deployment. It also records the April UK–US
+      agreement to work together on testing, standards and research.
+    review_basis: this_run_primary
+    checked_scope: Selected sections of the progress report. The linked technical results and agreement text
+      are outside this check.
+    review_event_ids:
+    - governance_implementation_aisi_progress
+  - citation_key: aisi_year_2024
+    relation: supports
+    version_url: https://www.aisi.gov.uk/blog/our-first-year
+    locator: A Technical Authority on AI Safety and Shaping global AI governance
+    finding: The first-year retrospective reports several joint US testing exercises after the agreement and 16 models
+      evaluated in total. It expressly disclaims government safety certification and model endorsement.
+    review_basis: this_run_primary
+    checked_scope: Selected passages on first-year testing, certification and UK–US cooperation.
+    review_event_ids:
+    - governance_implementation_aisi_year
+  limitation: Both accounts come from the same institute. The 16-model total spans its whole first-year programme,
+    which included publicly available models. Separate counts for pre-deployment and joint testing are unspecified.
+  counterevidence: AISI explicitly withholds safety endorsement. Model coverage, release authority and changes made
+    in response to the tests remain open.
+  next_check: Check model-specific records and counterpart accounts to establish access, findings shared and
+    documented follow-up in individual exercises.
+- id: C105
+  section: policy_implementation
+  claim: The US Bureau of Industry and Security reported collecting information from selected developers through
+    a mandatory January 2024 survey. Its separate September 2024 proposal for recurring quarterly reporting was
+    recorded as withdrawn in December 2025.
+  status: historical
+  evidence:
+  - citation_key: bis_establishmentreporting_2024
+    relation: supports
+    version_url: https://www.govinfo.gov/content/pkg/FR-2024-09-11/pdf/2024-20529.pdf#page=3
+    locator: 89 FR 73612, printed p. 73614, Discussion of the Proposed Rule
+    finding: BIS says it collected information through a mandatory survey issued on January 26, 2024 to selected developers.
+      The September notice separately proposed recurring quarterly notification and follow-up reporting.
+    review_basis: this_run_primary
+    checked_scope: Selected Federal Register passages on the survey and proposed reporting schedule.
+    review_event_ids:
+    - governance_implementation_bis_proposal
+  - citation_key: bis_establishmentreporting_2024
+    relation: bounds
+    version_url: https://www.reginfo.gov/public/do/eAgendaViewRule?RIN=0694-AJ55&operation=OPERATION_PRINT_RULE&pubId=202510
+    locator: Unified Agenda RIN 0694-AJ55, Timetable, displayed Publication ID 2026
+    finding: The official action history lists the September proposal and a withdrawal dated December 16, 2025.
+      The agenda is a separate document for the same rulemaking.
+    review_basis: this_run_primary
+    checked_scope: RIN, agenda stage and action table. The status check is specific to the proposal.
+    review_event_ids:
+    - governance_implementation_bis_agenda
+  limitation: BIS reports the collection. Survey returns, response completeness and use of the results remain unverified.
+  counterevidence: The proposal text describes prospective quarterly reporting. The official withdrawal record limits
+    inferences about what proceeded under that proposal.
+  next_check: Seek the survey instrument and documented returns or agency use of the information to assess coverage.
 families:
 - id: F01
   citation_keys:
