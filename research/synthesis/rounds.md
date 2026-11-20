@@ -7194,3 +7194,357 @@ No source findings; material was inaccessible.
 | `version_claim` | Two-page Governor signing message datedSeptember29,2025 |
 | `locator_basis` | One-based PDF viewer pages include front matter; printed page/section/table references stated separately. Web/repository descriptions identify the exact inspected headings or immutable commit. |
 | `capture_path` | .source-captures/synthesis-e3a8cd758bc5be06704ef480b8544538ec0187c808fc91304264e66959dd71bb.pdf |
+## targeted-downstream-intake-2026-11-20
+
+**As of:** 2026-11-20. **Base commit:** `3ca0700c2d43f2a4fe8e14b162d211e53450b483`.
+
+**Question:** What do these sources establish about downstream AI toy tests, legislative consideration, enacted restrictions and observed misuse?
+
+**Selection basis:** Targeted owner-requested intake following a news lead and citation tracing; not a systematic sample.
+
+**Stopping rule:** Confirm bibliographic identity and inspect decision-relevant passages; retain edition details and unresolved byte or causal gaps.
+
+| Theme | Why selected | Canonical keys |
+|---|---|---|
+| Downstream AI toys, legislative consideration and observed misuse | Separate empirical observations and documented actions from unsupported attributions or outcomes. | `murray_troubleintoyland_2025`, `calassembly_sb867analysis_2026`, `california_sb867_companiontoys_2026`, `murray_troubleintoyland_2026`, `cross_notforkids_2026`, `goodacre_aiearlyyears_2026`, `collier_pixiepaw_2026`, `blum_gtigagenticthreshold_2026` |
+
+### Event index
+
+| Event | Source | Reading | Edition / coverage effect | Relevance |
+|---|---|---|---|---|
+| [intake_murray_troubleintoyland_2025](#intake_murray_troubleintoyland_2025) | `murray_troubleintoyland_2025` | Selected sections | same_record / scoped_review | claim_evidence |
+| [intake_calassembly_sb867analysis_2026](#intake_calassembly_sb867analysis_2026) | `calassembly_sb867analysis_2026` | Selected sections | same_record / scoped_review | claim_evidence |
+| [intake_california_sb867_companiontoys_2026](#intake_california_sb867_companiontoys_2026) | `california_sb867_companiontoys_2026` | Selected sections | same_record / scoped_review | claim_evidence |
+| [intake_murray_troubleintoyland_2026](#intake_murray_troubleintoyland_2026) | `murray_troubleintoyland_2026` | Selected sections | same_record / scoped_review | claim_evidence |
+| [intake_cross_notforkids_2026](#intake_cross_notforkids_2026) | `cross_notforkids_2026` | Selected sections | same_record / scoped_review | claim_evidence |
+| [intake_goodacre_aiearlyyears_2026](#intake_goodacre_aiearlyyears_2026) | `goodacre_aiearlyyears_2026` | Selected sections | same_record / scoped_review | claim_evidence |
+| [intake_collier_pixiepaw_2026](#intake_collier_pixiepaw_2026) | `collier_pixiepaw_2026` | Selected sections | same_record / scoped_review | claim_evidence |
+
+<a id="intake_murray_troubleintoyland_2025"></a>
+### intake_murray_troubleintoyland_2025
+
+**Source:** `murray_troubleintoyland_2025`. **Theme:** targeted_admissions. **Reading:** Selected sections. **Coverage effect:** `scoped_review`.
+
+**Edition match:** `same_record`. Same issued report or article edition as the canonical source record; cited distribution representation identified separately.
+
+**Inspected scope:** Chapter on AI toys, printed pp. 12–17; AI methodology, printed p. 61.
+
+**Locators:** Chapter on AI toys, printed pp. 12–17; AI methodology, printed p. 61.
+
+**Visual check:** Scoped text and source/edition metadata reviewed; no complete visual audit.
+
+**Findings:**
+
+- Adult researchers selected four AI toys and fully tested three; the configured Kumma produced unsuitable responses under elicitation.
+
+**Counterevidence / alternative:** The source scope does not establish claims beyond the reported observation or documentary act.
+
+**Limits:** Product configurations and elicitation conditions do not isolate the base model or establish child exposure, injury, or prevalence. The California legislative analysis cites this report, not the 2026 retest.
+
+**Replication:** `not_performed`. **Numerical check:** Qualifying source counts checked in stated material, not independently recomputed.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C101](claims.md#c101)
+
+**Relevance rationale:** Mapped on November 20 within the same scoped inspection; no additional reading, causal inference or replication is claimed.
+
+**Next check:** Check independent corroboration before extending the source to prevalence, effectiveness or causation.
+
+| Capture field | Value |
+|---|---|
+| `original_url` | [Source](https://www.nypirg.org/pubs/202511/TOYLAND_REPORT_2025.pdf) |
+| `attempted_at` | 2026-11-20T14:36:19.208196+00:00 |
+| `retrieved_at` | 2026-11-20T14:36:23.341918+00:00 |
+| `final_url` | [Source](https://www.nypirg.org/pubs/202511/TOYLAND_REPORT_2025.pdf) |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | Exact response retained locally; no independent capture-specific archive was established in this bounded intake. |
+| `sha256` | 038a329aee251ff8613924ad5ad72564156634c0c6d3a64fb424bdff9bb5351b |
+| `byte_length` | 4903113 |
+| `mime_type` | application/pdf |
+| `published_on` | 2025-11-13 |
+| `version_claim` | Publisher or identified report edition reviewed in this intake. |
+| `locator_basis` | Printed pages where specified; statutory sections or article content for HTML. |
+| `capture_path` | .source-captures/synthesis-038a329aee251ff8613924ad5ad72564156634c0c6d3a64fb424bdff9bb5351b.pdf |
+| `preservation_status` | captured |
+
+<a id="intake_calassembly_sb867analysis_2026"></a>
+### intake_calassembly_sb867analysis_2026
+
+**Source:** `calassembly_sb867analysis_2026`. **Theme:** targeted_admissions. **Reading:** Selected sections. **Coverage effect:** `scoped_review`.
+
+**Edition match:** `same_record`. Same issued report or article edition as the canonical source record; cited distribution representation identified separately.
+
+**Inspected scope:** June 16 hearing analysis, printed pp. 7–9, notes 13–14 and 16–17.
+
+**Locators:** June 16 hearing analysis, printed pp. 7–9, notes 13–14 and 16–17.
+
+**Visual check:** Scoped text and source/edition metadata reviewed; no complete visual audit.
+
+**Findings:**
+
+- Assembly policy staff directly cited the 2025 PIRG product tests and discussed Kumma.
+
+**Counterevidence / alternative:** The source scope does not establish claims beyond the reported observation or documentary act.
+
+**Limits:** This dated analysis concerns the May 14 bill version. It documents legislative consideration, not causal influence on passage, final statutory scope, implementation, or outcomes.
+
+**Replication:** `not_performed`. **Numerical check:** Qualifying source counts checked in stated material, not independently recomputed.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C101](claims.md#c101)
+
+**Relevance rationale:** Mapped on November 20 within the same scoped inspection; no additional reading, causal inference or replication is claimed.
+
+**Next check:** Check independent corroboration before extending the source to prevalence, effectiveness or causation.
+
+| Capture field | Value |
+|---|---|
+| `original_url` | [Source](https://apcp.assembly.ca.gov/media/1168) |
+| `attempted_at` | 2026-11-20T14:36:19.207878+00:00 |
+| `retrieved_at` | 2026-11-20T14:36:22.557210+00:00 |
+| `final_url` | [Source](https://apcp.assembly.ca.gov/system/files/2026-06/sb-867-padilla-apcp-analysis.pdf) |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | Exact response retained locally; no independent capture-specific archive was established in this bounded intake. |
+| `sha256` | ad42f89e4a0dec75d2b490b4e64e74e7244534781e5923720a51c20d3426cef0 |
+| `byte_length` | 280158 |
+| `mime_type` | application/pdf |
+| `published_on` | 2026-06-16 |
+| `version_claim` | Publisher or identified report edition reviewed in this intake. |
+| `locator_basis` | Printed pages where specified; statutory sections or article content for HTML. |
+| `capture_path` | .source-captures/synthesis-ad42f89e4a0dec75d2b490b4e64e74e7244534781e5923720a51c20d3426cef0.pdf |
+| `preservation_status` | captured |
+
+<a id="intake_california_sb867_companiontoys_2026"></a>
+### intake_california_sb867_companiontoys_2026
+
+**Source:** `california_sb867_companiontoys_2026`. **Theme:** targeted_admissions. **Reading:** Selected sections. **Coverage effect:** `scoped_review`.
+
+**Edition match:** `same_record`. Same issued report or article edition as the canonical source record; cited distribution representation identified separately.
+
+**Inspected scope:** Chaptered September 10, Chapter 189; Business and Professions Code §§ 22601(b), 22601(g), 22604.5(a)–(b).
+
+**Locators:** Chaptered September 10, Chapter 189; Business and Professions Code §§ 22601(b), 22601(g), 22604.5(a)–(b).
+
+**Visual check:** Scoped text and source/edition metadata reviewed; no complete visual audit.
+
+**Findings:**
+
+- The enacted text restricts specified commercial activity involving physical toys for play by children under 16 that contain a defined companion chatbot, with a January 1, 2031 sunset. The prohibition is enacted but not yet operative as of review.
+
+**Counterevidence / alternative:** The source scope does not establish claims beyond the reported observation or documentary act.
+
+**Limits:** Chaptered text checked via version-specific mirror, not the earlier bill analyzed by Assembly staff. PIRG published the 2026 retest report after enactment. No enforcement, compliance, safety benefit, or attribution to a particular study is shown.
+
+**Replication:** `not_performed`. **Numerical check:** Qualifying source counts checked in stated material, not independently recomputed.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C101](claims.md#c101)
+
+**Relevance rationale:** Mapped on November 20 within the same scoped inspection; no additional reading, causal inference or replication is claimed.
+
+**Next check:** Check independent corroboration before extending the source to prevalence, effectiveness or causation.
+
+| Capture field | Value |
+|---|---|
+| `original_url` | [Source](https://legiscan.com/CA/text/SB867/id/3458543) |
+| `attempted_at` | 2026-11-20T14:36:19.209825+00:00 |
+| `retrieved_at` | 2026-11-20T14:36:22.569608+00:00 |
+| `final_url` | [Source](https://legiscan.com/CA/text/SB867/id/3458543) |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | Exact response retained locally; no independent capture-specific archive was established in this bounded intake. |
+| `sha256` | c82eb8b019c52b67c5d62a15c2f338125732929f5755dd8ec99c902b419905cc |
+| `byte_length` | 29345 |
+| `mime_type` | text/html |
+| `published_on` | 2026-09-10 |
+| `version_claim` | Publisher or identified report edition reviewed in this intake. |
+| `locator_basis` | Printed pages where specified; statutory sections or article content for HTML. |
+| `capture_path` | .source-captures/synthesis-c82eb8b019c52b67c5d62a15c2f338125732929f5755dd8ec99c902b419905cc.html |
+| `preservation_status` | captured |
+
+<a id="intake_murray_troubleintoyland_2026"></a>
+### intake_murray_troubleintoyland_2026
+
+**Source:** `murray_troubleintoyland_2026`. **Theme:** targeted_admissions. **Reading:** Selected sections. **Coverage effect:** `scoped_review`.
+
+**Edition match:** `same_record`. Same issued report or article edition as the canonical source record; cited distribution representation identified separately.
+
+**Inspected scope:** AI toy chapter, printed pp. 17–24, including retests and testing scope.
+
+**Locators:** AI toy chapter, printed pp. 17–24, including retests and testing scope.
+
+**Visual check:** Scoped text and source/edition metadata reviewed; no complete visual audit.
+
+**Findings:**
+
+- PIRG reports testing seven AI toys (four repeats and three new). In its repeated tests, Kumma responded with stronger guardrails; the Alilo bunny still produced inappropriate material.
+
+**Counterevidence / alternative:** The source scope does not establish claims beyond the reported observation or documentary act.
+
+**Limits:** One publisher report and one exact PDF edition reviewed for scoped AI-toy sections only. Samples are not representative; observed changes do not identify a model or safeguard cause or establish realized child harm. The retest report was published after SB 867 enactment.
+
+**Replication:** `not_performed`. **Numerical check:** Qualifying source counts checked in stated material, not independently recomputed.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C102](claims.md#c102)
+
+**Relevance rationale:** Mapped on November 20 within the same scoped inspection; no additional reading, causal inference or replication is claimed.
+
+**Next check:** Check independent corroboration before extending the source to prevalence, effectiveness or causation.
+
+| Capture field | Value |
+|---|---|
+| `original_url` | [Source](https://publicinterestnetwork.org/wp-content/uploads/2026/11/TOYLAND-11-17-26-1.pdf) |
+| `attempted_at` | 2026-11-20T14:36:19.208648+00:00 |
+| `retrieved_at` | 2026-11-20T14:36:22.535839+00:00 |
+| `final_url` | [Source](https://publicinterestnetwork.org/wp-content/uploads/2026/11/TOYLAND-11-17-26-1.pdf) |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | Exact response retained locally; no independent capture-specific archive was established in this bounded intake. |
+| `sha256` | c6c5f3c1337d3e225e3a3403a164b0a59c92aa3cd935f6cb6427a4941c16bd85 |
+| `byte_length` | 13779375 |
+| `mime_type` | application/pdf |
+| `published_on` | 2026-11-17 |
+| `version_claim` | Publisher or identified report edition reviewed in this intake. |
+| `locator_basis` | Printed pages where specified; statutory sections or article content for HTML. |
+| `capture_path` | .source-captures/synthesis-c6c5f3c1337d3e225e3a3403a164b0a59c92aa3cd935f6cb6427a4941c16bd85.pdf |
+| `preservation_status` | captured |
+
+<a id="intake_cross_notforkids_2026"></a>
+### intake_cross_notforkids_2026
+
+**Source:** `cross_notforkids_2026`. **Theme:** targeted_admissions. **Reading:** Selected sections. **Coverage effect:** `scoped_review`.
+
+**Edition match:** `same_record`. Same issued report or article edition as the canonical source record; cited distribution representation identified separately.
+
+**Inspected scope:** Executive summary and printed pp. 13–15 on developer signup.
+
+**Locators:** Executive summary and printed pp. 13–15 on developer signup.
+
+**Visual check:** Scoped text and source/edition metadata reviewed; no complete visual audit.
+
+**Findings:**
+
+- PIRG reports a February 2026 pass through five providers’ developer onboarding paths; only Anthropic asked whether the intended product was for minors in that pass.
+
+**Counterevidence / alternative:** The source scope does not establish claims beyond the reported observation or documentary act.
+
+**Limits:** Governance implementation evidence from observed signup screens, not a provider policy artifact or a technical/model benchmark. It does not measure later enforcement, ongoing provider practice, actual toy routing, or child outcomes.
+
+**Replication:** `not_performed`. **Numerical check:** Qualifying source counts checked in stated material, not independently recomputed.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C103](claims.md#c103)
+
+**Relevance rationale:** Mapped on November 20 within the same scoped inspection; no additional reading, causal inference or replication is claimed.
+
+**Next check:** Check independent corroboration before extending the source to prevalence, effectiveness or causation.
+
+| Capture field | Value |
+|---|---|
+| `original_url` | [Source](https://publicinterestnetwork.org/wp-content/uploads/2026/03/PIRG-NOT-FOR-KIDS-FOUND-IN-TOYS-March-2026.pdf) |
+| `attempted_at` | 2026-11-20T14:36:19.209057+00:00 |
+| `retrieved_at` | 2026-11-20T14:36:22.287269+00:00 |
+| `final_url` | [Source](https://publicinterestnetwork.org/wp-content/uploads/2026/03/PIRG-NOT-FOR-KIDS-FOUND-IN-TOYS-March-2026.pdf) |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | Exact response retained locally; no independent capture-specific archive was established in this bounded intake. |
+| `sha256` | 8f1bd7004c7a53590b31bc9721f7a3fb505ba3444a3294847c1b202c5547e6bc |
+| `byte_length` | 1686349 |
+| `mime_type` | application/pdf |
+| `published_on` | 2026-03 |
+| `version_claim` | Publisher or identified report edition reviewed in this intake. |
+| `locator_basis` | Printed pages where specified; statutory sections or article content for HTML. |
+| `capture_path` | .source-captures/synthesis-8f1bd7004c7a53590b31bc9721f7a3fb505ba3444a3294847c1b202c5547e6bc.pdf |
+| `preservation_status` | captured |
+
+<a id="intake_goodacre_aiearlyyears_2026"></a>
+### intake_goodacre_aiearlyyears_2026
+
+**Source:** `goodacre_aiearlyyears_2026`. **Theme:** targeted_admissions. **Reading:** Selected sections. **Coverage effect:** `scoped_review`.
+
+**Edition match:** `same_record`. Same issued report or article edition as the canonical source record; cited distribution representation identified separately.
+
+**Inspected scope:** Children’s Views and Observed Play, printed pp. 13–19, including study design and composite vignettes.
+
+**Locators:** Children’s Views and Observed Play, printed pp. 13–19, including study design and composite vignettes.
+
+**Visual check:** Scoped text and source/edition metadata reviewed; no complete visual audit.
+
+**Findings:**
+
+- Researchers observed 14 children aged 3–5 using one Curio Gabbo at four London children’s centres. The report describes both engagement and difficulties with turn-taking, speaker recognition and pretend play.
+
+**Counterevidence / alternative:** The source scope does not establish claims beyond the reported observation or documentary act.
+
+**Limits:** Small qualitative project in observed sessions, not a long-term developmental study, comparative product prevalence estimate, or an isolated base-model test. Clinical and population outcomes were not assessed by this study component.
+
+**Replication:** `not_performed`. **Numerical check:** Qualifying source counts checked in stated material, not independently recomputed.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C102](claims.md#c102)
+
+**Relevance rationale:** Mapped on November 20 within the same scoped inspection; no additional reading, causal inference or replication is claimed.
+
+**Next check:** Check independent corroboration before extending the source to prevalence, effectiveness or causation.
+
+| Capture field | Value |
+|---|---|
+| `original_url` | [Source](https://www.pedalhub.net/wp-content/uploads/2026/03/AI-in-the-Early-Years-Project-report-27-February-2026.pdf) |
+| `attempted_at` | 2026-11-20T14:36:19.209558+00:00 |
+| `retrieved_at` | 2026-11-20T14:36:23.684534+00:00 |
+| `final_url` | [Source](https://www.pedalhub.net/wp-content/uploads/2026/03/AI-in-the-Early-Years-Project-report-27-February-2026.pdf) |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | Exact response retained locally; no independent capture-specific archive was established in this bounded intake. |
+| `sha256` | 2d6a1ce62413de4b49f4929c51c3aef1f105bf6ccb420bbbf6f714e0865f58e9 |
+| `byte_length` | 5358005 |
+| `mime_type` | application/pdf |
+| `published_on` | 2026-03 |
+| `version_claim` | Publisher or identified report edition reviewed in this intake. |
+| `locator_basis` | Printed pages where specified; statutory sections or article content for HTML. |
+| `capture_path` | .source-captures/synthesis-2d6a1ce62413de4b49f4929c51c3aef1f105bf6ccb420bbbf6f714e0865f58e9.pdf |
+| `preservation_status` | captured |
+
+<a id="intake_collier_pixiepaw_2026"></a>
+### intake_collier_pixiepaw_2026
+
+**Source:** `collier_pixiepaw_2026`. **Theme:** targeted_admissions. **Reading:** Selected sections. **Coverage effect:** `scoped_review`.
+
+**Edition match:** `same_record`. Same issued report or article edition as the canonical source record; cited distribution representation identified separately.
+
+**Inspected scope:** NBC’s account of its Pixie-Paw hands-on testing and retailer responses.
+
+**Locators:** NBC’s account of its Pixie-Paw hands-on testing and retailer responses.
+
+**Visual check:** Scoped text and source/edition metadata reviewed; no complete visual audit.
+
+**Findings:**
+
+- Journalists reported firsthand unsuitable output elicited from the Pixie-Paw toy and separately reported retailer reactions.
+
+**Counterevidence / alternative:** The source scope does not establish claims beyond the reported observation or documentary act.
+
+**Limits:** Original reporting on a distinct toy and test, not a PIRG observation, controlled comparison, representative rate, or independent evidence of actual child exposure.
+
+**Replication:** `not_performed`. **Numerical check:** Qualifying source counts checked in stated material, not independently recomputed.
+
+**Relevance:** `claim_evidence`. **Claim links:** [C102](claims.md#c102)
+
+**Relevance rationale:** Mapped on November 20 within the same scoped inspection; no additional reading, causal inference or replication is claimed.
+
+**Next check:** Check independent corroboration before extending the source to prevalence, effectiveness or causation.
+
+| Capture field | Value |
+|---|---|
+| `original_url` | [Source](https://www.nbcnews.com/tech/tech-news/ai-toys-kids-walmart-target-pull-plush-cat-described-sexual-violence-rcna608588) |
+| `attempted_at` | 2026-11-20T14:36:19.210124+00:00 |
+| `retrieved_at` | 2026-11-20T14:36:22.541060+00:00 |
+| `final_url` | [Source](https://www.nbcnews.com/tech/tech-news/ai-toys-kids-walmart-target-pull-plush-cat-described-sexual-violence-rcna608588) |
+| `archive_url` | Not recorded / unavailable |
+| `archive_checked_on` | Not recorded / unavailable |
+| `archive_unavailable_reason` | Exact response retained locally; no independent capture-specific archive was established in this bounded intake. |
+| `sha256` | 20abf8534641570b4bc4b9b247e943c67d5b2672987af89bb9d0dba45d598318 |
+| `byte_length` | 381053 |
+| `mime_type` | text/html |
+| `published_on` | 2026-11-17 |
+| `version_claim` | Publisher or identified report edition reviewed in this intake. |
+| `locator_basis` | Printed pages where specified; statutory sections or article content for HTML. |
+| `capture_path` | .source-captures/synthesis-20abf8534641570b4bc4b9b247e943c67d5b2672987af89bb9d0dba45d598318.html |
+| `preservation_status` | captured |

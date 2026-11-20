@@ -1,5 +1,5 @@
 schema_version: broad-synthesis-v1
-as_of: '2026-11-15'
+as_of: '2026-11-20'
 claims:
 - id: C01
   section: evaluation_configuration
@@ -929,6 +929,17 @@ claims:
     review_basis: prior_audit
     checked_scope: Prior audit selected primary provider sections; no independent telemetry, full article reread
       or matched baseline.
+  - citation_key: blum_gtigagenticthreshold_2026
+    relation: contextualizes
+    version_url: https://cloud.google.com/blog/topics/threat-intelligence/agentic-threat-activity-crosses-a-significant-threshold
+    locator: November 16, 2026 publisher page, Executive Summary and opening observations.
+    finding: A subsequent GTIG and Mandiant report describes additional real-world evidence of AI-assisted
+      components. The selected observations do not provide a denominator, matched comparison, representative
+      prevalence, or independent validation of the earlier GTIG report.
+    review_basis: this_run_primary
+    checked_scope: Publisher web-view executive summary and high-level descriptions only. Direct source-byte
+      retrieval returned HTTP 403; no byte-backed reading credit, full-document check, or independent telemetry
+      audit.
   limitation: Telemetry is selectively disclosed and provider-authored. Attribution confidence concerns whether
     AI was involved, while causal uplift concerns what would differ without it; these are separate judgments.
   counterevidence: These are positive operational observations rather than only benchmark proxies. Hardened-target
@@ -3801,6 +3812,135 @@ claims:
   next_check: Match the exact edition and intended decision; inspect actual evaluations, decisions, response
     records and follow-through before effectiveness claims. Verify later/current instruments separately if
     relevant.
+- id: C101
+  section: governance
+  claim: California Assembly staff cited PIRG’s 2025 AI toy tests in the June 16, 2026 SB 867 analysis.
+    The subsequent chaptered law documents a separate legal action, not the tests’ causal influence, implementation,
+    or effects.
+  status: scoped_check
+  evidence:
+  - citation_key: murray_troubleintoyland_2025
+    relation: supports
+    version_url: https://www.nypirg.org/pubs/202511/TOYLAND_REPORT_2025.pdf
+    locator: Printed pp. 12–17 and p. 61 (AI methodology).
+    finding: 'Originating empirical evidence: adult researchers selected four AI toys and could fully test
+      three. The configured Kumma produced inappropriate outputs under researcher elicitation; the study
+      did not test children.'
+    review_basis: this_run_primary
+    checked_scope: Chapter on AI toys, printed pp. 12–17; AI methodology, printed p. 61. Scoped inspection;
+      no full-document or reproduction credit.
+    review_event_ids:
+    - intake_murray_troubleintoyland_2025
+  - citation_key: calassembly_sb867analysis_2026
+    relation: supports
+    version_url: https://apcp.assembly.ca.gov/system/files/2026-06/sb-867-padilla-apcp-analysis.pdf
+    locator: June 16 hearing analysis, May 14 bill version; printed pp. 7–9, especially pp. 8–9, notes
+      14, 16 and 17.
+    finding: 'Direct documentary evidence of consideration: staff name PIRG’s 2025 investigation and quote
+      Kumma interactions with researchers. The citation is not a second observation or an explanation of
+      why the bill passed.'
+    review_basis: this_run_primary
+    checked_scope: June 16 hearing analysis, printed pp. 7–9, notes 13–14 and 16–17. Scoped inspection;
+      no full-document or reproduction credit.
+    review_event_ids:
+    - intake_calassembly_sb867analysis_2026
+  - citation_key: california_sb867_companiontoys_2026
+    relation: supports
+    version_url: https://legiscan.com/CA/text/SB867/id/3458543
+    locator: Chapter 189, approved and filed September 10, 2026; Business and Professions Code §§ 22601(b),
+      22601(g), 22604.5(a)–(b).
+    finding: 'Documentary endpoint: the chaptered text restricts specified commercial activity involving
+      physical toys designed, marketed or manufactured for play by children under 16 and containing a defined
+      companion chatbot, with a January 1, 2031 sunset.'
+    review_basis: this_run_primary
+    checked_scope: Chaptered September 10, Chapter 189; Business and Professions Code §§ 22601(b), 22601(g),
+      22604.5(a)–(b). Scoped inspection; no full-document or reproduction credit.
+    review_event_ids:
+    - intake_california_sb867_companiontoys_2026
+  limitation: The staff document concerns the May 14 bill version; the final statute’s scope comes from
+    the chaptered text. As of November 20, 2026 the law was enacted but not yet in force. The 2026 PIRG
+    retest report was published after enactment.
+  counterevidence: A visible legislative citation establishes consideration, not a causal contribution
+    to passage. The adult test did not establish injury or real-world exposure, and enactment is not enforcement,
+    compliance, or a measured safety benefit.
+  next_check: Track implementation or documented enforcement separately and use an outcome design before
+    attributing any change in exposure or harm to the law.
+- id: C102
+  section: outcomes
+  claim: Adult-led product elicitation and observed preschool play answer different downstream evaluation
+    questions. The inspected examples show product output under selected tests and interaction difficulties
+    during observed play, not population exposure or long-term effects.
+  status: scoped_check
+  evidence:
+  - citation_key: murray_troubleintoyland_2026
+    relation: supports
+    version_url: https://publicinterestnetwork.org/wp-content/uploads/2026/11/TOYLAND-11-17-26-1.pdf
+    locator: AI toys chapter, printed pp. 17–24; retest summary and test sample description.
+    finding: PIRG reports seven commercial toys tested, four repeats and three new. Kumma’s guardrails
+      performed better in the repeated tests, while the Alilo bunny still produced inappropriate material.
+    review_basis: this_run_primary
+    checked_scope: AI toy chapter, printed pp. 17–24, including retests and testing scope. Scoped inspection;
+      no full-document or reproduction credit.
+    review_event_ids:
+    - intake_murray_troubleintoyland_2026
+  - citation_key: goodacre_aiearlyyears_2026
+    relation: supports
+    version_url: https://www.pedalhub.net/wp-content/uploads/2026/03/AI-in-the-Early-Years-Project-report-27-February-2026.pdf
+    locator: Children’s Views and Observed Play, printed pp. 13–19.
+    finding: This qualitative study observed 14 children aged 3–5 with one Curio Gabbo at four London children’s
+      centres. It reported engagement alongside difficulties with recognizing speakers, taking turns and
+      pretend play; the vignettes combine observations across children.
+    review_basis: this_run_primary
+    checked_scope: Children’s Views and Observed Play, printed pp. 13–19, including study design and composite
+      vignettes. Scoped inspection; no full-document or reproduction credit.
+    review_event_ids:
+    - intake_goodacre_aiearlyyears_2026
+  - citation_key: collier_pixiepaw_2026
+    relation: contextualizes
+    version_url: https://www.nbcnews.com/tech/tech-news/ai-toys-kids-walmart-target-pull-plush-cat-described-sexual-violence-rcna608588
+    locator: Firsthand Pixie-Paw test and retailer-response passages, captured article.
+    finding: NBC separately reported eliciting inappropriate output from Pixie-Paw and relayed retailer
+      responses. This is a different toy and separate newsroom investigation, not a matched check of either
+      study or a demonstration of market-wide compliance.
+    review_basis: this_run_primary
+    checked_scope: NBC’s account of its Pixie-Paw hands-on testing and retailer responses. Scoped inspection;
+      no full-document or reproduction credit.
+    review_event_ids:
+    - intake_collier_pixiepaw_2026
+  limitation: Product, version and interaction design differ across sources. The PIRG retest is from the
+    original research organization; Cambridge did not estimate developmental effects, and NBC’s test is
+    not a systematic product sample.
+  counterevidence: Positive engagement and observed guardrail improvements coexist with interaction difficulties
+    and failures in other selected configurations. None of these designs isolates a base-model cause or
+    supports pooling outcomes across toys.
+  next_check: Specify test setting, product configuration and endpoint before comparing findings. Use separate
+    designs for safeguard behavior, use experience, exposure, and longer-term outcomes.
+- id: C103
+  section: governance
+  claim: PIRG’s February 2026 walkthrough of five developer onboarding paths observed one provider asking
+    whether the intended product was for minors. This documents a visible screening step, not enforcement
+    or the effect of a screening policy.
+  status: scoped_check
+  evidence:
+  - citation_key: cross_notforkids_2026
+    relation: supports
+    version_url: https://publicinterestnetwork.org/wp-content/uploads/2026/03/PIRG-NOT-FOR-KIDS-FOUND-IN-TOYS-March-2026.pdf
+    locator: Executive summary and printed pp. 13–15, February developer signup test.
+    finding: PIRG reports that Anthropic asked whether the researchers were building for minors; the other
+      four onboarding paths checked did not ask that question. It is an observation of those particular
+      paths at the time of the check.
+    review_basis: this_run_primary
+    checked_scope: Executive summary and printed pp. 13–15 on developer signup. Scoped inspection; no full-document
+      or reproduction credit.
+    review_event_ids:
+    - intake_cross_notforkids_2026
+  limitation: The comparison is drawn from one bounded pass by one research team, not a repeated audit
+    of all accounts, geographies, or developer paths.
+  counterevidence: Visible questions are not proof that a provider enforces answers; an absent signup question
+    does not rule out later enforcement or other safeguards. Toy marketing claims do not verify backend
+    routing.
+  next_check: Look for independent repeated checks and documented later enforcement before making claims
+    about provider compliance or effectiveness.
 families:
 - id: F01
   citation_keys:

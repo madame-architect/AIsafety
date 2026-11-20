@@ -163,3 +163,30 @@ GitHub pull requests prepare changes for maintainer review. OSF synchronization 
 
 AI assisted the migration, provisional routing, code, this reconstructed document, and the separately logged targeted source review. A complete retrospective list of models and prompts is unavailable and is not invented. The maintainer is responsible for accepting releases and research claims. An AI-assisted second pass is not independent human coding. Future syntheses should document the source inspection, review, and AI assistance actually performed.
 
+
+## Targeted downstream AI toy and misuse intake: 2026-11-20
+
+This bounded admission adds eight bibliographic records: three empirical downstream
+evaluations, one enacted legal instrument, and four contextual records. It is not
+a new corpus-wide review. The [intake log](intake.csv) names the inspected
+representations and the [reading log](research/synthesis/rounds.md) records scoped
+checks and exact-byte provenance for seven source documents. The Google Threat
+Intelligence Group article was inspected in the publisher's web view, but direct
+byte retrieval returned HTTP 403; it receives no byte-backed reading credit.
+
+The 2025 PIRG toy tests, the California Assembly staff analysis citing them, and
+chaptered SB 867 are three distinct records. The citation establishes consideration,
+not that testing caused passage, that the prohibition had already taken effect,
+or that it prevented harm. The enacted text contains no urgency or separate
+effective-date clause. The [California legislative calendar](https://www.assembly.ca.gov/system/files/2026-03/2026-calendar-version-2.pdf)
+and [Secretary of State’s effect-date guidance](https://www.sos.ca.gov/administration/bill-chapters)
+support the January 1, 2027 ordinary effective date. The 2026 retest report
+was published after enactment.
+The March PIRG developer-signup check observes governance practice at one point in
+time; it is not provider policy, an audit of continued enforcement, or a technical
+benchmark. Cambridge's play observation is a distinct qualitative design, and the
+NBC Pixie-Paw report is separate firsthand journalism. The Google report is
+provider-observed misuse, not benchmark performance or a prevalence estimate.
+The [mapped roles](research/synthesis/claims.md#c101) preserve those distinctions.
+The existing misuse claim gains contextual evidence without broadening the claim.
+These working-corpus changes do not update the released package.
