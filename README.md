@@ -6,7 +6,7 @@ Start with the [provisional synthesis](research/synthesis/review.md) for finding
 
 **Edit `records.yaml`.** BibTeX and the stream views are generated from it. The YAML schema defines permitted fields and classifications; it does not contain the source records.
 
-The current collection contains **286 records**: 156 technical evaluations/methods, 95 governance artifacts, and 35 contextual sources. The October 16 stabilization recovered 276 records and retained all 218 earlier GitHub citation keys; [MIGRATION.md](MIGRATION.md) documents that historical reconciliation. The [October 24 integration report](research/cyber-deployment/expansion-reconciliation-2026-10-24.md) documents the ten subsequent admissions and the linked cyber datasets.
+The current collection contains **294 records**: 159 technical evaluations/methods, 96 governance artifacts, and 39 contextual sources. The October 16 stabilization recovered 276 records and retained all 218 earlier GitHub citation keys; [MIGRATION.md](MIGRATION.md) documents that historical reconciliation. The [October 24 integration report](research/cyber-deployment/expansion-reconciliation-2026-10-24.md) documents the ten subsequent admissions and the linked cyber datasets.
 
 ## Start here
 

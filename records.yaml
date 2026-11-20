@@ -15349,3 +15349,385 @@ records:
       round. Dated policy announcement on research containment and safety cases. Code no-live-internet
       training and red-teaming provisions, not the incident or vulnerability findings as independently
       verified evidence. Not a new numbered Preparedness edition. Capture: openai_frontier_training_observed_2026_10_24.'
+- id: murray_troubleintoyland_2025
+  entry_type: report
+  fields:
+    author: Teresa Murray and R. J. Cross and Rory Erlich and Lillian Tracy and Jacob Mela
+    title: 'Trouble in Toyland 2025: Toys with Artificial Intelligence Bots or Toxics Present Hidden Dangers'
+    date: '2025-11-13'
+    url: https://pirg.org/edfund/resources/trouble-in-toyland-2025-a-i-bots-and-toxics-represent-hidden-dangers/
+    urldate: '2026-11-20'
+    institution: U.S. PIRG Education Fund
+    issuer_type: ngo_research
+    issuer_sector: civil_society
+    review_status: institutional
+    review_process: institutional_review
+    evidence_independence: third_party
+    attestation_relation: external_analysis
+    independence_from: independent_of_subject
+    evidence_basis: research
+    source_role: original_research
+    source_form: report
+    governance_artifact: research_analysis
+    artifact_type: policy_report
+    source_relation: primary
+    scope_relevance: supporting
+    governance_function:
+    - evaluation
+    - reporting
+    function_role: enabling
+    risk_domain:
+    - safety
+    lifecycle_stage:
+    - deployment
+    - post_deployment
+    version_status: current
+    maintenance_status: static
+    legal_status: not_applicable
+    classification_confidence: medium
+    synthesis_stream: technical_eval
+    stream_note: Adult researchers selected four AI toys and fully tested three; the configured Kumma
+      produced unsuitable responses under elicitation. Product configurations and elicitation conditions
+      do not isolate the base model or establish child exposure, injury, or prevalence. The California
+      legislative analysis cites this report, not the 2026 retest.
+    evidence_note: '2026-11-20 scoped primary source inspection: Chapter on AI toys, printed pp. 12–17;
+      AI methodology, printed p. 61. Product configurations and elicitation conditions do not isolate
+      the base model or establish child exposure, injury, or prevalence. The California legislative analysis
+      cites this report, not the 2026 retest.'
+    inclusion_reason: Adult researchers selected four AI toys and fully tested three; the configured Kumma
+      produced unsuitable responses under elicitation.
+- id: calassembly_sb867analysis_2026
+  entry_type: report
+  fields:
+    author: '{California Assembly Committee on Privacy and Consumer Protection}'
+    title: 'SB 867 (Padilla) – As Amended May 14, 2026: Toys: Companion Chatbots'
+    date: '2026-06-16'
+    url: https://apcp.assembly.ca.gov/media/1168
+    urldate: '2026-11-20'
+    institution: California Assembly
+    issuer_type: government
+    issuer_sector: public
+    review_status: institutional
+    review_process: institutional_review
+    evidence_independence: regulatory
+    attestation_relation: regulatory_authority
+    independence_from: regulatory_authority
+    evidence_basis: policy
+    source_role: external_analysis
+    source_form: policy_report
+    governance_artifact: policy_analysis
+    artifact_type: policy_report
+    source_relation: primary
+    scope_relevance: supporting
+    governance_function:
+    - reporting
+    function_role: background
+    risk_domain:
+    - safety
+    lifecycle_stage:
+    - deployment
+    - post_deployment
+    version_status: historical
+    maintenance_status: static
+    legal_status: nonbinding
+    classification_confidence: high
+    synthesis_stream: contextual
+    stream_note: Assembly policy staff directly cited the 2025 PIRG product tests and discussed Kumma.
+      This dated analysis concerns the May 14 bill version. It documents legislative consideration, not
+      causal influence on passage, final statutory scope, implementation, or outcomes.
+    evidence_note: '2026-11-20 scoped primary source inspection: June 16 hearing analysis, printed pp.
+      7–9, notes 13–14 and 16–17. This dated analysis concerns the May 14 bill version. It documents legislative
+      consideration, not causal influence on passage, final statutory scope, implementation, or outcomes.'
+    inclusion_reason: Assembly policy staff directly cited the 2025 PIRG product tests and discussed Kumma.
+- id: california_sb867_companiontoys_2026
+  entry_type: report
+  fields:
+    author: '{California Legislature}'
+    title: 'Senate Bill No. 867, Chapter 189: Toys: Companion Chatbots'
+    date: '2026-09-10'
+    url: https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260SB867
+    urldate: '2026-11-20'
+    institution: California Legislature
+    eprinttype: California Legislative Information
+    eprint: 202520260SB867
+    issuer_type: government
+    issuer_sector: public
+    review_status: legal_or_regulatory
+    review_process: legal_process
+    evidence_independence: regulatory
+    attestation_relation: regulatory_authority
+    independence_from: regulatory_authority
+    evidence_basis: legal
+    source_role: legal_or_regulatory_instrument
+    source_form: regulation
+    governance_artifact: legal_instrument
+    artifact_type: regulation
+    source_relation: primary
+    scope_relevance: supporting
+    governance_function:
+    - mitigation
+    - monitoring
+    function_role: direct
+    risk_domain:
+    - safety
+    lifecycle_stage:
+    - deployment
+    - post_deployment
+    version_status: current
+    maintenance_status: static
+    legal_status: enacted_not_in_force
+    classification_confidence: high
+    synthesis_stream: governance_artifact
+    stream_note: The enacted text restricts specified commercial activity involving physical toys for
+      play by children under 16 that contain a defined companion chatbot, with a January 1, 2031 sunset.
+      The prohibition is enacted but not yet operative as of review. Chaptered text checked via version-specific
+      mirror, not the earlier bill analyzed by Assembly staff. PIRG published the 2026 retest report after enactment.
+      No enforcement, compliance, safety benefit, or attribution to a particular study is shown.
+    evidence_note: '2026-11-20 scoped primary source inspection: Chaptered September 10, Chapter 189;
+      Business and Professions Code §§ 22601(b), 22601(g), 22604.5(a)–(b). Chaptered text checked via
+      version-specific mirror, not the earlier bill analyzed by Assembly staff. PIRG published the 2026 retest report after enactment. No enforcement, compliance, safety benefit, or attribution to a particular
+      study is shown.'
+    inclusion_reason: The enacted text restricts specified commercial activity involving physical toys
+      for play by children under 16 that contain a defined companion chatbot, with a January 1, 2031 sunset.
+      The prohibition is enacted but not yet operative as of review.
+- id: murray_troubleintoyland_2026
+  entry_type: report
+  fields:
+    author: Teresa Murray and R. J. Cross and Audrey Smith and Sophie Chiewtrakoon
+    title: 'Trouble in Toyland 2026: New Dangers from Squishies, AI Toys, Activity Toys, Recalls, Counterfeits
+      and Shady Online Sellers'
+    date: '2026-11-17'
+    url: https://pirg.org/edfund/resources/trouble-in-toyland-2026/
+    urldate: '2026-11-20'
+    institution: U.S. PIRG Education Fund
+    issuer_type: ngo_research
+    issuer_sector: civil_society
+    review_status: institutional
+    review_process: institutional_review
+    evidence_independence: third_party
+    attestation_relation: external_analysis
+    independence_from: independent_of_subject
+    evidence_basis: research
+    source_role: original_research
+    source_form: report
+    governance_artifact: research_analysis
+    artifact_type: policy_report
+    source_relation: primary
+    scope_relevance: supporting
+    governance_function:
+    - evaluation
+    - reporting
+    function_role: enabling
+    risk_domain:
+    - safety
+    lifecycle_stage:
+    - deployment
+    - post_deployment
+    version_status: current
+    maintenance_status: static
+    legal_status: not_applicable
+    classification_confidence: medium
+    synthesis_stream: technical_eval
+    stream_note: PIRG reports testing seven AI toys (four repeats and three new). In its repeated tests,
+      Kumma responded with stronger guardrails; the Alilo bunny still produced inappropriate material.
+      One publisher report and one exact PDF edition reviewed for scoped AI-toy sections only. Samples
+      are not representative; observed changes do not identify a model or safeguard cause or establish
+      realized child harm. The retest report was published after SB 867 enactment.
+    evidence_note: '2026-11-20 scoped primary source inspection: AI toy chapter, printed pp. 17–24, including
+      retests and testing scope. One publisher report and one exact PDF edition reviewed for scoped AI-toy
+      sections only. Samples are not representative; observed changes do not identify a model or safeguard
+      cause or establish realized child harm. The retest report was published after SB 867 enactment.'
+    inclusion_reason: PIRG reports testing seven AI toys (four repeats and three new). In its repeated
+      tests, Kumma responded with stronger guardrails; the Alilo bunny still produced inappropriate material.
+- id: cross_notforkids_2026
+  entry_type: report
+  fields:
+    author: R. J. Cross and Rory Erlich
+    title: Not for Kids. Found in Toys. How AI Companies’ Loose Rules for Developers Put Kids at Risk
+    date: 2026-03
+    url: https://publicinterestnetwork.org/wp-content/uploads/2026/03/PIRG-NOT-FOR-KIDS-FOUND-IN-TOYS-March-2026.pdf
+    urldate: '2026-11-20'
+    institution: U.S. PIRG Education Fund
+    issuer_type: ngo_research
+    issuer_sector: civil_society
+    review_status: institutional
+    review_process: institutional_review
+    evidence_independence: third_party
+    attestation_relation: external_analysis
+    independence_from: independent_of_subject
+    evidence_basis: research
+    source_role: original_research
+    source_form: report
+    governance_artifact: research_analysis
+    artifact_type: policy_report
+    source_relation: primary
+    scope_relevance: supporting
+    governance_function:
+    - evaluation
+    - reporting
+    function_role: background
+    risk_domain:
+    - safety
+    - privacy
+    lifecycle_stage:
+    - deployment
+    - post_deployment
+    version_status: current
+    maintenance_status: static
+    legal_status: not_applicable
+    classification_confidence: high
+    synthesis_stream: contextual
+    stream_note: PIRG reports a February 2026 pass through five providers’ developer onboarding paths;
+      only Anthropic asked whether the intended product was for minors in that pass. Governance implementation
+      evidence from observed signup screens, not a provider policy artifact or a technical/model benchmark.
+      It does not measure later enforcement, ongoing provider practice, actual toy routing, or child outcomes.
+    evidence_note: '2026-11-20 scoped primary source inspection: Executive summary and printed pp. 13–15
+      on developer signup. Governance implementation evidence from observed signup screens, not a provider
+      policy artifact or a technical/model benchmark. It does not measure later enforcement, ongoing provider
+      practice, actual toy routing, or child outcomes.'
+    inclusion_reason: PIRG reports a February 2026 pass through five providers’ developer onboarding paths;
+      only Anthropic asked whether the intended product was for minors in that pass.
+- id: goodacre_aiearlyyears_2026
+  entry_type: report
+  fields:
+    author: Emily J. Goodacre and Jenny L. Gibson
+    title: 'AI in the Early Years: Examining the Implications of GenAI Toys for Young Children'
+    date: 2026-03
+    url: https://doi.org/10.17863/CAM.126270
+    urldate: '2026-11-20'
+    institution: University of Cambridge
+    doi: 10.17863/CAM.126270
+    issuer_type: academic_or_research
+    issuer_sector: academic
+    review_status: institutional
+    review_process: institutional_review
+    evidence_independence: author_attested
+    attestation_relation: author_attested
+    independence_from: independent_of_subject
+    evidence_basis: research
+    source_role: original_research
+    source_form: report
+    governance_artifact: research_analysis
+    artifact_type: policy_report
+    source_relation: primary
+    scope_relevance: supporting
+    governance_function:
+    - evaluation
+    - reporting
+    function_role: enabling
+    risk_domain:
+    - safety
+    - privacy
+    lifecycle_stage:
+    - deployment
+    - post_deployment
+    version_status: current
+    maintenance_status: static
+    legal_status: not_applicable
+    classification_confidence: medium
+    synthesis_stream: technical_eval
+    stream_note: Researchers observed 14 children aged 3–5 using one Curio Gabbo at four London children’s
+      centres. The report describes both engagement and difficulties with turn-taking, speaker recognition
+      and pretend play. Small qualitative project in observed sessions, not a long-term developmental
+      study, comparative product prevalence estimate, or an isolated base-model test. Clinical and population
+      outcomes were not assessed by this study component.
+    evidence_note: '2026-11-20 scoped primary source inspection: Children’s Views and Observed Play, printed
+      pp. 13–19, including study design and composite vignettes. Small qualitative project in observed
+      sessions, not a long-term developmental study, comparative product prevalence estimate, or an isolated
+      base-model test. Clinical and population outcomes were not assessed by this study component.'
+    inclusion_reason: Researchers observed 14 children aged 3–5 using one Curio Gabbo at four London children’s
+      centres. The report describes both engagement and difficulties with turn-taking, speaker recognition
+      and pretend play.
+- id: collier_pixiepaw_2026
+  entry_type: online
+  fields:
+    author: Kevin Collier and Jared Perlo and Savannah Sellers
+    title: An AI Toy for 3-Year-Olds Described Gang Rape. Three Major Retailers Are Pulling It.
+    date: '2026-11-17'
+    url: https://www.nbcnews.com/tech/tech-news/ai-toys-kids-walmart-target-pull-plush-cat-described-sexual-violence-rcna608588
+    urldate: '2026-11-20'
+    organization: NBC News
+    issuer_type: media
+    issuer_sector: media
+    review_status: editorial
+    review_process: editorial_review
+    evidence_independence: journalistic
+    attestation_relation: journalistic_reporting
+    independence_from: editorial_independence
+    evidence_basis: journalistic
+    source_role: news_reporting
+    source_form: news_article
+    governance_artifact: news_reporting
+    artifact_type: news
+    source_relation: primary
+    scope_relevance: supporting
+    governance_function:
+    - reporting
+    function_role: background
+    risk_domain:
+    - safety
+    lifecycle_stage:
+    - deployment
+    - post_deployment
+    version_status: current
+    maintenance_status: maintained_page
+    legal_status: not_applicable
+    classification_confidence: high
+    synthesis_stream: contextual
+    stream_note: Journalists reported firsthand unsuitable output elicited from the Pixie-Paw toy and
+      separately reported retailer reactions. Original reporting on a distinct toy and test, not a PIRG
+      observation, controlled comparison, representative rate, or independent evidence of actual child
+      exposure.
+    evidence_note: '2026-11-20 scoped primary source inspection: NBC’s account of its Pixie-Paw hands-on
+      testing and retailer responses. Original reporting on a distinct toy and test, not a PIRG observation,
+      controlled comparison, representative rate, or independent evidence of actual child exposure.'
+    inclusion_reason: Journalists reported firsthand unsuitable output elicited from the Pixie-Paw toy
+      and separately reported retailer reactions.
+- id: blum_gtigagenticthreshold_2026
+  entry_type: online
+  fields:
+    author: Aurora Blum and Kelli Vanderlee and Jess Xia and David Mainor
+    title: 'GTIG AI Threat Tracker: Agentic Threat Activity Crosses a Significant Threshold'
+    date: '2026-11-16'
+    url: https://cloud.google.com/blog/topics/threat-intelligence/agentic-threat-activity-crosses-a-significant-threshold
+    urldate: '2026-11-20'
+    organization: Google Threat Intelligence Group
+    issuer_type: company
+    issuer_sector: private
+    review_status: institutional
+    review_process: institutional_review
+    evidence_independence: issuer_attested
+    attestation_relation: issuer_attested
+    independence_from: not_independently_verified
+    evidence_basis: research
+    source_role: original_research
+    source_form: blog_post
+    governance_artifact: research_analysis
+    artifact_type: blog_post
+    source_relation: primary
+    scope_relevance: supporting
+    governance_function:
+    - monitoring
+    - reporting
+    function_role: background
+    risk_domain:
+    - cyber
+    - misuse
+    lifecycle_stage:
+    - deployment
+    - post_deployment
+    version_status: current
+    maintenance_status: maintained_page
+    legal_status: not_applicable
+    classification_confidence: high
+    synthesis_stream: contextual
+    stream_note: Google Threat Intelligence Group and Mandiant report selected real-world misuse observations
+      informed by incident response, tracking and platform telemetry. Provider-reported observations,
+      not a controlled benchmark or representative prevalence estimate. The report does not isolate AI’s
+      causal uplift or show that the same level of autonomy is typical. Exact article bytes were not retained.
+    evidence_note: '2026-11-20 scoped primary source inspection: Publisher’s Executive Summary and high-level
+      observations on misuse and monitoring. Provider-reported observations, not a controlled benchmark
+      or representative prevalence estimate. The report does not isolate AI’s causal uplift or show that
+      the same level of autonomy is typical. Exact article bytes were not retained.'
+    inclusion_reason: Google Threat Intelligence Group and Mandiant report selected real-world misuse
+      observations informed by incident response, tracking and platform telemetry.

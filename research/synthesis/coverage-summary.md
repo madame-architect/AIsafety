@@ -10,17 +10,17 @@ The CSV preserves source-level contributions, inspection descriptions, limitatio
 
 | Stream | Full text | Selected sections | Abstract only | Metadata only | Inaccessible | Total |
 |---|---:|---:|---:|---:|---:|---:|
-| `technical_eval` | 38 | 112 | 6 | 0 | 0 | 156 |
-| `governance_artifact` | 56 | 33 | 0 | 5 | 1 | 95 |
-| `contextual` | 11 | 21 | 2 | 1 | 0 | 35 |
-| **Total** | 105 | 166 | 8 | 6 | 1 | **286** |
+| `technical_eval` | 38 | 112 | 6 | 3 | 0 | 159 |
+| `governance_artifact` | 56 | 33 | 0 | 6 | 1 | 96 |
+| `contextual` | 11 | 21 | 2 | 5 | 0 | 39 |
+| **Total** | 105 | 166 | 8 | 14 | 1 | **294** |
 
 | Recorded stage | Full text | Selected sections | Abstract only | Metadata only | Inaccessible |
 |---|---:|---:|---:|---:|---:|
-| First pass in supplied ledger | 58 | 211 | 9 | 7 | 1 |
-| Latest inherited label | 105 | 166 | 8 | 6 | 1 |
+| First pass in supplied ledger | 58 | 211 | 9 | 15 | 1 |
+| Latest inherited label | 105 | 166 | 8 | 14 | 1 |
 
-The supplied review's 104 full-text / 9 abstract-only table is superseded by the latest ledger labels above. **181 records remain short of the inherited full-text label.** Full text refers to the identified object's complete accessible text; linked PDFs, supplements, figures, data and experiments require separate inspection. Records include pages and policies as well as papers. These labels are recorded inspection claims, not certification of earlier reading.
+The supplied review's 104 full-text / 9 abstract-only table is superseded by the latest ledger labels above. **189 records remain short of the inherited full-text label.** Full text refers to the identified object's complete accessible text; linked PDFs, supplements, figures, data and experiments require separate inspection. Records include pages and policies as well as papers. These labels are recorded inspection claims, not certification of earlier reading.
 
 ## Separate later checking
 
@@ -30,22 +30,22 @@ The supplied prior AI-assisted audit logs scoped central-claim checks for **105 
 
 [Reading events and thematic decisions](rounds.md) preserve fresh inspection, exact versions, captures, contrary evidence and limitations separately from the inherited CSV. Full-text reading is not experimental replication, and reading a related or uncertain edition does not increase canonical-record coverage.
 
-Later rounds log **142 reading events** for **106 unique keys**. **32 keys** have eligible complete-record-text events, including **22** that lacked an inherited full-text label. These remain recorded reading claims, not independent certification of every figure, supplement or source finding.
+Later rounds log **149 reading events** for **113 unique keys**. **32 keys** have eligible complete-record-text events, including **22** that lacked an inherited full-text label. These remain recorded reading claims, not independent certification of every figure, supplement or source finding.
 
 Of the **105 records** with inherited full-text labels, **10** have a later eligible complete-record-text recheck and **95** have not received such a recheck. Each key is counted once across rounds. Related-edition, ancillary-object and selected-section events do not qualify. A fresh complete reading establishes the recorded scope of the identified text; it does not prove what an earlier reader read or constitute independent human recertification.
 
 | Layer | Full text | Selected sections | Abstract only | Metadata only | Inaccessible |
 |---|---:|---:|---:|---:|---:|
-| Fresh reading events (representations may repeat a key) | 37 | 86 | 5 | 8 | 6 |
-| Combined best same-record inspection | 127 | 147 | 5 | 6 | 1 |
+| Fresh reading events (representations may repeat a key) | 37 | 93 | 5 | 8 | 6 |
+| Combined best same-record inspection | 127 | 154 | 5 | 7 | 1 |
 
-**159 records** remain without a full-text label after eligible new reading. Combined inspection retains earlier full-text labels without recertifying them; a later selected-section check neither erases nor independently confirms an earlier complete read. The reading event records replication and numerical checking separately. Missing local captures are reported by the validator; ordinary CI does not claim byte verification of absent private files.
+**167 records** remain without a full-text label after eligible new reading. Combined inspection retains earlier full-text labels without recertifying them; a later selected-section check neither erases nor independently confirms an earlier complete read. The reading event records replication and numerical checking separately. Missing local captures are reported by the validator; ordinary CI does not claim byte verification of absent private files.
 
 ## Argument coverage
 
-The current map has **96 claims** linked to **156 unique bibliography keys**. The other **130 keys** are not mapped as claim evidence. Of these, **5** have an explicit non-claim relevance decision in later rounds and **125** retain an unresolved role. An unmapped record is neither excluded nor evidence for a claim. A source may bound or challenge a proposition; inclusion is not corroboration. Shared study families are listed in the [claim map](claims.md).
+The current map has **99 claims** linked to **164 unique bibliography keys**. The other **130 keys** are not mapped as claim evidence. Of these, **5** have an explicit non-claim relevance decision in later rounds and **125** retain an unresolved role. An unmapped record is neither excluded nor evidence for a claim. A source may bound or challenge a proposition; inclusion is not corroboration. Shared study families are listed in the [claim map](claims.md).
 
-**238 records** have proposed corrections or checks. These are review leads, not established errors. Current adjudications and publication-critical holds belong in the reconciliation note and claim map; inherited notes are retained with that boundary.
+**246 records** have proposed corrections or checks. These are review leads, not established errors. Current adjudications and publication-critical holds belong in the reconciliation note and claim map; inherited notes are retained with that boundary.
 
 ## Provenance and scope
 
@@ -343,3 +343,11 @@ Use the CSV for full source notes. Links below identify explicit claim roles; al
 | `zhang_selfexploringactive_2024` | Selected sections | Outside 105-record register | Unresolved | — | — |
 | `zhang_vtuneverifiablefine_2024` | Selected sections | Outside 105-record register | [C98](claims.md#c98) | 2026-11-15 UTC thresholds/resilience/reporting round: Selected v2 supplies conditional marked-data training verification. Sampled modal-frequency estimate is not an exact statistical upper bound; model/iterations/method completeness remain unverified. C98; reading events: r5_privacy_06. | [r5_privacy_06](rounds.md#r5_privacy_06) |
 | `zhao_surveyrecentbackdoor_2024` | Selected sections | Outside 105-record register | Unresolved | — | — |
+| `murray_troubleintoyland_2025` | Metadata only | Outside 105-record register | [C101](claims.md#c101) | New targeted intake on 2026-11-20; historical review depth fields do not assign retrospective reading credit. | [intake_murray_troubleintoyland_2025](rounds.md#intake_murray_troubleintoyland_2025) |
+| `calassembly_sb867analysis_2026` | Metadata only | Outside 105-record register | [C101](claims.md#c101) | New targeted intake on 2026-11-20; historical review depth fields do not assign retrospective reading credit. | [intake_calassembly_sb867analysis_2026](rounds.md#intake_calassembly_sb867analysis_2026) |
+| `california_sb867_companiontoys_2026` | Metadata only | Outside 105-record register | [C101](claims.md#c101) | New targeted intake on 2026-11-20; historical review depth fields do not assign retrospective reading credit. | [intake_california_sb867_companiontoys_2026](rounds.md#intake_california_sb867_companiontoys_2026) |
+| `murray_troubleintoyland_2026` | Metadata only | Outside 105-record register | [C102](claims.md#c102) | New targeted intake on 2026-11-20; historical review depth fields do not assign retrospective reading credit. | [intake_murray_troubleintoyland_2026](rounds.md#intake_murray_troubleintoyland_2026) |
+| `cross_notforkids_2026` | Metadata only | Outside 105-record register | [C103](claims.md#c103) | New targeted intake on 2026-11-20; historical review depth fields do not assign retrospective reading credit. | [intake_cross_notforkids_2026](rounds.md#intake_cross_notforkids_2026) |
+| `goodacre_aiearlyyears_2026` | Metadata only | Outside 105-record register | [C102](claims.md#c102) | New targeted intake on 2026-11-20; historical review depth fields do not assign retrospective reading credit. | [intake_goodacre_aiearlyyears_2026](rounds.md#intake_goodacre_aiearlyyears_2026) |
+| `collier_pixiepaw_2026` | Metadata only | Outside 105-record register | [C102](claims.md#c102) | New targeted intake on 2026-11-20; historical review depth fields do not assign retrospective reading credit. | [intake_collier_pixiepaw_2026](rounds.md#intake_collier_pixiepaw_2026) |
+| `blum_gtigagenticthreshold_2026` | Metadata only | Outside 105-record register | [C22](claims.md#c22) | New targeted intake on 2026-11-20; historical review depth fields do not assign retrospective reading credit. | — |
